@@ -1,4 +1,4 @@
-//! ISO 639 language code crate
+//! ISO 639 language codes
 //!
 //! When dealing with different language inputs and APIs, different standards are used to identify
 //! a language. Converting between these in an automated way can be tedious. This crate provides an
