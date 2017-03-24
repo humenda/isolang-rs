@@ -16,6 +16,9 @@ code formats, e.g. when handling API data from Wikipedia and FreeDict.
 
 Conditional compilation to reduce code size is not supported at the moment.
 
+This crate is licensed under the Apache 2.0 license, please see LICENSE.md for
+the details.
+
 ## Use
 
 Cargo.toml:
