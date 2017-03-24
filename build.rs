@@ -1,7 +1,6 @@
 extern crate phf_codegen;
 
 use std::env;
-use std::iter::FromIterator;
 use std::fs::File;
 use std::io::{BufReader, BufRead, BufWriter, Write};
 use std::path::Path;
@@ -93,7 +92,8 @@ fn main() {
         write_overview_table(&mut file, &codes);
 
         // write enum with 639-3 codes (num is the index into the overview table)
-        write!(&mut file, "\npub enum Language {{\n").unwrap();
+        writeln!(&mut file, "\n#[derive(Clone, Copy)]").unwrap();
+        writeln!(&mut file, "pub enum Language {{").unwrap();
         for (num, &(ref id, _, _, _)) in codes.iter().enumerate() {
             writeln!(&mut file, "    {} = {},", title(id), num).unwrap();
         }
