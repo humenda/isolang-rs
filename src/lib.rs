@@ -5,6 +5,10 @@
 //! enum which supports conversion from 639-1 and 639-3 and also into these formats, as well as
 //! into English names.
 //!
+//! The language table is compiled into the library. While this increases the binary size, it means
+//! that no additional time is wasted on program startup or on table access for allocating or
+//! filling the map. It is hence suitable for retrieval of codes in constraint environments.
+//!
 //! # Examples
 //!
 //! ```
@@ -110,13 +114,49 @@ impl Language {
         }
         THREE_TO_THREE.get(code).cloned()
     }
+
+    /// Parse language from given locale
+    ///
+    /// This parses a language from a given locale string, as used by UNIX-alike and other systems.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use isolang::Language;
+    ///
+    /// fn main() {
+    ///     assert!(Language::from_locale("de_DE.UTF-8") == Some(Language::Deu));
+    /// }
+    /// ```
+    pub fn from_locale(locale: &str) -> Option<Language> {
+        if locale.len() < 3 {
+            return None;
+        }
+        let mut split = locale.split('_');
+        match split.next() {
+            Some(letters) => Language::from_639_1(letters),
+            None => None,
+        }
+    }
 }
 
 
 #[cfg(test)]
 mod tests {
+    use super::*;
+
     #[test]
-    fn it_works() {
+    fn invalid_locale_gives_none() {
+        assert!(Language::from_locale("foo").is_none());
+        assert!(Language::from_locale("deu_DEU.UTF-8").is_none());
+        assert!(Language::from_locale("___").is_none());
+        assert!(Language::from_locale("ää_öö.UTF-8").is_none());
+    }
+
+    #[test]
+    fn test_valid_locales_are_correctly_decoded() {
+        assert!(Language::from_locale("de_DE.UTF-8").unwrap() == Language::Deu);
+        assert!(Language::from_locale("en_GB.UTF-8").unwrap() == Language::Eng);
     }
 }
 
