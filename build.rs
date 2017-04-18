@@ -45,10 +45,19 @@ fn read_iso_table() -> LangCodes {
 
 /// write static array with (639-3, 639-1, English word, comment) entries
 fn write_overview_table(file: &mut BufWriter<File>, codes: &LangCodes) {
-    writeln!(file, "static OVERVIEW: [(&'static str, Option<&'static str>, \
-            &'static str, Option<&'static str>); {}] = [", codes.len()).unwrap();
-    for line in codes.iter() {
-        writeln!(file, "    {:?},", line).unwrap();
+    writeln!(file, "static OVERVIEW: [([u8; 3], Option<&'static [u8; 2]>, \
+            &'static [u8], Option<&'static [u8]>); {}] = [", codes.len()).unwrap();
+    for ref line in codes.iter() {
+        write!(file, "    ({:?}, ", line.0.as_bytes()).unwrap();
+        match line.1 {
+            Some(ref val) => write!(file, "Some(&{:?}), ", val.as_bytes()).unwrap(),
+            None => write!(file, "None, ").unwrap(),
+        }
+        write!(file, "&{:?}, ", line.2.as_bytes()).unwrap();
+        match line.3 {
+            Some(ref comment) => writeln!(file, "Some(&{:?})),", comment.as_bytes()).unwrap(),
+            None => writeln!(file, "None),").unwrap(),
+        };
     }
     write!(file, "];\n").unwrap();
 }

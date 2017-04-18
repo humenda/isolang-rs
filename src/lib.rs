@@ -20,6 +20,9 @@
 
 extern crate phf;
 
+use std::str;
+
+
 include!(concat!(env!("OUT_DIR"), "/isotable.rs"));
 
 impl Language {
@@ -35,7 +38,11 @@ impl Language {
     /// assert_eq!(Language::Deu.to_639_3(), "deu");
     /// ```
     pub fn to_639_3(&self) -> &'static str {
-        OVERVIEW[*self as usize].0
+        // It's safe to do so, we have written that by hadn as UTF-8 into the binary and if you
+        // haven't changed the binary, it's UTF-8
+        unsafe {
+            str::from_utf8_unchecked(&OVERVIEW[*self as usize].0)
+        }
     }
 
     /// Create two-letter ISO 639-1 representation of the language.
@@ -51,8 +58,9 @@ impl Language {
     /// assert!(Language::Gha.to_639_1().is_none());
     /// ```
     pub fn to_639_1(&self) -> Option<&'static str> {
-        ///
-        OVERVIEW[*self as usize].1
+        unsafe { // Is safe, see `to_639_3()` for more details
+            OVERVIEW[*self as usize].1.map(|ref s| str::from_utf8_unchecked(*s))
+        }
     }
 
     /// Get the English name of this language.
@@ -72,7 +80,9 @@ impl Language {
     /// assert_eq!(Language::Swh.to_name(), "Swahili");
     /// ```
     pub fn to_name(&self) -> &'static str {
-        OVERVIEW[*self as usize].2
+        unsafe { // Is safe, see `to_639_3()` for more details
+            str::from_utf8_unchecked(OVERVIEW[*self as usize].2)
+        }
     }
 
     /// Create a Language instance rom a ISO 639-1 code.
