@@ -11,7 +11,7 @@ keywords = ["iso", "language"]
 license = "Apache-1.0"
 
 [dependencies]
-phf = "*"
+phf = "0.7.21"
 
 [build-dependencies]
-phf_codegen = "*"
+phf_codegen = "0.7.21"
