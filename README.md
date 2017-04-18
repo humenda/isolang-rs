@@ -1,7 +1,7 @@
 ISO 639 language codes
 ======================
 
-[![Build Status](https://travis-ci.org/humenda/isolang.svg?branch=master)](https://travis-ci.org/humenda/isolang) ·
+[![Build Status](https://travis-ci.org/humenda/isolang-rs.svg?branch=master)](https://travis-ci.org/humenda/isolang-rs) ·
 [Documentation](https://docs.rs/isolang)
 
 Introduction
