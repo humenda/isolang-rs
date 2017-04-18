@@ -1,6 +1,9 @@
 ISO 639 language codes
 ======================
 
+[![Build Status](https://travis-ci.org/humenda/isolang.svg?branch=master)](https://travis-ci.org/humenda/isolang) ·
+[Documentation](https://docs.rs/isolang)
+
 Introduction
 ------------
 
@@ -25,7 +28,7 @@ Cargo.toml:
 
 ```
 [dependencies]
-isolang = { "git" = "https://github.com/humenda/isolang-rs" }
+isolang = "0.1"
 ```
 
 ## Example
