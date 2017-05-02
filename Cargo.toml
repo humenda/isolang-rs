@@ -1,6 +1,6 @@
 [package]
 name = "isolang"
-version = "0.1.0"
+version = "0.1.1"
 description = "Efficient, static lookup table for ISO 639 language codes"
 documentation = "https://docs.rs/isolang"
 authors = ["Sebastian Humenda <shumenda@gmx.de>"]
