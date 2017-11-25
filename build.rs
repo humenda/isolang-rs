@@ -2,7 +2,7 @@ extern crate phf_codegen;
 
 use std::env;
 use std::fs::File;
-use std::io::{BufReader, BufRead, BufWriter, Write};
+use std::io::{BufRead, BufReader, BufWriter, Write};
 use std::path::Path;
 
 // Taken from http://www-01.sil.org/iso639-3/download.asp
@@ -21,32 +21,43 @@ fn title(s: &str) -> String {
 
 /// parse ISO 6639-(3,1) table
 fn read_iso_table() -> LangCodes {
-    let r = BufReader::new(File::open(ISO_TABLE_PATH).expect(r"\
+    let r = BufReader::new(File::open(ISO_TABLE_PATH).expect(
+        r"\
         Couldn't read iso-639-3.tab. Make sure that his operation is run from \
-        the crate source root and that this file actually exists."));
-    r.lines().skip(1).map(|line| {
-        let line = line.expect("Couldn't read from ISO 639 table, please check \
-            that the file exists and is readable");
-        let cols = line.split("\t").collect::<Vec<&str>>();
-        let two_letter: Option<String> = match cols[3].len() {
-            2 => Some(cols[3].into()),
-            _ => None
-        };
-        // split language string into name and comment, if required
-        match cols[6].contains("(") {
-            false => (cols[0].into(), two_letter, cols[6].into(), None),
-            true => match cols[6].split(" (").collect::<Vec<&str>>() {
-                ref m if m.len() != 2  => (cols[0].into(), two_letter, cols[6].into(), None),
-                m => (cols[0].into(), two_letter, m[0].into(), Some(m[1].into())),
+        the crate source root and that this file actually exists.",
+    ));
+    r.lines()
+        .skip(1)
+        .map(|line| {
+            let line = line.expect(
+                "Couldn't read from ISO 639 table, please check \
+                 that the file exists and is readable",
+            );
+            let cols = line.split("\t").collect::<Vec<&str>>();
+            let two_letter: Option<String> = match cols[3].len() {
+                2 => Some(cols[3].into()),
+                _ => None,
+            };
+            // split language string into name and comment, if required
+            match cols[6].contains("(") {
+                false => (cols[0].into(), two_letter, cols[6].into(), None),
+                true => match cols[6].split(" (").collect::<Vec<&str>>() {
+                    ref m if m.len() != 2 => (cols[0].into(), two_letter, cols[6].into(), None),
+                    m => (cols[0].into(), two_letter, m[0].into(), Some(m[1].into())),
+                },
             }
-        }
-    }).collect()
+        })
+        .collect()
 }
 
 /// write static array with (639-3, 639-1, English word, comment) entries
 fn write_overview_table(file: &mut BufWriter<File>, codes: &LangCodes) {
-    writeln!(file, "static OVERVIEW: [([u8; 3], Option<&'static [u8; 2]>, \
-            &'static [u8], Option<&'static [u8]>); {}] = [", codes.len()).unwrap();
+    writeln!(
+        file,
+        "static OVERVIEW: [([u8; 3], Option<&'static [u8; 2]>, \
+         &'static [u8], Option<&'static [u8]>); {}] = [",
+        codes.len()
+    ).unwrap();
     for ref line in codes.iter() {
         write!(file, "    ({:?}, ", line.0.as_bytes()).unwrap();
         match line.1 {
@@ -65,7 +76,10 @@ fn write_overview_table(file: &mut BufWriter<File>, codes: &LangCodes) {
 
 /// Write a mapping of codes from 639-1 -> Language::`639-3`
 fn write_two_letter_to_enum(file: &mut BufWriter<File>, codes: &LangCodes) {
-    write!(file, "static TWO_TO_THREE: phf::Map<&'static str, Language> = ").unwrap();
+    write!(
+        file,
+        "static TWO_TO_THREE: phf::Map<&'static str, Language> = "
+    ).unwrap();
     let mut map = phf_codegen::Map::new();
     for &(ref id, ref two_letter, _, _) in codes.iter() {
         if let &Some(ref two_letter) = two_letter {
@@ -78,7 +92,10 @@ fn write_two_letter_to_enum(file: &mut BufWriter<File>, codes: &LangCodes) {
 
 /// Write a mapping of codes from 639-3 -> Language::`639-3`
 fn write_three_letter_to_enum(file: &mut BufWriter<File>, codes: &LangCodes) {
-    write!(file, "static THREE_TO_THREE: phf::Map<&'static str, Language> = ").unwrap();
+    write!(
+        file,
+        "static THREE_TO_THREE: phf::Map<&'static str, Language> = "
+    ).unwrap();
     let mut map = phf_codegen::Map::new();
     for &(ref id, _, _, _) in codes.iter() {
         map.entry(id.clone(), &format!("Language::{}", title(id)));
@@ -93,9 +110,12 @@ fn main() {
     let path = Path::new(&env::var("OUT_DIR").unwrap()).join("isotable.rs");
     let codes = read_iso_table();
 
-    { // make output file live shorter than codes
-        let mut file = BufWriter::new(File::create(&path).expect(r"Couldn't \
-                write to output directory, compilation impossible"));
+    {
+        // make output file live shorter than codes
+        let mut file = BufWriter::new(File::create(&path).expect(
+            r"Couldn't \
+                write to output directory, compilation impossible",
+        ));
 
         // write overview table with all data
         write_overview_table(&mut file, &codes);
@@ -115,4 +135,3 @@ fn main() {
         write_three_letter_to_enum(&mut file, &codes);
     }
 }
-
