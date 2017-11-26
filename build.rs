@@ -123,7 +123,11 @@ fn main() {
         // write enum with 639-3 codes (num is the index into the overview table)
         writeln!(
             &mut file,
-            "\n#[derive(Clone, Copy, Hash, Eq, PartialEq, Debug)]"
+            "\n#[cfg_attr(feature=\"serde_serialize\", derive(Serialize))]"
+        ).unwrap();
+        writeln!(
+            &mut file,
+            "#[derive(Clone, Copy, Hash, Eq, PartialEq, Debug)]"
         ).unwrap();
         writeln!(&mut file, "pub enum Language {{").unwrap();
         for (num, &(ref id, _, _, _)) in codes.iter().enumerate() {

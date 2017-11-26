@@ -18,6 +18,13 @@
 //! assert_eq!(Language::from_639_3("spa").unwrap().to_639_1(), Some("es"));
 //! ```
 
+#[cfg(feature = "serde_serialize")]
+#[macro_use]
+extern crate serde_derive;
+
+#[cfg(feature = "serde_serialize")]
+extern crate serde;
+
 extern crate phf;
 
 use std::str;
