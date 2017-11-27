@@ -37,4 +37,12 @@ assert_eq!(Language::from_639_1("de").unwrap().to_name(), "German");
 assert_eq!(Language::from_639_3("spa").unwrap().to_639_1(), Some("es"));
 ```
 
+## Serde support
 
+This crate also supports serializing the `Language` enum. To enable this please add the following lines to your `Cargo.toml` (instead of the above code):
+
+```toml
+[dependencies.isolang]
+features = ["serde_serialize"]
+version = "0.2"
+```
