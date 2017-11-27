@@ -104,6 +104,7 @@ fn main() {
         writeln!(&mut file, "\n#[derive(Clone, Copy, Hash, Eq, PartialEq)]").unwrap();
         writeln!(&mut file, "pub enum Language {{").unwrap();
         for (num, &(ref id, _, _, _)) in codes.iter().enumerate() {
+            writeln!(&mut file, "    #[doc(hidden)]").unwrap();
             writeln!(&mut file, "    {} = {},", title(id), num).unwrap();
         }
         writeln!(&mut file, "}}\n\n").unwrap();
