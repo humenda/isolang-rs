@@ -121,14 +121,7 @@ fn main() {
         write_overview_table(&mut file, &codes);
 
         // write enum with 639-3 codes (num is the index into the overview table)
-        writeln!(
-            &mut file,
-            "\n#[cfg_attr(feature=\"serde_serialize\", derive(Serialize))]"
-        ).unwrap();
-        writeln!(
-            &mut file,
-            "#[derive(Clone, Copy, Hash, Eq, PartialEq, Debug)]"
-        ).unwrap();
+        writeln!(&mut file, "#[derive(Clone, Copy, Hash, Eq, PartialEq)]").unwrap();
         writeln!(&mut file, "pub enum Language {{").unwrap();
         for (num, &(ref id, _, _, _)) in codes.iter().enumerate() {
             writeln!(&mut file, "    {} = {},", title(id), num).unwrap();

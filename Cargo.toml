@@ -21,15 +21,13 @@ phf = "0.7.21"
 
 [dependencies.serde]
 optional = true
-version = "1.0.21"
-
-[dependencies.serde_derive]
-optional = true
-version = "1.0.21"
+version = "1.0"
 
 [features]
 default = []
 serde_serialize = [
     "serde",
-    "serde_derive",
 ]
+
+[dev-dependencies]
+serde_json = "1.0"

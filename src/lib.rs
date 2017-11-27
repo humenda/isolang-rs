@@ -19,16 +19,14 @@
 //! ```
 
 #[cfg(feature = "serde_serialize")]
-#[macro_use]
-extern crate serde_derive;
+extern crate serde;
 
 #[cfg(feature = "serde_serialize")]
-extern crate serde;
+mod serde_impl;
 
 extern crate phf;
 
 use std::str;
-
 
 include!(concat!(env!("OUT_DIR"), "/isotable.rs"));
 
@@ -163,6 +161,7 @@ impl Language {
 #[cfg(test)]
 mod tests {
     use super::*;
+    extern crate serde_json;
 
     #[test]
     fn invalid_locale_gives_none() {
@@ -176,5 +175,20 @@ mod tests {
     fn test_valid_locales_are_correctly_decoded() {
         assert!(Language::from_locale("de_DE.UTF-8").unwrap() == Language::Deu);
         assert!(Language::from_locale("en_GB.UTF-8").unwrap() == Language::Eng);
+    }
+
+    #[test]
+    #[cfg(feature = "serde_serialize")]
+    fn test_serde() {
+        assert!(serde_json::to_string(&Language::Deu).unwrap() == String::from("\"deu\""));
+        assert!(serde_json::from_str::<Language>("\"deu\"").unwrap() == Language::Deu);
+
+        assert!(serde_json::from_str::<Language>("\"foo\"").is_err());
+    }
+}
+
+impl std::fmt::Debug for Language {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "{}", self.to_639_3())
     }
 }
