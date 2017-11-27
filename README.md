@@ -1,12 +1,9 @@
-ISO 639 language codes
-======================
+# ISO 639 language codes
 
 [![Build Status](https://travis-ci.org/humenda/isolang-rs.svg?branch=master)](https://travis-ci.org/humenda/isolang-rs) ·
 [Documentation](https://docs.rs/isolang)
 
-Introduction
-------------
-
+## Introduction
 
 When dealing with different language inputs and APIs, different standards are used to identify
 a language. Converting between these in an automated way can be tedious. This crate provides an
@@ -24,16 +21,16 @@ the details.
 
 ## Use
 
-Cargo.toml:
+`Cargo.toml`:
 
-```
+```toml
 [dependencies]
-isolang = "0.1"
+isolang = "0.2"
 ```
 
 ## Example
 
-```
+```rust
 use isolang::Language;
 
 assert_eq!(Language::from_639_1("de").unwrap().to_name(), "German");
