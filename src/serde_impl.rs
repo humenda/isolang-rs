@@ -38,7 +38,7 @@ impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
 
 #[cfg(feature = "serde_serialize")]
 impl<'de> serde::de::Deserialize<'de> for Language {
-    fn deserialize<D>(deserializer: D) -> Result<Self, D::Error> {
+    fn deserialize<D: serde::de::Deserializer<'de>>(deserializer: D) -> Result<Self, D::Error> {
         deserializer.deserialize_str(LanguageVisitor)
     }
 }
