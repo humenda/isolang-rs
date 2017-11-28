@@ -18,10 +18,15 @@
 //! assert_eq!(Language::from_639_3("spa").unwrap().to_639_1(), Some("es"));
 //! ```
 
+#[cfg(feature = "serde_serialize")]
+extern crate serde;
+
+#[cfg(feature = "serde_serialize")]
+mod serde_impl;
+
 extern crate phf;
 
 use std::str;
-
 
 include!(concat!(env!("OUT_DIR"), "/isotable.rs"));
 
@@ -40,9 +45,7 @@ impl Language {
     pub fn to_639_3(&self) -> &'static str {
         // It's safe to do so, we have written that by hadn as UTF-8 into the binary and if you
         // haven't changed the binary, it's UTF-8
-        unsafe {
-            str::from_utf8_unchecked(&OVERVIEW[*self as usize].0)
-        }
+        unsafe { str::from_utf8_unchecked(&OVERVIEW[*self as usize].0) }
     }
 
     /// Create two-letter ISO 639-1 representation of the language.
@@ -58,8 +61,11 @@ impl Language {
     /// assert!(Language::Gha.to_639_1().is_none());
     /// ```
     pub fn to_639_1(&self) -> Option<&'static str> {
-        unsafe { // Is safe, see `to_639_3()` for more details
-            OVERVIEW[*self as usize].1.map(|ref s| str::from_utf8_unchecked(*s))
+        unsafe {
+            // Is safe, see `to_639_3()` for more details
+            OVERVIEW[*self as usize]
+                .1
+                .map(|ref s| str::from_utf8_unchecked(*s))
         }
     }
 
@@ -80,7 +86,8 @@ impl Language {
     /// assert_eq!(Language::Swh.to_name(), "Swahili");
     /// ```
     pub fn to_name(&self) -> &'static str {
-        unsafe { // Is safe, see `to_639_3()` for more details
+        unsafe {
+            // Is safe, see `to_639_3()` for more details
             str::from_utf8_unchecked(OVERVIEW[*self as usize].2)
         }
     }
@@ -154,6 +161,7 @@ impl Language {
 #[cfg(test)]
 mod tests {
     use super::*;
+    extern crate serde_json;
 
     #[test]
     fn invalid_locale_gives_none() {
@@ -168,5 +176,19 @@ mod tests {
         assert!(Language::from_locale("de_DE.UTF-8").unwrap() == Language::Deu);
         assert!(Language::from_locale("en_GB.UTF-8").unwrap() == Language::Eng);
     }
+
+    #[test]
+    #[cfg(feature = "serde_serialize")]
+    fn test_serde() {
+        assert!(serde_json::to_string(&Language::Deu).unwrap() == String::from("\"deu\""));
+        assert!(serde_json::from_str::<Language>("\"deu\"").unwrap() == Language::Deu);
+
+        assert!(serde_json::from_str::<Language>("\"foo\"").is_err());
+    }
 }
 
+impl std::fmt::Debug for Language {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "{}", self.to_639_3())
+    }
+}
