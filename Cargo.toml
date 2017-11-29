@@ -25,7 +25,8 @@ version = "1.0"
 
 [dependencies.diesel]
 optional = true
-version = "0.16.0"
+version = "0.99.0"
+features = ["postgres"]
 
 [features]
 default = []
@@ -38,3 +39,9 @@ diesel_sql = [
 
 [dev-dependencies]
 serde_json = "1.0"
+diesel_derives = "0.99.0"
+diesel_migrations = "0.99.0"
+
+[dev-dependencies.diesel]
+version = "0.99.0"
+features = ["postgres"]

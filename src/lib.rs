@@ -24,12 +24,17 @@ extern crate serde;
 #[cfg(feature = "diesel_sql")]
 #[macro_use]
 extern crate diesel;
+#[cfg(all(feature = "diesel_sql", test))]
+#[macro_use]
+extern crate diesel_derives;
+#[cfg(all(feature = "diesel_sql", test))]
+#[macro_use]
+extern crate diesel_migrations;
 
 #[cfg(feature = "serde_serialize")]
 mod serde_impl;
 
 #[cfg(feature = "diesel_sql")]
-#[macro_use]
 mod diesel_impls;
 
 extern crate phf;
@@ -168,6 +173,7 @@ impl Language {
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[cfg(feature = "serde_serialize")]
     extern crate serde_json;
 
     #[test]
@@ -192,6 +198,53 @@ mod tests {
 
         assert!(serde_json::from_str::<Language>("\"foo\"").is_err());
     }
+
+    #[cfg(feature = "diesel")]
+    mod diesel {
+        use ::*;
+        use diesel::prelude::*;
+        use diesel::pg::PgConnection;
+
+        table! {
+            test (id) {
+                id -> Integer,
+                language -> Text,
+            }
+        }
+
+        embed_migrations!("tests/migrations");
+
+        pub fn connection() -> PgConnection {
+            let connection = PgConnection::establish(env!("DATABASE_URL")).unwrap();
+            embedded_migrations::run(&connection).unwrap();
+            connection
+        }
+
+        #[derive(Queryable)]
+        struct TestDiesel {
+            id: i32,
+            language: Language,
+        }
+
+        #[derive(Insertable)]
+        #[table_name="test"]
+        struct NewTestDiesel {
+            language: Language,
+        }
+
+        #[test]
+        fn test_diesel() {
+            let conn = connection();
+            for l in [Language::Deu, Language::Eng, Language::Fra].into_iter() {
+                let res: TestDiesel = diesel::insert_into(test::table)
+                    .values(&NewTestDiesel {language: *l})
+                    .get_result(&conn)
+                    .expect("Should be able to write into database.");
+                assert!(res.language == *l)
+            }
+        }
+    }
+
 }
 
 impl std::fmt::Debug for Language {
