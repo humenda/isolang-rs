@@ -11,4 +11,6 @@ matrix:
 script:
   - cargo build --verbose --all
   - cargo build --verbose --all --features serde_serialize
-  - cargo test --verbose --all --features serde_serialize
+  - cargo build --verbose --all --features diesel_sql
+  - cargo build --verbose --all --features serde_serialize diesel_sql
+  - cargo test --verbose --all --features serde_serialize diesel_sql
