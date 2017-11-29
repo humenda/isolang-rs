@@ -161,6 +161,7 @@ impl Language {
 mod tests {
     use super::*;
     extern crate serde_json;
+    use std::fmt::Write;
 
     #[test]
     fn invalid_locale_gives_none() {
@@ -177,6 +178,17 @@ mod tests {
     }
 
     #[test]
+    fn test_std_fmt() {
+        let mut t = String::new();
+        write!(t, "{}", Language::Eng).unwrap();
+        assert!("English" == t);
+
+        let mut t = String::new();
+        write!(t, "{:?}", Language::Eng).unwrap();
+        assert!(String::from("eng") == t);
+    }
+
+    #[test]
     #[cfg(feature = "serde_serialize")]
     fn test_serde() {
         assert!(serde_json::to_string(&Language::Deu).unwrap() == String::from("\"deu\""));
@@ -189,5 +201,11 @@ mod tests {
 impl std::fmt::Debug for Language {
     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
         write!(f, "{}", self.to_639_3())
+    }
+}
+
+impl std::fmt::Display for Language {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "{}", self.to_name())
     }
 }
