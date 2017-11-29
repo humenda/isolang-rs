@@ -21,8 +21,16 @@
 #[cfg(feature = "serde_serialize")]
 extern crate serde;
 
+#[cfg(feature = "diesel_sql")]
+#[macro_use]
+extern crate diesel;
+
 #[cfg(feature = "serde_serialize")]
 mod serde_impl;
+
+#[cfg(feature = "diesel_sql")]
+#[macro_use]
+mod diesel_impls;
 
 extern crate phf;
 

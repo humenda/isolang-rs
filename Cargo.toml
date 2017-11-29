@@ -23,10 +23,17 @@ phf = "0.7.21"
 optional = true
 version = "1.0"
 
+[dependencies.diesel]
+optional = true
+version = "0.16.0"
+
 [features]
 default = []
 serde_serialize = [
     "serde",
+]
+diesel_sql = [
+    "diesel",
 ]
 
 [dev-dependencies]
