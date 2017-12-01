@@ -23,11 +23,25 @@ phf = "0.7.21"
 optional = true
 version = "1.0"
 
+[dependencies.diesel]
+optional = true
+version = "0.99.0"
+features = ["postgres"]
+
 [features]
 default = []
 serde_serialize = [
     "serde",
 ]
+diesel_sql = [
+    "diesel",
+]
 
 [dev-dependencies]
 serde_json = "1.0"
+diesel_derives = "0.99.0"
+diesel_migrations = "0.99.0"
+
+[dev-dependencies.diesel]
+version = "0.99.0"
+features = ["postgres"]
