@@ -6,6 +6,7 @@ documentation = "https://docs.rs/isolang"
 keywords = [
     "iso",
     "language",
+    "language-code",
 ]
 license = "Apache-1.0"
 name = "isolang"
