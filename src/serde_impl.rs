@@ -19,11 +19,11 @@ impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
 
     fn visit_borrowed_str<E>(self, v: &'a str) -> Result<Self::Value, E>
             where E: serde::de::Error {
-        match Language::from_639_3(v) {
+        match Language::from_639_3(v).or_else(|| Language::from_639_1(v)) {
             Some(l) => Ok(l),
             None => Err(serde::de::Error::unknown_variant(
                 v,
-                &["Any valid ISO 639-1 Code."],
+                &["Any valid ISO 639-1 or 639-3 Code."],
             )),
         }
     }
