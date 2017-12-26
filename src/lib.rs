@@ -207,6 +207,7 @@ mod tests {
     fn test_serde() {
         assert!(serde_json::to_string(&Language::Deu).unwrap() == String::from("\"deu\""));
         assert!(serde_json::from_str::<Language>("\"deu\"").unwrap() == Language::Deu);
+        assert!(serde_json::from_str::<Language>("\"fr\"").unwrap() == Language::Fra);
 
         assert!(serde_json::from_str::<Language>("\"foo\"").is_err());
     }
