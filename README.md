@@ -27,7 +27,7 @@ Usage
 
 ```toml
 [dependencies]
-isolang = "0.2"
+isolang = "1.0"
 ```
 
 Example
@@ -38,6 +38,8 @@ use isolang::Language;
 
 assert_eq!(Language::from_639_1("de").unwrap().to_name(), "German");
 assert_eq!(Language::from_639_3("spa").unwrap().to_639_1(), Some("es"));
+// undefined language (ISO code und)
+assert_eq!(Language::default(), Language::Und);
 ```
 
 Serde support
@@ -49,7 +51,7 @@ add the following lines to your `Cargo.toml` (instead of the above code):
 ```toml
 [dependencies.isolang]
 features = ["serde_serialize"]
-version = "0.2"
+version = "1.0"
 ```
 
 Diesel support
@@ -62,5 +64,5 @@ following lines to your `Cargo.toml`.
 ```toml
 [dependencies.isolang]
 features = ["diesel_sql"]
-version = "0.2"
+version = "1.0"
 ```
