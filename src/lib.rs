@@ -169,6 +169,11 @@ impl Language {
     }
 }
 
+impl Default for Language {
+    fn default() -> Self {
+        Language::Und
+    }
+}
 
 #[cfg(test)]
 mod tests {
@@ -200,6 +205,11 @@ mod tests {
         let mut t = String::new();
         write!(t, "{:?}", Language::Eng).unwrap();
         assert!(String::from("eng") == t);
+    }
+
+    #[test]
+    fn test_default() {
+        assert_eq!(Language::default(), Language::Und);
     }
 
     #[test]
