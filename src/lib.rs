@@ -229,6 +229,12 @@ mod tests {
     }
 
     #[test]
+    fn test_iso639_3_to_autonym() {
+        assert_eq!(Language::from_639_3("bul").unwrap().to_autonym(), Some("български"));
+        assert_eq!(Language::from_639_3("fra").unwrap().to_autonym(), Some("français"));
+    }
+
+    #[test]
     fn test_default() {
         assert_eq!(Language::default(), Language::Und);
     }
