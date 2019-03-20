@@ -104,6 +104,27 @@ impl Language {
         }
     }
 
+    /// Get the autonym of this language
+    /// 
+    /// This returns the native language name (if there is one available).
+    /// The database for those names is found here https://github.com/bbqsrc/iso639-autonyms
+    /// and itself is a collection of several different datasets
+    /// 
+    /// # Examples
+    /// 
+    /// ```rust
+    /// use isolang::Language;
+    /// 
+    /// assert_eq!(Language::Bul.to_autonym(), Some("български"));
+    /// assert_eq!(Language::Fra.to_autonym(), Some("français"));
+    /// ```
+    pub fn to_autonym(&self) -> Option<&'static str> {
+        unsafe {
+            OVERVIEW[*self as usize].3
+                .map(|ref s| str::from_utf8_unchecked(*s))
+        }
+    }
+
     /// Create a Language instance rom a ISO 639-1 code.
     ///
     /// This will return a Language instance if the given string is a valid two-letter language
