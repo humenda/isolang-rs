@@ -6,6 +6,7 @@ use std::io::{BufRead, BufReader, BufWriter, Write};
 use std::path::Path;
 
 // Taken from http://www-01.sil.org/iso639-3/download.asp
+// Extended with native names of languages from https://github.com/bbqsrc/iso639-autonyms
 static ISO_TABLE_PATH: &'static str = "iso-639-3.tab";
 
 /// This contains (639-3, 639-1, English name, comment)
