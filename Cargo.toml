@@ -30,7 +30,9 @@ version = "0.99.0"
 features = ["postgres"]
 
 [features]
-default = []
+default = ["english_names"]
+english_names = []
+local_names = []
 serde_serialize = [
     "serde",
 ]

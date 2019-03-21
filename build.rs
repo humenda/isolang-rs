@@ -6,11 +6,16 @@ use std::io::{BufRead, BufReader, BufWriter, Write};
 use std::path::Path;
 
 // Taken from http://www-01.sil.org/iso639-3/download.asp
-// Extended with native names of languages from https://github.com/bbqsrc/iso639-autonyms
+// Extended with local names of languages from https://github.com/bbqsrc/iso639-autonyms
 static ISO_TABLE_PATH: &'static str = "iso-639-3.tab";
 
-/// This contains (639-3, 639-1, English name, comment)
-type LangCodes = Vec<(String, Option<String>, String, Option<String>, Option<String>)>;
+pub struct LanguageName {
+    english: String,
+    local: Option<String>,
+}
+
+/// This contains (639-3, 639-1, Name, comment)
+type LangCodes = Vec<(String, Option<String>, LanguageName, Option<String>)>;
 
 
 /// convert first character to upper case
@@ -42,33 +47,51 @@ fn read_iso_table() -> LangCodes {
             };
             // split language string into name and comment, if required
             match cols[6].contains("(") {
-                false => (cols[0].into(), two_letter, cols[6].into(), autonym, None),
+                false => (cols[0].into(), two_letter, LanguageName {
+                    english: cols[6].into(),
+                    local: autonym,
+                }, None),
                 true => match cols[6].split(" (").collect::<Vec<&str>>() {
-                    ref m if m.len() != 2 => (cols[0].into(), two_letter, cols[6].into(), autonym, None),
-                    m => (cols[0].into(), two_letter, m[0].into(), autonym, Some(m[1].into())),
+                    ref m if m.len() != 2 => (cols[0].into(), two_letter, LanguageName {
+                        english: cols[6].into(),
+                        local: autonym,
+                    }, None),
+                    m => (cols[0].into(), two_letter, LanguageName {
+                        english: m[0].into(), 
+                        local: autonym,
+                    }, Some(m[1].into())),
                 },
             }
         })
         .collect()
 }
 
-/// write static array with (639-3, 639-1, English word, autonym, comment) entries
+/// write static array with (639-3, 639-1, english name, comment) entries
 fn write_overview_table(file: &mut BufWriter<File>, codes: &LangCodes) {
-    writeln!(file, "static OVERVIEW: [([u8; 3], Option<&'static [u8; 2]>, \
-            &'static [u8], Option<&'static [u8]>, Option<&'static [u8]>); {}] = [", codes.len())
-        .unwrap();
+    if cfg!(feature = "local_names") {
+        writeln!(file, "static OVERVIEW: [([u8; 3], Option<&'static [u8; 2]>, \
+                Option<&'static [u8]>, Option<&'static [u8]>); {}] = [", codes.len())
+            .unwrap();
+    } else {
+        writeln!(file, "static OVERVIEW: [([u8; 3], Option<&'static [u8; 2]>, \
+                &'static [u8], Option<&'static [u8]>); {}] = [", codes.len())
+            .unwrap();
+    }
     for ref line in codes.iter() {
         write!(file, "    ({:?}, ", line.0.as_bytes()).unwrap();
         match line.1 {
             Some(ref val) => write!(file, "Some(&{:?}), ", val.as_bytes()).unwrap(),
             None => write!(file, "None, ").unwrap(),
         }
-        write!(file, "&{:?}, ", line.2.as_bytes()).unwrap();
+        if cfg!(feature = "local_names") {
+            match line.2.local {
+                Some(ref val) => write!(file, "Some(&{:?}), ", val.as_bytes()).unwrap(),
+                None => write!(file, "None, ").unwrap(),
+            }
+        } else {
+            write!(file, "&{:?}, ", line.2.english.as_bytes()).unwrap();
+        }
         match line.3 {
-            Some(ref autonym) => write!(file, "Some(&{:?}), ", autonym.as_bytes()).unwrap(),
-            None => write!(file, "None, ").unwrap(),
-        };
-        match line.4 {
             Some(ref comment) => writeln!(file, "Some(&{:?})),", comment.as_bytes()).unwrap(),
             None => writeln!(file, "None),").unwrap(),
         };
@@ -82,7 +105,7 @@ fn write_two_letter_to_enum(file: &mut BufWriter<File>, codes: &LangCodes) {
     write!(file, "static TWO_TO_THREE: phf::Map<&'static str, Language> = ")
         .unwrap();
     let mut map = phf_codegen::Map::new();
-    for &(ref id, ref two_letter, _, _, _) in codes.iter() {
+    for &(ref id, ref two_letter, _, _) in codes.iter() {
         if let &Some(ref two_letter) = two_letter {
             map.entry(two_letter.clone(), &format!("Language::{}", title(id)));
         }
@@ -96,7 +119,7 @@ fn write_three_letter_to_enum(file: &mut BufWriter<File>, codes: &LangCodes) {
     write!(file, "static THREE_TO_THREE: phf::Map<&'static str, Language> = ")
         .unwrap();
     let mut map = phf_codegen::Map::new();
-    for &(ref id, _, _, _, _) in codes.iter() {
+    for &(ref id, _, _, _) in codes.iter() {
         map.entry(id.clone(), &format!("Language::{}", title(id)));
     }
     map.build(file).unwrap();
@@ -120,7 +143,7 @@ fn main() {
         // write enum with 639-3 codes (num is the index into the overview table)
         writeln!(&mut file, "#[derive(Clone, Copy, Hash, Eq, PartialEq)]").unwrap();
         writeln!(&mut file, "pub enum Language {{").unwrap();
-        for (num, &(ref id, _, _, _, _)) in codes.iter().enumerate() {
+        for (num, &(ref id, _, _, _)) in codes.iter().enumerate() {
             writeln!(&mut file, "    #[doc(hidden)]").unwrap();
             writeln!(&mut file, "    {} = {},", title(id), num).unwrap();
         }
