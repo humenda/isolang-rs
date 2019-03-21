@@ -85,7 +85,7 @@ impl Language {
         }
     }
 
-    #[cfg(all(feature = "english_names", not(feature = "local_names")))]
+    #[cfg(not(feature = "local_names"))]
     /// Get the English name of this language.
     ///
     /// This returns the English name of the language, as defined in the ISO 639 standard. It does
@@ -234,8 +234,8 @@ mod tests {
         assert!(String::from("eng") == t);
     }
 
-    #[cfg(feature = "local_names")]
     #[test]
+    #[cfg(feature = "local_names")]
     fn test_iso639_3_to_autonym() {
         assert_eq!(Language::from_639_3("bul").unwrap().to_name(), Some("български"));
         assert_eq!(Language::from_639_3("fra").unwrap().to_name(), Some("français"));
@@ -310,7 +310,7 @@ impl std::fmt::Debug for Language {
     }
 }
 
-#[cfg(all(feature = "english_names", not(feature = "local_names")))]
+#[cfg(not(feature = "local_names"))]
 impl std::fmt::Display for Language {
     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
         write!(f, "{}", self.to_name())
