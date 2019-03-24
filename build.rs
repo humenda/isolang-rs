@@ -9,13 +9,13 @@ use std::path::Path;
 // Extended with local names of languages from https://github.com/bbqsrc/iso639-autonyms
 static ISO_TABLE_PATH: &'static str = "iso-639-3.tab";
 
-pub struct LanguageName {
+pub struct Language {
     english: String,
     local: Option<String>,
 }
 
 /// This contains (639-3, 639-1, Name, comment)
-type LangCodes = Vec<(String, Option<String>, LanguageName, Option<String>)>;
+type LangCodes = Vec<(String, Option<String>, Language, Option<String>)>;
 
 
 /// convert first character to upper case
@@ -47,16 +47,16 @@ fn read_iso_table() -> LangCodes {
             };
             // split language string into name and comment, if required
             match cols[6].contains("(") {
-                false => (cols[0].into(), two_letter, LanguageName {
+                false => (cols[0].into(), two_letter, Language {
                     english: cols[6].into(),
                     local: autonym,
                 }, None),
                 true => match cols[6].split(" (").collect::<Vec<&str>>() {
-                    ref m if m.len() != 2 => (cols[0].into(), two_letter, LanguageName {
+                    ref m if m.len() != 2 => (cols[0].into(), two_letter, Language {
                         english: cols[6].into(),
                         local: autonym,
                     }, None),
-                    m => (cols[0].into(), two_letter, LanguageName {
+                    m => (cols[0].into(), two_letter, Language {
                         english: m[0].into(), 
                         local: autonym,
                     }, Some(m[1].into())),
