@@ -3,8 +3,12 @@
 //! When dealing with different language inputs and APIs, different standards are used to identify
 //! a language. Converting between these in an automated way can be tedious. This crate provides an
 //! enum which supports conversion from 639-1 and 639-3 and also into these formats, as well as
-//! into names. If compiled with the feature local_names the native name for the language (its autonym) 
-//! is returned, if not by default the English name is returned.
+//! into their names. The English name can be retrieved using
+//! [`Language::to_name()`](enum.Language.html#method.to_name) if compiled with the `english_names`
+//! feature.
+//! The autonyms (local names) can be retrieved using
+//! [`to_autonym()`](enum.Language.html#method.to_autonym) if compiled with the `local_names`
+//! feature.
 //!
 //! The language table is compiled into the library. While this increases the binary size, it means
 //! that no additional time is wasted on program startup or on table access for allocating or
@@ -89,7 +93,8 @@ impl Language {
     /// Get the English name of this language.
     ///
     /// This returns the English name of the language, as defined in the ISO 639 standard. It does
-    /// not include additional comments, e.g. classification of a macrolanguage, etc.
+    /// not include additional comments, e.g. classification of a macrolanguage, etc. It is
+    /// available if compiled with the `english_names` feature.
     ///
     /// # Examples
     ///
@@ -112,7 +117,8 @@ impl Language {
     #[cfg(feature = "local_names")]
     /// Get the autonym of this language
     /// 
-    /// This returns the native language name (if there is one available).
+    /// This returns the native language name (if there is one available). This method is available
+    /// if compiled with the `local_names` feature.
     /// The database for those names is found here https://github.com/bbqsrc/iso639-autonyms
     /// and it itself is a collection of several different datasets
     /// 
@@ -199,6 +205,34 @@ impl Language {
 impl Default for Language {
     fn default() -> Self {
         Language::Und
+    }
+}
+
+impl std::fmt::Debug for Language {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "{}", self.to_639_3())
+    }
+}
+
+impl std::fmt::Display for Language {
+    #[cfg(feature = "local_names")]
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        let autonym = match self.to_autonym() {
+            Some(v) => v,
+            None => "missing autonym",
+        };
+    
+        write!(f, "{} ({})", self.to_name(), autonym)
+    }
+
+    #[cfg(all(not(feature = "local_names"), feature = "english_names"))]
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "{}", self.to_name())
+    }
+
+    #[cfg(all(not(feature = "local_names"), not(feature = "english_names")))]
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "{}", self.to_639_3())
     }
 }
 
@@ -304,29 +338,5 @@ mod tests {
                 assert!(res.language == *l)
             }
         }
-    }
-
-}
-
-impl std::fmt::Debug for Language {
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-        write!(f, "{}", self.to_639_3())
-    }
-}
-
-impl std::fmt::Display for Language {
-    #[cfg(feature = "local_names")]
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-        let autonym = match self.to_autonym() {
-            Some(v) => v,
-            None => "missing autonym",
-        };
-    
-        write!(f, "{} ({})", self.to_name(), autonym)
-    }
-
-    #[cfg(not(feature = "local_names"))]
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-        write!(f, "{}", self.to_name())
     }
 }
