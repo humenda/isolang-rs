@@ -77,21 +77,21 @@ fn write_overview_table(file: &mut BufWriter<File>, codes: &LangCodes) {
                 &'static [u8], Option<&'static [u8]>); {}] = [", codes.len())
             .unwrap();
     }
-    for ref line in codes.iter() {
-        write!(file, "    ({:?}, ", line.0.as_bytes()).unwrap();
-        match line.1 {
+    for ref language in codes.iter() {
+        write!(file, "    ({:?}, ", language.0.as_bytes()).unwrap();
+        match language.1 {
             Some(ref val) => write!(file, "Some(&{:?}), ", val.as_bytes()).unwrap(),
             None => write!(file, "None, ").unwrap(),
         }
         if cfg!(feature = "local_names") {
-            match line.2.local {
+            match language.2.local {
                 Some(ref val) => write!(file, "Some(&{:?}), ", val.as_bytes()).unwrap(),
                 None => write!(file, "None, ").unwrap(),
             }
         } else {
-            write!(file, "&{:?}, ", line.2.english.as_bytes()).unwrap();
+            write!(file, "&{:?}, ", language.2.english.as_bytes()).unwrap();
         }
-        match line.3 {
+        match language.3 {
             Some(ref comment) => writeln!(file, "Some(&{:?})),", comment.as_bytes()).unwrap(),
             None => writeln!(file, "None),").unwrap(),
         };
