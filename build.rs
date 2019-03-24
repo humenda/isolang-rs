@@ -70,7 +70,7 @@ fn read_iso_table() -> LangCodes {
 fn write_overview_table(file: &mut BufWriter<File>, codes: &LangCodes) {
     if cfg!(feature = "local_names") {
         writeln!(file, "static OVERVIEW: [([u8; 3], Option<&'static [u8; 2]>, \
-                Option<&'static [u8]>, Option<&'static [u8]>); {}] = [", codes.len())
+                &'static [u8], Option<&'static [u8]>, Option<&'static [u8]>); {}] = [", codes.len())
             .unwrap();
     } else {
         writeln!(file, "static OVERVIEW: [([u8; 3], Option<&'static [u8; 2]>, \
@@ -83,14 +83,16 @@ fn write_overview_table(file: &mut BufWriter<File>, codes: &LangCodes) {
             Some(ref val) => write!(file, "Some(&{:?}), ", val.as_bytes()).unwrap(),
             None => write!(file, "None, ").unwrap(),
         }
+
+        write!(file, "&{:?}, ", language.2.english.as_bytes()).unwrap();
+        
         if cfg!(feature = "local_names") {
             match language.2.local {
                 Some(ref val) => write!(file, "Some(&{:?}), ", val.as_bytes()).unwrap(),
                 None => write!(file, "None, ").unwrap(),
             }
-        } else {
-            write!(file, "&{:?}, ", language.2.english.as_bytes()).unwrap();
         }
+        
         match language.3 {
             Some(ref comment) => writeln!(file, "Some(&{:?})),", comment.as_bytes()).unwrap(),
             None => writeln!(file, "None),").unwrap(),

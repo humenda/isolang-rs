@@ -14,10 +14,10 @@
 //!
 //! ```
 //! use isolang::Language;
-//! #[cfg(not(feature = "local_names"))]
+//! #[cfg(feature = "english_names")]
 //! assert_eq!(Language::from_639_1("de").unwrap().to_name(), "German");
 //! #[cfg(feature = "local_names")]
-//! assert_eq!(Language::from_639_1("de").unwrap().to_name(), Some("Deutsch"));
+//! assert_eq!(Language::from_639_1("de").unwrap().to_autonym(), Some("Deutsch"));
 //! 
 //! assert_eq!(Language::from_639_3("spa").unwrap().to_639_1(), Some("es"));
 //! ```
@@ -85,7 +85,7 @@ impl Language {
         }
     }
 
-    #[cfg(not(feature = "local_names"))]
+    #[cfg(feature = "english_names")]
     /// Get the English name of this language.
     ///
     /// This returns the English name of the language, as defined in the ISO 639 standard. It does
@@ -121,12 +121,12 @@ impl Language {
     /// ```rust
     /// use isolang::Language;
     /// 
-    /// assert_eq!(Language::Bul.to_name(), Some("български"));
-    /// assert_eq!(Language::Fra.to_name(), Some("français"));
+    /// assert_eq!(Language::Bul.to_autonym(), Some("български"));
+    /// assert_eq!(Language::Fra.to_autonym(), Some("français"));
     /// ```
-    pub fn to_name(&self) -> Option<&'static str> {
+    pub fn to_autonym(&self) -> Option<&'static str> {
         unsafe {
-            OVERVIEW[*self as usize].2
+            OVERVIEW[*self as usize].3
                 .map(|ref s| str::from_utf8_unchecked(*s))
         }
     }
@@ -227,7 +227,11 @@ mod tests {
     fn test_std_fmt() {
         let mut t = String::new();
         write!(t, "{}", Language::Eng).unwrap();
-        assert!("English" == t);
+        if cfg!(feature = "local_names") {
+            assert!("English (English)" == t);
+        } else {
+            assert!("English" == t);
+        }
 
         let mut t = String::new();
         write!(t, "{:?}", Language::Eng).unwrap();
@@ -237,8 +241,8 @@ mod tests {
     #[test]
     #[cfg(feature = "local_names")]
     fn test_iso639_3_to_autonym() {
-        assert_eq!(Language::from_639_3("bul").unwrap().to_name(), Some("български"));
-        assert_eq!(Language::from_639_3("fra").unwrap().to_name(), Some("français"));
+        assert_eq!(Language::from_639_3("bul").unwrap().to_autonym(), Some("български"));
+        assert_eq!(Language::from_639_3("fra").unwrap().to_autonym(), Some("français"));
     }
 
     #[test]
@@ -310,20 +314,19 @@ impl std::fmt::Debug for Language {
     }
 }
 
-#[cfg(not(feature = "local_names"))]
 impl std::fmt::Display for Language {
+    #[cfg(feature = "local_names")]
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        let autonym = match self.to_autonym() {
+            Some(v) => v,
+            None => "missing autonym",
+        };
+    
+        write!(f, "{} ({})", self.to_name(), autonym)
+    }
+
+    #[cfg(not(feature = "local_names"))]
     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
         write!(f, "{}", self.to_name())
-    }
-}
-
-#[cfg(feature = "local_names")]
-impl std::fmt::Display for Language {
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-        let display_name = match self.to_name() {
-            Some(v) => v,
-            None => "",
-        };
-        write!(f, "{}", display_name)
     }
 }
