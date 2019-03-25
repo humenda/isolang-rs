@@ -4,10 +4,13 @@ use std::env;
 use std::fs::File;
 use std::io::{BufRead, BufReader, BufWriter, Write};
 use std::path::Path;
+use std::collections::HashMap;
 
 // Taken from http://www-01.sil.org/iso639-3/download.asp
-// Extended with local names of languages from https://github.com/bbqsrc/iso639-autonyms
 static ISO_TABLE_PATH: &'static str = "iso-639-3.tab";
+
+// Local names of languages from https://github.com/bbqsrc/iso639-autonyms
+static AUTONYMS_TABLE_PATH: &'static str = "iso639-autonyms.tsv";
 
 pub struct Language {
     english: String,
@@ -25,10 +28,37 @@ fn title(s: &str) -> String {
     v.into_iter().collect::<String>()
 }
 
+// parse autonym table
+fn read_autonyms_table() -> HashMap<String, Option<String>> {
+    let r = BufReader::new(File::open(AUTONYMS_TABLE_PATH).expect(r"\
+        Couldn't read autonyms table tsv. Make sure that this operation is run from \
+        the crate source root and that this file actually exists.",
+    ));
+    
+    r.lines()
+        .skip(1)
+        .map(|line| {
+            let line = line.expect("Couldn't read from autonyms table, please \
+                    check that the file exists and is readable");
+
+            let cols = line.split("\t").collect::<Vec<&str>>();
+            let three_letter: String = cols[0].into();
+            let autonym: Option<String> = match cols[3].len() {
+                0 => None,
+                _ => Some(cols[3].into()),
+            };
+
+            (three_letter, autonym)
+        })
+        .collect()
+}
+
 /// parse ISO 6639-(3,1) table
 fn read_iso_table() -> LangCodes {
+    let autonyms_table = read_autonyms_table();
+
     let r = BufReader::new(File::open(ISO_TABLE_PATH).expect(r"\
-        Couldn't read iso-639-3.tab. Make sure that his operation is run from \
+        Couldn't read iso-639-3.tab. Make sure that this operation is run from \
         the crate source root and that this file actually exists.",
     ));
     r.lines()
@@ -37,28 +67,26 @@ fn read_iso_table() -> LangCodes {
             let line = line.expect("Couldn't read from ISO 639 table, please \
                     check that the file exists and is readable");
             let cols = line.split("\t").collect::<Vec<&str>>();
+            let three_letter: String = cols[0].into();
             let two_letter: Option<String> = match cols[3].len() {
                 2 => Some(cols[3].into()),
                 _ => None,
             };
-            let autonym: Option<String> = match cols[7].len() {
-                0 => None,
-                _ => Some(cols[7].into()),
-            };
+            let autonym = &autonyms_table[&three_letter];
             // split language string into name and comment, if required
             match cols[6].contains("(") {
-                false => (cols[0].into(), two_letter, Language {
+                false => (three_letter, two_letter, Language {
                     english: cols[6].into(),
-                    local: autonym,
+                    local: autonym.to_owned(),
                 }, None),
                 true => match cols[6].split(" (").collect::<Vec<&str>>() {
-                    ref m if m.len() != 2 => (cols[0].into(), two_letter, Language {
+                    ref m if m.len() != 2 => (three_letter, two_letter, Language {
                         english: cols[6].into(),
-                        local: autonym,
+                        local: autonym.to_owned(),
                     }, None),
-                    m => (cols[0].into(), two_letter, Language {
+                    m => (three_letter, two_letter, Language {
                         english: m[0].into(), 
-                        local: autonym,
+                        local: autonym.to_owned(),
                     }, Some(m[1].into())),
                 },
             }
