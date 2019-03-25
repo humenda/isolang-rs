@@ -7,6 +7,7 @@ keywords = [
     "iso",
     "language",
     "language-code",
+    "autonym"
 ]
 license = "Apache-1.0"
 name = "isolang"
@@ -15,10 +16,10 @@ repository = "https://github.com/humenda/isolang-rs"
 version = "1.0.0"
 
 [build-dependencies]
-phf_codegen = "0.7.21"
+phf_codegen = "0.7.24"
 
 [dependencies]
-phf = "0.7.21"
+phf = "0.7.24"
 
 [dependencies.serde]
 optional = true

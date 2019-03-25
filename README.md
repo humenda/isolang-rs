@@ -9,13 +9,12 @@ Introduction
 When dealing with different language inputs and APIs, different standards are used to identify
 a language. Converting between these in an automated way can be tedious. This crate provides an
 enum which supports conversion from 639-1 and 639-3 and also into these formats, as well as
-into English names.
+into English names or autonyms (local names).
 
-This crate contains the ISO 639 table in statically embedded tables. This is
-possibly large, but can outweight the benefits, when handling different language
-code formats, e.g. when handling API data from Wikipedia and FreeDict.
-
-Conditional compilation to reduce code size is not supported at the moment.
+This crate contains the ISO 639 table in statically embedded tables. This
+increases binary size, but allows for very efficient look-up if performance
+matters. If size is a concern, both and the English names and local names can be
+enabled or disabled individually.
 
 This crate is licensed under the Apache 2.0 license, please see LICENSE.md for
 the details.
