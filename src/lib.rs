@@ -339,4 +339,11 @@ mod tests {
             }
         }
     }
+
+    #[test]
+    fn test_ordering() {
+        assert!(Language::Deu < Language::Fra);
+        let fra = Language::Fra;
+        assert!(fra <= Language::Fra);
+    }
 }
