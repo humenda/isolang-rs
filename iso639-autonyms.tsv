@@ -1854,7 +1854,7 @@ dth		Adithinngithigh		iso639-3
 dti		Ana Tinga Dogon		iso639-3
 dtk		Tene Kan Dogon		iso639-3
 dtm		Tomo Kan Dogon		iso639-3
-dtn		Daatsʼíin		iso639-3
+dtn		Daatsʼíin		iso639-3
 dto		Tommo So Dogon		iso639-3
 dtp		Central Dusun	Kadazan Dusun	cldr, ethnologue
 dtr		Lotud		iso639-3
@@ -3602,7 +3602,7 @@ lcp		Western Lawa		iso639-3
 lcq		Luhu		iso639-3
 lcs		Lisabata-Nuniali		iso639-3
 lda		Kla-Dan		iso639-3
-ldb		Dũya		iso639-3
+ldb		Dũya		iso639-3
 ldd		Luri		iso639-3
 ldg		Lenyima		iso639-3
 ldh		Lamja-Dengsa-Tola		iso639-3
@@ -4210,7 +4210,7 @@ mnn		Southern Mnong		iso639-3
 mnp		Min Bei Chinese		iso639-3
 mnq		Minriq		iso639-3
 mnr		Mono (USA)		iso639-3
-mns		Mansi		iso639-3
+mns		Mansi	Ма̄ньщи	iso639-3, github
 mnu		Mer		iso639-3
 mnv		Rennell-Bellona		iso639-3
 mnw		Mon		iso639-3
@@ -4464,7 +4464,7 @@ myb		Mbay		iso639-3
 myc		Mayeka		iso639-3
 myd		Maramba		iso639-3
 mye		Myene		cldr
-myf		Bambassi	Màwés Aasʼè	iso639-3, ethnologue
+myf		Bambassi	Màwés Aasʼè	iso639-3, ethnologue
 myg		Manta		iso639-3
 myh		Makah		iso639-3
 myi		Mina (India)		iso639-3
@@ -5943,7 +5943,7 @@ slw		Sialum		iso639-3
 slx		Salampasu		iso639-3
 sly		Selayar		cldr
 slz		Ma'ya		iso639-3
-sma		Southern Sami	Åarjelsaemien gïele	cldr
+sma		Southern Sami	åarjelsaemien gïele	cldr, github
 smb		Simbari		iso639-3
 smc		Som		iso639-3
 smd		Sama		iso639-3
@@ -5997,7 +5997,7 @@ sog		Sogdien		cldr
 soh		Aka		iso639-3
 soi		Sonha		iso639-3
 soj		Soi		iso639-3
-sok		Sokoro		iso639-3
+sok		Sokoro	soŋoroŋ	iso639-3, github
 sol		Solos		iso639-3
 soo		Songo		iso639-3
 sop		Songe		iso639-3
