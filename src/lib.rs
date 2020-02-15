@@ -293,7 +293,7 @@ mod tests {
     }
 
     #[cfg(feature = "diesel")]
-    mod diesel {
+    mod diesel_test {
         use ::*;
         use diesel::prelude::*;
         use diesel::pg::PgConnection;
