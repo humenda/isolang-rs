@@ -16,7 +16,7 @@ repository = "https://github.com/humenda/isolang-rs"
 version = "1.0.0"
 
 [build-dependencies]
-phf_codegen = "0.7.24"
+phf_codegen = "0.8"
 
 [dependencies]
 phf = "0.8.0"

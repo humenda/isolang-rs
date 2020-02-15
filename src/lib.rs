@@ -194,11 +194,9 @@ impl Language {
         if locale.len() < 3 {
             return None;
         }
-        let mut split = locale.split('_');
-        match split.next() {
-            Some(letters) => Language::from_639_1(letters),
-            None => None,
-        }
+        // use first bit of locale (before the _) to detect the language
+        locale.split('_').next()
+                .and_then(|langcode| Language::from_639_1(langcode))
     }
 }
 
@@ -253,8 +251,8 @@ mod tests {
 
     #[test]
     fn test_valid_locales_are_correctly_decoded() {
-        assert!(Language::from_locale("de_DE.UTF-8").unwrap() == Language::Deu);
-        assert!(Language::from_locale("en_GB.UTF-8").unwrap() == Language::Eng);
+        assert_eq!(Language::from_locale("de_DE.UTF-8"), Some(Language::Deu));
+        assert_eq!(Language::from_locale("en_GB.UTF-8"), Some(Language::Eng));
     }
 
     #[test]

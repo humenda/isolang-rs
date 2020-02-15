@@ -63,9 +63,8 @@ fn read_iso_table() -> LangCodes {
     ));
     r.lines()
         .skip(1)
+        .filter_map(|line| line.ok())
         .map(|line| {
-            let line = line.expect("Couldn't read from ISO 639 table, please \
-                    check that the file exists and is readable");
             let cols = line.split("\t").collect::<Vec<&str>>();
             let three_letter: String = cols[0].into();
             let two_letter: Option<String> = match cols[3].len() {
@@ -74,12 +73,13 @@ fn read_iso_table() -> LangCodes {
             };
             let autonym = &autonyms_table[&three_letter];
             // split language string into name and comment, if required
-            match cols[6].contains("(") {
-                false => (three_letter, two_letter, Language {
+            if !cols[6].contains("(") {
+                (three_letter, two_letter, Language {
                     english: cols[6].into(),
                     local: autonym.to_owned(),
-                }, None),
-                true => match cols[6].split(" (").collect::<Vec<&str>>() {
+                }, None)
+            } else {
+                match cols[6].split(" (").collect::<Vec<&str>>() {
                     ref m if m.len() != 2 => (three_letter, two_letter, Language {
                         english: cols[6].into(),
                         local: autonym.to_owned(),
@@ -88,7 +88,7 @@ fn read_iso_table() -> LangCodes {
                         english: m[0].into(), 
                         local: autonym.to_owned(),
                     }, Some(m[1].into())),
-                },
+                }
             }
         })
         .collect()
@@ -137,11 +137,10 @@ fn write_two_letter_to_enum(file: &mut BufWriter<File>, codes: &LangCodes) {
     let mut map = phf_codegen::Map::new();
     for &(ref id, ref two_letter, _, _) in codes.iter() {
         if let &Some(ref two_letter) = two_letter {
-            map.entry(two_letter.clone(), &format!("Language::{}", title(id)));
+            map.entry(two_letter.as_str(), &format!("Language::{}", title(id)));
         }
     }
-    map.build(file).unwrap();
-    writeln!(file, ";").unwrap();
+    writeln!(file, "{};", map.build()).unwrap();
 }
 
 /// Write a mapping of codes from 639-3 -> Language::`639-3`
@@ -150,10 +149,9 @@ fn write_three_letter_to_enum(file: &mut BufWriter<File>, codes: &LangCodes) {
         .unwrap();
     let mut map = phf_codegen::Map::new();
     for &(ref id, _, _, _) in codes.iter() {
-        map.entry(id.clone(), &format!("Language::{}", title(id)));
+        map.entry(id.as_str(), &format!("Language::{}", title(id)));
     }
-    map.build(file).unwrap();
-    writeln!(file, ";").unwrap();
+    writeln!(file, "{};", map.build()).unwrap();
 }
 
 
