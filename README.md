@@ -52,16 +52,3 @@ add the following lines to your `Cargo.toml` (instead of the above code):
 features = ["serde_serialize"]
 version = "1.0"
 ```
-
-Diesel support
--------------
-
-This crate also has experimental support for diesel. You can use the `Language`
-enum in `Queryable` and `Insertable` structs. To enable this please add the
-following lines to your `Cargo.toml`.
-
-```toml
-[dependencies.isolang]
-features = ["diesel_sql"]
-version = "1.0"
-```
