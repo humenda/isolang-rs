@@ -1,4 +1,4 @@
-use ::*;
+use crate::*;
 
 impl serde::ser::Serialize for Language {
     fn serialize<S>(&self, s: S) -> Result<S::Ok, S::Error>
