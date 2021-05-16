@@ -22,7 +22,7 @@
 //! assert_eq!(Language::from_639_1("de").unwrap().to_name(), "German");
 //! #[cfg(feature = "local_names")]
 //! assert_eq!(Language::from_639_1("de").unwrap().to_autonym(), Some("Deutsch"));
-//! 
+//!
 //! assert_eq!(Language::from_639_3("spa").unwrap().to_639_1(), Some("es"));
 //! ```
 
@@ -71,7 +71,8 @@ impl Language {
     pub fn to_639_1(&self) -> Option<&'static str> {
         unsafe {
             // Is safe, see `to_639_3()` for more details
-            OVERVIEW[*self as usize].1
+            OVERVIEW[*self as usize]
+                .1
                 .map(|ref s| str::from_utf8_unchecked(*s))
         }
     }
@@ -103,23 +104,24 @@ impl Language {
 
     #[cfg(feature = "local_names")]
     /// Get the autonym of this language
-    /// 
+    ///
     /// This returns the native language name (if there is one available). This method is available
     /// if compiled with the `local_names` feature.
     /// The database for those names is found here https://github.com/bbqsrc/iso639-autonyms
     /// and it itself is a collection of several different datasets
-    /// 
+    ///
     /// # Examples
-    /// 
+    ///
     /// ```rust
     /// use isolang::Language;
-    /// 
+    ///
     /// assert_eq!(Language::Bul.to_autonym(), Some("български"));
     /// assert_eq!(Language::Fra.to_autonym(), Some("français"));
     /// ```
     pub fn to_autonym(&self) -> Option<&'static str> {
         unsafe {
-            OVERVIEW[*self as usize].3
+            OVERVIEW[*self as usize]
+                .3
                 .map(|ref s| str::from_utf8_unchecked(*s))
         }
     }
@@ -182,8 +184,10 @@ impl Language {
             return None;
         }
         // use first bit of locale (before the _) to detect the language
-        locale.split('_').next()
-                .and_then(|langcode| Language::from_639_1(langcode))
+        locale
+            .split('_')
+            .next()
+            .and_then(|langcode| Language::from_639_1(langcode))
     }
 }
 
@@ -206,7 +210,7 @@ impl std::fmt::Display for Language {
             Some(v) => v,
             None => "missing autonym",
         };
-    
+
         write!(f, "{} ({})", self.to_name(), autonym)
     }
 
@@ -260,8 +264,14 @@ mod tests {
     #[test]
     #[cfg(feature = "local_names")]
     fn test_iso639_3_to_autonym() {
-        assert_eq!(Language::from_639_3("bul").unwrap().to_autonym(), Some("български"));
-        assert_eq!(Language::from_639_3("fra").unwrap().to_autonym(), Some("français"));
+        assert_eq!(
+            Language::from_639_3("bul").unwrap().to_autonym(),
+            Some("български")
+        );
+        assert_eq!(
+            Language::from_639_3("fra").unwrap().to_autonym(),
+            Some("français")
+        );
     }
 
     #[test]
