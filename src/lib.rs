@@ -27,17 +27,13 @@
 //! ```
 
 #[cfg(feature = "serde_serialize")]
-extern crate serde;
-
-#[cfg(feature = "serde_serialize")]
-mod serde_impl;
-
-extern crate phf;
+use serde::{Serialize, Deserialize};
 
 use std::str;
 
 include!(concat!(env!("OUT_DIR"), "/isotable.rs"));
 
+#[cfg_attr(feature = "serde_serialize", derive(Serialize, Deserialize))]
 impl Language {
     /// Create string representation of this Language as a ISO 639-3 code.
     ///
