@@ -26,14 +26,10 @@
 //! assert_eq!(Language::from_639_3("spa").unwrap().to_639_1(), Some("es"));
 //! ```
 
-#[cfg(feature = "serde_serialize")]
-use serde::{Serialize, Deserialize};
-
 use std::str;
 
 include!(concat!(env!("OUT_DIR"), "/isotable.rs"));
 
-#[cfg_attr(feature = "serde_serialize", derive(Serialize, Deserialize))]
 impl Language {
     /// Create string representation of this Language as a ISO 639-3 code.
     ///

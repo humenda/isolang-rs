@@ -205,7 +205,8 @@ fn main() {
         // write enum with 639-3 codes (num is the index into the overview table)
         writeln!(
             &mut file,
-            "#[derive(Clone, Copy, Hash, Eq, PartialEq, PartialOrd, Ord)]"
+            "#[derive(Clone, Copy, Hash, Eq, PartialEq, PartialOrd, Ord)]
+            #[cfg_attr(feature = \"serde_serialize\", derive(serde::Serialize, serde::Deserialize))]"
         )
         .unwrap();
         writeln!(&mut file, "pub enum Language {{").unwrap();
