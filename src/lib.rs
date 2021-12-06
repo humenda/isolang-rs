@@ -26,10 +26,7 @@
 //! assert_eq!(Language::from_639_3("spa").unwrap().to_639_1(), Some("es"));
 //! ```
 
-#[cfg(feature = "serde_serialize")]
-extern crate serde;
-
-#[cfg(feature = "serde_serialize")]
+#[cfg(feature = "serde")]
 mod serde_impl;
 
 extern crate phf;
@@ -228,7 +225,7 @@ impl std::fmt::Display for Language {
 #[cfg(test)]
 mod tests {
     use super::*;
-    #[cfg(feature = "serde_serialize")]
+    #[cfg(feature = "serde")]
     extern crate serde_json;
     use std::fmt::Write;
 
@@ -280,7 +277,7 @@ mod tests {
     }
 
     #[test]
-    #[cfg(feature = "serde_serialize")]
+    #[cfg(feature = "serde")]
     fn test_serde() {
         assert!(serde_json::to_string(&Language::Deu).unwrap() == String::from("\"deu\""));
         assert!(serde_json::from_str::<Language>("\"deu\"").unwrap() == Language::Deu);

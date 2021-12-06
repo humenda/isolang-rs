@@ -51,6 +51,6 @@ add the following lines to your `Cargo.toml` (instead of the above code):
 
 ```toml
 [dependencies.isolang]
-features = ["serde_serialize"]
+features = ["serde"]
 version = "1.0"
 ```
