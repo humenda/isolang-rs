@@ -31,9 +31,6 @@ version = "1.0"
 default = ["english_names"]
 english_names = []
 local_names = []
-serde_serialize = [
-    "serde",
-]
 
 [dev-dependencies]
 serde_json = "1.0"
