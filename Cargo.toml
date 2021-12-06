@@ -17,10 +17,10 @@ version = "2.0.0"
 edition = "2018"
 
 [build-dependencies]
-phf_codegen = "0.8"
+phf_codegen = "0.10"
 
 [dependencies]
-phf = "0.8.0"
+phf = "0.10.0"
 
 [dependencies.serde]
 optional = true
