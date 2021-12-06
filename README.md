@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/humenda/isolang-rs.svg?branch=master)](https://travis-ci.org/humenda/isolang-rs)
 [![Crates.io](https://img.shields.io/crates/v/isolang)](https://crates.io/crates/isolang)
 [![Documentation](https://img.shields.io/docsrs/isolang)](https://docs.rs/isolang)
-[![Licence](LICENCE.md)
+[![Licence: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENCE.md)
 
 Introduction
 ------------
