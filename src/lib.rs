@@ -73,7 +73,7 @@ impl Language {
             // Is safe, see `to_639_3()` for more details
             OVERVIEW[*self as usize]
                 .1
-                .map(|ref s| str::from_utf8_unchecked(*s))
+                .map(|s| str::from_utf8_unchecked(s))
         }
     }
 
@@ -175,19 +175,14 @@ impl Language {
     /// ```
     /// use isolang::Language;
     ///
-    /// fn main() {
-    ///     assert!(Language::from_locale("de_DE.UTF-8") == Some(Language::Deu));
-    /// }
+    /// assert!(Language::from_locale("de_DE.UTF-8") == Some(Language::Deu));
     /// ```
     pub fn from_locale(locale: &str) -> Option<Language> {
         if locale.len() < 3 {
             return None;
         }
         // use first bit of locale (before the _) to detect the language
-        locale
-            .split('_')
-            .next()
-            .and_then(|langcode| Language::from_639_1(langcode))
+        locale.split('_').next().and_then(Language::from_639_1)
     }
 }
 

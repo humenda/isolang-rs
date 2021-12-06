@@ -120,7 +120,7 @@ fn write_overview_table(file: &mut BufWriter<File>, codes: &[LangCode]) {
     if cfg!(feature = "local_names") {
         writeln!(
             file,
-            "static OVERVIEW: [([u8; 3], Option<&[u8; 2]>, \
+            "#[allow(clippy::type_complexity)]\nstatic OVERVIEW: [([u8; 3], Option<&[u8; 2]>, \
                 &[u8], Option<&[u8]>, Option<&[u8]>); {}] = [",
             codes.len()
         )
@@ -128,13 +128,13 @@ fn write_overview_table(file: &mut BufWriter<File>, codes: &[LangCode]) {
     } else {
         writeln!(
             file,
-            "static OVERVIEW: [([u8; 3], Option<&[u8; 2]>, \
+            "#[allow(clippy::type_complexity)]\nstatic OVERVIEW: [([u8; 3], Option<&[u8; 2]>, \
                 &[u8], Option<&[u8]>); {}] = [",
             codes.len()
         )
         .unwrap();
     }
-    for ref language in codes.iter() {
+    for language in codes {
         write!(file, "    ({:?}, ", language.0.as_bytes()).unwrap();
         match language.1 {
             Some(ref val) => write!(file, "Some(&{:?}), ", val.as_bytes()).unwrap(),
