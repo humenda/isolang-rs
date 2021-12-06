@@ -9,7 +9,6 @@ impl serde::ser::Serialize for Language {
     }
 }
 
-#[derive(Clone, Copy)]
 struct LanguageVisitor;
 
 impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
@@ -36,11 +35,13 @@ impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
     where
         E: serde::de::Error,
     {
-        self.visit_borrowed_str(
-            str::from_utf8(v).map_err(|_| {
-                serde::de::Error::invalid_value(serde::de::Unexpected::Bytes(v), &self)
-            })?,
-        )
+        match str::from_utf8(v) {
+            Ok(s) => self.visit_borrowed_str(s),
+            Err(_) => Err(serde::de::Error::invalid_value(
+                serde::de::Unexpected::Bytes(v),
+                &self,
+            )),
+        }
     }
 }
 
