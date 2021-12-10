@@ -284,6 +284,7 @@ mod tests {
         assert!(serde_json::from_str::<Language>("\"fr\"").unwrap() == Language::Fra);
 
         assert!(serde_json::from_str::<Language>("\"foo\"").is_err());
+        assert!(serde_json::from_str::<Language>("123").is_err());
     }
 
     #[test]
