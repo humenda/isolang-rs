@@ -15,7 +15,7 @@ impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
     type Value = Language;
 
     fn expecting(&self, formatter: &mut std::fmt::Formatter) -> std::fmt::Result {
-        formatter.write_str("a borrowed str")
+        formatter.write_str("borrowed str or bytes")
     }
 
     fn visit_borrowed_str<E>(self, v: &'a str) -> Result<Self::Value, E>
@@ -26,7 +26,7 @@ impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
             Some(l) => Ok(l),
             None => Err(serde::de::Error::unknown_variant(
                 v,
-                &["Any valid ISO 639-1 or 639-3 Code."],
+                &["any valid ISO 639-1 or 639-3 code"],
             )),
         }
     }
