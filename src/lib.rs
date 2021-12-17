@@ -179,10 +179,7 @@ impl Language {
             return None;
         }
         // use first bit of locale (before the _) to detect the language
-        locale
-            .split('_')
-            .next()
-            .and_then(|langcode| Language::from_639_1(langcode))
+        locale.split('_').next().and_then(Language::from_639_1)
     }
 }
 

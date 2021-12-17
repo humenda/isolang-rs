@@ -120,7 +120,7 @@ fn write_overview_table(file: &mut BufWriter<File>, codes: &[LangCode]) {
     if cfg!(feature = "local_names") {
         writeln!(
             file,
-            "static OVERVIEW: [([u8; 3], Option<&[u8; 2]>, \
+            "#[allow(clippy::type_complexity)]\nstatic OVERVIEW: [([u8; 3], Option<&[u8; 2]>, \
                 &[u8], Option<&[u8]>, Option<&[u8]>); {}] = [",
             codes.len()
         )
@@ -128,7 +128,7 @@ fn write_overview_table(file: &mut BufWriter<File>, codes: &[LangCode]) {
     } else {
         writeln!(
             file,
-            "static OVERVIEW: [([u8; 3], Option<&[u8; 2]>, \
+            "#[allow(clippy::type_complexity)]\nstatic OVERVIEW: [([u8; 3], Option<&[u8; 2]>, \
                 &[u8], Option<&[u8]>); {}] = [",
             codes.len()
         )
@@ -160,11 +160,7 @@ fn write_overview_table(file: &mut BufWriter<File>, codes: &[LangCode]) {
 
 /// Write a mapping of codes from 639-1 -> Language::`639-3`
 fn write_two_letter_to_enum(file: &mut BufWriter<File>, codes: &[LangCode]) {
-    write!(
-        file,
-        "static TWO_TO_THREE: phf::Map<&str, Language> = "
-    )
-    .unwrap();
+    write!(file, "static TWO_TO_THREE: phf::Map<&str, Language> = ").unwrap();
     let mut map = phf_codegen::Map::new();
     for &(ref id, ref two_letter, _, _) in codes.iter() {
         if let Some(ref two_letter) = two_letter {
@@ -176,11 +172,7 @@ fn write_two_letter_to_enum(file: &mut BufWriter<File>, codes: &[LangCode]) {
 
 /// Write a mapping of codes from 639-3 -> Language::`639-3`
 fn write_three_letter_to_enum(file: &mut BufWriter<File>, codes: &[LangCode]) {
-    write!(
-        file,
-        "static THREE_TO_THREE: phf::Map<&str, Language> = "
-    )
-    .unwrap();
+    write!(file, "static THREE_TO_THREE: phf::Map<&str, Language> = ").unwrap();
     let mut map = phf_codegen::Map::new();
     for &(ref id, _, _, _) in codes.iter() {
         map.entry(id.as_str(), &format!("Language::{}", title(id)));

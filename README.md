@@ -1,6 +1,6 @@
 # ISO 639 language codes
 
-[![Build Status](https://travis-ci.org/humenda/isolang-rs.svg?branch=master)](https://travis-ci.org/humenda/isolang-rs)
+[![Build Status](https://github.com/humenda/isolang-rs/workflows/CI/badge.svg)](https://github.com/humenda/isolang-rs/actions?query=workflow%3ACI)
 [![Crates.io](https://img.shields.io/crates/v/isolang)](https://crates.io/crates/isolang)
 [![Documentation](https://img.shields.io/docsrs/isolang)](https://docs.rs/isolang)
 [![Licence: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENCE.md)
