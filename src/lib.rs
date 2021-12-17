@@ -70,7 +70,7 @@ impl Language {
             // Is safe, see `to_639_3()` for more details
             OVERVIEW[*self as usize]
                 .1
-                .map(|ref s| str::from_utf8_unchecked(*s))
+                .map(|s| str::from_utf8_unchecked(s))
         }
     }
 
@@ -172,9 +172,7 @@ impl Language {
     /// ```
     /// use isolang::Language;
     ///
-    /// fn main() {
-    ///     assert!(Language::from_locale("de_DE.UTF-8") == Some(Language::Deu));
-    /// }
+    /// assert!(Language::from_locale("de_DE.UTF-8") == Some(Language::Deu));
     /// ```
     pub fn from_locale(locale: &str) -> Option<Language> {
         if locale.len() < 3 {

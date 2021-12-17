@@ -134,7 +134,7 @@ fn write_overview_table(file: &mut BufWriter<File>, codes: &[LangCode]) {
         )
         .unwrap();
     }
-    for ref language in codes.iter() {
+    for language in codes {
         write!(file, "    ({:?}, ", language.0.as_bytes()).unwrap();
         match language.1 {
             Some(ref val) => write!(file, "Some(&{:?}), ", val.as_bytes()).unwrap(),
