@@ -9,14 +9,13 @@ impl serde::ser::Serialize for Language {
     }
 }
 
-#[derive(Clone, Copy)]
 struct LanguageVisitor;
 
 impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
     type Value = Language;
 
     fn expecting(&self, formatter: &mut std::fmt::Formatter) -> std::fmt::Result {
-        formatter.write_str("a borrowed str")
+        formatter.write_str("borrowed str or bytes")
     }
 
     fn visit_borrowed_str<E>(self, v: &'a str) -> Result<Self::Value, E>
@@ -27,7 +26,7 @@ impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
             Some(l) => Ok(l),
             None => Err(serde::de::Error::unknown_variant(
                 v,
-                &["Any valid ISO 639-1 or 639-3 Code."],
+                &["any valid ISO 639-1 or 639-3 code"],
             )),
         }
     }
@@ -36,11 +35,13 @@ impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
     where
         E: serde::de::Error,
     {
-        self.visit_borrowed_str(
-            str::from_utf8(v).map_err(|_| {
-                serde::de::Error::invalid_value(serde::de::Unexpected::Bytes(v), &self)
-            })?,
-        )
+        match str::from_utf8(v) {
+            Ok(s) => self.visit_borrowed_str(s),
+            Err(_) => Err(serde::de::Error::invalid_value(
+                serde::de::Unexpected::Bytes(v),
+                &self,
+            )),
+        }
     }
 }
 
