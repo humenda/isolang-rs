@@ -1,4 +1,5 @@
-# ISO 639 language codes
+ISO 639 language codes
+=======================
 
 [![Build Status](https://github.com/humenda/isolang-rs/workflows/CI/badge.svg)](https://github.com/humenda/isolang-rs/actions?query=workflow%3ACI)
 [![Crates.io](https://img.shields.io/crates/v/isolang)](https://crates.io/crates/isolang)
@@ -28,7 +29,7 @@ Usage
 
 ```toml
 [dependencies]
-isolang = "1.0"
+isolang = "2.0"
 ```
 
 Example
@@ -52,5 +53,5 @@ add the following lines to your `Cargo.toml` (instead of the above code):
 ```toml
 [dependencies.isolang]
 features = ["serde"]
-version = "1.0"
+version = "2.0"
 ```

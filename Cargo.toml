@@ -5,6 +5,7 @@ description = "Efficient, static lookup table for ISO 639 language codes"
 documentation = "https://docs.rs/isolang"
 keywords = [
     "iso",
+    "iso-639",
     "language",
     "language-code",
     "autonym"
@@ -20,7 +21,7 @@ edition = "2021"
 phf_codegen = "0.10"
 
 [dependencies]
-phf = "0.10.0"
+phf = "0.10"
 
 [dependencies.serde]
 optional = true
