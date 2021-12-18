@@ -1,5 +1,3 @@
-extern crate phf_codegen;
-
 use std::collections::HashMap;
 use std::env;
 use std::fs::File;
@@ -77,7 +75,10 @@ fn read_iso_table() -> Vec<LangCode> {
                 2 => Some(cols[3].into()),
                 _ => None,
             };
-            let autonym = &autonyms_table[&three_letter];
+            let autonym = match autonyms_table.get(&three_letter) {
+                Some(Some(t)) => Some(t.to_owned()),
+                _ => None,
+            };
             // split language string into name and comment, if required
             if !cols[6].contains('(') {
                 (
@@ -85,7 +86,7 @@ fn read_iso_table() -> Vec<LangCode> {
                     two_letter,
                     Language {
                         english: cols[6].into(),
-                        local: autonym.to_owned(),
+                        local: autonym,
                     },
                     None,
                 )
@@ -96,7 +97,7 @@ fn read_iso_table() -> Vec<LangCode> {
                         two_letter,
                         Language {
                             english: cols[6].into(),
-                            local: autonym.to_owned(),
+                            local: autonym,
                         },
                         None,
                     ),
@@ -105,7 +106,7 @@ fn read_iso_table() -> Vec<LangCode> {
                         two_letter,
                         Language {
                             english: m[0].into(),
-                            local: autonym.to_owned(),
+                            local: autonym,
                         },
                         Some(m[1].into()),
                     ),

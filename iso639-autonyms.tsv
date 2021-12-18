@@ -2003,7 +2003,7 @@ esn		Salvadoran Sign Language		iso639-3
 eso		Estonian Sign Language		iso639-3
 esq		Esselen		iso639-3
 ess		Central Siberian Yupik		iso639-3
-esu		Central Yupik		cldr
+esu		Central Alaskan Yupik		cldr, github
 esy		Eskayan		iso639-3
 etb		Etebi		iso639-3
 etc		Etchemin		iso639-3
@@ -6056,7 +6056,7 @@ srn		Sranan Tongo	Sranan, Sranan Tongo	cldr, ethnologue
 sro		Campidanese Sardinian		iso639-3
 srq		Sirionó		iso639-3
 srr		Serer		cldr
-srs		Sarsi		iso639-3
+srs		Tsúūt’ínà		iso639-3, github
 srt		Sauri		iso639-3
 sru		Suruí		iso639-3
 srv		Southern Sorsoganon		iso639-3
