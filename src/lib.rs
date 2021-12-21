@@ -33,7 +33,29 @@ extern crate phf;
 
 use std::str;
 
-include!(concat!(env!("OUT_DIR"), "/isotable.rs"));
+/// Language data extracted from `iso-639-3.tab` and `iso639-autonyms.tsv`
+///
+/// Instances of this are generated in the `generated_code_is_fresh()` integration test,
+/// which generates the code in `src/isotable.rs`.
+struct LanguageData {
+    /// The ISO-639-3 3-letter language code (column `Id` in `iso-639-3.tab`)
+    code_3: [u8; 3],
+    /// The ISO-639-1 2-letter language code, if available (column `Part1` in `iso-639-3.tab`)
+    code_1: Option<[u8; 2]>,
+    /// The language's name in English (column `Ref_Name` in `iso-639-3.tab`)
+    ///
+    /// The code generator removes any parenthesized suffix from the name.
+    #[cfg(feature = "english_names")]
+    name_en: &'static str,
+    /// The language's name in its own language (column `autonym` in `iso639-autonyms.tsv`)
+    #[cfg(feature = "local_names")]
+    autonym: Option<&'static str>,
+}
+
+#[rustfmt::skip]
+mod isotable;
+pub use isotable::Language;
+use isotable::{OVERVIEW, THREE_TO_THREE, TWO_TO_THREE};
 
 impl Language {
     /// Create string representation of this Language as a ISO 639-3 code.
@@ -50,7 +72,7 @@ impl Language {
     pub fn to_639_3(&self) -> &'static str {
         // It's safe to do so, we have written that by hand as UTF-8 into the binary and if you
         // haven't changed the binary, it's UTF-8
-        unsafe { str::from_utf8_unchecked(&OVERVIEW[*self as usize].0) }
+        unsafe { str::from_utf8_unchecked(&OVERVIEW[*self as usize].code_3) }
     }
 
     /// Create two-letter ISO 639-1 representation of the language.
@@ -69,7 +91,8 @@ impl Language {
         unsafe {
             // Is safe, see `to_639_3()` for more details
             OVERVIEW[*self as usize]
-                .1
+                .code_1
+                .as_ref()
                 .map(|s| str::from_utf8_unchecked(s))
         }
     }
@@ -93,10 +116,7 @@ impl Language {
     /// assert_eq!(Language::Swh.to_name(), "Swahili");
     /// ```
     pub fn to_name(&self) -> &'static str {
-        unsafe {
-            // Is safe, see `to_639_3()` for more details
-            str::from_utf8_unchecked(OVERVIEW[*self as usize].2)
-        }
+        OVERVIEW[*self as usize].name_en
     }
 
     #[cfg(feature = "local_names")]
@@ -116,11 +136,7 @@ impl Language {
     /// assert_eq!(Language::Fra.to_autonym(), Some("français"));
     /// ```
     pub fn to_autonym(&self) -> Option<&'static str> {
-        unsafe {
-            OVERVIEW[*self as usize]
-                .3
-                .map(|ref s| str::from_utf8_unchecked(*s))
-        }
+        OVERVIEW[*self as usize].autonym
     }
 
     /// Create a Language instance rom a ISO 639-1 code.
