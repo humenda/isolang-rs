@@ -119,7 +119,7 @@ impl Language {
         unsafe {
             OVERVIEW[*self as usize]
                 .3
-                .map(|ref s| str::from_utf8_unchecked(*s))
+                .map(|s| str::from_utf8_unchecked(s))
         }
     }
 
@@ -198,12 +198,12 @@ impl std::fmt::Debug for Language {
 impl std::fmt::Display for Language {
     #[cfg(feature = "local_names")]
     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-        let autonym = match self.to_autonym() {
-            Some(v) => v,
-            None => "missing autonym",
-        };
-
-        write!(f, "{} ({})", self.to_name(), autonym)
+        write!(
+            f,
+            "{} ({})",
+            self.to_name(),
+            self.to_autonym().unwrap_or("missing autonym")
+        )
     }
 
     #[cfg(all(not(feature = "local_names"), feature = "english_names"))]
@@ -250,7 +250,7 @@ mod tests {
 
         let mut t = String::new();
         write!(t, "{:?}", Language::Eng).unwrap();
-        assert!(String::from("eng") == t);
+        assert!("eng" == t);
     }
 
     #[test]
@@ -274,7 +274,7 @@ mod tests {
     #[test]
     #[cfg(feature = "serde")]
     fn test_serde() {
-        assert!(serde_json::to_string(&Language::Deu).unwrap() == String::from("\"deu\""));
+        assert!(serde_json::to_string(&Language::Deu).unwrap() == "\"deu\"");
         assert!(serde_json::from_str::<Language>("\"deu\"").unwrap() == Language::Deu);
         assert!(serde_json::from_str::<Language>("\"fr\"").unwrap() == Language::Fra);
 
