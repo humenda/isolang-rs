@@ -214,12 +214,12 @@ impl std::fmt::Debug for Language {
 impl std::fmt::Display for Language {
     #[cfg(feature = "local_names")]
     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-        let autonym = match self.to_autonym() {
-            Some(v) => v,
-            None => "missing autonym",
-        };
-
-        write!(f, "{} ({})", self.to_name(), autonym)
+        write!(
+            f,
+            "{} ({})",
+            self.to_name(),
+            self.to_autonym().unwrap_or("missing autonym")
+        )
     }
 
     #[cfg(all(not(feature = "local_names"), feature = "english_names"))]
