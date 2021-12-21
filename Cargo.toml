@@ -1,6 +1,5 @@
 [package]
 authors = ["Sebastian Humenda <shumenda@gmx.de>"]
-build = "build.rs"
 description = "Efficient, static lookup table for ISO 639 language codes"
 documentation = "https://docs.rs/isolang"
 keywords = [
@@ -17,9 +16,6 @@ repository = "https://github.com/humenda/isolang-rs"
 version = "2.0.0"
 edition = "2021"
 
-[build-dependencies]
-phf_codegen = "0.10"
-
 [dependencies]
 phf = "0.10"
 
@@ -34,4 +30,5 @@ english_names = []
 local_names = []
 
 [dev-dependencies]
+phf_codegen = "0.10"
 serde_json = "1.0"
