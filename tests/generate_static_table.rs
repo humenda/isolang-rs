@@ -1,11 +1,9 @@
 #![cfg(unix)] // Avoid running on Windows: the generated code will use `\r\n` instead of `\n`
 
 use std::collections::HashMap;
-use std::env;
 use std::fmt::Write as _;
-use std::fs::{self, File};
-use std::io::{BufRead, BufReader};
 use std::path::Path;
+use std::{env, fs};
 
 // Taken from http://www-01.sil.org/iso639-3/download.asp
 static ISO_TABLE_PATH: &str = "iso-639-3.tab";
@@ -16,82 +14,61 @@ static AUTONYMS_TABLE_PATH: &str = "iso639-autonyms.tsv";
 /// Language data as extracted from `iso-639-3.tsv` and `iso-639-autonyms.tsv`.
 ///
 /// This is a direct precursor to `isolang::LanguageData`, which has more comments.
-struct LangCode {
-    code_3: String,
-    code_1: Option<String>,
-    name_en: String,
-    autonym: Option<String>,
+struct LangCode<'a> {
+    code_3: &'a str,
+    code_1: Option<&'a str>,
+    name_en: &'a str,
+    autonym: Option<&'a str>,
 }
 
+struct Title<'a>(&'a str);
+
 /// Convert string into a equivalent version with the first character in upper case.
-fn title(s: &str) -> String {
-    s.chars()
-        .next()
-        .expect("Received empty string, cannot uppercase its first character")
-        .to_uppercase()
-        .chain(s[1..].chars())
-        .collect::<String>()
+impl<'a> std::fmt::Display for Title<'a> {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        let mut iter = self.0.chars();
+        if let Some(c) = iter.next() {
+            f.write_fmt(format_args!("{}", c.to_uppercase()))?;
+        }
+        f.write_str(iter.as_str())
+    }
 }
 
 // parse autonym table
-fn read_autonyms_table() -> HashMap<String, Option<String>> {
-    let r = BufReader::new(File::open(AUTONYMS_TABLE_PATH).expect(
-        r"\
-        Couldn't read autonyms table tsv. Make sure that this operation is run from \
-        the crate source root and that this file actually exists.",
-    ));
-
-    r.lines()
+fn read_autonyms_table(table: &str) -> HashMap<&str, Option<&str>> {
+    table
+        .lines()
         .skip(1)
         .map(|line| {
-            let line = line.expect(
-                "Couldn't read from autonyms table, please \
-                    check that the file exists and is readable",
-            );
-
-            let cols = line.split('\t').collect::<Vec<&str>>();
-            let three_letter: String = cols[0].into();
-            let autonym: Option<String> = match cols[3].len() {
-                0 => None,
-                _ => Some(cols[3].into()),
-            };
-
-            (three_letter, autonym)
+            let mut cols = line.split('\t');
+            let three_letter = cols.next().unwrap();
+            (three_letter, cols.nth(2).filter(|s| !s.is_empty()))
         })
         .collect()
 }
 
 /// parse ISO 6639-(3,1) table
-fn read_iso_table() -> Vec<LangCode> {
-    let autonyms_table = read_autonyms_table();
-
-    let r = BufReader::new(File::open(ISO_TABLE_PATH).expect(
-        r"\
-        Couldn't read iso-639-3.tab. Make sure that this operation is run from \
-        the crate source root and that this file actually exists.",
-    ));
-    r.lines()
+fn read_iso_table<'a>(iso_table: &'a str, autonyms_table: &'a str) -> Vec<LangCode<'a>> {
+    let autonyms_table = read_autonyms_table(autonyms_table);
+    iso_table
+        .lines()
         .skip(1)
-        .filter_map(|line| line.ok())
         .map(|line| {
-            let cols = line.split('\t').collect::<Vec<&str>>();
-            let code_3: String = cols[0].into();
-            let code_1: Option<String> = match cols[3].len() {
-                2 => Some(cols[3].into()),
-                _ => None,
-            };
-            let autonym = match autonyms_table.get(&code_3) {
-                Some(Some(t)) => Some(t.to_owned()),
+            let mut cols = line.split('\t');
+            let code_3 = cols.next().unwrap();
+            let code_1 = cols.nth(2).filter(|s| s.len() == 2);
+            let autonym = match autonyms_table.get(code_3) {
+                Some(Some(t)) => Some(*t),
                 _ => None,
             };
 
             // split language string into name and comment, if required
-            let mut parts = cols[6].split('(');
+            let mut parts = cols.nth(2).unwrap().split('(');
             let name_en = parts.next().unwrap().trim_end();
             LangCode {
                 code_3,
                 code_1,
-                name_en: name_en.into(),
+                name_en,
                 autonym,
             }
         })
@@ -102,7 +79,7 @@ fn read_iso_table() -> Vec<LangCode> {
 fn write_overview_table(out: &mut String, codes: &[LangCode]) {
     writeln!(
         out,
-        "#[allow(clippy::type_complexity)]\npub(crate) static OVERVIEW: [LanguageData; {}] = [",
+        "#[allow(clippy::type_complexity)]\npub(crate) const OVERVIEW: [LanguageData; {}] = [",
         codes.len()
     )
     .unwrap();
@@ -133,16 +110,13 @@ fn write_overview_table(out: &mut String, codes: &[LangCode]) {
 fn write_two_letter_to_enum(out: &mut String, codes: &[LangCode]) {
     write!(
         out,
-        "pub(crate) static TWO_TO_THREE: phf::Map<&str, Language> = "
+        "pub(crate) const TWO_TO_THREE: phf::Map<&str, Language> = "
     )
     .unwrap();
     let mut map = phf_codegen::Map::new();
     for lang in codes.iter() {
         if let Some(ref two_letter) = lang.code_1 {
-            map.entry(
-                two_letter.as_str(),
-                &format!("Language::{}", title(&lang.code_3)),
-            );
+            map.entry(two_letter, &format!("Language::{}", Title(lang.code_3)));
         }
     }
     writeln!(out, "{};\n", map.build()).unwrap();
@@ -152,15 +126,12 @@ fn write_two_letter_to_enum(out: &mut String, codes: &[LangCode]) {
 fn write_three_letter_to_enum(out: &mut String, codes: &[LangCode]) {
     write!(
         out,
-        "pub(crate) static THREE_TO_THREE: phf::Map<&str, Language> = "
+        "pub(crate) const THREE_TO_THREE: phf::Map<&str, Language> = "
     )
     .unwrap();
     let mut map = phf_codegen::Map::new();
     for lang in codes.iter() {
-        map.entry(
-            lang.code_3.as_str(),
-            &format!("Language::{}", title(&lang.code_3)),
-        );
+        map.entry(lang.code_3, &format!("Language::{}", Title(lang.code_3)));
     }
     writeln!(out, "{};", map.build()).unwrap();
 }
@@ -168,7 +139,18 @@ fn write_three_letter_to_enum(out: &mut String, codes: &[LangCode]) {
 /// Check that the generated files are up to date
 #[test]
 fn generated_code_is_fresh() {
-    let codes = read_iso_table();
+    let iso_table = fs::read_to_string(ISO_TABLE_PATH).expect(
+        r"\
+        Couldn't read iso-639-3.tab. Make sure that this operation is run from \
+        the crate source root and that this file actually exists.",
+    );
+    let autonyms_table = fs::read_to_string(AUTONYMS_TABLE_PATH).expect(
+        r"\
+        Couldn't read autonyms table tsv. Make sure that this operation is run from \
+        the crate source root and that this file actually exists.",
+    );
+
+    let codes = read_iso_table(&iso_table, &autonyms_table);
     let mut src = String::with_capacity(1024 * 1024 + 1024 * 256); // Current size at 118k
     src.push_str(
         "/// This file is generated and should not be edited directly.\nuse super::LanguageData;\n\n",
@@ -186,7 +168,7 @@ fn generated_code_is_fresh() {
     writeln!(&mut src, "pub enum Language {{").unwrap();
     for (num, lang) in codes.iter().enumerate() {
         writeln!(&mut src, "    #[doc(hidden)]").unwrap();
-        writeln!(&mut src, "    {} = {},", title(&lang.code_3), num).unwrap();
+        writeln!(&mut src, "    {} = {},", Title(lang.code_3), num).unwrap();
     }
     writeln!(&mut src, "}}\n").unwrap();
 

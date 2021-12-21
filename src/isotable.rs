@@ -2,7 +2,7 @@
 use super::LanguageData;
 
 #[allow(clippy::type_complexity)]
-pub(crate) static OVERVIEW: [LanguageData; 7893] = [
+pub(crate) const OVERVIEW: [LanguageData; 7893] = [
     LanguageData {
         code_3: [97, 97, 97],
         code_1: None,
@@ -78938,7 +78938,7 @@ pub enum Language {
     Zzj = 7892,
 }
 
-pub(crate) static TWO_TO_THREE: phf::Map<&str, Language> = ::phf::Map {
+pub(crate) const TWO_TO_THREE: phf::Map<&str, Language> = ::phf::Map {
     key: 12913932095322966823,
     disps: &[
         (1, 92),
@@ -79167,7 +79167,7 @@ pub(crate) static TWO_TO_THREE: phf::Map<&str, Language> = ::phf::Map {
     ],
 };
 
-pub(crate) static THREE_TO_THREE: phf::Map<&str, Language> = ::phf::Map {
+pub(crate) const THREE_TO_THREE: phf::Map<&str, Language> = ::phf::Map {
     key: 12913932095322966823,
     disps: &[
         (0, 1106),
