@@ -13,13 +13,15 @@ static ISO_TABLE_PATH: &str = "iso-639-3.tab";
 // Local names of languages from https://github.com/bbqsrc/iso639-autonyms
 static AUTONYMS_TABLE_PATH: &str = "iso639-autonyms.tsv";
 
-pub struct Language {
-    english: String,
-    local: Option<String>,
+/// Language data as extracted from `iso-639-3.tsv` and `iso-639-autonyms.tsv`.
+///
+/// This is a direct precursor to `isolang::LanguageData`, which has more comments.
+struct LangCode {
+    code_3: String,
+    code_1: Option<String>,
+    name_en: String,
+    autonym: Option<String>,
 }
-
-/// This contains (639-3, 639-1, Name, comment)
-type LangCode = (String, Option<String>, Language, Option<String>);
 
 /// Convert string into a equivalent version with the first character in upper case.
 fn title(s: &str) -> String {
@@ -73,47 +75,24 @@ fn read_iso_table() -> Vec<LangCode> {
         .filter_map(|line| line.ok())
         .map(|line| {
             let cols = line.split('\t').collect::<Vec<&str>>();
-            let three_letter: String = cols[0].into();
-            let two_letter: Option<String> = match cols[3].len() {
+            let code_3: String = cols[0].into();
+            let code_1: Option<String> = match cols[3].len() {
                 2 => Some(cols[3].into()),
                 _ => None,
             };
-            let autonym = match autonyms_table.get(&three_letter) {
+            let autonym = match autonyms_table.get(&code_3) {
                 Some(Some(t)) => Some(t.to_owned()),
                 _ => None,
             };
+
             // split language string into name and comment, if required
-            if !cols[6].contains('(') {
-                (
-                    three_letter,
-                    two_letter,
-                    Language {
-                        english: cols[6].into(),
-                        local: autonym,
-                    },
-                    None,
-                )
-            } else {
-                match cols[6].split(" (").collect::<Vec<&str>>() {
-                    ref m if m.len() != 2 => (
-                        three_letter,
-                        two_letter,
-                        Language {
-                            english: cols[6].into(),
-                            local: autonym,
-                        },
-                        None,
-                    ),
-                    m => (
-                        three_letter,
-                        two_letter,
-                        Language {
-                            english: m[0].into(),
-                            local: autonym,
-                        },
-                        Some(m[1].into()),
-                    ),
-                }
+            let mut parts = cols[6].split('(');
+            let name_en = parts.next().unwrap().trim_end();
+            LangCode {
+                code_3,
+                code_1,
+                name_en: name_en.into(),
+                autonym,
             }
         })
         .collect()
@@ -139,10 +118,10 @@ fn write_overview_table(out: &mut String, codes: &[LangCode]) {
         #[cfg(feature = "local_names")]
         autonym: {:?},
     }},"#,
-            language.0.as_bytes(),
-            language.1.as_ref().map(|s| s.as_bytes()),
-            language.2.english,
-            language.2.local,
+            language.code_3.as_bytes(),
+            language.code_1.as_ref().map(|s| s.as_bytes()),
+            language.name_en,
+            language.autonym,
         )
         .unwrap();
     }
@@ -158,9 +137,12 @@ fn write_two_letter_to_enum(out: &mut String, codes: &[LangCode]) {
     )
     .unwrap();
     let mut map = phf_codegen::Map::new();
-    for &(ref id, ref two_letter, _, _) in codes.iter() {
-        if let Some(ref two_letter) = two_letter {
-            map.entry(two_letter.as_str(), &format!("Language::{}", title(id)));
+    for lang in codes.iter() {
+        if let Some(ref two_letter) = lang.code_1 {
+            map.entry(
+                two_letter.as_str(),
+                &format!("Language::{}", title(&lang.code_3)),
+            );
         }
     }
     writeln!(out, "{};\n", map.build()).unwrap();
@@ -174,8 +156,11 @@ fn write_three_letter_to_enum(out: &mut String, codes: &[LangCode]) {
     )
     .unwrap();
     let mut map = phf_codegen::Map::new();
-    for &(ref id, _, _, _) in codes.iter() {
-        map.entry(id.as_str(), &format!("Language::{}", title(id)));
+    for lang in codes.iter() {
+        map.entry(
+            lang.code_3.as_str(),
+            &format!("Language::{}", title(&lang.code_3)),
+        );
     }
     writeln!(out, "{};", map.build()).unwrap();
 }
@@ -199,9 +184,9 @@ fn generated_code_is_fresh() {
     )
     .unwrap();
     writeln!(&mut src, "pub enum Language {{").unwrap();
-    for (num, &(ref id, _, _, _)) in codes.iter().enumerate() {
+    for (num, lang) in codes.iter().enumerate() {
         writeln!(&mut src, "    #[doc(hidden)]").unwrap();
-        writeln!(&mut src, "    {} = {},", title(id), num).unwrap();
+        writeln!(&mut src, "    {} = {},", title(&lang.code_3), num).unwrap();
     }
     writeln!(&mut src, "}}\n").unwrap();
 

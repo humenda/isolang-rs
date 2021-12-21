@@ -259,14 +259,14 @@ mod tests {
         let mut t = String::new();
         write!(t, "{}", Language::Eng).unwrap();
         if cfg!(feature = "local_names") {
-            assert!("English (English)" == t);
+            assert_eq!(t, "English (English)");
         } else {
-            assert!("English" == t);
+            assert_eq!(t, "English");
         }
 
         let mut t = String::new();
         write!(t, "{:?}", Language::Eng).unwrap();
-        assert!(String::from("eng") == t);
+        assert_eq!(t, "eng");
     }
 
     #[test]
@@ -290,9 +290,15 @@ mod tests {
     #[test]
     #[cfg(feature = "serde")]
     fn test_serde() {
-        assert!(serde_json::to_string(&Language::Deu).unwrap() == String::from("\"deu\""));
-        assert!(serde_json::from_str::<Language>("\"deu\"").unwrap() == Language::Deu);
-        assert!(serde_json::from_str::<Language>("\"fr\"").unwrap() == Language::Fra);
+        assert_eq!(serde_json::to_string(&Language::Deu).unwrap(), "\"deu\"");
+        assert_eq!(
+            serde_json::from_str::<Language>("\"deu\"").unwrap(),
+            Language::Deu
+        );
+        assert_eq!(
+            serde_json::from_str::<Language>("\"fr\"").unwrap(),
+            Language::Fra
+        );
 
         assert!(serde_json::from_str::<Language>("\"foo\"").is_err());
         assert!(serde_json::from_str::<Language>("123").is_err());
