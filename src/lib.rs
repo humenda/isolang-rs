@@ -111,8 +111,7 @@ impl Language {
     /// assert_eq!(Language::Deu.to_639_3(), "deu");
     /// ```
     pub fn to_639_3(&self) -> &'static str {
-        // It's safe to do so, we have written that by hand as UTF-8 into the binary and if you
-        // haven't changed the binary, it's UTF-8
+        // SAFETY: The ISO 639 table has been written to the binary with UTF-8 encoding, hence reading it without checks is safe.
         unsafe { str::from_utf8_unchecked(&OVERVIEW[*self as usize].code_3) }
     }
 
@@ -129,8 +128,9 @@ impl Language {
     /// assert!(Language::Gha.to_639_1().is_none());
     /// ```
     pub fn to_639_1(&self) -> Option<&'static str> {
+        // SAFETY: The global state is initialised at load time and filled at compile-time. The
+        // access happens read-only.
         unsafe {
-            // Is safe, see `to_639_3()` for more details
             OVERVIEW[*self as usize]
                 .code_1
                 .as_ref()
