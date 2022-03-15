@@ -12,8 +12,6 @@ static ISO_TABLE_PATH: &str = "iso-639-3.tab";
 static AUTONYMS_TABLE_PATH: &str = "iso639-autonyms.tsv";
 
 /// Language data as extracted from `iso-639-3.tsv` and `iso-639-autonyms.tsv`.
-///
-/// This is a direct precursor to `isolang::LanguageData`, which has more comments.
 struct LangCode<'a> {
     code_3: &'a str,
     code_1: Option<&'a str>,
@@ -23,7 +21,6 @@ struct LangCode<'a> {
 
 struct Title<'a>(&'a str);
 
-/// Convert string into a equivalent version with the first character in upper case.
 impl<'a> std::fmt::Display for Title<'a> {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         let mut iter = self.0.chars();
@@ -47,7 +44,7 @@ fn read_autonyms_table(table: &str) -> HashMap<&str, Option<&str>> {
         .collect()
 }
 
-/// parse ISO 6639-(3,1) table
+/// Parse ISO 6639-(3,1) table.
 fn read_iso_table<'a>(iso_table: &'a str, autonyms_table: &'a str) -> Vec<LangCode<'a>> {
     let autonyms_table = read_autonyms_table(autonyms_table);
     iso_table
@@ -75,7 +72,7 @@ fn read_iso_table<'a>(iso_table: &'a str, autonyms_table: &'a str) -> Vec<LangCo
         .collect()
 }
 
-/// write static array with (639-3, 639-1, english name, comment) entries
+/// Write static array with (639-3, 639-1, english name, comment) entries.
 fn write_overview_table(out: &mut String, codes: &[LangCode]) {
     writeln!(
         out,
@@ -106,7 +103,7 @@ fn write_overview_table(out: &mut String, codes: &[LangCode]) {
     writeln!(out, "];").unwrap();
 }
 
-/// Write a mapping of codes from 639-1 -> Language::`639-3`
+/// Write a mapping of codes from 639-1 -> Language::`639-3`.
 fn write_two_letter_to_enum(out: &mut String, codes: &[LangCode]) {
     write!(
         out,
@@ -122,7 +119,7 @@ fn write_two_letter_to_enum(out: &mut String, codes: &[LangCode]) {
     writeln!(out, "{};\n", map.build()).unwrap();
 }
 
-/// Write a mapping of codes from 639-3 -> Language::`639-3`
+/// Write a mapping of codes from 639-3 -> Language::`639-3`.
 fn write_three_letter_to_enum(out: &mut String, codes: &[LangCode]) {
     write!(
         out,
@@ -136,7 +133,7 @@ fn write_three_letter_to_enum(out: &mut String, codes: &[LangCode]) {
     writeln!(out, "{};", map.build()).unwrap();
 }
 
-/// Check that the generated files are up to date
+/// Check that the generated files are up to date.
 #[test]
 fn generated_code_is_fresh() {
     let iso_table = fs::read_to_string(ISO_TABLE_PATH).expect(
