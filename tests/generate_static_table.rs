@@ -1,8 +1,10 @@
 #![cfg(unix)] // Avoid running on Windows: the generated code will use `\r\n` instead of `\n`
 
 use std::collections::HashMap;
+use std::io::{BufWriter, Write};
 use std::fmt::Write as _;
 use std::path::Path;
+use std::process::{Command, Stdio};
 use std::{env, fs};
 
 // Taken from http://www-01.sil.org/iso639-3/download.asp
@@ -135,7 +137,7 @@ fn write_three_letter_to_enum(out: &mut String, codes: &[LangCode]) {
 
 /// Check that the generated files are up to date.
 #[test]
-fn generated_code_is_fresh() {
+fn generated_code_table_if_outdated() {
     let iso_table = fs::read_to_string(ISO_TABLE_PATH).expect(
         r"\
         Couldn't read iso-639-3.tab. Make sure that this operation is run from \
@@ -169,16 +171,59 @@ fn generated_code_is_fresh() {
     }
     writeln!(&mut src, "}}\n").unwrap();
 
+    // write implementation for From<usize>
+    writeln!(
+        &mut src,
+        "\nimpl Language {{\n"
+    )
+    .unwrap();
+    writeln!(
+        &mut src,
+        "pub fn from_usize(u: usize) -> Option<Self> {{\n        match u {{"
+    )
+    .unwrap();
+    for (num, lang) in codes.iter().enumerate() {
+        writeln!(&mut src, "{} => Some(Language::{}),", num, Title(lang.code_3))
+        .unwrap();
+    }
+    writeln!(&mut src, "    _ => None,").unwrap();
+
+    writeln!(&mut src, "}} }} }}\n").unwrap();
+
     // write map 639-1 -> enum mapping
     write_two_letter_to_enum(&mut src, &codes);
 
     // write map 639-3 -> enum mapping
     write_three_letter_to_enum(&mut src, &codes);
 
+    // compare old to new -- format new code first
+    let child = Command::new("rustfmt")
+            .stdin(Stdio::piped())
+            .stdout(Stdio::piped())
+            .spawn()
+            .expect("Unable to format code, install rustfmt");
+    {
+        let mut childstdin = child.stdin.as_ref().unwrap();
+        let mut writer = BufWriter::new(&mut childstdin);
+        writer.write_all(src.as_bytes()).unwrap();
+    }
+    let output = child.wait_with_output().unwrap();
+    if !output.status.success() {
+        panic!("Unable to execute rustfmt");
+    }
+
+    let src = String::from_utf8(output.stdout).expect("Could not parse the generated source as UTF-8");
+
     let path = Path::new(&env::var("CARGO_MANIFEST_DIR").unwrap()).join("src/isotable.rs");
     let old = fs::read_to_string(&path).unwrap();
+    // write new output and fail test to draw attention
     if old != src {
-        fs::write(path, src).unwrap();
+        fs::write(path.clone(), src).unwrap();
+        Command::new("rustfmt")
+            .arg(path)
+            .spawn()
+            .expect("Unable to format code, install rustfmt");
+
         panic!("generated code in the repository is outdated, updating...");
     }
 }

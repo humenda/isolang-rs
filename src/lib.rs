@@ -97,7 +97,6 @@ impl Language {
         }
     }
 
-    #[cfg(feature = "english_names")]
     /// Get the English name of this language.
     ///
     /// This returns the English name of the language, as defined in the ISO 639 standard. It does
@@ -115,11 +114,51 @@ impl Language {
     /// // individual language
     /// assert_eq!(Language::Swh.to_name(), "Swahili");
     /// ```
+    #[cfg(feature = "english_names")]
     pub fn to_name(&self) -> &'static str {
         OVERVIEW[*self as usize].name_en
     }
 
-    #[cfg(feature = "local_names")]
+    /// Get the ISO code by its English name.
+    ///
+    /// This returns the ISO code by the given English name of the language string, as defined in
+    /// the ISO 639 standard. It does not include additional comments, e.g. classification of a
+    /// macrolanguage, etc. Only available if compiled with the `english_names` feature.
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// use isolang::Language;
+    ///
+    /// assert_eq!(Language::from_name("Spanish"), Some(Language::Spa));
+    /// ```
+    #[cfg(feature = "english_names")]
+    pub fn from_name(engl_name: &str) -> Option<Self> {
+        OVERVIEW.iter().enumerate().find(|(_, it)| it.name_en == engl_name)
+            .and_then(|(idx, _)| Language::from_usize(idx))
+    }
+
+    /// Get all matching ISO codes by a provided English name pattern.
+    ///
+    /// This returns the matching ISO codes for the provided matcher. The matcher matches all known
+    /// English language names.
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// use isolang::Language;
+    ///
+    /// assert!(Language::match_names(|lang| lang.contains("Engl")).count() > 1);
+    /// ```
+    #[cfg(feature = "english_names")]
+    pub fn match_names<F>(matcher: F) -> impl Iterator<Item=Self> 
+    where F: Fn(&str) -> bool + 'static {
+        OVERVIEW.iter().enumerate().filter_map(move |(idx, it)| match matcher(it.name_en) {
+            true => Language::from_usize(idx),
+            false => None,
+        })
+    }
+
     /// Get the autonym of this language
     ///
     /// This returns the native language name (if there is one available). This method is available
@@ -135,9 +174,49 @@ impl Language {
     /// assert_eq!(Language::Bul.to_autonym(), Some("български"));
     /// assert_eq!(Language::Fra.to_autonym(), Some("français"));
     /// ```
+    #[cfg(feature = "local_names")]
     pub fn to_autonym(&self) -> Option<&'static str> {
         OVERVIEW[*self as usize].autonym
     }
+
+    /// Get the ISO code by its autonym (local language name).
+    ///
+    /// The result is `None` is the autonym wasn't found.
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// use isolang::Language;
+    ///
+    /// assert_eq!(Language::from_autonym("Deutsch"), Some(Language::Deu));
+    /// ```
+    #[cfg(feature = "local_names")]
+    pub fn from_autonym(autonym: &str) -> Option<Self> {
+        OVERVIEW.iter().enumerate().find(|(_, it)| it.autonym == Some(autonym))
+            .and_then(|(idx, _)| Language::from_usize(idx))
+    }
+
+    /// Get all matching ISO codes by a provided autonym pattern.
+    ///
+    /// This returns the matching ISO codes for the provided matcher. It is evaluated against all
+    /// known autonyms (local language names).
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// use isolang::Language;
+    ///
+    /// assert_eq!(Language::match_autonyms(|lang| lang.contains("Deutsch")).count(), 1);
+    /// ```
+    #[cfg(feature = "local_names")]
+    pub fn match_autonyms<F>(matcher: F) -> impl Iterator<Item=Self> 
+    where F: Fn(&str) -> bool + 'static {
+        OVERVIEW.iter().enumerate().filter_map(move |(idx, it)| it.autonym.and_then(|autonym| match matcher(autonym) {
+            true => Language::from_usize(idx),
+            false => None,
+        }))
+    }
+
 
     /// Create a Language instance rom a ISO 639-1 code.
     ///
