@@ -134,7 +134,10 @@ impl Language {
     /// ```
     #[cfg(feature = "english_names")]
     pub fn from_name(engl_name: &str) -> Option<Self> {
-        OVERVIEW.iter().enumerate().find(|(_, it)| it.name_en == engl_name)
+        OVERVIEW
+            .iter()
+            .enumerate()
+            .find(|(_, it)| it.name_en == engl_name)
             .and_then(|(idx, _)| Language::from_usize(idx))
     }
 
@@ -151,11 +154,15 @@ impl Language {
     /// assert!(Language::match_names(|lang| lang.contains("Engl")).count() > 1);
     /// ```
     #[cfg(feature = "english_names")]
-    pub fn match_names<F>(matcher: F) -> impl Iterator<Item=Self> 
-    where F: Fn(&str) -> bool + 'static {
-        OVERVIEW.iter().enumerate().filter_map(move |(idx, it)| match matcher(it.name_en) {
-            true => Language::from_usize(idx),
-            false => None,
+    pub fn match_names<F>(matcher: F) -> impl Iterator<Item = Self>
+    where
+        F: Fn(&str) -> bool + 'static,
+    {
+        OVERVIEW.iter().enumerate().filter_map(move |(idx, it)| {
+            match matcher(it.name_en) {
+                true => Language::from_usize(idx),
+                false => None,
+            }
         })
     }
 
@@ -192,7 +199,10 @@ impl Language {
     /// ```
     #[cfg(feature = "local_names")]
     pub fn from_autonym(autonym: &str) -> Option<Self> {
-        OVERVIEW.iter().enumerate().find(|(_, it)| it.autonym == Some(autonym))
+        OVERVIEW
+            .iter()
+            .enumerate()
+            .find(|(_, it)| it.autonym == Some(autonym))
             .and_then(|(idx, _)| Language::from_usize(idx))
     }
 
@@ -209,14 +219,17 @@ impl Language {
     /// assert_eq!(Language::match_autonyms(|lang| lang.contains("Deutsch")).count(), 1);
     /// ```
     #[cfg(feature = "local_names")]
-    pub fn match_autonyms<F>(matcher: F) -> impl Iterator<Item=Self> 
-    where F: Fn(&str) -> bool + 'static {
-        OVERVIEW.iter().enumerate().filter_map(move |(idx, it)| it.autonym.and_then(|autonym| match matcher(autonym) {
-            true => Language::from_usize(idx),
-            false => None,
-        }))
+    pub fn match_autonyms<F>(matcher: F) -> impl Iterator<Item = Self>
+    where
+        F: Fn(&str) -> bool + 'static,
+    {
+        OVERVIEW.iter().enumerate().filter_map(move |(idx, it)| {
+            it.autonym.and_then(|autonym| match matcher(autonym) {
+                true => Language::from_usize(idx),
+                false => None,
+            })
+        })
     }
-
 
     /// Create a Language instance rom a ISO 639-1 code.
     ///

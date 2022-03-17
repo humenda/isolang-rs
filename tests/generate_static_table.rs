@@ -1,8 +1,8 @@
 #![cfg(unix)] // Avoid running on Windows: the generated code will use `\r\n` instead of `\n`
 
 use std::collections::HashMap;
-use std::io::{BufWriter, Write};
 use std::fmt::Write as _;
+use std::io::{BufWriter, Write};
 use std::path::Path;
 use std::process::{Command, Stdio};
 use std::{env, fs};
@@ -47,7 +47,10 @@ fn read_autonyms_table(table: &str) -> HashMap<&str, Option<&str>> {
 }
 
 /// Parse ISO 6639-(3,1) table.
-fn read_iso_table<'a>(iso_table: &'a str, autonyms_table: &'a str) -> Vec<LangCode<'a>> {
+fn read_iso_table<'a>(
+    iso_table: &'a str,
+    autonyms_table: &'a str,
+) -> Vec<LangCode<'a>> {
     let autonyms_table = read_autonyms_table(autonyms_table);
     iso_table
         .lines()
@@ -64,12 +67,7 @@ fn read_iso_table<'a>(iso_table: &'a str, autonyms_table: &'a str) -> Vec<LangCo
             // split language string into name and comment, if required
             let mut parts = cols.nth(2).unwrap().split('(');
             let name_en = parts.next().unwrap().trim_end();
-            LangCode {
-                code_3,
-                code_1,
-                name_en,
-                autonym,
-            }
+            LangCode { code_3, code_1, name_en, autonym }
         })
         .collect()
 }
@@ -107,11 +105,8 @@ fn write_overview_table(out: &mut String, codes: &[LangCode]) {
 
 /// Write a mapping of codes from 639-1 -> Language::`639-3`.
 fn write_two_letter_to_enum(out: &mut String, codes: &[LangCode]) {
-    write!(
-        out,
-        "pub(crate) const TWO_TO_THREE: phf::Map<&str, Language> = "
-    )
-    .unwrap();
+    write!(out, "pub(crate) const TWO_TO_THREE: phf::Map<&str, Language> = ")
+        .unwrap();
     let mut map = phf_codegen::Map::new();
     for lang in codes.iter() {
         if let Some(ref two_letter) = lang.code_1 {
@@ -123,11 +118,8 @@ fn write_two_letter_to_enum(out: &mut String, codes: &[LangCode]) {
 
 /// Write a mapping of codes from 639-3 -> Language::`639-3`.
 fn write_three_letter_to_enum(out: &mut String, codes: &[LangCode]) {
-    write!(
-        out,
-        "pub(crate) const THREE_TO_THREE: phf::Map<&str, Language> = "
-    )
-    .unwrap();
+    write!(out, "pub(crate) const THREE_TO_THREE: phf::Map<&str, Language> = ")
+        .unwrap();
     let mut map = phf_codegen::Map::new();
     for lang in codes.iter() {
         map.entry(lang.code_3, &format!("Language::{}", Title(lang.code_3)));
@@ -172,18 +164,19 @@ fn generated_code_table_if_outdated() {
     writeln!(&mut src, "}}\n").unwrap();
 
     // write implementation for From<usize>
-    writeln!(
-        &mut src,
-        "\nimpl Language {{\n"
-    )
-    .unwrap();
+    writeln!(&mut src, "\nimpl Language {{\n").unwrap();
     writeln!(
         &mut src,
         "pub fn from_usize(u: usize) -> Option<Self> {{\n        match u {{"
     )
     .unwrap();
     for (num, lang) in codes.iter().enumerate() {
-        writeln!(&mut src, "{} => Some(Language::{}),", num, Title(lang.code_3))
+        writeln!(
+            &mut src,
+            "{} => Some(Language::{}),",
+            num,
+            Title(lang.code_3)
+        )
         .unwrap();
     }
     writeln!(&mut src, "    _ => None,").unwrap();
@@ -198,10 +191,10 @@ fn generated_code_table_if_outdated() {
 
     // compare old to new -- format new code first
     let child = Command::new("rustfmt")
-            .stdin(Stdio::piped())
-            .stdout(Stdio::piped())
-            .spawn()
-            .expect("Unable to format code, install rustfmt");
+        .stdin(Stdio::piped())
+        .stdout(Stdio::piped())
+        .spawn()
+        .expect("Unable to format code, install rustfmt");
     {
         let mut childstdin = child.stdin.as_ref().unwrap();
         let mut writer = BufWriter::new(&mut childstdin);
@@ -212,9 +205,11 @@ fn generated_code_table_if_outdated() {
         panic!("Unable to execute rustfmt");
     }
 
-    let src = String::from_utf8(output.stdout).expect("Could not parse the generated source as UTF-8");
+    let src = String::from_utf8(output.stdout)
+        .expect("Could not parse the generated source as UTF-8");
 
-    let path = Path::new(&env::var("CARGO_MANIFEST_DIR").unwrap()).join("src/isotable.rs");
+    let path = Path::new(&env::var("CARGO_MANIFEST_DIR").unwrap())
+        .join("src/isotable.rs");
     let old = fs::read_to_string(&path).unwrap();
     // write new output and fail test to draw attention
     if old != src {

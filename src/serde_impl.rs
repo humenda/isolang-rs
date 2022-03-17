@@ -14,7 +14,10 @@ struct LanguageVisitor;
 impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
     type Value = Language;
 
-    fn expecting(&self, formatter: &mut std::fmt::Formatter) -> std::fmt::Result {
+    fn expecting(
+        &self,
+        formatter: &mut std::fmt::Formatter,
+    ) -> std::fmt::Result {
         formatter.write_str("borrowed str or bytes")
     }
 
@@ -46,7 +49,9 @@ impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
 }
 
 impl<'de> serde::de::Deserialize<'de> for Language {
-    fn deserialize<D: serde::de::Deserializer<'de>>(deserializer: D) -> Result<Self, D::Error> {
+    fn deserialize<D: serde::de::Deserializer<'de>>(
+        deserializer: D,
+    ) -> Result<Self, D::Error> {
         deserializer.deserialize_str(LanguageVisitor)
     }
 }
