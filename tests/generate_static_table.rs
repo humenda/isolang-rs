@@ -13,6 +13,26 @@ static ISO_TABLE_PATH: &str = "iso-639-3.tab";
 // Local names of languages from https://github.com/bbqsrc/iso639-autonyms
 static AUTONYMS_TABLE_PATH: &str = "iso639-autonyms.tsv";
 
+fn format_code(code: &str) -> String {
+    let child = Command::new("rustfmt")
+        .stdin(Stdio::piped())
+        .stdout(Stdio::piped())
+        .spawn()
+        .expect("Unable to format code, install rustfmt");
+    {
+        let mut childstdin = child.stdin.as_ref().unwrap();
+        let mut writer = BufWriter::new(&mut childstdin);
+        writer.write_all(code.as_bytes()).unwrap();
+    }
+    let output = child.wait_with_output().unwrap();
+    if !output.status.success() {
+        panic!("Unable to execute rustfmt");
+    }
+
+     String::from_utf8(output.stdout)
+        .expect("Could not parse the generated source as UTF-8")
+    }
+
 /// Language data as extracted from `iso-639-3.tsv` and `iso-639-autonyms.tsv`.
 struct LangCode<'a> {
     code_3: &'a str,
@@ -142,82 +162,61 @@ fn generated_code_table_if_outdated() {
     );
 
     let codes = read_iso_table(&iso_table, &autonyms_table);
-    let mut src = String::with_capacity(1024 * 1024 + 1024 * 256); // Current size at 118k
-    src.push_str(
+    let mut new_code = String::with_capacity(1024 * 1024 + 1024 * 256); // Current size at 118k
+    new_code.push_str(
         "/// This file is generated and should not be edited directly.\nuse super::LanguageData;\n\n",
     );
 
     // write overview table with all data
-    write_overview_table(&mut src, &codes);
+    write_overview_table(&mut new_code, &codes);
 
     // write enum with 639-3 codes (num is the index into the overview table)
     writeln!(
-        &mut src,
+        &mut new_code,
         "#[derive(Clone, Copy, Hash, Eq, PartialEq, PartialOrd, Ord)]"
     )
     .unwrap();
-    writeln!(&mut src, "pub enum Language {{").unwrap();
+    writeln!(&mut new_code, "pub enum Language {{").unwrap();
     for (num, lang) in codes.iter().enumerate() {
-        writeln!(&mut src, "    #[doc(hidden)]").unwrap();
-        writeln!(&mut src, "    {} = {},", Title(lang.code_3), num).unwrap();
+        writeln!(&mut new_code, "    #[doc(hidden)]").unwrap();
+        writeln!(&mut new_code, "    {} = {},", Title(lang.code_3), num).unwrap();
     }
-    writeln!(&mut src, "}}\n").unwrap();
+    writeln!(&mut new_code, "}}\n").unwrap();
 
     // write implementation for From<usize>
-    writeln!(&mut src, "\nimpl Language {{\n").unwrap();
+    writeln!(&mut new_code, "\nimpl Language {{\n").unwrap();
     writeln!(
-        &mut src,
+        &mut new_code,
         "pub fn from_usize(u: usize) -> Option<Self> {{\n        match u {{"
     )
     .unwrap();
     for (num, lang) in codes.iter().enumerate() {
         writeln!(
-            &mut src,
+            &mut new_code,
             "{} => Some(Language::{}),",
             num,
             Title(lang.code_3)
         )
         .unwrap();
     }
-    writeln!(&mut src, "    _ => None,").unwrap();
+    writeln!(&mut new_code, "    _ => None,").unwrap();
 
-    writeln!(&mut src, "}} }} }}\n").unwrap();
+    writeln!(&mut new_code, "}} }} }}\n").unwrap();
 
     // write map 639-1 -> enum mapping
-    write_two_letter_to_enum(&mut src, &codes);
+    write_two_letter_to_enum(&mut new_code, &codes);
 
     // write map 639-3 -> enum mapping
-    write_three_letter_to_enum(&mut src, &codes);
+    write_three_letter_to_enum(&mut new_code, &codes);
 
     // compare old to new -- format new code first
-    let child = Command::new("rustfmt")
-        .stdin(Stdio::piped())
-        .stdout(Stdio::piped())
-        .spawn()
-        .expect("Unable to format code, install rustfmt");
-    {
-        let mut childstdin = child.stdin.as_ref().unwrap();
-        let mut writer = BufWriter::new(&mut childstdin);
-        writer.write_all(src.as_bytes()).unwrap();
-    }
-    let output = child.wait_with_output().unwrap();
-    if !output.status.success() {
-        panic!("Unable to execute rustfmt");
-    }
-
-    let src = String::from_utf8(output.stdout)
-        .expect("Could not parse the generated source as UTF-8");
-
+    let new_code = format_code(&new_code);
     let path = Path::new(&env::var("CARGO_MANIFEST_DIR").unwrap())
         .join("src/isotable.rs");
-    let old = fs::read_to_string(&path).unwrap();
+    let old_code = format_code(&fs::read_to_string(&path).unwrap());
     // write new output and fail test to draw attention
-    if old != src {
-        fs::write(path.clone(), src).unwrap();
-        Command::new("rustfmt")
-            .arg(path)
-            .spawn()
-            .expect("Unable to format code, install rustfmt");
+    if old_code != new_code {
+        fs::write(path.clone(), new_code).unwrap();
 
         panic!("generated code in the repository is outdated, updating...");
     }
