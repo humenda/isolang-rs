@@ -29,9 +29,9 @@ fn format_code(code: &str) -> String {
         panic!("Unable to execute rustfmt");
     }
 
-     String::from_utf8(output.stdout)
+    String::from_utf8(output.stdout)
         .expect("Could not parse the generated source as UTF-8")
-    }
+}
 
 /// Language data as extracted from `iso-639-3.tsv` and `iso-639-autonyms.tsv`.
 struct LangCode<'a> {
@@ -179,7 +179,8 @@ fn generated_code_table_if_outdated() {
     writeln!(&mut new_code, "pub enum Language {{").unwrap();
     for (num, lang) in codes.iter().enumerate() {
         writeln!(&mut new_code, "    #[doc(hidden)]").unwrap();
-        writeln!(&mut new_code, "    {} = {},", Title(lang.code_3), num).unwrap();
+        writeln!(&mut new_code, "    {} = {},", Title(lang.code_3), num)
+            .unwrap();
     }
     writeln!(&mut new_code, "}}\n").unwrap();
 
@@ -216,9 +217,7 @@ fn generated_code_table_if_outdated() {
     let old_code = format_code(&fs::read_to_string(&path).unwrap());
     // write new output and fail test to draw attention
     if old_code != new_code {
-        fs::write(path, new_code.clone()).unwrap();
-        println!("src1 {}\n-------", old_code);
-        println!("src2 {}", new_code);
+        fs::write(path, new_code).unwrap();
 
         panic!("generated code in the repository is outdated, updating...");
     }
