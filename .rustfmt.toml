@@ -1,14 +1,12 @@
 array_width = 80
 attr_fn_like_width = 80
 chain_width = 80
-disable_all_formatting = false
 edition = "2021"
 fn_args_layout = "Tall"
 fn_call_width = 80
 force_explicit_abi = true
 hard_tabs = false
 match_arm_leading_pipes = "Never"
-match_block_trailing_comma = false
 max_width = 80
 merge_derives = true
 newline_style = "Auto"

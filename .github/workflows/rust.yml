@@ -1,16 +1,13 @@
 name: CI
 
-on:
-  push:
-    branches: ['master']
-  pull_request:
+on: [push, pull_request]
 
 jobs:
   test:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        rust: [stable, beta]
+        rust: [stable]
         exclude:
           - os: macos-latest
             rust: beta
@@ -25,6 +22,7 @@ jobs:
         with:
           profile: minimal
           toolchain: ${{ matrix.rust }}
+          components: rustfmt
           override: true
       - uses: actions-rs/cargo@v1
         with:

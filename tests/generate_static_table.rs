@@ -216,7 +216,9 @@ fn generated_code_table_if_outdated() {
     let old_code = format_code(&fs::read_to_string(&path).unwrap());
     // write new output and fail test to draw attention
     if old_code != new_code {
-        fs::write(path.clone(), new_code).unwrap();
+        fs::write(path, new_code.clone()).unwrap();
+        println!("src1 {}\n-------", old_code);
+        println!("src2 {}", new_code);
 
         panic!("generated code in the repository is outdated, updating...");
     }
