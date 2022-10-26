@@ -24,6 +24,14 @@
 //! assert_eq!(Language::from_639_1("de").unwrap().to_autonym(), Some("Deutsch"));
 //!
 //! assert_eq!(Language::from_639_3("spa").unwrap().to_639_1(), Some("es"));
+//!
+//! #[cfg(feature = "list_languages")]
+//! // Filter languages with a ISO 639-1 code
+//! let languages = isolang::languages();
+//! let languages_with_iso_639_1 = languages.filter(|language| language.to_639_1().is_some());
+//! for language in languages_with_iso_639_1 {
+//!     assert_eq!(language.to_639_1().is_some(), true);
+//! }
 //! ```
 
 #[cfg(feature = "serde")]
@@ -428,5 +436,27 @@ mod tests {
         assert!(Language::Deu < Language::Fra);
         let fra = Language::Fra;
         assert!(fra <= Language::Fra);
+    }
+
+    #[test]
+    #[cfg(feature = "list_languages")]
+    fn test_good_language_filtering() {
+        let languages = languages();
+        let languages_with_iso_639_1 =
+            languages.filter(|language| language.to_639_1().is_some());
+        for language in languages_with_iso_639_1 {
+            assert!(language.to_639_1().is_some());
+        }
+    }
+
+    #[test]
+    #[cfg(feature = "list_languages")]
+    fn test_wrong_language_filtering() {
+        let languages = languages();
+        let languages_with_iso_639_1 =
+            languages.filter(|language| language.to_639_1().is_none());
+        for language in languages_with_iso_639_1 {
+            assert!(language.to_639_1().is_none());
+        }
     }
 }
