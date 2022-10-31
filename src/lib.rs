@@ -81,7 +81,7 @@ use isotable::{OVERVIEW, THREE_TO_THREE, TWO_TO_THREE};
 /// }
 ///
 /// // Filter languages with a ISO 639-1 code
-/// # let languages = isolang::languages();
+/// let languages = isolang::languages();
 /// let languages_with_iso_639_1 = languages.filter(|language| language.to_639_1().is_some());
 /// for language in languages_with_iso_639_1 {
 ///     assert_eq!(language.to_639_1().is_some(), true);
