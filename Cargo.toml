@@ -28,6 +28,7 @@ version = "1.0"
 default = ["english_names"]
 english_names = []
 local_names = []
+list_languages = []
 
 [dev-dependencies]
 phf_codegen = "0.10"

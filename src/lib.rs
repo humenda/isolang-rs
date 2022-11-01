@@ -24,6 +24,16 @@
 //! assert_eq!(Language::from_639_1("de").unwrap().to_autonym(), Some("Deutsch"));
 //!
 //! assert_eq!(Language::from_639_3("spa").unwrap().to_639_1(), Some("es"));
+//!
+//! #[cfg(feature = "list_languages")]
+//! {
+//!     // Filter languages with a ISO 639-1 code
+//!     let languages = isolang::languages();
+//!     let languages_with_iso_639_1 = languages.filter(|language| language.to_639_1().is_some());
+//!     for language in languages_with_iso_639_1 {
+//!         assert_eq!(language.to_639_1().is_some(), true);
+//!     }
+//! }
 //! ```
 
 #[cfg(feature = "serde")]
@@ -56,6 +66,33 @@ struct LanguageData {
 mod isotable;
 pub use isotable::Language;
 use isotable::{OVERVIEW, THREE_TO_THREE, TWO_TO_THREE};
+
+/// Get an iterator of all languages.
+///
+/// This will return an iterator over all the variants of the [`Language`](enum.Language.html) enum.
+/// It is available if compiled with the `list_languages` feature.
+///
+/// # Examples
+///
+/// ```
+/// let languages = isolang::languages();
+///
+/// // Display ISO 639-3 code of every language
+/// for language in languages {
+///     println!("{}", language.to_639_3());
+/// }
+///
+/// // Filter languages with a ISO 639-1 code
+/// let languages = isolang::languages();
+/// let languages_with_iso_639_1 = languages.filter(|language| language.to_639_1().is_some());
+/// for language in languages_with_iso_639_1 {
+///     assert_eq!(language.to_639_1().is_some(), true);
+/// }
+/// ```
+#[cfg(feature = "list_languages")]
+pub fn languages() -> impl Iterator<Item = Language> {
+    OVERVIEW.iter().enumerate().filter_map(|(idx, _)| Language::from_usize(idx))
+}
 
 impl Language {
     /// Create string representation of this Language as a ISO 639-3 code.
@@ -401,5 +438,27 @@ mod tests {
         assert!(Language::Deu < Language::Fra);
         let fra = Language::Fra;
         assert!(fra <= Language::Fra);
+    }
+
+    #[test]
+    #[cfg(feature = "list_languages")]
+    fn test_good_language_filtering() {
+        let languages = languages();
+        let languages_with_iso_639_1 =
+            languages.filter(|language| language.to_639_1().is_some());
+        for language in languages_with_iso_639_1 {
+            assert!(language.to_639_1().is_some());
+        }
+    }
+
+    #[test]
+    #[cfg(feature = "list_languages")]
+    fn test_wrong_language_filtering() {
+        let languages = languages();
+        let languages_with_iso_639_1 =
+            languages.filter(|language| language.to_639_1().is_none());
+        for language in languages_with_iso_639_1 {
+            assert!(language.to_639_1().is_none());
+        }
     }
 }
