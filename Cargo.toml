@@ -13,7 +13,7 @@ license = "Apache-2.0"
 name = "isolang"
 readme = "README.md"
 repository = "https://github.com/humenda/isolang-rs"
-version = "2.1.0"
+version = "2.2.0"
 edition = "2021"
 
 [dependencies]
@@ -22,7 +22,6 @@ phf = "0.10"
 [dependencies.serde]
 optional = true
 version = "1.0"
-
 
 [features]
 default = ["english_names"]
