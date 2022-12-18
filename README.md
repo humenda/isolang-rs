@@ -55,3 +55,9 @@ add the following lines to your `Cargo.toml` (instead of the above code):
 features = ["serde"]
 version = "2.0"
 ```
+
+Data Source
+-----------
+
+The data is downloaded from
+<https://iso639-3.sil.org/code_tables/download_tables>.
