@@ -21,7 +21,7 @@ impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
         formatter.write_str("borrowed str or bytes")
     }
 
-    fn visit_borrowed_str<E>(self, v: &'a str) -> Result<Self::Value, E>
+    fn visit_str<E>(self, v: &str) -> Result<Self::Value, E>
     where
         E: serde::de::Error,
     {
@@ -34,7 +34,7 @@ impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
         }
     }
 
-    fn visit_borrowed_bytes<E>(self, v: &'a [u8]) -> Result<Self::Value, E>
+    fn visit_bytes<E>(self, v: &[u8]) -> Result<Self::Value, E>
     where
         E: serde::de::Error,
     {

@@ -428,6 +428,11 @@ mod tests {
             serde_json::from_str::<Language>("\"fr\"").unwrap(),
             Language::Fra
         );
+        assert_eq!(
+            serde_json::from_value::<Language>(serde_json::json!("fr"))
+                .unwrap(),
+            Language::Fra
+        );
 
         assert!(serde_json::from_str::<Language>("\"foo\"").is_err());
         assert!(serde_json::from_str::<Language>("123").is_err());
