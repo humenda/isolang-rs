@@ -362,12 +362,34 @@ impl std::fmt::Display for Language {
     }
 }
 
+#[derive(Debug)]
+pub struct ParseLanguageError(String);
+
+impl std::fmt::Display for ParseLanguageError {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "'{}' is not a valid ISO 639-1 or 639-3 code.", self.0)
+    }
+}
+
+impl std::error::Error for ParseLanguageError {}
+
+impl std::str::FromStr for Language {
+    type Err = ParseLanguageError;
+
+    fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
+        match Language::from_639_3(s).or_else(|| Language::from_639_1(s)) {
+            Some(l) => Ok(l),
+            None => Err(ParseLanguageError(s.to_owned())),
+        }
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
     #[cfg(feature = "serde")]
     extern crate serde_json;
-    use std::fmt::Write;
+    use std::{fmt::Write, str::FromStr};
 
     #[test]
     fn invalid_locale_gives_none() {
@@ -460,5 +482,12 @@ mod tests {
         for language in languages_with_iso_639_1 {
             assert!(language.to_639_1().is_none());
         }
+    }
+
+    #[test]
+    fn test_from_str() {
+        assert_eq!(Language::from_str("deu").unwrap(), Language::Deu);
+        assert_eq!(Language::from_str("fr").unwrap(), Language::Fra);
+        assert!(Language::from_str("foo").is_err());
     }
 }
