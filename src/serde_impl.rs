@@ -1,3 +1,5 @@
+use std::str::FromStr;
+
 use crate::*;
 
 impl serde::ser::Serialize for Language {
@@ -25,13 +27,12 @@ impl<'a> serde::de::Visitor<'a> for LanguageVisitor {
     where
         E: serde::de::Error,
     {
-        match Language::from_639_3(v).or_else(|| Language::from_639_1(v)) {
-            Some(l) => Ok(l),
-            None => Err(serde::de::Error::unknown_variant(
+        Language::from_str(v).map_err(|_| {
+            serde::de::Error::unknown_variant(
                 v,
                 &["any valid ISO 639-1 or 639-3 code"],
-            )),
-        }
+            )
+        })
     }
 
     fn visit_borrowed_bytes<E>(self, v: &'a [u8]) -> Result<Self::Value, E>
