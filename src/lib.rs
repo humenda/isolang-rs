@@ -41,7 +41,11 @@ mod serde_impl;
 
 extern crate phf;
 
-use std::str;
+use std::{
+    error::Error,
+    fmt::{Debug, Display, Formatter},
+    str::{self, FromStr},
+};
 
 /// Language data extracted from `iso-639-3.tab` and `iso639-autonyms.tsv`
 ///
@@ -334,15 +338,15 @@ impl Default for Language {
     }
 }
 
-impl std::fmt::Debug for Language {
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+impl Debug for Language {
+    fn fmt(&self, f: &mut Formatter) -> std::fmt::Result {
         write!(f, "{}", self.to_639_3())
     }
 }
 
-impl std::fmt::Display for Language {
+impl Display for Language {
     #[cfg(feature = "local_names")]
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+    fn fmt(&self, f: &mut Formatter) -> std::fmt::Result {
         write!(
             f,
             "{} ({})",
@@ -352,12 +356,12 @@ impl std::fmt::Display for Language {
     }
 
     #[cfg(all(not(feature = "local_names"), feature = "english_names"))]
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+    fn fmt(&self, f: &mut Formatter) -> std::fmt::Result {
         write!(f, "{}", self.to_name())
     }
 
     #[cfg(all(not(feature = "local_names"), not(feature = "english_names")))]
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+    fn fmt(&self, f: &mut Formatter) -> std::fmt::Result {
         write!(f, "{}", self.to_639_3())
     }
 }
@@ -365,15 +369,15 @@ impl std::fmt::Display for Language {
 #[derive(Debug)]
 pub struct ParseLanguageError(String);
 
-impl std::fmt::Display for ParseLanguageError {
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+impl Display for ParseLanguageError {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
         write!(f, "'{}' is not a valid ISO 639-1 or 639-3 code.", self.0)
     }
 }
 
-impl std::error::Error for ParseLanguageError {}
+impl Error for ParseLanguageError {}
 
-impl std::str::FromStr for Language {
+impl FromStr for Language {
     type Err = ParseLanguageError;
 
     fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
@@ -389,7 +393,7 @@ mod tests {
     use super::*;
     #[cfg(feature = "serde")]
     extern crate serde_json;
-    use std::{fmt::Write, str::FromStr};
+    use std::fmt::Write;
 
     #[test]
     fn invalid_locale_gives_none() {
