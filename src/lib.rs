@@ -345,7 +345,7 @@ impl Debug for Language {
 }
 
 impl Display for Language {
-    #[cfg(feature = "local_names")]
+    #[cfg(all(feature = "local_names", feature = "english_names"))]
     fn fmt(&self, f: &mut Formatter) -> std::fmt::Result {
         write!(
             f,
@@ -353,6 +353,11 @@ impl Display for Language {
             self.to_name(),
             self.to_autonym().unwrap_or("missing autonym")
         )
+    }
+
+    #[cfg(all(feature = "local_names", not(feature = "english_names")))]
+    fn fmt(&self, f: &mut Formatter) -> std::fmt::Result {
+        write!(f, "{}", self.to_autonym().unwrap_or("missing autonym"))
     }
 
     #[cfg(all(not(feature = "local_names"), feature = "english_names"))]
@@ -412,16 +417,20 @@ mod tests {
     #[test]
     fn test_std_fmt() {
         let mut t = String::new();
-        write!(t, "{}", Language::Eng).unwrap();
-        if cfg!(feature = "local_names") {
-            assert_eq!(t, "English (English)");
+        write!(t, "{}", Language::Deu).unwrap();
+        if cfg!(feature = "local_names") && cfg!(feature = "english_names") {
+            assert_eq!(t, "German (Deutsch)");
+        } else if cfg!(feature = "local_names") {
+            assert_eq!(t, "Deutsch");
+        } else if cfg!(feature = "english_names") {
+            assert_eq!(t, "German");
         } else {
-            assert_eq!(t, "English");
+            assert_eq!(t, "deu");
         }
 
         let mut t = String::new();
-        write!(t, "{:?}", Language::Eng).unwrap();
-        assert_eq!(t, "eng");
+        write!(t, "{:?}", Language::Deu).unwrap();
+        assert_eq!(t, "deu");
     }
 
     #[test]
