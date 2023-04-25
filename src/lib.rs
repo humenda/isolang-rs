@@ -332,6 +332,7 @@ impl Language {
     }
 }
 
+#[allow(clippy::derivable_impls)]
 impl Default for Language {
     fn default() -> Self {
         Language::Und
