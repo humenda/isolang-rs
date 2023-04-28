@@ -93,7 +93,7 @@ use isotable::{OVERVIEW, THREE_TO_THREE, TWO_TO_THREE};
 ///     assert_eq!(language.to_639_1().is_some(), true);
 /// }
 /// ```
-#[cfg(feature = "list_languages")]
+#[cfg(any(feature = "list_languages", test))]
 pub fn languages() -> impl Iterator<Item = Language> {
     OVERVIEW.iter().enumerate().filter_map(|(idx, _)| Language::from_usize(idx))
 }
@@ -455,23 +455,50 @@ mod tests {
     #[test]
     #[cfg(feature = "serde")]
     fn test_serde() {
-        assert_eq!(serde_json::to_string(&Language::Deu).unwrap(), "\"deu\"");
-        assert_eq!(
-            serde_json::from_str::<Language>("\"deu\"").unwrap(),
-            Language::Deu
-        );
-        assert_eq!(
-            serde_json::from_str::<Language>("\"fr\"").unwrap(),
-            Language::Fra
-        );
-        assert_eq!(
-            serde_json::from_value::<Language>(serde_json::json!("fr"))
-                .unwrap(),
-            Language::Fra
-        );
+        fn to_json(code: &str) -> String {
+            format!(r#""{code}""#)
+        }
 
-        assert!(serde_json::from_str::<Language>("\"foo\"").is_err());
-        assert!(serde_json::from_str::<Language>("123").is_err());
+        fn test_deserialize(language: Language, code: &str) {
+            assert_eq!(
+                serde_json::from_str::<Language>(&to_json(code)).unwrap(),
+                language
+            );
+            assert_eq!(
+                serde_json::from_value::<Language>(serde_json::json!(code))
+                    .unwrap(),
+                language
+            );
+        }
+
+        for language in languages() {
+            assert_eq!(
+                serde_json::to_string(&language).unwrap(),
+                to_json(language.to_639_3())
+            );
+
+            test_deserialize(language, language.to_639_3());
+            if let Some(code) = language.to_639_1() {
+                test_deserialize(language, code)
+            }
+
+            assert_eq!(
+                serde_json::from_str::<Language>(
+                    &serde_json::to_string(&language).unwrap()
+                )
+                .unwrap(),
+                language
+            );
+        }
+
+        assert_eq!(
+            serde_json::from_str::<Language>(&to_json("foo")).map_err(|e| e.to_string()),
+            Err("unknown variant `foo`, expected `any valid ISO 639-1 or 639-3 code` at line 1 column 5".to_string())
+        );
+        assert_eq!(
+            serde_json::from_str::<Language>("123").map_err(|e| e.to_string()),
+            Err("invalid type: integer `123`, expected borrowed str or bytes at line 1 column 3".to_string())
+        );
     }
 
     #[test]
