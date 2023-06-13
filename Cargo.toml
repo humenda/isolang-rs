@@ -2,13 +2,7 @@
 authors = ["Sebastian Humenda <shumenda@gmx.de>"]
 description = "Efficient, static lookup table for ISO 639 language codes"
 documentation = "https://docs.rs/isolang"
-keywords = [
-    "iso",
-    "iso-639",
-    "language",
-    "language-code",
-    "autonym"
-]
+keywords = ["iso", "iso-639", "language", "language-code", "autonym"]
 license = "Apache-2.0"
 name = "isolang"
 readme = "README.md"
@@ -26,6 +20,7 @@ version = "1.0"
 [features]
 default = ["english_names"]
 english_names = []
+lowercase_names = []
 local_names = []
 list_languages = []
 

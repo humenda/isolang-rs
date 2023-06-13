@@ -44,6 +44,15 @@ assert_eq!(Language::from_639_3("spa").unwrap().to_639_1(), Some("es"));
 assert_eq!(Language::default(), Language::Und);
 ```
 
+```rust
+use isolang::Language;
+
+assert_eq!(Language::from_str("es").unwrap().to_name(), "Spanish");
+assert_eq!(Language::from_str("spa").unwrap().to_name(), "Spanish");
+// It is available if compiled with the `lowercase_names` feature.
+assert_eq!(Language::from_str("spanish").unwrap().to_name(), "Spanish");
+```
+
 Serde support
 -------------
 

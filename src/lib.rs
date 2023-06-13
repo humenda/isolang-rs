@@ -61,8 +61,8 @@ struct LanguageData {
     /// The code generator removes any parenthesized suffix from the name.
     #[cfg(feature = "english_names")]
     name_en: &'static str,
-    /// The language's name in English, lowercased (column `Ref_Name` in `iso-639-3.tab`)
-    #[cfg(feature = "english_names")]
+    /// The language's lowercase name in English (column `Ref_Name` in `iso-639-3.tab`)
+    #[cfg(feature = "lowercase_names")]
     name_en_lc: &'static str,
     /// The language's name in its own language (column `autonym` in `iso639-autonyms.tsv`)
     #[cfg(feature = "local_names")]
@@ -189,16 +189,16 @@ impl Language {
     ///
     /// This returns the ISO code by the given lowercase English name of the language string, as defined in
     /// the ISO 639 standard. It does not include additional comments, e.g. classification of a
-    /// macrolanguage, etc. Only available if compiled with the `english_names` feature.
+    /// macrolanguage, etc. Only available if compiled with the `lowercase_names` feature.
     ///
     /// # Examples
     ///
     /// ```rust
     /// use isolang::Language;
-    /// let some_input_name = "Spanish"; // maybe "spanish"
+    /// let some_input_name = "spanish"; // maybe "Spanish"
     /// assert_eq!(Language::from_name_lowercase(&some_input_name.to_ascii_lowercase()), Some(Language::Spa));
     /// ```
-    #[cfg(feature = "english_names")]
+    #[cfg(feature = "lowercase_names")]
     pub fn from_name_lowercase(engl_name: &str) -> Option<Self> {
         OVERVIEW
             .iter()
@@ -412,6 +412,14 @@ impl FromStr for Language {
     type Err = ParseLanguageError;
 
     fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
+        match Language::from_639_3(s).or_else(|| Language::from_639_1(s)) {
+            Some(l) => Ok(l),
+            None => Err(ParseLanguageError(s.to_owned())),
+        }
+    }
+
+    #[cfg(feature = "lowercase_names")]
+    fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
         match Language::from_639_3(s)
             .or_else(|| Language::from_639_1(s))
             .or_else(|| Language::from_name_lowercase(s))
@@ -562,7 +570,9 @@ mod tests {
     fn test_from_str() {
         assert_eq!(Language::from_str("deu").unwrap(), Language::Deu);
         assert_eq!(Language::from_str("fr").unwrap(), Language::Fra);
-        assert_eq!(Language::from_str("english").unwrap(), Language::Eng);
+        if cfg!(feature = "lowercase_names") {
+            assert_eq!(Language::from_str("english").unwrap(), Language::Eng);
+        }
         assert!(Language::from_str("foo").is_err());
     }
 }

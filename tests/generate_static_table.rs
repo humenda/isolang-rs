@@ -109,7 +109,7 @@ fn write_overview_table(out: &mut String, codes: &[LangCode]) {
         code_1: {:?},
         #[cfg(feature = "english_names")]
         name_en: {:?},
-        #[cfg(feature = "english_names")]
+        #[cfg(feature = "lowercase_names")]
         name_en_lc: {:?},
         #[cfg(feature = "local_names")]
         autonym: {:?},
