@@ -411,6 +411,7 @@ impl Error for ParseLanguageError {}
 impl FromStr for Language {
     type Err = ParseLanguageError;
 
+    #[cfg(not(feature = "lowercase_names"))]
     fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
         match Language::from_639_3(s).or_else(|| Language::from_639_1(s)) {
             Some(l) => Ok(l),
@@ -418,11 +419,23 @@ impl FromStr for Language {
         }
     }
 
-    #[cfg(feature = "lowercase_names")]
+    #[cfg(all(not(feature = "local_names"), feature = "lowercase_names"))]
     fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
         match Language::from_639_3(s)
             .or_else(|| Language::from_639_1(s))
             .or_else(|| Language::from_name_lowercase(s))
+        {
+            Some(l) => Ok(l),
+            None => Err(ParseLanguageError(s.to_owned())),
+        }
+    }
+
+    #[cfg(all(feature = "local_names", feature = "lowercase_names"))]
+    fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
+        match Language::from_639_3(s)
+            .or_else(|| Language::from_639_1(s))
+            .or_else(|| Language::from_name_lowercase(s))
+            .or_else(|| Language::from_autonym(s))
         {
             Some(l) => Ok(l),
             None => Err(ParseLanguageError(s.to_owned())),
@@ -570,9 +583,25 @@ mod tests {
     fn test_from_str() {
         assert_eq!(Language::from_str("deu").unwrap(), Language::Deu);
         assert_eq!(Language::from_str("fr").unwrap(), Language::Fra);
-        if cfg!(feature = "lowercase_names") {
-            assert_eq!(Language::from_str("english").unwrap(), Language::Eng);
-        }
         assert!(Language::from_str("foo").is_err());
+    }
+
+    #[test]
+    fn test_from_str_full_features() {
+        assert_eq!(Language::from_str("es").unwrap().to_name(), "Spanish");
+        assert_eq!(Language::from_str("spa").unwrap().to_name(), "Spanish");
+        if cfg!(feature = "lowercase_names") {
+            assert_eq!(
+                Language::from_str("spanish").unwrap().to_name(),
+                "Spanish"
+            );
+        }
+        if cfg!(feature = "lowercase_names") && cfg!(feature = "local_names") {
+            assert_eq!(
+                Language::from_str("español").unwrap().to_name(),
+                "Spanish"
+            );
+        }
+        assert!(Language::from_str("Spanish").is_err());
     }
 }
