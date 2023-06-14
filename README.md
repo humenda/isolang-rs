@@ -46,12 +46,12 @@ assert_eq!(Language::default(), Language::Und);
 
 ```rust
 use isolang::Language;
-
+// `to_name()` is available if compiled with the `english_names` feature.
 assert_eq!(Language::from_str("es").unwrap().to_name(), "Spanish");
 assert_eq!(Language::from_str("spa").unwrap().to_name(), "Spanish");
-// It is available if compiled with the `lowercase_names` feature.
+// `from_str(lowercase_name)` is available if compiled with the `lowercase_names` feature.
 assert_eq!(Language::from_str("spanish").unwrap().to_name(), "Spanish");
-// It is available if compiled with the `lowercase_names` and `local_names` features.
+// `from_str(local_name)` is available if compiled with the `lowercase_names` and `local_names` features.
 assert_eq!(Language::from_str("español").unwrap().to_name(), "Spanish");
 ```
 

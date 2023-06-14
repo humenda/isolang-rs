@@ -587,6 +587,7 @@ mod tests {
     }
 
     #[test]
+    #[cfg(feature = "english_names")]
     fn test_from_str_full_features() {
         assert_eq!(Language::from_str("es").unwrap().to_name(), "Spanish");
         assert_eq!(Language::from_str("spa").unwrap().to_name(), "Spanish");
