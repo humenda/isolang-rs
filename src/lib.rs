@@ -61,9 +61,6 @@ struct LanguageData {
     /// The code generator removes any parenthesized suffix from the name.
     #[cfg(feature = "english_names")]
     name_en: &'static str,
-    /// The language's lowercase name in English (column `Ref_Name` in `iso-639-3.tab`)
-    #[cfg(feature = "lowercase_names")]
-    name_en_lc: &'static str,
     /// The language's name in its own language (column `autonym` in `iso639-autonyms.tsv`)
     #[cfg(feature = "local_names")]
     autonym: Option<&'static str>,
@@ -196,14 +193,14 @@ impl Language {
     /// ```rust
     /// use isolang::Language;
     /// let some_input_name = "spanish"; // maybe "Spanish"
-    /// assert_eq!(Language::from_name_lowercase(&some_input_name.to_ascii_lowercase()), Some(Language::Spa));
+    /// assert_eq!(Language::from_name_lowercase(some_input_name.to_ascii_lowercase()), Some(Language::Spa));
     /// ```
     #[cfg(feature = "lowercase_names")]
     pub fn from_name_lowercase(engl_name: &str) -> Option<Self> {
         OVERVIEW
             .iter()
             .enumerate()
-            .find(|(_, it)| it.name_en_lc == engl_name)
+            .find(|(_, it)| it.name_en.to_ascii_lowercase() == engl_name)
             .and_then(|(idx, _)| Language::from_usize(idx))
     }
 
