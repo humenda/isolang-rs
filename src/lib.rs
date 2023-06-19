@@ -193,14 +193,16 @@ impl Language {
     /// ```rust
     /// use isolang::Language;
     /// let some_input_name = "spanish"; // maybe "Spanish"
-    /// assert_eq!(Language::from_name_lowercase(some_input_name.to_ascii_lowercase()), Some(Language::Spa));
+    /// assert_eq!(Language::from_name_lowercase(&some_input_name.to_ascii_lowercase()), Some(Language::Spa));
     /// ```
-    #[cfg(feature = "lowercase_names")]
+    #[cfg(all(feature = "english_names", feature = "lowercase_names"))]
     pub fn from_name_lowercase(engl_name: &str) -> Option<Self> {
         OVERVIEW
             .iter()
             .enumerate()
-            .find(|(_, it)| it.name_en.to_ascii_lowercase() == engl_name)
+            .find(|(_, it)| {
+                it.name_en.to_ascii_lowercase().as_str() == engl_name
+            })
             .and_then(|(idx, _)| Language::from_usize(idx))
     }
 
@@ -416,7 +418,11 @@ impl FromStr for Language {
         }
     }
 
-    #[cfg(all(not(feature = "local_names"), feature = "lowercase_names"))]
+    #[cfg(all(
+        feature = "english_names",
+        feature = "lowercase_names",
+        not(feature = "local_names")
+    ))]
     fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
         match Language::from_639_3(s)
             .or_else(|| Language::from_639_1(s))
@@ -427,7 +433,11 @@ impl FromStr for Language {
         }
     }
 
-    #[cfg(all(feature = "local_names", feature = "lowercase_names"))]
+    #[cfg(all(
+        feature = "english_names",
+        feature = "lowercase_names",
+        feature = "local_names"
+    ))]
     fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
         match Language::from_639_3(s)
             .or_else(|| Language::from_639_1(s))
