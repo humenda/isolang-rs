@@ -410,7 +410,10 @@ impl Error for ParseLanguageError {}
 impl FromStr for Language {
     type Err = ParseLanguageError;
 
-    #[cfg(not(feature = "lowercase_names"))]
+    #[cfg(any(
+        not(feature = "english_names"),
+        not(feature = "lowercase_names")
+    ))]
     fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
         match Language::from_639_3(s).or_else(|| Language::from_639_1(s)) {
             Some(l) => Ok(l),
