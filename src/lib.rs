@@ -182,6 +182,30 @@ impl Language {
             .and_then(|(idx, _)| Language::from_usize(idx))
     }
 
+    /// Get the ISO code by its lowercase English name.
+    ///
+    /// This returns the ISO code by the given lowercase English name of the language string, as defined in
+    /// the ISO 639 standard. It does not include additional comments, e.g. classification of a
+    /// macrolanguage, etc. Only available if compiled with the `lowercase_names` feature.
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// use isolang::Language;
+    /// let some_input_name = "spanish"; // maybe "Spanish"
+    /// assert_eq!(Language::from_name_lowercase(&some_input_name.to_ascii_lowercase()), Some(Language::Spa));
+    /// ```
+    #[cfg(all(feature = "english_names", feature = "lowercase_names"))]
+    pub fn from_name_lowercase(engl_name: &str) -> Option<Self> {
+        OVERVIEW
+            .iter()
+            .enumerate()
+            .find(|(_, it)| {
+                it.name_en.to_ascii_lowercase().as_str() == engl_name
+            })
+            .and_then(|(idx, _)| Language::from_usize(idx))
+    }
+
     /// Get all matching ISO codes by a provided English name pattern.
     ///
     /// This returns the matching ISO codes for the provided matcher. The matcher matches all known
@@ -386,8 +410,43 @@ impl Error for ParseLanguageError {}
 impl FromStr for Language {
     type Err = ParseLanguageError;
 
+    #[cfg(any(
+        not(feature = "english_names"),
+        not(feature = "lowercase_names")
+    ))]
     fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
         match Language::from_639_3(s).or_else(|| Language::from_639_1(s)) {
+            Some(l) => Ok(l),
+            None => Err(ParseLanguageError(s.to_owned())),
+        }
+    }
+
+    #[cfg(all(
+        feature = "english_names",
+        feature = "lowercase_names",
+        not(feature = "local_names")
+    ))]
+    fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
+        match Language::from_639_3(s)
+            .or_else(|| Language::from_639_1(s))
+            .or_else(|| Language::from_name_lowercase(s))
+        {
+            Some(l) => Ok(l),
+            None => Err(ParseLanguageError(s.to_owned())),
+        }
+    }
+
+    #[cfg(all(
+        feature = "english_names",
+        feature = "lowercase_names",
+        feature = "local_names"
+    ))]
+    fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
+        match Language::from_639_3(s)
+            .or_else(|| Language::from_639_1(s))
+            .or_else(|| Language::from_name_lowercase(s))
+            .or_else(|| Language::from_autonym(s))
+        {
             Some(l) => Ok(l),
             None => Err(ParseLanguageError(s.to_owned())),
         }
@@ -535,5 +594,25 @@ mod tests {
         assert_eq!(Language::from_str("deu").unwrap(), Language::Deu);
         assert_eq!(Language::from_str("fr").unwrap(), Language::Fra);
         assert!(Language::from_str("foo").is_err());
+    }
+
+    #[test]
+    #[cfg(feature = "english_names")]
+    fn test_from_str_full_features() {
+        assert_eq!(Language::from_str("es").unwrap().to_name(), "Spanish");
+        assert_eq!(Language::from_str("spa").unwrap().to_name(), "Spanish");
+        if cfg!(feature = "lowercase_names") {
+            assert_eq!(
+                Language::from_str("spanish").unwrap().to_name(),
+                "Spanish"
+            );
+        }
+        if cfg!(feature = "lowercase_names") && cfg!(feature = "local_names") {
+            assert_eq!(
+                Language::from_str("español").unwrap().to_name(),
+                "Spanish"
+            );
+        }
+        assert!(Language::from_str("Spanish").is_err());
     }
 }

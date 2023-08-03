@@ -26,6 +26,7 @@ version = "1.0"
 [features]
 default = ["english_names"]
 english_names = []
+lowercase_names = []
 local_names = []
 list_languages = []
 
