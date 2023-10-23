@@ -125,14 +125,14 @@ fn write_overview_table(out: &mut String, codes: &[LangCode]) {
 
 /// Write a mapping of codes from 639-1 -> Language::`639-3`.
 fn write_two_letter_to_enum(out: &mut String, codes: &[LangCode]) {
-    write!(out, "pub(crate) const TWO_TO_THREE: phf::Map<&str, usize> = ")
+    write!(out, "pub(crate) const TWO_TO_THREE: phf::Map<&str, u16> = ")
         .unwrap();
     let mut map = phf_codegen::Map::new();
     for lang in codes.iter() {
         if let Some(ref two_letter) = lang.code_1 {
             map.entry(
                 two_letter,
-                &format!("Language::{} as usize", Title(lang.code_3)),
+                &format!("Language::{} as u16", Title(lang.code_3)),
             );
         }
     }
@@ -141,13 +141,13 @@ fn write_two_letter_to_enum(out: &mut String, codes: &[LangCode]) {
 
 /// Write a mapping of codes from 639-3 -> Language::`639-3`.
 fn write_three_letter_to_enum(out: &mut String, codes: &[LangCode]) {
-    write!(out, "pub(crate) const THREE_TO_THREE: phf::Map<&str, usize> = ")
+    write!(out, "pub(crate) const THREE_TO_THREE: phf::Map<&str, u16> = ")
         .unwrap();
     let mut map = phf_codegen::Map::new();
     for lang in codes.iter() {
         map.entry(
             lang.code_3,
-            &format!("Language::{} as usize", Title(lang.code_3)),
+            &format!("Language::{} as u16", Title(lang.code_3)),
         );
     }
     writeln!(out, "{};", map.build()).unwrap();
@@ -182,7 +182,6 @@ fn generated_code_table_if_outdated() {
         "#[derive(Clone, Copy, Hash, Eq, PartialEq, PartialOrd, Ord)]"
     )
     .unwrap();
-    writeln!(&mut new_code, "#[repr(usize)]").unwrap();
     writeln!(&mut new_code, "pub enum Language {{").unwrap();
     for (num, lang) in codes.iter().enumerate() {
         writeln!(&mut new_code, "    #[doc(hidden)]").unwrap();
