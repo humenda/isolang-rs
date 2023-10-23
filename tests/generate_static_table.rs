@@ -128,9 +128,12 @@ fn write_two_letter_to_enum(out: &mut String, codes: &[LangCode]) {
     write!(out, "pub(crate) const TWO_TO_THREE: phf::Map<&str, usize> = ")
         .unwrap();
     let mut map = phf_codegen::Map::new();
-    for (idx, lang) in codes.iter().enumerate() {
+    for lang in codes.iter() {
         if let Some(ref two_letter) = lang.code_1 {
-            map.entry(two_letter, &idx.to_string());
+            map.entry(
+                two_letter,
+                &format!("Language::{} as usize", Title(lang.code_3)),
+            );
         }
     }
     writeln!(out, "{};\n", map.build()).unwrap();
@@ -141,8 +144,11 @@ fn write_three_letter_to_enum(out: &mut String, codes: &[LangCode]) {
     write!(out, "pub(crate) const THREE_TO_THREE: phf::Map<&str, usize> = ")
         .unwrap();
     let mut map = phf_codegen::Map::new();
-    for (idx, lang) in codes.iter().enumerate() {
-        map.entry(lang.code_3, &idx.to_string());
+    for lang in codes.iter() {
+        map.entry(
+            lang.code_3,
+            &format!("Language::{} as usize", Title(lang.code_3)),
+        );
     }
     writeln!(out, "{};", map.build()).unwrap();
 }
