@@ -44,6 +44,7 @@ extern crate phf;
 use std::{
     error::Error,
     fmt::{Debug, Display, Formatter},
+    mem,
     str::{self, FromStr},
 };
 
@@ -313,7 +314,12 @@ impl Language {
         if code.len() != 2 {
             return None;
         }
-        TWO_TO_THREE.get(code).cloned()
+
+        // SAFETY: Enum is repr usize and the codes are generated at compile-time
+        TWO_TO_THREE
+            .get(code)
+            .copied()
+            .map(|raw_lang| unsafe { mem::transmute(raw_lang) })
     }
 
     /// Create a Language instance rom a ISO 639-3 code.
@@ -333,7 +339,12 @@ impl Language {
         if code.len() != 3 {
             return None;
         }
-        THREE_TO_THREE.get(code).cloned()
+
+        // SAFETY: Enum is repr usize and the codes are generated at compile-time
+        THREE_TO_THREE
+            .get(code)
+            .copied()
+            .map(|raw_lang| unsafe { mem::transmute(raw_lang) })
     }
 
     /// Parse language from given locale
