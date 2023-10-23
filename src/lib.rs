@@ -313,7 +313,11 @@ impl Language {
         if code.len() != 2 {
             return None;
         }
-        TWO_TO_THREE.get(code).cloned()
+
+        TWO_TO_THREE
+            .get(code)
+            .copied()
+            .and_then(|raw_lang| Language::from_usize(raw_lang as usize))
     }
 
     /// Create a Language instance rom a ISO 639-3 code.
@@ -333,7 +337,11 @@ impl Language {
         if code.len() != 3 {
             return None;
         }
-        THREE_TO_THREE.get(code).cloned()
+
+        THREE_TO_THREE
+            .get(code)
+            .copied()
+            .and_then(|raw_lang| Language::from_usize(raw_lang as usize))
     }
 
     /// Parse language from given locale
