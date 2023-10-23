@@ -315,7 +315,7 @@ impl Language {
             return None;
         }
 
-        // SAFETY: Enum is repr usize and the codes are generated at compile-time
+        // SAFETY: Enum is repr usize and the codes are produced via an `as` cast from the actual enum variants
         TWO_TO_THREE
             .get(code)
             .copied()
@@ -340,7 +340,7 @@ impl Language {
             return None;
         }
 
-        // SAFETY: Enum is repr usize and the codes are generated at compile-time
+        // SAFETY: Enum is repr usize and the codes are produced via an `as` cast from the actual enum variants
         THREE_TO_THREE
             .get(code)
             .copied()
