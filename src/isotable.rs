@@ -63285,6 +63285,7 @@ pub(crate) const OVERVIEW: [LanguageData; 7910] = [
     },
 ];
 #[derive(Clone, Copy, Hash, Eq, PartialEq, PartialOrd, Ord)]
+#[cfg_attr(feature = "async-graphql", derive(async_graphql::Enum))]
 pub enum Language {
     #[doc(hidden)]
     Aaa = 0,

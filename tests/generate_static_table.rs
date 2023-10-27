@@ -182,6 +182,10 @@ fn generated_code_table_if_outdated() {
         "#[derive(Clone, Copy, Hash, Eq, PartialEq, PartialOrd, Ord)]"
     )
     .unwrap();
+
+    writeln!(
+        &mut new_code,
+r###"#[cfg_attr(feature = "async-graphql", derive(async_graphql::Enum))]"###).unwrap();
     writeln!(&mut new_code, "pub enum Language {{").unwrap();
     for (num, lang) in codes.iter().enumerate() {
         writeln!(&mut new_code, "    #[doc(hidden)]").unwrap();
