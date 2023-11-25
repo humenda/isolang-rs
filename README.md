@@ -71,6 +71,4 @@ Data Source
 -----------
 
 The data is downloaded from
-<https://iso639-3.sil.org/code_tables/download_tables>,
-or, alternatively from
-<https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry>.
+<https://iso639-3.sil.org/code_tables/download_tables>.
