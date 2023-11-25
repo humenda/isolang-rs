@@ -55,6 +55,13 @@ assert_eq!(Language::from_str("spanish").unwrap().to_name(), "Spanish");
 assert_eq!(Language::from_str("español").unwrap().to_name(), "Spanish");
 ```
 
+Supported Cargo Features
+-------------------------
+
+
+Please take a look at the commented [Cargo.toml)(Cargo.toml) file for a
+up-to-date list of supported features.
+
 Serde support
 -------------
 
