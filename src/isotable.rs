@@ -96829,3 +96829,35 @@ pub(crate) const THREE_TO_THREE: phf::Map<&str, u16> = ::phf::Map {
         ("xjt", Language::Xjt as u16),
     ],
 };
+pub(crate) fn iso_639_3_to_2t(code: &str) -> &str {
+    #[allow(clippy::match_single_binding)]
+    match code {
+        _ => code,
+    }
+}
+pub(crate) fn iso_639_3_to_2b(code: &str) -> &str {
+    #[allow(clippy::match_single_binding)]
+    match code {
+        "bod" => "tib",
+        "ces" => "cze",
+        "cym" => "wel",
+        "deu" => "ger",
+        "ell" => "gre",
+        "eus" => "baq",
+        "fas" => "per",
+        "fra" => "fre",
+        "hye" => "arm",
+        "isl" => "ice",
+        "kat" => "geo",
+        "mkd" => "mac",
+        "mri" => "mao",
+        "msa" => "may",
+        "mya" => "bur",
+        "nld" => "dut",
+        "ron" => "rum",
+        "slk" => "slo",
+        "sqi" => "alb",
+        "zho" => "chi",
+        _ => code,
+    }
+}

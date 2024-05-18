@@ -69,7 +69,9 @@ struct LanguageData {
 #[rustfmt::skip]
 mod isotable;
 pub use isotable::Language;
-use isotable::{OVERVIEW, THREE_TO_THREE, TWO_TO_THREE};
+use isotable::{
+    iso_639_3_to_2b, iso_639_3_to_2t, OVERVIEW, THREE_TO_THREE, TWO_TO_THREE,
+};
 
 /// Get an iterator of all languages.
 ///
@@ -113,6 +115,36 @@ impl Language {
     pub fn to_639_3(&self) -> &'static str {
         // SAFETY: The ISO 639 table has been written to the binary with UTF-8 encoding, hence reading it without checks is safe.
         unsafe { str::from_utf8_unchecked(&OVERVIEW[*self as usize].code_3) }
+    }
+
+    /// Create string representation of this Language as a ISO 639-2b code.
+    ///
+    /// This method will return the ISO 639-2b code, which consists of three letters.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use isolang::Language;
+    ///
+    /// assert_eq!(Language::Deu.to_639_2b(), "ger");
+    /// ```
+    pub fn to_639_2b(&self) -> &'static str {
+        iso_639_3_to_2b(self.to_639_3())
+    }
+
+    /// Create string representation of this Language as a ISO 639-2t code.
+    ///
+    /// This method will return the ISO 639-2t code, which consists of three letters.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use isolang::Language;
+    ///
+    /// assert_eq!(Language::Deu.to_639_2t(), "ger");
+    /// ```
+    pub fn to_639_2t(&self) -> &'static str {
+        iso_639_3_to_2t(self.to_639_3())
     }
 
     /// Create two-letter ISO 639-1 representation of the language.
