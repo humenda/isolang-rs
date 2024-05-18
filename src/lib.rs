@@ -69,7 +69,9 @@ struct LanguageData {
 #[rustfmt::skip]
 mod isotable;
 pub use isotable::Language;
-use isotable::{OVERVIEW, THREE_TO_THREE, TWO_TO_THREE};
+use isotable::{
+    iso_639_2b_to_3, iso_639_3_to_2b, OVERVIEW, THREE_TO_THREE, TWO_TO_THREE,
+};
 
 /// Get an iterator of all languages.
 ///
@@ -113,6 +115,36 @@ impl Language {
     pub fn to_639_3(&self) -> &'static str {
         // SAFETY: The ISO 639 table has been written to the binary with UTF-8 encoding, hence reading it without checks is safe.
         unsafe { str::from_utf8_unchecked(&OVERVIEW[*self as usize].code_3) }
+    }
+
+    /// Create string representation of this Language as a ISO 639-2b code.
+    ///
+    /// This method will return the ISO 639-2b code, which consists of three letters.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use isolang::Language;
+    ///
+    /// assert_eq!(Language::Deu.to_639_2b(), "ger");
+    /// ```
+    pub fn to_639_2b(&self) -> &'static str {
+        iso_639_3_to_2b(self.to_639_3())
+    }
+
+    /// Create string representation of this Language as a ISO 639-2t code.
+    ///
+    /// This method will return the ISO 639-2t code, which consists of three letters.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use isolang::Language;
+    ///
+    /// assert_eq!(Language::Deu.to_639_2t(), "deu");
+    /// ```
+    pub fn to_639_2t(&self) -> &'static str {
+        self.to_639_3()
     }
 
     /// Create two-letter ISO 639-1 representation of the language.
@@ -320,6 +352,37 @@ impl Language {
             .and_then(|raw_lang| Language::from_usize(raw_lang as usize))
     }
 
+    /// Create a Language instance rom a ISO 639-2t code.
+    ///
+    /// This will return a Language instance if the given string is a valid three-letter language
+    /// code. For invalid inputs, None is returned.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use isolang::Language;
+    /// assert!(Language::from_639_2t("deu").is_some());
+    /// ```
+    pub fn from_639_2t(code: &str) -> Option<Language> {
+        // ISO 639-3 codes are backwards compatible with ISO 639-2t codes
+        Self::from_639_3(code)
+    }
+
+    /// Create a Language instance rom a ISO 639-2b code.
+    ///
+    /// This will return a Language instance if the given string is a valid three-letter language
+    /// code. For invalid inputs, None is returned.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use isolang::Language;
+    /// assert!(Language::from_639_2b("ger").is_some());
+    /// ```
+    pub fn from_639_2b(code: &str) -> Option<Language> {
+        Self::from_639_3(iso_639_2b_to_3(code))
+    }
+
     /// Create a Language instance rom a ISO 639-3 code.
     ///
     /// This will return a Language instance if the given string is a valid three-letter language
@@ -423,7 +486,11 @@ impl FromStr for Language {
         not(feature = "lowercase_names")
     ))]
     fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
-        match Language::from_639_3(s).or_else(|| Language::from_639_1(s)) {
+        match Language::from_639_3(s)
+            .or_else(|| Language::from_639_1(s))
+            // .or_else(|| Language::from_639_2t(s)) // ISO 639-3 codes are backwards compatible with ISO 639-2t codes, so this is unnecessary
+            .or_else(|| Language::from_639_2b(s))
+        {
             Some(l) => Ok(l),
             None => Err(ParseLanguageError(s.to_owned())),
         }

@@ -104745,3 +104745,54 @@ pub(crate) const THREE_TO_THREE: phf::Map<&str, u16> = ::phf::Map {
         ("xjt", Language::Xjt as u16),
     ],
 };
+pub(crate) fn iso_639_3_to_2b(code: &str) -> &str {
+    match code {
+        "bod" => "tib",
+        "ces" => "cze",
+        "cym" => "wel",
+        "deu" => "ger",
+        "ell" => "gre",
+        "eus" => "baq",
+        "fas" => "per",
+        "fra" => "fre",
+        "hye" => "arm",
+        "isl" => "ice",
+        "kat" => "geo",
+        "mkd" => "mac",
+        "mri" => "mao",
+        "msa" => "may",
+        "mya" => "bur",
+        "nld" => "dut",
+        "ron" => "rum",
+        "slk" => "slo",
+        "sqi" => "alb",
+        "zho" => "chi",
+        _ => code,
+    }
+}
+pub(crate) fn iso_639_2b_to_3(code: &str) -> &str {
+    #[allow(clippy::match_single_binding)]
+    match code {
+        "tib" => "bod",
+        "cze" => "ces",
+        "wel" => "cym",
+        "ger" => "deu",
+        "gre" => "ell",
+        "baq" => "eus",
+        "per" => "fas",
+        "fre" => "fra",
+        "arm" => "hye",
+        "ice" => "isl",
+        "geo" => "kat",
+        "mac" => "mkd",
+        "mao" => "mri",
+        "may" => "msa",
+        "bur" => "mya",
+        "dut" => "nld",
+        "rum" => "ron",
+        "slo" => "slk",
+        "alb" => "sqi",
+        "chi" => "zho",
+        _ => code,
+    }
+}
