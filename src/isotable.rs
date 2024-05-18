@@ -63335,15836 +63335,23752 @@ pub(crate) const OVERVIEW: [LanguageData; 7916] = [
 #[derive(Clone, Copy, Hash, Eq, PartialEq, PartialOrd, Ord)]
 #[cfg_attr(feature = "async-graphql", derive(async_graphql::Enum))]
 pub enum Language {
+    /// Ghotuo
     #[doc(hidden)]
     Aaa = 0,
+    /// Alumu-Tesu
     #[doc(hidden)]
     Aab = 1,
+    /// Ari
     #[doc(hidden)]
     Aac = 2,
+    /// Amal
     #[doc(hidden)]
     Aad = 3,
+    /// Arbëreshë Albanian
     #[doc(hidden)]
     Aae = 4,
+    /// Aranadan
     #[doc(hidden)]
     Aaf = 5,
+    /// Ambrak
     #[doc(hidden)]
     Aag = 6,
+    /// Abu' Arapesh
     #[doc(hidden)]
     Aah = 7,
+    /// Arifama-Miniafia
     #[doc(hidden)]
     Aai = 8,
+    /// Ankave
     #[doc(hidden)]
     Aak = 9,
+    /// Afade
     #[doc(hidden)]
     Aal = 10,
+    /// Anambé
     #[doc(hidden)]
     Aan = 11,
+    /// Algerian Saharan Arabic
     #[doc(hidden)]
     Aao = 12,
+    /// Pará Arára
     #[doc(hidden)]
     Aap = 13,
+    /// Eastern Abnaki
     #[doc(hidden)]
     Aaq = 14,
+    /// Afar
     #[doc(hidden)]
     Aar = 15,
+    /// Aasáx
     #[doc(hidden)]
     Aas = 16,
+    /// Arvanitika Albanian
     #[doc(hidden)]
     Aat = 17,
+    /// Abau
     #[doc(hidden)]
     Aau = 18,
+    /// Solong
     #[doc(hidden)]
     Aaw = 19,
+    /// Mandobo Atas
     #[doc(hidden)]
     Aax = 20,
+    /// Amarasi
     #[doc(hidden)]
     Aaz = 21,
+    /// Abé
     #[doc(hidden)]
     Aba = 22,
+    /// Bankon
     #[doc(hidden)]
     Abb = 23,
+    /// Ambala Ayta
     #[doc(hidden)]
     Abc = 24,
+    /// Manide
     #[doc(hidden)]
     Abd = 25,
+    /// Western Abnaki
     #[doc(hidden)]
     Abe = 26,
+    /// Abai Sungai
     #[doc(hidden)]
     Abf = 27,
+    /// Abaga
     #[doc(hidden)]
     Abg = 28,
+    /// Tajiki Arabic
     #[doc(hidden)]
     Abh = 29,
+    /// Abidji
     #[doc(hidden)]
     Abi = 30,
+    /// Aka-Bea
     #[doc(hidden)]
     Abj = 31,
+    /// Abkhazian
     #[doc(hidden)]
     Abk = 32,
+    /// Lampung Nyo
     #[doc(hidden)]
     Abl = 33,
+    /// Abanyom
     #[doc(hidden)]
     Abm = 34,
+    /// Abua
     #[doc(hidden)]
     Abn = 35,
+    /// Abon
     #[doc(hidden)]
     Abo = 36,
+    /// Abellen Ayta
     #[doc(hidden)]
     Abp = 37,
+    /// Abaza
     #[doc(hidden)]
     Abq = 38,
+    /// Abron
     #[doc(hidden)]
     Abr = 39,
+    /// Ambonese Malay
     #[doc(hidden)]
     Abs = 40,
+    /// Ambulas
     #[doc(hidden)]
     Abt = 41,
+    /// Abure
     #[doc(hidden)]
     Abu = 42,
+    /// Baharna Arabic
     #[doc(hidden)]
     Abv = 43,
+    /// Pal
     #[doc(hidden)]
     Abw = 44,
+    /// Inabaknon
     #[doc(hidden)]
     Abx = 45,
+    /// Aneme Wake
     #[doc(hidden)]
     Aby = 46,
+    /// Abui
     #[doc(hidden)]
     Abz = 47,
+    /// Achagua
     #[doc(hidden)]
     Aca = 48,
+    /// Áncá
     #[doc(hidden)]
     Acb = 49,
+    /// Gikyode
     #[doc(hidden)]
     Acd = 50,
+    /// Achinese
     #[doc(hidden)]
     Ace = 51,
+    /// Saint Lucian Creole French
     #[doc(hidden)]
     Acf = 52,
+    /// Acoli
     #[doc(hidden)]
     Ach = 53,
+    /// Aka-Cari
     #[doc(hidden)]
     Aci = 54,
+    /// Aka-Kora
     #[doc(hidden)]
     Ack = 55,
+    /// Akar-Bale
     #[doc(hidden)]
     Acl = 56,
+    /// Mesopotamian Arabic
     #[doc(hidden)]
     Acm = 57,
+    /// Achang
     #[doc(hidden)]
     Acn = 58,
+    /// Eastern Acipa
     #[doc(hidden)]
     Acp = 59,
+    /// Ta'izzi-Adeni Arabic
     #[doc(hidden)]
     Acq = 60,
+    /// Achi
     #[doc(hidden)]
     Acr = 61,
+    /// Acroá
     #[doc(hidden)]
     Acs = 62,
+    /// Achterhoeks
     #[doc(hidden)]
     Act = 63,
+    /// Achuar-Shiwiar
     #[doc(hidden)]
     Acu = 64,
+    /// Achumawi
     #[doc(hidden)]
     Acv = 65,
+    /// Hijazi Arabic
     #[doc(hidden)]
     Acw = 66,
+    /// Omani Arabic
     #[doc(hidden)]
     Acx = 67,
+    /// Cypriot Arabic
     #[doc(hidden)]
     Acy = 68,
+    /// Acheron
     #[doc(hidden)]
     Acz = 69,
+    /// Adangme
     #[doc(hidden)]
     Ada = 70,
+    /// Atauran
     #[doc(hidden)]
     Adb = 71,
+    /// Lidzonka
     #[doc(hidden)]
     Add = 72,
+    /// Adele
     #[doc(hidden)]
     Ade = 73,
+    /// Dhofari Arabic
     #[doc(hidden)]
     Adf = 74,
+    /// Andegerebinha
     #[doc(hidden)]
     Adg = 75,
+    /// Adhola
     #[doc(hidden)]
     Adh = 76,
+    /// Adi
     #[doc(hidden)]
     Adi = 77,
+    /// Adioukrou
     #[doc(hidden)]
     Adj = 78,
+    /// Galo
     #[doc(hidden)]
     Adl = 79,
+    /// Adang
     #[doc(hidden)]
     Adn = 80,
+    /// Abu
     #[doc(hidden)]
     Ado = 81,
+    /// Adangbe
     #[doc(hidden)]
     Adq = 82,
+    /// Adonara
     #[doc(hidden)]
     Adr = 83,
+    /// Adamorobe Sign Language
     #[doc(hidden)]
     Ads = 84,
+    /// Adnyamathanha
     #[doc(hidden)]
     Adt = 85,
+    /// Aduge
     #[doc(hidden)]
     Adu = 86,
+    /// Amundava
     #[doc(hidden)]
     Adw = 87,
+    /// Amdo Tibetan
     #[doc(hidden)]
     Adx = 88,
+    /// Adyghe
     #[doc(hidden)]
     Ady = 89,
+    /// Adzera
     #[doc(hidden)]
     Adz = 90,
+    /// Areba
     #[doc(hidden)]
     Aea = 91,
+    /// Tunisian Arabic
     #[doc(hidden)]
     Aeb = 92,
+    /// Saidi Arabic
     #[doc(hidden)]
     Aec = 93,
+    /// Argentine Sign Language
     #[doc(hidden)]
     Aed = 94,
+    /// Northeast Pashai
     #[doc(hidden)]
     Aee = 95,
+    /// Haeke
     #[doc(hidden)]
     Aek = 96,
+    /// Ambele
     #[doc(hidden)]
     Ael = 97,
+    /// Arem
     #[doc(hidden)]
     Aem = 98,
+    /// Armenian Sign Language
     #[doc(hidden)]
     Aen = 99,
+    /// Aer
     #[doc(hidden)]
     Aeq = 100,
+    /// Eastern Arrernte
     #[doc(hidden)]
     Aer = 101,
+    /// Alsea
     #[doc(hidden)]
     Aes = 102,
+    /// Akeu
     #[doc(hidden)]
     Aeu = 103,
+    /// Ambakich
     #[doc(hidden)]
     Aew = 104,
+    /// Amele
     #[doc(hidden)]
     Aey = 105,
+    /// Aeka
     #[doc(hidden)]
     Aez = 106,
+    /// Gulf Arabic
     #[doc(hidden)]
     Afb = 107,
+    /// Andai
     #[doc(hidden)]
     Afd = 108,
+    /// Putukwam
     #[doc(hidden)]
     Afe = 109,
+    /// Afghan Sign Language
     #[doc(hidden)]
     Afg = 110,
+    /// Afrihili
     #[doc(hidden)]
     Afh = 111,
+    /// Akrukay
     #[doc(hidden)]
     Afi = 112,
+    /// Nanubae
     #[doc(hidden)]
     Afk = 113,
+    /// Defaka
     #[doc(hidden)]
     Afn = 114,
+    /// Eloyi
     #[doc(hidden)]
     Afo = 115,
+    /// Tapei
     #[doc(hidden)]
     Afp = 116,
+    /// Afrikaans
     #[doc(hidden)]
     Afr = 117,
+    /// Afro-Seminole Creole
     #[doc(hidden)]
     Afs = 118,
+    /// Afitti
     #[doc(hidden)]
     Aft = 119,
+    /// Awutu
     #[doc(hidden)]
     Afu = 120,
+    /// Obokuitai
     #[doc(hidden)]
     Afz = 121,
+    /// Aguano
     #[doc(hidden)]
     Aga = 122,
+    /// Legbo
     #[doc(hidden)]
     Agb = 123,
+    /// Agatu
     #[doc(hidden)]
     Agc = 124,
+    /// Agarabi
     #[doc(hidden)]
     Agd = 125,
+    /// Angal
     #[doc(hidden)]
     Age = 126,
+    /// Arguni
     #[doc(hidden)]
     Agf = 127,
+    /// Angor
     #[doc(hidden)]
     Agg = 128,
+    /// Ngelima
     #[doc(hidden)]
     Agh = 129,
+    /// Agariya
     #[doc(hidden)]
     Agi = 130,
+    /// Argobba
     #[doc(hidden)]
     Agj = 131,
+    /// Isarog Agta
     #[doc(hidden)]
     Agk = 132,
+    /// Fembe
     #[doc(hidden)]
     Agl = 133,
+    /// Angaataha
     #[doc(hidden)]
     Agm = 134,
+    /// Agutaynen
     #[doc(hidden)]
     Agn = 135,
+    /// Tainae
     #[doc(hidden)]
     Ago = 136,
+    /// Aghem
     #[doc(hidden)]
     Agq = 137,
+    /// Aguaruna
     #[doc(hidden)]
     Agr = 138,
+    /// Esimbi
     #[doc(hidden)]
     Ags = 139,
+    /// Central Cagayan Agta
     #[doc(hidden)]
     Agt = 140,
+    /// Aguacateco
     #[doc(hidden)]
     Agu = 141,
+    /// Remontado Dumagat
     #[doc(hidden)]
     Agv = 142,
+    /// Kahua
     #[doc(hidden)]
     Agw = 143,
+    /// Aghul
     #[doc(hidden)]
     Agx = 144,
+    /// Southern Alta
     #[doc(hidden)]
     Agy = 145,
+    /// Mt. Iriga Agta
     #[doc(hidden)]
     Agz = 146,
+    /// Ahanta
     #[doc(hidden)]
     Aha = 147,
+    /// Axamb
     #[doc(hidden)]
     Ahb = 148,
+    /// Qimant
     #[doc(hidden)]
     Ahg = 149,
+    /// Aghu
     #[doc(hidden)]
     Ahh = 150,
+    /// Tiagbamrin Aizi
     #[doc(hidden)]
     Ahi = 151,
+    /// Akha
     #[doc(hidden)]
     Ahk = 152,
+    /// Igo
     #[doc(hidden)]
     Ahl = 153,
+    /// Mobumrin Aizi
     #[doc(hidden)]
     Ahm = 154,
+    /// Àhàn
     #[doc(hidden)]
     Ahn = 155,
+    /// Ahom
     #[doc(hidden)]
     Aho = 156,
+    /// Aproumu Aizi
     #[doc(hidden)]
     Ahp = 157,
+    /// Ahirani
     #[doc(hidden)]
     Ahr = 158,
+    /// Ashe
     #[doc(hidden)]
     Ahs = 159,
+    /// Ahtena
     #[doc(hidden)]
     Aht = 160,
+    /// Arosi
     #[doc(hidden)]
     Aia = 161,
+    /// Ainu
     #[doc(hidden)]
     Aib = 162,
+    /// Ainbai
     #[doc(hidden)]
     Aic = 163,
+    /// Alngith
     #[doc(hidden)]
     Aid = 164,
+    /// Amara
     #[doc(hidden)]
     Aie = 165,
+    /// Agi
     #[doc(hidden)]
     Aif = 166,
+    /// Antigua and Barbuda Creole English
     #[doc(hidden)]
     Aig = 167,
+    /// Ai-Cham
     #[doc(hidden)]
     Aih = 168,
+    /// Assyrian Neo-Aramaic
     #[doc(hidden)]
     Aii = 169,
+    /// Lishanid Noshan
     #[doc(hidden)]
     Aij = 170,
+    /// Ake
     #[doc(hidden)]
     Aik = 171,
+    /// Aimele
     #[doc(hidden)]
     Ail = 172,
+    /// Aimol
     #[doc(hidden)]
     Aim = 173,
+    /// Ainu
     #[doc(hidden)]
     Ain = 174,
+    /// Aiton
     #[doc(hidden)]
     Aio = 175,
+    /// Burumakok
     #[doc(hidden)]
     Aip = 176,
+    /// Aimaq
     #[doc(hidden)]
     Aiq = 177,
+    /// Airoran
     #[doc(hidden)]
     Air = 178,
+    /// Arikem
     #[doc(hidden)]
     Ait = 179,
+    /// Aari
     #[doc(hidden)]
     Aiw = 180,
+    /// Aighon
     #[doc(hidden)]
     Aix = 181,
+    /// Ali
     #[doc(hidden)]
     Aiy = 182,
+    /// Aja
     #[doc(hidden)]
     Aja = 183,
+    /// Aja
     #[doc(hidden)]
     Ajg = 184,
+    /// Ajië
     #[doc(hidden)]
     Aji = 185,
+    /// Andajin
     #[doc(hidden)]
     Ajn = 186,
+    /// Algerian Jewish Sign Language
     #[doc(hidden)]
     Ajs = 187,
+    /// Judeo-Moroccan Arabic
     #[doc(hidden)]
     Aju = 188,
+    /// Ajawa
     #[doc(hidden)]
     Ajw = 189,
+    /// Amri Karbi
     #[doc(hidden)]
     Ajz = 190,
+    /// Akan
     #[doc(hidden)]
     Aka = 191,
+    /// Batak Angkola
     #[doc(hidden)]
     Akb = 192,
+    /// Mpur
     #[doc(hidden)]
     Akc = 193,
+    /// Ukpet-Ehom
     #[doc(hidden)]
     Akd = 194,
+    /// Akawaio
     #[doc(hidden)]
     Ake = 195,
+    /// Akpa
     #[doc(hidden)]
     Akf = 196,
+    /// Anakalangu
     #[doc(hidden)]
     Akg = 197,
+    /// Angal Heneng
     #[doc(hidden)]
     Akh = 198,
+    /// Aiome
     #[doc(hidden)]
     Aki = 199,
+    /// Aka-Jeru
     #[doc(hidden)]
     Akj = 200,
+    /// Akkadian
     #[doc(hidden)]
     Akk = 201,
+    /// Aklanon
     #[doc(hidden)]
     Akl = 202,
+    /// Aka-Bo
     #[doc(hidden)]
     Akm = 203,
+    /// Akurio
     #[doc(hidden)]
     Ako = 204,
+    /// Siwu
     #[doc(hidden)]
     Akp = 205,
+    /// Ak
     #[doc(hidden)]
     Akq = 206,
+    /// Araki
     #[doc(hidden)]
     Akr = 207,
+    /// Akaselem
     #[doc(hidden)]
     Aks = 208,
+    /// Akolet
     #[doc(hidden)]
     Akt = 209,
+    /// Akum
     #[doc(hidden)]
     Aku = 210,
+    /// Akhvakh
     #[doc(hidden)]
     Akv = 211,
+    /// Akwa
     #[doc(hidden)]
     Akw = 212,
+    /// Aka-Kede
     #[doc(hidden)]
     Akx = 213,
+    /// Aka-Kol
     #[doc(hidden)]
     Aky = 214,
+    /// Alabama
     #[doc(hidden)]
     Akz = 215,
+    /// Alago
     #[doc(hidden)]
     Ala = 216,
+    /// Qawasqar
     #[doc(hidden)]
     Alc = 217,
+    /// Alladian
     #[doc(hidden)]
     Ald = 218,
+    /// Aleut
     #[doc(hidden)]
     Ale = 219,
+    /// Alege
     #[doc(hidden)]
     Alf = 220,
+    /// Alawa
     #[doc(hidden)]
     Alh = 221,
+    /// Amaimon
     #[doc(hidden)]
     Ali = 222,
+    /// Alangan
     #[doc(hidden)]
     Alj = 223,
+    /// Alak
     #[doc(hidden)]
     Alk = 224,
+    /// Allar
     #[doc(hidden)]
     All = 225,
+    /// Amblong
     #[doc(hidden)]
     Alm = 226,
+    /// Gheg Albanian
     #[doc(hidden)]
     Aln = 227,
+    /// Larike-Wakasihu
     #[doc(hidden)]
     Alo = 228,
+    /// Alune
     #[doc(hidden)]
     Alp = 229,
+    /// Algonquin
     #[doc(hidden)]
     Alq = 230,
+    /// Alutor
     #[doc(hidden)]
     Alr = 231,
+    /// Tosk Albanian
     #[doc(hidden)]
     Als = 232,
+    /// Southern Altai
     #[doc(hidden)]
     Alt = 233,
+    /// 'Are'are
     #[doc(hidden)]
     Alu = 234,
+    /// Alaba-K’abeena
     #[doc(hidden)]
     Alw = 235,
+    /// Amol
     #[doc(hidden)]
     Alx = 236,
+    /// Alyawarr
     #[doc(hidden)]
     Aly = 237,
+    /// Alur
     #[doc(hidden)]
     Alz = 238,
+    /// Amanayé
     #[doc(hidden)]
     Ama = 239,
+    /// Ambo
     #[doc(hidden)]
     Amb = 240,
+    /// Amahuaca
     #[doc(hidden)]
     Amc = 241,
+    /// Yanesha'
     #[doc(hidden)]
     Ame = 242,
+    /// Hamer-Banna
     #[doc(hidden)]
     Amf = 243,
+    /// Amurdak
     #[doc(hidden)]
     Amg = 244,
+    /// Amharic
     #[doc(hidden)]
     Amh = 245,
+    /// Amis
     #[doc(hidden)]
     Ami = 246,
+    /// Amdang
     #[doc(hidden)]
     Amj = 247,
+    /// Ambai
     #[doc(hidden)]
     Amk = 248,
+    /// War-Jaintia
     #[doc(hidden)]
     Aml = 249,
+    /// Ama
     #[doc(hidden)]
     Amm = 250,
+    /// Amanab
     #[doc(hidden)]
     Amn = 251,
+    /// Amo
     #[doc(hidden)]
     Amo = 252,
+    /// Alamblak
     #[doc(hidden)]
     Amp = 253,
+    /// Amahai
     #[doc(hidden)]
     Amq = 254,
+    /// Amarakaeri
     #[doc(hidden)]
     Amr = 255,
+    /// Southern Amami-Oshima
     #[doc(hidden)]
     Ams = 256,
+    /// Amto
     #[doc(hidden)]
     Amt = 257,
+    /// Guerrero Amuzgo
     #[doc(hidden)]
     Amu = 258,
+    /// Ambelau
     #[doc(hidden)]
     Amv = 259,
+    /// Western Neo-Aramaic
     #[doc(hidden)]
     Amw = 260,
+    /// Anmatyerre
     #[doc(hidden)]
     Amx = 261,
+    /// Ami
     #[doc(hidden)]
     Amy = 262,
+    /// Atampaya
     #[doc(hidden)]
     Amz = 263,
+    /// Andaqui
     #[doc(hidden)]
     Ana = 264,
+    /// Andoa
     #[doc(hidden)]
     Anb = 265,
+    /// Ngas
     #[doc(hidden)]
     Anc = 266,
+    /// Ansus
     #[doc(hidden)]
     And = 267,
+    /// Xârâcùù
     #[doc(hidden)]
     Ane = 268,
+    /// Animere
     #[doc(hidden)]
     Anf = 269,
+    /// Old English
     #[doc(hidden)]
     Ang = 270,
+    /// Nend
     #[doc(hidden)]
     Anh = 271,
+    /// Andi
     #[doc(hidden)]
     Ani = 272,
+    /// Anor
     #[doc(hidden)]
     Anj = 273,
+    /// Goemai
     #[doc(hidden)]
     Ank = 274,
+    /// Anu-Hkongso Chin
     #[doc(hidden)]
     Anl = 275,
+    /// Anal
     #[doc(hidden)]
     Anm = 276,
+    /// Obolo
     #[doc(hidden)]
     Ann = 277,
+    /// Andoque
     #[doc(hidden)]
     Ano = 278,
+    /// Angika
     #[doc(hidden)]
     Anp = 279,
+    /// Jarawa
     #[doc(hidden)]
     Anq = 280,
+    /// Andh
     #[doc(hidden)]
     Anr = 281,
+    /// Anserma
     #[doc(hidden)]
     Ans = 282,
+    /// Antakarinya
     #[doc(hidden)]
     Ant = 283,
+    /// Anuak
     #[doc(hidden)]
     Anu = 284,
+    /// Denya
     #[doc(hidden)]
     Anv = 285,
+    /// Anaang
     #[doc(hidden)]
     Anw = 286,
+    /// Andra-Hus
     #[doc(hidden)]
     Anx = 287,
+    /// Anyin
     #[doc(hidden)]
     Any = 288,
+    /// Anem
     #[doc(hidden)]
     Anz = 289,
+    /// Angolar
     #[doc(hidden)]
     Aoa = 290,
+    /// Abom
     #[doc(hidden)]
     Aob = 291,
+    /// Pemon
     #[doc(hidden)]
     Aoc = 292,
+    /// Andarum
     #[doc(hidden)]
     Aod = 293,
+    /// Angal Enen
     #[doc(hidden)]
     Aoe = 294,
+    /// Bragat
     #[doc(hidden)]
     Aof = 295,
+    /// Angoram
     #[doc(hidden)]
     Aog = 296,
+    /// Anindilyakwa
     #[doc(hidden)]
     Aoi = 297,
+    /// Mufian
     #[doc(hidden)]
     Aoj = 298,
+    /// Arhö
     #[doc(hidden)]
     Aok = 299,
+    /// Alor
     #[doc(hidden)]
     Aol = 300,
+    /// Ömie
     #[doc(hidden)]
     Aom = 301,
+    /// Bumbita Arapesh
     #[doc(hidden)]
     Aon = 302,
+    /// Aore
     #[doc(hidden)]
     Aor = 303,
+    /// Taikat
     #[doc(hidden)]
     Aos = 304,
+    /// Atong
     #[doc(hidden)]
     Aot = 305,
+    /// A'ou
     #[doc(hidden)]
     Aou = 306,
+    /// Atorada
     #[doc(hidden)]
     Aox = 307,
+    /// Uab Meto
     #[doc(hidden)]
     Aoz = 308,
+    /// Sa'a
     #[doc(hidden)]
     Apb = 309,
+    /// Levantine Arabic
     #[doc(hidden)]
     Apc = 310,
+    /// Sudanese Arabic
     #[doc(hidden)]
     Apd = 311,
+    /// Bukiyip
     #[doc(hidden)]
     Ape = 312,
+    /// Pahanan Agta
     #[doc(hidden)]
     Apf = 313,
+    /// Ampanang
     #[doc(hidden)]
     Apg = 314,
+    /// Athpariya
     #[doc(hidden)]
     Aph = 315,
+    /// Apiaká
     #[doc(hidden)]
     Api = 316,
+    /// Jicarilla Apache
     #[doc(hidden)]
     Apj = 317,
+    /// Kiowa Apache
     #[doc(hidden)]
     Apk = 318,
+    /// Lipan Apache
     #[doc(hidden)]
     Apl = 319,
+    /// Mescalero-Chiricahua Apache
     #[doc(hidden)]
     Apm = 320,
+    /// Apinayé
     #[doc(hidden)]
     Apn = 321,
+    /// Ambul
     #[doc(hidden)]
     Apo = 322,
+    /// Apma
     #[doc(hidden)]
     App = 323,
+    /// A-Pucikwar
     #[doc(hidden)]
     Apq = 324,
+    /// Arop-Lokep
     #[doc(hidden)]
     Apr = 325,
+    /// Arop-Sissano
     #[doc(hidden)]
     Aps = 326,
+    /// Apatani
     #[doc(hidden)]
     Apt = 327,
+    /// Apurinã
     #[doc(hidden)]
     Apu = 328,
+    /// Alapmunte
     #[doc(hidden)]
     Apv = 329,
+    /// Western Apache
     #[doc(hidden)]
     Apw = 330,
+    /// Aputai
     #[doc(hidden)]
     Apx = 331,
+    /// Apalaí
     #[doc(hidden)]
     Apy = 332,
+    /// Safeyoka
     #[doc(hidden)]
     Apz = 333,
+    /// Archi
     #[doc(hidden)]
     Aqc = 334,
+    /// Ampari Dogon
     #[doc(hidden)]
     Aqd = 335,
+    /// Arigidi
     #[doc(hidden)]
     Aqg = 336,
+    /// Aninka
     #[doc(hidden)]
     Aqk = 337,
+    /// Atohwaim
     #[doc(hidden)]
     Aqm = 338,
+    /// Northern Alta
     #[doc(hidden)]
     Aqn = 339,
+    /// Atakapa
     #[doc(hidden)]
     Aqp = 340,
+    /// Arhâ
     #[doc(hidden)]
     Aqr = 341,
+    /// Angaité
     #[doc(hidden)]
     Aqt = 342,
+    /// Akuntsu
     #[doc(hidden)]
     Aqz = 343,
+    /// Arabic
     #[doc(hidden)]
     Ara = 344,
+    /// Standard Arabic
     #[doc(hidden)]
     Arb = 345,
+    /// Official Aramaic
     #[doc(hidden)]
     Arc = 346,
+    /// Arabana
     #[doc(hidden)]
     Ard = 347,
+    /// Western Arrarnta
     #[doc(hidden)]
     Are = 348,
+    /// Aragonese
     #[doc(hidden)]
     Arg = 349,
+    /// Arhuaco
     #[doc(hidden)]
     Arh = 350,
+    /// Arikara
     #[doc(hidden)]
     Ari = 351,
+    /// Arapaso
     #[doc(hidden)]
     Arj = 352,
+    /// Arikapú
     #[doc(hidden)]
     Ark = 353,
+    /// Arabela
     #[doc(hidden)]
     Arl = 354,
+    /// Mapudungun
     #[doc(hidden)]
     Arn = 355,
+    /// Araona
     #[doc(hidden)]
     Aro = 356,
+    /// Arapaho
     #[doc(hidden)]
     Arp = 357,
+    /// Algerian Arabic
     #[doc(hidden)]
     Arq = 358,
+    /// Karo
     #[doc(hidden)]
     Arr = 359,
+    /// Najdi Arabic
     #[doc(hidden)]
     Ars = 360,
+    /// Aruá
     #[doc(hidden)]
     Aru = 361,
+    /// Arbore
     #[doc(hidden)]
     Arv = 362,
+    /// Arawak
     #[doc(hidden)]
     Arw = 363,
+    /// Aruá
     #[doc(hidden)]
     Arx = 364,
+    /// Moroccan Arabic
     #[doc(hidden)]
     Ary = 365,
+    /// Egyptian Arabic
     #[doc(hidden)]
     Arz = 366,
+    /// Asu
     #[doc(hidden)]
     Asa = 367,
+    /// Assiniboine
     #[doc(hidden)]
     Asb = 368,
+    /// Casuarina Coast Asmat
     #[doc(hidden)]
     Asc = 369,
+    /// American Sign Language
     #[doc(hidden)]
     Ase = 370,
+    /// Auslan
     #[doc(hidden)]
     Asf = 371,
+    /// Cishingini
     #[doc(hidden)]
     Asg = 372,
+    /// Abishira
     #[doc(hidden)]
     Ash = 373,
+    /// Buruwai
     #[doc(hidden)]
     Asi = 374,
+    /// Sari
     #[doc(hidden)]
     Asj = 375,
+    /// Ashkun
     #[doc(hidden)]
     Ask = 376,
+    /// Asilulu
     #[doc(hidden)]
     Asl = 377,
+    /// Assamese
     #[doc(hidden)]
     Asm = 378,
+    /// Xingú Asuriní
     #[doc(hidden)]
     Asn = 379,
+    /// Dano
     #[doc(hidden)]
     Aso = 380,
+    /// Algerian Sign Language
     #[doc(hidden)]
     Asp = 381,
+    /// Austrian Sign Language
     #[doc(hidden)]
     Asq = 382,
+    /// Asuri
     #[doc(hidden)]
     Asr = 383,
+    /// Ipulo
     #[doc(hidden)]
     Ass = 384,
+    /// Asturian
     #[doc(hidden)]
     Ast = 385,
+    /// Tocantins Asurini
     #[doc(hidden)]
     Asu = 386,
+    /// Asoa
     #[doc(hidden)]
     Asv = 387,
+    /// Australian Aborigines Sign Language
     #[doc(hidden)]
     Asw = 388,
+    /// Muratayak
     #[doc(hidden)]
     Asx = 389,
+    /// Yaosakor Asmat
     #[doc(hidden)]
     Asy = 390,
+    /// As
     #[doc(hidden)]
     Asz = 391,
+    /// Pele-Ata
     #[doc(hidden)]
     Ata = 392,
+    /// Zaiwa
     #[doc(hidden)]
     Atb = 393,
+    /// Atsahuaca
     #[doc(hidden)]
     Atc = 394,
+    /// Ata Manobo
     #[doc(hidden)]
     Atd = 395,
+    /// Atemble
     #[doc(hidden)]
     Ate = 396,
+    /// Ivbie North-Okpela-Arhe
     #[doc(hidden)]
     Atg = 397,
+    /// Attié
     #[doc(hidden)]
     Ati = 398,
+    /// Atikamekw
     #[doc(hidden)]
     Atj = 399,
+    /// Ati
     #[doc(hidden)]
     Atk = 400,
+    /// Mt. Iraya Agta
     #[doc(hidden)]
     Atl = 401,
+    /// Ata
     #[doc(hidden)]
     Atm = 402,
+    /// Ashtiani
     #[doc(hidden)]
     Atn = 403,
+    /// Atong
     #[doc(hidden)]
     Ato = 404,
+    /// Pudtol Atta
     #[doc(hidden)]
     Atp = 405,
+    /// Aralle-Tabulahan
     #[doc(hidden)]
     Atq = 406,
+    /// Waimiri-Atroari
     #[doc(hidden)]
     Atr = 407,
+    /// Gros Ventre
     #[doc(hidden)]
     Ats = 408,
+    /// Pamplona Atta
     #[doc(hidden)]
     Att = 409,
+    /// Reel
     #[doc(hidden)]
     Atu = 410,
+    /// Northern Altai
     #[doc(hidden)]
     Atv = 411,
+    /// Atsugewi
     #[doc(hidden)]
     Atw = 412,
+    /// Arutani
     #[doc(hidden)]
     Atx = 413,
+    /// Aneityum
     #[doc(hidden)]
     Aty = 414,
+    /// Arta
     #[doc(hidden)]
     Atz = 415,
+    /// Asumboa
     #[doc(hidden)]
     Aua = 416,
+    /// Alugu
     #[doc(hidden)]
     Aub = 417,
+    /// Waorani
     #[doc(hidden)]
     Auc = 418,
+    /// Anuta
     #[doc(hidden)]
     Aud = 419,
+    /// Aguna
     #[doc(hidden)]
     Aug = 420,
+    /// Aushi
     #[doc(hidden)]
     Auh = 421,
+    /// Anuki
     #[doc(hidden)]
     Aui = 422,
+    /// Awjilah
     #[doc(hidden)]
     Auj = 423,
+    /// Heyo
     #[doc(hidden)]
     Auk = 424,
+    /// Aulua
     #[doc(hidden)]
     Aul = 425,
+    /// Asu
     #[doc(hidden)]
     Aum = 426,
+    /// Molmo One
     #[doc(hidden)]
     Aun = 427,
+    /// Auyokawa
     #[doc(hidden)]
     Auo = 428,
+    /// Makayam
     #[doc(hidden)]
     Aup = 429,
+    /// Anus
     #[doc(hidden)]
     Auq = 430,
+    /// Aruek
     #[doc(hidden)]
     Aur = 431,
+    /// Austral
     #[doc(hidden)]
     Aut = 432,
+    /// Auye
     #[doc(hidden)]
     Auu = 433,
+    /// Awyi
     #[doc(hidden)]
     Auw = 434,
+    /// Aurá
     #[doc(hidden)]
     Aux = 435,
+    /// Awiyaana
     #[doc(hidden)]
     Auy = 436,
+    /// Uzbeki Arabic
     #[doc(hidden)]
     Auz = 437,
+    /// Avaric
     #[doc(hidden)]
     Ava = 438,
+    /// Avau
     #[doc(hidden)]
     Avb = 439,
+    /// Alviri-Vidari
     #[doc(hidden)]
     Avd = 440,
+    /// Avestan
     #[doc(hidden)]
     Ave = 441,
+    /// Avikam
     #[doc(hidden)]
     Avi = 442,
+    /// Kotava
     #[doc(hidden)]
     Avk = 443,
+    /// Eastern Egyptian Bedawi Arabic
     #[doc(hidden)]
     Avl = 444,
+    /// Angkamuthi
     #[doc(hidden)]
     Avm = 445,
+    /// Avatime
     #[doc(hidden)]
     Avn = 446,
+    /// Agavotaguerra
     #[doc(hidden)]
     Avo = 447,
+    /// Aushiri
     #[doc(hidden)]
     Avs = 448,
+    /// Au
     #[doc(hidden)]
     Avt = 449,
+    /// Avokaya
     #[doc(hidden)]
     Avu = 450,
+    /// Avá-Canoeiro
     #[doc(hidden)]
     Avv = 451,
+    /// Awadhi
     #[doc(hidden)]
     Awa = 452,
+    /// Awa
     #[doc(hidden)]
     Awb = 453,
+    /// Cicipu
     #[doc(hidden)]
     Awc = 454,
+    /// Awetí
     #[doc(hidden)]
     Awe = 455,
+    /// Anguthimri
     #[doc(hidden)]
     Awg = 456,
+    /// Awbono
     #[doc(hidden)]
     Awh = 457,
+    /// Aekyom
     #[doc(hidden)]
     Awi = 458,
+    /// Awabakal
     #[doc(hidden)]
     Awk = 459,
+    /// Arawum
     #[doc(hidden)]
     Awm = 460,
+    /// Awngi
     #[doc(hidden)]
     Awn = 461,
+    /// Awak
     #[doc(hidden)]
     Awo = 462,
+    /// Awera
     #[doc(hidden)]
     Awr = 463,
+    /// South Awyu
     #[doc(hidden)]
     Aws = 464,
+    /// Araweté
     #[doc(hidden)]
     Awt = 465,
+    /// Central Awyu
     #[doc(hidden)]
     Awu = 466,
+    /// Jair Awyu
     #[doc(hidden)]
     Awv = 467,
+    /// Awun
     #[doc(hidden)]
     Aww = 468,
+    /// Awara
     #[doc(hidden)]
     Awx = 469,
+    /// Edera Awyu
     #[doc(hidden)]
     Awy = 470,
+    /// Abipon
     #[doc(hidden)]
     Axb = 471,
+    /// Ayerrerenge
     #[doc(hidden)]
     Axe = 472,
+    /// Mato Grosso Arára
     #[doc(hidden)]
     Axg = 473,
+    /// Yaka
     #[doc(hidden)]
     Axk = 474,
+    /// Lower Southern Aranda
     #[doc(hidden)]
     Axl = 475,
+    /// Middle Armenian
     #[doc(hidden)]
     Axm = 476,
+    /// Xârâgurè
     #[doc(hidden)]
     Axx = 477,
+    /// Awar
     #[doc(hidden)]
     Aya = 478,
+    /// Ayizo Gbe
     #[doc(hidden)]
     Ayb = 479,
+    /// Southern Aymara
     #[doc(hidden)]
     Ayc = 480,
+    /// Ayabadhu
     #[doc(hidden)]
     Ayd = 481,
+    /// Ayere
     #[doc(hidden)]
     Aye = 482,
+    /// Ginyanga
     #[doc(hidden)]
     Ayg = 483,
+    /// Hadrami Arabic
     #[doc(hidden)]
     Ayh = 484,
+    /// Leyigha
     #[doc(hidden)]
     Ayi = 485,
+    /// Akuku
     #[doc(hidden)]
     Ayk = 486,
+    /// Libyan Arabic
     #[doc(hidden)]
     Ayl = 487,
+    /// Aymara
     #[doc(hidden)]
     Aym = 488,
+    /// Sanaani Arabic
     #[doc(hidden)]
     Ayn = 489,
+    /// Ayoreo
     #[doc(hidden)]
     Ayo = 490,
+    /// North Mesopotamian Arabic
     #[doc(hidden)]
     Ayp = 491,
+    /// Ayi
     #[doc(hidden)]
     Ayq = 492,
+    /// Central Aymara
     #[doc(hidden)]
     Ayr = 493,
+    /// Sorsogon Ayta
     #[doc(hidden)]
     Ays = 494,
+    /// Magbukun Ayta
     #[doc(hidden)]
     Ayt = 495,
+    /// Ayu
     #[doc(hidden)]
     Ayu = 496,
+    /// Mai Brat
     #[doc(hidden)]
     Ayz = 497,
+    /// Azha
     #[doc(hidden)]
     Aza = 498,
+    /// South Azerbaijani
     #[doc(hidden)]
     Azb = 499,
+    /// Eastern Durango Nahuatl
     #[doc(hidden)]
     Azd = 500,
+    /// Azerbaijani
     #[doc(hidden)]
     Aze = 501,
+    /// San Pedro Amuzgos Amuzgo
     #[doc(hidden)]
     Azg = 502,
+    /// North Azerbaijani
     #[doc(hidden)]
     Azj = 503,
+    /// Ipalapa Amuzgo
     #[doc(hidden)]
     Azm = 504,
+    /// Western Durango Nahuatl
     #[doc(hidden)]
     Azn = 505,
+    /// Awing
     #[doc(hidden)]
     Azo = 506,
+    /// Faire Atta
     #[doc(hidden)]
     Azt = 507,
+    /// Highland Puebla Nahuatl
     #[doc(hidden)]
     Azz = 508,
+    /// Babatana
     #[doc(hidden)]
     Baa = 509,
+    /// Bainouk-Gunyuño
     #[doc(hidden)]
     Bab = 510,
+    /// Badui
     #[doc(hidden)]
     Bac = 511,
+    /// Baré
     #[doc(hidden)]
     Bae = 512,
+    /// Nubaca
     #[doc(hidden)]
     Baf = 513,
+    /// Tuki
     #[doc(hidden)]
     Bag = 514,
+    /// Bahamas Creole English
     #[doc(hidden)]
     Bah = 515,
+    /// Barakai
     #[doc(hidden)]
     Baj = 516,
+    /// Bashkir
     #[doc(hidden)]
     Bak = 517,
+    /// Baluchi
     #[doc(hidden)]
     Bal = 518,
+    /// Bambara
     #[doc(hidden)]
     Bam = 519,
+    /// Balinese
     #[doc(hidden)]
     Ban = 520,
+    /// Waimaha
     #[doc(hidden)]
     Bao = 521,
+    /// Bantawa
     #[doc(hidden)]
     Bap = 522,
+    /// Bavarian
     #[doc(hidden)]
     Bar = 523,
+    /// Basa
     #[doc(hidden)]
     Bas = 524,
+    /// Bada
     #[doc(hidden)]
     Bau = 525,
+    /// Vengo
     #[doc(hidden)]
     Bav = 526,
+    /// Bambili-Bambui
     #[doc(hidden)]
     Baw = 527,
+    /// Bamun
     #[doc(hidden)]
     Bax = 528,
+    /// Batuley
     #[doc(hidden)]
     Bay = 529,
+    /// Baatonum
     #[doc(hidden)]
     Bba = 530,
+    /// Barai
     #[doc(hidden)]
     Bbb = 531,
+    /// Batak Toba
     #[doc(hidden)]
     Bbc = 532,
+    /// Bau
     #[doc(hidden)]
     Bbd = 533,
+    /// Bangba
     #[doc(hidden)]
     Bbe = 534,
+    /// Baibai
     #[doc(hidden)]
     Bbf = 535,
+    /// Barama
     #[doc(hidden)]
     Bbg = 536,
+    /// Bugan
     #[doc(hidden)]
     Bbh = 537,
+    /// Barombi
     #[doc(hidden)]
     Bbi = 538,
+    /// Ghomálá'
     #[doc(hidden)]
     Bbj = 539,
+    /// Babanki
     #[doc(hidden)]
     Bbk = 540,
+    /// Bats
     #[doc(hidden)]
     Bbl = 541,
+    /// Babango
     #[doc(hidden)]
     Bbm = 542,
+    /// Uneapa
     #[doc(hidden)]
     Bbn = 543,
+    /// Northern Bobo Madaré
     #[doc(hidden)]
     Bbo = 544,
+    /// West Central Banda
     #[doc(hidden)]
     Bbp = 545,
+    /// Bamali
     #[doc(hidden)]
     Bbq = 546,
+    /// Girawa
     #[doc(hidden)]
     Bbr = 547,
+    /// Bakpinka
     #[doc(hidden)]
     Bbs = 548,
+    /// Mburku
     #[doc(hidden)]
     Bbt = 549,
+    /// Kulung
     #[doc(hidden)]
     Bbu = 550,
+    /// Karnai
     #[doc(hidden)]
     Bbv = 551,
+    /// Baba
     #[doc(hidden)]
     Bbw = 552,
+    /// Bubia
     #[doc(hidden)]
     Bbx = 553,
+    /// Befang
     #[doc(hidden)]
     Bby = 554,
+    /// Central Bai
     #[doc(hidden)]
     Bca = 555,
+    /// Bainouk-Samik
     #[doc(hidden)]
     Bcb = 556,
+    /// Southern Balochi
     #[doc(hidden)]
     Bcc = 557,
+    /// North Babar
     #[doc(hidden)]
     Bcd = 558,
+    /// Bamenyam
     #[doc(hidden)]
     Bce = 559,
+    /// Bamu
     #[doc(hidden)]
     Bcf = 560,
+    /// Baga Pokur
     #[doc(hidden)]
     Bcg = 561,
+    /// Bariai
     #[doc(hidden)]
     Bch = 562,
+    /// Baoulé
     #[doc(hidden)]
     Bci = 563,
+    /// Bardi
     #[doc(hidden)]
     Bcj = 564,
+    /// Bunuba
     #[doc(hidden)]
     Bck = 565,
+    /// Central Bikol
     #[doc(hidden)]
     Bcl = 566,
+    /// Bannoni
     #[doc(hidden)]
     Bcm = 567,
+    /// Bali
     #[doc(hidden)]
     Bcn = 568,
+    /// Kaluli
     #[doc(hidden)]
     Bco = 569,
+    /// Bali
     #[doc(hidden)]
     Bcp = 570,
+    /// Bench
     #[doc(hidden)]
     Bcq = 571,
+    /// Babine
     #[doc(hidden)]
     Bcr = 572,
+    /// Kohumono
     #[doc(hidden)]
     Bcs = 573,
+    /// Bendi
     #[doc(hidden)]
     Bct = 574,
+    /// Awad Bing
     #[doc(hidden)]
     Bcu = 575,
+    /// Shoo-Minda-Nye
     #[doc(hidden)]
     Bcv = 576,
+    /// Bana
     #[doc(hidden)]
     Bcw = 577,
+    /// Bacama
     #[doc(hidden)]
     Bcy = 578,
+    /// Bainouk-Gunyaamolo
     #[doc(hidden)]
     Bcz = 579,
+    /// Bayot
     #[doc(hidden)]
     Bda = 580,
+    /// Basap
     #[doc(hidden)]
     Bdb = 581,
+    /// Emberá-Baudó
     #[doc(hidden)]
     Bdc = 582,
+    /// Bunama
     #[doc(hidden)]
     Bdd = 583,
+    /// Bade
     #[doc(hidden)]
     Bde = 584,
+    /// Biage
     #[doc(hidden)]
     Bdf = 585,
+    /// Bonggi
     #[doc(hidden)]
     Bdg = 586,
+    /// Baka
     #[doc(hidden)]
     Bdh = 587,
+    /// Burun
     #[doc(hidden)]
     Bdi = 588,
+    /// Bai
     #[doc(hidden)]
     Bdj = 589,
+    /// Budukh
     #[doc(hidden)]
     Bdk = 590,
+    /// Indonesian Bajau
     #[doc(hidden)]
     Bdl = 591,
+    /// Buduma
     #[doc(hidden)]
     Bdm = 592,
+    /// Baldemu
     #[doc(hidden)]
     Bdn = 593,
+    /// Morom
     #[doc(hidden)]
     Bdo = 594,
+    /// Bende
     #[doc(hidden)]
     Bdp = 595,
+    /// Bahnar
     #[doc(hidden)]
     Bdq = 596,
+    /// West Coast Bajau
     #[doc(hidden)]
     Bdr = 597,
+    /// Burunge
     #[doc(hidden)]
     Bds = 598,
+    /// Bokoto
     #[doc(hidden)]
     Bdt = 599,
+    /// Oroko
     #[doc(hidden)]
     Bdu = 600,
+    /// Bodo Parja
     #[doc(hidden)]
     Bdv = 601,
+    /// Baham
     #[doc(hidden)]
     Bdw = 602,
+    /// Budong-Budong
     #[doc(hidden)]
     Bdx = 603,
+    /// Bandjalang
     #[doc(hidden)]
     Bdy = 604,
+    /// Badeshi
     #[doc(hidden)]
     Bdz = 605,
+    /// Beaver
     #[doc(hidden)]
     Bea = 606,
+    /// Bebele
     #[doc(hidden)]
     Beb = 607,
+    /// Iceve-Maci
     #[doc(hidden)]
     Bec = 608,
+    /// Bedoanas
     #[doc(hidden)]
     Bed = 609,
+    /// Byangsi
     #[doc(hidden)]
     Bee = 610,
+    /// Benabena
     #[doc(hidden)]
     Bef = 611,
+    /// Belait
     #[doc(hidden)]
     Beg = 612,
+    /// Biali
     #[doc(hidden)]
     Beh = 613,
+    /// Bekati'
     #[doc(hidden)]
     Bei = 614,
+    /// Beja
     #[doc(hidden)]
     Bej = 615,
+    /// Bebeli
     #[doc(hidden)]
     Bek = 616,
+    /// Belarusian
     #[doc(hidden)]
     Bel = 617,
+    /// Bemba
     #[doc(hidden)]
     Bem = 618,
+    /// Bengali
     #[doc(hidden)]
     Ben = 619,
+    /// Beami
     #[doc(hidden)]
     Beo = 620,
+    /// Besoa
     #[doc(hidden)]
     Bep = 621,
+    /// Beembe
     #[doc(hidden)]
     Beq = 622,
+    /// Besme
     #[doc(hidden)]
     Bes = 623,
+    /// Guiberoua Béte
     #[doc(hidden)]
     Bet = 624,
+    /// Blagar
     #[doc(hidden)]
     Beu = 625,
+    /// Daloa Bété
     #[doc(hidden)]
     Bev = 626,
+    /// Betawi
     #[doc(hidden)]
     Bew = 627,
+    /// Jur Modo
     #[doc(hidden)]
     Bex = 628,
+    /// Beli
     #[doc(hidden)]
     Bey = 629,
+    /// Bena
     #[doc(hidden)]
     Bez = 630,
+    /// Bari
     #[doc(hidden)]
     Bfa = 631,
+    /// Pauri Bareli
     #[doc(hidden)]
     Bfb = 632,
+    /// Panyi Bai
     #[doc(hidden)]
     Bfc = 633,
+    /// Bafut
     #[doc(hidden)]
     Bfd = 634,
+    /// Betaf
     #[doc(hidden)]
     Bfe = 635,
+    /// Bofi
     #[doc(hidden)]
     Bff = 636,
+    /// Busang Kayan
     #[doc(hidden)]
     Bfg = 637,
+    /// Blafe
     #[doc(hidden)]
     Bfh = 638,
+    /// British Sign Language
     #[doc(hidden)]
     Bfi = 639,
+    /// Bafanji
     #[doc(hidden)]
     Bfj = 640,
+    /// Ban Khor Sign Language
     #[doc(hidden)]
     Bfk = 641,
+    /// Banda-Ndélé
     #[doc(hidden)]
     Bfl = 642,
+    /// Mmen
     #[doc(hidden)]
     Bfm = 643,
+    /// Bunak
     #[doc(hidden)]
     Bfn = 644,
+    /// Malba Birifor
     #[doc(hidden)]
     Bfo = 645,
+    /// Beba
     #[doc(hidden)]
     Bfp = 646,
+    /// Badaga
     #[doc(hidden)]
     Bfq = 647,
+    /// Bazigar
     #[doc(hidden)]
     Bfr = 648,
+    /// Southern Bai
     #[doc(hidden)]
     Bfs = 649,
+    /// Balti
     #[doc(hidden)]
     Bft = 650,
+    /// Gahri
     #[doc(hidden)]
     Bfu = 651,
+    /// Bondo
     #[doc(hidden)]
     Bfw = 652,
+    /// Bantayanon
     #[doc(hidden)]
     Bfx = 653,
+    /// Bagheli
     #[doc(hidden)]
     Bfy = 654,
+    /// Mahasu Pahari
     #[doc(hidden)]
     Bfz = 655,
+    /// Gwamhi-Wuri
     #[doc(hidden)]
     Bga = 656,
+    /// Bobongko
     #[doc(hidden)]
     Bgb = 657,
+    /// Haryanvi
     #[doc(hidden)]
     Bgc = 658,
+    /// Rathwi Bareli
     #[doc(hidden)]
     Bgd = 659,
+    /// Bauria
     #[doc(hidden)]
     Bge = 660,
+    /// Bangandu
     #[doc(hidden)]
     Bgf = 661,
+    /// Bugun
     #[doc(hidden)]
     Bgg = 662,
+    /// Giangan
     #[doc(hidden)]
     Bgi = 663,
+    /// Bangolan
     #[doc(hidden)]
     Bgj = 664,
+    /// Bit
     #[doc(hidden)]
     Bgk = 665,
+    /// Bo
     #[doc(hidden)]
     Bgl = 666,
+    /// Western Balochi
     #[doc(hidden)]
     Bgn = 667,
+    /// Baga Koga
     #[doc(hidden)]
     Bgo = 668,
+    /// Eastern Balochi
     #[doc(hidden)]
     Bgp = 669,
+    /// Bagri
     #[doc(hidden)]
     Bgq = 670,
+    /// Bawm Chin
     #[doc(hidden)]
     Bgr = 671,
+    /// Tagabawa
     #[doc(hidden)]
     Bgs = 672,
+    /// Bughotu
     #[doc(hidden)]
     Bgt = 673,
+    /// Mbongno
     #[doc(hidden)]
     Bgu = 674,
+    /// Warkay-Bipim
     #[doc(hidden)]
     Bgv = 675,
+    /// Bhatri
     #[doc(hidden)]
     Bgw = 676,
+    /// Balkan Gagauz Turkish
     #[doc(hidden)]
     Bgx = 677,
+    /// Benggoi
     #[doc(hidden)]
     Bgy = 678,
+    /// Banggai
     #[doc(hidden)]
     Bgz = 679,
+    /// Bharia
     #[doc(hidden)]
     Bha = 680,
+    /// Bhili
     #[doc(hidden)]
     Bhb = 681,
+    /// Biga
     #[doc(hidden)]
     Bhc = 682,
+    /// Bhadrawahi
     #[doc(hidden)]
     Bhd = 683,
+    /// Bhaya
     #[doc(hidden)]
     Bhe = 684,
+    /// Odiai
     #[doc(hidden)]
     Bhf = 685,
+    /// Binandere
     #[doc(hidden)]
     Bhg = 686,
+    /// Bukharic
     #[doc(hidden)]
     Bhh = 687,
+    /// Bhilali
     #[doc(hidden)]
     Bhi = 688,
+    /// Bahing
     #[doc(hidden)]
     Bhj = 689,
+    /// Bimin
     #[doc(hidden)]
     Bhl = 690,
+    /// Bathari
     #[doc(hidden)]
     Bhm = 691,
+    /// Bohtan Neo-Aramaic
     #[doc(hidden)]
     Bhn = 692,
+    /// Bhojpuri
     #[doc(hidden)]
     Bho = 693,
+    /// Bima
     #[doc(hidden)]
     Bhp = 694,
+    /// Tukang Besi South
     #[doc(hidden)]
     Bhq = 695,
+    /// Bara Malagasy
     #[doc(hidden)]
     Bhr = 696,
+    /// Buwal
     #[doc(hidden)]
     Bhs = 697,
+    /// Bhattiyali
     #[doc(hidden)]
     Bht = 698,
+    /// Bhunjia
     #[doc(hidden)]
     Bhu = 699,
+    /// Bahau
     #[doc(hidden)]
     Bhv = 700,
+    /// Biak
     #[doc(hidden)]
     Bhw = 701,
+    /// Bhalay
     #[doc(hidden)]
     Bhx = 702,
+    /// Bhele
     #[doc(hidden)]
     Bhy = 703,
+    /// Bada
     #[doc(hidden)]
     Bhz = 704,
+    /// Badimaya
     #[doc(hidden)]
     Bia = 705,
+    /// Bissa
     #[doc(hidden)]
     Bib = 706,
+    /// Bidiyo
     #[doc(hidden)]
     Bid = 707,
+    /// Bepour
     #[doc(hidden)]
     Bie = 708,
+    /// Biafada
     #[doc(hidden)]
     Bif = 709,
+    /// Biangai
     #[doc(hidden)]
     Big = 710,
+    /// Bikol
     #[doc(hidden)]
     Bik = 711,
+    /// Bile
     #[doc(hidden)]
     Bil = 712,
+    /// Bimoba
     #[doc(hidden)]
     Bim = 713,
+    /// Bini
     #[doc(hidden)]
     Bin = 714,
+    /// Nai
     #[doc(hidden)]
     Bio = 715,
+    /// Bila
     #[doc(hidden)]
     Bip = 716,
+    /// Bipi
     #[doc(hidden)]
     Biq = 717,
+    /// Bisorio
     #[doc(hidden)]
     Bir = 718,
+    /// Bislama
     #[doc(hidden)]
     Bis = 719,
+    /// Berinomo
     #[doc(hidden)]
     Bit = 720,
+    /// Biete
     #[doc(hidden)]
     Biu = 721,
+    /// Southern Birifor
     #[doc(hidden)]
     Biv = 722,
+    /// Kol
     #[doc(hidden)]
     Biw = 723,
+    /// Bijori
     #[doc(hidden)]
     Bix = 724,
+    /// Birhor
     #[doc(hidden)]
     Biy = 725,
+    /// Baloi
     #[doc(hidden)]
     Biz = 726,
+    /// Budza
     #[doc(hidden)]
     Bja = 727,
+    /// Banggarla
     #[doc(hidden)]
     Bjb = 728,
+    /// Bariji
     #[doc(hidden)]
     Bjc = 729,
+    /// Biao-Jiao Mien
     #[doc(hidden)]
     Bje = 730,
+    /// Barzani Jewish Neo-Aramaic
     #[doc(hidden)]
     Bjf = 731,
+    /// Bidyogo
     #[doc(hidden)]
     Bjg = 732,
+    /// Bahinemo
     #[doc(hidden)]
     Bjh = 733,
+    /// Burji
     #[doc(hidden)]
     Bji = 734,
+    /// Kanauji
     #[doc(hidden)]
     Bjj = 735,
+    /// Barok
     #[doc(hidden)]
     Bjk = 736,
+    /// Bulu
     #[doc(hidden)]
     Bjl = 737,
+    /// Bajelani
     #[doc(hidden)]
     Bjm = 738,
+    /// Banjar
     #[doc(hidden)]
     Bjn = 739,
+    /// Mid-Southern Banda
     #[doc(hidden)]
     Bjo = 740,
+    /// Fanamaket
     #[doc(hidden)]
     Bjp = 741,
+    /// Binumarien
     #[doc(hidden)]
     Bjr = 742,
+    /// Bajan
     #[doc(hidden)]
     Bjs = 743,
+    /// Balanta-Ganja
     #[doc(hidden)]
     Bjt = 744,
+    /// Busuu
     #[doc(hidden)]
     Bju = 745,
+    /// Bedjond
     #[doc(hidden)]
     Bjv = 746,
+    /// Bakwé
     #[doc(hidden)]
     Bjw = 747,
+    /// Banao Itneg
     #[doc(hidden)]
     Bjx = 748,
+    /// Bayali
     #[doc(hidden)]
     Bjy = 749,
+    /// Baruga
     #[doc(hidden)]
     Bjz = 750,
+    /// Kyak
     #[doc(hidden)]
     Bka = 751,
+    /// Baka
     #[doc(hidden)]
     Bkc = 752,
+    /// Binukid
     #[doc(hidden)]
     Bkd = 753,
+    /// Beeke
     #[doc(hidden)]
     Bkf = 754,
+    /// Buraka
     #[doc(hidden)]
     Bkg = 755,
+    /// Bakoko
     #[doc(hidden)]
     Bkh = 756,
+    /// Baki
     #[doc(hidden)]
     Bki = 757,
+    /// Pande
     #[doc(hidden)]
     Bkj = 758,
+    /// Brokskat
     #[doc(hidden)]
     Bkk = 759,
+    /// Berik
     #[doc(hidden)]
     Bkl = 760,
+    /// Kom
     #[doc(hidden)]
     Bkm = 761,
+    /// Bukitan
     #[doc(hidden)]
     Bkn = 762,
+    /// Kwa'
     #[doc(hidden)]
     Bko = 763,
+    /// Boko
     #[doc(hidden)]
     Bkp = 764,
+    /// Bakairí
     #[doc(hidden)]
     Bkq = 765,
+    /// Bakumpai
     #[doc(hidden)]
     Bkr = 766,
+    /// Northern Sorsoganon
     #[doc(hidden)]
     Bks = 767,
+    /// Boloki
     #[doc(hidden)]
     Bkt = 768,
+    /// Buhid
     #[doc(hidden)]
     Bku = 769,
+    /// Bekwarra
     #[doc(hidden)]
     Bkv = 770,
+    /// Bekwel
     #[doc(hidden)]
     Bkw = 771,
+    /// Baikeno
     #[doc(hidden)]
     Bkx = 772,
+    /// Bokyi
     #[doc(hidden)]
     Bky = 773,
+    /// Bungku
     #[doc(hidden)]
     Bkz = 774,
+    /// Siksika
     #[doc(hidden)]
     Bla = 775,
+    /// Bilua
     #[doc(hidden)]
     Blb = 776,
+    /// Bella Coola
     #[doc(hidden)]
     Blc = 777,
+    /// Bolango
     #[doc(hidden)]
     Bld = 778,
+    /// Balanta-Kentohe
     #[doc(hidden)]
     Ble = 779,
+    /// Buol
     #[doc(hidden)]
     Blf = 780,
+    /// Kuwaa
     #[doc(hidden)]
     Blh = 781,
+    /// Bolia
     #[doc(hidden)]
     Bli = 782,
+    /// Bolongan
     #[doc(hidden)]
     Blj = 783,
+    /// Pa'o Karen
     #[doc(hidden)]
     Blk = 784,
+    /// Biloxi
     #[doc(hidden)]
     Bll = 785,
+    /// Beli
     #[doc(hidden)]
     Blm = 786,
+    /// Southern Catanduanes Bikol
     #[doc(hidden)]
     Bln = 787,
+    /// Anii
     #[doc(hidden)]
     Blo = 788,
+    /// Blablanga
     #[doc(hidden)]
     Blp = 789,
+    /// Baluan-Pam
     #[doc(hidden)]
     Blq = 790,
+    /// Blang
     #[doc(hidden)]
     Blr = 791,
+    /// Balaesang
     #[doc(hidden)]
     Bls = 792,
+    /// Tai Dam
     #[doc(hidden)]
     Blt = 793,
+    /// Kibala
     #[doc(hidden)]
     Blv = 794,
+    /// Balangao
     #[doc(hidden)]
     Blw = 795,
+    /// Mag-Indi Ayta
     #[doc(hidden)]
     Blx = 796,
+    /// Notre
     #[doc(hidden)]
     Bly = 797,
+    /// Balantak
     #[doc(hidden)]
     Blz = 798,
+    /// Lame
     #[doc(hidden)]
     Bma = 799,
+    /// Bembe
     #[doc(hidden)]
     Bmb = 800,
+    /// Biem
     #[doc(hidden)]
     Bmc = 801,
+    /// Baga Manduri
     #[doc(hidden)]
     Bmd = 802,
+    /// Limassa
     #[doc(hidden)]
     Bme = 803,
+    /// Bom-Kim
     #[doc(hidden)]
     Bmf = 804,
+    /// Bamwe
     #[doc(hidden)]
     Bmg = 805,
+    /// Kein
     #[doc(hidden)]
     Bmh = 806,
+    /// Bagirmi
     #[doc(hidden)]
     Bmi = 807,
+    /// Bote-Majhi
     #[doc(hidden)]
     Bmj = 808,
+    /// Ghayavi
     #[doc(hidden)]
     Bmk = 809,
+    /// Bomboli
     #[doc(hidden)]
     Bml = 810,
+    /// Northern Betsimisaraka Malagasy
     #[doc(hidden)]
     Bmm = 811,
+    /// Bina
     #[doc(hidden)]
     Bmn = 812,
+    /// Bambalang
     #[doc(hidden)]
     Bmo = 813,
+    /// Bulgebi
     #[doc(hidden)]
     Bmp = 814,
+    /// Bomu
     #[doc(hidden)]
     Bmq = 815,
+    /// Muinane
     #[doc(hidden)]
     Bmr = 816,
+    /// Bilma Kanuri
     #[doc(hidden)]
     Bms = 817,
+    /// Biao Mon
     #[doc(hidden)]
     Bmt = 818,
+    /// Somba-Siawari
     #[doc(hidden)]
     Bmu = 819,
+    /// Bum
     #[doc(hidden)]
     Bmv = 820,
+    /// Bomwali
     #[doc(hidden)]
     Bmw = 821,
+    /// Baimak
     #[doc(hidden)]
     Bmx = 822,
+    /// Baramu
     #[doc(hidden)]
     Bmz = 823,
+    /// Bonerate
     #[doc(hidden)]
     Bna = 824,
+    /// Bookan
     #[doc(hidden)]
     Bnb = 825,
+    /// Bontok
     #[doc(hidden)]
     Bnc = 826,
+    /// Banda
     #[doc(hidden)]
     Bnd = 827,
+    /// Bintauna
     #[doc(hidden)]
     Bne = 828,
+    /// Masiwang
     #[doc(hidden)]
     Bnf = 829,
+    /// Benga
     #[doc(hidden)]
     Bng = 830,
+    /// Bangi
     #[doc(hidden)]
     Bni = 831,
+    /// Eastern Tawbuid
     #[doc(hidden)]
     Bnj = 832,
+    /// Bierebo
     #[doc(hidden)]
     Bnk = 833,
+    /// Boon
     #[doc(hidden)]
     Bnl = 834,
+    /// Batanga
     #[doc(hidden)]
     Bnm = 835,
+    /// Bunun
     #[doc(hidden)]
     Bnn = 836,
+    /// Bantoanon
     #[doc(hidden)]
     Bno = 837,
+    /// Bola
     #[doc(hidden)]
     Bnp = 838,
+    /// Bantik
     #[doc(hidden)]
     Bnq = 839,
+    /// Butmas-Tur
     #[doc(hidden)]
     Bnr = 840,
+    /// Bundeli
     #[doc(hidden)]
     Bns = 841,
+    /// Bentong
     #[doc(hidden)]
     Bnu = 842,
+    /// Bonerif
     #[doc(hidden)]
     Bnv = 843,
+    /// Bisis
     #[doc(hidden)]
     Bnw = 844,
+    /// Bangubangu
     #[doc(hidden)]
     Bnx = 845,
+    /// Bintulu
     #[doc(hidden)]
     Bny = 846,
+    /// Beezen
     #[doc(hidden)]
     Bnz = 847,
+    /// Bora
     #[doc(hidden)]
     Boa = 848,
+    /// Aweer
     #[doc(hidden)]
     Bob = 849,
+    /// Tibetan
     #[doc(hidden)]
     Bod = 850,
+    /// Mundabli
     #[doc(hidden)]
     Boe = 851,
+    /// Bolon
     #[doc(hidden)]
     Bof = 852,
+    /// Bamako Sign Language
     #[doc(hidden)]
     Bog = 853,
+    /// Boma
     #[doc(hidden)]
     Boh = 854,
+    /// Barbareño
     #[doc(hidden)]
     Boi = 855,
+    /// Anjam
     #[doc(hidden)]
     Boj = 856,
+    /// Bonjo
     #[doc(hidden)]
     Bok = 857,
+    /// Bole
     #[doc(hidden)]
     Bol = 858,
+    /// Berom
     #[doc(hidden)]
     Bom = 859,
+    /// Bine
     #[doc(hidden)]
     Bon = 860,
+    /// Tiemacèwè Bozo
     #[doc(hidden)]
     Boo = 861,
+    /// Bonkiman
     #[doc(hidden)]
     Bop = 862,
+    /// Bogaya
     #[doc(hidden)]
     Boq = 863,
+    /// Borôro
     #[doc(hidden)]
     Bor = 864,
+    /// Bosnian
     #[doc(hidden)]
     Bos = 865,
+    /// Bongo
     #[doc(hidden)]
     Bot = 866,
+    /// Bondei
     #[doc(hidden)]
     Bou = 867,
+    /// Tuwuli
     #[doc(hidden)]
     Bov = 868,
+    /// Rema
     #[doc(hidden)]
     Bow = 869,
+    /// Buamu
     #[doc(hidden)]
     Box = 870,
+    /// Bodo
     #[doc(hidden)]
     Boy = 871,
+    /// Tiéyaxo Bozo
     #[doc(hidden)]
     Boz = 872,
+    /// Daakaka
     #[doc(hidden)]
     Bpa = 873,
+    /// Mbuk
     #[doc(hidden)]
     Bpc = 874,
+    /// Banda-Banda
     #[doc(hidden)]
     Bpd = 875,
+    /// Bauni
     #[doc(hidden)]
     Bpe = 876,
+    /// Bonggo
     #[doc(hidden)]
     Bpg = 877,
+    /// Botlikh
     #[doc(hidden)]
     Bph = 878,
+    /// Bagupi
     #[doc(hidden)]
     Bpi = 879,
+    /// Binji
     #[doc(hidden)]
     Bpj = 880,
+    /// Orowe
     #[doc(hidden)]
     Bpk = 881,
+    /// Broome Pearling Lugger Pidgin
     #[doc(hidden)]
     Bpl = 882,
+    /// Biyom
     #[doc(hidden)]
     Bpm = 883,
+    /// Dzao Min
     #[doc(hidden)]
     Bpn = 884,
+    /// Anasi
     #[doc(hidden)]
     Bpo = 885,
+    /// Kaure
     #[doc(hidden)]
     Bpp = 886,
+    /// Banda Malay
     #[doc(hidden)]
     Bpq = 887,
+    /// Koronadal Blaan
     #[doc(hidden)]
     Bpr = 888,
+    /// Sarangani Blaan
     #[doc(hidden)]
     Bps = 889,
+    /// Barrow Point
     #[doc(hidden)]
     Bpt = 890,
+    /// Bongu
     #[doc(hidden)]
     Bpu = 891,
+    /// Bian Marind
     #[doc(hidden)]
     Bpv = 892,
+    /// Bo
     #[doc(hidden)]
     Bpw = 893,
+    /// Palya Bareli
     #[doc(hidden)]
     Bpx = 894,
+    /// Bishnupriya
     #[doc(hidden)]
     Bpy = 895,
+    /// Bilba
     #[doc(hidden)]
     Bpz = 896,
+    /// Tchumbuli
     #[doc(hidden)]
     Bqa = 897,
+    /// Bagusa
     #[doc(hidden)]
     Bqb = 898,
+    /// Boko
     #[doc(hidden)]
     Bqc = 899,
+    /// Bung
     #[doc(hidden)]
     Bqd = 900,
+    /// Baga Kaloum
     #[doc(hidden)]
     Bqf = 901,
+    /// Bago-Kusuntu
     #[doc(hidden)]
     Bqg = 902,
+    /// Baima
     #[doc(hidden)]
     Bqh = 903,
+    /// Bakhtiari
     #[doc(hidden)]
     Bqi = 904,
+    /// Bandial
     #[doc(hidden)]
     Bqj = 905,
+    /// Banda-Mbrès
     #[doc(hidden)]
     Bqk = 906,
+    /// Bilakura
     #[doc(hidden)]
     Bql = 907,
+    /// Wumboko
     #[doc(hidden)]
     Bqm = 908,
+    /// Bulgarian Sign Language
     #[doc(hidden)]
     Bqn = 909,
+    /// Balo
     #[doc(hidden)]
     Bqo = 910,
+    /// Busa
     #[doc(hidden)]
     Bqp = 911,
+    /// Biritai
     #[doc(hidden)]
     Bqq = 912,
+    /// Burusu
     #[doc(hidden)]
     Bqr = 913,
+    /// Bosngun
     #[doc(hidden)]
     Bqs = 914,
+    /// Bamukumbit
     #[doc(hidden)]
     Bqt = 915,
+    /// Boguru
     #[doc(hidden)]
     Bqu = 916,
+    /// Koro Wachi
     #[doc(hidden)]
     Bqv = 917,
+    /// Buru
     #[doc(hidden)]
     Bqw = 918,
+    /// Baangi
     #[doc(hidden)]
     Bqx = 919,
+    /// Bengkala Sign Language
     #[doc(hidden)]
     Bqy = 920,
+    /// Bakaka
     #[doc(hidden)]
     Bqz = 921,
+    /// Braj
     #[doc(hidden)]
     Bra = 922,
+    /// Brao
     #[doc(hidden)]
     Brb = 923,
+    /// Berbice Creole Dutch
     #[doc(hidden)]
     Brc = 924,
+    /// Baraamu
     #[doc(hidden)]
     Brd = 925,
+    /// Breton
     #[doc(hidden)]
     Bre = 926,
+    /// Bira
     #[doc(hidden)]
     Brf = 927,
+    /// Baure
     #[doc(hidden)]
     Brg = 928,
+    /// Brahui
     #[doc(hidden)]
     Brh = 929,
+    /// Mokpwe
     #[doc(hidden)]
     Bri = 930,
+    /// Bieria
     #[doc(hidden)]
     Brj = 931,
+    /// Birked
     #[doc(hidden)]
     Brk = 932,
+    /// Birwa
     #[doc(hidden)]
     Brl = 933,
+    /// Barambu
     #[doc(hidden)]
     Brm = 934,
+    /// Boruca
     #[doc(hidden)]
     Brn = 935,
+    /// Brokkat
     #[doc(hidden)]
     Bro = 936,
+    /// Barapasi
     #[doc(hidden)]
     Brp = 937,
+    /// Breri
     #[doc(hidden)]
     Brq = 938,
+    /// Birao
     #[doc(hidden)]
     Brr = 939,
+    /// Baras
     #[doc(hidden)]
     Brs = 940,
+    /// Bitare
     #[doc(hidden)]
     Brt = 941,
+    /// Eastern Bru
     #[doc(hidden)]
     Bru = 942,
+    /// Western Bru
     #[doc(hidden)]
     Brv = 943,
+    /// Bellari
     #[doc(hidden)]
     Brw = 944,
+    /// Bodo
     #[doc(hidden)]
     Brx = 945,
+    /// Burui
     #[doc(hidden)]
     Bry = 946,
+    /// Bilbil
     #[doc(hidden)]
     Brz = 947,
+    /// Abinomn
     #[doc(hidden)]
     Bsa = 948,
+    /// Brunei Bisaya
     #[doc(hidden)]
     Bsb = 949,
+    /// Bassari
     #[doc(hidden)]
     Bsc = 950,
+    /// Wushi
     #[doc(hidden)]
     Bse = 951,
+    /// Bauchi
     #[doc(hidden)]
     Bsf = 952,
+    /// Bashkardi
     #[doc(hidden)]
     Bsg = 953,
+    /// Kati
     #[doc(hidden)]
     Bsh = 954,
+    /// Bassossi
     #[doc(hidden)]
     Bsi = 955,
+    /// Bangwinji
     #[doc(hidden)]
     Bsj = 956,
+    /// Burushaski
     #[doc(hidden)]
     Bsk = 957,
+    /// Basa-Gumna
     #[doc(hidden)]
     Bsl = 958,
+    /// Busami
     #[doc(hidden)]
     Bsm = 959,
+    /// Barasana-Eduria
     #[doc(hidden)]
     Bsn = 960,
+    /// Buso
     #[doc(hidden)]
     Bso = 961,
+    /// Baga Sitemu
     #[doc(hidden)]
     Bsp = 962,
+    /// Bassa
     #[doc(hidden)]
     Bsq = 963,
+    /// Bassa-Kontagora
     #[doc(hidden)]
     Bsr = 964,
+    /// Akoose
     #[doc(hidden)]
     Bss = 965,
+    /// Basketo
     #[doc(hidden)]
     Bst = 966,
+    /// Bahonsuai
     #[doc(hidden)]
     Bsu = 967,
+    /// Baga Sobané
     #[doc(hidden)]
     Bsv = 968,
+    /// Baiso
     #[doc(hidden)]
     Bsw = 969,
+    /// Yangkam
     #[doc(hidden)]
     Bsx = 970,
+    /// Sabah Bisaya
     #[doc(hidden)]
     Bsy = 971,
+    /// Bata
     #[doc(hidden)]
     Bta = 972,
+    /// Bati
     #[doc(hidden)]
     Btc = 973,
+    /// Batak Dairi
     #[doc(hidden)]
     Btd = 974,
+    /// Gamo-Ningi
     #[doc(hidden)]
     Bte = 975,
+    /// Birgit
     #[doc(hidden)]
     Btf = 976,
+    /// Gagnoa Bété
     #[doc(hidden)]
     Btg = 977,
+    /// Biatah Bidayuh
     #[doc(hidden)]
     Bth = 978,
+    /// Burate
     #[doc(hidden)]
     Bti = 979,
+    /// Bacanese Malay
     #[doc(hidden)]
     Btj = 980,
+    /// Batak Mandailing
     #[doc(hidden)]
     Btm = 981,
+    /// Ratagnon
     #[doc(hidden)]
     Btn = 982,
+    /// Rinconada Bikol
     #[doc(hidden)]
     Bto = 983,
+    /// Budibud
     #[doc(hidden)]
     Btp = 984,
+    /// Batek
     #[doc(hidden)]
     Btq = 985,
+    /// Baetora
     #[doc(hidden)]
     Btr = 986,
+    /// Batak Simalungun
     #[doc(hidden)]
     Bts = 987,
+    /// Bete-Bendi
     #[doc(hidden)]
     Btt = 988,
+    /// Batu
     #[doc(hidden)]
     Btu = 989,
+    /// Bateri
     #[doc(hidden)]
     Btv = 990,
+    /// Butuanon
     #[doc(hidden)]
     Btw = 991,
+    /// Batak Karo
     #[doc(hidden)]
     Btx = 992,
+    /// Bobot
     #[doc(hidden)]
     Bty = 993,
+    /// Batak Alas-Kluet
     #[doc(hidden)]
     Btz = 994,
+    /// Buriat
     #[doc(hidden)]
     Bua = 995,
+    /// Bua
     #[doc(hidden)]
     Bub = 996,
+    /// Bushi
     #[doc(hidden)]
     Buc = 997,
+    /// Ntcham
     #[doc(hidden)]
     Bud = 998,
+    /// Beothuk
     #[doc(hidden)]
     Bue = 999,
+    /// Bushoong
     #[doc(hidden)]
     Buf = 1000,
+    /// Buginese
     #[doc(hidden)]
     Bug = 1001,
+    /// Younuo Bunu
     #[doc(hidden)]
     Buh = 1002,
+    /// Bongili
     #[doc(hidden)]
     Bui = 1003,
+    /// Basa-Gurmana
     #[doc(hidden)]
     Buj = 1004,
+    /// Bugawac
     #[doc(hidden)]
     Buk = 1005,
+    /// Bulgarian
     #[doc(hidden)]
     Bul = 1006,
+    /// Bulu
     #[doc(hidden)]
     Bum = 1007,
+    /// Sherbro
     #[doc(hidden)]
     Bun = 1008,
+    /// Terei
     #[doc(hidden)]
     Buo = 1009,
+    /// Busoa
     #[doc(hidden)]
     Bup = 1010,
+    /// Brem
     #[doc(hidden)]
     Buq = 1011,
+    /// Bokobaru
     #[doc(hidden)]
     Bus = 1012,
+    /// Bungain
     #[doc(hidden)]
     But = 1013,
+    /// Budu
     #[doc(hidden)]
     Buu = 1014,
+    /// Bun
     #[doc(hidden)]
     Buv = 1015,
+    /// Bubi
     #[doc(hidden)]
     Buw = 1016,
+    /// Boghom
     #[doc(hidden)]
     Bux = 1017,
+    /// Bullom So
     #[doc(hidden)]
     Buy = 1018,
+    /// Bukwen
     #[doc(hidden)]
     Buz = 1019,
+    /// Barein
     #[doc(hidden)]
     Bva = 1020,
+    /// Bube
     #[doc(hidden)]
     Bvb = 1021,
+    /// Baelelea
     #[doc(hidden)]
     Bvc = 1022,
+    /// Baeggu
     #[doc(hidden)]
     Bvd = 1023,
+    /// Berau Malay
     #[doc(hidden)]
     Bve = 1024,
+    /// Boor
     #[doc(hidden)]
     Bvf = 1025,
+    /// Bonkeng
     #[doc(hidden)]
     Bvg = 1026,
+    /// Bure
     #[doc(hidden)]
     Bvh = 1027,
+    /// Belanda Viri
     #[doc(hidden)]
     Bvi = 1028,
+    /// Baan
     #[doc(hidden)]
     Bvj = 1029,
+    /// Bukat
     #[doc(hidden)]
     Bvk = 1030,
+    /// Bolivian Sign Language
     #[doc(hidden)]
     Bvl = 1031,
+    /// Bamunka
     #[doc(hidden)]
     Bvm = 1032,
+    /// Buna
     #[doc(hidden)]
     Bvn = 1033,
+    /// Bolgo
     #[doc(hidden)]
     Bvo = 1034,
+    /// Bumang
     #[doc(hidden)]
     Bvp = 1035,
+    /// Birri
     #[doc(hidden)]
     Bvq = 1036,
+    /// Burarra
     #[doc(hidden)]
     Bvr = 1037,
+    /// Bati
     #[doc(hidden)]
     Bvt = 1038,
+    /// Bukit Malay
     #[doc(hidden)]
     Bvu = 1039,
+    /// Baniva
     #[doc(hidden)]
     Bvv = 1040,
+    /// Boga
     #[doc(hidden)]
     Bvw = 1041,
+    /// Dibole
     #[doc(hidden)]
     Bvx = 1042,
+    /// Baybayanon
     #[doc(hidden)]
     Bvy = 1043,
+    /// Bauzi
     #[doc(hidden)]
     Bvz = 1044,
+    /// Bwatoo
     #[doc(hidden)]
     Bwa = 1045,
+    /// Namosi-Naitasiri-Serua
     #[doc(hidden)]
     Bwb = 1046,
+    /// Bwile
     #[doc(hidden)]
     Bwc = 1047,
+    /// Bwaidoka
     #[doc(hidden)]
     Bwd = 1048,
+    /// Bwe Karen
     #[doc(hidden)]
     Bwe = 1049,
+    /// Boselewa
     #[doc(hidden)]
     Bwf = 1050,
+    /// Barwe
     #[doc(hidden)]
     Bwg = 1051,
+    /// Bishuo
     #[doc(hidden)]
     Bwh = 1052,
+    /// Baniwa
     #[doc(hidden)]
     Bwi = 1053,
+    /// Láá Láá Bwamu
     #[doc(hidden)]
     Bwj = 1054,
+    /// Bauwaki
     #[doc(hidden)]
     Bwk = 1055,
+    /// Bwela
     #[doc(hidden)]
     Bwl = 1056,
+    /// Biwat
     #[doc(hidden)]
     Bwm = 1057,
+    /// Wunai Bunu
     #[doc(hidden)]
     Bwn = 1058,
+    /// Boro
     #[doc(hidden)]
     Bwo = 1059,
+    /// Mandobo Bawah
     #[doc(hidden)]
     Bwp = 1060,
+    /// Southern Bobo Madaré
     #[doc(hidden)]
     Bwq = 1061,
+    /// Bura-Pabir
     #[doc(hidden)]
     Bwr = 1062,
+    /// Bomboma
     #[doc(hidden)]
     Bws = 1063,
+    /// Bafaw-Balong
     #[doc(hidden)]
     Bwt = 1064,
+    /// Buli
     #[doc(hidden)]
     Bwu = 1065,
+    /// Bwa
     #[doc(hidden)]
     Bww = 1066,
+    /// Bu-Nao Bunu
     #[doc(hidden)]
     Bwx = 1067,
+    /// Cwi Bwamu
     #[doc(hidden)]
     Bwy = 1068,
+    /// Bwisi
     #[doc(hidden)]
     Bwz = 1069,
+    /// Tairaha
     #[doc(hidden)]
     Bxa = 1070,
+    /// Belanda Bor
     #[doc(hidden)]
     Bxb = 1071,
+    /// Molengue
     #[doc(hidden)]
     Bxc = 1072,
+    /// Pela
     #[doc(hidden)]
     Bxd = 1073,
+    /// Birale
     #[doc(hidden)]
     Bxe = 1074,
+    /// Bilur
     #[doc(hidden)]
     Bxf = 1075,
+    /// Bangala
     #[doc(hidden)]
     Bxg = 1076,
+    /// Buhutu
     #[doc(hidden)]
     Bxh = 1077,
+    /// Pirlatapa
     #[doc(hidden)]
     Bxi = 1078,
+    /// Bayungu
     #[doc(hidden)]
     Bxj = 1079,
+    /// Bukusu
     #[doc(hidden)]
     Bxk = 1080,
+    /// Jalkunan
     #[doc(hidden)]
     Bxl = 1081,
+    /// Mongolia Buriat
     #[doc(hidden)]
     Bxm = 1082,
+    /// Burduna
     #[doc(hidden)]
     Bxn = 1083,
+    /// Barikanchi
     #[doc(hidden)]
     Bxo = 1084,
+    /// Bebil
     #[doc(hidden)]
     Bxp = 1085,
+    /// Beele
     #[doc(hidden)]
     Bxq = 1086,
+    /// Russia Buriat
     #[doc(hidden)]
     Bxr = 1087,
+    /// Busam
     #[doc(hidden)]
     Bxs = 1088,
+    /// China Buriat
     #[doc(hidden)]
     Bxu = 1089,
+    /// Berakou
     #[doc(hidden)]
     Bxv = 1090,
+    /// Bankagooma
     #[doc(hidden)]
     Bxw = 1091,
+    /// Binahari
     #[doc(hidden)]
     Bxz = 1092,
+    /// Batak
     #[doc(hidden)]
     Bya = 1093,
+    /// Bikya
     #[doc(hidden)]
     Byb = 1094,
+    /// Ubaghara
     #[doc(hidden)]
     Byc = 1095,
+    /// Benyadu'
     #[doc(hidden)]
     Byd = 1096,
+    /// Pouye
     #[doc(hidden)]
     Bye = 1097,
+    /// Bete
     #[doc(hidden)]
     Byf = 1098,
+    /// Baygo
     #[doc(hidden)]
     Byg = 1099,
+    /// Bhujel
     #[doc(hidden)]
     Byh = 1100,
+    /// Buyu
     #[doc(hidden)]
     Byi = 1101,
+    /// Bina
     #[doc(hidden)]
     Byj = 1102,
+    /// Biao
     #[doc(hidden)]
     Byk = 1103,
+    /// Bayono
     #[doc(hidden)]
     Byl = 1104,
+    /// Bidjara
     #[doc(hidden)]
     Bym = 1105,
+    /// Bilin
     #[doc(hidden)]
     Byn = 1106,
+    /// Biyo
     #[doc(hidden)]
     Byo = 1107,
+    /// Bumaji
     #[doc(hidden)]
     Byp = 1108,
+    /// Basay
     #[doc(hidden)]
     Byq = 1109,
+    /// Baruya
     #[doc(hidden)]
     Byr = 1110,
+    /// Burak
     #[doc(hidden)]
     Bys = 1111,
+    /// Berti
     #[doc(hidden)]
     Byt = 1112,
+    /// Medumba
     #[doc(hidden)]
     Byv = 1113,
+    /// Belhariya
     #[doc(hidden)]
     Byw = 1114,
+    /// Qaqet
     #[doc(hidden)]
     Byx = 1115,
+    /// Banaro
     #[doc(hidden)]
     Byz = 1116,
+    /// Bandi
     #[doc(hidden)]
     Bza = 1117,
+    /// Andio
     #[doc(hidden)]
     Bzb = 1118,
+    /// Southern Betsimisaraka Malagasy
     #[doc(hidden)]
     Bzc = 1119,
+    /// Bribri
     #[doc(hidden)]
     Bzd = 1120,
+    /// Jenaama Bozo
     #[doc(hidden)]
     Bze = 1121,
+    /// Boikin
     #[doc(hidden)]
     Bzf = 1122,
+    /// Babuza
     #[doc(hidden)]
     Bzg = 1123,
+    /// Mapos Buang
     #[doc(hidden)]
     Bzh = 1124,
+    /// Bisu
     #[doc(hidden)]
     Bzi = 1125,
+    /// Belize Kriol English
     #[doc(hidden)]
     Bzj = 1126,
+    /// Nicaragua Creole English
     #[doc(hidden)]
     Bzk = 1127,
+    /// Boano
     #[doc(hidden)]
     Bzl = 1128,
+    /// Bolondo
     #[doc(hidden)]
     Bzm = 1129,
+    /// Boano
     #[doc(hidden)]
     Bzn = 1130,
+    /// Bozaba
     #[doc(hidden)]
     Bzo = 1131,
+    /// Kemberano
     #[doc(hidden)]
     Bzp = 1132,
+    /// Buli
     #[doc(hidden)]
     Bzq = 1133,
+    /// Biri
     #[doc(hidden)]
     Bzr = 1134,
+    /// Brazilian Sign Language
     #[doc(hidden)]
     Bzs = 1135,
+    /// Brithenig
     #[doc(hidden)]
     Bzt = 1136,
+    /// Burmeso
     #[doc(hidden)]
     Bzu = 1137,
+    /// Naami
     #[doc(hidden)]
     Bzv = 1138,
+    /// Basa
     #[doc(hidden)]
     Bzw = 1139,
+    /// Kɛlɛngaxo Bozo
     #[doc(hidden)]
     Bzx = 1140,
+    /// Obanliku
     #[doc(hidden)]
     Bzy = 1141,
+    /// Evant
     #[doc(hidden)]
     Bzz = 1142,
+    /// Chortí
     #[doc(hidden)]
     Caa = 1143,
+    /// Garifuna
     #[doc(hidden)]
     Cab = 1144,
+    /// Chuj
     #[doc(hidden)]
     Cac = 1145,
+    /// Caddo
     #[doc(hidden)]
     Cad = 1146,
+    /// Lehar
     #[doc(hidden)]
     Cae = 1147,
+    /// Southern Carrier
     #[doc(hidden)]
     Caf = 1148,
+    /// Nivaclé
     #[doc(hidden)]
     Cag = 1149,
+    /// Cahuarano
     #[doc(hidden)]
     Cah = 1150,
+    /// Chané
     #[doc(hidden)]
     Caj = 1151,
+    /// Kaqchikel
     #[doc(hidden)]
     Cak = 1152,
+    /// Carolinian
     #[doc(hidden)]
     Cal = 1153,
+    /// Cemuhî
     #[doc(hidden)]
     Cam = 1154,
+    /// Chambri
     #[doc(hidden)]
     Can = 1155,
+    /// Chácobo
     #[doc(hidden)]
     Cao = 1156,
+    /// Chipaya
     #[doc(hidden)]
     Cap = 1157,
+    /// Car Nicobarese
     #[doc(hidden)]
     Caq = 1158,
+    /// Galibi Carib
     #[doc(hidden)]
     Car = 1159,
+    /// Tsimané
     #[doc(hidden)]
     Cas = 1160,
+    /// Catalan
     #[doc(hidden)]
     Cat = 1161,
+    /// Cavineña
     #[doc(hidden)]
     Cav = 1162,
+    /// Callawalla
     #[doc(hidden)]
     Caw = 1163,
+    /// Chiquitano
     #[doc(hidden)]
     Cax = 1164,
+    /// Cayuga
     #[doc(hidden)]
     Cay = 1165,
+    /// Canichana
     #[doc(hidden)]
     Caz = 1166,
+    /// Cabiyarí
     #[doc(hidden)]
     Cbb = 1167,
+    /// Carapana
     #[doc(hidden)]
     Cbc = 1168,
+    /// Carijona
     #[doc(hidden)]
     Cbd = 1169,
+    /// Chimila
     #[doc(hidden)]
     Cbg = 1170,
+    /// Chachi
     #[doc(hidden)]
     Cbi = 1171,
+    /// Ede Cabe
     #[doc(hidden)]
     Cbj = 1172,
+    /// Chavacano
     #[doc(hidden)]
     Cbk = 1173,
+    /// Bualkhaw Chin
     #[doc(hidden)]
     Cbl = 1174,
+    /// Nyahkur
     #[doc(hidden)]
     Cbn = 1175,
+    /// Izora
     #[doc(hidden)]
     Cbo = 1176,
+    /// Tsucuba
     #[doc(hidden)]
     Cbq = 1177,
+    /// Cashibo-Cacataibo
     #[doc(hidden)]
     Cbr = 1178,
+    /// Cashinahua
     #[doc(hidden)]
     Cbs = 1179,
+    /// Chayahuita
     #[doc(hidden)]
     Cbt = 1180,
+    /// Candoshi-Shapra
     #[doc(hidden)]
     Cbu = 1181,
+    /// Cacua
     #[doc(hidden)]
     Cbv = 1182,
+    /// Kinabalian
     #[doc(hidden)]
     Cbw = 1183,
+    /// Carabayo
     #[doc(hidden)]
     Cby = 1184,
+    /// Chamicuro
     #[doc(hidden)]
     Ccc = 1185,
+    /// Cafundo Creole
     #[doc(hidden)]
     Ccd = 1186,
+    /// Chopi
     #[doc(hidden)]
     Cce = 1187,
+    /// Samba Daka
     #[doc(hidden)]
     Ccg = 1188,
+    /// Atsam
     #[doc(hidden)]
     Cch = 1189,
+    /// Kasanga
     #[doc(hidden)]
     Ccj = 1190,
+    /// Cutchi-Swahili
     #[doc(hidden)]
     Ccl = 1191,
+    /// Malaccan Creole Malay
     #[doc(hidden)]
     Ccm = 1192,
+    /// Comaltepec Chinantec
     #[doc(hidden)]
     Cco = 1193,
+    /// Chakma
     #[doc(hidden)]
     Ccp = 1194,
+    /// Cacaopera
     #[doc(hidden)]
     Ccr = 1195,
+    /// Choni
     #[doc(hidden)]
     Cda = 1196,
+    /// Chenchu
     #[doc(hidden)]
     Cde = 1197,
+    /// Chiru
     #[doc(hidden)]
     Cdf = 1198,
+    /// Chambeali
     #[doc(hidden)]
     Cdh = 1199,
+    /// Chodri
     #[doc(hidden)]
     Cdi = 1200,
+    /// Churahi
     #[doc(hidden)]
     Cdj = 1201,
+    /// Chepang
     #[doc(hidden)]
     Cdm = 1202,
+    /// Chaudangsi
     #[doc(hidden)]
     Cdn = 1203,
+    /// Min Dong Chinese
     #[doc(hidden)]
     Cdo = 1204,
+    /// Cinda-Regi-Tiyal
     #[doc(hidden)]
     Cdr = 1205,
+    /// Chadian Sign Language
     #[doc(hidden)]
     Cds = 1206,
+    /// Chadong
     #[doc(hidden)]
     Cdy = 1207,
+    /// Koda
     #[doc(hidden)]
     Cdz = 1208,
+    /// Lower Chehalis
     #[doc(hidden)]
     Cea = 1209,
+    /// Cebuano
     #[doc(hidden)]
     Ceb = 1210,
+    /// Chamacoco
     #[doc(hidden)]
     Ceg = 1211,
+    /// Eastern Khumi Chin
     #[doc(hidden)]
     Cek = 1212,
+    /// Cen
     #[doc(hidden)]
     Cen = 1213,
+    /// Czech
     #[doc(hidden)]
     Ces = 1214,
+    /// Centúúm
     #[doc(hidden)]
     Cet = 1215,
+    /// Ekai Chin
     #[doc(hidden)]
     Cey = 1216,
+    /// Dijim-Bwilim
     #[doc(hidden)]
     Cfa = 1217,
+    /// Cara
     #[doc(hidden)]
     Cfd = 1218,
+    /// Como Karim
     #[doc(hidden)]
     Cfg = 1219,
+    /// Falam Chin
     #[doc(hidden)]
     Cfm = 1220,
+    /// Changriwa
     #[doc(hidden)]
     Cga = 1221,
+    /// Kagayanen
     #[doc(hidden)]
     Cgc = 1222,
+    /// Chiga
     #[doc(hidden)]
     Cgg = 1223,
+    /// Chocangacakha
     #[doc(hidden)]
     Cgk = 1224,
+    /// Chamorro
     #[doc(hidden)]
     Cha = 1225,
+    /// Chibcha
     #[doc(hidden)]
     Chb = 1226,
+    /// Catawba
     #[doc(hidden)]
     Chc = 1227,
+    /// Highland Oaxaca Chontal
     #[doc(hidden)]
     Chd = 1228,
+    /// Chechen
     #[doc(hidden)]
     Che = 1229,
+    /// Tabasco Chontal
     #[doc(hidden)]
     Chf = 1230,
+    /// Chagatai
     #[doc(hidden)]
     Chg = 1231,
+    /// Chinook
     #[doc(hidden)]
     Chh = 1232,
+    /// Ojitlán Chinantec
     #[doc(hidden)]
     Chj = 1233,
+    /// Chuukese
     #[doc(hidden)]
     Chk = 1234,
+    /// Cahuilla
     #[doc(hidden)]
     Chl = 1235,
+    /// Mari
     #[doc(hidden)]
     Chm = 1236,
+    /// Chinook jargon
     #[doc(hidden)]
     Chn = 1237,
+    /// Choctaw
     #[doc(hidden)]
     Cho = 1238,
+    /// Chipewyan
     #[doc(hidden)]
     Chp = 1239,
+    /// Quiotepec Chinantec
     #[doc(hidden)]
     Chq = 1240,
+    /// Cherokee
     #[doc(hidden)]
     Chr = 1241,
+    /// Cholón
     #[doc(hidden)]
     Cht = 1242,
+    /// Church Slavic
     #[doc(hidden)]
     Chu = 1243,
+    /// Chuvash
     #[doc(hidden)]
     Chv = 1244,
+    /// Chuwabu
     #[doc(hidden)]
     Chw = 1245,
+    /// Chantyal
     #[doc(hidden)]
     Chx = 1246,
+    /// Cheyenne
     #[doc(hidden)]
     Chy = 1247,
+    /// Ozumacín Chinantec
     #[doc(hidden)]
     Chz = 1248,
+    /// Cia-Cia
     #[doc(hidden)]
     Cia = 1249,
+    /// Ci Gbe
     #[doc(hidden)]
     Cib = 1250,
+    /// Chickasaw
     #[doc(hidden)]
     Cic = 1251,
+    /// Chimariko
     #[doc(hidden)]
     Cid = 1252,
+    /// Cineni
     #[doc(hidden)]
     Cie = 1253,
+    /// Chinali
     #[doc(hidden)]
     Cih = 1254,
+    /// Chitkuli Kinnauri
     #[doc(hidden)]
     Cik = 1255,
+    /// Cimbrian
     #[doc(hidden)]
     Cim = 1256,
+    /// Cinta Larga
     #[doc(hidden)]
     Cin = 1257,
+    /// Chiapanec
     #[doc(hidden)]
     Cip = 1258,
+    /// Tiri
     #[doc(hidden)]
     Cir = 1259,
+    /// Chippewa
     #[doc(hidden)]
     Ciw = 1260,
+    /// Chaima
     #[doc(hidden)]
     Ciy = 1261,
+    /// Western Cham
     #[doc(hidden)]
     Cja = 1262,
+    /// Chru
     #[doc(hidden)]
     Cje = 1263,
+    /// Upper Chehalis
     #[doc(hidden)]
     Cjh = 1264,
+    /// Chamalal
     #[doc(hidden)]
     Cji = 1265,
+    /// Chokwe
     #[doc(hidden)]
     Cjk = 1266,
+    /// Eastern Cham
     #[doc(hidden)]
     Cjm = 1267,
+    /// Chenapian
     #[doc(hidden)]
     Cjn = 1268,
+    /// Ashéninka Pajonal
     #[doc(hidden)]
     Cjo = 1269,
+    /// Cabécar
     #[doc(hidden)]
     Cjp = 1270,
+    /// Shor
     #[doc(hidden)]
     Cjs = 1271,
+    /// Chuave
     #[doc(hidden)]
     Cjv = 1272,
+    /// Jinyu Chinese
     #[doc(hidden)]
     Cjy = 1273,
+    /// Central Kurdish
     #[doc(hidden)]
     Ckb = 1274,
+    /// Chak
     #[doc(hidden)]
     Ckh = 1275,
+    /// Cibak
     #[doc(hidden)]
     Ckl = 1276,
+    /// Chakavian
     #[doc(hidden)]
     Ckm = 1277,
+    /// Kaang Chin
     #[doc(hidden)]
     Ckn = 1278,
+    /// Anufo
     #[doc(hidden)]
     Cko = 1279,
+    /// Kajakse
     #[doc(hidden)]
     Ckq = 1280,
+    /// Kairak
     #[doc(hidden)]
     Ckr = 1281,
+    /// Tayo
     #[doc(hidden)]
     Cks = 1282,
+    /// Chukot
     #[doc(hidden)]
     Ckt = 1283,
+    /// Koasati
     #[doc(hidden)]
     Cku = 1284,
+    /// Kavalan
     #[doc(hidden)]
     Ckv = 1285,
+    /// Caka
     #[doc(hidden)]
     Ckx = 1286,
+    /// Cakfem-Mushere
     #[doc(hidden)]
     Cky = 1287,
+    /// Cakchiquel-Quiché Mixed Language
     #[doc(hidden)]
     Ckz = 1288,
+    /// Ron
     #[doc(hidden)]
     Cla = 1289,
+    /// Chilcotin
     #[doc(hidden)]
     Clc = 1290,
+    /// Chaldean Neo-Aramaic
     #[doc(hidden)]
     Cld = 1291,
+    /// Lealao Chinantec
     #[doc(hidden)]
     Cle = 1292,
+    /// Chilisso
     #[doc(hidden)]
     Clh = 1293,
+    /// Chakali
     #[doc(hidden)]
     Cli = 1294,
+    /// Laitu Chin
     #[doc(hidden)]
     Clj = 1295,
+    /// Idu-Mishmi
     #[doc(hidden)]
     Clk = 1296,
+    /// Chala
     #[doc(hidden)]
     Cll = 1297,
+    /// Clallam
     #[doc(hidden)]
     Clm = 1298,
+    /// Lowland Oaxaca Chontal
     #[doc(hidden)]
     Clo = 1299,
+    /// Lautu Chin
     #[doc(hidden)]
     Clt = 1300,
+    /// Caluyanun
     #[doc(hidden)]
     Clu = 1301,
+    /// Chulym
     #[doc(hidden)]
     Clw = 1302,
+    /// Eastern Highland Chatino
     #[doc(hidden)]
     Cly = 1303,
+    /// Maa
     #[doc(hidden)]
     Cma = 1304,
+    /// Cerma
     #[doc(hidden)]
     Cme = 1305,
+    /// Classical Mongolian
     #[doc(hidden)]
     Cmg = 1306,
+    /// Emberá-Chamí
     #[doc(hidden)]
     Cmi = 1307,
+    /// Campalagian
     #[doc(hidden)]
     Cml = 1308,
+    /// Michigamea
     #[doc(hidden)]
     Cmm = 1309,
+    /// Mandarin Chinese
     #[doc(hidden)]
     Cmn = 1310,
+    /// Central Mnong
     #[doc(hidden)]
     Cmo = 1311,
+    /// Mro-Khimi Chin
     #[doc(hidden)]
     Cmr = 1312,
+    /// Messapic
     #[doc(hidden)]
     Cms = 1313,
+    /// Camtho
     #[doc(hidden)]
     Cmt = 1314,
+    /// Changthang
     #[doc(hidden)]
     Cna = 1315,
+    /// Chinbon Chin
     #[doc(hidden)]
     Cnb = 1316,
+    /// Côông
     #[doc(hidden)]
     Cnc = 1317,
+    /// Northern Qiang
     #[doc(hidden)]
     Cng = 1318,
+    /// Hakha Chin
     #[doc(hidden)]
     Cnh = 1319,
+    /// Asháninka
     #[doc(hidden)]
     Cni = 1320,
+    /// Khumi Chin
     #[doc(hidden)]
     Cnk = 1321,
+    /// Lalana Chinantec
     #[doc(hidden)]
     Cnl = 1322,
+    /// Con
     #[doc(hidden)]
     Cno = 1323,
+    /// Northern Ping Chinese
     #[doc(hidden)]
     Cnp = 1324,
+    /// Chung
     #[doc(hidden)]
     Cnq = 1325,
+    /// Montenegrin
     #[doc(hidden)]
     Cnr = 1326,
+    /// Central Asmat
     #[doc(hidden)]
     Cns = 1327,
+    /// Tepetotutla Chinantec
     #[doc(hidden)]
     Cnt = 1328,
+    /// Chenoua
     #[doc(hidden)]
     Cnu = 1329,
+    /// Ngawn Chin
     #[doc(hidden)]
     Cnw = 1330,
+    /// Middle Cornish
     #[doc(hidden)]
     Cnx = 1331,
+    /// Cocos Islands Malay
     #[doc(hidden)]
     Coa = 1332,
+    /// Chicomuceltec
     #[doc(hidden)]
     Cob = 1333,
+    /// Cocopa
     #[doc(hidden)]
     Coc = 1334,
+    /// Cocama-Cocamilla
     #[doc(hidden)]
     Cod = 1335,
+    /// Koreguaje
     #[doc(hidden)]
     Coe = 1336,
+    /// Colorado
     #[doc(hidden)]
     Cof = 1337,
+    /// Chong
     #[doc(hidden)]
     Cog = 1338,
+    /// Chonyi-Dzihana-Kauma
     #[doc(hidden)]
     Coh = 1339,
+    /// Cochimi
     #[doc(hidden)]
     Coj = 1340,
+    /// Santa Teresa Cora
     #[doc(hidden)]
     Cok = 1341,
+    /// Columbia-Wenatchi
     #[doc(hidden)]
     Col = 1342,
+    /// Comanche
     #[doc(hidden)]
     Com = 1343,
+    /// Cofán
     #[doc(hidden)]
     Con = 1344,
+    /// Comox
     #[doc(hidden)]
     Coo = 1345,
+    /// Coptic
     #[doc(hidden)]
     Cop = 1346,
+    /// Coquille
     #[doc(hidden)]
     Coq = 1347,
+    /// Cornish
     #[doc(hidden)]
     Cor = 1348,
+    /// Corsican
     #[doc(hidden)]
     Cos = 1349,
+    /// Caquinte
     #[doc(hidden)]
     Cot = 1350,
+    /// Wamey
     #[doc(hidden)]
     Cou = 1351,
+    /// Cao Miao
     #[doc(hidden)]
     Cov = 1352,
+    /// Cowlitz
     #[doc(hidden)]
     Cow = 1353,
+    /// Nanti
     #[doc(hidden)]
     Cox = 1354,
+    /// Chochotec
     #[doc(hidden)]
     Coz = 1355,
+    /// Palantla Chinantec
     #[doc(hidden)]
     Cpa = 1356,
+    /// Ucayali-Yurúa Ashéninka
     #[doc(hidden)]
     Cpb = 1357,
+    /// Ajyíninka Apurucayali
     #[doc(hidden)]
     Cpc = 1358,
+    /// Cappadocian Greek
     #[doc(hidden)]
     Cpg = 1359,
+    /// Chinese Pidgin English
     #[doc(hidden)]
     Cpi = 1360,
+    /// Cherepon
     #[doc(hidden)]
     Cpn = 1361,
+    /// Kpeego
     #[doc(hidden)]
     Cpo = 1362,
+    /// Capiznon
     #[doc(hidden)]
     Cps = 1363,
+    /// Pichis Ashéninka
     #[doc(hidden)]
     Cpu = 1364,
+    /// Pu-Xian Chinese
     #[doc(hidden)]
     Cpx = 1365,
+    /// South Ucayali Ashéninka
     #[doc(hidden)]
     Cpy = 1366,
+    /// Chuanqiandian Cluster Miao
     #[doc(hidden)]
     Cqd = 1367,
+    /// Chara
     #[doc(hidden)]
     Cra = 1368,
+    /// Island Carib
     #[doc(hidden)]
     Crb = 1369,
+    /// Lonwolwol
     #[doc(hidden)]
     Crc = 1370,
+    /// Coeur d'Alene
     #[doc(hidden)]
     Crd = 1371,
+    /// Cree
     #[doc(hidden)]
     Cre = 1372,
+    /// Caramanta
     #[doc(hidden)]
     Crf = 1373,
+    /// Michif
     #[doc(hidden)]
     Crg = 1374,
+    /// Crimean Tatar
     #[doc(hidden)]
     Crh = 1375,
+    /// Sãotomense
     #[doc(hidden)]
     Cri = 1376,
+    /// Southern East Cree
     #[doc(hidden)]
     Crj = 1377,
+    /// Plains Cree
     #[doc(hidden)]
     Crk = 1378,
+    /// Northern East Cree
     #[doc(hidden)]
     Crl = 1379,
+    /// Moose Cree
     #[doc(hidden)]
     Crm = 1380,
+    /// El Nayar Cora
     #[doc(hidden)]
     Crn = 1381,
+    /// Crow
     #[doc(hidden)]
     Cro = 1382,
+    /// Iyo'wujwa Chorote
     #[doc(hidden)]
     Crq = 1383,
+    /// Carolina Algonquian
     #[doc(hidden)]
     Crr = 1384,
+    /// Seselwa Creole French
     #[doc(hidden)]
     Crs = 1385,
+    /// Iyojwa'ja Chorote
     #[doc(hidden)]
     Crt = 1386,
+    /// Chaura
     #[doc(hidden)]
     Crv = 1387,
+    /// Chrau
     #[doc(hidden)]
     Crw = 1388,
+    /// Carrier
     #[doc(hidden)]
     Crx = 1389,
+    /// Cori
     #[doc(hidden)]
     Cry = 1390,
+    /// Cruzeño
     #[doc(hidden)]
     Crz = 1391,
+    /// Chiltepec Chinantec
     #[doc(hidden)]
     Csa = 1392,
+    /// Kashubian
     #[doc(hidden)]
     Csb = 1393,
+    /// Catalan Sign Language
     #[doc(hidden)]
     Csc = 1394,
+    /// Chiangmai Sign Language
     #[doc(hidden)]
     Csd = 1395,
+    /// Czech Sign Language
     #[doc(hidden)]
     Cse = 1396,
+    /// Cuba Sign Language
     #[doc(hidden)]
     Csf = 1397,
+    /// Chilean Sign Language
     #[doc(hidden)]
     Csg = 1398,
+    /// Asho Chin
     #[doc(hidden)]
     Csh = 1399,
+    /// Coast Miwok
     #[doc(hidden)]
     Csi = 1400,
+    /// Songlai Chin
     #[doc(hidden)]
     Csj = 1401,
+    /// Jola-Kasa
     #[doc(hidden)]
     Csk = 1402,
+    /// Chinese Sign Language
     #[doc(hidden)]
     Csl = 1403,
+    /// Central Sierra Miwok
     #[doc(hidden)]
     Csm = 1404,
+    /// Colombian Sign Language
     #[doc(hidden)]
     Csn = 1405,
+    /// Sochiapam Chinantec
     #[doc(hidden)]
     Cso = 1406,
+    /// Southern Ping Chinese
     #[doc(hidden)]
     Csp = 1407,
+    /// Croatia Sign Language
     #[doc(hidden)]
     Csq = 1408,
+    /// Costa Rican Sign Language
     #[doc(hidden)]
     Csr = 1409,
+    /// Southern Ohlone
     #[doc(hidden)]
     Css = 1410,
+    /// Northern Ohlone
     #[doc(hidden)]
     Cst = 1411,
+    /// Sumtu Chin
     #[doc(hidden)]
     Csv = 1412,
+    /// Swampy Cree
     #[doc(hidden)]
     Csw = 1413,
+    /// Cambodian Sign Language
     #[doc(hidden)]
     Csx = 1414,
+    /// Siyin Chin
     #[doc(hidden)]
     Csy = 1415,
+    /// Coos
     #[doc(hidden)]
     Csz = 1416,
+    /// Tataltepec Chatino
     #[doc(hidden)]
     Cta = 1417,
+    /// Chetco
     #[doc(hidden)]
     Ctc = 1418,
+    /// Tedim Chin
     #[doc(hidden)]
     Ctd = 1419,
+    /// Tepinapa Chinantec
     #[doc(hidden)]
     Cte = 1420,
+    /// Chittagonian
     #[doc(hidden)]
     Ctg = 1421,
+    /// Thaiphum Chin
     #[doc(hidden)]
     Cth = 1422,
+    /// Tlacoatzintepec Chinantec
     #[doc(hidden)]
     Ctl = 1423,
+    /// Chitimacha
     #[doc(hidden)]
     Ctm = 1424,
+    /// Chhintange
     #[doc(hidden)]
     Ctn = 1425,
+    /// Emberá-Catío
     #[doc(hidden)]
     Cto = 1426,
+    /// Western Highland Chatino
     #[doc(hidden)]
     Ctp = 1427,
+    /// Northern Catanduanes Bikol
     #[doc(hidden)]
     Cts = 1428,
+    /// Wayanad Chetti
     #[doc(hidden)]
     Ctt = 1429,
+    /// Chol
     #[doc(hidden)]
     Ctu = 1430,
+    /// Moundadan Chetty
     #[doc(hidden)]
     Cty = 1431,
+    /// Zacatepec Chatino
     #[doc(hidden)]
     Ctz = 1432,
+    /// Cua
     #[doc(hidden)]
     Cua = 1433,
+    /// Cubeo
     #[doc(hidden)]
     Cub = 1434,
+    /// Usila Chinantec
     #[doc(hidden)]
     Cuc = 1435,
+    /// Chuka
     #[doc(hidden)]
     Cuh = 1436,
+    /// Cuiba
     #[doc(hidden)]
     Cui = 1437,
+    /// Mashco Piro
     #[doc(hidden)]
     Cuj = 1438,
+    /// San Blas Kuna
     #[doc(hidden)]
     Cuk = 1439,
+    /// Culina
     #[doc(hidden)]
     Cul = 1440,
+    /// Cumanagoto
     #[doc(hidden)]
     Cuo = 1441,
+    /// Cupeño
     #[doc(hidden)]
     Cup = 1442,
+    /// Cun
     #[doc(hidden)]
     Cuq = 1443,
+    /// Chhulung
     #[doc(hidden)]
     Cur = 1444,
+    /// Teutila Cuicatec
     #[doc(hidden)]
     Cut = 1445,
+    /// Tai Ya
     #[doc(hidden)]
     Cuu = 1446,
+    /// Cuvok
     #[doc(hidden)]
     Cuv = 1447,
+    /// Chukwa
     #[doc(hidden)]
     Cuw = 1448,
+    /// Tepeuxila Cuicatec
     #[doc(hidden)]
     Cux = 1449,
+    /// Cuitlatec
     #[doc(hidden)]
     Cuy = 1450,
+    /// Chug
     #[doc(hidden)]
     Cvg = 1451,
+    /// Valle Nacional Chinantec
     #[doc(hidden)]
     Cvn = 1452,
+    /// Kabwa
     #[doc(hidden)]
     Cwa = 1453,
+    /// Maindo
     #[doc(hidden)]
     Cwb = 1454,
+    /// Woods Cree
     #[doc(hidden)]
     Cwd = 1455,
+    /// Kwere
     #[doc(hidden)]
     Cwe = 1456,
+    /// Chewong
     #[doc(hidden)]
     Cwg = 1457,
+    /// Kuwaataay
     #[doc(hidden)]
     Cwt = 1458,
+    /// Cha'ari
     #[doc(hidden)]
     Cxh = 1459,
+    /// Nopala Chatino
     #[doc(hidden)]
     Cya = 1460,
+    /// Cayubaba
     #[doc(hidden)]
     Cyb = 1461,
+    /// Welsh
     #[doc(hidden)]
     Cym = 1462,
+    /// Cuyonon
     #[doc(hidden)]
     Cyo = 1463,
+    /// Huizhou Chinese
     #[doc(hidden)]
     Czh = 1464,
+    /// Knaanic
     #[doc(hidden)]
     Czk = 1465,
+    /// Zenzontepec Chatino
     #[doc(hidden)]
     Czn = 1466,
+    /// Min Zhong Chinese
     #[doc(hidden)]
     Czo = 1467,
+    /// Zotung Chin
     #[doc(hidden)]
     Czt = 1468,
+    /// Dangaléat
     #[doc(hidden)]
     Daa = 1469,
+    /// Dambi
     #[doc(hidden)]
     Dac = 1470,
+    /// Marik
     #[doc(hidden)]
     Dad = 1471,
+    /// Duupa
     #[doc(hidden)]
     Dae = 1472,
+    /// Dagbani
     #[doc(hidden)]
     Dag = 1473,
+    /// Gwahatike
     #[doc(hidden)]
     Dah = 1474,
+    /// Day
     #[doc(hidden)]
     Dai = 1475,
+    /// Dar Fur Daju
     #[doc(hidden)]
     Daj = 1476,
+    /// Dakota
     #[doc(hidden)]
     Dak = 1477,
+    /// Dahalo
     #[doc(hidden)]
     Dal = 1478,
+    /// Damakawa
     #[doc(hidden)]
     Dam = 1479,
+    /// Danish
     #[doc(hidden)]
     Dan = 1480,
+    /// Daai Chin
     #[doc(hidden)]
     Dao = 1481,
+    /// Dandami Maria
     #[doc(hidden)]
     Daq = 1482,
+    /// Dargwa
     #[doc(hidden)]
     Dar = 1483,
+    /// Daho-Doo
     #[doc(hidden)]
     Das = 1484,
+    /// Dar Sila Daju
     #[doc(hidden)]
     Dau = 1485,
+    /// Taita
     #[doc(hidden)]
     Dav = 1486,
+    /// Davawenyo
     #[doc(hidden)]
     Daw = 1487,
+    /// Dayi
     #[doc(hidden)]
     Dax = 1488,
+    /// Dao
     #[doc(hidden)]
     Daz = 1489,
+    /// Bangime
     #[doc(hidden)]
     Dba = 1490,
+    /// Deno
     #[doc(hidden)]
     Dbb = 1491,
+    /// Dadiya
     #[doc(hidden)]
     Dbd = 1492,
+    /// Dabe
     #[doc(hidden)]
     Dbe = 1493,
+    /// Edopi
     #[doc(hidden)]
     Dbf = 1494,
+    /// Dogul Dom Dogon
     #[doc(hidden)]
     Dbg = 1495,
+    /// Doka
     #[doc(hidden)]
     Dbi = 1496,
+    /// Ida'an
     #[doc(hidden)]
     Dbj = 1497,
+    /// Dyirbal
     #[doc(hidden)]
     Dbl = 1498,
+    /// Duguri
     #[doc(hidden)]
     Dbm = 1499,
+    /// Duriankere
     #[doc(hidden)]
     Dbn = 1500,
+    /// Dulbu
     #[doc(hidden)]
     Dbo = 1501,
+    /// Duwai
     #[doc(hidden)]
     Dbp = 1502,
+    /// Daba
     #[doc(hidden)]
     Dbq = 1503,
+    /// Dabarre
     #[doc(hidden)]
     Dbr = 1504,
+    /// Ben Tey Dogon
     #[doc(hidden)]
     Dbt = 1505,
+    /// Bondum Dom Dogon
     #[doc(hidden)]
     Dbu = 1506,
+    /// Dungu
     #[doc(hidden)]
     Dbv = 1507,
+    /// Bankan Tey Dogon
     #[doc(hidden)]
     Dbw = 1508,
+    /// Dibiyaso
     #[doc(hidden)]
     Dby = 1509,
+    /// Deccan
     #[doc(hidden)]
     Dcc = 1510,
+    /// Negerhollands
     #[doc(hidden)]
     Dcr = 1511,
+    /// Dadi Dadi
     #[doc(hidden)]
     Dda = 1512,
+    /// Dongotono
     #[doc(hidden)]
     Ddd = 1513,
+    /// Doondo
     #[doc(hidden)]
     Dde = 1514,
+    /// Fataluku
     #[doc(hidden)]
     Ddg = 1515,
+    /// West Goodenough
     #[doc(hidden)]
     Ddi = 1516,
+    /// Jaru
     #[doc(hidden)]
     Ddj = 1517,
+    /// Dendi
     #[doc(hidden)]
     Ddn = 1518,
+    /// Dido
     #[doc(hidden)]
     Ddo = 1519,
+    /// Dhudhuroa
     #[doc(hidden)]
     Ddr = 1520,
+    /// Donno So Dogon
     #[doc(hidden)]
     Dds = 1521,
+    /// Dawera-Daweloor
     #[doc(hidden)]
     Ddw = 1522,
+    /// Dagik
     #[doc(hidden)]
     Dec = 1523,
+    /// Dedua
     #[doc(hidden)]
     Ded = 1524,
+    /// Dewoin
     #[doc(hidden)]
     Dee = 1525,
+    /// Dezfuli
     #[doc(hidden)]
     Def = 1526,
+    /// Degema
     #[doc(hidden)]
     Deg = 1527,
+    /// Dehwari
     #[doc(hidden)]
     Deh = 1528,
+    /// Demisa
     #[doc(hidden)]
     Dei = 1529,
+    /// Dek
     #[doc(hidden)]
     Dek = 1530,
+    /// Delaware
     #[doc(hidden)]
     Del = 1531,
+    /// Dem
     #[doc(hidden)]
     Dem = 1532,
+    /// Slave
     #[doc(hidden)]
     Den = 1533,
+    /// Pidgin Delaware
     #[doc(hidden)]
     Dep = 1534,
+    /// Dendi
     #[doc(hidden)]
     Deq = 1535,
+    /// Deori
     #[doc(hidden)]
     Der = 1536,
+    /// Desano
     #[doc(hidden)]
     Des = 1537,
+    /// German
     #[doc(hidden)]
     Deu = 1538,
+    /// Domung
     #[doc(hidden)]
     Dev = 1539,
+    /// Dengese
     #[doc(hidden)]
     Dez = 1540,
+    /// Southern Dagaare
     #[doc(hidden)]
     Dga = 1541,
+    /// Bunoge Dogon
     #[doc(hidden)]
     Dgb = 1542,
+    /// Casiguran Dumagat Agta
     #[doc(hidden)]
     Dgc = 1543,
+    /// Dagaari Dioula
     #[doc(hidden)]
     Dgd = 1544,
+    /// Degenan
     #[doc(hidden)]
     Dge = 1545,
+    /// Doga
     #[doc(hidden)]
     Dgg = 1546,
+    /// Dghwede
     #[doc(hidden)]
     Dgh = 1547,
+    /// Northern Dagara
     #[doc(hidden)]
     Dgi = 1548,
+    /// Dagba
     #[doc(hidden)]
     Dgk = 1549,
+    /// Andaandi
     #[doc(hidden)]
     Dgl = 1550,
+    /// Dagoman
     #[doc(hidden)]
     Dgn = 1551,
+    /// Dogri
     #[doc(hidden)]
     Dgo = 1552,
+    /// Dogrib
     #[doc(hidden)]
     Dgr = 1553,
+    /// Dogoso
     #[doc(hidden)]
     Dgs = 1554,
+    /// Ndra'ngith
     #[doc(hidden)]
     Dgt = 1555,
+    /// Daungwurrung
     #[doc(hidden)]
     Dgw = 1556,
+    /// Doghoro
     #[doc(hidden)]
     Dgx = 1557,
+    /// Daga
     #[doc(hidden)]
     Dgz = 1558,
+    /// Dhundari
     #[doc(hidden)]
     Dhd = 1559,
+    /// Dhangu-Djangu
     #[doc(hidden)]
     Dhg = 1560,
+    /// Dhimal
     #[doc(hidden)]
     Dhi = 1561,
+    /// Dhalandji
     #[doc(hidden)]
     Dhl = 1562,
+    /// Zemba
     #[doc(hidden)]
     Dhm = 1563,
+    /// Dhanki
     #[doc(hidden)]
     Dhn = 1564,
+    /// Dhodia
     #[doc(hidden)]
     Dho = 1565,
+    /// Dhargari
     #[doc(hidden)]
     Dhr = 1566,
+    /// Dhaiso
     #[doc(hidden)]
     Dhs = 1567,
+    /// Dhurga
     #[doc(hidden)]
     Dhu = 1568,
+    /// Dehu
     #[doc(hidden)]
     Dhv = 1569,
+    /// Dhanwar
     #[doc(hidden)]
     Dhw = 1570,
+    /// Dhungaloo
     #[doc(hidden)]
     Dhx = 1571,
+    /// Dia
     #[doc(hidden)]
     Dia = 1572,
+    /// South Central Dinka
     #[doc(hidden)]
     Dib = 1573,
+    /// Lakota Dida
     #[doc(hidden)]
     Dic = 1574,
+    /// Didinga
     #[doc(hidden)]
     Did = 1575,
+    /// Dieri
     #[doc(hidden)]
     Dif = 1576,
+    /// Digo
     #[doc(hidden)]
     Dig = 1577,
+    /// Kumiai
     #[doc(hidden)]
     Dih = 1578,
+    /// Dimbong
     #[doc(hidden)]
     Dii = 1579,
+    /// Dai
     #[doc(hidden)]
     Dij = 1580,
+    /// Southwestern Dinka
     #[doc(hidden)]
     Dik = 1581,
+    /// Dilling
     #[doc(hidden)]
     Dil = 1582,
+    /// Dime
     #[doc(hidden)]
     Dim = 1583,
+    /// Dinka
     #[doc(hidden)]
     Din = 1584,
+    /// Dibo
     #[doc(hidden)]
     Dio = 1585,
+    /// Northeastern Dinka
     #[doc(hidden)]
     Dip = 1586,
+    /// Dimli
     #[doc(hidden)]
     Diq = 1587,
+    /// Dirim
     #[doc(hidden)]
     Dir = 1588,
+    /// Dimasa
     #[doc(hidden)]
     Dis = 1589,
+    /// Diriku
     #[doc(hidden)]
     Diu = 1590,
+    /// Dhivehi
     #[doc(hidden)]
     Div = 1591,
+    /// Northwestern Dinka
     #[doc(hidden)]
     Diw = 1592,
+    /// Dixon Reef
     #[doc(hidden)]
     Dix = 1593,
+    /// Diuwe
     #[doc(hidden)]
     Diy = 1594,
+    /// Ding
     #[doc(hidden)]
     Diz = 1595,
+    /// Djadjawurrung
     #[doc(hidden)]
     Dja = 1596,
+    /// Djinba
     #[doc(hidden)]
     Djb = 1597,
+    /// Dar Daju Daju
     #[doc(hidden)]
     Djc = 1598,
+    /// Djamindjung
     #[doc(hidden)]
     Djd = 1599,
+    /// Zarma
     #[doc(hidden)]
     Dje = 1600,
+    /// Djangun
     #[doc(hidden)]
     Djf = 1601,
+    /// Djinang
     #[doc(hidden)]
     Dji = 1602,
+    /// Djeebbana
     #[doc(hidden)]
     Djj = 1603,
+    /// Eastern Maroon Creole
     #[doc(hidden)]
     Djk = 1604,
+    /// Jamsay Dogon
     #[doc(hidden)]
     Djm = 1605,
+    /// Jawoyn
     #[doc(hidden)]
     Djn = 1606,
+    /// Jangkang
     #[doc(hidden)]
     Djo = 1607,
+    /// Djambarrpuyngu
     #[doc(hidden)]
     Djr = 1608,
+    /// Kapriman
     #[doc(hidden)]
     Dju = 1609,
+    /// Djawi
     #[doc(hidden)]
     Djw = 1610,
+    /// Dakpakha
     #[doc(hidden)]
     Dka = 1611,
+    /// Kadung
     #[doc(hidden)]
     Dkg = 1612,
+    /// Dakka
     #[doc(hidden)]
     Dkk = 1613,
+    /// Kuijau
     #[doc(hidden)]
     Dkr = 1614,
+    /// Southeastern Dinka
     #[doc(hidden)]
     Dks = 1615,
+    /// Mazagway
     #[doc(hidden)]
     Dkx = 1616,
+    /// Dolgan
     #[doc(hidden)]
     Dlg = 1617,
+    /// Dahalik
     #[doc(hidden)]
     Dlk = 1618,
+    /// Dalmatian
     #[doc(hidden)]
     Dlm = 1619,
+    /// Darlong
     #[doc(hidden)]
     Dln = 1620,
+    /// Duma
     #[doc(hidden)]
     Dma = 1621,
+    /// Mombo Dogon
     #[doc(hidden)]
     Dmb = 1622,
+    /// Gavak
     #[doc(hidden)]
     Dmc = 1623,
+    /// Madhi Madhi
     #[doc(hidden)]
     Dmd = 1624,
+    /// Dugwor
     #[doc(hidden)]
     Dme = 1625,
+    /// Medefaidrin
     #[doc(hidden)]
     Dmf = 1626,
+    /// Upper Kinabatangan
     #[doc(hidden)]
     Dmg = 1627,
+    /// Domaaki
     #[doc(hidden)]
     Dmk = 1628,
+    /// Dameli
     #[doc(hidden)]
     Dml = 1629,
+    /// Dama
     #[doc(hidden)]
     Dmm = 1630,
+    /// Kemedzung
     #[doc(hidden)]
     Dmo = 1631,
+    /// East Damar
     #[doc(hidden)]
     Dmr = 1632,
+    /// Dampelas
     #[doc(hidden)]
     Dms = 1633,
+    /// Dubu
     #[doc(hidden)]
     Dmu = 1634,
+    /// Dumpas
     #[doc(hidden)]
     Dmv = 1635,
+    /// Mudburra
     #[doc(hidden)]
     Dmw = 1636,
+    /// Dema
     #[doc(hidden)]
     Dmx = 1637,
+    /// Demta
     #[doc(hidden)]
     Dmy = 1638,
+    /// Upper Grand Valley Dani
     #[doc(hidden)]
     Dna = 1639,
+    /// Daonda
     #[doc(hidden)]
     Dnd = 1640,
+    /// Ndendeule
     #[doc(hidden)]
     Dne = 1641,
+    /// Dungan
     #[doc(hidden)]
     Dng = 1642,
+    /// Lower Grand Valley Dani
     #[doc(hidden)]
     Dni = 1643,
+    /// Dan
     #[doc(hidden)]
     Dnj = 1644,
+    /// Dengka
     #[doc(hidden)]
     Dnk = 1645,
+    /// Dzùùngoo
     #[doc(hidden)]
     Dnn = 1646,
+    /// Ndrulo
     #[doc(hidden)]
     Dno = 1647,
+    /// Danaru
     #[doc(hidden)]
     Dnr = 1648,
+    /// Mid Grand Valley Dani
     #[doc(hidden)]
     Dnt = 1649,
+    /// Danau
     #[doc(hidden)]
     Dnu = 1650,
+    /// Danu
     #[doc(hidden)]
     Dnv = 1651,
+    /// Western Dani
     #[doc(hidden)]
     Dnw = 1652,
+    /// Dení
     #[doc(hidden)]
     Dny = 1653,
+    /// Dom
     #[doc(hidden)]
     Doa = 1654,
+    /// Dobu
     #[doc(hidden)]
     Dob = 1655,
+    /// Northern Dong
     #[doc(hidden)]
     Doc = 1656,
+    /// Doe
     #[doc(hidden)]
     Doe = 1657,
+    /// Domu
     #[doc(hidden)]
     Dof = 1658,
+    /// Dong
     #[doc(hidden)]
     Doh = 1659,
+    /// Dogri
     #[doc(hidden)]
     Doi = 1660,
+    /// Dondo
     #[doc(hidden)]
     Dok = 1661,
+    /// Doso
     #[doc(hidden)]
     Dol = 1662,
+    /// Toura
     #[doc(hidden)]
     Don = 1663,
+    /// Dongo
     #[doc(hidden)]
     Doo = 1664,
+    /// Lukpa
     #[doc(hidden)]
     Dop = 1665,
+    /// Dominican Sign Language
     #[doc(hidden)]
     Doq = 1666,
+    /// Dori'o
     #[doc(hidden)]
     Dor = 1667,
+    /// Dogosé
     #[doc(hidden)]
     Dos = 1668,
+    /// Dass
     #[doc(hidden)]
     Dot = 1669,
+    /// Dombe
     #[doc(hidden)]
     Dov = 1670,
+    /// Doyayo
     #[doc(hidden)]
     Dow = 1671,
+    /// Bussa
     #[doc(hidden)]
     Dox = 1672,
+    /// Dompo
     #[doc(hidden)]
     Doy = 1673,
+    /// Dorze
     #[doc(hidden)]
     Doz = 1674,
+    /// Papar
     #[doc(hidden)]
     Dpp = 1675,
+    /// Dair
     #[doc(hidden)]
     Drb = 1676,
+    /// Minderico
     #[doc(hidden)]
     Drc = 1677,
+    /// Darmiya
     #[doc(hidden)]
     Drd = 1678,
+    /// Dolpo
     #[doc(hidden)]
     Dre = 1679,
+    /// Rungus
     #[doc(hidden)]
     Drg = 1680,
+    /// C'Lela
     #[doc(hidden)]
     Dri = 1681,
+    /// Paakantyi
     #[doc(hidden)]
     Drl = 1682,
+    /// West Damar
     #[doc(hidden)]
     Drn = 1683,
+    /// Daro-Matu Melanau
     #[doc(hidden)]
     Dro = 1684,
+    /// Dura
     #[doc(hidden)]
     Drq = 1685,
+    /// Gedeo
     #[doc(hidden)]
     Drs = 1686,
+    /// Drents
     #[doc(hidden)]
     Drt = 1687,
+    /// Rukai
     #[doc(hidden)]
     Dru = 1688,
+    /// Darai
     #[doc(hidden)]
     Dry = 1689,
+    /// Lower Sorbian
     #[doc(hidden)]
     Dsb = 1690,
+    /// Dutch Sign Language
     #[doc(hidden)]
     Dse = 1691,
+    /// Daasanach
     #[doc(hidden)]
     Dsh = 1692,
+    /// Disa
     #[doc(hidden)]
     Dsi = 1693,
+    /// Dokshi
     #[doc(hidden)]
     Dsk = 1694,
+    /// Danish Sign Language
     #[doc(hidden)]
     Dsl = 1695,
+    /// Dusner
     #[doc(hidden)]
     Dsn = 1696,
+    /// Desiya
     #[doc(hidden)]
     Dso = 1697,
+    /// Tadaksahak
     #[doc(hidden)]
     Dsq = 1698,
+    /// Mardin Sign Language
     #[doc(hidden)]
     Dsz = 1699,
+    /// Daur
     #[doc(hidden)]
     Dta = 1700,
+    /// Labuk-Kinabatangan Kadazan
     #[doc(hidden)]
     Dtb = 1701,
+    /// Ditidaht
     #[doc(hidden)]
     Dtd = 1702,
+    /// Adithinngithigh
     #[doc(hidden)]
     Dth = 1703,
+    /// Ana Tinga Dogon
     #[doc(hidden)]
     Dti = 1704,
+    /// Tene Kan Dogon
     #[doc(hidden)]
     Dtk = 1705,
+    /// Tomo Kan Dogon
     #[doc(hidden)]
     Dtm = 1706,
+    /// Daatsʼíin
     #[doc(hidden)]
     Dtn = 1707,
+    /// Tommo So Dogon
     #[doc(hidden)]
     Dto = 1708,
+    /// Kadazan Dusun
     #[doc(hidden)]
     Dtp = 1709,
+    /// Lotud
     #[doc(hidden)]
     Dtr = 1710,
+    /// Toro So Dogon
     #[doc(hidden)]
     Dts = 1711,
+    /// Toro Tegu Dogon
     #[doc(hidden)]
     Dtt = 1712,
+    /// Tebul Ure Dogon
     #[doc(hidden)]
     Dtu = 1713,
+    /// Dotyali
     #[doc(hidden)]
     Dty = 1714,
+    /// Duala
     #[doc(hidden)]
     Dua = 1715,
+    /// Dubli
     #[doc(hidden)]
     Dub = 1716,
+    /// Duna
     #[doc(hidden)]
     Duc = 1717,
+    /// Umiray Dumaget Agta
     #[doc(hidden)]
     Due = 1718,
+    /// Dumbea
     #[doc(hidden)]
     Duf = 1719,
+    /// Duruma
     #[doc(hidden)]
     Dug = 1720,
+    /// Dungra Bhil
     #[doc(hidden)]
     Duh = 1721,
+    /// Dumun
     #[doc(hidden)]
     Dui = 1722,
+    /// Uyajitaya
     #[doc(hidden)]
     Duk = 1723,
+    /// Alabat Island Agta
     #[doc(hidden)]
     Dul = 1724,
+    /// Middle Dutch
     #[doc(hidden)]
     Dum = 1725,
+    /// Dusun Deyah
     #[doc(hidden)]
     Dun = 1726,
+    /// Dupaninan Agta
     #[doc(hidden)]
     Duo = 1727,
+    /// Duano
     #[doc(hidden)]
     Dup = 1728,
+    /// Dusun Malang
     #[doc(hidden)]
     Duq = 1729,
+    /// Dii
     #[doc(hidden)]
     Dur = 1730,
+    /// Dumi
     #[doc(hidden)]
     Dus = 1731,
+    /// Drung
     #[doc(hidden)]
     Duu = 1732,
+    /// Duvle
     #[doc(hidden)]
     Duv = 1733,
+    /// Dusun Witu
     #[doc(hidden)]
     Duw = 1734,
+    /// Duungooma
     #[doc(hidden)]
     Dux = 1735,
+    /// Dicamay Agta
     #[doc(hidden)]
     Duy = 1736,
+    /// Duli-Gey
     #[doc(hidden)]
     Duz = 1737,
+    /// Duau
     #[doc(hidden)]
     Dva = 1738,
+    /// Diri
     #[doc(hidden)]
     Dwa = 1739,
+    /// Dawik Kui
     #[doc(hidden)]
     Dwk = 1740,
+    /// Dawro
     #[doc(hidden)]
     Dwr = 1741,
+    /// Dutton World Speedwords
     #[doc(hidden)]
     Dws = 1742,
+    /// Dhuwal
     #[doc(hidden)]
     Dwu = 1743,
+    /// Dawawa
     #[doc(hidden)]
     Dww = 1744,
+    /// Dhuwaya
     #[doc(hidden)]
     Dwy = 1745,
+    /// Dewas Rai
     #[doc(hidden)]
     Dwz = 1746,
+    /// Dyan
     #[doc(hidden)]
     Dya = 1747,
+    /// Dyaberdyaber
     #[doc(hidden)]
     Dyb = 1748,
+    /// Dyugun
     #[doc(hidden)]
     Dyd = 1749,
+    /// Villa Viciosa Agta
     #[doc(hidden)]
     Dyg = 1750,
+    /// Djimini Senoufo
     #[doc(hidden)]
     Dyi = 1751,
+    /// Yanda Dom Dogon
     #[doc(hidden)]
     Dym = 1752,
+    /// Dyangadi
     #[doc(hidden)]
     Dyn = 1753,
+    /// Jola-Fonyi
     #[doc(hidden)]
     Dyo = 1754,
+    /// Dyarim
     #[doc(hidden)]
     Dyr = 1755,
+    /// Dyula
     #[doc(hidden)]
     Dyu = 1756,
+    /// Djabugay
     #[doc(hidden)]
     Dyy = 1757,
+    /// Tunzu
     #[doc(hidden)]
     Dza = 1758,
+    /// Daza
     #[doc(hidden)]
     Dzd = 1759,
+    /// Djiwarli
     #[doc(hidden)]
     Dze = 1760,
+    /// Dazaga
     #[doc(hidden)]
     Dzg = 1761,
+    /// Dzalakha
     #[doc(hidden)]
     Dzl = 1762,
+    /// Dzando
     #[doc(hidden)]
     Dzn = 1763,
+    /// Dzongkha
     #[doc(hidden)]
     Dzo = 1764,
+    /// Karenggapa
     #[doc(hidden)]
     Eaa = 1765,
+    /// Beginci
     #[doc(hidden)]
     Ebc = 1766,
+    /// Ebughu
     #[doc(hidden)]
     Ebg = 1767,
+    /// Eastern Bontok
     #[doc(hidden)]
     Ebk = 1768,
+    /// Teke-Ebo
     #[doc(hidden)]
     Ebo = 1769,
+    /// Ebrié
     #[doc(hidden)]
     Ebr = 1770,
+    /// Embu
     #[doc(hidden)]
     Ebu = 1771,
+    /// Eteocretan
     #[doc(hidden)]
     Ecr = 1772,
+    /// Ecuadorian Sign Language
     #[doc(hidden)]
     Ecs = 1773,
+    /// Eteocypriot
     #[doc(hidden)]
     Ecy = 1774,
+    /// E
     #[doc(hidden)]
     Eee = 1775,
+    /// Efai
     #[doc(hidden)]
     Efa = 1776,
+    /// Efe
     #[doc(hidden)]
     Efe = 1777,
+    /// Efik
     #[doc(hidden)]
     Efi = 1778,
+    /// Ega
     #[doc(hidden)]
     Ega = 1779,
+    /// Emilian
     #[doc(hidden)]
     Egl = 1780,
+    /// Benamanga
     #[doc(hidden)]
     Egm = 1781,
+    /// Eggon
     #[doc(hidden)]
     Ego = 1782,
+    /// Egyptian
     #[doc(hidden)]
     Egy = 1783,
+    /// Miyakubo Sign Language
     #[doc(hidden)]
     Ehs = 1784,
+    /// Ehueun
     #[doc(hidden)]
     Ehu = 1785,
+    /// Eipomek
     #[doc(hidden)]
     Eip = 1786,
+    /// Eitiep
     #[doc(hidden)]
     Eit = 1787,
+    /// Askopan
     #[doc(hidden)]
     Eiv = 1788,
+    /// Ejamat
     #[doc(hidden)]
     Eja = 1789,
+    /// Ekajuk
     #[doc(hidden)]
     Eka = 1790,
+    /// Ekit
     #[doc(hidden)]
     Eke = 1791,
+    /// Ekari
     #[doc(hidden)]
     Ekg = 1792,
+    /// Eki
     #[doc(hidden)]
     Eki = 1793,
+    /// Standard Estonian
     #[doc(hidden)]
     Ekk = 1794,
+    /// Kol
     #[doc(hidden)]
     Ekl = 1795,
+    /// Elip
     #[doc(hidden)]
     Ekm = 1796,
+    /// Koti
     #[doc(hidden)]
     Eko = 1797,
+    /// Ekpeye
     #[doc(hidden)]
     Ekp = 1798,
+    /// Yace
     #[doc(hidden)]
     Ekr = 1799,
+    /// Eastern Kayah
     #[doc(hidden)]
     Eky = 1800,
+    /// Elepi
     #[doc(hidden)]
     Ele = 1801,
+    /// El Hugeirat
     #[doc(hidden)]
     Elh = 1802,
+    /// Nding
     #[doc(hidden)]
     Eli = 1803,
+    /// Elkei
     #[doc(hidden)]
     Elk = 1804,
+    /// Modern Greek
     #[doc(hidden)]
     Ell = 1805,
+    /// Eleme
     #[doc(hidden)]
     Elm = 1806,
+    /// El Molo
     #[doc(hidden)]
     Elo = 1807,
+    /// Elu
     #[doc(hidden)]
     Elu = 1808,
+    /// Elamite
     #[doc(hidden)]
     Elx = 1809,
+    /// Emai-Iuleha-Ora
     #[doc(hidden)]
     Ema = 1810,
+    /// Embaloh
     #[doc(hidden)]
     Emb = 1811,
+    /// Emerillon
     #[doc(hidden)]
     Eme = 1812,
+    /// Eastern Meohang
     #[doc(hidden)]
     Emg = 1813,
+    /// Mussau-Emira
     #[doc(hidden)]
     Emi = 1814,
+    /// Eastern Maninkakan
     #[doc(hidden)]
     Emk = 1815,
+    /// Mamulique
     #[doc(hidden)]
     Emm = 1816,
+    /// Eman
     #[doc(hidden)]
     Emn = 1817,
+    /// Northern Emberá
     #[doc(hidden)]
     Emp = 1818,
+    /// Eastern Minyag
     #[doc(hidden)]
     Emq = 1819,
+    /// Pacific Gulf Yupik
     #[doc(hidden)]
     Ems = 1820,
+    /// Eastern Muria
     #[doc(hidden)]
     Emu = 1821,
+    /// Emplawas
     #[doc(hidden)]
     Emw = 1822,
+    /// Erromintxela
     #[doc(hidden)]
     Emx = 1823,
+    /// Epigraphic Mayan
     #[doc(hidden)]
     Emy = 1824,
+    /// Mbessa
     #[doc(hidden)]
     Emz = 1825,
+    /// Apali
     #[doc(hidden)]
     Ena = 1826,
+    /// Markweeta
     #[doc(hidden)]
     Enb = 1827,
+    /// En
     #[doc(hidden)]
     Enc = 1828,
+    /// Ende
     #[doc(hidden)]
     End = 1829,
+    /// Forest Enets
     #[doc(hidden)]
     Enf = 1830,
+    /// English
     #[doc(hidden)]
     Eng = 1831,
+    /// Tundra Enets
     #[doc(hidden)]
     Enh = 1832,
+    /// Enlhet
     #[doc(hidden)]
     Enl = 1833,
+    /// Middle English
     #[doc(hidden)]
     Enm = 1834,
+    /// Engenni
     #[doc(hidden)]
     Enn = 1835,
+    /// Enggano
     #[doc(hidden)]
     Eno = 1836,
+    /// Enga
     #[doc(hidden)]
     Enq = 1837,
+    /// Emumu
     #[doc(hidden)]
     Enr = 1838,
+    /// Enu
     #[doc(hidden)]
     Enu = 1839,
+    /// Enwan
     #[doc(hidden)]
     Env = 1840,
+    /// Enwan
     #[doc(hidden)]
     Enw = 1841,
+    /// Enxet
     #[doc(hidden)]
     Enx = 1842,
+    /// Beti
     #[doc(hidden)]
     Eot = 1843,
+    /// Epie
     #[doc(hidden)]
     Epi = 1844,
+    /// Esperanto
     #[doc(hidden)]
     Epo = 1845,
+    /// Eravallan
     #[doc(hidden)]
     Era = 1846,
+    /// Sie
     #[doc(hidden)]
     Erg = 1847,
+    /// Eruwa
     #[doc(hidden)]
     Erh = 1848,
+    /// Ogea
     #[doc(hidden)]
     Eri = 1849,
+    /// South Efate
     #[doc(hidden)]
     Erk = 1850,
+    /// Horpa
     #[doc(hidden)]
     Ero = 1851,
+    /// Erre
     #[doc(hidden)]
     Err = 1852,
+    /// Ersu
     #[doc(hidden)]
     Ers = 1853,
+    /// Eritai
     #[doc(hidden)]
     Ert = 1854,
+    /// Erokwanas
     #[doc(hidden)]
     Erw = 1855,
+    /// Ese Ejja
     #[doc(hidden)]
     Ese = 1856,
+    /// Aheri Gondi
     #[doc(hidden)]
     Esg = 1857,
+    /// Eshtehardi
     #[doc(hidden)]
     Esh = 1858,
+    /// North Alaskan Inupiatun
     #[doc(hidden)]
     Esi = 1859,
+    /// Northwest Alaska Inupiatun
     #[doc(hidden)]
     Esk = 1860,
+    /// Egypt Sign Language
     #[doc(hidden)]
     Esl = 1861,
+    /// Esuma
     #[doc(hidden)]
     Esm = 1862,
+    /// Salvadoran Sign Language
     #[doc(hidden)]
     Esn = 1863,
+    /// Estonian Sign Language
     #[doc(hidden)]
     Eso = 1864,
+    /// Esselen
     #[doc(hidden)]
     Esq = 1865,
+    /// Central Siberian Yupik
     #[doc(hidden)]
     Ess = 1866,
+    /// Estonian
     #[doc(hidden)]
     Est = 1867,
+    /// Central Yupik
     #[doc(hidden)]
     Esu = 1868,
+    /// Eskayan
     #[doc(hidden)]
     Esy = 1869,
+    /// Etebi
     #[doc(hidden)]
     Etb = 1870,
+    /// Etchemin
     #[doc(hidden)]
     Etc = 1871,
+    /// Ethiopian Sign Language
     #[doc(hidden)]
     Eth = 1872,
+    /// Eton
     #[doc(hidden)]
     Etn = 1873,
+    /// Eton
     #[doc(hidden)]
     Eto = 1874,
+    /// Edolo
     #[doc(hidden)]
     Etr = 1875,
+    /// Yekhee
     #[doc(hidden)]
     Ets = 1876,
+    /// Etruscan
     #[doc(hidden)]
     Ett = 1877,
+    /// Ejagham
     #[doc(hidden)]
     Etu = 1878,
+    /// Eten
     #[doc(hidden)]
     Etx = 1879,
+    /// Semimi
     #[doc(hidden)]
     Etz = 1880,
+    /// Eudeve
     #[doc(hidden)]
     Eud = 1881,
+    /// Basque
     #[doc(hidden)]
     Eus = 1882,
+    /// Even
     #[doc(hidden)]
     Eve = 1883,
+    /// Uvbie
     #[doc(hidden)]
     Evh = 1884,
+    /// Evenki
     #[doc(hidden)]
     Evn = 1885,
+    /// Ewe
     #[doc(hidden)]
     Ewe = 1886,
+    /// Ewondo
     #[doc(hidden)]
     Ewo = 1887,
+    /// Extremaduran
     #[doc(hidden)]
     Ext = 1888,
+    /// Eyak
     #[doc(hidden)]
     Eya = 1889,
+    /// Keiyo
     #[doc(hidden)]
     Eyo = 1890,
+    /// Ezaa
     #[doc(hidden)]
     Eza = 1891,
+    /// Uzekwe
     #[doc(hidden)]
     Eze = 1892,
+    /// Fasu
     #[doc(hidden)]
     Faa = 1893,
+    /// Fa d'Ambu
     #[doc(hidden)]
     Fab = 1894,
+    /// Wagi
     #[doc(hidden)]
     Fad = 1895,
+    /// Fagani
     #[doc(hidden)]
     Faf = 1896,
+    /// Finongan
     #[doc(hidden)]
     Fag = 1897,
+    /// Baissa Fali
     #[doc(hidden)]
     Fah = 1898,
+    /// Faiwol
     #[doc(hidden)]
     Fai = 1899,
+    /// Faita
     #[doc(hidden)]
     Faj = 1900,
+    /// Fang
     #[doc(hidden)]
     Fak = 1901,
+    /// South Fali
     #[doc(hidden)]
     Fal = 1902,
+    /// Fam
     #[doc(hidden)]
     Fam = 1903,
+    /// Fang
     #[doc(hidden)]
     Fan = 1904,
+    /// Faroese
     #[doc(hidden)]
     Fao = 1905,
+    /// Paloor
     #[doc(hidden)]
     Fap = 1906,
+    /// Fataleka
     #[doc(hidden)]
     Far = 1907,
+    /// Persian
     #[doc(hidden)]
     Fas = 1908,
+    /// Fanti
     #[doc(hidden)]
     Fat = 1909,
+    /// Fayu
     #[doc(hidden)]
     Fau = 1910,
+    /// Fala
     #[doc(hidden)]
     Fax = 1911,
+    /// Southwestern Fars
     #[doc(hidden)]
     Fay = 1912,
+    /// Northwestern Fars
     #[doc(hidden)]
     Faz = 1913,
+    /// West Albay Bikol
     #[doc(hidden)]
     Fbl = 1914,
+    /// Quebec Sign Language
     #[doc(hidden)]
     Fcs = 1915,
+    /// Feroge
     #[doc(hidden)]
     Fer = 1916,
+    /// Foia Foia
     #[doc(hidden)]
     Ffi = 1917,
+    /// Maasina Fulfulde
     #[doc(hidden)]
     Ffm = 1918,
+    /// Fongoro
     #[doc(hidden)]
     Fgr = 1919,
+    /// Nobiin
     #[doc(hidden)]
     Fia = 1920,
+    /// Fyer
     #[doc(hidden)]
     Fie = 1921,
+    /// Faifi
     #[doc(hidden)]
     Fif = 1922,
+    /// Fijian
     #[doc(hidden)]
     Fij = 1923,
+    /// Filipino
     #[doc(hidden)]
     Fil = 1924,
+    /// Finnish
     #[doc(hidden)]
     Fin = 1925,
+    /// Fipa
     #[doc(hidden)]
     Fip = 1926,
+    /// Firan
     #[doc(hidden)]
     Fir = 1927,
+    /// Tornedalen Finnish
     #[doc(hidden)]
     Fit = 1928,
+    /// Fiwaga
     #[doc(hidden)]
     Fiw = 1929,
+    /// Kirya-Konzəl
     #[doc(hidden)]
     Fkk = 1930,
+    /// Kven Finnish
     #[doc(hidden)]
     Fkv = 1931,
+    /// Kalispel-Pend d'Oreille
     #[doc(hidden)]
     Fla = 1932,
+    /// Foau
     #[doc(hidden)]
     Flh = 1933,
+    /// Fali
     #[doc(hidden)]
     Fli = 1934,
+    /// North Fali
     #[doc(hidden)]
     Fll = 1935,
+    /// Flinders Island
     #[doc(hidden)]
     Fln = 1936,
+    /// Fuliiru
     #[doc(hidden)]
     Flr = 1937,
+    /// Flaaitaal
     #[doc(hidden)]
     Fly = 1938,
+    /// Fe'fe'
     #[doc(hidden)]
     Fmp = 1939,
+    /// Far Western Muria
     #[doc(hidden)]
     Fmu = 1940,
+    /// Fanbak
     #[doc(hidden)]
     Fnb = 1941,
+    /// Fanagalo
     #[doc(hidden)]
     Fng = 1942,
+    /// Fania
     #[doc(hidden)]
     Fni = 1943,
+    /// Foodo
     #[doc(hidden)]
     Fod = 1944,
+    /// Foi
     #[doc(hidden)]
     Foi = 1945,
+    /// Foma
     #[doc(hidden)]
     Fom = 1946,
+    /// Fon
     #[doc(hidden)]
     Fon = 1947,
+    /// Fore
     #[doc(hidden)]
     For = 1948,
+    /// Siraya
     #[doc(hidden)]
     Fos = 1949,
+    /// Fernando Po Creole English
     #[doc(hidden)]
     Fpe = 1950,
+    /// Fas
     #[doc(hidden)]
     Fqs = 1951,
+    /// French
     #[doc(hidden)]
     Fra = 1952,
+    /// Cajun French
     #[doc(hidden)]
     Frc = 1953,
+    /// Fordata
     #[doc(hidden)]
     Frd = 1954,
+    /// Frankish
     #[doc(hidden)]
     Frk = 1955,
+    /// Middle French
     #[doc(hidden)]
     Frm = 1956,
+    /// Old French
     #[doc(hidden)]
     Fro = 1957,
+    /// Arpitan
     #[doc(hidden)]
     Frp = 1958,
+    /// Forak
     #[doc(hidden)]
     Frq = 1959,
+    /// Northern Frisian
     #[doc(hidden)]
     Frr = 1960,
+    /// Eastern Frisian
     #[doc(hidden)]
     Frs = 1961,
+    /// Fortsenal
     #[doc(hidden)]
     Frt = 1962,
+    /// Western Frisian
     #[doc(hidden)]
     Fry = 1963,
+    /// Finnish Sign Language
     #[doc(hidden)]
     Fse = 1964,
+    /// French Sign Language
     #[doc(hidden)]
     Fsl = 1965,
+    /// Finland-Swedish Sign Language
     #[doc(hidden)]
     Fss = 1966,
+    /// Adamawa Fulfulde
     #[doc(hidden)]
     Fub = 1967,
+    /// Pulaar
     #[doc(hidden)]
     Fuc = 1968,
+    /// East Futuna
     #[doc(hidden)]
     Fud = 1969,
+    /// Borgu Fulfulde
     #[doc(hidden)]
     Fue = 1970,
+    /// Pular
     #[doc(hidden)]
     Fuf = 1971,
+    /// Western Niger Fulfulde
     #[doc(hidden)]
     Fuh = 1972,
+    /// Bagirmi Fulfulde
     #[doc(hidden)]
     Fui = 1973,
+    /// Ko
     #[doc(hidden)]
     Fuj = 1974,
+    /// Fulah
     #[doc(hidden)]
     Ful = 1975,
+    /// Fum
     #[doc(hidden)]
     Fum = 1976,
+    /// Fulniô
     #[doc(hidden)]
     Fun = 1977,
+    /// Central-Eastern Niger Fulfulde
     #[doc(hidden)]
     Fuq = 1978,
+    /// Friulian
     #[doc(hidden)]
     Fur = 1979,
+    /// Futuna-Aniwa
     #[doc(hidden)]
     Fut = 1980,
+    /// Furu
     #[doc(hidden)]
     Fuu = 1981,
+    /// Nigerian Fulfulde
     #[doc(hidden)]
     Fuv = 1982,
+    /// Fuyug
     #[doc(hidden)]
     Fuy = 1983,
+    /// Fur
     #[doc(hidden)]
     Fvr = 1984,
+    /// Fwâi
     #[doc(hidden)]
     Fwa = 1985,
+    /// Fwe
     #[doc(hidden)]
     Fwe = 1986,
+    /// Ga
     #[doc(hidden)]
     Gaa = 1987,
+    /// Gabri
     #[doc(hidden)]
     Gab = 1988,
+    /// Mixed Great Andamanese
     #[doc(hidden)]
     Gac = 1989,
+    /// Gaddang
     #[doc(hidden)]
     Gad = 1990,
+    /// Guarequena
     #[doc(hidden)]
     Gae = 1991,
+    /// Gende
     #[doc(hidden)]
     Gaf = 1992,
+    /// Gagauz
     #[doc(hidden)]
     Gag = 1993,
+    /// Alekano
     #[doc(hidden)]
     Gah = 1994,
+    /// Borei
     #[doc(hidden)]
     Gai = 1995,
+    /// Gadsup
     #[doc(hidden)]
     Gaj = 1996,
+    /// Gamkonora
     #[doc(hidden)]
     Gak = 1997,
+    /// Galolen
     #[doc(hidden)]
     Gal = 1998,
+    /// Kandawo
     #[doc(hidden)]
     Gam = 1999,
+    /// Gan Chinese
     #[doc(hidden)]
     Gan = 2000,
+    /// Gants
     #[doc(hidden)]
     Gao = 2001,
+    /// Gal
     #[doc(hidden)]
     Gap = 2002,
+    /// Gata'
     #[doc(hidden)]
     Gaq = 2003,
+    /// Galeya
     #[doc(hidden)]
     Gar = 2004,
+    /// Adiwasi Garasia
     #[doc(hidden)]
     Gas = 2005,
+    /// Kenati
     #[doc(hidden)]
     Gat = 2006,
+    /// Mudhili Gadaba
     #[doc(hidden)]
     Gau = 2007,
+    /// Nobonob
     #[doc(hidden)]
     Gaw = 2008,
+    /// Borana-Arsi-Guji Oromo
     #[doc(hidden)]
     Gax = 2009,
+    /// Gayo
     #[doc(hidden)]
     Gay = 2010,
+    /// West Central Oromo
     #[doc(hidden)]
     Gaz = 2011,
+    /// Gbaya
     #[doc(hidden)]
     Gba = 2012,
+    /// Kaytetye
     #[doc(hidden)]
     Gbb = 2013,
+    /// Karajarri
     #[doc(hidden)]
     Gbd = 2014,
+    /// Niksek
     #[doc(hidden)]
     Gbe = 2015,
+    /// Gaikundi
     #[doc(hidden)]
     Gbf = 2016,
+    /// Gbanziri
     #[doc(hidden)]
     Gbg = 2017,
+    /// Defi Gbe
     #[doc(hidden)]
     Gbh = 2018,
+    /// Galela
     #[doc(hidden)]
     Gbi = 2019,
+    /// Bodo Gadaba
     #[doc(hidden)]
     Gbj = 2020,
+    /// Gaddi
     #[doc(hidden)]
     Gbk = 2021,
+    /// Gamit
     #[doc(hidden)]
     Gbl = 2022,
+    /// Garhwali
     #[doc(hidden)]
     Gbm = 2023,
+    /// Mo'da
     #[doc(hidden)]
     Gbn = 2024,
+    /// Northern Grebo
     #[doc(hidden)]
     Gbo = 2025,
+    /// Gbaya-Bossangoa
     #[doc(hidden)]
     Gbp = 2026,
+    /// Gbaya-Bozoum
     #[doc(hidden)]
     Gbq = 2027,
+    /// Gbagyi
     #[doc(hidden)]
     Gbr = 2028,
+    /// Gbesi Gbe
     #[doc(hidden)]
     Gbs = 2029,
+    /// Gagadu
     #[doc(hidden)]
     Gbu = 2030,
+    /// Gbanu
     #[doc(hidden)]
     Gbv = 2031,
+    /// Gabi-Gabi
     #[doc(hidden)]
     Gbw = 2032,
+    /// Eastern Xwla Gbe
     #[doc(hidden)]
     Gbx = 2033,
+    /// Gbari
     #[doc(hidden)]
     Gby = 2034,
+    /// Zoroastrian Dari
     #[doc(hidden)]
     Gbz = 2035,
+    /// Mali
     #[doc(hidden)]
     Gcc = 2036,
+    /// Ganggalida
     #[doc(hidden)]
     Gcd = 2037,
+    /// Galice
     #[doc(hidden)]
     Gce = 2038,
+    /// Guadeloupean Creole French
     #[doc(hidden)]
     Gcf = 2039,
+    /// Grenadian Creole English
     #[doc(hidden)]
     Gcl = 2040,
+    /// Gaina
     #[doc(hidden)]
     Gcn = 2041,
+    /// Guianese Creole French
     #[doc(hidden)]
     Gcr = 2042,
+    /// Colonia Tovar German
     #[doc(hidden)]
     Gct = 2043,
+    /// Gade Lohar
     #[doc(hidden)]
     Gda = 2044,
+    /// Pottangi Ollar Gadaba
     #[doc(hidden)]
     Gdb = 2045,
+    /// Gugu Badhun
     #[doc(hidden)]
     Gdc = 2046,
+    /// Gedaged
     #[doc(hidden)]
     Gdd = 2047,
+    /// Gude
     #[doc(hidden)]
     Gde = 2048,
+    /// Guduf-Gava
     #[doc(hidden)]
     Gdf = 2049,
+    /// Ga'dang
     #[doc(hidden)]
     Gdg = 2050,
+    /// Gadjerawang
     #[doc(hidden)]
     Gdh = 2051,
+    /// Gundi
     #[doc(hidden)]
     Gdi = 2052,
+    /// Gurdjar
     #[doc(hidden)]
     Gdj = 2053,
+    /// Gadang
     #[doc(hidden)]
     Gdk = 2054,
+    /// Dirasha
     #[doc(hidden)]
     Gdl = 2055,
+    /// Laal
     #[doc(hidden)]
     Gdm = 2056,
+    /// Umanakaina
     #[doc(hidden)]
     Gdn = 2057,
+    /// Ghodoberi
     #[doc(hidden)]
     Gdo = 2058,
+    /// Mehri
     #[doc(hidden)]
     Gdq = 2059,
+    /// Wipi
     #[doc(hidden)]
     Gdr = 2060,
+    /// Ghandruk Sign Language
     #[doc(hidden)]
     Gds = 2061,
+    /// Kungardutyi
     #[doc(hidden)]
     Gdt = 2062,
+    /// Gudu
     #[doc(hidden)]
     Gdu = 2063,
+    /// Godwari
     #[doc(hidden)]
     Gdx = 2064,
+    /// Geruma
     #[doc(hidden)]
     Gea = 2065,
+    /// Kire
     #[doc(hidden)]
     Geb = 2066,
+    /// Gboloo Grebo
     #[doc(hidden)]
     Gec = 2067,
+    /// Gade
     #[doc(hidden)]
     Ged = 2068,
+    /// Gerai
     #[doc(hidden)]
     Gef = 2069,
+    /// Gengle
     #[doc(hidden)]
     Geg = 2070,
+    /// Hutterite German
     #[doc(hidden)]
     Geh = 2071,
+    /// Gebe
     #[doc(hidden)]
     Gei = 2072,
+    /// Gen
     #[doc(hidden)]
     Gej = 2073,
+    /// Ywom
     #[doc(hidden)]
     Gek = 2074,
+    /// ut-Ma'in
     #[doc(hidden)]
     Gel = 2075,
+    /// Geme
     #[doc(hidden)]
     Geq = 2076,
+    /// Geser-Gorom
     #[doc(hidden)]
     Ges = 2077,
+    /// Eviya
     #[doc(hidden)]
     Gev = 2078,
+    /// Gera
     #[doc(hidden)]
     Gew = 2079,
+    /// Garre
     #[doc(hidden)]
     Gex = 2080,
+    /// Enya
     #[doc(hidden)]
     Gey = 2081,
+    /// Geez
     #[doc(hidden)]
     Gez = 2082,
+    /// Patpatar
     #[doc(hidden)]
     Gfk = 2083,
+    /// Gafat
     #[doc(hidden)]
     Gft = 2084,
+    /// Gao
     #[doc(hidden)]
     Gga = 2085,
+    /// Gbii
     #[doc(hidden)]
     Ggb = 2086,
+    /// Gugadj
     #[doc(hidden)]
     Ggd = 2087,
+    /// Gurr-goni
     #[doc(hidden)]
     Gge = 2088,
+    /// Gurgula
     #[doc(hidden)]
     Ggg = 2089,
+    /// Kungarakany
     #[doc(hidden)]
     Ggk = 2090,
+    /// Ganglau
     #[doc(hidden)]
     Ggl = 2091,
+    /// Gitua
     #[doc(hidden)]
     Ggt = 2092,
+    /// Gagu
     #[doc(hidden)]
     Ggu = 2093,
+    /// Gogodala
     #[doc(hidden)]
     Ggw = 2094,
+    /// Ghadamès
     #[doc(hidden)]
     Gha = 2095,
+    /// Hiberno-Scottish Gaelic
     #[doc(hidden)]
     Ghc = 2096,
+    /// Southern Ghale
     #[doc(hidden)]
     Ghe = 2097,
+    /// Northern Ghale
     #[doc(hidden)]
     Ghh = 2098,
+    /// Geko Karen
     #[doc(hidden)]
     Ghk = 2099,
+    /// Ghulfan
     #[doc(hidden)]
     Ghl = 2100,
+    /// Ghanongga
     #[doc(hidden)]
     Ghn = 2101,
+    /// Ghomara
     #[doc(hidden)]
     Gho = 2102,
+    /// Ghera
     #[doc(hidden)]
     Ghr = 2103,
+    /// Guhu-Samane
     #[doc(hidden)]
     Ghs = 2104,
+    /// Kuke
     #[doc(hidden)]
     Ght = 2105,
+    /// Kija
     #[doc(hidden)]
     Gia = 2106,
+    /// Gibanawa
     #[doc(hidden)]
     Gib = 2107,
+    /// Gail
     #[doc(hidden)]
     Gic = 2108,
+    /// Gidar
     #[doc(hidden)]
     Gid = 2109,
+    /// Gaɓogbo
     #[doc(hidden)]
     Gie = 2110,
+    /// Goaria
     #[doc(hidden)]
     Gig = 2111,
+    /// Githabul
     #[doc(hidden)]
     Gih = 2112,
+    /// Girirra
     #[doc(hidden)]
     Gii = 2113,
+    /// Gilbertese
     #[doc(hidden)]
     Gil = 2114,
+    /// Gimi
     #[doc(hidden)]
     Gim = 2115,
+    /// Hinukh
     #[doc(hidden)]
     Gin = 2116,
+    /// Gimi
     #[doc(hidden)]
     Gip = 2117,
+    /// Green Gelao
     #[doc(hidden)]
     Giq = 2118,
+    /// Red Gelao
     #[doc(hidden)]
     Gir = 2119,
+    /// North Giziga
     #[doc(hidden)]
     Gis = 2120,
+    /// Gitxsan
     #[doc(hidden)]
     Git = 2121,
+    /// Mulao
     #[doc(hidden)]
     Giu = 2122,
+    /// White Gelao
     #[doc(hidden)]
     Giw = 2123,
+    /// Gilima
     #[doc(hidden)]
     Gix = 2124,
+    /// Giyug
     #[doc(hidden)]
     Giy = 2125,
+    /// South Giziga
     #[doc(hidden)]
     Giz = 2126,
+    /// Kachi Koli
     #[doc(hidden)]
     Gjk = 2127,
+    /// Gunditjmara
     #[doc(hidden)]
     Gjm = 2128,
+    /// Gonja
     #[doc(hidden)]
     Gjn = 2129,
+    /// Gurindji Kriol
     #[doc(hidden)]
     Gjr = 2130,
+    /// Gujari
     #[doc(hidden)]
     Gju = 2131,
+    /// Guya
     #[doc(hidden)]
     Gka = 2132,
+    /// Magɨ
     #[doc(hidden)]
     Gkd = 2133,
+    /// Ndai
     #[doc(hidden)]
     Gke = 2134,
+    /// Gokana
     #[doc(hidden)]
     Gkn = 2135,
+    /// Kok-Nar
     #[doc(hidden)]
     Gko = 2136,
+    /// Guinea Kpelle
     #[doc(hidden)]
     Gkp = 2137,
+    /// ǂUngkue
     #[doc(hidden)]
     Gku = 2138,
+    /// Scottish Gaelic
     #[doc(hidden)]
     Gla = 2139,
+    /// Belning
     #[doc(hidden)]
     Glb = 2140,
+    /// Bon Gula
     #[doc(hidden)]
     Glc = 2141,
+    /// Nanai
     #[doc(hidden)]
     Gld = 2142,
+    /// Irish
     #[doc(hidden)]
     Gle = 2143,
+    /// Galician
     #[doc(hidden)]
     Glg = 2144,
+    /// Northwest Pashai
     #[doc(hidden)]
     Glh = 2145,
+    /// Gula Iro
     #[doc(hidden)]
     Glj = 2146,
+    /// Gilaki
     #[doc(hidden)]
     Glk = 2147,
+    /// Garlali
     #[doc(hidden)]
     Gll = 2148,
+    /// Galambu
     #[doc(hidden)]
     Glo = 2149,
+    /// Glaro-Twabo
     #[doc(hidden)]
     Glr = 2150,
+    /// Gula
     #[doc(hidden)]
     Glu = 2151,
+    /// Manx
     #[doc(hidden)]
     Glv = 2152,
+    /// Glavda
     #[doc(hidden)]
     Glw = 2153,
+    /// Gule
     #[doc(hidden)]
     Gly = 2154,
+    /// Gambera
     #[doc(hidden)]
     Gma = 2155,
+    /// Gula'alaa
     #[doc(hidden)]
     Gmb = 2156,
+    /// Mághdì
     #[doc(hidden)]
     Gmd = 2157,
+    /// Magɨyi
     #[doc(hidden)]
     Gmg = 2158,
+    /// Middle High German
     #[doc(hidden)]
     Gmh = 2159,
+    /// Middle Low German
     #[doc(hidden)]
     Gml = 2160,
+    /// Gbaya-Mbodomo
     #[doc(hidden)]
     Gmm = 2161,
+    /// Gimnime
     #[doc(hidden)]
     Gmn = 2162,
+    /// Mirning
     #[doc(hidden)]
     Gmr = 2163,
+    /// Gumalu
     #[doc(hidden)]
     Gmu = 2164,
+    /// Gamo
     #[doc(hidden)]
     Gmv = 2165,
+    /// Magoma
     #[doc(hidden)]
     Gmx = 2166,
+    /// Mycenaean Greek
     #[doc(hidden)]
     Gmy = 2167,
+    /// Mgbolizhia
     #[doc(hidden)]
     Gmz = 2168,
+    /// Kaansa
     #[doc(hidden)]
     Gna = 2169,
+    /// Gangte
     #[doc(hidden)]
     Gnb = 2170,
+    /// Guanche
     #[doc(hidden)]
     Gnc = 2171,
+    /// Zulgo-Gemzek
     #[doc(hidden)]
     Gnd = 2172,
+    /// Ganang
     #[doc(hidden)]
     Gne = 2173,
+    /// Ngangam
     #[doc(hidden)]
     Gng = 2174,
+    /// Lere
     #[doc(hidden)]
     Gnh = 2175,
+    /// Gooniyandi
     #[doc(hidden)]
     Gni = 2176,
+    /// Ngen
     #[doc(hidden)]
     Gnj = 2177,
+    /// ǁGana
     #[doc(hidden)]
     Gnk = 2178,
+    /// Gangulu
     #[doc(hidden)]
     Gnl = 2179,
+    /// Ginuman
     #[doc(hidden)]
     Gnm = 2180,
+    /// Gumatj
     #[doc(hidden)]
     Gnn = 2181,
+    /// Northern Gondi
     #[doc(hidden)]
     Gno = 2182,
+    /// Gana
     #[doc(hidden)]
     Gnq = 2183,
+    /// Gureng Gureng
     #[doc(hidden)]
     Gnr = 2184,
+    /// Guntai
     #[doc(hidden)]
     Gnt = 2185,
+    /// Gnau
     #[doc(hidden)]
     Gnu = 2186,
+    /// Western Bolivian Guaraní
     #[doc(hidden)]
     Gnw = 2187,
+    /// Ganzi
     #[doc(hidden)]
     Gnz = 2188,
+    /// Guro
     #[doc(hidden)]
     Goa = 2189,
+    /// Playero
     #[doc(hidden)]
     Gob = 2190,
+    /// Gorakor
     #[doc(hidden)]
     Goc = 2191,
+    /// Godié
     #[doc(hidden)]
     God = 2192,
+    /// Gongduk
     #[doc(hidden)]
     Goe = 2193,
+    /// Gofa
     #[doc(hidden)]
     Gof = 2194,
+    /// Gogo
     #[doc(hidden)]
     Gog = 2195,
+    /// Old High German
     #[doc(hidden)]
     Goh = 2196,
+    /// Gobasi
     #[doc(hidden)]
     Goi = 2197,
+    /// Gowlan
     #[doc(hidden)]
     Goj = 2198,
+    /// Gowli
     #[doc(hidden)]
     Gok = 2199,
+    /// Gola
     #[doc(hidden)]
     Gol = 2200,
+    /// Goan Konkani
     #[doc(hidden)]
     Gom = 2201,
+    /// Gondi
     #[doc(hidden)]
     Gon = 2202,
+    /// Gone Dau
     #[doc(hidden)]
     Goo = 2203,
+    /// Yeretuar
     #[doc(hidden)]
     Gop = 2204,
+    /// Gorap
     #[doc(hidden)]
     Goq = 2205,
+    /// Gorontalo
     #[doc(hidden)]
     Gor = 2206,
+    /// Gronings
     #[doc(hidden)]
     Gos = 2207,
+    /// Gothic
     #[doc(hidden)]
     Got = 2208,
+    /// Gavar
     #[doc(hidden)]
     Gou = 2209,
+    /// Goo
     #[doc(hidden)]
     Gov = 2210,
+    /// Gorowa
     #[doc(hidden)]
     Gow = 2211,
+    /// Gobu
     #[doc(hidden)]
     Gox = 2212,
+    /// Goundo
     #[doc(hidden)]
     Goy = 2213,
+    /// Gozarkhani
     #[doc(hidden)]
     Goz = 2214,
+    /// Gupa-Abawa
     #[doc(hidden)]
     Gpa = 2215,
+    /// Ghanaian Pidgin English
     #[doc(hidden)]
     Gpe = 2216,
+    /// Taiap
     #[doc(hidden)]
     Gpn = 2217,
+    /// Ga'anda
     #[doc(hidden)]
     Gqa = 2218,
+    /// Guiqiong
     #[doc(hidden)]
     Gqi = 2219,
+    /// Guana
     #[doc(hidden)]
     Gqn = 2220,
+    /// Gor
     #[doc(hidden)]
     Gqr = 2221,
+    /// Qau
     #[doc(hidden)]
     Gqu = 2222,
+    /// Rajput Garasia
     #[doc(hidden)]
     Gra = 2223,
+    /// Grebo
     #[doc(hidden)]
     Grb = 2224,
+    /// Ancient Greek
     #[doc(hidden)]
     Grc = 2225,
+    /// Guruntum-Mbaaru
     #[doc(hidden)]
     Grd = 2226,
+    /// Madi
     #[doc(hidden)]
     Grg = 2227,
+    /// Gbiri-Niragu
     #[doc(hidden)]
     Grh = 2228,
+    /// Ghari
     #[doc(hidden)]
     Gri = 2229,
+    /// Southern Grebo
     #[doc(hidden)]
     Grj = 2230,
+    /// Kota Marudu Talantang
     #[doc(hidden)]
     Grm = 2231,
+    /// Guarani
     #[doc(hidden)]
     Grn = 2232,
+    /// Groma
     #[doc(hidden)]
     Gro = 2233,
+    /// Gorovu
     #[doc(hidden)]
     Grq = 2234,
+    /// Taznatit
     #[doc(hidden)]
     Grr = 2235,
+    /// Gresi
     #[doc(hidden)]
     Grs = 2236,
+    /// Garo
     #[doc(hidden)]
     Grt = 2237,
+    /// Kistane
     #[doc(hidden)]
     Gru = 2238,
+    /// Central Grebo
     #[doc(hidden)]
     Grv = 2239,
+    /// Gweda
     #[doc(hidden)]
     Grw = 2240,
+    /// Guriaso
     #[doc(hidden)]
     Grx = 2241,
+    /// Barclayville Grebo
     #[doc(hidden)]
     Gry = 2242,
+    /// Guramalum
     #[doc(hidden)]
     Grz = 2243,
+    /// Ghanaian Sign Language
     #[doc(hidden)]
     Gse = 2244,
+    /// German Sign Language
     #[doc(hidden)]
     Gsg = 2245,
+    /// Gusilay
     #[doc(hidden)]
     Gsl = 2246,
+    /// Guatemalan Sign Language
     #[doc(hidden)]
     Gsm = 2247,
+    /// Nema
     #[doc(hidden)]
     Gsn = 2248,
+    /// Southwest Gbaya
     #[doc(hidden)]
     Gso = 2249,
+    /// Wasembo
     #[doc(hidden)]
     Gsp = 2250,
+    /// Greek Sign Language
     #[doc(hidden)]
     Gss = 2251,
+    /// Swiss German
     #[doc(hidden)]
     Gsw = 2252,
+    /// Guató
     #[doc(hidden)]
     Gta = 2253,
+    /// Aghu-Tharnggala
     #[doc(hidden)]
     Gtu = 2254,
+    /// Shiki
     #[doc(hidden)]
     Gua = 2255,
+    /// Guajajára
     #[doc(hidden)]
     Gub = 2256,
+    /// Wayuu
     #[doc(hidden)]
     Guc = 2257,
+    /// Yocoboué Dida
     #[doc(hidden)]
     Gud = 2258,
+    /// Gurindji
     #[doc(hidden)]
     Gue = 2259,
+    /// Gupapuyngu
     #[doc(hidden)]
     Guf = 2260,
+    /// Paraguayan Guaraní
     #[doc(hidden)]
     Gug = 2261,
+    /// Guahibo
     #[doc(hidden)]
     Guh = 2262,
+    /// Eastern Bolivian Guaraní
     #[doc(hidden)]
     Gui = 2263,
+    /// Gujarati
     #[doc(hidden)]
     Guj = 2264,
+    /// Gumuz
     #[doc(hidden)]
     Guk = 2265,
+    /// Sea Island Creole English
     #[doc(hidden)]
     Gul = 2266,
+    /// Guambiano
     #[doc(hidden)]
     Gum = 2267,
+    /// Mbyá Guaraní
     #[doc(hidden)]
     Gun = 2268,
+    /// Guayabero
     #[doc(hidden)]
     Guo = 2269,
+    /// Gunwinggu
     #[doc(hidden)]
     Gup = 2270,
+    /// Aché
     #[doc(hidden)]
     Guq = 2271,
+    /// Farefare
     #[doc(hidden)]
     Gur = 2272,
+    /// Guinean Sign Language
     #[doc(hidden)]
     Gus = 2273,
+    /// Maléku Jaíka
     #[doc(hidden)]
     Gut = 2274,
+    /// Yanomamö
     #[doc(hidden)]
     Guu = 2275,
+    /// Gun
     #[doc(hidden)]
     Guw = 2276,
+    /// Gourmanchéma
     #[doc(hidden)]
     Gux = 2277,
+    /// Gusii
     #[doc(hidden)]
     Guz = 2278,
+    /// Guana
     #[doc(hidden)]
     Gva = 2279,
+    /// Guanano
     #[doc(hidden)]
     Gvc = 2280,
+    /// Duwet
     #[doc(hidden)]
     Gve = 2281,
+    /// Golin
     #[doc(hidden)]
     Gvf = 2282,
+    /// Guajá
     #[doc(hidden)]
     Gvj = 2283,
+    /// Gulay
     #[doc(hidden)]
     Gvl = 2284,
+    /// Gurmana
     #[doc(hidden)]
     Gvm = 2285,
+    /// Kuku-Yalanji
     #[doc(hidden)]
     Gvn = 2286,
+    /// Gavião Do Jiparaná
     #[doc(hidden)]
     Gvo = 2287,
+    /// Pará Gavião
     #[doc(hidden)]
     Gvp = 2288,
+    /// Gurung
     #[doc(hidden)]
     Gvr = 2289,
+    /// Gumawana
     #[doc(hidden)]
     Gvs = 2290,
+    /// Guyani
     #[doc(hidden)]
     Gvy = 2291,
+    /// Mbato
     #[doc(hidden)]
     Gwa = 2292,
+    /// Gwa
     #[doc(hidden)]
     Gwb = 2293,
+    /// Gawri
     #[doc(hidden)]
     Gwc = 2294,
+    /// Gawwada
     #[doc(hidden)]
     Gwd = 2295,
+    /// Gweno
     #[doc(hidden)]
     Gwe = 2296,
+    /// Gowro
     #[doc(hidden)]
     Gwf = 2297,
+    /// Moo
     #[doc(hidden)]
     Gwg = 2298,
+    /// Gwichʼin
     #[doc(hidden)]
     Gwi = 2299,
+    /// ǀGwi
     #[doc(hidden)]
     Gwj = 2300,
+    /// Awngthim
     #[doc(hidden)]
     Gwm = 2301,
+    /// Gwandara
     #[doc(hidden)]
     Gwn = 2302,
+    /// Gwere
     #[doc(hidden)]
     Gwr = 2303,
+    /// Gawar-Bati
     #[doc(hidden)]
     Gwt = 2304,
+    /// Guwamu
     #[doc(hidden)]
     Gwu = 2305,
+    /// Kwini
     #[doc(hidden)]
     Gww = 2306,
+    /// Gua
     #[doc(hidden)]
     Gwx = 2307,
+    /// Wè Southern
     #[doc(hidden)]
     Gxx = 2308,
+    /// Northwest Gbaya
     #[doc(hidden)]
     Gya = 2309,
+    /// Garus
     #[doc(hidden)]
     Gyb = 2310,
+    /// Kayardild
     #[doc(hidden)]
     Gyd = 2311,
+    /// Gyem
     #[doc(hidden)]
     Gye = 2312,
+    /// Gungabula
     #[doc(hidden)]
     Gyf = 2313,
+    /// Gbayi
     #[doc(hidden)]
     Gyg = 2314,
+    /// Gyele
     #[doc(hidden)]
     Gyi = 2315,
+    /// Gayil
     #[doc(hidden)]
     Gyl = 2316,
+    /// Ngäbere
     #[doc(hidden)]
     Gym = 2317,
+    /// Guyanese Creole English
     #[doc(hidden)]
     Gyn = 2318,
+    /// Gyalsumdo
     #[doc(hidden)]
     Gyo = 2319,
+    /// Guarayu
     #[doc(hidden)]
     Gyr = 2320,
+    /// Gunya
     #[doc(hidden)]
     Gyy = 2321,
+    /// Geji
     #[doc(hidden)]
     Gyz = 2322,
+    /// Ganza
     #[doc(hidden)]
     Gza = 2323,
+    /// Gazi
     #[doc(hidden)]
     Gzi = 2324,
+    /// Gane
     #[doc(hidden)]
     Gzn = 2325,
+    /// Han
     #[doc(hidden)]
     Haa = 2326,
+    /// Hanoi Sign Language
     #[doc(hidden)]
     Hab = 2327,
+    /// Gurani
     #[doc(hidden)]
     Hac = 2328,
+    /// Hatam
     #[doc(hidden)]
     Had = 2329,
+    /// Eastern Oromo
     #[doc(hidden)]
     Hae = 2330,
+    /// Haiphong Sign Language
     #[doc(hidden)]
     Haf = 2331,
+    /// Hanga
     #[doc(hidden)]
     Hag = 2332,
+    /// Hahon
     #[doc(hidden)]
     Hah = 2333,
+    /// Haida
     #[doc(hidden)]
     Hai = 2334,
+    /// Hajong
     #[doc(hidden)]
     Haj = 2335,
+    /// Hakka Chinese
     #[doc(hidden)]
     Hak = 2336,
+    /// Halang
     #[doc(hidden)]
     Hal = 2337,
+    /// Hewa
     #[doc(hidden)]
     Ham = 2338,
+    /// Hangaza
     #[doc(hidden)]
     Han = 2339,
+    /// Hakö
     #[doc(hidden)]
     Hao = 2340,
+    /// Hupla
     #[doc(hidden)]
     Hap = 2341,
+    /// Ha
     #[doc(hidden)]
     Haq = 2342,
+    /// Harari
     #[doc(hidden)]
     Har = 2343,
+    /// Haisla
     #[doc(hidden)]
     Has = 2344,
+    /// Haitian
     #[doc(hidden)]
     Hat = 2345,
+    /// Hausa
     #[doc(hidden)]
     Hau = 2346,
+    /// Havu
     #[doc(hidden)]
     Hav = 2347,
+    /// Hawaiian
     #[doc(hidden)]
     Haw = 2348,
+    /// Southern Haida
     #[doc(hidden)]
     Hax = 2349,
+    /// Haya
     #[doc(hidden)]
     Hay = 2350,
+    /// Hazaragi
     #[doc(hidden)]
     Haz = 2351,
+    /// Hamba
     #[doc(hidden)]
     Hba = 2352,
+    /// Huba
     #[doc(hidden)]
     Hbb = 2353,
+    /// Heiban
     #[doc(hidden)]
     Hbn = 2354,
+    /// Ancient Hebrew
     #[doc(hidden)]
     Hbo = 2355,
+    /// Serbo-Croatian
     #[doc(hidden)]
     Hbs = 2356,
+    /// Habu
     #[doc(hidden)]
     Hbu = 2357,
+    /// Andaman Creole Hindi
     #[doc(hidden)]
     Hca = 2358,
+    /// Huichol
     #[doc(hidden)]
     Hch = 2359,
+    /// Northern Haida
     #[doc(hidden)]
     Hdn = 2360,
+    /// Honduras Sign Language
     #[doc(hidden)]
     Hds = 2361,
+    /// Hadiyya
     #[doc(hidden)]
     Hdy = 2362,
+    /// Northern Qiandong Miao
     #[doc(hidden)]
     Hea = 2363,
+    /// Hebrew
     #[doc(hidden)]
     Heb = 2364,
+    /// Herdé
     #[doc(hidden)]
     Hed = 2365,
+    /// Helong
     #[doc(hidden)]
     Heg = 2366,
+    /// Hehe
     #[doc(hidden)]
     Heh = 2367,
+    /// Heiltsuk
     #[doc(hidden)]
     Hei = 2368,
+    /// Hemba
     #[doc(hidden)]
     Hem = 2369,
+    /// Herero
     #[doc(hidden)]
     Her = 2370,
+    /// Haiǁom
     #[doc(hidden)]
     Hgm = 2371,
+    /// Haigwai
     #[doc(hidden)]
     Hgw = 2372,
+    /// Hoia Hoia
     #[doc(hidden)]
     Hhi = 2373,
+    /// Kerak
     #[doc(hidden)]
     Hhr = 2374,
+    /// Hoyahoya
     #[doc(hidden)]
     Hhy = 2375,
+    /// Lamang
     #[doc(hidden)]
     Hia = 2376,
+    /// Hibito
     #[doc(hidden)]
     Hib = 2377,
+    /// Hidatsa
     #[doc(hidden)]
     Hid = 2378,
+    /// Fiji Hindi
     #[doc(hidden)]
     Hif = 2379,
+    /// Kamwe
     #[doc(hidden)]
     Hig = 2380,
+    /// Pamosu
     #[doc(hidden)]
     Hih = 2381,
+    /// Hinduri
     #[doc(hidden)]
     Hii = 2382,
+    /// Hijuk
     #[doc(hidden)]
     Hij = 2383,
+    /// Seit-Kaitetu
     #[doc(hidden)]
     Hik = 2384,
+    /// Hiligaynon
     #[doc(hidden)]
     Hil = 2385,
+    /// Hindi
     #[doc(hidden)]
     Hin = 2386,
+    /// Tsoa
     #[doc(hidden)]
     Hio = 2387,
+    /// Himarimã
     #[doc(hidden)]
     Hir = 2388,
+    /// Hittite
     #[doc(hidden)]
     Hit = 2389,
+    /// Hiw
     #[doc(hidden)]
     Hiw = 2390,
+    /// Hixkaryána
     #[doc(hidden)]
     Hix = 2391,
+    /// Haji
     #[doc(hidden)]
     Hji = 2392,
+    /// Kahe
     #[doc(hidden)]
     Hka = 2393,
+    /// Hunde
     #[doc(hidden)]
     Hke = 2394,
+    /// Khah
     #[doc(hidden)]
     Hkh = 2395,
+    /// Hunjara-Kaina Ke
     #[doc(hidden)]
     Hkk = 2396,
+    /// Mel-Khaonh
     #[doc(hidden)]
     Hkn = 2397,
+    /// Hong Kong Sign Language
     #[doc(hidden)]
     Hks = 2398,
+    /// Halia
     #[doc(hidden)]
     Hla = 2399,
+    /// Halbi
     #[doc(hidden)]
     Hlb = 2400,
+    /// Halang Doan
     #[doc(hidden)]
     Hld = 2401,
+    /// Hlersu
     #[doc(hidden)]
     Hle = 2402,
+    /// Matu Chin
     #[doc(hidden)]
     Hlt = 2403,
+    /// Hieroglyphic Luwian
     #[doc(hidden)]
     Hlu = 2404,
+    /// Southern Mashan Hmong
     #[doc(hidden)]
     Hma = 2405,
+    /// Humburi Senni Songhay
     #[doc(hidden)]
     Hmb = 2406,
+    /// Central Huishui Hmong
     #[doc(hidden)]
     Hmc = 2407,
+    /// Large Flowery Miao
     #[doc(hidden)]
     Hmd = 2408,
+    /// Eastern Huishui Hmong
     #[doc(hidden)]
     Hme = 2409,
+    /// Hmong Don
     #[doc(hidden)]
     Hmf = 2410,
+    /// Southwestern Guiyang Hmong
     #[doc(hidden)]
     Hmg = 2411,
+    /// Southwestern Huishui Hmong
     #[doc(hidden)]
     Hmh = 2412,
+    /// Northern Huishui Hmong
     #[doc(hidden)]
     Hmi = 2413,
+    /// Ge
     #[doc(hidden)]
     Hmj = 2414,
+    /// Maek
     #[doc(hidden)]
     Hmk = 2415,
+    /// Luopohe Hmong
     #[doc(hidden)]
     Hml = 2416,
+    /// Central Mashan Hmong
     #[doc(hidden)]
     Hmm = 2417,
+    /// Hmong
     #[doc(hidden)]
     Hmn = 2418,
+    /// Hiri Motu
     #[doc(hidden)]
     Hmo = 2419,
+    /// Northern Mashan Hmong
     #[doc(hidden)]
     Hmp = 2420,
+    /// Eastern Qiandong Miao
     #[doc(hidden)]
     Hmq = 2421,
+    /// Hmar
     #[doc(hidden)]
     Hmr = 2422,
+    /// Southern Qiandong Miao
     #[doc(hidden)]
     Hms = 2423,
+    /// Hamtai
     #[doc(hidden)]
     Hmt = 2424,
+    /// Hamap
     #[doc(hidden)]
     Hmu = 2425,
+    /// Hmong Dô
     #[doc(hidden)]
     Hmv = 2426,
+    /// Western Mashan Hmong
     #[doc(hidden)]
     Hmw = 2427,
+    /// Southern Guiyang Hmong
     #[doc(hidden)]
     Hmy = 2428,
+    /// Hmong Shua
     #[doc(hidden)]
     Hmz = 2429,
+    /// Mina
     #[doc(hidden)]
     Hna = 2430,
+    /// Southern Hindko
     #[doc(hidden)]
     Hnd = 2431,
+    /// Chhattisgarhi
     #[doc(hidden)]
     Hne = 2432,
+    /// Hungu
     #[doc(hidden)]
     Hng = 2433,
+    /// ǁAni
     #[doc(hidden)]
     Hnh = 2434,
+    /// Hani
     #[doc(hidden)]
     Hni = 2435,
+    /// Hmong Njua
     #[doc(hidden)]
     Hnj = 2436,
+    /// Hanunoo
     #[doc(hidden)]
     Hnn = 2437,
+    /// Northern Hindko
     #[doc(hidden)]
     Hno = 2438,
+    /// Caribbean Hindustani
     #[doc(hidden)]
     Hns = 2439,
+    /// Hung
     #[doc(hidden)]
     Hnu = 2440,
+    /// Hoava
     #[doc(hidden)]
     Hoa = 2441,
+    /// Mari
     #[doc(hidden)]
     Hob = 2442,
+    /// Ho
     #[doc(hidden)]
     Hoc = 2443,
+    /// Holma
     #[doc(hidden)]
     Hod = 2444,
+    /// Horom
     #[doc(hidden)]
     Hoe = 2445,
+    /// Hobyót
     #[doc(hidden)]
     Hoh = 2446,
+    /// Holikachuk
     #[doc(hidden)]
     Hoi = 2447,
+    /// Hadothi
     #[doc(hidden)]
     Hoj = 2448,
+    /// Holu
     #[doc(hidden)]
     Hol = 2449,
+    /// Homa
     #[doc(hidden)]
     Hom = 2450,
+    /// Holoholo
     #[doc(hidden)]
     Hoo = 2451,
+    /// Hopi
     #[doc(hidden)]
     Hop = 2452,
+    /// Horo
     #[doc(hidden)]
     Hor = 2453,
+    /// Ho Chi Minh City Sign Language
     #[doc(hidden)]
     Hos = 2454,
+    /// Hote
     #[doc(hidden)]
     Hot = 2455,
+    /// Hovongan
     #[doc(hidden)]
     Hov = 2456,
+    /// Honi
     #[doc(hidden)]
     How = 2457,
+    /// Holiya
     #[doc(hidden)]
     Hoy = 2458,
+    /// Hozo
     #[doc(hidden)]
     Hoz = 2459,
+    /// Hpon
     #[doc(hidden)]
     Hpo = 2460,
+    /// Hawai'i Sign Language
     #[doc(hidden)]
     Hps = 2461,
+    /// Hrangkhol
     #[doc(hidden)]
     Hra = 2462,
+    /// Niwer Mil
     #[doc(hidden)]
     Hrc = 2463,
+    /// Hre
     #[doc(hidden)]
     Hre = 2464,
+    /// Haruku
     #[doc(hidden)]
     Hrk = 2465,
+    /// Horned Miao
     #[doc(hidden)]
     Hrm = 2466,
+    /// Haroi
     #[doc(hidden)]
     Hro = 2467,
+    /// Nhirrpi
     #[doc(hidden)]
     Hrp = 2468,
+    /// Hértevin
     #[doc(hidden)]
     Hrt = 2469,
+    /// Hruso
     #[doc(hidden)]
     Hru = 2470,
+    /// Croatian
     #[doc(hidden)]
     Hrv = 2471,
+    /// Warwar Feni
     #[doc(hidden)]
     Hrw = 2472,
+    /// Hunsrik
     #[doc(hidden)]
     Hrx = 2473,
+    /// Harzani
     #[doc(hidden)]
     Hrz = 2474,
+    /// Upper Sorbian
     #[doc(hidden)]
     Hsb = 2475,
+    /// Hungarian Sign Language
     #[doc(hidden)]
     Hsh = 2476,
+    /// Hausa Sign Language
     #[doc(hidden)]
     Hsl = 2477,
+    /// Xiang Chinese
     #[doc(hidden)]
     Hsn = 2478,
+    /// Harsusi
     #[doc(hidden)]
     Hss = 2479,
+    /// Hoti
     #[doc(hidden)]
     Hti = 2480,
+    /// Minica Huitoto
     #[doc(hidden)]
     Hto = 2481,
+    /// Hadza
     #[doc(hidden)]
     Hts = 2482,
+    /// Hitu
     #[doc(hidden)]
     Htu = 2483,
+    /// Middle Hittite
     #[doc(hidden)]
     Htx = 2484,
+    /// Huambisa
     #[doc(hidden)]
     Hub = 2485,
+    /// ǂHua
     #[doc(hidden)]
     Huc = 2486,
+    /// Huaulu
     #[doc(hidden)]
     Hud = 2487,
+    /// San Francisco Del Mar Huave
     #[doc(hidden)]
     Hue = 2488,
+    /// Humene
     #[doc(hidden)]
     Huf = 2489,
+    /// Huachipaeri
     #[doc(hidden)]
     Hug = 2490,
+    /// Huilliche
     #[doc(hidden)]
     Huh = 2491,
+    /// Huli
     #[doc(hidden)]
     Hui = 2492,
+    /// Northern Guiyang Hmong
     #[doc(hidden)]
     Huj = 2493,
+    /// Hulung
     #[doc(hidden)]
     Huk = 2494,
+    /// Hula
     #[doc(hidden)]
     Hul = 2495,
+    /// Hungana
     #[doc(hidden)]
     Hum = 2496,
+    /// Hungarian
     #[doc(hidden)]
     Hun = 2497,
+    /// Hu
     #[doc(hidden)]
     Huo = 2498,
+    /// Hupa
     #[doc(hidden)]
     Hup = 2499,
+    /// Tsat
     #[doc(hidden)]
     Huq = 2500,
+    /// Halkomelem
     #[doc(hidden)]
     Hur = 2501,
+    /// Huastec
     #[doc(hidden)]
     Hus = 2502,
+    /// Humla
     #[doc(hidden)]
     Hut = 2503,
+    /// Murui Huitoto
     #[doc(hidden)]
     Huu = 2504,
+    /// San Mateo Del Mar Huave
     #[doc(hidden)]
     Huv = 2505,
+    /// Hukumina
     #[doc(hidden)]
     Huw = 2506,
+    /// Nüpode Huitoto
     #[doc(hidden)]
     Hux = 2507,
+    /// Hulaulá
     #[doc(hidden)]
     Huy = 2508,
+    /// Hunzib
     #[doc(hidden)]
     Huz = 2509,
+    /// Haitian Vodoun Culture Language
     #[doc(hidden)]
     Hvc = 2510,
+    /// San Dionisio Del Mar Huave
     #[doc(hidden)]
     Hve = 2511,
+    /// Haveke
     #[doc(hidden)]
     Hvk = 2512,
+    /// Sabu
     #[doc(hidden)]
     Hvn = 2513,
+    /// Santa María Del Mar Huave
     #[doc(hidden)]
     Hvv = 2514,
+    /// Wané
     #[doc(hidden)]
     Hwa = 2515,
+    /// Hawai'i Creole English
     #[doc(hidden)]
     Hwc = 2516,
+    /// Hwana
     #[doc(hidden)]
     Hwo = 2517,
+    /// Hya
     #[doc(hidden)]
     Hya = 2518,
+    /// Armenian
     #[doc(hidden)]
     Hye = 2519,
+    /// Western Armenian
     #[doc(hidden)]
     Hyw = 2520,
+    /// Iaai
     #[doc(hidden)]
     Iai = 2521,
+    /// Iatmul
     #[doc(hidden)]
     Ian = 2522,
+    /// Purari
     #[doc(hidden)]
     Iar = 2523,
+    /// Iban
     #[doc(hidden)]
     Iba = 2524,
+    /// Ibibio
     #[doc(hidden)]
     Ibb = 2525,
+    /// Iwaidja
     #[doc(hidden)]
     Ibd = 2526,
+    /// Akpes
     #[doc(hidden)]
     Ibe = 2527,
+    /// Ibanag
     #[doc(hidden)]
     Ibg = 2528,
+    /// Bih
     #[doc(hidden)]
     Ibh = 2529,
+    /// Ibaloi
     #[doc(hidden)]
     Ibl = 2530,
+    /// Agoi
     #[doc(hidden)]
     Ibm = 2531,
+    /// Ibino
     #[doc(hidden)]
     Ibn = 2532,
+    /// Igbo
     #[doc(hidden)]
     Ibo = 2533,
+    /// Ibuoro
     #[doc(hidden)]
     Ibr = 2534,
+    /// Ibu
     #[doc(hidden)]
     Ibu = 2535,
+    /// Ibani
     #[doc(hidden)]
     Iby = 2536,
+    /// Ede Ica
     #[doc(hidden)]
     Ica = 2537,
+    /// Etkywan
     #[doc(hidden)]
     Ich = 2538,
+    /// Icelandic Sign Language
     #[doc(hidden)]
     Icl = 2539,
+    /// Islander Creole English
     #[doc(hidden)]
     Icr = 2540,
+    /// Idakho-Isukha-Tiriki
     #[doc(hidden)]
     Ida = 2541,
+    /// Indo-Portuguese
     #[doc(hidden)]
     Idb = 2542,
+    /// Idon
     #[doc(hidden)]
     Idc = 2543,
+    /// Ede Idaca
     #[doc(hidden)]
     Idd = 2544,
+    /// Idere
     #[doc(hidden)]
     Ide = 2545,
+    /// Idi
     #[doc(hidden)]
     Idi = 2546,
+    /// Ido
     #[doc(hidden)]
     Ido = 2547,
+    /// Indri
     #[doc(hidden)]
     Idr = 2548,
+    /// Idesa
     #[doc(hidden)]
     Ids = 2549,
+    /// Idaté
     #[doc(hidden)]
     Idt = 2550,
+    /// Idoma
     #[doc(hidden)]
     Idu = 2551,
+    /// Amganad Ifugao
     #[doc(hidden)]
     Ifa = 2552,
+    /// Batad Ifugao
     #[doc(hidden)]
     Ifb = 2553,
+    /// Ifè
     #[doc(hidden)]
     Ife = 2554,
+    /// Ifo
     #[doc(hidden)]
     Iff = 2555,
+    /// Tuwali Ifugao
     #[doc(hidden)]
     Ifk = 2556,
+    /// Teke-Fuumu
     #[doc(hidden)]
     Ifm = 2557,
+    /// Mayoyao Ifugao
     #[doc(hidden)]
     Ifu = 2558,
+    /// Keley-I Kallahan
     #[doc(hidden)]
     Ify = 2559,
+    /// Ebira
     #[doc(hidden)]
     Igb = 2560,
+    /// Igede
     #[doc(hidden)]
     Ige = 2561,
+    /// Igana
     #[doc(hidden)]
     Igg = 2562,
+    /// Igala
     #[doc(hidden)]
     Igl = 2563,
+    /// Kanggape
     #[doc(hidden)]
     Igm = 2564,
+    /// Ignaciano
     #[doc(hidden)]
     Ign = 2565,
+    /// Isebe
     #[doc(hidden)]
     Igo = 2566,
+    /// Interglossa
     #[doc(hidden)]
     Igs = 2567,
+    /// Igwe
     #[doc(hidden)]
     Igw = 2568,
+    /// Iha Based Pidgin
     #[doc(hidden)]
     Ihb = 2569,
+    /// Ihievbe
     #[doc(hidden)]
     Ihi = 2570,
+    /// Iha
     #[doc(hidden)]
     Ihp = 2571,
+    /// Bidhawal
     #[doc(hidden)]
     Ihw = 2572,
+    /// Sichuan Yi
     #[doc(hidden)]
     Iii = 2573,
+    /// Thiin
     #[doc(hidden)]
     Iin = 2574,
+    /// Izon
     #[doc(hidden)]
     Ijc = 2575,
+    /// Biseni
     #[doc(hidden)]
     Ije = 2576,
+    /// Ede Ije
     #[doc(hidden)]
     Ijj = 2577,
+    /// Kalabari
     #[doc(hidden)]
     Ijn = 2578,
+    /// Southeast Ijo
     #[doc(hidden)]
     Ijs = 2579,
+    /// Eastern Canadian Inuktitut
     #[doc(hidden)]
     Ike = 2580,
+    /// Ikhin-Arokho
     #[doc(hidden)]
     Ikh = 2581,
+    /// Iko
     #[doc(hidden)]
     Iki = 2582,
+    /// Ika
     #[doc(hidden)]
     Ikk = 2583,
+    /// Ikulu
     #[doc(hidden)]
     Ikl = 2584,
+    /// Olulumo-Ikom
     #[doc(hidden)]
     Iko = 2585,
+    /// Ikpeshi
     #[doc(hidden)]
     Ikp = 2586,
+    /// Ikaranggal
     #[doc(hidden)]
     Ikr = 2587,
+    /// Inuit Sign Language
     #[doc(hidden)]
     Iks = 2588,
+    /// Inuinnaqtun
     #[doc(hidden)]
     Ikt = 2589,
+    /// Inuktitut
     #[doc(hidden)]
     Iku = 2590,
+    /// Iku-Gora-Ankwa
     #[doc(hidden)]
     Ikv = 2591,
+    /// Ikwere
     #[doc(hidden)]
     Ikw = 2592,
+    /// Ik
     #[doc(hidden)]
     Ikx = 2593,
+    /// Ikizu
     #[doc(hidden)]
     Ikz = 2594,
+    /// Ile Ape
     #[doc(hidden)]
     Ila = 2595,
+    /// Ila
     #[doc(hidden)]
     Ilb = 2596,
+    /// Interlingue
     #[doc(hidden)]
     Ile = 2597,
+    /// Garig-Ilgar
     #[doc(hidden)]
     Ilg = 2598,
+    /// Ili Turki
     #[doc(hidden)]
     Ili = 2599,
+    /// Ilongot
     #[doc(hidden)]
     Ilk = 2600,
+    /// Iranun
     #[doc(hidden)]
     Ilm = 2601,
+    /// Iloko
     #[doc(hidden)]
     Ilo = 2602,
+    /// Iranun
     #[doc(hidden)]
     Ilp = 2603,
+    /// International Sign
     #[doc(hidden)]
     Ils = 2604,
+    /// Ili'uun
     #[doc(hidden)]
     Ilu = 2605,
+    /// Ilue
     #[doc(hidden)]
     Ilv = 2606,
+    /// Mala Malasar
     #[doc(hidden)]
     Ima = 2607,
+    /// Anamgura
     #[doc(hidden)]
     Imi = 2608,
+    /// Miluk
     #[doc(hidden)]
     Iml = 2609,
+    /// Imonda
     #[doc(hidden)]
     Imn = 2610,
+    /// Imbongu
     #[doc(hidden)]
     Imo = 2611,
+    /// Imroing
     #[doc(hidden)]
     Imr = 2612,
+    /// Marsian
     #[doc(hidden)]
     Ims = 2613,
+    /// Imotong
     #[doc(hidden)]
     Imt = 2614,
+    /// Milyan
     #[doc(hidden)]
     Imy = 2615,
+    /// Interlingua
     #[doc(hidden)]
     Ina = 2616,
+    /// Inga
     #[doc(hidden)]
     Inb = 2617,
+    /// Indonesian
     #[doc(hidden)]
     Ind = 2618,
+    /// Degexit'an
     #[doc(hidden)]
     Ing = 2619,
+    /// Ingush
     #[doc(hidden)]
     Inh = 2620,
+    /// Jungle Inga
     #[doc(hidden)]
     Inj = 2621,
+    /// Indonesian Sign Language
     #[doc(hidden)]
     Inl = 2622,
+    /// Minaean
     #[doc(hidden)]
     Inm = 2623,
+    /// Isinai
     #[doc(hidden)]
     Inn = 2624,
+    /// Inoke-Yate
     #[doc(hidden)]
     Ino = 2625,
+    /// Iñapari
     #[doc(hidden)]
     Inp = 2626,
+    /// Indian Sign Language
     #[doc(hidden)]
     Ins = 2627,
+    /// Intha
     #[doc(hidden)]
     Int = 2628,
+    /// Ineseño
     #[doc(hidden)]
     Inz = 2629,
+    /// Inor
     #[doc(hidden)]
     Ior = 2630,
+    /// Tuma-Irumu
     #[doc(hidden)]
     Iou = 2631,
+    /// Iowa-Oto
     #[doc(hidden)]
     Iow = 2632,
+    /// Ipili
     #[doc(hidden)]
     Ipi = 2633,
+    /// Inupiaq
     #[doc(hidden)]
     Ipk = 2634,
+    /// Ipiko
     #[doc(hidden)]
     Ipo = 2635,
+    /// Iquito
     #[doc(hidden)]
     Iqu = 2636,
+    /// Ikwo
     #[doc(hidden)]
     Iqw = 2637,
+    /// Iresim
     #[doc(hidden)]
     Ire = 2638,
+    /// Irarutu
     #[doc(hidden)]
     Irh = 2639,
+    /// Rigwe
     #[doc(hidden)]
     Iri = 2640,
+    /// Iraqw
     #[doc(hidden)]
     Irk = 2641,
+    /// Irántxe
     #[doc(hidden)]
     Irn = 2642,
+    /// Ir
     #[doc(hidden)]
     Irr = 2643,
+    /// Irula
     #[doc(hidden)]
     Iru = 2644,
+    /// Kamberau
     #[doc(hidden)]
     Irx = 2645,
+    /// Iraya
     #[doc(hidden)]
     Iry = 2646,
+    /// Isabi
     #[doc(hidden)]
     Isa = 2647,
+    /// Isconahua
     #[doc(hidden)]
     Isc = 2648,
+    /// Isnag
     #[doc(hidden)]
     Isd = 2649,
+    /// Italian Sign Language
     #[doc(hidden)]
     Ise = 2650,
+    /// Irish Sign Language
     #[doc(hidden)]
     Isg = 2651,
+    /// Esan
     #[doc(hidden)]
     Ish = 2652,
+    /// Nkem-Nkum
     #[doc(hidden)]
     Isi = 2653,
+    /// Ishkashimi
     #[doc(hidden)]
     Isk = 2654,
+    /// Icelandic
     #[doc(hidden)]
     Isl = 2655,
+    /// Masimasi
     #[doc(hidden)]
     Ism = 2656,
+    /// Isanzu
     #[doc(hidden)]
     Isn = 2657,
+    /// Isoko
     #[doc(hidden)]
     Iso = 2658,
+    /// Israeli Sign Language
     #[doc(hidden)]
     Isr = 2659,
+    /// Istriot
     #[doc(hidden)]
     Ist = 2660,
+    /// Isu
     #[doc(hidden)]
     Isu = 2661,
+    /// Italian
     #[doc(hidden)]
     Ita = 2662,
+    /// Binongan Itneg
     #[doc(hidden)]
     Itb = 2663,
+    /// Southern Tidung
     #[doc(hidden)]
     Itd = 2664,
+    /// Itene
     #[doc(hidden)]
     Ite = 2665,
+    /// Inlaod Itneg
     #[doc(hidden)]
     Iti = 2666,
+    /// Judeo-Italian
     #[doc(hidden)]
     Itk = 2667,
+    /// Itelmen
     #[doc(hidden)]
     Itl = 2668,
+    /// Itu Mbon Uzo
     #[doc(hidden)]
     Itm = 2669,
+    /// Itonama
     #[doc(hidden)]
     Ito = 2670,
+    /// Iteri
     #[doc(hidden)]
     Itr = 2671,
+    /// Isekiri
     #[doc(hidden)]
     Its = 2672,
+    /// Maeng Itneg
     #[doc(hidden)]
     Itt = 2673,
+    /// Itawit
     #[doc(hidden)]
     Itv = 2674,
+    /// Ito
     #[doc(hidden)]
     Itw = 2675,
+    /// Itik
     #[doc(hidden)]
     Itx = 2676,
+    /// Moyadan Itneg
     #[doc(hidden)]
     Ity = 2677,
+    /// Itzá
     #[doc(hidden)]
     Itz = 2678,
+    /// Iu Mien
     #[doc(hidden)]
     Ium = 2679,
+    /// Ibatan
     #[doc(hidden)]
     Ivb = 2680,
+    /// Ivatan
     #[doc(hidden)]
     Ivv = 2681,
+    /// I-Wak
     #[doc(hidden)]
     Iwk = 2682,
+    /// Iwam
     #[doc(hidden)]
     Iwm = 2683,
+    /// Iwur
     #[doc(hidden)]
     Iwo = 2684,
+    /// Sepik Iwam
     #[doc(hidden)]
     Iws = 2685,
+    /// Ixcatec
     #[doc(hidden)]
     Ixc = 2686,
+    /// Ixil
     #[doc(hidden)]
     Ixl = 2687,
+    /// Iyayu
     #[doc(hidden)]
     Iya = 2688,
+    /// Mesaka
     #[doc(hidden)]
     Iyo = 2689,
+    /// Yaka
     #[doc(hidden)]
     Iyx = 2690,
+    /// Ingrian
     #[doc(hidden)]
     Izh = 2691,
+    /// Kizamani
     #[doc(hidden)]
     Izm = 2692,
+    /// Izere
     #[doc(hidden)]
     Izr = 2693,
+    /// Izii
     #[doc(hidden)]
     Izz = 2694,
+    /// Jamamadí
     #[doc(hidden)]
     Jaa = 2695,
+    /// Hyam
     #[doc(hidden)]
     Jab = 2696,
+    /// Popti'
     #[doc(hidden)]
     Jac = 2697,
+    /// Jahanka
     #[doc(hidden)]
     Jad = 2698,
+    /// Yabem
     #[doc(hidden)]
     Jae = 2699,
+    /// Jara
     #[doc(hidden)]
     Jaf = 2700,
+    /// Jah Hut
     #[doc(hidden)]
     Jah = 2701,
+    /// Zazao
     #[doc(hidden)]
     Jaj = 2702,
+    /// Jakun
     #[doc(hidden)]
     Jak = 2703,
+    /// Yalahatan
     #[doc(hidden)]
     Jal = 2704,
+    /// Jamaican Creole English
     #[doc(hidden)]
     Jam = 2705,
+    /// Jandai
     #[doc(hidden)]
     Jan = 2706,
+    /// Yanyuwa
     #[doc(hidden)]
     Jao = 2707,
+    /// Yaqay
     #[doc(hidden)]
     Jaq = 2708,
+    /// New Caledonian Javanese
     #[doc(hidden)]
     Jas = 2709,
+    /// Jakati
     #[doc(hidden)]
     Jat = 2710,
+    /// Yaur
     #[doc(hidden)]
     Jau = 2711,
+    /// Javanese
     #[doc(hidden)]
     Jav = 2712,
+    /// Jambi Malay
     #[doc(hidden)]
     Jax = 2713,
+    /// Yan-nhangu
     #[doc(hidden)]
     Jay = 2714,
+    /// Jawe
     #[doc(hidden)]
     Jaz = 2715,
+    /// Judeo-Berber
     #[doc(hidden)]
     Jbe = 2716,
+    /// Badjiri
     #[doc(hidden)]
     Jbi = 2717,
+    /// Arandai
     #[doc(hidden)]
     Jbj = 2718,
+    /// Barikewa
     #[doc(hidden)]
     Jbk = 2719,
+    /// Bijim
     #[doc(hidden)]
     Jbm = 2720,
+    /// Nafusi
     #[doc(hidden)]
     Jbn = 2721,
+    /// Lojban
     #[doc(hidden)]
     Jbo = 2722,
+    /// Jofotek-Bromnya
     #[doc(hidden)]
     Jbr = 2723,
+    /// Jabutí
     #[doc(hidden)]
     Jbt = 2724,
+    /// Jukun Takum
     #[doc(hidden)]
     Jbu = 2725,
+    /// Yawijibaya
     #[doc(hidden)]
     Jbw = 2726,
+    /// Jamaican Country Sign Language
     #[doc(hidden)]
     Jcs = 2727,
+    /// Krymchak
     #[doc(hidden)]
     Jct = 2728,
+    /// Jad
     #[doc(hidden)]
     Jda = 2729,
+    /// Jadgali
     #[doc(hidden)]
     Jdg = 2730,
+    /// Judeo-Tat
     #[doc(hidden)]
     Jdt = 2731,
+    /// Jebero
     #[doc(hidden)]
     Jeb = 2732,
+    /// Jerung
     #[doc(hidden)]
     Jee = 2733,
+    /// Jeh
     #[doc(hidden)]
     Jeh = 2734,
+    /// Yei
     #[doc(hidden)]
     Jei = 2735,
+    /// Jeri Kuo
     #[doc(hidden)]
     Jek = 2736,
+    /// Yelmek
     #[doc(hidden)]
     Jel = 2737,
+    /// Dza
     #[doc(hidden)]
     Jen = 2738,
+    /// Jere
     #[doc(hidden)]
     Jer = 2739,
+    /// Manem
     #[doc(hidden)]
     Jet = 2740,
+    /// Jonkor Bourmataguil
     #[doc(hidden)]
     Jeu = 2741,
+    /// Ngbee
     #[doc(hidden)]
     Jgb = 2742,
+    /// Judeo-Georgian
     #[doc(hidden)]
     Jge = 2743,
+    /// Gwak
     #[doc(hidden)]
     Jgk = 2744,
+    /// Ngomba
     #[doc(hidden)]
     Jgo = 2745,
+    /// Jehai
     #[doc(hidden)]
     Jhi = 2746,
+    /// Jhankot Sign Language
     #[doc(hidden)]
     Jhs = 2747,
+    /// Jina
     #[doc(hidden)]
     Jia = 2748,
+    /// Jibu
     #[doc(hidden)]
     Jib = 2749,
+    /// Tol
     #[doc(hidden)]
     Jic = 2750,
+    /// Bu
     #[doc(hidden)]
     Jid = 2751,
+    /// Jilbe
     #[doc(hidden)]
     Jie = 2752,
+    /// Jingulu
     #[doc(hidden)]
     Jig = 2753,
+    /// sTodsde
     #[doc(hidden)]
     Jih = 2754,
+    /// Jiiddu
     #[doc(hidden)]
     Jii = 2755,
+    /// Jilim
     #[doc(hidden)]
     Jil = 2756,
+    /// Jimi
     #[doc(hidden)]
     Jim = 2757,
+    /// Jiamao
     #[doc(hidden)]
     Jio = 2758,
+    /// Guanyinqiao
     #[doc(hidden)]
     Jiq = 2759,
+    /// Jita
     #[doc(hidden)]
     Jit = 2760,
+    /// Youle Jinuo
     #[doc(hidden)]
     Jiu = 2761,
+    /// Shuar
     #[doc(hidden)]
     Jiv = 2762,
+    /// Buyuan Jinuo
     #[doc(hidden)]
     Jiy = 2763,
+    /// Jejueo
     #[doc(hidden)]
     Jje = 2764,
+    /// Bankal
     #[doc(hidden)]
     Jjr = 2765,
+    /// Kaera
     #[doc(hidden)]
     Jka = 2766,
+    /// Mobwa Karen
     #[doc(hidden)]
     Jkm = 2767,
+    /// Kubo
     #[doc(hidden)]
     Jko = 2768,
+    /// Paku Karen
     #[doc(hidden)]
     Jkp = 2769,
+    /// Koro
     #[doc(hidden)]
     Jkr = 2770,
+    /// Amami Koniya Sign Language
     #[doc(hidden)]
     Jks = 2771,
+    /// Labir
     #[doc(hidden)]
     Jku = 2772,
+    /// Ngile
     #[doc(hidden)]
     Jle = 2773,
+    /// Jamaican Sign Language
     #[doc(hidden)]
     Jls = 2774,
+    /// Dima
     #[doc(hidden)]
     Jma = 2775,
+    /// Zumbun
     #[doc(hidden)]
     Jmb = 2776,
+    /// Machame
     #[doc(hidden)]
     Jmc = 2777,
+    /// Yamdena
     #[doc(hidden)]
     Jmd = 2778,
+    /// Jimi
     #[doc(hidden)]
     Jmi = 2779,
+    /// Jumli
     #[doc(hidden)]
     Jml = 2780,
+    /// Makuri Naga
     #[doc(hidden)]
     Jmn = 2781,
+    /// Kamara
     #[doc(hidden)]
     Jmr = 2782,
+    /// Mashi
     #[doc(hidden)]
     Jms = 2783,
+    /// Mouwase
     #[doc(hidden)]
     Jmw = 2784,
+    /// Western Juxtlahuaca Mixtec
     #[doc(hidden)]
     Jmx = 2785,
+    /// Jangshung
     #[doc(hidden)]
     Jna = 2786,
+    /// Jandavra
     #[doc(hidden)]
     Jnd = 2787,
+    /// Yangman
     #[doc(hidden)]
     Jng = 2788,
+    /// Janji
     #[doc(hidden)]
     Jni = 2789,
+    /// Yemsa
     #[doc(hidden)]
     Jnj = 2790,
+    /// Rawat
     #[doc(hidden)]
     Jnl = 2791,
+    /// Jaunsari
     #[doc(hidden)]
     Jns = 2792,
+    /// Joba
     #[doc(hidden)]
     Job = 2793,
+    /// Wojenaka
     #[doc(hidden)]
     Jod = 2794,
+    /// Jogi
     #[doc(hidden)]
     Jog = 2795,
+    /// Jorá
     #[doc(hidden)]
     Jor = 2796,
+    /// Jordanian Sign Language
     #[doc(hidden)]
     Jos = 2797,
+    /// Jowulu
     #[doc(hidden)]
     Jow = 2798,
+    /// Jewish Palestinian Aramaic
     #[doc(hidden)]
     Jpa = 2799,
+    /// Japanese
     #[doc(hidden)]
     Jpn = 2800,
+    /// Judeo-Persian
     #[doc(hidden)]
     Jpr = 2801,
+    /// Jaqaru
     #[doc(hidden)]
     Jqr = 2802,
+    /// Jarai
     #[doc(hidden)]
     Jra = 2803,
+    /// Judeo-Arabic
     #[doc(hidden)]
     Jrb = 2804,
+    /// Jiru
     #[doc(hidden)]
     Jrr = 2805,
+    /// Jakattoe
     #[doc(hidden)]
     Jrt = 2806,
+    /// Japrería
     #[doc(hidden)]
     Jru = 2807,
+    /// Japanese Sign Language
     #[doc(hidden)]
     Jsl = 2808,
+    /// Júma
     #[doc(hidden)]
     Jua = 2809,
+    /// Wannu
     #[doc(hidden)]
     Jub = 2810,
+    /// Jurchen
     #[doc(hidden)]
     Juc = 2811,
+    /// Worodougou
     #[doc(hidden)]
     Jud = 2812,
+    /// Hõne
     #[doc(hidden)]
     Juh = 2813,
+    /// Ngadjuri
     #[doc(hidden)]
     Jui = 2814,
+    /// Wapan
     #[doc(hidden)]
     Juk = 2815,
+    /// Jirel
     #[doc(hidden)]
     Jul = 2816,
+    /// Jumjum
     #[doc(hidden)]
     Jum = 2817,
+    /// Juang
     #[doc(hidden)]
     Jun = 2818,
+    /// Jiba
     #[doc(hidden)]
     Juo = 2819,
+    /// Hupdë
     #[doc(hidden)]
     Jup = 2820,
+    /// Jurúna
     #[doc(hidden)]
     Jur = 2821,
+    /// Jumla Sign Language
     #[doc(hidden)]
     Jus = 2822,
+    /// Jutish
     #[doc(hidden)]
     Jut = 2823,
+    /// Ju
     #[doc(hidden)]
     Juu = 2824,
+    /// Wãpha
     #[doc(hidden)]
     Juw = 2825,
+    /// Juray
     #[doc(hidden)]
     Juy = 2826,
+    /// Javindo
     #[doc(hidden)]
     Jvd = 2827,
+    /// Caribbean Javanese
     #[doc(hidden)]
     Jvn = 2828,
+    /// Jwira-Pepesa
     #[doc(hidden)]
     Jwi = 2829,
+    /// Jiarong
     #[doc(hidden)]
     Jya = 2830,
+    /// Judeo-Yemeni Arabic
     #[doc(hidden)]
     Jye = 2831,
+    /// Jaya
     #[doc(hidden)]
     Jyy = 2832,
+    /// Kara-Kalpak
     #[doc(hidden)]
     Kaa = 2833,
+    /// Kabyle
     #[doc(hidden)]
     Kab = 2834,
+    /// Kachin
     #[doc(hidden)]
     Kac = 2835,
+    /// Adara
     #[doc(hidden)]
     Kad = 2836,
+    /// Ketangalan
     #[doc(hidden)]
     Kae = 2837,
+    /// Katso
     #[doc(hidden)]
     Kaf = 2838,
+    /// Kajaman
     #[doc(hidden)]
     Kag = 2839,
+    /// Kara
     #[doc(hidden)]
     Kah = 2840,
+    /// Karekare
     #[doc(hidden)]
     Kai = 2841,
+    /// Jju
     #[doc(hidden)]
     Kaj = 2842,
+    /// Kalanguya
     #[doc(hidden)]
     Kak = 2843,
+    /// Kalaallisut
     #[doc(hidden)]
     Kal = 2844,
+    /// Kamba
     #[doc(hidden)]
     Kam = 2845,
+    /// Kannada
     #[doc(hidden)]
     Kan = 2846,
+    /// Xaasongaxango
     #[doc(hidden)]
     Kao = 2847,
+    /// Bezhta
     #[doc(hidden)]
     Kap = 2848,
+    /// Capanahua
     #[doc(hidden)]
     Kaq = 2849,
+    /// Kashmiri
     #[doc(hidden)]
     Kas = 2850,
+    /// Georgian
     #[doc(hidden)]
     Kat = 2851,
+    /// Kanuri
     #[doc(hidden)]
     Kau = 2852,
+    /// Katukína
     #[doc(hidden)]
     Kav = 2853,
+    /// Kawi
     #[doc(hidden)]
     Kaw = 2854,
+    /// Kao
     #[doc(hidden)]
     Kax = 2855,
+    /// Kamayurá
     #[doc(hidden)]
     Kay = 2856,
+    /// Kazakh
     #[doc(hidden)]
     Kaz = 2857,
+    /// Kalarko
     #[doc(hidden)]
     Kba = 2858,
+    /// Kaxuiâna
     #[doc(hidden)]
     Kbb = 2859,
+    /// Kadiwéu
     #[doc(hidden)]
     Kbc = 2860,
+    /// Kabardian
     #[doc(hidden)]
     Kbd = 2861,
+    /// Kanju
     #[doc(hidden)]
     Kbe = 2862,
+    /// Khamba
     #[doc(hidden)]
     Kbg = 2863,
+    /// Camsá
     #[doc(hidden)]
     Kbh = 2864,
+    /// Kaptiau
     #[doc(hidden)]
     Kbi = 2865,
+    /// Kari
     #[doc(hidden)]
     Kbj = 2866,
+    /// Grass Koiari
     #[doc(hidden)]
     Kbk = 2867,
+    /// Kanembu
     #[doc(hidden)]
     Kbl = 2868,
+    /// Iwal
     #[doc(hidden)]
     Kbm = 2869,
+    /// Kare
     #[doc(hidden)]
     Kbn = 2870,
+    /// Keliko
     #[doc(hidden)]
     Kbo = 2871,
+    /// Kabiyè
     #[doc(hidden)]
     Kbp = 2872,
+    /// Kamano
     #[doc(hidden)]
     Kbq = 2873,
+    /// Kafa
     #[doc(hidden)]
     Kbr = 2874,
+    /// Kande
     #[doc(hidden)]
     Kbs = 2875,
+    /// Abadi
     #[doc(hidden)]
     Kbt = 2876,
+    /// Kabutra
     #[doc(hidden)]
     Kbu = 2877,
+    /// Dera
     #[doc(hidden)]
     Kbv = 2878,
+    /// Kaiep
     #[doc(hidden)]
     Kbw = 2879,
+    /// Ap Ma
     #[doc(hidden)]
     Kbx = 2880,
+    /// Manga Kanuri
     #[doc(hidden)]
     Kby = 2881,
+    /// Duhwa
     #[doc(hidden)]
     Kbz = 2882,
+    /// Khanty
     #[doc(hidden)]
     Kca = 2883,
+    /// Kawacha
     #[doc(hidden)]
     Kcb = 2884,
+    /// Lubila
     #[doc(hidden)]
     Kcc = 2885,
+    /// Ngkâlmpw Kanum
     #[doc(hidden)]
     Kcd = 2886,
+    /// Kaivi
     #[doc(hidden)]
     Kce = 2887,
+    /// Ukaan
     #[doc(hidden)]
     Kcf = 2888,
+    /// Tyap
     #[doc(hidden)]
     Kcg = 2889,
+    /// Vono
     #[doc(hidden)]
     Kch = 2890,
+    /// Kamantan
     #[doc(hidden)]
     Kci = 2891,
+    /// Kobiana
     #[doc(hidden)]
     Kcj = 2892,
+    /// Kalanga
     #[doc(hidden)]
     Kck = 2893,
+    /// Kela
     #[doc(hidden)]
     Kcl = 2894,
+    /// Gula
     #[doc(hidden)]
     Kcm = 2895,
+    /// Nubi
     #[doc(hidden)]
     Kcn = 2896,
+    /// Kinalakna
     #[doc(hidden)]
     Kco = 2897,
+    /// Kanga
     #[doc(hidden)]
     Kcp = 2898,
+    /// Kamo
     #[doc(hidden)]
     Kcq = 2899,
+    /// Katla
     #[doc(hidden)]
     Kcr = 2900,
+    /// Koenoem
     #[doc(hidden)]
     Kcs = 2901,
+    /// Kaian
     #[doc(hidden)]
     Kct = 2902,
+    /// Kami
     #[doc(hidden)]
     Kcu = 2903,
+    /// Kete
     #[doc(hidden)]
     Kcv = 2904,
+    /// Kabwari
     #[doc(hidden)]
     Kcw = 2905,
+    /// Kachama-Ganjule
     #[doc(hidden)]
     Kcx = 2906,
+    /// Korandje
     #[doc(hidden)]
     Kcy = 2907,
+    /// Konongo
     #[doc(hidden)]
     Kcz = 2908,
+    /// Worimi
     #[doc(hidden)]
     Kda = 2909,
+    /// Kutu
     #[doc(hidden)]
     Kdc = 2910,
+    /// Yankunytjatjara
     #[doc(hidden)]
     Kdd = 2911,
+    /// Makonde
     #[doc(hidden)]
     Kde = 2912,
+    /// Mamusi
     #[doc(hidden)]
     Kdf = 2913,
+    /// Seba
     #[doc(hidden)]
     Kdg = 2914,
+    /// Tem
     #[doc(hidden)]
     Kdh = 2915,
+    /// Kumam
     #[doc(hidden)]
     Kdi = 2916,
+    /// Karamojong
     #[doc(hidden)]
     Kdj = 2917,
+    /// Numèè
     #[doc(hidden)]
     Kdk = 2918,
+    /// Tsikimba
     #[doc(hidden)]
     Kdl = 2919,
+    /// Kagoma
     #[doc(hidden)]
     Kdm = 2920,
+    /// Kunda
     #[doc(hidden)]
     Kdn = 2921,
+    /// Kaningdon-Nindem
     #[doc(hidden)]
     Kdp = 2922,
+    /// Koch
     #[doc(hidden)]
     Kdq = 2923,
+    /// Karaim
     #[doc(hidden)]
     Kdr = 2924,
+    /// Kuy
     #[doc(hidden)]
     Kdt = 2925,
+    /// Kadaru
     #[doc(hidden)]
     Kdu = 2926,
+    /// Koneraw
     #[doc(hidden)]
     Kdw = 2927,
+    /// Kam
     #[doc(hidden)]
     Kdx = 2928,
+    /// Keder
     #[doc(hidden)]
     Kdy = 2929,
+    /// Kwaja
     #[doc(hidden)]
     Kdz = 2930,
+    /// Kabuverdianu
     #[doc(hidden)]
     Kea = 2931,
+    /// Kélé
     #[doc(hidden)]
     Keb = 2932,
+    /// Keiga
     #[doc(hidden)]
     Kec = 2933,
+    /// Kerewe
     #[doc(hidden)]
     Ked = 2934,
+    /// Eastern Keres
     #[doc(hidden)]
     Kee = 2935,
+    /// Kpessi
     #[doc(hidden)]
     Kef = 2936,
+    /// Tese
     #[doc(hidden)]
     Keg = 2937,
+    /// Keak
     #[doc(hidden)]
     Keh = 2938,
+    /// Kei
     #[doc(hidden)]
     Kei = 2939,
+    /// Kadar
     #[doc(hidden)]
     Kej = 2940,
+    /// Kekchí
     #[doc(hidden)]
     Kek = 2941,
+    /// Kela
     #[doc(hidden)]
     Kel = 2942,
+    /// Kemak
     #[doc(hidden)]
     Kem = 2943,
+    /// Kenyang
     #[doc(hidden)]
     Ken = 2944,
+    /// Kakwa
     #[doc(hidden)]
     Keo = 2945,
+    /// Kaikadi
     #[doc(hidden)]
     Kep = 2946,
+    /// Kamar
     #[doc(hidden)]
     Keq = 2947,
+    /// Kera
     #[doc(hidden)]
     Ker = 2948,
+    /// Kugbo
     #[doc(hidden)]
     Kes = 2949,
+    /// Ket
     #[doc(hidden)]
     Ket = 2950,
+    /// Akebu
     #[doc(hidden)]
     Keu = 2951,
+    /// Kanikkaran
     #[doc(hidden)]
     Kev = 2952,
+    /// West Kewa
     #[doc(hidden)]
     Kew = 2953,
+    /// Kukna
     #[doc(hidden)]
     Kex = 2954,
+    /// Kupia
     #[doc(hidden)]
     Key = 2955,
+    /// Kukele
     #[doc(hidden)]
     Kez = 2956,
+    /// Kodava
     #[doc(hidden)]
     Kfa = 2957,
+    /// Northwestern Kolami
     #[doc(hidden)]
     Kfb = 2958,
+    /// Konda-Dora
     #[doc(hidden)]
     Kfc = 2959,
+    /// Korra Koraga
     #[doc(hidden)]
     Kfd = 2960,
+    /// Kota
     #[doc(hidden)]
     Kfe = 2961,
+    /// Koya
     #[doc(hidden)]
     Kff = 2962,
+    /// Kudiya
     #[doc(hidden)]
     Kfg = 2963,
+    /// Kurichiya
     #[doc(hidden)]
     Kfh = 2964,
+    /// Kannada Kurumba
     #[doc(hidden)]
     Kfi = 2965,
+    /// Kemiehua
     #[doc(hidden)]
     Kfj = 2966,
+    /// Kinnauri
     #[doc(hidden)]
     Kfk = 2967,
+    /// Kung
     #[doc(hidden)]
     Kfl = 2968,
+    /// Khunsari
     #[doc(hidden)]
     Kfm = 2969,
+    /// Kuk
     #[doc(hidden)]
     Kfn = 2970,
+    /// Koro
     #[doc(hidden)]
     Kfo = 2971,
+    /// Korwa
     #[doc(hidden)]
     Kfp = 2972,
+    /// Korku
     #[doc(hidden)]
     Kfq = 2973,
+    /// Kachhi
     #[doc(hidden)]
     Kfr = 2974,
+    /// Bilaspuri
     #[doc(hidden)]
     Kfs = 2975,
+    /// Kanjari
     #[doc(hidden)]
     Kft = 2976,
+    /// Katkari
     #[doc(hidden)]
     Kfu = 2977,
+    /// Kurmukar
     #[doc(hidden)]
     Kfv = 2978,
+    /// Kharam Naga
     #[doc(hidden)]
     Kfw = 2979,
+    /// Kullu Pahari
     #[doc(hidden)]
     Kfx = 2980,
+    /// Kumaoni
     #[doc(hidden)]
     Kfy = 2981,
+    /// Koromfé
     #[doc(hidden)]
     Kfz = 2982,
+    /// Koyaga
     #[doc(hidden)]
     Kga = 2983,
+    /// Kawe
     #[doc(hidden)]
     Kgb = 2984,
+    /// Komering
     #[doc(hidden)]
     Kge = 2985,
+    /// Kube
     #[doc(hidden)]
     Kgf = 2986,
+    /// Kusunda
     #[doc(hidden)]
     Kgg = 2987,
+    /// Selangor Sign Language
     #[doc(hidden)]
     Kgi = 2988,
+    /// Gamale Kham
     #[doc(hidden)]
     Kgj = 2989,
+    /// Kaiwá
     #[doc(hidden)]
     Kgk = 2990,
+    /// Kunggari
     #[doc(hidden)]
     Kgl = 2991,
+    /// Karingani
     #[doc(hidden)]
     Kgn = 2992,
+    /// Krongo
     #[doc(hidden)]
     Kgo = 2993,
+    /// Kaingang
     #[doc(hidden)]
     Kgp = 2994,
+    /// Kamoro
     #[doc(hidden)]
     Kgq = 2995,
+    /// Abun
     #[doc(hidden)]
     Kgr = 2996,
+    /// Kumbainggar
     #[doc(hidden)]
     Kgs = 2997,
+    /// Somyev
     #[doc(hidden)]
     Kgt = 2998,
+    /// Kobol
     #[doc(hidden)]
     Kgu = 2999,
+    /// Karas
     #[doc(hidden)]
     Kgv = 3000,
+    /// Karon Dori
     #[doc(hidden)]
     Kgw = 3001,
+    /// Kamaru
     #[doc(hidden)]
     Kgx = 3002,
+    /// Kyerung
     #[doc(hidden)]
     Kgy = 3003,
+    /// Khasi
     #[doc(hidden)]
     Kha = 3004,
+    /// Lü
     #[doc(hidden)]
     Khb = 3005,
+    /// Tukang Besi North
     #[doc(hidden)]
     Khc = 3006,
+    /// Bädi Kanum
     #[doc(hidden)]
     Khd = 3007,
+    /// Korowai
     #[doc(hidden)]
     Khe = 3008,
+    /// Khuen
     #[doc(hidden)]
     Khf = 3009,
+    /// Khams Tibetan
     #[doc(hidden)]
     Khg = 3010,
+    /// Kehu
     #[doc(hidden)]
     Khh = 3011,
+    /// Kuturmi
     #[doc(hidden)]
     Khj = 3012,
+    /// Halh Mongolian
     #[doc(hidden)]
     Khk = 3013,
+    /// Lusi
     #[doc(hidden)]
     Khl = 3014,
+    /// Khmer
     #[doc(hidden)]
     Khm = 3015,
+    /// Khandesi
     #[doc(hidden)]
     Khn = 3016,
+    /// Khotanese
     #[doc(hidden)]
     Kho = 3017,
+    /// Kapori
     #[doc(hidden)]
     Khp = 3018,
+    /// Koyra Chiini Songhay
     #[doc(hidden)]
     Khq = 3019,
+    /// Kharia
     #[doc(hidden)]
     Khr = 3020,
+    /// Kasua
     #[doc(hidden)]
     Khs = 3021,
+    /// Khamti
     #[doc(hidden)]
     Kht = 3022,
+    /// Nkhumbi
     #[doc(hidden)]
     Khu = 3023,
+    /// Khvarshi
     #[doc(hidden)]
     Khv = 3024,
+    /// Khowar
     #[doc(hidden)]
     Khw = 3025,
+    /// Kanu
     #[doc(hidden)]
     Khx = 3026,
+    /// Kele
     #[doc(hidden)]
     Khy = 3027,
+    /// Keapara
     #[doc(hidden)]
     Khz = 3028,
+    /// Kim
     #[doc(hidden)]
     Kia = 3029,
+    /// Koalib
     #[doc(hidden)]
     Kib = 3030,
+    /// Kickapoo
     #[doc(hidden)]
     Kic = 3031,
+    /// Koshin
     #[doc(hidden)]
     Kid = 3032,
+    /// Kibet
     #[doc(hidden)]
     Kie = 3033,
+    /// Eastern Parbate Kham
     #[doc(hidden)]
     Kif = 3034,
+    /// Kimaama
     #[doc(hidden)]
     Kig = 3035,
+    /// Kilmeri
     #[doc(hidden)]
     Kih = 3036,
+    /// Kitsai
     #[doc(hidden)]
     Kii = 3037,
+    /// Kilivila
     #[doc(hidden)]
     Kij = 3038,
+    /// Kikuyu
     #[doc(hidden)]
     Kik = 3039,
+    /// Kariya
     #[doc(hidden)]
     Kil = 3040,
+    /// Karagas
     #[doc(hidden)]
     Kim = 3041,
+    /// Kinyarwanda
     #[doc(hidden)]
     Kin = 3042,
+    /// Kiowa
     #[doc(hidden)]
     Kio = 3043,
+    /// Sheshi Kham
     #[doc(hidden)]
     Kip = 3044,
+    /// Kosadle
     #[doc(hidden)]
     Kiq = 3045,
+    /// Kirghiz
     #[doc(hidden)]
     Kir = 3046,
+    /// Kis
     #[doc(hidden)]
     Kis = 3047,
+    /// Agob
     #[doc(hidden)]
     Kit = 3048,
+    /// Kirmanjki
     #[doc(hidden)]
     Kiu = 3049,
+    /// Kimbu
     #[doc(hidden)]
     Kiv = 3050,
+    /// Northeast Kiwai
     #[doc(hidden)]
     Kiw = 3051,
+    /// Khiamniungan Naga
     #[doc(hidden)]
     Kix = 3052,
+    /// Kirikiri
     #[doc(hidden)]
     Kiy = 3053,
+    /// Kisi
     #[doc(hidden)]
     Kiz = 3054,
+    /// Mlap
     #[doc(hidden)]
     Kja = 3055,
+    /// Q'anjob'al
     #[doc(hidden)]
     Kjb = 3056,
+    /// Coastal Konjo
     #[doc(hidden)]
     Kjc = 3057,
+    /// Southern Kiwai
     #[doc(hidden)]
     Kjd = 3058,
+    /// Kisar
     #[doc(hidden)]
     Kje = 3059,
+    /// Khmu
     #[doc(hidden)]
     Kjg = 3060,
+    /// Khakas
     #[doc(hidden)]
     Kjh = 3061,
+    /// Zabana
     #[doc(hidden)]
     Kji = 3062,
+    /// Khinalugh
     #[doc(hidden)]
     Kjj = 3063,
+    /// Highland Konjo
     #[doc(hidden)]
     Kjk = 3064,
+    /// Western Parbate Kham
     #[doc(hidden)]
     Kjl = 3065,
+    /// Kháng
     #[doc(hidden)]
     Kjm = 3066,
+    /// Kunjen
     #[doc(hidden)]
     Kjn = 3067,
+    /// Harijan Kinnauri
     #[doc(hidden)]
     Kjo = 3068,
+    /// Pwo Eastern Karen
     #[doc(hidden)]
     Kjp = 3069,
+    /// Western Keres
     #[doc(hidden)]
     Kjq = 3070,
+    /// Kurudu
     #[doc(hidden)]
     Kjr = 3071,
+    /// East Kewa
     #[doc(hidden)]
     Kjs = 3072,
+    /// Phrae Pwo Karen
     #[doc(hidden)]
     Kjt = 3073,
+    /// Kashaya
     #[doc(hidden)]
     Kju = 3074,
+    /// Kaikavian Literary Language
     #[doc(hidden)]
     Kjv = 3075,
+    /// Ramopa
     #[doc(hidden)]
     Kjx = 3076,
+    /// Erave
     #[doc(hidden)]
     Kjy = 3077,
+    /// Bumthangkha
     #[doc(hidden)]
     Kjz = 3078,
+    /// Kakanda
     #[doc(hidden)]
     Kka = 3079,
+    /// Kwerisa
     #[doc(hidden)]
     Kkb = 3080,
+    /// Odoodee
     #[doc(hidden)]
     Kkc = 3081,
+    /// Kinuku
     #[doc(hidden)]
     Kkd = 3082,
+    /// Kakabe
     #[doc(hidden)]
     Kke = 3083,
+    /// Kalaktang Monpa
     #[doc(hidden)]
     Kkf = 3084,
+    /// Mabaka Valley Kalinga
     #[doc(hidden)]
     Kkg = 3085,
+    /// Khün
     #[doc(hidden)]
     Kkh = 3086,
+    /// Kagulu
     #[doc(hidden)]
     Kki = 3087,
+    /// Kako
     #[doc(hidden)]
     Kkj = 3088,
+    /// Kokota
     #[doc(hidden)]
     Kkk = 3089,
+    /// Kosarek Yale
     #[doc(hidden)]
     Kkl = 3090,
+    /// Kiong
     #[doc(hidden)]
     Kkm = 3091,
+    /// Kon Keu
     #[doc(hidden)]
     Kkn = 3092,
+    /// Karko
     #[doc(hidden)]
     Kko = 3093,
+    /// Gugubera
     #[doc(hidden)]
     Kkp = 3094,
+    /// Kaeku
     #[doc(hidden)]
     Kkq = 3095,
+    /// Kir-Balar
     #[doc(hidden)]
     Kkr = 3096,
+    /// Giiwo
     #[doc(hidden)]
     Kks = 3097,
+    /// Koi
     #[doc(hidden)]
     Kkt = 3098,
+    /// Tumi
     #[doc(hidden)]
     Kku = 3099,
+    /// Kangean
     #[doc(hidden)]
     Kkv = 3100,
+    /// Teke-Kukuya
     #[doc(hidden)]
     Kkw = 3101,
+    /// Kohin
     #[doc(hidden)]
     Kkx = 3102,
+    /// Guugu Yimidhirr
     #[doc(hidden)]
     Kky = 3103,
+    /// Kaska
     #[doc(hidden)]
     Kkz = 3104,
+    /// Klamath-Modoc
     #[doc(hidden)]
     Kla = 3105,
+    /// Kiliwa
     #[doc(hidden)]
     Klb = 3106,
+    /// Kolbila
     #[doc(hidden)]
     Klc = 3107,
+    /// Gamilaraay
     #[doc(hidden)]
     Kld = 3108,
+    /// Kulung
     #[doc(hidden)]
     Kle = 3109,
+    /// Kendeje
     #[doc(hidden)]
     Klf = 3110,
+    /// Tagakaulo
     #[doc(hidden)]
     Klg = 3111,
+    /// Weliki
     #[doc(hidden)]
     Klh = 3112,
+    /// Kalumpang
     #[doc(hidden)]
     Kli = 3113,
+    /// Khalaj
     #[doc(hidden)]
     Klj = 3114,
+    /// Kono
     #[doc(hidden)]
     Klk = 3115,
+    /// Kagan Kalagan
     #[doc(hidden)]
     Kll = 3116,
+    /// Migum
     #[doc(hidden)]
     Klm = 3117,
+    /// Kalenjin
     #[doc(hidden)]
     Kln = 3118,
+    /// Kapya
     #[doc(hidden)]
     Klo = 3119,
+    /// Kamasa
     #[doc(hidden)]
     Klp = 3120,
+    /// Rumu
     #[doc(hidden)]
     Klq = 3121,
+    /// Khaling
     #[doc(hidden)]
     Klr = 3122,
+    /// Kalasha
     #[doc(hidden)]
     Kls = 3123,
+    /// Nukna
     #[doc(hidden)]
     Klt = 3124,
+    /// Klao
     #[doc(hidden)]
     Klu = 3125,
+    /// Maskelynes
     #[doc(hidden)]
     Klv = 3126,
+    /// Tado
     #[doc(hidden)]
     Klw = 3127,
+    /// Koluwawa
     #[doc(hidden)]
     Klx = 3128,
+    /// Kalao
     #[doc(hidden)]
     Kly = 3129,
+    /// Kabola
     #[doc(hidden)]
     Klz = 3130,
+    /// Konni
     #[doc(hidden)]
     Kma = 3131,
+    /// Kimbundu
     #[doc(hidden)]
     Kmb = 3132,
+    /// Southern Dong
     #[doc(hidden)]
     Kmc = 3133,
+    /// Majukayang Kalinga
     #[doc(hidden)]
     Kmd = 3134,
+    /// Bakole
     #[doc(hidden)]
     Kme = 3135,
+    /// Kare
     #[doc(hidden)]
     Kmf = 3136,
+    /// Kâte
     #[doc(hidden)]
     Kmg = 3137,
+    /// Kalam
     #[doc(hidden)]
     Kmh = 3138,
+    /// Kami
     #[doc(hidden)]
     Kmi = 3139,
+    /// Kumarbhag Paharia
     #[doc(hidden)]
     Kmj = 3140,
+    /// Limos Kalinga
     #[doc(hidden)]
     Kmk = 3141,
+    /// Tanudan Kalinga
     #[doc(hidden)]
     Kml = 3142,
+    /// Kom
     #[doc(hidden)]
     Kmm = 3143,
+    /// Awtuw
     #[doc(hidden)]
     Kmn = 3144,
+    /// Kwoma
     #[doc(hidden)]
     Kmo = 3145,
+    /// Gimme
     #[doc(hidden)]
     Kmp = 3146,
+    /// Kwama
     #[doc(hidden)]
     Kmq = 3147,
+    /// Northern Kurdish
     #[doc(hidden)]
     Kmr = 3148,
+    /// Kamasau
     #[doc(hidden)]
     Kms = 3149,
+    /// Kemtuik
     #[doc(hidden)]
     Kmt = 3150,
+    /// Kanite
     #[doc(hidden)]
     Kmu = 3151,
+    /// Karipúna Creole French
     #[doc(hidden)]
     Kmv = 3152,
+    /// Komo
     #[doc(hidden)]
     Kmw = 3153,
+    /// Waboda
     #[doc(hidden)]
     Kmx = 3154,
+    /// Koma
     #[doc(hidden)]
     Kmy = 3155,
+    /// Khorasani Turkish
     #[doc(hidden)]
     Kmz = 3156,
+    /// Dera
     #[doc(hidden)]
     Kna = 3157,
+    /// Lubuagan Kalinga
     #[doc(hidden)]
     Knb = 3158,
+    /// Central Kanuri
     #[doc(hidden)]
     Knc = 3159,
+    /// Konda
     #[doc(hidden)]
     Knd = 3160,
+    /// Kankanaey
     #[doc(hidden)]
     Kne = 3161,
+    /// Mankanya
     #[doc(hidden)]
     Knf = 3162,
+    /// Koongo
     #[doc(hidden)]
     Kng = 3163,
+    /// Kanufi
     #[doc(hidden)]
     Kni = 3164,
+    /// Western Kanjobal
     #[doc(hidden)]
     Knj = 3165,
+    /// Kuranko
     #[doc(hidden)]
     Knk = 3166,
+    /// Keninjal
     #[doc(hidden)]
     Knl = 3167,
+    /// Kanamarí
     #[doc(hidden)]
     Knm = 3168,
+    /// Konkani
     #[doc(hidden)]
     Knn = 3169,
+    /// Kono
     #[doc(hidden)]
     Kno = 3170,
+    /// Kwanja
     #[doc(hidden)]
     Knp = 3171,
+    /// Kintaq
     #[doc(hidden)]
     Knq = 3172,
+    /// Kaningra
     #[doc(hidden)]
     Knr = 3173,
+    /// Kensiu
     #[doc(hidden)]
     Kns = 3174,
+    /// Panoan Katukína
     #[doc(hidden)]
     Knt = 3175,
+    /// Kono
     #[doc(hidden)]
     Knu = 3176,
+    /// Tabo
     #[doc(hidden)]
     Knv = 3177,
+    /// Kung-Ekoka
     #[doc(hidden)]
     Knw = 3178,
+    /// Kendayan
     #[doc(hidden)]
     Knx = 3179,
+    /// Kanyok
     #[doc(hidden)]
     Kny = 3180,
+    /// Kalamsé
     #[doc(hidden)]
     Knz = 3181,
+    /// Konomala
     #[doc(hidden)]
     Koa = 3182,
+    /// Kpati
     #[doc(hidden)]
     Koc = 3183,
+    /// Kodi
     #[doc(hidden)]
     Kod = 3184,
+    /// Kacipo-Bale Suri
     #[doc(hidden)]
     Koe = 3185,
+    /// Kubi
     #[doc(hidden)]
     Kof = 3186,
+    /// Cogui
     #[doc(hidden)]
     Kog = 3187,
+    /// Koyo
     #[doc(hidden)]
     Koh = 3188,
+    /// Komi-Permyak
     #[doc(hidden)]
     Koi = 3189,
+    /// Konkani
     #[doc(hidden)]
     Kok = 3190,
+    /// Kol
     #[doc(hidden)]
     Kol = 3191,
+    /// Komi
     #[doc(hidden)]
     Kom = 3192,
+    /// Kongo
     #[doc(hidden)]
     Kon = 3193,
+    /// Konzo
     #[doc(hidden)]
     Koo = 3194,
+    /// Waube
     #[doc(hidden)]
     Kop = 3195,
+    /// Kota
     #[doc(hidden)]
     Koq = 3196,
+    /// Korean
     #[doc(hidden)]
     Kor = 3197,
+    /// Kosraean
     #[doc(hidden)]
     Kos = 3198,
+    /// Lagwan
     #[doc(hidden)]
     Kot = 3199,
+    /// Koke
     #[doc(hidden)]
     Kou = 3200,
+    /// Kudu-Camo
     #[doc(hidden)]
     Kov = 3201,
+    /// Kugama
     #[doc(hidden)]
     Kow = 3202,
+    /// Koyukon
     #[doc(hidden)]
     Koy = 3203,
+    /// Korak
     #[doc(hidden)]
     Koz = 3204,
+    /// Kutto
     #[doc(hidden)]
     Kpa = 3205,
+    /// Mullu Kurumba
     #[doc(hidden)]
     Kpb = 3206,
+    /// Curripaco
     #[doc(hidden)]
     Kpc = 3207,
+    /// Koba
     #[doc(hidden)]
     Kpd = 3208,
+    /// Kpelle
     #[doc(hidden)]
     Kpe = 3209,
+    /// Komba
     #[doc(hidden)]
     Kpf = 3210,
+    /// Kapingamarangi
     #[doc(hidden)]
     Kpg = 3211,
+    /// Kplang
     #[doc(hidden)]
     Kph = 3212,
+    /// Kofei
     #[doc(hidden)]
     Kpi = 3213,
+    /// Karajá
     #[doc(hidden)]
     Kpj = 3214,
+    /// Kpan
     #[doc(hidden)]
     Kpk = 3215,
+    /// Kpala
     #[doc(hidden)]
     Kpl = 3216,
+    /// Koho
     #[doc(hidden)]
     Kpm = 3217,
+    /// Kepkiriwát
     #[doc(hidden)]
     Kpn = 3218,
+    /// Ikposo
     #[doc(hidden)]
     Kpo = 3219,
+    /// Korupun-Sela
     #[doc(hidden)]
     Kpq = 3220,
+    /// Korafe-Yegha
     #[doc(hidden)]
     Kpr = 3221,
+    /// Tehit
     #[doc(hidden)]
     Kps = 3222,
+    /// Karata
     #[doc(hidden)]
     Kpt = 3223,
+    /// Kafoa
     #[doc(hidden)]
     Kpu = 3224,
+    /// Komi-Zyrian
     #[doc(hidden)]
     Kpv = 3225,
+    /// Kobon
     #[doc(hidden)]
     Kpw = 3226,
+    /// Mountain Koiali
     #[doc(hidden)]
     Kpx = 3227,
+    /// Koryak
     #[doc(hidden)]
     Kpy = 3228,
+    /// Kupsabiny
     #[doc(hidden)]
     Kpz = 3229,
+    /// Mum
     #[doc(hidden)]
     Kqa = 3230,
+    /// Kovai
     #[doc(hidden)]
     Kqb = 3231,
+    /// Doromu-Koki
     #[doc(hidden)]
     Kqc = 3232,
+    /// Koy Sanjaq Surat
     #[doc(hidden)]
     Kqd = 3233,
+    /// Kalagan
     #[doc(hidden)]
     Kqe = 3234,
+    /// Kakabai
     #[doc(hidden)]
     Kqf = 3235,
+    /// Khe
     #[doc(hidden)]
     Kqg = 3236,
+    /// Kisankasa
     #[doc(hidden)]
     Kqh = 3237,
+    /// Koitabu
     #[doc(hidden)]
     Kqi = 3238,
+    /// Koromira
     #[doc(hidden)]
     Kqj = 3239,
+    /// Kotafon Gbe
     #[doc(hidden)]
     Kqk = 3240,
+    /// Kyenele
     #[doc(hidden)]
     Kql = 3241,
+    /// Khisa
     #[doc(hidden)]
     Kqm = 3242,
+    /// Kaonde
     #[doc(hidden)]
     Kqn = 3243,
+    /// Eastern Krahn
     #[doc(hidden)]
     Kqo = 3244,
+    /// Kimré
     #[doc(hidden)]
     Kqp = 3245,
+    /// Krenak
     #[doc(hidden)]
     Kqq = 3246,
+    /// Kimaragang
     #[doc(hidden)]
     Kqr = 3247,
+    /// Northern Kissi
     #[doc(hidden)]
     Kqs = 3248,
+    /// Klias River Kadazan
     #[doc(hidden)]
     Kqt = 3249,
+    /// Seroa
     #[doc(hidden)]
     Kqu = 3250,
+    /// Okolod
     #[doc(hidden)]
     Kqv = 3251,
+    /// Kandas
     #[doc(hidden)]
     Kqw = 3252,
+    /// Mser
     #[doc(hidden)]
     Kqx = 3253,
+    /// Koorete
     #[doc(hidden)]
     Kqy = 3254,
+    /// Korana
     #[doc(hidden)]
     Kqz = 3255,
+    /// Kumhali
     #[doc(hidden)]
     Kra = 3256,
+    /// Karkin
     #[doc(hidden)]
     Krb = 3257,
+    /// Karachay-Balkar
     #[doc(hidden)]
     Krc = 3258,
+    /// Kairui-Midiki
     #[doc(hidden)]
     Krd = 3259,
+    /// Panará
     #[doc(hidden)]
     Kre = 3260,
+    /// Koro
     #[doc(hidden)]
     Krf = 3261,
+    /// Kurama
     #[doc(hidden)]
     Krh = 3262,
+    /// Krio
     #[doc(hidden)]
     Kri = 3263,
+    /// Kinaray-A
     #[doc(hidden)]
     Krj = 3264,
+    /// Kerek
     #[doc(hidden)]
     Krk = 3265,
+    /// Karelian
     #[doc(hidden)]
     Krl = 3266,
+    /// Sapo
     #[doc(hidden)]
     Krn = 3267,
+    /// Durop
     #[doc(hidden)]
     Krp = 3268,
+    /// Krung
     #[doc(hidden)]
     Krr = 3269,
+    /// Gbaya
     #[doc(hidden)]
     Krs = 3270,
+    /// Tumari Kanuri
     #[doc(hidden)]
     Krt = 3271,
+    /// Kurukh
     #[doc(hidden)]
     Kru = 3272,
+    /// Kavet
     #[doc(hidden)]
     Krv = 3273,
+    /// Western Krahn
     #[doc(hidden)]
     Krw = 3274,
+    /// Karon
     #[doc(hidden)]
     Krx = 3275,
+    /// Kryts
     #[doc(hidden)]
     Kry = 3276,
+    /// Sota Kanum
     #[doc(hidden)]
     Krz = 3277,
+    /// Shambala
     #[doc(hidden)]
     Ksb = 3278,
+    /// Southern Kalinga
     #[doc(hidden)]
     Ksc = 3279,
+    /// Kuanua
     #[doc(hidden)]
     Ksd = 3280,
+    /// Kuni
     #[doc(hidden)]
     Kse = 3281,
+    /// Bafia
     #[doc(hidden)]
     Ksf = 3282,
+    /// Kusaghe
     #[doc(hidden)]
     Ksg = 3283,
+    /// Kölsch
     #[doc(hidden)]
     Ksh = 3284,
+    /// Krisa
     #[doc(hidden)]
     Ksi = 3285,
+    /// Uare
     #[doc(hidden)]
     Ksj = 3286,
+    /// Kansa
     #[doc(hidden)]
     Ksk = 3287,
+    /// Kumalu
     #[doc(hidden)]
     Ksl = 3288,
+    /// Kumba
     #[doc(hidden)]
     Ksm = 3289,
+    /// Kasiguranin
     #[doc(hidden)]
     Ksn = 3290,
+    /// Kofa
     #[doc(hidden)]
     Kso = 3291,
+    /// Kaba
     #[doc(hidden)]
     Ksp = 3292,
+    /// Kwaami
     #[doc(hidden)]
     Ksq = 3293,
+    /// Borong
     #[doc(hidden)]
     Ksr = 3294,
+    /// Southern Kisi
     #[doc(hidden)]
     Kss = 3295,
+    /// Winyé
     #[doc(hidden)]
     Kst = 3296,
+    /// Khamyang
     #[doc(hidden)]
     Ksu = 3297,
+    /// Kusu
     #[doc(hidden)]
     Ksv = 3298,
+    /// S'gaw Karen
     #[doc(hidden)]
     Ksw = 3299,
+    /// Kedang
     #[doc(hidden)]
     Ksx = 3300,
+    /// Kharia Thar
     #[doc(hidden)]
     Ksy = 3301,
+    /// Kodaku
     #[doc(hidden)]
     Ksz = 3302,
+    /// Katua
     #[doc(hidden)]
     Kta = 3303,
+    /// Kambaata
     #[doc(hidden)]
     Ktb = 3304,
+    /// Kholok
     #[doc(hidden)]
     Ktc = 3305,
+    /// Kokata
     #[doc(hidden)]
     Ktd = 3306,
+    /// Nubri
     #[doc(hidden)]
     Kte = 3307,
+    /// Kwami
     #[doc(hidden)]
     Ktf = 3308,
+    /// Kalkutung
     #[doc(hidden)]
     Ktg = 3309,
+    /// Karanga
     #[doc(hidden)]
     Kth = 3310,
+    /// North Muyu
     #[doc(hidden)]
     Kti = 3311,
+    /// Plapo Krumen
     #[doc(hidden)]
     Ktj = 3312,
+    /// Kaniet
     #[doc(hidden)]
     Ktk = 3313,
+    /// Koroshi
     #[doc(hidden)]
     Ktl = 3314,
+    /// Kurti
     #[doc(hidden)]
     Ktm = 3315,
+    /// Karitiâna
     #[doc(hidden)]
     Ktn = 3316,
+    /// Kuot
     #[doc(hidden)]
     Kto = 3317,
+    /// Kaduo
     #[doc(hidden)]
     Ktp = 3318,
+    /// Katabaga
     #[doc(hidden)]
     Ktq = 3319,
+    /// South Muyu
     #[doc(hidden)]
     Kts = 3320,
+    /// Ketum
     #[doc(hidden)]
     Ktt = 3321,
+    /// Kituba
     #[doc(hidden)]
     Ktu = 3322,
+    /// Eastern Katu
     #[doc(hidden)]
     Ktv = 3323,
+    /// Kato
     #[doc(hidden)]
     Ktw = 3324,
+    /// Kaxararí
     #[doc(hidden)]
     Ktx = 3325,
+    /// Kango
     #[doc(hidden)]
     Kty = 3326,
+    /// Juǀʼhoan
     #[doc(hidden)]
     Ktz = 3327,
+    /// Kuanyama
     #[doc(hidden)]
     Kua = 3328,
+    /// Kutep
     #[doc(hidden)]
     Kub = 3329,
+    /// Kwinsu
     #[doc(hidden)]
     Kuc = 3330,
+    /// 'Auhelawa
     #[doc(hidden)]
     Kud = 3331,
+    /// Kuman
     #[doc(hidden)]
     Kue = 3332,
+    /// Western Katu
     #[doc(hidden)]
     Kuf = 3333,
+    /// Kupa
     #[doc(hidden)]
     Kug = 3334,
+    /// Kushi
     #[doc(hidden)]
     Kuh = 3335,
+    /// Kuikúro-Kalapálo
     #[doc(hidden)]
     Kui = 3336,
+    /// Kuria
     #[doc(hidden)]
     Kuj = 3337,
+    /// Kepo'
     #[doc(hidden)]
     Kuk = 3338,
+    /// Kulere
     #[doc(hidden)]
     Kul = 3339,
+    /// Kumyk
     #[doc(hidden)]
     Kum = 3340,
+    /// Kunama
     #[doc(hidden)]
     Kun = 3341,
+    /// Kumukio
     #[doc(hidden)]
     Kuo = 3342,
+    /// Kunimaipa
     #[doc(hidden)]
     Kup = 3343,
+    /// Karipuna
     #[doc(hidden)]
     Kuq = 3344,
+    /// Kurdish
     #[doc(hidden)]
     Kur = 3345,
+    /// Kusaal
     #[doc(hidden)]
     Kus = 3346,
+    /// Kutenai
     #[doc(hidden)]
     Kut = 3347,
+    /// Upper Kuskokwim
     #[doc(hidden)]
     Kuu = 3348,
+    /// Kur
     #[doc(hidden)]
     Kuv = 3349,
+    /// Kpagua
     #[doc(hidden)]
     Kuw = 3350,
+    /// Kukatja
     #[doc(hidden)]
     Kux = 3351,
+    /// Kuuku-Ya'u
     #[doc(hidden)]
     Kuy = 3352,
+    /// Kunza
     #[doc(hidden)]
     Kuz = 3353,
+    /// Bagvalal
     #[doc(hidden)]
     Kva = 3354,
+    /// Kubu
     #[doc(hidden)]
     Kvb = 3355,
+    /// Kove
     #[doc(hidden)]
     Kvc = 3356,
+    /// Kui
     #[doc(hidden)]
     Kvd = 3357,
+    /// Kalabakan
     #[doc(hidden)]
     Kve = 3358,
+    /// Kabalai
     #[doc(hidden)]
     Kvf = 3359,
+    /// Kuni-Boazi
     #[doc(hidden)]
     Kvg = 3360,
+    /// Komodo
     #[doc(hidden)]
     Kvh = 3361,
+    /// Kwang
     #[doc(hidden)]
     Kvi = 3362,
+    /// Psikye
     #[doc(hidden)]
     Kvj = 3363,
+    /// Korean Sign Language
     #[doc(hidden)]
     Kvk = 3364,
+    /// Kayaw
     #[doc(hidden)]
     Kvl = 3365,
+    /// Kendem
     #[doc(hidden)]
     Kvm = 3366,
+    /// Border Kuna
     #[doc(hidden)]
     Kvn = 3367,
+    /// Dobel
     #[doc(hidden)]
     Kvo = 3368,
+    /// Kompane
     #[doc(hidden)]
     Kvp = 3369,
+    /// Geba Karen
     #[doc(hidden)]
     Kvq = 3370,
+    /// Kerinci
     #[doc(hidden)]
     Kvr = 3371,
+    /// Lahta Karen
     #[doc(hidden)]
     Kvt = 3372,
+    /// Yinbaw Karen
     #[doc(hidden)]
     Kvu = 3373,
+    /// Kola
     #[doc(hidden)]
     Kvv = 3374,
+    /// Wersing
     #[doc(hidden)]
     Kvw = 3375,
+    /// Parkari Koli
     #[doc(hidden)]
     Kvx = 3376,
+    /// Yintale Karen
     #[doc(hidden)]
     Kvy = 3377,
+    /// Tsakwambo
     #[doc(hidden)]
     Kvz = 3378,
+    /// Dâw
     #[doc(hidden)]
     Kwa = 3379,
+    /// Kwa
     #[doc(hidden)]
     Kwb = 3380,
+    /// Likwala
     #[doc(hidden)]
     Kwc = 3381,
+    /// Kwaio
     #[doc(hidden)]
     Kwd = 3382,
+    /// Kwerba
     #[doc(hidden)]
     Kwe = 3383,
+    /// Kwara'ae
     #[doc(hidden)]
     Kwf = 3384,
+    /// Sara Kaba Deme
     #[doc(hidden)]
     Kwg = 3385,
+    /// Kowiai
     #[doc(hidden)]
     Kwh = 3386,
+    /// Awa-Cuaiquer
     #[doc(hidden)]
     Kwi = 3387,
+    /// Kwanga
     #[doc(hidden)]
     Kwj = 3388,
+    /// Kwakiutl
     #[doc(hidden)]
     Kwk = 3389,
+    /// Kofyar
     #[doc(hidden)]
     Kwl = 3390,
+    /// Kwambi
     #[doc(hidden)]
     Kwm = 3391,
+    /// Kwangali
     #[doc(hidden)]
     Kwn = 3392,
+    /// Kwomtari
     #[doc(hidden)]
     Kwo = 3393,
+    /// Kodia
     #[doc(hidden)]
     Kwp = 3394,
+    /// Kwer
     #[doc(hidden)]
     Kwr = 3395,
+    /// Kwese
     #[doc(hidden)]
     Kws = 3396,
+    /// Kwesten
     #[doc(hidden)]
     Kwt = 3397,
+    /// Kwakum
     #[doc(hidden)]
     Kwu = 3398,
+    /// Sara Kaba Náà
     #[doc(hidden)]
     Kwv = 3399,
+    /// Kwinti
     #[doc(hidden)]
     Kww = 3400,
+    /// Khirwar
     #[doc(hidden)]
     Kwx = 3401,
+    /// San Salvador Kongo
     #[doc(hidden)]
     Kwy = 3402,
+    /// Kwadi
     #[doc(hidden)]
     Kwz = 3403,
+    /// Kairiru
     #[doc(hidden)]
     Kxa = 3404,
+    /// Krobu
     #[doc(hidden)]
     Kxb = 3405,
+    /// Konso
     #[doc(hidden)]
     Kxc = 3406,
+    /// Brunei
     #[doc(hidden)]
     Kxd = 3407,
+    /// Manumanaw Karen
     #[doc(hidden)]
     Kxf = 3408,
+    /// Karo
     #[doc(hidden)]
     Kxh = 3409,
+    /// Keningau Murut
     #[doc(hidden)]
     Kxi = 3410,
+    /// Kulfa
     #[doc(hidden)]
     Kxj = 3411,
+    /// Zayein Karen
     #[doc(hidden)]
     Kxk = 3412,
+    /// Northern Khmer
     #[doc(hidden)]
     Kxm = 3413,
+    /// Kanowit-Tanjong Melanau
     #[doc(hidden)]
     Kxn = 3414,
+    /// Kanoé
     #[doc(hidden)]
     Kxo = 3415,
+    /// Wadiyara Koli
     #[doc(hidden)]
     Kxp = 3416,
+    /// Smärky Kanum
     #[doc(hidden)]
     Kxq = 3417,
+    /// Koro
     #[doc(hidden)]
     Kxr = 3418,
+    /// Kangjia
     #[doc(hidden)]
     Kxs = 3419,
+    /// Koiwat
     #[doc(hidden)]
     Kxt = 3420,
+    /// Kuvi
     #[doc(hidden)]
     Kxv = 3421,
+    /// Konai
     #[doc(hidden)]
     Kxw = 3422,
+    /// Likuba
     #[doc(hidden)]
     Kxx = 3423,
+    /// Kayong
     #[doc(hidden)]
     Kxy = 3424,
+    /// Kerewo
     #[doc(hidden)]
     Kxz = 3425,
+    /// Kwaya
     #[doc(hidden)]
     Kya = 3426,
+    /// Butbut Kalinga
     #[doc(hidden)]
     Kyb = 3427,
+    /// Kyaka
     #[doc(hidden)]
     Kyc = 3428,
+    /// Karey
     #[doc(hidden)]
     Kyd = 3429,
+    /// Krache
     #[doc(hidden)]
     Kye = 3430,
+    /// Kouya
     #[doc(hidden)]
     Kyf = 3431,
+    /// Keyagana
     #[doc(hidden)]
     Kyg = 3432,
+    /// Karok
     #[doc(hidden)]
     Kyh = 3433,
+    /// Kiput
     #[doc(hidden)]
     Kyi = 3434,
+    /// Karao
     #[doc(hidden)]
     Kyj = 3435,
+    /// Kamayo
     #[doc(hidden)]
     Kyk = 3436,
+    /// Kalapuya
     #[doc(hidden)]
     Kyl = 3437,
+    /// Kpatili
     #[doc(hidden)]
     Kym = 3438,
+    /// Northern Binukidnon
     #[doc(hidden)]
     Kyn = 3439,
+    /// Kelon
     #[doc(hidden)]
     Kyo = 3440,
+    /// Kang
     #[doc(hidden)]
     Kyp = 3441,
+    /// Kenga
     #[doc(hidden)]
     Kyq = 3442,
+    /// Kuruáya
     #[doc(hidden)]
     Kyr = 3443,
+    /// Baram Kayan
     #[doc(hidden)]
     Kys = 3444,
+    /// Kayagar
     #[doc(hidden)]
     Kyt = 3445,
+    /// Western Kayah
     #[doc(hidden)]
     Kyu = 3446,
+    /// Kayort
     #[doc(hidden)]
     Kyv = 3447,
+    /// Kudmali
     #[doc(hidden)]
     Kyw = 3448,
+    /// Rapoisi
     #[doc(hidden)]
     Kyx = 3449,
+    /// Kambaira
     #[doc(hidden)]
     Kyy = 3450,
+    /// Kayabí
     #[doc(hidden)]
     Kyz = 3451,
+    /// Western Karaboro
     #[doc(hidden)]
     Kza = 3452,
+    /// Kaibobo
     #[doc(hidden)]
     Kzb = 3453,
+    /// Bondoukou Kulango
     #[doc(hidden)]
     Kzc = 3454,
+    /// Kadai
     #[doc(hidden)]
     Kzd = 3455,
+    /// Kosena
     #[doc(hidden)]
     Kze = 3456,
+    /// Da'a Kaili
     #[doc(hidden)]
     Kzf = 3457,
+    /// Kikai
     #[doc(hidden)]
     Kzg = 3458,
+    /// Kelabit
     #[doc(hidden)]
     Kzi = 3459,
+    /// Kazukuru
     #[doc(hidden)]
     Kzk = 3460,
+    /// Kayeli
     #[doc(hidden)]
     Kzl = 3461,
+    /// Kais
     #[doc(hidden)]
     Kzm = 3462,
+    /// Kokola
     #[doc(hidden)]
     Kzn = 3463,
+    /// Kaningi
     #[doc(hidden)]
     Kzo = 3464,
+    /// Kaidipang
     #[doc(hidden)]
     Kzp = 3465,
+    /// Kaike
     #[doc(hidden)]
     Kzq = 3466,
+    /// Karang
     #[doc(hidden)]
     Kzr = 3467,
+    /// Sugut Dusun
     #[doc(hidden)]
     Kzs = 3468,
+    /// Kayupulau
     #[doc(hidden)]
     Kzu = 3469,
+    /// Komyandaret
     #[doc(hidden)]
     Kzv = 3470,
+    /// Karirí-Xocó
     #[doc(hidden)]
     Kzw = 3471,
+    /// Kamarian
     #[doc(hidden)]
     Kzx = 3472,
+    /// Kango
     #[doc(hidden)]
     Kzy = 3473,
+    /// Kalabra
     #[doc(hidden)]
     Kzz = 3474,
+    /// Southern Subanen
     #[doc(hidden)]
     Laa = 3475,
+    /// Linear A
     #[doc(hidden)]
     Lab = 3476,
+    /// Lacandon
     #[doc(hidden)]
     Lac = 3477,
+    /// Ladino
     #[doc(hidden)]
     Lad = 3478,
+    /// Pattani
     #[doc(hidden)]
     Lae = 3479,
+    /// Lafofa
     #[doc(hidden)]
     Laf = 3480,
+    /// Rangi
     #[doc(hidden)]
     Lag = 3481,
+    /// Lahnda
     #[doc(hidden)]
     Lah = 3482,
+    /// Lambya
     #[doc(hidden)]
     Lai = 3483,
+    /// Lango
     #[doc(hidden)]
     Laj = 3484,
+    /// Lalia
     #[doc(hidden)]
     Lal = 3485,
+    /// Lamba
     #[doc(hidden)]
     Lam = 3486,
+    /// Laru
     #[doc(hidden)]
     Lan = 3487,
+    /// Lao
     #[doc(hidden)]
     Lao = 3488,
+    /// Laka
     #[doc(hidden)]
     Lap = 3489,
+    /// Qabiao
     #[doc(hidden)]
     Laq = 3490,
+    /// Larteh
     #[doc(hidden)]
     Lar = 3491,
+    /// Lama
     #[doc(hidden)]
     Las = 3492,
+    /// Latin
     #[doc(hidden)]
     Lat = 3493,
+    /// Laba
     #[doc(hidden)]
     Lau = 3494,
+    /// Latvian
     #[doc(hidden)]
     Lav = 3495,
+    /// Lauje
     #[doc(hidden)]
     Law = 3496,
+    /// Tiwa
     #[doc(hidden)]
     Lax = 3497,
+    /// Lama Bai
     #[doc(hidden)]
     Lay = 3498,
+    /// Aribwatsa
     #[doc(hidden)]
     Laz = 3499,
+    /// Label
     #[doc(hidden)]
     Lbb = 3500,
+    /// Lakkia
     #[doc(hidden)]
     Lbc = 3501,
+    /// Lak
     #[doc(hidden)]
     Lbe = 3502,
+    /// Tinani
     #[doc(hidden)]
     Lbf = 3503,
+    /// Laopang
     #[doc(hidden)]
     Lbg = 3504,
+    /// La'bi
     #[doc(hidden)]
     Lbi = 3505,
+    /// Ladakhi
     #[doc(hidden)]
     Lbj = 3506,
+    /// Central Bontok
     #[doc(hidden)]
     Lbk = 3507,
+    /// Libon Bikol
     #[doc(hidden)]
     Lbl = 3508,
+    /// Lodhi
     #[doc(hidden)]
     Lbm = 3509,
+    /// Rmeet
     #[doc(hidden)]
     Lbn = 3510,
+    /// Laven
     #[doc(hidden)]
     Lbo = 3511,
+    /// Wampar
     #[doc(hidden)]
     Lbq = 3512,
+    /// Lohorung
     #[doc(hidden)]
     Lbr = 3513,
+    /// Libyan Sign Language
     #[doc(hidden)]
     Lbs = 3514,
+    /// Lachi
     #[doc(hidden)]
     Lbt = 3515,
+    /// Labu
     #[doc(hidden)]
     Lbu = 3516,
+    /// Lavatbura-Lamusong
     #[doc(hidden)]
     Lbv = 3517,
+    /// Tolaki
     #[doc(hidden)]
     Lbw = 3518,
+    /// Lawangan
     #[doc(hidden)]
     Lbx = 3519,
+    /// Lamalama
     #[doc(hidden)]
     Lby = 3520,
+    /// Lardil
     #[doc(hidden)]
     Lbz = 3521,
+    /// Legenyem
     #[doc(hidden)]
     Lcc = 3522,
+    /// Lola
     #[doc(hidden)]
     Lcd = 3523,
+    /// Loncong
     #[doc(hidden)]
     Lce = 3524,
+    /// Lubu
     #[doc(hidden)]
     Lcf = 3525,
+    /// Luchazi
     #[doc(hidden)]
     Lch = 3526,
+    /// Lisela
     #[doc(hidden)]
     Lcl = 3527,
+    /// Tungag
     #[doc(hidden)]
     Lcm = 3528,
+    /// Western Lawa
     #[doc(hidden)]
     Lcp = 3529,
+    /// Luhu
     #[doc(hidden)]
     Lcq = 3530,
+    /// Lisabata-Nuniali
     #[doc(hidden)]
     Lcs = 3531,
+    /// Kla-Dan
     #[doc(hidden)]
     Lda = 3532,
+    /// Dũya
     #[doc(hidden)]
     Ldb = 3533,
+    /// Luri
     #[doc(hidden)]
     Ldd = 3534,
+    /// Lenyima
     #[doc(hidden)]
     Ldg = 3535,
+    /// Lamja-Dengsa-Tola
     #[doc(hidden)]
     Ldh = 3536,
+    /// Laari
     #[doc(hidden)]
     Ldi = 3537,
+    /// Lemoro
     #[doc(hidden)]
     Ldj = 3538,
+    /// Leelau
     #[doc(hidden)]
     Ldk = 3539,
+    /// Kaan
     #[doc(hidden)]
     Ldl = 3540,
+    /// Landoma
     #[doc(hidden)]
     Ldm = 3541,
+    /// Láadan
     #[doc(hidden)]
     Ldn = 3542,
+    /// Loo
     #[doc(hidden)]
     Ldo = 3543,
+    /// Tso
     #[doc(hidden)]
     Ldp = 3544,
+    /// Lufu
     #[doc(hidden)]
     Ldq = 3545,
+    /// Lega-Shabunda
     #[doc(hidden)]
     Lea = 3546,
+    /// Lala-Bisa
     #[doc(hidden)]
     Leb = 3547,
+    /// Leco
     #[doc(hidden)]
     Lec = 3548,
+    /// Lendu
     #[doc(hidden)]
     Led = 3549,
+    /// Lyélé
     #[doc(hidden)]
     Lee = 3550,
+    /// Lelemi
     #[doc(hidden)]
     Lef = 3551,
+    /// Lenje
     #[doc(hidden)]
     Leh = 3552,
+    /// Lemio
     #[doc(hidden)]
     Lei = 3553,
+    /// Lengola
     #[doc(hidden)]
     Lej = 3554,
+    /// Leipon
     #[doc(hidden)]
     Lek = 3555,
+    /// Lele
     #[doc(hidden)]
     Lel = 3556,
+    /// Nomaande
     #[doc(hidden)]
     Lem = 3557,
+    /// Lenca
     #[doc(hidden)]
     Len = 3558,
+    /// Leti
     #[doc(hidden)]
     Leo = 3559,
+    /// Lepcha
     #[doc(hidden)]
     Lep = 3560,
+    /// Lembena
     #[doc(hidden)]
     Leq = 3561,
+    /// Lenkau
     #[doc(hidden)]
     Ler = 3562,
+    /// Lese
     #[doc(hidden)]
     Les = 3563,
+    /// Lesing-Gelimi
     #[doc(hidden)]
     Let = 3564,
+    /// Kara
     #[doc(hidden)]
     Leu = 3565,
+    /// Lamma
     #[doc(hidden)]
     Lev = 3566,
+    /// Ledo Kaili
     #[doc(hidden)]
     Lew = 3567,
+    /// Luang
     #[doc(hidden)]
     Lex = 3568,
+    /// Lemolang
     #[doc(hidden)]
     Ley = 3569,
+    /// Lezghian
     #[doc(hidden)]
     Lez = 3570,
+    /// Lefa
     #[doc(hidden)]
     Lfa = 3571,
+    /// Lingua Franca Nova
     #[doc(hidden)]
     Lfn = 3572,
+    /// Lungga
     #[doc(hidden)]
     Lga = 3573,
+    /// Laghu
     #[doc(hidden)]
     Lgb = 3574,
+    /// Lugbara
     #[doc(hidden)]
     Lgg = 3575,
+    /// Laghuu
     #[doc(hidden)]
     Lgh = 3576,
+    /// Lengilu
     #[doc(hidden)]
     Lgi = 3577,
+    /// Lingarak
     #[doc(hidden)]
     Lgk = 3578,
+    /// Wala
     #[doc(hidden)]
     Lgl = 3579,
+    /// Lega-Mwenga
     #[doc(hidden)]
     Lgm = 3580,
+    /// T'apo
     #[doc(hidden)]
     Lgn = 3581,
+    /// Lango
     #[doc(hidden)]
     Lgo = 3582,
+    /// Logba
     #[doc(hidden)]
     Lgq = 3583,
+    /// Lengo
     #[doc(hidden)]
     Lgr = 3584,
+    /// Guinea-Bissau Sign Language
     #[doc(hidden)]
     Lgs = 3585,
+    /// Pahi
     #[doc(hidden)]
     Lgt = 3586,
+    /// Longgu
     #[doc(hidden)]
     Lgu = 3587,
+    /// Ligenza
     #[doc(hidden)]
     Lgz = 3588,
+    /// Laha
     #[doc(hidden)]
     Lha = 3589,
+    /// Laha
     #[doc(hidden)]
     Lhh = 3590,
+    /// Lahu Shi
     #[doc(hidden)]
     Lhi = 3591,
+    /// Lahul Lohar
     #[doc(hidden)]
     Lhl = 3592,
+    /// Lhomi
     #[doc(hidden)]
     Lhm = 3593,
+    /// Lahanan
     #[doc(hidden)]
     Lhn = 3594,
+    /// Lhokpu
     #[doc(hidden)]
     Lhp = 3595,
+    /// Mlahsö
     #[doc(hidden)]
     Lhs = 3596,
+    /// Lo-Toga
     #[doc(hidden)]
     Lht = 3597,
+    /// Lahu
     #[doc(hidden)]
     Lhu = 3598,
+    /// West-Central Limba
     #[doc(hidden)]
     Lia = 3599,
+    /// Likum
     #[doc(hidden)]
     Lib = 3600,
+    /// Hlai
     #[doc(hidden)]
     Lic = 3601,
+    /// Nyindrou
     #[doc(hidden)]
     Lid = 3602,
+    /// Likila
     #[doc(hidden)]
     Lie = 3603,
+    /// Limbu
     #[doc(hidden)]
     Lif = 3604,
+    /// Ligbi
     #[doc(hidden)]
     Lig = 3605,
+    /// Lihir
     #[doc(hidden)]
     Lih = 3606,
+    /// Ligurian
     #[doc(hidden)]
     Lij = 3607,
+    /// Lika
     #[doc(hidden)]
     Lik = 3608,
+    /// Lillooet
     #[doc(hidden)]
     Lil = 3609,
+    /// Limburgan
     #[doc(hidden)]
     Lim = 3610,
+    /// Lingala
     #[doc(hidden)]
     Lin = 3611,
+    /// Liki
     #[doc(hidden)]
     Lio = 3612,
+    /// Sekpele
     #[doc(hidden)]
     Lip = 3613,
+    /// Libido
     #[doc(hidden)]
     Liq = 3614,
+    /// Liberian English
     #[doc(hidden)]
     Lir = 3615,
+    /// Lisu
     #[doc(hidden)]
     Lis = 3616,
+    /// Lithuanian
     #[doc(hidden)]
     Lit = 3617,
+    /// Logorik
     #[doc(hidden)]
     Liu = 3618,
+    /// Liv
     #[doc(hidden)]
     Liv = 3619,
+    /// Col
     #[doc(hidden)]
     Liw = 3620,
+    /// Liabuku
     #[doc(hidden)]
     Lix = 3621,
+    /// Banda-Bambari
     #[doc(hidden)]
     Liy = 3622,
+    /// Libinza
     #[doc(hidden)]
     Liz = 3623,
+    /// Golpa
     #[doc(hidden)]
     Lja = 3624,
+    /// Rampi
     #[doc(hidden)]
     Lje = 3625,
+    /// Laiyolo
     #[doc(hidden)]
     Lji = 3626,
+    /// Li'o
     #[doc(hidden)]
     Ljl = 3627,
+    /// Lampung Api
     #[doc(hidden)]
     Ljp = 3628,
+    /// Yirandali
     #[doc(hidden)]
     Ljw = 3629,
+    /// Yuru
     #[doc(hidden)]
     Ljx = 3630,
+    /// Lakalei
     #[doc(hidden)]
     Lka = 3631,
+    /// Kabras
     #[doc(hidden)]
     Lkb = 3632,
+    /// Kucong
     #[doc(hidden)]
     Lkc = 3633,
+    /// Lakondê
     #[doc(hidden)]
     Lkd = 3634,
+    /// Kenyi
     #[doc(hidden)]
     Lke = 3635,
+    /// Lakha
     #[doc(hidden)]
     Lkh = 3636,
+    /// Laki
     #[doc(hidden)]
     Lki = 3637,
+    /// Remun
     #[doc(hidden)]
     Lkj = 3638,
+    /// Laeko-Libuat
     #[doc(hidden)]
     Lkl = 3639,
+    /// Kalaamaya
     #[doc(hidden)]
     Lkm = 3640,
+    /// Lakon
     #[doc(hidden)]
     Lkn = 3641,
+    /// Khayo
     #[doc(hidden)]
     Lko = 3642,
+    /// Päri
     #[doc(hidden)]
     Lkr = 3643,
+    /// Kisa
     #[doc(hidden)]
     Lks = 3644,
+    /// Lakota
     #[doc(hidden)]
     Lkt = 3645,
+    /// Kungkari
     #[doc(hidden)]
     Lku = 3646,
+    /// Lokoya
     #[doc(hidden)]
     Lky = 3647,
+    /// Lala-Roba
     #[doc(hidden)]
     Lla = 3648,
+    /// Lolo
     #[doc(hidden)]
     Llb = 3649,
+    /// Lele
     #[doc(hidden)]
     Llc = 3650,
+    /// Ladin
     #[doc(hidden)]
     Lld = 3651,
+    /// Lele
     #[doc(hidden)]
     Lle = 3652,
+    /// Hermit
     #[doc(hidden)]
     Llf = 3653,
+    /// Lole
     #[doc(hidden)]
     Llg = 3654,
+    /// Lamu
     #[doc(hidden)]
     Llh = 3655,
+    /// Teke-Laali
     #[doc(hidden)]
     Lli = 3656,
+    /// Ladji Ladji
     #[doc(hidden)]
     Llj = 3657,
+    /// Lelak
     #[doc(hidden)]
     Llk = 3658,
+    /// Lilau
     #[doc(hidden)]
     Lll = 3659,
+    /// Lasalimu
     #[doc(hidden)]
     Llm = 3660,
+    /// Lele
     #[doc(hidden)]
     Lln = 3661,
+    /// North Efate
     #[doc(hidden)]
     Llp = 3662,
+    /// Lolak
     #[doc(hidden)]
     Llq = 3663,
+    /// Lithuanian Sign Language
     #[doc(hidden)]
     Lls = 3664,
+    /// Lau
     #[doc(hidden)]
     Llu = 3665,
+    /// Lauan
     #[doc(hidden)]
     Llx = 3666,
+    /// East Limba
     #[doc(hidden)]
     Lma = 3667,
+    /// Merei
     #[doc(hidden)]
     Lmb = 3668,
+    /// Limilngan
     #[doc(hidden)]
     Lmc = 3669,
+    /// Lumun
     #[doc(hidden)]
     Lmd = 3670,
+    /// Pévé
     #[doc(hidden)]
     Lme = 3671,
+    /// South Lembata
     #[doc(hidden)]
     Lmf = 3672,
+    /// Lamogai
     #[doc(hidden)]
     Lmg = 3673,
+    /// Lambichhong
     #[doc(hidden)]
     Lmh = 3674,
+    /// Lombi
     #[doc(hidden)]
     Lmi = 3675,
+    /// West Lembata
     #[doc(hidden)]
     Lmj = 3676,
+    /// Lamkang
     #[doc(hidden)]
     Lmk = 3677,
+    /// Hano
     #[doc(hidden)]
     Lml = 3678,
+    /// Lambadi
     #[doc(hidden)]
     Lmn = 3679,
+    /// Lombard
     #[doc(hidden)]
     Lmo = 3680,
+    /// Limbum
     #[doc(hidden)]
     Lmp = 3681,
+    /// Lamatuka
     #[doc(hidden)]
     Lmq = 3682,
+    /// Lamalera
     #[doc(hidden)]
     Lmr = 3683,
+    /// Lamenu
     #[doc(hidden)]
     Lmu = 3684,
+    /// Lomaiviti
     #[doc(hidden)]
     Lmv = 3685,
+    /// Lake Miwok
     #[doc(hidden)]
     Lmw = 3686,
+    /// Laimbue
     #[doc(hidden)]
     Lmx = 3687,
+    /// Lamboya
     #[doc(hidden)]
     Lmy = 3688,
+    /// Langbashe
     #[doc(hidden)]
     Lna = 3689,
+    /// Mbalanhu
     #[doc(hidden)]
     Lnb = 3690,
+    /// Lundayeh
     #[doc(hidden)]
     Lnd = 3691,
+    /// Langobardic
     #[doc(hidden)]
     Lng = 3692,
+    /// Lanoh
     #[doc(hidden)]
     Lnh = 3693,
+    /// Daantanai'
     #[doc(hidden)]
     Lni = 3694,
+    /// Leningitij
     #[doc(hidden)]
     Lnj = 3695,
+    /// South Central Banda
     #[doc(hidden)]
     Lnl = 3696,
+    /// Langam
     #[doc(hidden)]
     Lnm = 3697,
+    /// Lorediakarkar
     #[doc(hidden)]
     Lnn = 3698,
+    /// Lamnso'
     #[doc(hidden)]
     Lns = 3699,
+    /// Longuda
     #[doc(hidden)]
     Lnu = 3700,
+    /// Lanima
     #[doc(hidden)]
     Lnw = 3701,
+    /// Lonzo
     #[doc(hidden)]
     Lnz = 3702,
+    /// Loloda
     #[doc(hidden)]
     Loa = 3703,
+    /// Lobi
     #[doc(hidden)]
     Lob = 3704,
+    /// Inonhan
     #[doc(hidden)]
     Loc = 3705,
+    /// Saluan
     #[doc(hidden)]
     Loe = 3706,
+    /// Logol
     #[doc(hidden)]
     Lof = 3707,
+    /// Logo
     #[doc(hidden)]
     Log = 3708,
+    /// Laarim
     #[doc(hidden)]
     Loh = 3709,
+    /// Loma
     #[doc(hidden)]
     Loi = 3710,
+    /// Lou
     #[doc(hidden)]
     Loj = 3711,
+    /// Loko
     #[doc(hidden)]
     Lok = 3712,
+    /// Mongo
     #[doc(hidden)]
     Lol = 3713,
+    /// Loma
     #[doc(hidden)]
     Lom = 3714,
+    /// Malawi Lomwe
     #[doc(hidden)]
     Lon = 3715,
+    /// Lombo
     #[doc(hidden)]
     Loo = 3716,
+    /// Lopa
     #[doc(hidden)]
     Lop = 3717,
+    /// Lobala
     #[doc(hidden)]
     Loq = 3718,
+    /// Téén
     #[doc(hidden)]
     Lor = 3719,
+    /// Loniu
     #[doc(hidden)]
     Los = 3720,
+    /// Otuho
     #[doc(hidden)]
     Lot = 3721,
+    /// Louisiana Creole
     #[doc(hidden)]
     Lou = 3722,
+    /// Lopi
     #[doc(hidden)]
     Lov = 3723,
+    /// Tampias Lobu
     #[doc(hidden)]
     Low = 3724,
+    /// Loun
     #[doc(hidden)]
     Lox = 3725,
+    /// Loke
     #[doc(hidden)]
     Loy = 3726,
+    /// Lozi
     #[doc(hidden)]
     Loz = 3727,
+    /// Lelepa
     #[doc(hidden)]
     Lpa = 3728,
+    /// Lepki
     #[doc(hidden)]
     Lpe = 3729,
+    /// Long Phuri Naga
     #[doc(hidden)]
     Lpn = 3730,
+    /// Lipo
     #[doc(hidden)]
     Lpo = 3731,
+    /// Lopit
     #[doc(hidden)]
     Lpx = 3732,
+    /// Logir
     #[doc(hidden)]
     Lqr = 3733,
+    /// Rara Bakati'
     #[doc(hidden)]
     Lra = 3734,
+    /// Northern Luri
     #[doc(hidden)]
     Lrc = 3735,
+    /// Laurentian
     #[doc(hidden)]
     Lre = 3736,
+    /// Laragia
     #[doc(hidden)]
     Lrg = 3737,
+    /// Marachi
     #[doc(hidden)]
     Lri = 3738,
+    /// Loarki
     #[doc(hidden)]
     Lrk = 3739,
+    /// Lari
     #[doc(hidden)]
     Lrl = 3740,
+    /// Marama
     #[doc(hidden)]
     Lrm = 3741,
+    /// Lorang
     #[doc(hidden)]
     Lrn = 3742,
+    /// Laro
     #[doc(hidden)]
     Lro = 3743,
+    /// Southern Yamphu
     #[doc(hidden)]
     Lrr = 3744,
+    /// Larantuka Malay
     #[doc(hidden)]
     Lrt = 3745,
+    /// Larevat
     #[doc(hidden)]
     Lrv = 3746,
+    /// Lemerig
     #[doc(hidden)]
     Lrz = 3747,
+    /// Lasgerdi
     #[doc(hidden)]
     Lsa = 3748,
+    /// Burundian Sign Language
     #[doc(hidden)]
     Lsb = 3749,
+    /// Albarradas Sign Language
     #[doc(hidden)]
     Lsc = 3750,
+    /// Lishana Deni
     #[doc(hidden)]
     Lsd = 3751,
+    /// Lusengo
     #[doc(hidden)]
     Lse = 3752,
+    /// Lish
     #[doc(hidden)]
     Lsh = 3753,
+    /// Lashi
     #[doc(hidden)]
     Lsi = 3754,
+    /// Latvian Sign Language
     #[doc(hidden)]
     Lsl = 3755,
+    /// Saamia
     #[doc(hidden)]
     Lsm = 3756,
+    /// Tibetan Sign Language
     #[doc(hidden)]
     Lsn = 3757,
+    /// Laos Sign Language
     #[doc(hidden)]
     Lso = 3758,
+    /// Panamanian Sign Language
     #[doc(hidden)]
     Lsp = 3759,
+    /// Aruop
     #[doc(hidden)]
     Lsr = 3760,
+    /// Lasi
     #[doc(hidden)]
     Lss = 3761,
+    /// Trinidad and Tobago Sign Language
     #[doc(hidden)]
     Lst = 3762,
+    /// Sivia Sign Language
     #[doc(hidden)]
     Lsv = 3763,
+    /// Seychelles Sign Language
     #[doc(hidden)]
     Lsw = 3764,
+    /// Mauritian Sign Language
     #[doc(hidden)]
     Lsy = 3765,
+    /// Late Middle Chinese
     #[doc(hidden)]
     Ltc = 3766,
+    /// Latgalian
     #[doc(hidden)]
     Ltg = 3767,
+    /// Thur
     #[doc(hidden)]
     Lth = 3768,
+    /// Leti
     #[doc(hidden)]
     Lti = 3769,
+    /// Latundê
     #[doc(hidden)]
     Ltn = 3770,
+    /// Tsotso
     #[doc(hidden)]
     Lto = 3771,
+    /// Tachoni
     #[doc(hidden)]
     Lts = 3772,
+    /// Latu
     #[doc(hidden)]
     Ltu = 3773,
+    /// Luxembourgish
     #[doc(hidden)]
     Ltz = 3774,
+    /// Luba-Lulua
     #[doc(hidden)]
     Lua = 3775,
+    /// Luba-Katanga
     #[doc(hidden)]
     Lub = 3776,
+    /// Aringa
     #[doc(hidden)]
     Luc = 3777,
+    /// Ludian
     #[doc(hidden)]
     Lud = 3778,
+    /// Luvale
     #[doc(hidden)]
     Lue = 3779,
+    /// Laua
     #[doc(hidden)]
     Luf = 3780,
+    /// Ganda
     #[doc(hidden)]
     Lug = 3781,
+    /// Luiseno
     #[doc(hidden)]
     Lui = 3782,
+    /// Luna
     #[doc(hidden)]
     Luj = 3783,
+    /// Lunanakha
     #[doc(hidden)]
     Luk = 3784,
+    /// Olu'bo
     #[doc(hidden)]
     Lul = 3785,
+    /// Luimbi
     #[doc(hidden)]
     Lum = 3786,
+    /// Lunda
     #[doc(hidden)]
     Lun = 3787,
+    /// Luo
     #[doc(hidden)]
     Luo = 3788,
+    /// Lumbu
     #[doc(hidden)]
     Lup = 3789,
+    /// Lucumi
     #[doc(hidden)]
     Luq = 3790,
+    /// Laura
     #[doc(hidden)]
     Lur = 3791,
+    /// Lushai
     #[doc(hidden)]
     Lus = 3792,
+    /// Lushootseed
     #[doc(hidden)]
     Lut = 3793,
+    /// Lumba-Yakkha
     #[doc(hidden)]
     Luu = 3794,
+    /// Luwati
     #[doc(hidden)]
     Luv = 3795,
+    /// Luo
     #[doc(hidden)]
     Luw = 3796,
+    /// Luyia
     #[doc(hidden)]
     Luy = 3797,
+    /// Southern Luri
     #[doc(hidden)]
     Luz = 3798,
+    /// Maku'a
     #[doc(hidden)]
     Lva = 3799,
+    /// Lavi
     #[doc(hidden)]
     Lvi = 3800,
+    /// Lavukaleve
     #[doc(hidden)]
     Lvk = 3801,
+    /// Lwel
     #[doc(hidden)]
     Lvl = 3802,
+    /// Standard Latvian
     #[doc(hidden)]
     Lvs = 3803,
+    /// Levuka
     #[doc(hidden)]
     Lvu = 3804,
+    /// Lwalu
     #[doc(hidden)]
     Lwa = 3805,
+    /// Lewo Eleng
     #[doc(hidden)]
     Lwe = 3806,
+    /// Wanga
     #[doc(hidden)]
     Lwg = 3807,
+    /// White Lachi
     #[doc(hidden)]
     Lwh = 3808,
+    /// Eastern Lawa
     #[doc(hidden)]
     Lwl = 3809,
+    /// Laomian
     #[doc(hidden)]
     Lwm = 3810,
+    /// Luwo
     #[doc(hidden)]
     Lwo = 3811,
+    /// Malawian Sign Language
     #[doc(hidden)]
     Lws = 3812,
+    /// Lewotobi
     #[doc(hidden)]
     Lwt = 3813,
+    /// Lawu
     #[doc(hidden)]
     Lwu = 3814,
+    /// Lewo
     #[doc(hidden)]
     Lww = 3815,
+    /// Lakurumau
     #[doc(hidden)]
     Lxm = 3816,
+    /// Layakha
     #[doc(hidden)]
     Lya = 3817,
+    /// Lyngngam
     #[doc(hidden)]
     Lyg = 3818,
+    /// Luyana
     #[doc(hidden)]
     Lyn = 3819,
+    /// Literary Chinese
     #[doc(hidden)]
     Lzh = 3820,
+    /// Litzlitz
     #[doc(hidden)]
     Lzl = 3821,
+    /// Leinong Naga
     #[doc(hidden)]
     Lzn = 3822,
+    /// Laz
     #[doc(hidden)]
     Lzz = 3823,
+    /// San Jerónimo Tecóatl Mazatec
     #[doc(hidden)]
     Maa = 3824,
+    /// Yutanduchi Mixtec
     #[doc(hidden)]
     Mab = 3825,
+    /// Madurese
     #[doc(hidden)]
     Mad = 3826,
+    /// Bo-Rukul
     #[doc(hidden)]
     Mae = 3827,
+    /// Mafa
     #[doc(hidden)]
     Maf = 3828,
+    /// Magahi
     #[doc(hidden)]
     Mag = 3829,
+    /// Marshallese
     #[doc(hidden)]
     Mah = 3830,
+    /// Maithili
     #[doc(hidden)]
     Mai = 3831,
+    /// Jalapa De Díaz Mazatec
     #[doc(hidden)]
     Maj = 3832,
+    /// Makasar
     #[doc(hidden)]
     Mak = 3833,
+    /// Malayalam
     #[doc(hidden)]
     Mal = 3834,
+    /// Mam
     #[doc(hidden)]
     Mam = 3835,
+    /// Mandingo
     #[doc(hidden)]
     Man = 3836,
+    /// Chiquihuitlán Mazatec
     #[doc(hidden)]
     Maq = 3837,
+    /// Marathi
     #[doc(hidden)]
     Mar = 3838,
+    /// Masai
     #[doc(hidden)]
     Mas = 3839,
+    /// San Francisco Matlatzinca
     #[doc(hidden)]
     Mat = 3840,
+    /// Huautla Mazatec
     #[doc(hidden)]
     Mau = 3841,
+    /// Sateré-Mawé
     #[doc(hidden)]
     Mav = 3842,
+    /// Mampruli
     #[doc(hidden)]
     Maw = 3843,
+    /// North Moluccan Malay
     #[doc(hidden)]
     Max = 3844,
+    /// Central Mazahua
     #[doc(hidden)]
     Maz = 3845,
+    /// Higaonon
     #[doc(hidden)]
     Mba = 3846,
+    /// Western Bukidnon Manobo
     #[doc(hidden)]
     Mbb = 3847,
+    /// Macushi
     #[doc(hidden)]
     Mbc = 3848,
+    /// Dibabawon Manobo
     #[doc(hidden)]
     Mbd = 3849,
+    /// Molale
     #[doc(hidden)]
     Mbe = 3850,
+    /// Baba Malay
     #[doc(hidden)]
     Mbf = 3851,
+    /// Mangseng
     #[doc(hidden)]
     Mbh = 3852,
+    /// Ilianen Manobo
     #[doc(hidden)]
     Mbi = 3853,
+    /// Nadëb
     #[doc(hidden)]
     Mbj = 3854,
+    /// Malol
     #[doc(hidden)]
     Mbk = 3855,
+    /// Maxakalí
     #[doc(hidden)]
     Mbl = 3856,
+    /// Ombamba
     #[doc(hidden)]
     Mbm = 3857,
+    /// Macaguán
     #[doc(hidden)]
     Mbn = 3858,
+    /// Mbo
     #[doc(hidden)]
     Mbo = 3859,
+    /// Malayo
     #[doc(hidden)]
     Mbp = 3860,
+    /// Maisin
     #[doc(hidden)]
     Mbq = 3861,
+    /// Nukak Makú
     #[doc(hidden)]
     Mbr = 3862,
+    /// Sarangani Manobo
     #[doc(hidden)]
     Mbs = 3863,
+    /// Matigsalug Manobo
     #[doc(hidden)]
     Mbt = 3864,
+    /// Mbula-Bwazza
     #[doc(hidden)]
     Mbu = 3865,
+    /// Mbulungish
     #[doc(hidden)]
     Mbv = 3866,
+    /// Maring
     #[doc(hidden)]
     Mbw = 3867,
+    /// Mari
     #[doc(hidden)]
     Mbx = 3868,
+    /// Memoni
     #[doc(hidden)]
     Mby = 3869,
+    /// Amoltepec Mixtec
     #[doc(hidden)]
     Mbz = 3870,
+    /// Maca
     #[doc(hidden)]
     Mca = 3871,
+    /// Machiguenga
     #[doc(hidden)]
     Mcb = 3872,
+    /// Bitur
     #[doc(hidden)]
     Mcc = 3873,
+    /// Sharanahua
     #[doc(hidden)]
     Mcd = 3874,
+    /// Itundujia Mixtec
     #[doc(hidden)]
     Mce = 3875,
+    /// Matsés
     #[doc(hidden)]
     Mcf = 3876,
+    /// Mapoyo
     #[doc(hidden)]
     Mcg = 3877,
+    /// Maquiritari
     #[doc(hidden)]
     Mch = 3878,
+    /// Mese
     #[doc(hidden)]
     Mci = 3879,
+    /// Mvanip
     #[doc(hidden)]
     Mcj = 3880,
+    /// Mbunda
     #[doc(hidden)]
     Mck = 3881,
+    /// Macaguaje
     #[doc(hidden)]
     Mcl = 3882,
+    /// Malaccan Creole Portuguese
     #[doc(hidden)]
     Mcm = 3883,
+    /// Masana
     #[doc(hidden)]
     Mcn = 3884,
+    /// Coatlán Mixe
     #[doc(hidden)]
     Mco = 3885,
+    /// Makaa
     #[doc(hidden)]
     Mcp = 3886,
+    /// Ese
     #[doc(hidden)]
     Mcq = 3887,
+    /// Menya
     #[doc(hidden)]
     Mcr = 3888,
+    /// Mambai
     #[doc(hidden)]
     Mcs = 3889,
+    /// Mengisa
     #[doc(hidden)]
     Mct = 3890,
+    /// Cameroon Mambila
     #[doc(hidden)]
     Mcu = 3891,
+    /// Minanibai
     #[doc(hidden)]
     Mcv = 3892,
+    /// Mawa
     #[doc(hidden)]
     Mcw = 3893,
+    /// Mpiemo
     #[doc(hidden)]
     Mcx = 3894,
+    /// South Watut
     #[doc(hidden)]
     Mcy = 3895,
+    /// Mawan
     #[doc(hidden)]
     Mcz = 3896,
+    /// Mada
     #[doc(hidden)]
     Mda = 3897,
+    /// Morigi
     #[doc(hidden)]
     Mdb = 3898,
+    /// Male
     #[doc(hidden)]
     Mdc = 3899,
+    /// Mbum
     #[doc(hidden)]
     Mdd = 3900,
+    /// Maba
     #[doc(hidden)]
     Mde = 3901,
+    /// Moksha
     #[doc(hidden)]
     Mdf = 3902,
+    /// Massalat
     #[doc(hidden)]
     Mdg = 3903,
+    /// Maguindanaon
     #[doc(hidden)]
     Mdh = 3904,
+    /// Mamvu
     #[doc(hidden)]
     Mdi = 3905,
+    /// Mangbetu
     #[doc(hidden)]
     Mdj = 3906,
+    /// Mangbutu
     #[doc(hidden)]
     Mdk = 3907,
+    /// Maltese Sign Language
     #[doc(hidden)]
     Mdl = 3908,
+    /// Mayogo
     #[doc(hidden)]
     Mdm = 3909,
+    /// Mbati
     #[doc(hidden)]
     Mdn = 3910,
+    /// Mbala
     #[doc(hidden)]
     Mdp = 3911,
+    /// Mbole
     #[doc(hidden)]
     Mdq = 3912,
+    /// Mandar
     #[doc(hidden)]
     Mdr = 3913,
+    /// Maria
     #[doc(hidden)]
     Mds = 3914,
+    /// Mbere
     #[doc(hidden)]
     Mdt = 3915,
+    /// Mboko
     #[doc(hidden)]
     Mdu = 3916,
+    /// Santa Lucía Monteverde Mixtec
     #[doc(hidden)]
     Mdv = 3917,
+    /// Mbosi
     #[doc(hidden)]
     Mdw = 3918,
+    /// Dizin
     #[doc(hidden)]
     Mdx = 3919,
+    /// Male
     #[doc(hidden)]
     Mdy = 3920,
+    /// Suruí Do Pará
     #[doc(hidden)]
     Mdz = 3921,
+    /// Menka
     #[doc(hidden)]
     Mea = 3922,
+    /// Ikobi
     #[doc(hidden)]
     Meb = 3923,
+    /// Marra
     #[doc(hidden)]
     Mec = 3924,
+    /// Melpa
     #[doc(hidden)]
     Med = 3925,
+    /// Mengen
     #[doc(hidden)]
     Mee = 3926,
+    /// Megam
     #[doc(hidden)]
     Mef = 3927,
+    /// Southwestern Tlaxiaco Mixtec
     #[doc(hidden)]
     Meh = 3928,
+    /// Midob
     #[doc(hidden)]
     Mei = 3929,
+    /// Meyah
     #[doc(hidden)]
     Mej = 3930,
+    /// Mekeo
     #[doc(hidden)]
     Mek = 3931,
+    /// Central Melanau
     #[doc(hidden)]
     Mel = 3932,
+    /// Mangala
     #[doc(hidden)]
     Mem = 3933,
+    /// Mende
     #[doc(hidden)]
     Men = 3934,
+    /// Kedah Malay
     #[doc(hidden)]
     Meo = 3935,
+    /// Miriwoong
     #[doc(hidden)]
     Mep = 3936,
+    /// Merey
     #[doc(hidden)]
     Meq = 3937,
+    /// Meru
     #[doc(hidden)]
     Mer = 3938,
+    /// Masmaje
     #[doc(hidden)]
     Mes = 3939,
+    /// Mato
     #[doc(hidden)]
     Met = 3940,
+    /// Motu
     #[doc(hidden)]
     Meu = 3941,
+    /// Mano
     #[doc(hidden)]
     Mev = 3942,
+    /// Maaka
     #[doc(hidden)]
     Mew = 3943,
+    /// Hassaniyya
     #[doc(hidden)]
     Mey = 3944,
+    /// Menominee
     #[doc(hidden)]
     Mez = 3945,
+    /// Pattani Malay
     #[doc(hidden)]
     Mfa = 3946,
+    /// Bangka
     #[doc(hidden)]
     Mfb = 3947,
+    /// Mba
     #[doc(hidden)]
     Mfc = 3948,
+    /// Mendankwe-Nkwen
     #[doc(hidden)]
     Mfd = 3949,
+    /// Morisyen
     #[doc(hidden)]
     Mfe = 3950,
+    /// Naki
     #[doc(hidden)]
     Mff = 3951,
+    /// Mogofin
     #[doc(hidden)]
     Mfg = 3952,
+    /// Matal
     #[doc(hidden)]
     Mfh = 3953,
+    /// Wandala
     #[doc(hidden)]
     Mfi = 3954,
+    /// Mefele
     #[doc(hidden)]
     Mfj = 3955,
+    /// North Mofu
     #[doc(hidden)]
     Mfk = 3956,
+    /// Putai
     #[doc(hidden)]
     Mfl = 3957,
+    /// Marghi South
     #[doc(hidden)]
     Mfm = 3958,
+    /// Cross River Mbembe
     #[doc(hidden)]
     Mfn = 3959,
+    /// Mbe
     #[doc(hidden)]
     Mfo = 3960,
+    /// Makassar Malay
     #[doc(hidden)]
     Mfp = 3961,
+    /// Moba
     #[doc(hidden)]
     Mfq = 3962,
+    /// Marrithiyel
     #[doc(hidden)]
     Mfr = 3963,
+    /// Mexican Sign Language
     #[doc(hidden)]
     Mfs = 3964,
+    /// Mokerang
     #[doc(hidden)]
     Mft = 3965,
+    /// Mbwela
     #[doc(hidden)]
     Mfu = 3966,
+    /// Mandjak
     #[doc(hidden)]
     Mfv = 3967,
+    /// Mulaha
     #[doc(hidden)]
     Mfw = 3968,
+    /// Melo
     #[doc(hidden)]
     Mfx = 3969,
+    /// Mayo
     #[doc(hidden)]
     Mfy = 3970,
+    /// Mabaan
     #[doc(hidden)]
     Mfz = 3971,
+    /// Middle Irish
     #[doc(hidden)]
     Mga = 3972,
+    /// Mararit
     #[doc(hidden)]
     Mgb = 3973,
+    /// Morokodo
     #[doc(hidden)]
     Mgc = 3974,
+    /// Moru
     #[doc(hidden)]
     Mgd = 3975,
+    /// Mango
     #[doc(hidden)]
     Mge = 3976,
+    /// Maklew
     #[doc(hidden)]
     Mgf = 3977,
+    /// Mpumpong
     #[doc(hidden)]
     Mgg = 3978,
+    /// Makhuwa-Meetto
     #[doc(hidden)]
     Mgh = 3979,
+    /// Lijili
     #[doc(hidden)]
     Mgi = 3980,
+    /// Abureni
     #[doc(hidden)]
     Mgj = 3981,
+    /// Mawes
     #[doc(hidden)]
     Mgk = 3982,
+    /// Maleu-Kilenge
     #[doc(hidden)]
     Mgl = 3983,
+    /// Mambae
     #[doc(hidden)]
     Mgm = 3984,
+    /// Mbangi
     #[doc(hidden)]
     Mgn = 3985,
+    /// Meta'
     #[doc(hidden)]
     Mgo = 3986,
+    /// Eastern Magar
     #[doc(hidden)]
     Mgp = 3987,
+    /// Malila
     #[doc(hidden)]
     Mgq = 3988,
+    /// Mambwe-Lungu
     #[doc(hidden)]
     Mgr = 3989,
+    /// Manda
     #[doc(hidden)]
     Mgs = 3990,
+    /// Mongol
     #[doc(hidden)]
     Mgt = 3991,
+    /// Mailu
     #[doc(hidden)]
     Mgu = 3992,
+    /// Matengo
     #[doc(hidden)]
     Mgv = 3993,
+    /// Matumbi
     #[doc(hidden)]
     Mgw = 3994,
+    /// Mbunga
     #[doc(hidden)]
     Mgy = 3995,
+    /// Mbugwe
     #[doc(hidden)]
     Mgz = 3996,
+    /// Manda
     #[doc(hidden)]
     Mha = 3997,
+    /// Mahongwe
     #[doc(hidden)]
     Mhb = 3998,
+    /// Mocho
     #[doc(hidden)]
     Mhc = 3999,
+    /// Mbugu
     #[doc(hidden)]
     Mhd = 4000,
+    /// Besisi
     #[doc(hidden)]
     Mhe = 4001,
+    /// Mamaa
     #[doc(hidden)]
     Mhf = 4002,
+    /// Margu
     #[doc(hidden)]
     Mhg = 4003,
+    /// Ma'di
     #[doc(hidden)]
     Mhi = 4004,
+    /// Mogholi
     #[doc(hidden)]
     Mhj = 4005,
+    /// Mungaka
     #[doc(hidden)]
     Mhk = 4006,
+    /// Mauwake
     #[doc(hidden)]
     Mhl = 4007,
+    /// Makhuwa-Moniga
     #[doc(hidden)]
     Mhm = 4008,
+    /// Mócheno
     #[doc(hidden)]
     Mhn = 4009,
+    /// Mashi
     #[doc(hidden)]
     Mho = 4010,
+    /// Balinese Malay
     #[doc(hidden)]
     Mhp = 4011,
+    /// Mandan
     #[doc(hidden)]
     Mhq = 4012,
+    /// Eastern Mari
     #[doc(hidden)]
     Mhr = 4013,
+    /// Buru
     #[doc(hidden)]
     Mhs = 4014,
+    /// Mandahuaca
     #[doc(hidden)]
     Mht = 4015,
+    /// Digaro-Mishmi
     #[doc(hidden)]
     Mhu = 4016,
+    /// Mbukushu
     #[doc(hidden)]
     Mhw = 4017,
+    /// Maru
     #[doc(hidden)]
     Mhx = 4018,
+    /// Ma'anyan
     #[doc(hidden)]
     Mhy = 4019,
+    /// Mor
     #[doc(hidden)]
     Mhz = 4020,
+    /// Miami
     #[doc(hidden)]
     Mia = 4021,
+    /// Atatláhuca Mixtec
     #[doc(hidden)]
     Mib = 4022,
+    /// Mi'kmaq
     #[doc(hidden)]
     Mic = 4023,
+    /// Mandaic
     #[doc(hidden)]
     Mid = 4024,
+    /// Ocotepec Mixtec
     #[doc(hidden)]
     Mie = 4025,
+    /// Mofu-Gudur
     #[doc(hidden)]
     Mif = 4026,
+    /// San Miguel El Grande Mixtec
     #[doc(hidden)]
     Mig = 4027,
+    /// Chayuco Mixtec
     #[doc(hidden)]
     Mih = 4028,
+    /// Chigmecatitlán Mixtec
     #[doc(hidden)]
     Mii = 4029,
+    /// Abar
     #[doc(hidden)]
     Mij = 4030,
+    /// Mikasuki
     #[doc(hidden)]
     Mik = 4031,
+    /// Peñoles Mixtec
     #[doc(hidden)]
     Mil = 4032,
+    /// Alacatlatzala Mixtec
     #[doc(hidden)]
     Mim = 4033,
+    /// Minangkabau
     #[doc(hidden)]
     Min = 4034,
+    /// Pinotepa Nacional Mixtec
     #[doc(hidden)]
     Mio = 4035,
+    /// Apasco-Apoala Mixtec
     #[doc(hidden)]
     Mip = 4036,
+    /// Mískito
     #[doc(hidden)]
     Miq = 4037,
+    /// Isthmus Mixe
     #[doc(hidden)]
     Mir = 4038,
+    /// Uncoded languages
     #[doc(hidden)]
     Mis = 4039,
+    /// Southern Puebla Mixtec
     #[doc(hidden)]
     Mit = 4040,
+    /// Cacaloxtepec Mixtec
     #[doc(hidden)]
     Miu = 4041,
+    /// Akoye
     #[doc(hidden)]
     Miw = 4042,
+    /// Mixtepec Mixtec
     #[doc(hidden)]
     Mix = 4043,
+    /// Ayutla Mixtec
     #[doc(hidden)]
     Miy = 4044,
+    /// Coatzospan Mixtec
     #[doc(hidden)]
     Miz = 4045,
+    /// Makalero
     #[doc(hidden)]
     Mjb = 4046,
+    /// San Juan Colorado Mixtec
     #[doc(hidden)]
     Mjc = 4047,
+    /// Northwest Maidu
     #[doc(hidden)]
     Mjd = 4048,
+    /// Muskum
     #[doc(hidden)]
     Mje = 4049,
+    /// Tu
     #[doc(hidden)]
     Mjg = 4050,
+    /// Mwera
     #[doc(hidden)]
     Mjh = 4051,
+    /// Kim Mun
     #[doc(hidden)]
     Mji = 4052,
+    /// Mawak
     #[doc(hidden)]
     Mjj = 4053,
+    /// Matukar
     #[doc(hidden)]
     Mjk = 4054,
+    /// Mandeali
     #[doc(hidden)]
     Mjl = 4055,
+    /// Medebur
     #[doc(hidden)]
     Mjm = 4056,
+    /// Ma
     #[doc(hidden)]
     Mjn = 4057,
+    /// Malankuravan
     #[doc(hidden)]
     Mjo = 4058,
+    /// Malapandaram
     #[doc(hidden)]
     Mjp = 4059,
+    /// Malaryan
     #[doc(hidden)]
     Mjq = 4060,
+    /// Malavedan
     #[doc(hidden)]
     Mjr = 4061,
+    /// Miship
     #[doc(hidden)]
     Mjs = 4062,
+    /// Sauria Paharia
     #[doc(hidden)]
     Mjt = 4063,
+    /// Manna-Dora
     #[doc(hidden)]
     Mju = 4064,
+    /// Mannan
     #[doc(hidden)]
     Mjv = 4065,
+    /// Karbi
     #[doc(hidden)]
     Mjw = 4066,
+    /// Mahali
     #[doc(hidden)]
     Mjx = 4067,
+    /// Mahican
     #[doc(hidden)]
     Mjy = 4068,
+    /// Majhi
     #[doc(hidden)]
     Mjz = 4069,
+    /// Mbre
     #[doc(hidden)]
     Mka = 4070,
+    /// Mal Paharia
     #[doc(hidden)]
     Mkb = 4071,
+    /// Siliput
     #[doc(hidden)]
     Mkc = 4072,
+    /// Macedonian
     #[doc(hidden)]
     Mkd = 4073,
+    /// Mawchi
     #[doc(hidden)]
     Mke = 4074,
+    /// Miya
     #[doc(hidden)]
     Mkf = 4075,
+    /// Mak
     #[doc(hidden)]
     Mkg = 4076,
+    /// Dhatki
     #[doc(hidden)]
     Mki = 4077,
+    /// Mokilese
     #[doc(hidden)]
     Mkj = 4078,
+    /// Byep
     #[doc(hidden)]
     Mkk = 4079,
+    /// Mokole
     #[doc(hidden)]
     Mkl = 4080,
+    /// Moklen
     #[doc(hidden)]
     Mkm = 4081,
+    /// Kupang Malay
     #[doc(hidden)]
     Mkn = 4082,
+    /// Mingang Doso
     #[doc(hidden)]
     Mko = 4083,
+    /// Moikodi
     #[doc(hidden)]
     Mkp = 4084,
+    /// Bay Miwok
     #[doc(hidden)]
     Mkq = 4085,
+    /// Malas
     #[doc(hidden)]
     Mkr = 4086,
+    /// Silacayoapan Mixtec
     #[doc(hidden)]
     Mks = 4087,
+    /// Vamale
     #[doc(hidden)]
     Mkt = 4088,
+    /// Konyanka Maninka
     #[doc(hidden)]
     Mku = 4089,
+    /// Mafea
     #[doc(hidden)]
     Mkv = 4090,
+    /// Kituba
     #[doc(hidden)]
     Mkw = 4091,
+    /// Kinamiging Manobo
     #[doc(hidden)]
     Mkx = 4092,
+    /// East Makian
     #[doc(hidden)]
     Mky = 4093,
+    /// Makasae
     #[doc(hidden)]
     Mkz = 4094,
+    /// Malo
     #[doc(hidden)]
     Mla = 4095,
+    /// Mbule
     #[doc(hidden)]
     Mlb = 4096,
+    /// Cao Lan
     #[doc(hidden)]
     Mlc = 4097,
+    /// Manambu
     #[doc(hidden)]
     Mle = 4098,
+    /// Mal
     #[doc(hidden)]
     Mlf = 4099,
+    /// Malagasy
     #[doc(hidden)]
     Mlg = 4100,
+    /// Mape
     #[doc(hidden)]
     Mlh = 4101,
+    /// Malimpung
     #[doc(hidden)]
     Mli = 4102,
+    /// Miltu
     #[doc(hidden)]
     Mlj = 4103,
+    /// Ilwana
     #[doc(hidden)]
     Mlk = 4104,
+    /// Malua Bay
     #[doc(hidden)]
     Mll = 4105,
+    /// Mulam
     #[doc(hidden)]
     Mlm = 4106,
+    /// Malango
     #[doc(hidden)]
     Mln = 4107,
+    /// Mlomp
     #[doc(hidden)]
     Mlo = 4108,
+    /// Bargam
     #[doc(hidden)]
     Mlp = 4109,
+    /// Western Maninkakan
     #[doc(hidden)]
     Mlq = 4110,
+    /// Vame
     #[doc(hidden)]
     Mlr = 4111,
+    /// Masalit
     #[doc(hidden)]
     Mls = 4112,
+    /// Maltese
     #[doc(hidden)]
     Mlt = 4113,
+    /// To'abaita
     #[doc(hidden)]
     Mlu = 4114,
+    /// Motlav
     #[doc(hidden)]
     Mlv = 4115,
+    /// Moloko
     #[doc(hidden)]
     Mlw = 4116,
+    /// Malfaxal
     #[doc(hidden)]
     Mlx = 4117,
+    /// Malaynon
     #[doc(hidden)]
     Mlz = 4118,
+    /// Mama
     #[doc(hidden)]
     Mma = 4119,
+    /// Momina
     #[doc(hidden)]
     Mmb = 4120,
+    /// Michoacán Mazahua
     #[doc(hidden)]
     Mmc = 4121,
+    /// Maonan
     #[doc(hidden)]
     Mmd = 4122,
+    /// Mae
     #[doc(hidden)]
     Mme = 4123,
+    /// Mundat
     #[doc(hidden)]
     Mmf = 4124,
+    /// North Ambrym
     #[doc(hidden)]
     Mmg = 4125,
+    /// Mehináku
     #[doc(hidden)]
     Mmh = 4126,
+    /// Musar
     #[doc(hidden)]
     Mmi = 4127,
+    /// Majhwar
     #[doc(hidden)]
     Mmj = 4128,
+    /// Mukha-Dora
     #[doc(hidden)]
     Mmk = 4129,
+    /// Man Met
     #[doc(hidden)]
     Mml = 4130,
+    /// Maii
     #[doc(hidden)]
     Mmm = 4131,
+    /// Mamanwa
     #[doc(hidden)]
     Mmn = 4132,
+    /// Mangga Buang
     #[doc(hidden)]
     Mmo = 4133,
+    /// Siawi
     #[doc(hidden)]
     Mmp = 4134,
+    /// Musak
     #[doc(hidden)]
     Mmq = 4135,
+    /// Western Xiangxi Miao
     #[doc(hidden)]
     Mmr = 4136,
+    /// Malalamai
     #[doc(hidden)]
     Mmt = 4137,
+    /// Mmaala
     #[doc(hidden)]
     Mmu = 4138,
+    /// Miriti
     #[doc(hidden)]
     Mmv = 4139,
+    /// Emae
     #[doc(hidden)]
     Mmw = 4140,
+    /// Madak
     #[doc(hidden)]
     Mmx = 4141,
+    /// Migaama
     #[doc(hidden)]
     Mmy = 4142,
+    /// Mabaale
     #[doc(hidden)]
     Mmz = 4143,
+    /// Mbula
     #[doc(hidden)]
     Mna = 4144,
+    /// Muna
     #[doc(hidden)]
     Mnb = 4145,
+    /// Manchu
     #[doc(hidden)]
     Mnc = 4146,
+    /// Mondé
     #[doc(hidden)]
     Mnd = 4147,
+    /// Naba
     #[doc(hidden)]
     Mne = 4148,
+    /// Mundani
     #[doc(hidden)]
     Mnf = 4149,
+    /// Eastern Mnong
     #[doc(hidden)]
     Mng = 4150,
+    /// Mono
     #[doc(hidden)]
     Mnh = 4151,
+    /// Manipuri
     #[doc(hidden)]
     Mni = 4152,
+    /// Munji
     #[doc(hidden)]
     Mnj = 4153,
+    /// Mandinka
     #[doc(hidden)]
     Mnk = 4154,
+    /// Tiale
     #[doc(hidden)]
     Mnl = 4155,
+    /// Mapena
     #[doc(hidden)]
     Mnm = 4156,
+    /// Southern Mnong
     #[doc(hidden)]
     Mnn = 4157,
+    /// Min Bei Chinese
     #[doc(hidden)]
     Mnp = 4158,
+    /// Minriq
     #[doc(hidden)]
     Mnq = 4159,
+    /// Mono
     #[doc(hidden)]
     Mnr = 4160,
+    /// Mansi
     #[doc(hidden)]
     Mns = 4161,
+    /// Mer
     #[doc(hidden)]
     Mnu = 4162,
+    /// Rennell-Bellona
     #[doc(hidden)]
     Mnv = 4163,
+    /// Mon
     #[doc(hidden)]
     Mnw = 4164,
+    /// Manikion
     #[doc(hidden)]
     Mnx = 4165,
+    /// Manyawa
     #[doc(hidden)]
     Mny = 4166,
+    /// Moni
     #[doc(hidden)]
     Mnz = 4167,
+    /// Mwan
     #[doc(hidden)]
     Moa = 4168,
+    /// Mocoví
     #[doc(hidden)]
     Moc = 4169,
+    /// Mobilian
     #[doc(hidden)]
     Mod = 4170,
+    /// Innu
     #[doc(hidden)]
     Moe = 4171,
+    /// Mongondow
     #[doc(hidden)]
     Mog = 4172,
+    /// Mohawk
     #[doc(hidden)]
     Moh = 4173,
+    /// Mboi
     #[doc(hidden)]
     Moi = 4174,
+    /// Monzombo
     #[doc(hidden)]
     Moj = 4175,
+    /// Morori
     #[doc(hidden)]
     Mok = 4176,
+    /// Mangue
     #[doc(hidden)]
     Mom = 4177,
+    /// Mongolian
     #[doc(hidden)]
     Mon = 4178,
+    /// Monom
     #[doc(hidden)]
     Moo = 4179,
+    /// Mopán Maya
     #[doc(hidden)]
     Mop = 4180,
+    /// Mor
     #[doc(hidden)]
     Moq = 4181,
+    /// Moro
     #[doc(hidden)]
     Mor = 4182,
+    /// Mossi
     #[doc(hidden)]
     Mos = 4183,
+    /// Barí
     #[doc(hidden)]
     Mot = 4184,
+    /// Mogum
     #[doc(hidden)]
     Mou = 4185,
+    /// Mohave
     #[doc(hidden)]
     Mov = 4186,
+    /// Moi
     #[doc(hidden)]
     Mow = 4187,
+    /// Molima
     #[doc(hidden)]
     Mox = 4188,
+    /// Shekkacho
     #[doc(hidden)]
     Moy = 4189,
+    /// Mukulu
     #[doc(hidden)]
     Moz = 4190,
+    /// Mpoto
     #[doc(hidden)]
     Mpa = 4191,
+    /// Malak Malak
     #[doc(hidden)]
     Mpb = 4192,
+    /// Mangarrayi
     #[doc(hidden)]
     Mpc = 4193,
+    /// Machinere
     #[doc(hidden)]
     Mpd = 4194,
+    /// Majang
     #[doc(hidden)]
     Mpe = 4195,
+    /// Marba
     #[doc(hidden)]
     Mpg = 4196,
+    /// Maung
     #[doc(hidden)]
     Mph = 4197,
+    /// Mpade
     #[doc(hidden)]
     Mpi = 4198,
+    /// Martu Wangka
     #[doc(hidden)]
     Mpj = 4199,
+    /// Mbara
     #[doc(hidden)]
     Mpk = 4200,
+    /// Middle Watut
     #[doc(hidden)]
     Mpl = 4201,
+    /// Yosondúa Mixtec
     #[doc(hidden)]
     Mpm = 4202,
+    /// Mindiri
     #[doc(hidden)]
     Mpn = 4203,
+    /// Miu
     #[doc(hidden)]
     Mpo = 4204,
+    /// Migabac
     #[doc(hidden)]
     Mpp = 4205,
+    /// Matís
     #[doc(hidden)]
     Mpq = 4206,
+    /// Vangunu
     #[doc(hidden)]
     Mpr = 4207,
+    /// Dadibi
     #[doc(hidden)]
     Mps = 4208,
+    /// Mian
     #[doc(hidden)]
     Mpt = 4209,
+    /// Makuráp
     #[doc(hidden)]
     Mpu = 4210,
+    /// Mungkip
     #[doc(hidden)]
     Mpv = 4211,
+    /// Mapidian
     #[doc(hidden)]
     Mpw = 4212,
+    /// Misima-Panaeati
     #[doc(hidden)]
     Mpx = 4213,
+    /// Mapia
     #[doc(hidden)]
     Mpy = 4214,
+    /// Mpi
     #[doc(hidden)]
     Mpz = 4215,
+    /// Maba
     #[doc(hidden)]
     Mqa = 4216,
+    /// Mbuko
     #[doc(hidden)]
     Mqb = 4217,
+    /// Mangole
     #[doc(hidden)]
     Mqc = 4218,
+    /// Matepi
     #[doc(hidden)]
     Mqe = 4219,
+    /// Momuna
     #[doc(hidden)]
     Mqf = 4220,
+    /// Kota Bangun Kutai Malay
     #[doc(hidden)]
     Mqg = 4221,
+    /// Tlazoyaltepec Mixtec
     #[doc(hidden)]
     Mqh = 4222,
+    /// Mariri
     #[doc(hidden)]
     Mqi = 4223,
+    /// Mamasa
     #[doc(hidden)]
     Mqj = 4224,
+    /// Rajah Kabunsuwan Manobo
     #[doc(hidden)]
     Mqk = 4225,
+    /// Mbelime
     #[doc(hidden)]
     Mql = 4226,
+    /// South Marquesan
     #[doc(hidden)]
     Mqm = 4227,
+    /// Moronene
     #[doc(hidden)]
     Mqn = 4228,
+    /// Modole
     #[doc(hidden)]
     Mqo = 4229,
+    /// Manipa
     #[doc(hidden)]
     Mqp = 4230,
+    /// Minokok
     #[doc(hidden)]
     Mqq = 4231,
+    /// Mander
     #[doc(hidden)]
     Mqr = 4232,
+    /// West Makian
     #[doc(hidden)]
     Mqs = 4233,
+    /// Mok
     #[doc(hidden)]
     Mqt = 4234,
+    /// Mandari
     #[doc(hidden)]
     Mqu = 4235,
+    /// Mosimo
     #[doc(hidden)]
     Mqv = 4236,
+    /// Murupi
     #[doc(hidden)]
     Mqw = 4237,
+    /// Mamuju
     #[doc(hidden)]
     Mqx = 4238,
+    /// Manggarai
     #[doc(hidden)]
     Mqy = 4239,
+    /// Pano
     #[doc(hidden)]
     Mqz = 4240,
+    /// Mlabri
     #[doc(hidden)]
     Mra = 4241,
+    /// Marino
     #[doc(hidden)]
     Mrb = 4242,
+    /// Maricopa
     #[doc(hidden)]
     Mrc = 4243,
+    /// Western Magar
     #[doc(hidden)]
     Mrd = 4244,
+    /// Martha's Vineyard Sign Language
     #[doc(hidden)]
     Mre = 4245,
+    /// Elseng
     #[doc(hidden)]
     Mrf = 4246,
+    /// Mising
     #[doc(hidden)]
     Mrg = 4247,
+    /// Mara Chin
     #[doc(hidden)]
     Mrh = 4248,
+    /// Maori
     #[doc(hidden)]
     Mri = 4249,
+    /// Western Mari
     #[doc(hidden)]
     Mrj = 4250,
+    /// Hmwaveke
     #[doc(hidden)]
     Mrk = 4251,
+    /// Mortlockese
     #[doc(hidden)]
     Mrl = 4252,
+    /// Merlav
     #[doc(hidden)]
     Mrm = 4253,
+    /// Cheke Holo
     #[doc(hidden)]
     Mrn = 4254,
+    /// Mru
     #[doc(hidden)]
     Mro = 4255,
+    /// Morouas
     #[doc(hidden)]
     Mrp = 4256,
+    /// North Marquesan
     #[doc(hidden)]
     Mrq = 4257,
+    /// Maria
     #[doc(hidden)]
     Mrr = 4258,
+    /// Maragus
     #[doc(hidden)]
     Mrs = 4259,
+    /// Marghi Central
     #[doc(hidden)]
     Mrt = 4260,
+    /// Mono
     #[doc(hidden)]
     Mru = 4261,
+    /// Mangareva
     #[doc(hidden)]
     Mrv = 4262,
+    /// Maranao
     #[doc(hidden)]
     Mrw = 4263,
+    /// Maremgi
     #[doc(hidden)]
     Mrx = 4264,
+    /// Mandaya
     #[doc(hidden)]
     Mry = 4265,
+    /// Marind
     #[doc(hidden)]
     Mrz = 4266,
+    /// Malay
     #[doc(hidden)]
     Msa = 4267,
+    /// Masbatenyo
     #[doc(hidden)]
     Msb = 4268,
+    /// Sankaran Maninka
     #[doc(hidden)]
     Msc = 4269,
+    /// Yucatec Maya Sign Language
     #[doc(hidden)]
     Msd = 4270,
+    /// Musey
     #[doc(hidden)]
     Mse = 4271,
+    /// Mekwei
     #[doc(hidden)]
     Msf = 4272,
+    /// Moraid
     #[doc(hidden)]
     Msg = 4273,
+    /// Masikoro Malagasy
     #[doc(hidden)]
     Msh = 4274,
+    /// Sabah Malay
     #[doc(hidden)]
     Msi = 4275,
+    /// Ma
     #[doc(hidden)]
     Msj = 4276,
+    /// Mansaka
     #[doc(hidden)]
     Msk = 4277,
+    /// Molof
     #[doc(hidden)]
     Msl = 4278,
+    /// Agusan Manobo
     #[doc(hidden)]
     Msm = 4279,
+    /// Vurës
     #[doc(hidden)]
     Msn = 4280,
+    /// Mombum
     #[doc(hidden)]
     Mso = 4281,
+    /// Maritsauá
     #[doc(hidden)]
     Msp = 4282,
+    /// Caac
     #[doc(hidden)]
     Msq = 4283,
+    /// Mongolian Sign Language
     #[doc(hidden)]
     Msr = 4284,
+    /// West Masela
     #[doc(hidden)]
     Mss = 4285,
+    /// Musom
     #[doc(hidden)]
     Msu = 4286,
+    /// Maslam
     #[doc(hidden)]
     Msv = 4287,
+    /// Mansoanka
     #[doc(hidden)]
     Msw = 4288,
+    /// Moresada
     #[doc(hidden)]
     Msx = 4289,
+    /// Aruamu
     #[doc(hidden)]
     Msy = 4290,
+    /// Momare
     #[doc(hidden)]
     Msz = 4291,
+    /// Cotabato Manobo
     #[doc(hidden)]
     Mta = 4292,
+    /// Anyin Morofo
     #[doc(hidden)]
     Mtb = 4293,
+    /// Munit
     #[doc(hidden)]
     Mtc = 4294,
+    /// Mualang
     #[doc(hidden)]
     Mtd = 4295,
+    /// Mono
     #[doc(hidden)]
     Mte = 4296,
+    /// Murik
     #[doc(hidden)]
     Mtf = 4297,
+    /// Una
     #[doc(hidden)]
     Mtg = 4298,
+    /// Munggui
     #[doc(hidden)]
     Mth = 4299,
+    /// Maiwa
     #[doc(hidden)]
     Mti = 4300,
+    /// Moskona
     #[doc(hidden)]
     Mtj = 4301,
+    /// Mbe'
     #[doc(hidden)]
     Mtk = 4302,
+    /// Montol
     #[doc(hidden)]
     Mtl = 4303,
+    /// Mator
     #[doc(hidden)]
     Mtm = 4304,
+    /// Matagalpa
     #[doc(hidden)]
     Mtn = 4305,
+    /// Totontepec Mixe
     #[doc(hidden)]
     Mto = 4306,
+    /// Wichí Lhamtés Nocten
     #[doc(hidden)]
     Mtp = 4307,
+    /// Muong
     #[doc(hidden)]
     Mtq = 4308,
+    /// Mewari
     #[doc(hidden)]
     Mtr = 4309,
+    /// Yora
     #[doc(hidden)]
     Mts = 4310,
+    /// Mota
     #[doc(hidden)]
     Mtt = 4311,
+    /// Tututepec Mixtec
     #[doc(hidden)]
     Mtu = 4312,
+    /// Asaro'o
     #[doc(hidden)]
     Mtv = 4313,
+    /// Southern Binukidnon
     #[doc(hidden)]
     Mtw = 4314,
+    /// Tidaá Mixtec
     #[doc(hidden)]
     Mtx = 4315,
+    /// Nabi
     #[doc(hidden)]
     Mty = 4316,
+    /// Mundang
     #[doc(hidden)]
     Mua = 4317,
+    /// Mubi
     #[doc(hidden)]
     Mub = 4318,
+    /// Ajumbu
     #[doc(hidden)]
     Muc = 4319,
+    /// Mednyj Aleut
     #[doc(hidden)]
     Mud = 4320,
+    /// Media Lengua
     #[doc(hidden)]
     Mue = 4321,
+    /// Musgu
     #[doc(hidden)]
     Mug = 4322,
+    /// Mündü
     #[doc(hidden)]
     Muh = 4323,
+    /// Musi
     #[doc(hidden)]
     Mui = 4324,
+    /// Mabire
     #[doc(hidden)]
     Muj = 4325,
+    /// Mugom
     #[doc(hidden)]
     Muk = 4326,
+    /// Multiple languages
     #[doc(hidden)]
     Mul = 4327,
+    /// Maiwala
     #[doc(hidden)]
     Mum = 4328,
+    /// Nyong
     #[doc(hidden)]
     Muo = 4329,
+    /// Malvi
     #[doc(hidden)]
     Mup = 4330,
+    /// Eastern Xiangxi Miao
     #[doc(hidden)]
     Muq = 4331,
+    /// Murle
     #[doc(hidden)]
     Mur = 4332,
+    /// Creek
     #[doc(hidden)]
     Mus = 4333,
+    /// Western Muria
     #[doc(hidden)]
     Mut = 4334,
+    /// Yaaku
     #[doc(hidden)]
     Muu = 4335,
+    /// Muthuvan
     #[doc(hidden)]
     Muv = 4336,
+    /// Bo-Ung
     #[doc(hidden)]
     Mux = 4337,
+    /// Muyang
     #[doc(hidden)]
     Muy = 4338,
+    /// Mursi
     #[doc(hidden)]
     Muz = 4339,
+    /// Manam
     #[doc(hidden)]
     Mva = 4340,
+    /// Mattole
     #[doc(hidden)]
     Mvb = 4341,
+    /// Mamboru
     #[doc(hidden)]
     Mvd = 4342,
+    /// Marwari
     #[doc(hidden)]
     Mve = 4343,
+    /// Peripheral Mongolian
     #[doc(hidden)]
     Mvf = 4344,
+    /// Yucuañe Mixtec
     #[doc(hidden)]
     Mvg = 4345,
+    /// Mulgi
     #[doc(hidden)]
     Mvh = 4346,
+    /// Miyako
     #[doc(hidden)]
     Mvi = 4347,
+    /// Mekmek
     #[doc(hidden)]
     Mvk = 4348,
+    /// Mbara
     #[doc(hidden)]
     Mvl = 4349,
+    /// Minaveha
     #[doc(hidden)]
     Mvn = 4350,
+    /// Marovo
     #[doc(hidden)]
     Mvo = 4351,
+    /// Duri
     #[doc(hidden)]
     Mvp = 4352,
+    /// Moere
     #[doc(hidden)]
     Mvq = 4353,
+    /// Marau
     #[doc(hidden)]
     Mvr = 4354,
+    /// Massep
     #[doc(hidden)]
     Mvs = 4355,
+    /// Mpotovoro
     #[doc(hidden)]
     Mvt = 4356,
+    /// Marfa
     #[doc(hidden)]
     Mvu = 4357,
+    /// Tagal Murut
     #[doc(hidden)]
     Mvv = 4358,
+    /// Machinga
     #[doc(hidden)]
     Mvw = 4359,
+    /// Meoswar
     #[doc(hidden)]
     Mvx = 4360,
+    /// Indus Kohistani
     #[doc(hidden)]
     Mvy = 4361,
+    /// Mesqan
     #[doc(hidden)]
     Mvz = 4362,
+    /// Mwatebu
     #[doc(hidden)]
     Mwa = 4363,
+    /// Juwal
     #[doc(hidden)]
     Mwb = 4364,
+    /// Are
     #[doc(hidden)]
     Mwc = 4365,
+    /// Mwera
     #[doc(hidden)]
     Mwe = 4366,
+    /// Murrinh-Patha
     #[doc(hidden)]
     Mwf = 4367,
+    /// Aiklep
     #[doc(hidden)]
     Mwg = 4368,
+    /// Mouk-Aria
     #[doc(hidden)]
     Mwh = 4369,
+    /// Labo
     #[doc(hidden)]
     Mwi = 4370,
+    /// Kita Maninkakan
     #[doc(hidden)]
     Mwk = 4371,
+    /// Mirandese
     #[doc(hidden)]
     Mwl = 4372,
+    /// Sar
     #[doc(hidden)]
     Mwm = 4373,
+    /// Nyamwanga
     #[doc(hidden)]
     Mwn = 4374,
+    /// Central Maewo
     #[doc(hidden)]
     Mwo = 4375,
+    /// Kala Lagaw Ya
     #[doc(hidden)]
     Mwp = 4376,
+    /// Mün Chin
     #[doc(hidden)]
     Mwq = 4377,
+    /// Marwari
     #[doc(hidden)]
     Mwr = 4378,
+    /// Mwimbi-Muthambi
     #[doc(hidden)]
     Mws = 4379,
+    /// Moken
     #[doc(hidden)]
     Mwt = 4380,
+    /// Mittu
     #[doc(hidden)]
     Mwu = 4381,
+    /// Mentawai
     #[doc(hidden)]
     Mwv = 4382,
+    /// Hmong Daw
     #[doc(hidden)]
     Mww = 4383,
+    /// Moingi
     #[doc(hidden)]
     Mwz = 4384,
+    /// Northwest Oaxaca Mixtec
     #[doc(hidden)]
     Mxa = 4385,
+    /// Tezoatlán Mixtec
     #[doc(hidden)]
     Mxb = 4386,
+    /// Manyika
     #[doc(hidden)]
     Mxc = 4387,
+    /// Modang
     #[doc(hidden)]
     Mxd = 4388,
+    /// Mele-Fila
     #[doc(hidden)]
     Mxe = 4389,
+    /// Malgbe
     #[doc(hidden)]
     Mxf = 4390,
+    /// Mbangala
     #[doc(hidden)]
     Mxg = 4391,
+    /// Mvuba
     #[doc(hidden)]
     Mxh = 4392,
+    /// Mozarabic
     #[doc(hidden)]
     Mxi = 4393,
+    /// Miju-Mishmi
     #[doc(hidden)]
     Mxj = 4394,
+    /// Monumbo
     #[doc(hidden)]
     Mxk = 4395,
+    /// Maxi Gbe
     #[doc(hidden)]
     Mxl = 4396,
+    /// Meramera
     #[doc(hidden)]
     Mxm = 4397,
+    /// Moi
     #[doc(hidden)]
     Mxn = 4398,
+    /// Mbowe
     #[doc(hidden)]
     Mxo = 4399,
+    /// Tlahuitoltepec Mixe
     #[doc(hidden)]
     Mxp = 4400,
+    /// Juquila Mixe
     #[doc(hidden)]
     Mxq = 4401,
+    /// Murik
     #[doc(hidden)]
     Mxr = 4402,
+    /// Huitepec Mixtec
     #[doc(hidden)]
     Mxs = 4403,
+    /// Jamiltepec Mixtec
     #[doc(hidden)]
     Mxt = 4404,
+    /// Mada
     #[doc(hidden)]
     Mxu = 4405,
+    /// Metlatónoc Mixtec
     #[doc(hidden)]
     Mxv = 4406,
+    /// Namo
     #[doc(hidden)]
     Mxw = 4407,
+    /// Mahou
     #[doc(hidden)]
     Mxx = 4408,
+    /// Southeastern Nochixtlán Mixtec
     #[doc(hidden)]
     Mxy = 4409,
+    /// Central Masela
     #[doc(hidden)]
     Mxz = 4410,
+    /// Burmese
     #[doc(hidden)]
     Mya = 4411,
+    /// Mbay
     #[doc(hidden)]
     Myb = 4412,
+    /// Mayeka
     #[doc(hidden)]
     Myc = 4413,
+    /// Myene
     #[doc(hidden)]
     Mye = 4414,
+    /// Bambassi
     #[doc(hidden)]
     Myf = 4415,
+    /// Manta
     #[doc(hidden)]
     Myg = 4416,
+    /// Makah
     #[doc(hidden)]
     Myh = 4417,
+    /// Mangayat
     #[doc(hidden)]
     Myj = 4418,
+    /// Mamara Senoufo
     #[doc(hidden)]
     Myk = 4419,
+    /// Moma
     #[doc(hidden)]
     Myl = 4420,
+    /// Me'en
     #[doc(hidden)]
     Mym = 4421,
+    /// Anfillo
     #[doc(hidden)]
     Myo = 4422,
+    /// Pirahã
     #[doc(hidden)]
     Myp = 4423,
+    /// Muniche
     #[doc(hidden)]
     Myr = 4424,
+    /// Mesmes
     #[doc(hidden)]
     Mys = 4425,
+    /// Mundurukú
     #[doc(hidden)]
     Myu = 4426,
+    /// Erzya
     #[doc(hidden)]
     Myv = 4427,
+    /// Muyuw
     #[doc(hidden)]
     Myw = 4428,
+    /// Masaaba
     #[doc(hidden)]
     Myx = 4429,
+    /// Macuna
     #[doc(hidden)]
     Myy = 4430,
+    /// Classical Mandaic
     #[doc(hidden)]
     Myz = 4431,
+    /// Santa María Zacatepec Mixtec
     #[doc(hidden)]
     Mza = 4432,
+    /// Tumzabt
     #[doc(hidden)]
     Mzb = 4433,
+    /// Madagascar Sign Language
     #[doc(hidden)]
     Mzc = 4434,
+    /// Malimba
     #[doc(hidden)]
     Mzd = 4435,
+    /// Morawa
     #[doc(hidden)]
     Mze = 4436,
+    /// Monastic Sign Language
     #[doc(hidden)]
     Mzg = 4437,
+    /// Wichí Lhamtés Güisnay
     #[doc(hidden)]
     Mzh = 4438,
+    /// Ixcatlán Mazatec
     #[doc(hidden)]
     Mzi = 4439,
+    /// Manya
     #[doc(hidden)]
     Mzj = 4440,
+    /// Nigeria Mambila
     #[doc(hidden)]
     Mzk = 4441,
+    /// Mazatlán Mixe
     #[doc(hidden)]
     Mzl = 4442,
+    /// Mumuye
     #[doc(hidden)]
     Mzm = 4443,
+    /// Mazanderani
     #[doc(hidden)]
     Mzn = 4444,
+    /// Matipuhy
     #[doc(hidden)]
     Mzo = 4445,
+    /// Movima
     #[doc(hidden)]
     Mzp = 4446,
+    /// Mori Atas
     #[doc(hidden)]
     Mzq = 4447,
+    /// Marúbo
     #[doc(hidden)]
     Mzr = 4448,
+    /// Macanese
     #[doc(hidden)]
     Mzs = 4449,
+    /// Mintil
     #[doc(hidden)]
     Mzt = 4450,
+    /// Inapang
     #[doc(hidden)]
     Mzu = 4451,
+    /// Manza
     #[doc(hidden)]
     Mzv = 4452,
+    /// Deg
     #[doc(hidden)]
     Mzw = 4453,
+    /// Mawayana
     #[doc(hidden)]
     Mzx = 4454,
+    /// Mozambican Sign Language
     #[doc(hidden)]
     Mzy = 4455,
+    /// Maiadomu
     #[doc(hidden)]
     Mzz = 4456,
+    /// Namla
     #[doc(hidden)]
     Naa = 4457,
+    /// Southern Nambikuára
     #[doc(hidden)]
     Nab = 4458,
+    /// Narak
     #[doc(hidden)]
     Nac = 4459,
+    /// Naka'ela
     #[doc(hidden)]
     Nae = 4460,
+    /// Nabak
     #[doc(hidden)]
     Naf = 4461,
+    /// Naga Pidgin
     #[doc(hidden)]
     Nag = 4462,
+    /// Nalu
     #[doc(hidden)]
     Naj = 4463,
+    /// Nakanai
     #[doc(hidden)]
     Nak = 4464,
+    /// Nalik
     #[doc(hidden)]
     Nal = 4465,
+    /// Ngan'gityemerri
     #[doc(hidden)]
     Nam = 4466,
+    /// Min Nan Chinese
     #[doc(hidden)]
     Nan = 4467,
+    /// Naaba
     #[doc(hidden)]
     Nao = 4468,
+    /// Neapolitan
     #[doc(hidden)]
     Nap = 4469,
+    /// Khoekhoe
     #[doc(hidden)]
     Naq = 4470,
+    /// Iguta
     #[doc(hidden)]
     Nar = 4471,
+    /// Naasioi
     #[doc(hidden)]
     Nas = 4472,
+    /// Ca̱hungwa̱rya̱
     #[doc(hidden)]
     Nat = 4473,
+    /// Nauru
     #[doc(hidden)]
     Nau = 4474,
+    /// Navajo
     #[doc(hidden)]
     Nav = 4475,
+    /// Nawuri
     #[doc(hidden)]
     Naw = 4476,
+    /// Nakwi
     #[doc(hidden)]
     Nax = 4477,
+    /// Ngarrindjeri
     #[doc(hidden)]
     Nay = 4478,
+    /// Coatepec Nahuatl
     #[doc(hidden)]
     Naz = 4479,
+    /// Nyemba
     #[doc(hidden)]
     Nba = 4480,
+    /// Ndoe
     #[doc(hidden)]
     Nbb = 4481,
+    /// Chang Naga
     #[doc(hidden)]
     Nbc = 4482,
+    /// Ngbinda
     #[doc(hidden)]
     Nbd = 4483,
+    /// Konyak Naga
     #[doc(hidden)]
     Nbe = 4484,
+    /// Nagarchal
     #[doc(hidden)]
     Nbg = 4485,
+    /// Ngamo
     #[doc(hidden)]
     Nbh = 4486,
+    /// Mao Naga
     #[doc(hidden)]
     Nbi = 4487,
+    /// Ngarinyman
     #[doc(hidden)]
     Nbj = 4488,
+    /// Nake
     #[doc(hidden)]
     Nbk = 4489,
+    /// South Ndebele
     #[doc(hidden)]
     Nbl = 4490,
+    /// Ngbaka Ma'bo
     #[doc(hidden)]
     Nbm = 4491,
+    /// Kuri
     #[doc(hidden)]
     Nbn = 4492,
+    /// Nkukoli
     #[doc(hidden)]
     Nbo = 4493,
+    /// Nnam
     #[doc(hidden)]
     Nbp = 4494,
+    /// Nggem
     #[doc(hidden)]
     Nbq = 4495,
+    /// Numana
     #[doc(hidden)]
     Nbr = 4496,
+    /// Namibian Sign Language
     #[doc(hidden)]
     Nbs = 4497,
+    /// Na
     #[doc(hidden)]
     Nbt = 4498,
+    /// Rongmei Naga
     #[doc(hidden)]
     Nbu = 4499,
+    /// Ngamambo
     #[doc(hidden)]
     Nbv = 4500,
+    /// Southern Ngbandi
     #[doc(hidden)]
     Nbw = 4501,
+    /// Ningera
     #[doc(hidden)]
     Nby = 4502,
+    /// Iyo
     #[doc(hidden)]
     Nca = 4503,
+    /// Central Nicobarese
     #[doc(hidden)]
     Ncb = 4504,
+    /// Ponam
     #[doc(hidden)]
     Ncc = 4505,
+    /// Nachering
     #[doc(hidden)]
     Ncd = 4506,
+    /// Yale
     #[doc(hidden)]
     Nce = 4507,
+    /// Notsi
     #[doc(hidden)]
     Ncf = 4508,
+    /// Nisga'a
     #[doc(hidden)]
     Ncg = 4509,
+    /// Central Huasteca Nahuatl
     #[doc(hidden)]
     Nch = 4510,
+    /// Classical Nahuatl
     #[doc(hidden)]
     Nci = 4511,
+    /// Northern Puebla Nahuatl
     #[doc(hidden)]
     Ncj = 4512,
+    /// Na-kara
     #[doc(hidden)]
     Nck = 4513,
+    /// Michoacán Nahuatl
     #[doc(hidden)]
     Ncl = 4514,
+    /// Nambo
     #[doc(hidden)]
     Ncm = 4515,
+    /// Nauna
     #[doc(hidden)]
     Ncn = 4516,
+    /// Sibe
     #[doc(hidden)]
     Nco = 4517,
+    /// Northern Katang
     #[doc(hidden)]
     Ncq = 4518,
+    /// Ncane
     #[doc(hidden)]
     Ncr = 4519,
+    /// Nicaraguan Sign Language
     #[doc(hidden)]
     Ncs = 4520,
+    /// Chothe Naga
     #[doc(hidden)]
     Nct = 4521,
+    /// Chumburung
     #[doc(hidden)]
     Ncu = 4522,
+    /// Central Puebla Nahuatl
     #[doc(hidden)]
     Ncx = 4523,
+    /// Natchez
     #[doc(hidden)]
     Ncz = 4524,
+    /// Ndasa
     #[doc(hidden)]
     Nda = 4525,
+    /// Kenswei Nsei
     #[doc(hidden)]
     Ndb = 4526,
+    /// Ndau
     #[doc(hidden)]
     Ndc = 4527,
+    /// Nde-Nsele-Nta
     #[doc(hidden)]
     Ndd = 4528,
+    /// North Ndebele
     #[doc(hidden)]
     Nde = 4529,
+    /// Nadruvian
     #[doc(hidden)]
     Ndf = 4530,
+    /// Ndengereko
     #[doc(hidden)]
     Ndg = 4531,
+    /// Ndali
     #[doc(hidden)]
     Ndh = 4532,
+    /// Samba Leko
     #[doc(hidden)]
     Ndi = 4533,
+    /// Ndamba
     #[doc(hidden)]
     Ndj = 4534,
+    /// Ndaka
     #[doc(hidden)]
     Ndk = 4535,
+    /// Ndolo
     #[doc(hidden)]
     Ndl = 4536,
+    /// Ndam
     #[doc(hidden)]
     Ndm = 4537,
+    /// Ngundi
     #[doc(hidden)]
     Ndn = 4538,
+    /// Ndonga
     #[doc(hidden)]
     Ndo = 4539,
+    /// Ndo
     #[doc(hidden)]
     Ndp = 4540,
+    /// Ndombe
     #[doc(hidden)]
     Ndq = 4541,
+    /// Ndoola
     #[doc(hidden)]
     Ndr = 4542,
+    /// Low German
     #[doc(hidden)]
     Nds = 4543,
+    /// Ndunga
     #[doc(hidden)]
     Ndt = 4544,
+    /// Dugun
     #[doc(hidden)]
     Ndu = 4545,
+    /// Ndut
     #[doc(hidden)]
     Ndv = 4546,
+    /// Ndobo
     #[doc(hidden)]
     Ndw = 4547,
+    /// Nduga
     #[doc(hidden)]
     Ndx = 4548,
+    /// Lutos
     #[doc(hidden)]
     Ndy = 4549,
+    /// Ndogo
     #[doc(hidden)]
     Ndz = 4550,
+    /// Eastern Ngad'a
     #[doc(hidden)]
     Nea = 4551,
+    /// Toura
     #[doc(hidden)]
     Neb = 4552,
+    /// Nedebang
     #[doc(hidden)]
     Nec = 4553,
+    /// Nde-Gbite
     #[doc(hidden)]
     Ned = 4554,
+    /// Nêlêmwa-Nixumwak
     #[doc(hidden)]
     Nee = 4555,
+    /// Nefamese
     #[doc(hidden)]
     Nef = 4556,
+    /// Negidal
     #[doc(hidden)]
     Neg = 4557,
+    /// Nyenkha
     #[doc(hidden)]
     Neh = 4558,
+    /// Neo-Hittite
     #[doc(hidden)]
     Nei = 4559,
+    /// Neko
     #[doc(hidden)]
     Nej = 4560,
+    /// Neku
     #[doc(hidden)]
     Nek = 4561,
+    /// Nemi
     #[doc(hidden)]
     Nem = 4562,
+    /// Nengone
     #[doc(hidden)]
     Nen = 4563,
+    /// Ná-Meo
     #[doc(hidden)]
     Neo = 4564,
+    /// Nepali
     #[doc(hidden)]
     Nep = 4565,
+    /// North Central Mixe
     #[doc(hidden)]
     Neq = 4566,
+    /// Yahadian
     #[doc(hidden)]
     Ner = 4567,
+    /// Bhoti Kinnauri
     #[doc(hidden)]
     Nes = 4568,
+    /// Nete
     #[doc(hidden)]
     Net = 4569,
+    /// Neo
     #[doc(hidden)]
     Neu = 4570,
+    /// Nyaheun
     #[doc(hidden)]
     Nev = 4571,
+    /// Newari
     #[doc(hidden)]
     New = 4572,
+    /// Neme
     #[doc(hidden)]
     Nex = 4573,
+    /// Neyo
     #[doc(hidden)]
     Ney = 4574,
+    /// Nez Perce
     #[doc(hidden)]
     Nez = 4575,
+    /// Dhao
     #[doc(hidden)]
     Nfa = 4576,
+    /// Ahwai
     #[doc(hidden)]
     Nfd = 4577,
+    /// Ayiwo
     #[doc(hidden)]
     Nfl = 4578,
+    /// Nafaanra
     #[doc(hidden)]
     Nfr = 4579,
+    /// Mfumte
     #[doc(hidden)]
     Nfu = 4580,
+    /// Ngbaka
     #[doc(hidden)]
     Nga = 4581,
+    /// Northern Ngbandi
     #[doc(hidden)]
     Ngb = 4582,
+    /// Ngombe
     #[doc(hidden)]
     Ngc = 4583,
+    /// Ngando
     #[doc(hidden)]
     Ngd = 4584,
+    /// Ngemba
     #[doc(hidden)]
     Nge = 4585,
+    /// Ngbaka Manza
     #[doc(hidden)]
     Ngg = 4586,
+    /// Nǁng
     #[doc(hidden)]
     Ngh = 4587,
+    /// Ngizim
     #[doc(hidden)]
     Ngi = 4588,
+    /// Ngie
     #[doc(hidden)]
     Ngj = 4589,
+    /// Dalabon
     #[doc(hidden)]
     Ngk = 4590,
+    /// Lomwe
     #[doc(hidden)]
     Ngl = 4591,
+    /// Ngatik Men's Creole
     #[doc(hidden)]
     Ngm = 4592,
+    /// Ngwo
     #[doc(hidden)]
     Ngn = 4593,
+    /// Ngulu
     #[doc(hidden)]
     Ngp = 4594,
+    /// Ngurimi
     #[doc(hidden)]
     Ngq = 4595,
+    /// Engdewu
     #[doc(hidden)]
     Ngr = 4596,
+    /// Gvoko
     #[doc(hidden)]
     Ngs = 4597,
+    /// Kriang
     #[doc(hidden)]
     Ngt = 4598,
+    /// Guerrero Nahuatl
     #[doc(hidden)]
     Ngu = 4599,
+    /// Nagumi
     #[doc(hidden)]
     Ngv = 4600,
+    /// Ngwaba
     #[doc(hidden)]
     Ngw = 4601,
+    /// Nggwahyi
     #[doc(hidden)]
     Ngx = 4602,
+    /// Tibea
     #[doc(hidden)]
     Ngy = 4603,
+    /// Ngungwel
     #[doc(hidden)]
     Ngz = 4604,
+    /// Nhanda
     #[doc(hidden)]
     Nha = 4605,
+    /// Beng
     #[doc(hidden)]
     Nhb = 4606,
+    /// Tabasco Nahuatl
     #[doc(hidden)]
     Nhc = 4607,
+    /// Chiripá
     #[doc(hidden)]
     Nhd = 4608,
+    /// Eastern Huasteca Nahuatl
     #[doc(hidden)]
     Nhe = 4609,
+    /// Nhuwala
     #[doc(hidden)]
     Nhf = 4610,
+    /// Tetelcingo Nahuatl
     #[doc(hidden)]
     Nhg = 4611,
+    /// Nahari
     #[doc(hidden)]
     Nhh = 4612,
+    /// Zacatlán-Ahuacatlán-Tepetzintla Nahuatl
     #[doc(hidden)]
     Nhi = 4613,
+    /// Isthmus-Cosoleacaque Nahuatl
     #[doc(hidden)]
     Nhk = 4614,
+    /// Morelos Nahuatl
     #[doc(hidden)]
     Nhm = 4615,
+    /// Central Nahuatl
     #[doc(hidden)]
     Nhn = 4616,
+    /// Takuu
     #[doc(hidden)]
     Nho = 4617,
+    /// Isthmus-Pajapan Nahuatl
     #[doc(hidden)]
     Nhp = 4618,
+    /// Huaxcaleca Nahuatl
     #[doc(hidden)]
     Nhq = 4619,
+    /// Naro
     #[doc(hidden)]
     Nhr = 4620,
+    /// Ometepec Nahuatl
     #[doc(hidden)]
     Nht = 4621,
+    /// Noone
     #[doc(hidden)]
     Nhu = 4622,
+    /// Temascaltepec Nahuatl
     #[doc(hidden)]
     Nhv = 4623,
+    /// Western Huasteca Nahuatl
     #[doc(hidden)]
     Nhw = 4624,
+    /// Isthmus-Mecayapan Nahuatl
     #[doc(hidden)]
     Nhx = 4625,
+    /// Northern Oaxaca Nahuatl
     #[doc(hidden)]
     Nhy = 4626,
+    /// Santa María La Alta Nahuatl
     #[doc(hidden)]
     Nhz = 4627,
+    /// Nias
     #[doc(hidden)]
     Nia = 4628,
+    /// Nakame
     #[doc(hidden)]
     Nib = 4629,
+    /// Ngandi
     #[doc(hidden)]
     Nid = 4630,
+    /// Niellim
     #[doc(hidden)]
     Nie = 4631,
+    /// Nek
     #[doc(hidden)]
     Nif = 4632,
+    /// Ngalakgan
     #[doc(hidden)]
     Nig = 4633,
+    /// Nyiha
     #[doc(hidden)]
     Nih = 4634,
+    /// Nii
     #[doc(hidden)]
     Nii = 4635,
+    /// Ngaju
     #[doc(hidden)]
     Nij = 4636,
+    /// Southern Nicobarese
     #[doc(hidden)]
     Nik = 4637,
+    /// Nila
     #[doc(hidden)]
     Nil = 4638,
+    /// Nilamba
     #[doc(hidden)]
     Nim = 4639,
+    /// Ninzo
     #[doc(hidden)]
     Nin = 4640,
+    /// Nganasan
     #[doc(hidden)]
     Nio = 4641,
+    /// Nandi
     #[doc(hidden)]
     Niq = 4642,
+    /// Nimboran
     #[doc(hidden)]
     Nir = 4643,
+    /// Nimi
     #[doc(hidden)]
     Nis = 4644,
+    /// Southeastern Kolami
     #[doc(hidden)]
     Nit = 4645,
+    /// Niuean
     #[doc(hidden)]
     Niu = 4646,
+    /// Gilyak
     #[doc(hidden)]
     Niv = 4647,
+    /// Nimo
     #[doc(hidden)]
     Niw = 4648,
+    /// Hema
     #[doc(hidden)]
     Nix = 4649,
+    /// Ngiti
     #[doc(hidden)]
     Niy = 4650,
+    /// Ningil
     #[doc(hidden)]
     Niz = 4651,
+    /// Nzanyi
     #[doc(hidden)]
     Nja = 4652,
+    /// Nocte Naga
     #[doc(hidden)]
     Njb = 4653,
+    /// Ndonde Hamba
     #[doc(hidden)]
     Njd = 4654,
+    /// Lotha Naga
     #[doc(hidden)]
     Njh = 4655,
+    /// Gudanji
     #[doc(hidden)]
     Nji = 4656,
+    /// Njen
     #[doc(hidden)]
     Njj = 4657,
+    /// Njalgulgule
     #[doc(hidden)]
     Njl = 4658,
+    /// Angami Naga
     #[doc(hidden)]
     Njm = 4659,
+    /// Liangmai Naga
     #[doc(hidden)]
     Njn = 4660,
+    /// Ao Naga
     #[doc(hidden)]
     Njo = 4661,
+    /// Njerep
     #[doc(hidden)]
     Njr = 4662,
+    /// Nisa
     #[doc(hidden)]
     Njs = 4663,
+    /// Ndyuka-Trio Pidgin
     #[doc(hidden)]
     Njt = 4664,
+    /// Ngadjunmaya
     #[doc(hidden)]
     Nju = 4665,
+    /// Kunyi
     #[doc(hidden)]
     Njx = 4666,
+    /// Njyem
     #[doc(hidden)]
     Njy = 4667,
+    /// Nyishi
     #[doc(hidden)]
     Njz = 4668,
+    /// Nkoya
     #[doc(hidden)]
     Nka = 4669,
+    /// Khoibu Naga
     #[doc(hidden)]
     Nkb = 4670,
+    /// Nkongho
     #[doc(hidden)]
     Nkc = 4671,
+    /// Koireng
     #[doc(hidden)]
     Nkd = 4672,
+    /// Duke
     #[doc(hidden)]
     Nke = 4673,
+    /// Inpui Naga
     #[doc(hidden)]
     Nkf = 4674,
+    /// Nekgini
     #[doc(hidden)]
     Nkg = 4675,
+    /// Khezha Naga
     #[doc(hidden)]
     Nkh = 4676,
+    /// Thangal Naga
     #[doc(hidden)]
     Nki = 4677,
+    /// Nakai
     #[doc(hidden)]
     Nkj = 4678,
+    /// Nokuku
     #[doc(hidden)]
     Nkk = 4679,
+    /// Namat
     #[doc(hidden)]
     Nkm = 4680,
+    /// Nkangala
     #[doc(hidden)]
     Nkn = 4681,
+    /// Nkonya
     #[doc(hidden)]
     Nko = 4682,
+    /// Niuatoputapu
     #[doc(hidden)]
     Nkp = 4683,
+    /// Nkami
     #[doc(hidden)]
     Nkq = 4684,
+    /// Nukuoro
     #[doc(hidden)]
     Nkr = 4685,
+    /// North Asmat
     #[doc(hidden)]
     Nks = 4686,
+    /// Nyika
     #[doc(hidden)]
     Nkt = 4687,
+    /// Bouna Kulango
     #[doc(hidden)]
     Nku = 4688,
+    /// Nyika
     #[doc(hidden)]
     Nkv = 4689,
+    /// Nkutu
     #[doc(hidden)]
     Nkw = 4690,
+    /// Nkoroo
     #[doc(hidden)]
     Nkx = 4691,
+    /// Nkari
     #[doc(hidden)]
     Nkz = 4692,
+    /// Ngombale
     #[doc(hidden)]
     Nla = 4693,
+    /// Nalca
     #[doc(hidden)]
     Nlc = 4694,
+    /// Dutch
     #[doc(hidden)]
     Nld = 4695,
+    /// East Nyala
     #[doc(hidden)]
     Nle = 4696,
+    /// Gela
     #[doc(hidden)]
     Nlg = 4697,
+    /// Grangali
     #[doc(hidden)]
     Nli = 4698,
+    /// Nyali
     #[doc(hidden)]
     Nlj = 4699,
+    /// Ninia Yali
     #[doc(hidden)]
     Nlk = 4700,
+    /// Nihali
     #[doc(hidden)]
     Nll = 4701,
+    /// Mankiyali
     #[doc(hidden)]
     Nlm = 4702,
+    /// Ngul
     #[doc(hidden)]
     Nlo = 4703,
+    /// Lao Naga
     #[doc(hidden)]
     Nlq = 4704,
+    /// Nchumbulu
     #[doc(hidden)]
     Nlu = 4705,
+    /// Orizaba Nahuatl
     #[doc(hidden)]
     Nlv = 4706,
+    /// Walangama
     #[doc(hidden)]
     Nlw = 4707,
+    /// Nahali
     #[doc(hidden)]
     Nlx = 4708,
+    /// Nyamal
     #[doc(hidden)]
     Nly = 4709,
+    /// Nalögo
     #[doc(hidden)]
     Nlz = 4710,
+    /// Maram Naga
     #[doc(hidden)]
     Nma = 4711,
+    /// Big Nambas
     #[doc(hidden)]
     Nmb = 4712,
+    /// Ngam
     #[doc(hidden)]
     Nmc = 4713,
+    /// Ndumu
     #[doc(hidden)]
     Nmd = 4714,
+    /// Mzieme Naga
     #[doc(hidden)]
     Nme = 4715,
+    /// Tangkhul Naga
     #[doc(hidden)]
     Nmf = 4716,
+    /// Kwasio
     #[doc(hidden)]
     Nmg = 4717,
+    /// Monsang Naga
     #[doc(hidden)]
     Nmh = 4718,
+    /// Nyam
     #[doc(hidden)]
     Nmi = 4719,
+    /// Ngombe
     #[doc(hidden)]
     Nmj = 4720,
+    /// Namakura
     #[doc(hidden)]
     Nmk = 4721,
+    /// Ndemli
     #[doc(hidden)]
     Nml = 4722,
+    /// Manangba
     #[doc(hidden)]
     Nmm = 4723,
+    /// ǃXóõ
     #[doc(hidden)]
     Nmn = 4724,
+    /// Moyon Naga
     #[doc(hidden)]
     Nmo = 4725,
+    /// Nimanbur
     #[doc(hidden)]
     Nmp = 4726,
+    /// Nambya
     #[doc(hidden)]
     Nmq = 4727,
+    /// Nimbari
     #[doc(hidden)]
     Nmr = 4728,
+    /// Letemboi
     #[doc(hidden)]
     Nms = 4729,
+    /// Namonuito
     #[doc(hidden)]
     Nmt = 4730,
+    /// Northeast Maidu
     #[doc(hidden)]
     Nmu = 4731,
+    /// Ngamini
     #[doc(hidden)]
     Nmv = 4732,
+    /// Nimoa
     #[doc(hidden)]
     Nmw = 4733,
+    /// Nama
     #[doc(hidden)]
     Nmx = 4734,
+    /// Namuyi
     #[doc(hidden)]
     Nmy = 4735,
+    /// Nawdm
     #[doc(hidden)]
     Nmz = 4736,
+    /// Nyangumarta
     #[doc(hidden)]
     Nna = 4737,
+    /// Nande
     #[doc(hidden)]
     Nnb = 4738,
+    /// Nancere
     #[doc(hidden)]
     Nnc = 4739,
+    /// West Ambae
     #[doc(hidden)]
     Nnd = 4740,
+    /// Ngandyera
     #[doc(hidden)]
     Nne = 4741,
+    /// Ngaing
     #[doc(hidden)]
     Nnf = 4742,
+    /// Maring Naga
     #[doc(hidden)]
     Nng = 4743,
+    /// Ngiemboon
     #[doc(hidden)]
     Nnh = 4744,
+    /// North Nuaulu
     #[doc(hidden)]
     Nni = 4745,
+    /// Nyangatom
     #[doc(hidden)]
     Nnj = 4746,
+    /// Nankina
     #[doc(hidden)]
     Nnk = 4747,
+    /// Northern Rengma Naga
     #[doc(hidden)]
     Nnl = 4748,
+    /// Namia
     #[doc(hidden)]
     Nnm = 4749,
+    /// Ngete
     #[doc(hidden)]
     Nnn = 4750,
+    /// Norwegian Nynorsk
     #[doc(hidden)]
     Nno = 4751,
+    /// Wancho Naga
     #[doc(hidden)]
     Nnp = 4752,
+    /// Ngindo
     #[doc(hidden)]
     Nnq = 4753,
+    /// Narungga
     #[doc(hidden)]
     Nnr = 4754,
+    /// Nanticoke
     #[doc(hidden)]
     Nnt = 4755,
+    /// Dwang
     #[doc(hidden)]
     Nnu = 4756,
+    /// Nugunu
     #[doc(hidden)]
     Nnv = 4757,
+    /// Southern Nuni
     #[doc(hidden)]
     Nnw = 4758,
+    /// Nyangga
     #[doc(hidden)]
     Nny = 4759,
+    /// Nda'nda'
     #[doc(hidden)]
     Nnz = 4760,
+    /// Woun Meu
     #[doc(hidden)]
     Noa = 4761,
+    /// Norwegian Bokmål
     #[doc(hidden)]
     Nob = 4762,
+    /// Nuk
     #[doc(hidden)]
     Noc = 4763,
+    /// Northern Thai
     #[doc(hidden)]
     Nod = 4764,
+    /// Nimadi
     #[doc(hidden)]
     Noe = 4765,
+    /// Nomane
     #[doc(hidden)]
     Nof = 4766,
+    /// Nogai
     #[doc(hidden)]
     Nog = 4767,
+    /// Nomu
     #[doc(hidden)]
     Noh = 4768,
+    /// Noiri
     #[doc(hidden)]
     Noi = 4769,
+    /// Nonuya
     #[doc(hidden)]
     Noj = 4770,
+    /// Nooksack
     #[doc(hidden)]
     Nok = 4771,
+    /// Nomlaki
     #[doc(hidden)]
     Nol = 4772,
+    /// Old Norse
     #[doc(hidden)]
     Non = 4773,
+    /// Numanggang
     #[doc(hidden)]
     Nop = 4774,
+    /// Ngongo
     #[doc(hidden)]
     Noq = 4775,
+    /// Norwegian
     #[doc(hidden)]
     Nor = 4776,
+    /// Eastern Nisu
     #[doc(hidden)]
     Nos = 4777,
+    /// Nomatsiguenga
     #[doc(hidden)]
     Not = 4778,
+    /// Ewage-Notu
     #[doc(hidden)]
     Nou = 4779,
+    /// Novial
     #[doc(hidden)]
     Nov = 4780,
+    /// Nyambo
     #[doc(hidden)]
     Now = 4781,
+    /// Noy
     #[doc(hidden)]
     Noy = 4782,
+    /// Nayi
     #[doc(hidden)]
     Noz = 4783,
+    /// Nar Phu
     #[doc(hidden)]
     Npa = 4784,
+    /// Nupbikha
     #[doc(hidden)]
     Npb = 4785,
+    /// Ponyo-Gongwang Naga
     #[doc(hidden)]
     Npg = 4786,
+    /// Phom Naga
     #[doc(hidden)]
     Nph = 4787,
+    /// Nepali
     #[doc(hidden)]
     Npi = 4788,
+    /// Southeastern Puebla Nahuatl
     #[doc(hidden)]
     Npl = 4789,
+    /// Mondropolon
     #[doc(hidden)]
     Npn = 4790,
+    /// Pochuri Naga
     #[doc(hidden)]
     Npo = 4791,
+    /// Nipsan
     #[doc(hidden)]
     Nps = 4792,
+    /// Puimei Naga
     #[doc(hidden)]
     Npu = 4793,
+    /// Noipx
     #[doc(hidden)]
     Npx = 4794,
+    /// Napu
     #[doc(hidden)]
     Npy = 4795,
+    /// Southern Nago
     #[doc(hidden)]
     Nqg = 4796,
+    /// Kura Ede Nago
     #[doc(hidden)]
     Nqk = 4797,
+    /// Ngendelengo
     #[doc(hidden)]
     Nql = 4798,
+    /// Ndom
     #[doc(hidden)]
     Nqm = 4799,
+    /// Nen
     #[doc(hidden)]
     Nqn = 4800,
+    /// N'Ko
     #[doc(hidden)]
     Nqo = 4801,
+    /// Kyan-Karyaw Naga
     #[doc(hidden)]
     Nqq = 4802,
+    /// Nteng
     #[doc(hidden)]
     Nqt = 4803,
+    /// Akyaung Ari Naga
     #[doc(hidden)]
     Nqy = 4804,
+    /// Ngom
     #[doc(hidden)]
     Nra = 4805,
+    /// Nara
     #[doc(hidden)]
     Nrb = 4806,
+    /// Noric
     #[doc(hidden)]
     Nrc = 4807,
+    /// Southern Rengma Naga
     #[doc(hidden)]
     Nre = 4808,
+    /// Jèrriais
     #[doc(hidden)]
     Nrf = 4809,
+    /// Narango
     #[doc(hidden)]
     Nrg = 4810,
+    /// Chokri Naga
     #[doc(hidden)]
     Nri = 4811,
+    /// Ngarla
     #[doc(hidden)]
     Nrk = 4812,
+    /// Ngarluma
     #[doc(hidden)]
     Nrl = 4813,
+    /// Narom
     #[doc(hidden)]
     Nrm = 4814,
+    /// Norn
     #[doc(hidden)]
     Nrn = 4815,
+    /// North Picene
     #[doc(hidden)]
     Nrp = 4816,
+    /// Norra
     #[doc(hidden)]
     Nrr = 4817,
+    /// Northern Kalapuya
     #[doc(hidden)]
     Nrt = 4818,
+    /// Narua
     #[doc(hidden)]
     Nru = 4819,
+    /// Ngurmbur
     #[doc(hidden)]
     Nrx = 4820,
+    /// Lala
     #[doc(hidden)]
     Nrz = 4821,
+    /// Sangtam Naga
     #[doc(hidden)]
     Nsa = 4822,
+    /// Lower Nossob
     #[doc(hidden)]
     Nsb = 4823,
+    /// Nshi
     #[doc(hidden)]
     Nsc = 4824,
+    /// Southern Nisu
     #[doc(hidden)]
     Nsd = 4825,
+    /// Nsenga
     #[doc(hidden)]
     Nse = 4826,
+    /// Northwestern Nisu
     #[doc(hidden)]
     Nsf = 4827,
+    /// Ngasa
     #[doc(hidden)]
     Nsg = 4828,
+    /// Ngoshie
     #[doc(hidden)]
     Nsh = 4829,
+    /// Nigerian Sign Language
     #[doc(hidden)]
     Nsi = 4830,
+    /// Naskapi
     #[doc(hidden)]
     Nsk = 4831,
+    /// Norwegian Sign Language
     #[doc(hidden)]
     Nsl = 4832,
+    /// Sumi Naga
     #[doc(hidden)]
     Nsm = 4833,
+    /// Nehan
     #[doc(hidden)]
     Nsn = 4834,
+    /// Pedi
     #[doc(hidden)]
     Nso = 4835,
+    /// Nepalese Sign Language
     #[doc(hidden)]
     Nsp = 4836,
+    /// Northern Sierra Miwok
     #[doc(hidden)]
     Nsq = 4837,
+    /// Maritime Sign Language
     #[doc(hidden)]
     Nsr = 4838,
+    /// Nali
     #[doc(hidden)]
     Nss = 4839,
+    /// Tase Naga
     #[doc(hidden)]
     Nst = 4840,
+    /// Sierra Negra Nahuatl
     #[doc(hidden)]
     Nsu = 4841,
+    /// Southwestern Nisu
     #[doc(hidden)]
     Nsv = 4842,
+    /// Navut
     #[doc(hidden)]
     Nsw = 4843,
+    /// Nsongo
     #[doc(hidden)]
     Nsx = 4844,
+    /// Nasal
     #[doc(hidden)]
     Nsy = 4845,
+    /// Nisenan
     #[doc(hidden)]
     Nsz = 4846,
+    /// Northern Tidung
     #[doc(hidden)]
     Ntd = 4847,
+    /// Nathembo
     #[doc(hidden)]
     Nte = 4848,
+    /// Ngantangarra
     #[doc(hidden)]
     Ntg = 4849,
+    /// Natioro
     #[doc(hidden)]
     Nti = 4850,
+    /// Ngaanyatjarra
     #[doc(hidden)]
     Ntj = 4851,
+    /// Ikoma-Nata-Isenye
     #[doc(hidden)]
     Ntk = 4852,
+    /// Nateni
     #[doc(hidden)]
     Ntm = 4853,
+    /// Ntomba
     #[doc(hidden)]
     Nto = 4854,
+    /// Northern Tepehuan
     #[doc(hidden)]
     Ntp = 4855,
+    /// Delo
     #[doc(hidden)]
     Ntr = 4856,
+    /// Natügu
     #[doc(hidden)]
     Ntu = 4857,
+    /// Nottoway
     #[doc(hidden)]
     Ntw = 4858,
+    /// Tangkhul Naga
     #[doc(hidden)]
     Ntx = 4859,
+    /// Mantsi
     #[doc(hidden)]
     Nty = 4860,
+    /// Natanzi
     #[doc(hidden)]
     Ntz = 4861,
+    /// Yuanga
     #[doc(hidden)]
     Nua = 4862,
+    /// Nukuini
     #[doc(hidden)]
     Nuc = 4863,
+    /// Ngala
     #[doc(hidden)]
     Nud = 4864,
+    /// Ngundu
     #[doc(hidden)]
     Nue = 4865,
+    /// Nusu
     #[doc(hidden)]
     Nuf = 4866,
+    /// Nungali
     #[doc(hidden)]
     Nug = 4867,
+    /// Ndunda
     #[doc(hidden)]
     Nuh = 4868,
+    /// Ngumbi
     #[doc(hidden)]
     Nui = 4869,
+    /// Nyole
     #[doc(hidden)]
     Nuj = 4870,
+    /// Nuu-chah-nulth
     #[doc(hidden)]
     Nuk = 4871,
+    /// Nusa Laut
     #[doc(hidden)]
     Nul = 4872,
+    /// Niuafo'ou
     #[doc(hidden)]
     Num = 4873,
+    /// Anong
     #[doc(hidden)]
     Nun = 4874,
+    /// Nguôn
     #[doc(hidden)]
     Nuo = 4875,
+    /// Nupe-Nupe-Tako
     #[doc(hidden)]
     Nup = 4876,
+    /// Nukumanu
     #[doc(hidden)]
     Nuq = 4877,
+    /// Nukuria
     #[doc(hidden)]
     Nur = 4878,
+    /// Nuer
     #[doc(hidden)]
     Nus = 4879,
+    /// Nung
     #[doc(hidden)]
     Nut = 4880,
+    /// Ngbundu
     #[doc(hidden)]
     Nuu = 4881,
+    /// Northern Nuni
     #[doc(hidden)]
     Nuv = 4882,
+    /// Nguluwan
     #[doc(hidden)]
     Nuw = 4883,
+    /// Mehek
     #[doc(hidden)]
     Nux = 4884,
+    /// Nunggubuyu
     #[doc(hidden)]
     Nuy = 4885,
+    /// Tlamacazapa Nahuatl
     #[doc(hidden)]
     Nuz = 4886,
+    /// Nasarian
     #[doc(hidden)]
     Nvh = 4887,
+    /// Namiae
     #[doc(hidden)]
     Nvm = 4888,
+    /// Nyokon
     #[doc(hidden)]
     Nvo = 4889,
+    /// Nawathinehena
     #[doc(hidden)]
     Nwa = 4890,
+    /// Nyabwa
     #[doc(hidden)]
     Nwb = 4891,
+    /// Classical Newari
     #[doc(hidden)]
     Nwc = 4892,
+    /// Ngwe
     #[doc(hidden)]
     Nwe = 4893,
+    /// Ngayawung
     #[doc(hidden)]
     Nwg = 4894,
+    /// Southwest Tanna
     #[doc(hidden)]
     Nwi = 4895,
+    /// Nyamusa-Molo
     #[doc(hidden)]
     Nwm = 4896,
+    /// Nauo
     #[doc(hidden)]
     Nwo = 4897,
+    /// Nawaru
     #[doc(hidden)]
     Nwr = 4898,
+    /// Ndwewe
     #[doc(hidden)]
     Nww = 4899,
+    /// Middle Newar
     #[doc(hidden)]
     Nwx = 4900,
+    /// Nottoway-Meherrin
     #[doc(hidden)]
     Nwy = 4901,
+    /// Nauete
     #[doc(hidden)]
     Nxa = 4902,
+    /// Ngando
     #[doc(hidden)]
     Nxd = 4903,
+    /// Nage
     #[doc(hidden)]
     Nxe = 4904,
+    /// Ngad'a
     #[doc(hidden)]
     Nxg = 4905,
+    /// Nindi
     #[doc(hidden)]
     Nxi = 4906,
+    /// Koki Naga
     #[doc(hidden)]
     Nxk = 4907,
+    /// South Nuaulu
     #[doc(hidden)]
     Nxl = 4908,
+    /// Numidian
     #[doc(hidden)]
     Nxm = 4909,
+    /// Ngawun
     #[doc(hidden)]
     Nxn = 4910,
+    /// Ndambomo
     #[doc(hidden)]
     Nxo = 4911,
+    /// Naxi
     #[doc(hidden)]
     Nxq = 4912,
+    /// Ninggerum
     #[doc(hidden)]
     Nxr = 4913,
+    /// Nafri
     #[doc(hidden)]
     Nxx = 4914,
+    /// Nyanja
     #[doc(hidden)]
     Nya = 4915,
+    /// Nyangbo
     #[doc(hidden)]
     Nyb = 4916,
+    /// Nyanga-li
     #[doc(hidden)]
     Nyc = 4917,
+    /// Nyore
     #[doc(hidden)]
     Nyd = 4918,
+    /// Nyengo
     #[doc(hidden)]
     Nye = 4919,
+    /// Giryama
     #[doc(hidden)]
     Nyf = 4920,
+    /// Nyindu
     #[doc(hidden)]
     Nyg = 4921,
+    /// Nyikina
     #[doc(hidden)]
     Nyh = 4922,
+    /// Ama
     #[doc(hidden)]
     Nyi = 4923,
+    /// Nyanga
     #[doc(hidden)]
     Nyj = 4924,
+    /// Nyaneka
     #[doc(hidden)]
     Nyk = 4925,
+    /// Nyeu
     #[doc(hidden)]
     Nyl = 4926,
+    /// Nyamwezi
     #[doc(hidden)]
     Nym = 4927,
+    /// Nyankole
     #[doc(hidden)]
     Nyn = 4928,
+    /// Nyoro
     #[doc(hidden)]
     Nyo = 4929,
+    /// Nyang'i
     #[doc(hidden)]
     Nyp = 4930,
+    /// Nayini
     #[doc(hidden)]
     Nyq = 4931,
+    /// Nyiha
     #[doc(hidden)]
     Nyr = 4932,
+    /// Nyungar
     #[doc(hidden)]
     Nys = 4933,
+    /// Nyawaygi
     #[doc(hidden)]
     Nyt = 4934,
+    /// Nyungwe
     #[doc(hidden)]
     Nyu = 4935,
+    /// Nyulnyul
     #[doc(hidden)]
     Nyv = 4936,
+    /// Nyaw
     #[doc(hidden)]
     Nyw = 4937,
+    /// Nganyaywana
     #[doc(hidden)]
     Nyx = 4938,
+    /// Nyakyusa-Ngonde
     #[doc(hidden)]
     Nyy = 4939,
+    /// Tigon Mbembe
     #[doc(hidden)]
     Nza = 4940,
+    /// Njebi
     #[doc(hidden)]
     Nzb = 4941,
+    /// Nzadi
     #[doc(hidden)]
     Nzd = 4942,
+    /// Nzima
     #[doc(hidden)]
     Nzi = 4943,
+    /// Nzakara
     #[doc(hidden)]
     Nzk = 4944,
+    /// Zeme Naga
     #[doc(hidden)]
     Nzm = 4945,
+    /// Dir-Nyamzak-Mbarimi
     #[doc(hidden)]
     Nzr = 4946,
+    /// New Zealand Sign Language
     #[doc(hidden)]
     Nzs = 4947,
+    /// Teke-Nzikou
     #[doc(hidden)]
     Nzu = 4948,
+    /// Nzakambay
     #[doc(hidden)]
     Nzy = 4949,
+    /// Nanga Dama Dogon
     #[doc(hidden)]
     Nzz = 4950,
+    /// Orok
     #[doc(hidden)]
     Oaa = 4951,
+    /// Oroch
     #[doc(hidden)]
     Oac = 4952,
+    /// Old Aramaic
     #[doc(hidden)]
     Oar = 4953,
+    /// Old Avar
     #[doc(hidden)]
     Oav = 4954,
+    /// Obispeño
     #[doc(hidden)]
     Obi = 4955,
+    /// Southern Bontok
     #[doc(hidden)]
     Obk = 4956,
+    /// Oblo
     #[doc(hidden)]
     Obl = 4957,
+    /// Moabite
     #[doc(hidden)]
     Obm = 4958,
+    /// Obo Manobo
     #[doc(hidden)]
     Obo = 4959,
+    /// Old Burmese
     #[doc(hidden)]
     Obr = 4960,
+    /// Old Breton
     #[doc(hidden)]
     Obt = 4961,
+    /// Obulom
     #[doc(hidden)]
     Obu = 4962,
+    /// Ocaina
     #[doc(hidden)]
     Oca = 4963,
+    /// Old Chinese
     #[doc(hidden)]
     Och = 4964,
+    /// Occitan
     #[doc(hidden)]
     Oci = 4965,
+    /// Old Cham
     #[doc(hidden)]
     Ocm = 4966,
+    /// Old Cornish
     #[doc(hidden)]
     Oco = 4967,
+    /// Atzingo Matlatzinca
     #[doc(hidden)]
     Ocu = 4968,
+    /// Odut
     #[doc(hidden)]
     Oda = 4969,
+    /// Od
     #[doc(hidden)]
     Odk = 4970,
+    /// Old Dutch
     #[doc(hidden)]
     Odt = 4971,
+    /// Odual
     #[doc(hidden)]
     Odu = 4972,
+    /// Ofo
     #[doc(hidden)]
     Ofo = 4973,
+    /// Old Frisian
     #[doc(hidden)]
     Ofs = 4974,
+    /// Efutop
     #[doc(hidden)]
     Ofu = 4975,
+    /// Ogbia
     #[doc(hidden)]
     Ogb = 4976,
+    /// Ogbah
     #[doc(hidden)]
     Ogc = 4977,
+    /// Old Georgian
     #[doc(hidden)]
     Oge = 4978,
+    /// Ogbogolo
     #[doc(hidden)]
     Ogg = 4979,
+    /// Khana
     #[doc(hidden)]
     Ogo = 4980,
+    /// Ogbronuagum
     #[doc(hidden)]
     Ogu = 4981,
+    /// Old Hittite
     #[doc(hidden)]
     Oht = 4982,
+    /// Old Hungarian
     #[doc(hidden)]
     Ohu = 4983,
+    /// Oirata
     #[doc(hidden)]
     Oia = 4984,
+    /// Okolie
     #[doc(hidden)]
     Oie = 4985,
+    /// Inebu One
     #[doc(hidden)]
     Oin = 4986,
+    /// Northwestern Ojibwa
     #[doc(hidden)]
     Ojb = 4987,
+    /// Central Ojibwa
     #[doc(hidden)]
     Ojc = 4988,
+    /// Eastern Ojibwa
     #[doc(hidden)]
     Ojg = 4989,
+    /// Ojibwa
     #[doc(hidden)]
     Oji = 4990,
+    /// Old Japanese
     #[doc(hidden)]
     Ojp = 4991,
+    /// Severn Ojibwa
     #[doc(hidden)]
     Ojs = 4992,
+    /// Ontong Java
     #[doc(hidden)]
     Ojv = 4993,
+    /// Western Ojibwa
     #[doc(hidden)]
     Ojw = 4994,
+    /// Okanagan
     #[doc(hidden)]
     Oka = 4995,
+    /// Okobo
     #[doc(hidden)]
     Okb = 4996,
+    /// Kobo
     #[doc(hidden)]
     Okc = 4997,
+    /// Okodia
     #[doc(hidden)]
     Okd = 4998,
+    /// Okpe
     #[doc(hidden)]
     Oke = 4999,
+    /// Koko Babangk
     #[doc(hidden)]
     Okg = 5000,
+    /// Koresh-e Rostam
     #[doc(hidden)]
     Okh = 5001,
+    /// Okiek
     #[doc(hidden)]
     Oki = 5002,
+    /// Oko-Juwoi
     #[doc(hidden)]
     Okj = 5003,
+    /// Kwamtim One
     #[doc(hidden)]
     Okk = 5004,
+    /// Old Kentish Sign Language
     #[doc(hidden)]
     Okl = 5005,
+    /// Middle Korean
     #[doc(hidden)]
     Okm = 5006,
+    /// Oki-No-Erabu
     #[doc(hidden)]
     Okn = 5007,
+    /// Old Korean
     #[doc(hidden)]
     Oko = 5008,
+    /// Kirike
     #[doc(hidden)]
     Okr = 5009,
+    /// Oko-Eni-Osayen
     #[doc(hidden)]
     Oks = 5010,
+    /// Oku
     #[doc(hidden)]
     Oku = 5011,
+    /// Orokaiva
     #[doc(hidden)]
     Okv = 5012,
+    /// Okpe
     #[doc(hidden)]
     Okx = 5013,
+    /// Old Khmer
     #[doc(hidden)]
     Okz = 5014,
+    /// Walungge
     #[doc(hidden)]
     Ola = 5015,
+    /// Mochi
     #[doc(hidden)]
     Old = 5016,
+    /// Olekha
     #[doc(hidden)]
     Ole = 5017,
+    /// Olkol
     #[doc(hidden)]
     Olk = 5018,
+    /// Oloma
     #[doc(hidden)]
     Olm = 5019,
+    /// Livvi
     #[doc(hidden)]
     Olo = 5020,
+    /// Olrat
     #[doc(hidden)]
     Olr = 5021,
+    /// Old Lithuanian
     #[doc(hidden)]
     Olt = 5022,
+    /// Kuvale
     #[doc(hidden)]
     Olu = 5023,
+    /// Omaha-Ponca
     #[doc(hidden)]
     Oma = 5024,
+    /// East Ambae
     #[doc(hidden)]
     Omb = 5025,
+    /// Mochica
     #[doc(hidden)]
     Omc = 5026,
+    /// Omagua
     #[doc(hidden)]
     Omg = 5027,
+    /// Omi
     #[doc(hidden)]
     Omi = 5028,
+    /// Omok
     #[doc(hidden)]
     Omk = 5029,
+    /// Ombo
     #[doc(hidden)]
     Oml = 5030,
+    /// Minoan
     #[doc(hidden)]
     Omn = 5031,
+    /// Utarmbung
     #[doc(hidden)]
     Omo = 5032,
+    /// Old Manipuri
     #[doc(hidden)]
     Omp = 5033,
+    /// Old Marathi
     #[doc(hidden)]
     Omr = 5034,
+    /// Omotik
     #[doc(hidden)]
     Omt = 5035,
+    /// Omurano
     #[doc(hidden)]
     Omu = 5036,
+    /// South Tairora
     #[doc(hidden)]
     Omw = 5037,
+    /// Old Mon
     #[doc(hidden)]
     Omx = 5038,
+    /// Old Malay
     #[doc(hidden)]
     Omy = 5039,
+    /// Ona
     #[doc(hidden)]
     Ona = 5040,
+    /// Lingao
     #[doc(hidden)]
     Onb = 5041,
+    /// Oneida
     #[doc(hidden)]
     One = 5042,
+    /// Olo
     #[doc(hidden)]
     Ong = 5043,
+    /// Onin
     #[doc(hidden)]
     Oni = 5044,
+    /// Onjob
     #[doc(hidden)]
     Onj = 5045,
+    /// Kabore One
     #[doc(hidden)]
     Onk = 5046,
+    /// Onobasulu
     #[doc(hidden)]
     Onn = 5047,
+    /// Onondaga
     #[doc(hidden)]
     Ono = 5048,
+    /// Sartang
     #[doc(hidden)]
     Onp = 5049,
+    /// Northern One
     #[doc(hidden)]
     Onr = 5050,
+    /// Ono
     #[doc(hidden)]
     Ons = 5051,
+    /// Ontenu
     #[doc(hidden)]
     Ont = 5052,
+    /// Unua
     #[doc(hidden)]
     Onu = 5053,
+    /// Old Nubian
     #[doc(hidden)]
     Onw = 5054,
+    /// Onin Based Pidgin
     #[doc(hidden)]
     Onx = 5055,
+    /// Tohono O'odham
     #[doc(hidden)]
     Ood = 5056,
+    /// Ong
     #[doc(hidden)]
     Oog = 5057,
+    /// Önge
     #[doc(hidden)]
     Oon = 5058,
+    /// Oorlams
     #[doc(hidden)]
     Oor = 5059,
+    /// Old Ossetic
     #[doc(hidden)]
     Oos = 5060,
+    /// Okpamheri
     #[doc(hidden)]
     Opa = 5061,
+    /// Kopkaka
     #[doc(hidden)]
     Opk = 5062,
+    /// Oksapmin
     #[doc(hidden)]
     Opm = 5063,
+    /// Opao
     #[doc(hidden)]
     Opo = 5064,
+    /// Opata
     #[doc(hidden)]
     Opt = 5065,
+    /// Ofayé
     #[doc(hidden)]
     Opy = 5066,
+    /// Oroha
     #[doc(hidden)]
     Ora = 5067,
+    /// Orma
     #[doc(hidden)]
     Orc = 5068,
+    /// Orejón
     #[doc(hidden)]
     Ore = 5069,
+    /// Oring
     #[doc(hidden)]
     Org = 5070,
+    /// Oroqen
     #[doc(hidden)]
     Orh = 5071,
+    /// Oriya
     #[doc(hidden)]
     Ori = 5072,
+    /// Oromo
     #[doc(hidden)]
     Orm = 5073,
+    /// Orang Kanaq
     #[doc(hidden)]
     Orn = 5074,
+    /// Orokolo
     #[doc(hidden)]
     Oro = 5075,
+    /// Oruma
     #[doc(hidden)]
     Orr = 5076,
+    /// Orang Seletar
     #[doc(hidden)]
     Ors = 5077,
+    /// Adivasi Oriya
     #[doc(hidden)]
     Ort = 5078,
+    /// Ormuri
     #[doc(hidden)]
     Oru = 5079,
+    /// Old Russian
     #[doc(hidden)]
     Orv = 5080,
+    /// Oro Win
     #[doc(hidden)]
     Orw = 5081,
+    /// Oro
     #[doc(hidden)]
     Orx = 5082,
+    /// Odia
     #[doc(hidden)]
     Ory = 5083,
+    /// Ormu
     #[doc(hidden)]
     Orz = 5084,
+    /// Osage
     #[doc(hidden)]
     Osa = 5085,
+    /// Oscan
     #[doc(hidden)]
     Osc = 5086,
+    /// Osing
     #[doc(hidden)]
     Osi = 5087,
+    /// Old Sundanese
     #[doc(hidden)]
     Osn = 5088,
+    /// Ososo
     #[doc(hidden)]
     Oso = 5089,
+    /// Old Spanish
     #[doc(hidden)]
     Osp = 5090,
+    /// Ossetian
     #[doc(hidden)]
     Oss = 5091,
+    /// Osatu
     #[doc(hidden)]
     Ost = 5092,
+    /// Southern One
     #[doc(hidden)]
     Osu = 5093,
+    /// Old Saxon
     #[doc(hidden)]
     Osx = 5094,
+    /// Ottoman Turkish
     #[doc(hidden)]
     Ota = 5095,
+    /// Old Tibetan
     #[doc(hidden)]
     Otb = 5096,
+    /// Ot Danum
     #[doc(hidden)]
     Otd = 5097,
+    /// Mezquital Otomi
     #[doc(hidden)]
     Ote = 5098,
+    /// Oti
     #[doc(hidden)]
     Oti = 5099,
+    /// Old Turkish
     #[doc(hidden)]
     Otk = 5100,
+    /// Tilapa Otomi
     #[doc(hidden)]
     Otl = 5101,
+    /// Eastern Highland Otomi
     #[doc(hidden)]
     Otm = 5102,
+    /// Tenango Otomi
     #[doc(hidden)]
     Otn = 5103,
+    /// Querétaro Otomi
     #[doc(hidden)]
     Otq = 5104,
+    /// Otoro
     #[doc(hidden)]
     Otr = 5105,
+    /// Estado de México Otomi
     #[doc(hidden)]
     Ots = 5106,
+    /// Temoaya Otomi
     #[doc(hidden)]
     Ott = 5107,
+    /// Otuke
     #[doc(hidden)]
     Otu = 5108,
+    /// Ottawa
     #[doc(hidden)]
     Otw = 5109,
+    /// Texcatepec Otomi
     #[doc(hidden)]
     Otx = 5110,
+    /// Old Tamil
     #[doc(hidden)]
     Oty = 5111,
+    /// Ixtenco Otomi
     #[doc(hidden)]
     Otz = 5112,
+    /// Tagargrent
     #[doc(hidden)]
     Oua = 5113,
+    /// Glio-Oubi
     #[doc(hidden)]
     Oub = 5114,
+    /// Oune
     #[doc(hidden)]
     Oue = 5115,
+    /// Old Uighur
     #[doc(hidden)]
     Oui = 5116,
+    /// Ouma
     #[doc(hidden)]
     Oum = 5117,
+    /// Elfdalian
     #[doc(hidden)]
     Ovd = 5118,
+    /// Owiniga
     #[doc(hidden)]
     Owi = 5119,
+    /// Old Welsh
     #[doc(hidden)]
     Owl = 5120,
+    /// Oy
     #[doc(hidden)]
     Oyb = 5121,
+    /// Oyda
     #[doc(hidden)]
     Oyd = 5122,
+    /// Wayampi
     #[doc(hidden)]
     Oym = 5123,
+    /// Oya'oya
     #[doc(hidden)]
     Oyy = 5124,
+    /// Koonzime
     #[doc(hidden)]
     Ozm = 5125,
+    /// Parecís
     #[doc(hidden)]
     Pab = 5126,
+    /// Pacoh
     #[doc(hidden)]
     Pac = 5127,
+    /// Paumarí
     #[doc(hidden)]
     Pad = 5128,
+    /// Pagibete
     #[doc(hidden)]
     Pae = 5129,
+    /// Paranawát
     #[doc(hidden)]
     Paf = 5130,
+    /// Pangasinan
     #[doc(hidden)]
     Pag = 5131,
+    /// Tenharim
     #[doc(hidden)]
     Pah = 5132,
+    /// Pe
     #[doc(hidden)]
     Pai = 5133,
+    /// Parakanã
     #[doc(hidden)]
     Pak = 5134,
+    /// Pahlavi
     #[doc(hidden)]
     Pal = 5135,
+    /// Pampanga
     #[doc(hidden)]
     Pam = 5136,
+    /// Panjabi
     #[doc(hidden)]
     Pan = 5137,
+    /// Northern Paiute
     #[doc(hidden)]
     Pao = 5138,
+    /// Papiamento
     #[doc(hidden)]
     Pap = 5139,
+    /// Parya
     #[doc(hidden)]
     Paq = 5140,
+    /// Panamint
     #[doc(hidden)]
     Par = 5141,
+    /// Papasena
     #[doc(hidden)]
     Pas = 5142,
+    /// Palauan
     #[doc(hidden)]
     Pau = 5143,
+    /// Pakaásnovos
     #[doc(hidden)]
     Pav = 5144,
+    /// Pawnee
     #[doc(hidden)]
     Paw = 5145,
+    /// Pankararé
     #[doc(hidden)]
     Pax = 5146,
+    /// Pech
     #[doc(hidden)]
     Pay = 5147,
+    /// Pankararú
     #[doc(hidden)]
     Paz = 5148,
+    /// Páez
     #[doc(hidden)]
     Pbb = 5149,
+    /// Patamona
     #[doc(hidden)]
     Pbc = 5150,
+    /// Mezontla Popoloca
     #[doc(hidden)]
     Pbe = 5151,
+    /// Coyotepec Popoloca
     #[doc(hidden)]
     Pbf = 5152,
+    /// Paraujano
     #[doc(hidden)]
     Pbg = 5153,
+    /// E'ñapa Woromaipu
     #[doc(hidden)]
     Pbh = 5154,
+    /// Parkwa
     #[doc(hidden)]
     Pbi = 5155,
+    /// Mak
     #[doc(hidden)]
     Pbl = 5156,
+    /// Puebla Mazatec
     #[doc(hidden)]
     Pbm = 5157,
+    /// Kpasam
     #[doc(hidden)]
     Pbn = 5158,
+    /// Papel
     #[doc(hidden)]
     Pbo = 5159,
+    /// Badyara
     #[doc(hidden)]
     Pbp = 5160,
+    /// Pangwa
     #[doc(hidden)]
     Pbr = 5161,
+    /// Central Pame
     #[doc(hidden)]
     Pbs = 5162,
+    /// Southern Pashto
     #[doc(hidden)]
     Pbt = 5163,
+    /// Northern Pashto
     #[doc(hidden)]
     Pbu = 5164,
+    /// Pnar
     #[doc(hidden)]
     Pbv = 5165,
+    /// Pyu
     #[doc(hidden)]
     Pby = 5166,
+    /// Santa Inés Ahuatempan Popoloca
     #[doc(hidden)]
     Pca = 5167,
+    /// Pear
     #[doc(hidden)]
     Pcb = 5168,
+    /// Bouyei
     #[doc(hidden)]
     Pcc = 5169,
+    /// Picard
     #[doc(hidden)]
     Pcd = 5170,
+    /// Ruching Palaung
     #[doc(hidden)]
     Pce = 5171,
+    /// Paliyan
     #[doc(hidden)]
     Pcf = 5172,
+    /// Paniya
     #[doc(hidden)]
     Pcg = 5173,
+    /// Pardhan
     #[doc(hidden)]
     Pch = 5174,
+    /// Duruwa
     #[doc(hidden)]
     Pci = 5175,
+    /// Parenga
     #[doc(hidden)]
     Pcj = 5176,
+    /// Paite Chin
     #[doc(hidden)]
     Pck = 5177,
+    /// Pardhi
     #[doc(hidden)]
     Pcl = 5178,
+    /// Nigerian Pidgin
     #[doc(hidden)]
     Pcm = 5179,
+    /// Piti
     #[doc(hidden)]
     Pcn = 5180,
+    /// Pacahuara
     #[doc(hidden)]
     Pcp = 5181,
+    /// Pyapun
     #[doc(hidden)]
     Pcw = 5182,
+    /// Anam
     #[doc(hidden)]
     Pda = 5183,
+    /// Pennsylvania German
     #[doc(hidden)]
     Pdc = 5184,
+    /// Pa Di
     #[doc(hidden)]
     Pdi = 5185,
+    /// Podena
     #[doc(hidden)]
     Pdn = 5186,
+    /// Padoe
     #[doc(hidden)]
     Pdo = 5187,
+    /// Plautdietsch
     #[doc(hidden)]
     Pdt = 5188,
+    /// Kayan
     #[doc(hidden)]
     Pdu = 5189,
+    /// Peranakan Indonesian
     #[doc(hidden)]
     Pea = 5190,
+    /// Eastern Pomo
     #[doc(hidden)]
     Peb = 5191,
+    /// Mala
     #[doc(hidden)]
     Ped = 5192,
+    /// Taje
     #[doc(hidden)]
     Pee = 5193,
+    /// Northeastern Pomo
     #[doc(hidden)]
     Pef = 5194,
+    /// Pengo
     #[doc(hidden)]
     Peg = 5195,
+    /// Bonan
     #[doc(hidden)]
     Peh = 5196,
+    /// Chichimeca-Jonaz
     #[doc(hidden)]
     Pei = 5197,
+    /// Northern Pomo
     #[doc(hidden)]
     Pej = 5198,
+    /// Penchal
     #[doc(hidden)]
     Pek = 5199,
+    /// Pekal
     #[doc(hidden)]
     Pel = 5200,
+    /// Phende
     #[doc(hidden)]
     Pem = 5201,
+    /// Old Persian
     #[doc(hidden)]
     Peo = 5202,
+    /// Kunja
     #[doc(hidden)]
     Pep = 5203,
+    /// Southern Pomo
     #[doc(hidden)]
     Peq = 5204,
+    /// Iranian Persian
     #[doc(hidden)]
     Pes = 5205,
+    /// Pémono
     #[doc(hidden)]
     Pev = 5206,
+    /// Petats
     #[doc(hidden)]
     Pex = 5207,
+    /// Petjo
     #[doc(hidden)]
     Pey = 5208,
+    /// Eastern Penan
     #[doc(hidden)]
     Pez = 5209,
+    /// Pááfang
     #[doc(hidden)]
     Pfa = 5210,
+    /// Pere
     #[doc(hidden)]
     Pfe = 5211,
+    /// Pfaelzisch
     #[doc(hidden)]
     Pfl = 5212,
+    /// Sudanese Creole Arabic
     #[doc(hidden)]
     Pga = 5213,
+    /// Gāndhārī
     #[doc(hidden)]
     Pgd = 5214,
+    /// Pangwali
     #[doc(hidden)]
     Pgg = 5215,
+    /// Pagi
     #[doc(hidden)]
     Pgi = 5216,
+    /// Rerep
     #[doc(hidden)]
     Pgk = 5217,
+    /// Primitive Irish
     #[doc(hidden)]
     Pgl = 5218,
+    /// Paelignian
     #[doc(hidden)]
     Pgn = 5219,
+    /// Pangseng
     #[doc(hidden)]
     Pgs = 5220,
+    /// Pagu
     #[doc(hidden)]
     Pgu = 5221,
+    /// Papua New Guinean Sign Language
     #[doc(hidden)]
     Pgz = 5222,
+    /// Pa-Hng
     #[doc(hidden)]
     Pha = 5223,
+    /// Phudagi
     #[doc(hidden)]
     Phd = 5224,
+    /// Phuong
     #[doc(hidden)]
     Phg = 5225,
+    /// Phukha
     #[doc(hidden)]
     Phh = 5226,
+    /// Pahari
     #[doc(hidden)]
     Phj = 5227,
+    /// Phake
     #[doc(hidden)]
     Phk = 5228,
+    /// Phalura
     #[doc(hidden)]
     Phl = 5229,
+    /// Phimbi
     #[doc(hidden)]
     Phm = 5230,
+    /// Phoenician
     #[doc(hidden)]
     Phn = 5231,
+    /// Phunoi
     #[doc(hidden)]
     Pho = 5232,
+    /// Phana'
     #[doc(hidden)]
     Phq = 5233,
+    /// Pahari-Potwari
     #[doc(hidden)]
     Phr = 5234,
+    /// Phu Thai
     #[doc(hidden)]
     Pht = 5235,
+    /// Phuan
     #[doc(hidden)]
     Phu = 5236,
+    /// Pahlavani
     #[doc(hidden)]
     Phv = 5237,
+    /// Phangduwali
     #[doc(hidden)]
     Phw = 5238,
+    /// Pima Bajo
     #[doc(hidden)]
     Pia = 5239,
+    /// Yine
     #[doc(hidden)]
     Pib = 5240,
+    /// Pinji
     #[doc(hidden)]
     Pic = 5241,
+    /// Piaroa
     #[doc(hidden)]
     Pid = 5242,
+    /// Piro
     #[doc(hidden)]
     Pie = 5243,
+    /// Pingelapese
     #[doc(hidden)]
     Pif = 5244,
+    /// Pisabo
     #[doc(hidden)]
     Pig = 5245,
+    /// Pitcairn-Norfolk
     #[doc(hidden)]
     Pih = 5246,
+    /// Pijao
     #[doc(hidden)]
     Pij = 5247,
+    /// Yom
     #[doc(hidden)]
     Pil = 5248,
+    /// Powhatan
     #[doc(hidden)]
     Pim = 5249,
+    /// Piame
     #[doc(hidden)]
     Pin = 5250,
+    /// Piapoco
     #[doc(hidden)]
     Pio = 5251,
+    /// Pero
     #[doc(hidden)]
     Pip = 5252,
+    /// Piratapuyo
     #[doc(hidden)]
     Pir = 5253,
+    /// Pijin
     #[doc(hidden)]
     Pis = 5254,
+    /// Pitta Pitta
     #[doc(hidden)]
     Pit = 5255,
+    /// Pintupi-Luritja
     #[doc(hidden)]
     Piu = 5256,
+    /// Pileni
     #[doc(hidden)]
     Piv = 5257,
+    /// Pimbwe
     #[doc(hidden)]
     Piw = 5258,
+    /// Piu
     #[doc(hidden)]
     Pix = 5259,
+    /// Piya-Kwonci
     #[doc(hidden)]
     Piy = 5260,
+    /// Pije
     #[doc(hidden)]
     Piz = 5261,
+    /// Pitjantjatjara
     #[doc(hidden)]
     Pjt = 5262,
+    /// Ardhamāgadhī Prākrit
     #[doc(hidden)]
     Pka = 5263,
+    /// Pokomo
     #[doc(hidden)]
     Pkb = 5264,
+    /// Paekche
     #[doc(hidden)]
     Pkc = 5265,
+    /// Pak-Tong
     #[doc(hidden)]
     Pkg = 5266,
+    /// Pankhu
     #[doc(hidden)]
     Pkh = 5267,
+    /// Pakanha
     #[doc(hidden)]
     Pkn = 5268,
+    /// Pökoot
     #[doc(hidden)]
     Pko = 5269,
+    /// Pukapuka
     #[doc(hidden)]
     Pkp = 5270,
+    /// Attapady Kurumba
     #[doc(hidden)]
     Pkr = 5271,
+    /// Pakistan Sign Language
     #[doc(hidden)]
     Pks = 5272,
+    /// Maleng
     #[doc(hidden)]
     Pkt = 5273,
+    /// Paku
     #[doc(hidden)]
     Pku = 5274,
+    /// Miani
     #[doc(hidden)]
     Pla = 5275,
+    /// Polonombauk
     #[doc(hidden)]
     Plb = 5276,
+    /// Central Palawano
     #[doc(hidden)]
     Plc = 5277,
+    /// Polari
     #[doc(hidden)]
     Pld = 5278,
+    /// Palu'e
     #[doc(hidden)]
     Ple = 5279,
+    /// Pilagá
     #[doc(hidden)]
     Plg = 5280,
+    /// Paulohi
     #[doc(hidden)]
     Plh = 5281,
+    /// Pali
     #[doc(hidden)]
     Pli = 5282,
+    /// Kohistani Shina
     #[doc(hidden)]
     Plk = 5283,
+    /// Shwe Palaung
     #[doc(hidden)]
     Pll = 5284,
+    /// Palenquero
     #[doc(hidden)]
     Pln = 5285,
+    /// Oluta Popoluca
     #[doc(hidden)]
     Plo = 5286,
+    /// Palaic
     #[doc(hidden)]
     Plq = 5287,
+    /// Palaka Senoufo
     #[doc(hidden)]
     Plr = 5288,
+    /// San Marcos Tlacoyalco Popoloca
     #[doc(hidden)]
     Pls = 5289,
+    /// Plateau Malagasy
     #[doc(hidden)]
     Plt = 5290,
+    /// Palikúr
     #[doc(hidden)]
     Plu = 5291,
+    /// Southwest Palawano
     #[doc(hidden)]
     Plv = 5292,
+    /// Brooke's Point Palawano
     #[doc(hidden)]
     Plw = 5293,
+    /// Bolyu
     #[doc(hidden)]
     Ply = 5294,
+    /// Paluan
     #[doc(hidden)]
     Plz = 5295,
+    /// Paama
     #[doc(hidden)]
     Pma = 5296,
+    /// Pambia
     #[doc(hidden)]
     Pmb = 5297,
+    /// Pallanganmiddang
     #[doc(hidden)]
     Pmd = 5298,
+    /// Pwaamei
     #[doc(hidden)]
     Pme = 5299,
+    /// Pamona
     #[doc(hidden)]
     Pmf = 5300,
+    /// Māhārāṣṭri Prākrit
     #[doc(hidden)]
     Pmh = 5301,
+    /// Northern Pumi
     #[doc(hidden)]
     Pmi = 5302,
+    /// Southern Pumi
     #[doc(hidden)]
     Pmj = 5303,
+    /// Lingua Franca
     #[doc(hidden)]
     Pml = 5304,
+    /// Pomo
     #[doc(hidden)]
     Pmm = 5305,
+    /// Pam
     #[doc(hidden)]
     Pmn = 5306,
+    /// Pom
     #[doc(hidden)]
     Pmo = 5307,
+    /// Northern Pame
     #[doc(hidden)]
     Pmq = 5308,
+    /// Paynamar
     #[doc(hidden)]
     Pmr = 5309,
+    /// Piemontese
     #[doc(hidden)]
     Pms = 5310,
+    /// Tuamotuan
     #[doc(hidden)]
     Pmt = 5311,
+    /// Plains Miwok
     #[doc(hidden)]
     Pmw = 5312,
+    /// Poumei Naga
     #[doc(hidden)]
     Pmx = 5313,
+    /// Papuan Malay
     #[doc(hidden)]
     Pmy = 5314,
+    /// Southern Pame
     #[doc(hidden)]
     Pmz = 5315,
+    /// Punan Bah-Biau
     #[doc(hidden)]
     Pna = 5316,
+    /// Western Panjabi
     #[doc(hidden)]
     Pnb = 5317,
+    /// Pannei
     #[doc(hidden)]
     Pnc = 5318,
+    /// Mpinda
     #[doc(hidden)]
     Pnd = 5319,
+    /// Western Penan
     #[doc(hidden)]
     Pne = 5320,
+    /// Pangu
     #[doc(hidden)]
     Png = 5321,
+    /// Penrhyn
     #[doc(hidden)]
     Pnh = 5322,
+    /// Aoheng
     #[doc(hidden)]
     Pni = 5323,
+    /// Pinjarup
     #[doc(hidden)]
     Pnj = 5324,
+    /// Paunaka
     #[doc(hidden)]
     Pnk = 5325,
+    /// Paleni
     #[doc(hidden)]
     Pnl = 5326,
+    /// Punan Batu 1
     #[doc(hidden)]
     Pnm = 5327,
+    /// Pinai-Hagahai
     #[doc(hidden)]
     Pnn = 5328,
+    /// Panobo
     #[doc(hidden)]
     Pno = 5329,
+    /// Pancana
     #[doc(hidden)]
     Pnp = 5330,
+    /// Pana
     #[doc(hidden)]
     Pnq = 5331,
+    /// Panim
     #[doc(hidden)]
     Pnr = 5332,
+    /// Ponosakan
     #[doc(hidden)]
     Pns = 5333,
+    /// Pontic
     #[doc(hidden)]
     Pnt = 5334,
+    /// Jiongnai Bunu
     #[doc(hidden)]
     Pnu = 5335,
+    /// Pinigura
     #[doc(hidden)]
     Pnv = 5336,
+    /// Banyjima
     #[doc(hidden)]
     Pnw = 5337,
+    /// Phong-Kniang
     #[doc(hidden)]
     Pnx = 5338,
+    /// Pinyin
     #[doc(hidden)]
     Pny = 5339,
+    /// Pana
     #[doc(hidden)]
     Pnz = 5340,
+    /// Poqomam
     #[doc(hidden)]
     Poc = 5341,
+    /// San Juan Atzingo Popoloca
     #[doc(hidden)]
     Poe = 5342,
+    /// Poke
     #[doc(hidden)]
     Pof = 5343,
+    /// Potiguára
     #[doc(hidden)]
     Pog = 5344,
+    /// Poqomchi'
     #[doc(hidden)]
     Poh = 5345,
+    /// Highland Popoluca
     #[doc(hidden)]
     Poi = 5346,
+    /// Pokangá
     #[doc(hidden)]
     Pok = 5347,
+    /// Polish
     #[doc(hidden)]
     Pol = 5348,
+    /// Southeastern Pomo
     #[doc(hidden)]
     Pom = 5349,
+    /// Pohnpeian
     #[doc(hidden)]
     Pon = 5350,
+    /// Central Pomo
     #[doc(hidden)]
     Poo = 5351,
+    /// Pwapwâ
     #[doc(hidden)]
     Pop = 5352,
+    /// Texistepec Popoluca
     #[doc(hidden)]
     Poq = 5353,
+    /// Portuguese
     #[doc(hidden)]
     Por = 5354,
+    /// Sayula Popoluca
     #[doc(hidden)]
     Pos = 5355,
+    /// Potawatomi
     #[doc(hidden)]
     Pot = 5356,
+    /// Upper Guinea Crioulo
     #[doc(hidden)]
     Pov = 5357,
+    /// San Felipe Otlaltepec Popoloca
     #[doc(hidden)]
     Pow = 5358,
+    /// Polabian
     #[doc(hidden)]
     Pox = 5359,
+    /// Pogolo
     #[doc(hidden)]
     Poy = 5360,
+    /// Papi
     #[doc(hidden)]
     Ppe = 5361,
+    /// Paipai
     #[doc(hidden)]
     Ppi = 5362,
+    /// Uma
     #[doc(hidden)]
     Ppk = 5363,
+    /// Pipil
     #[doc(hidden)]
     Ppl = 5364,
+    /// Papuma
     #[doc(hidden)]
     Ppm = 5365,
+    /// Papapana
     #[doc(hidden)]
     Ppn = 5366,
+    /// Folopa
     #[doc(hidden)]
     Ppo = 5367,
+    /// Pelende
     #[doc(hidden)]
     Ppp = 5368,
+    /// Pei
     #[doc(hidden)]
     Ppq = 5369,
+    /// San Luís Temalacayuca Popoloca
     #[doc(hidden)]
     Pps = 5370,
+    /// Pare
     #[doc(hidden)]
     Ppt = 5371,
+    /// Papora
     #[doc(hidden)]
     Ppu = 5372,
+    /// Pa'a
     #[doc(hidden)]
     Pqa = 5373,
+    /// Malecite-Passamaquoddy
     #[doc(hidden)]
     Pqm = 5374,
+    /// Parachi
     #[doc(hidden)]
     Prc = 5375,
+    /// Parsi-Dari
     #[doc(hidden)]
     Prd = 5376,
+    /// Principense
     #[doc(hidden)]
     Pre = 5377,
+    /// Paranan
     #[doc(hidden)]
     Prf = 5378,
+    /// Prussian
     #[doc(hidden)]
     Prg = 5379,
+    /// Porohanon
     #[doc(hidden)]
     Prh = 5380,
+    /// Paicî
     #[doc(hidden)]
     Pri = 5381,
+    /// Parauk
     #[doc(hidden)]
     Prk = 5382,
+    /// Peruvian Sign Language
     #[doc(hidden)]
     Prl = 5383,
+    /// Kibiri
     #[doc(hidden)]
     Prm = 5384,
+    /// Prasuni
     #[doc(hidden)]
     Prn = 5385,
+    /// Old Provençal
     #[doc(hidden)]
     Pro = 5386,
+    /// Ashéninka Perené
     #[doc(hidden)]
     Prq = 5387,
+    /// Puri
     #[doc(hidden)]
     Prr = 5388,
+    /// Dari
     #[doc(hidden)]
     Prs = 5389,
+    /// Phai
     #[doc(hidden)]
     Prt = 5390,
+    /// Puragi
     #[doc(hidden)]
     Pru = 5391,
+    /// Parawen
     #[doc(hidden)]
     Prw = 5392,
+    /// Purik
     #[doc(hidden)]
     Prx = 5393,
+    /// Providencia Sign Language
     #[doc(hidden)]
     Prz = 5394,
+    /// Asue Awyu
     #[doc(hidden)]
     Psa = 5395,
+    /// Iranian Sign Language
     #[doc(hidden)]
     Psc = 5396,
+    /// Plains Indian Sign Language
     #[doc(hidden)]
     Psd = 5397,
+    /// Central Malay
     #[doc(hidden)]
     Pse = 5398,
+    /// Penang Sign Language
     #[doc(hidden)]
     Psg = 5399,
+    /// Southwest Pashai
     #[doc(hidden)]
     Psh = 5400,
+    /// Southeast Pashai
     #[doc(hidden)]
     Psi = 5401,
+    /// Puerto Rican Sign Language
     #[doc(hidden)]
     Psl = 5402,
+    /// Pauserna
     #[doc(hidden)]
     Psm = 5403,
+    /// Panasuan
     #[doc(hidden)]
     Psn = 5404,
+    /// Polish Sign Language
     #[doc(hidden)]
     Pso = 5405,
+    /// Philippine Sign Language
     #[doc(hidden)]
     Psp = 5406,
+    /// Pasi
     #[doc(hidden)]
     Psq = 5407,
+    /// Portuguese Sign Language
     #[doc(hidden)]
     Psr = 5408,
+    /// Kaulong
     #[doc(hidden)]
     Pss = 5409,
+    /// Central Pashto
     #[doc(hidden)]
     Pst = 5410,
+    /// Sauraseni Prākrit
     #[doc(hidden)]
     Psu = 5411,
+    /// Port Sandwich
     #[doc(hidden)]
     Psw = 5412,
+    /// Piscataway
     #[doc(hidden)]
     Psy = 5413,
+    /// Pai Tavytera
     #[doc(hidden)]
     Pta = 5414,
+    /// Pataxó Hã-Ha-Hãe
     #[doc(hidden)]
     Pth = 5415,
+    /// Pindiini
     #[doc(hidden)]
     Pti = 5416,
+    /// Patani
     #[doc(hidden)]
     Ptn = 5417,
+    /// Zo'é
     #[doc(hidden)]
     Pto = 5418,
+    /// Patep
     #[doc(hidden)]
     Ptp = 5419,
+    /// Pattapu
     #[doc(hidden)]
     Ptq = 5420,
+    /// Piamatsina
     #[doc(hidden)]
     Ptr = 5421,
+    /// Enrekang
     #[doc(hidden)]
     Ptt = 5422,
+    /// Bambam
     #[doc(hidden)]
     Ptu = 5423,
+    /// Port Vato
     #[doc(hidden)]
     Ptv = 5424,
+    /// Pentlatch
     #[doc(hidden)]
     Ptw = 5425,
+    /// Pathiya
     #[doc(hidden)]
     Pty = 5426,
+    /// Western Highland Purepecha
     #[doc(hidden)]
     Pua = 5427,
+    /// Purum
     #[doc(hidden)]
     Pub = 5428,
+    /// Punan Merap
     #[doc(hidden)]
     Puc = 5429,
+    /// Punan Aput
     #[doc(hidden)]
     Pud = 5430,
+    /// Puelche
     #[doc(hidden)]
     Pue = 5431,
+    /// Punan Merah
     #[doc(hidden)]
     Puf = 5432,
+    /// Phuie
     #[doc(hidden)]
     Pug = 5433,
+    /// Puinave
     #[doc(hidden)]
     Pui = 5434,
+    /// Punan Tubu
     #[doc(hidden)]
     Puj = 5435,
+    /// Puma
     #[doc(hidden)]
     Pum = 5436,
+    /// Puoc
     #[doc(hidden)]
     Puo = 5437,
+    /// Pulabu
     #[doc(hidden)]
     Pup = 5438,
+    /// Puquina
     #[doc(hidden)]
     Puq = 5439,
+    /// Puruborá
     #[doc(hidden)]
     Pur = 5440,
+    /// Pushto
     #[doc(hidden)]
     Pus = 5441,
+    /// Putoh
     #[doc(hidden)]
     Put = 5442,
+    /// Punu
     #[doc(hidden)]
     Puu = 5443,
+    /// Puluwatese
     #[doc(hidden)]
     Puw = 5444,
+    /// Puare
     #[doc(hidden)]
     Pux = 5445,
+    /// Purisimeño
     #[doc(hidden)]
     Puy = 5446,
+    /// Pawaia
     #[doc(hidden)]
     Pwa = 5447,
+    /// Panawa
     #[doc(hidden)]
     Pwb = 5448,
+    /// Gapapaiwa
     #[doc(hidden)]
     Pwg = 5449,
+    /// Patwin
     #[doc(hidden)]
     Pwi = 5450,
+    /// Molbog
     #[doc(hidden)]
     Pwm = 5451,
+    /// Paiwan
     #[doc(hidden)]
     Pwn = 5452,
+    /// Pwo Western Karen
     #[doc(hidden)]
     Pwo = 5453,
+    /// Powari
     #[doc(hidden)]
     Pwr = 5454,
+    /// Pwo Northern Karen
     #[doc(hidden)]
     Pww = 5455,
+    /// Quetzaltepec Mixe
     #[doc(hidden)]
     Pxm = 5456,
+    /// Pye Krumen
     #[doc(hidden)]
     Pye = 5457,
+    /// Fyam
     #[doc(hidden)]
     Pym = 5458,
+    /// Poyanáwa
     #[doc(hidden)]
     Pyn = 5459,
+    /// Paraguayan Sign Language
     #[doc(hidden)]
     Pys = 5460,
+    /// Puyuma
     #[doc(hidden)]
     Pyu = 5461,
+    /// Pyu
     #[doc(hidden)]
     Pyx = 5462,
+    /// Pyen
     #[doc(hidden)]
     Pyy = 5463,
+    /// Pesse
     #[doc(hidden)]
     Pze = 5464,
+    /// Pazeh
     #[doc(hidden)]
     Pzh = 5465,
+    /// Jejara Naga
     #[doc(hidden)]
     Pzn = 5466,
+    /// Quapaw
     #[doc(hidden)]
     Qua = 5467,
+    /// Huallaga Huánuco Quechua
     #[doc(hidden)]
     Qub = 5468,
+    /// K'iche'
     #[doc(hidden)]
     Quc = 5469,
+    /// Calderón Highland Quichua
     #[doc(hidden)]
     Qud = 5470,
+    /// Quechua
     #[doc(hidden)]
     Que = 5471,
+    /// Lambayeque Quechua
     #[doc(hidden)]
     Quf = 5472,
+    /// Chimborazo Highland Quichua
     #[doc(hidden)]
     Qug = 5473,
+    /// South Bolivian Quechua
     #[doc(hidden)]
     Quh = 5474,
+    /// Quileute
     #[doc(hidden)]
     Qui = 5475,
+    /// Chachapoyas Quechua
     #[doc(hidden)]
     Quk = 5476,
+    /// North Bolivian Quechua
     #[doc(hidden)]
     Qul = 5477,
+    /// Sipacapense
     #[doc(hidden)]
     Qum = 5478,
+    /// Quinault
     #[doc(hidden)]
     Qun = 5479,
+    /// Southern Pastaza Quechua
     #[doc(hidden)]
     Qup = 5480,
+    /// Quinqui
     #[doc(hidden)]
     Quq = 5481,
+    /// Yanahuanca Pasco Quechua
     #[doc(hidden)]
     Qur = 5482,
+    /// Santiago del Estero Quichua
     #[doc(hidden)]
     Qus = 5483,
+    /// Sacapulteco
     #[doc(hidden)]
     Quv = 5484,
+    /// Tena Lowland Quichua
     #[doc(hidden)]
     Quw = 5485,
+    /// Yauyos Quechua
     #[doc(hidden)]
     Qux = 5486,
+    /// Ayacucho Quechua
     #[doc(hidden)]
     Quy = 5487,
+    /// Cusco Quechua
     #[doc(hidden)]
     Quz = 5488,
+    /// Ambo-Pasco Quechua
     #[doc(hidden)]
     Qva = 5489,
+    /// Cajamarca Quechua
     #[doc(hidden)]
     Qvc = 5490,
+    /// Eastern Apurímac Quechua
     #[doc(hidden)]
     Qve = 5491,
+    /// Huamalíes-Dos de Mayo Huánuco Quechua
     #[doc(hidden)]
     Qvh = 5492,
+    /// Imbabura Highland Quichua
     #[doc(hidden)]
     Qvi = 5493,
+    /// Loja Highland Quichua
     #[doc(hidden)]
     Qvj = 5494,
+    /// Cajatambo North Lima Quechua
     #[doc(hidden)]
     Qvl = 5495,
+    /// Margos-Yarowilca-Lauricocha Quechua
     #[doc(hidden)]
     Qvm = 5496,
+    /// North Junín Quechua
     #[doc(hidden)]
     Qvn = 5497,
+    /// Napo Lowland Quechua
     #[doc(hidden)]
     Qvo = 5498,
+    /// Pacaraos Quechua
     #[doc(hidden)]
     Qvp = 5499,
+    /// San Martín Quechua
     #[doc(hidden)]
     Qvs = 5500,
+    /// Huaylla Wanca Quechua
     #[doc(hidden)]
     Qvw = 5501,
+    /// Queyu
     #[doc(hidden)]
     Qvy = 5502,
+    /// Northern Pastaza Quichua
     #[doc(hidden)]
     Qvz = 5503,
+    /// Corongo Ancash Quechua
     #[doc(hidden)]
     Qwa = 5504,
+    /// Classical Quechua
     #[doc(hidden)]
     Qwc = 5505,
+    /// Huaylas Ancash Quechua
     #[doc(hidden)]
     Qwh = 5506,
+    /// Kuman
     #[doc(hidden)]
     Qwm = 5507,
+    /// Sihuas Ancash Quechua
     #[doc(hidden)]
     Qws = 5508,
+    /// Kwalhioqua-Tlatskanai
     #[doc(hidden)]
     Qwt = 5509,
+    /// Chiquián Ancash Quechua
     #[doc(hidden)]
     Qxa = 5510,
+    /// Chincha Quechua
     #[doc(hidden)]
     Qxc = 5511,
+    /// Panao Huánuco Quechua
     #[doc(hidden)]
     Qxh = 5512,
+    /// Salasaca Highland Quichua
     #[doc(hidden)]
     Qxl = 5513,
+    /// Northern Conchucos Ancash Quechua
     #[doc(hidden)]
     Qxn = 5514,
+    /// Southern Conchucos Ancash Quechua
     #[doc(hidden)]
     Qxo = 5515,
+    /// Puno Quechua
     #[doc(hidden)]
     Qxp = 5516,
+    /// Qashqa'i
     #[doc(hidden)]
     Qxq = 5517,
+    /// Cañar Highland Quichua
     #[doc(hidden)]
     Qxr = 5518,
+    /// Southern Qiang
     #[doc(hidden)]
     Qxs = 5519,
+    /// Santa Ana de Tusi Pasco Quechua
     #[doc(hidden)]
     Qxt = 5520,
+    /// Arequipa-La Unión Quechua
     #[doc(hidden)]
     Qxu = 5521,
+    /// Jauja Wanca Quechua
     #[doc(hidden)]
     Qxw = 5522,
+    /// Quenya
     #[doc(hidden)]
     Qya = 5523,
+    /// Quiripi
     #[doc(hidden)]
     Qyp = 5524,
+    /// Dungmali
     #[doc(hidden)]
     Raa = 5525,
+    /// Camling
     #[doc(hidden)]
     Rab = 5526,
+    /// Rasawa
     #[doc(hidden)]
     Rac = 5527,
+    /// Rade
     #[doc(hidden)]
     Rad = 5528,
+    /// Western Meohang
     #[doc(hidden)]
     Raf = 5529,
+    /// Logooli
     #[doc(hidden)]
     Rag = 5530,
+    /// Rabha
     #[doc(hidden)]
     Rah = 5531,
+    /// Ramoaaina
     #[doc(hidden)]
     Rai = 5532,
+    /// Rajasthani
     #[doc(hidden)]
     Raj = 5533,
+    /// Tulu-Bohuai
     #[doc(hidden)]
     Rak = 5534,
+    /// Ralte
     #[doc(hidden)]
     Ral = 5535,
+    /// Canela
     #[doc(hidden)]
     Ram = 5536,
+    /// Riantana
     #[doc(hidden)]
     Ran = 5537,
+    /// Rao
     #[doc(hidden)]
     Rao = 5538,
+    /// Rapanui
     #[doc(hidden)]
     Rap = 5539,
+    /// Saam
     #[doc(hidden)]
     Raq = 5540,
+    /// Rarotongan
     #[doc(hidden)]
     Rar = 5541,
+    /// Tegali
     #[doc(hidden)]
     Ras = 5542,
+    /// Razajerdi
     #[doc(hidden)]
     Rat = 5543,
+    /// Raute
     #[doc(hidden)]
     Rau = 5544,
+    /// Sampang
     #[doc(hidden)]
     Rav = 5545,
+    /// Rawang
     #[doc(hidden)]
     Raw = 5546,
+    /// Rang
     #[doc(hidden)]
     Rax = 5547,
+    /// Rapa
     #[doc(hidden)]
     Ray = 5548,
+    /// Rahambuu
     #[doc(hidden)]
     Raz = 5549,
+    /// Rumai Palaung
     #[doc(hidden)]
     Rbb = 5550,
+    /// Northern Bontok
     #[doc(hidden)]
     Rbk = 5551,
+    /// Miraya Bikol
     #[doc(hidden)]
     Rbl = 5552,
+    /// Barababaraba
     #[doc(hidden)]
     Rbp = 5553,
+    /// Réunion Creole French
     #[doc(hidden)]
     Rcf = 5554,
+    /// Rudbari
     #[doc(hidden)]
     Rdb = 5555,
+    /// Rerau
     #[doc(hidden)]
     Rea = 5556,
+    /// Rembong
     #[doc(hidden)]
     Reb = 5557,
+    /// Rejang Kayan
     #[doc(hidden)]
     Ree = 5558,
+    /// Kara
     #[doc(hidden)]
     Reg = 5559,
+    /// Reli
     #[doc(hidden)]
     Rei = 5560,
+    /// Rejang
     #[doc(hidden)]
     Rej = 5561,
+    /// Rendille
     #[doc(hidden)]
     Rel = 5562,
+    /// Remo
     #[doc(hidden)]
     Rem = 5563,
+    /// Rengao
     #[doc(hidden)]
     Ren = 5564,
+    /// Rer Bare
     #[doc(hidden)]
     Rer = 5565,
+    /// Reshe
     #[doc(hidden)]
     Res = 5566,
+    /// Retta
     #[doc(hidden)]
     Ret = 5567,
+    /// Reyesano
     #[doc(hidden)]
     Rey = 5568,
+    /// Roria
     #[doc(hidden)]
     Rga = 5569,
+    /// Romano-Greek
     #[doc(hidden)]
     Rge = 5570,
+    /// Rangkas
     #[doc(hidden)]
     Rgk = 5571,
+    /// Romagnol
     #[doc(hidden)]
     Rgn = 5572,
+    /// Resígaro
     #[doc(hidden)]
     Rgr = 5573,
+    /// Southern Roglai
     #[doc(hidden)]
     Rgs = 5574,
+    /// Ringgou
     #[doc(hidden)]
     Rgu = 5575,
+    /// Rohingya
     #[doc(hidden)]
     Rhg = 5576,
+    /// Yahang
     #[doc(hidden)]
     Rhp = 5577,
+    /// Riang
     #[doc(hidden)]
     Ria = 5578,
+    /// Bribri Sign Language
     #[doc(hidden)]
     Rib = 5579,
+    /// Tarifit
     #[doc(hidden)]
     Rif = 5580,
+    /// Riang Lang
     #[doc(hidden)]
     Ril = 5581,
+    /// Nyaturu
     #[doc(hidden)]
     Rim = 5582,
+    /// Nungu
     #[doc(hidden)]
     Rin = 5583,
+    /// Ribun
     #[doc(hidden)]
     Rir = 5584,
+    /// Ritharrngu
     #[doc(hidden)]
     Rit = 5585,
+    /// Riung
     #[doc(hidden)]
     Riu = 5586,
+    /// Rajong
     #[doc(hidden)]
     Rjg = 5587,
+    /// Raji
     #[doc(hidden)]
     Rji = 5588,
+    /// Rajbanshi
     #[doc(hidden)]
     Rjs = 5589,
+    /// Kraol
     #[doc(hidden)]
     Rka = 5590,
+    /// Rikbaktsa
     #[doc(hidden)]
     Rkb = 5591,
+    /// Rakahanga-Manihiki
     #[doc(hidden)]
     Rkh = 5592,
+    /// Rakhine
     #[doc(hidden)]
     Rki = 5593,
+    /// Marka
     #[doc(hidden)]
     Rkm = 5594,
+    /// Rangpuri
     #[doc(hidden)]
     Rkt = 5595,
+    /// Arakwal
     #[doc(hidden)]
     Rkw = 5596,
+    /// Rama
     #[doc(hidden)]
     Rma = 5597,
+    /// Rembarrnga
     #[doc(hidden)]
     Rmb = 5598,
+    /// Carpathian Romani
     #[doc(hidden)]
     Rmc = 5599,
+    /// Traveller Danish
     #[doc(hidden)]
     Rmd = 5600,
+    /// Angloromani
     #[doc(hidden)]
     Rme = 5601,
+    /// Kalo Finnish Romani
     #[doc(hidden)]
     Rmf = 5602,
+    /// Traveller Norwegian
     #[doc(hidden)]
     Rmg = 5603,
+    /// Murkim
     #[doc(hidden)]
     Rmh = 5604,
+    /// Lomavren
     #[doc(hidden)]
     Rmi = 5605,
+    /// Romkun
     #[doc(hidden)]
     Rmk = 5606,
+    /// Baltic Romani
     #[doc(hidden)]
     Rml = 5607,
+    /// Roma
     #[doc(hidden)]
     Rmm = 5608,
+    /// Balkan Romani
     #[doc(hidden)]
     Rmn = 5609,
+    /// Sinte Romani
     #[doc(hidden)]
     Rmo = 5610,
+    /// Rempi
     #[doc(hidden)]
     Rmp = 5611,
+    /// Caló
     #[doc(hidden)]
     Rmq = 5612,
+    /// Romanian Sign Language
     #[doc(hidden)]
     Rms = 5613,
+    /// Domari
     #[doc(hidden)]
     Rmt = 5614,
+    /// Tavringer Romani
     #[doc(hidden)]
     Rmu = 5615,
+    /// Romanova
     #[doc(hidden)]
     Rmv = 5616,
+    /// Welsh Romani
     #[doc(hidden)]
     Rmw = 5617,
+    /// Romam
     #[doc(hidden)]
     Rmx = 5618,
+    /// Vlax Romani
     #[doc(hidden)]
     Rmy = 5619,
+    /// Marma
     #[doc(hidden)]
     Rmz = 5620,
+    /// Brunca Sign Language
     #[doc(hidden)]
     Rnb = 5621,
+    /// Ruund
     #[doc(hidden)]
     Rnd = 5622,
+    /// Ronga
     #[doc(hidden)]
     Rng = 5623,
+    /// Ranglong
     #[doc(hidden)]
     Rnl = 5624,
+    /// Roon
     #[doc(hidden)]
     Rnn = 5625,
+    /// Rongpo
     #[doc(hidden)]
     Rnp = 5626,
+    /// Nari Nari
     #[doc(hidden)]
     Rnr = 5627,
+    /// Rungwa
     #[doc(hidden)]
     Rnw = 5628,
+    /// Tae'
     #[doc(hidden)]
     Rob = 5629,
+    /// Cacgia Roglai
     #[doc(hidden)]
     Roc = 5630,
+    /// Rogo
     #[doc(hidden)]
     Rod = 5631,
+    /// Ronji
     #[doc(hidden)]
     Roe = 5632,
+    /// Rombo
     #[doc(hidden)]
     Rof = 5633,
+    /// Northern Roglai
     #[doc(hidden)]
     Rog = 5634,
+    /// Romansh
     #[doc(hidden)]
     Roh = 5635,
+    /// Romblomanon
     #[doc(hidden)]
     Rol = 5636,
+    /// Romany
     #[doc(hidden)]
     Rom = 5637,
+    /// Romanian
     #[doc(hidden)]
     Ron = 5638,
+    /// Rotokas
     #[doc(hidden)]
     Roo = 5639,
+    /// Kriol
     #[doc(hidden)]
     Rop = 5640,
+    /// Rongga
     #[doc(hidden)]
     Ror = 5641,
+    /// Runga
     #[doc(hidden)]
     Rou = 5642,
+    /// Dela-Oenale
     #[doc(hidden)]
     Row = 5643,
+    /// Repanbitip
     #[doc(hidden)]
     Rpn = 5644,
+    /// Rapting
     #[doc(hidden)]
     Rpt = 5645,
+    /// Ririo
     #[doc(hidden)]
     Rri = 5646,
+    /// Waima
     #[doc(hidden)]
     Rro = 5647,
+    /// Arritinngithigh
     #[doc(hidden)]
     Rrt = 5648,
+    /// Romano-Serbian
     #[doc(hidden)]
     Rsb = 5649,
+    /// Ruthenian
     #[doc(hidden)]
     Rsk = 5650,
+    /// Russian Sign Language
     #[doc(hidden)]
     Rsl = 5651,
+    /// Miriwoong Sign Language
     #[doc(hidden)]
     Rsm = 5652,
+    /// Rwandan Sign Language
     #[doc(hidden)]
     Rsn = 5653,
+    /// Rishiwa
     #[doc(hidden)]
     Rsw = 5654,
+    /// Rungtu Chin
     #[doc(hidden)]
     Rtc = 5655,
+    /// Ratahan
     #[doc(hidden)]
     Rth = 5656,
+    /// Rotuman
     #[doc(hidden)]
     Rtm = 5657,
+    /// Yurats
     #[doc(hidden)]
     Rts = 5658,
+    /// Rathawi
     #[doc(hidden)]
     Rtw = 5659,
+    /// Gungu
     #[doc(hidden)]
     Rub = 5660,
+    /// Ruuli
     #[doc(hidden)]
     Ruc = 5661,
+    /// Rusyn
     #[doc(hidden)]
     Rue = 5662,
+    /// Luguru
     #[doc(hidden)]
     Ruf = 5663,
+    /// Roviana
     #[doc(hidden)]
     Rug = 5664,
+    /// Ruga
     #[doc(hidden)]
     Ruh = 5665,
+    /// Rufiji
     #[doc(hidden)]
     Rui = 5666,
+    /// Che
     #[doc(hidden)]
     Ruk = 5667,
+    /// Rundi
     #[doc(hidden)]
     Run = 5668,
+    /// Istro Romanian
     #[doc(hidden)]
     Ruo = 5669,
+    /// Macedo-Romanian
     #[doc(hidden)]
     Rup = 5670,
+    /// Megleno Romanian
     #[doc(hidden)]
     Ruq = 5671,
+    /// Russian
     #[doc(hidden)]
     Rus = 5672,
+    /// Rutul
     #[doc(hidden)]
     Rut = 5673,
+    /// Lanas Lobu
     #[doc(hidden)]
     Ruu = 5674,
+    /// Mala
     #[doc(hidden)]
     Ruy = 5675,
+    /// Ruma
     #[doc(hidden)]
     Ruz = 5676,
+    /// Rawo
     #[doc(hidden)]
     Rwa = 5677,
+    /// Rwa
     #[doc(hidden)]
     Rwk = 5678,
+    /// Ruwila
     #[doc(hidden)]
     Rwl = 5679,
+    /// Amba
     #[doc(hidden)]
     Rwm = 5680,
+    /// Rawa
     #[doc(hidden)]
     Rwo = 5681,
+    /// Marwari
     #[doc(hidden)]
     Rwr = 5682,
+    /// Ngardi
     #[doc(hidden)]
     Rxd = 5683,
+    /// Karuwali
     #[doc(hidden)]
     Rxw = 5684,
+    /// Northern Amami-Oshima
     #[doc(hidden)]
     Ryn = 5685,
+    /// Yaeyama
     #[doc(hidden)]
     Rys = 5686,
+    /// Central Okinawan
     #[doc(hidden)]
     Ryu = 5687,
+    /// Rāziḥī
     #[doc(hidden)]
     Rzh = 5688,
+    /// Saba
     #[doc(hidden)]
     Saa = 5689,
+    /// Buglere
     #[doc(hidden)]
     Sab = 5690,
+    /// Meskwaki
     #[doc(hidden)]
     Sac = 5691,
+    /// Sandawe
     #[doc(hidden)]
     Sad = 5692,
+    /// Sabanê
     #[doc(hidden)]
     Sae = 5693,
+    /// Safaliba
     #[doc(hidden)]
     Saf = 5694,
+    /// Sango
     #[doc(hidden)]
     Sag = 5695,
+    /// Yakut
     #[doc(hidden)]
     Sah = 5696,
+    /// Sahu
     #[doc(hidden)]
     Saj = 5697,
+    /// Sake
     #[doc(hidden)]
     Sak = 5698,
+    /// Samaritan Aramaic
     #[doc(hidden)]
     Sam = 5699,
+    /// Sanskrit
     #[doc(hidden)]
     San = 5700,
+    /// Sause
     #[doc(hidden)]
     Sao = 5701,
+    /// Samburu
     #[doc(hidden)]
     Saq = 5702,
+    /// Saraveca
     #[doc(hidden)]
     Sar = 5703,
+    /// Sasak
     #[doc(hidden)]
     Sas = 5704,
+    /// Santali
     #[doc(hidden)]
     Sat = 5705,
+    /// Saleman
     #[doc(hidden)]
     Sau = 5706,
+    /// Saafi-Saafi
     #[doc(hidden)]
     Sav = 5707,
+    /// Sawi
     #[doc(hidden)]
     Saw = 5708,
+    /// Sa
     #[doc(hidden)]
     Sax = 5709,
+    /// Saya
     #[doc(hidden)]
     Say = 5710,
+    /// Saurashtra
     #[doc(hidden)]
     Saz = 5711,
+    /// Ngambay
     #[doc(hidden)]
     Sba = 5712,
+    /// Simbo
     #[doc(hidden)]
     Sbb = 5713,
+    /// Kele
     #[doc(hidden)]
     Sbc = 5714,
+    /// Southern Samo
     #[doc(hidden)]
     Sbd = 5715,
+    /// Saliba
     #[doc(hidden)]
     Sbe = 5716,
+    /// Chabu
     #[doc(hidden)]
     Sbf = 5717,
+    /// Seget
     #[doc(hidden)]
     Sbg = 5718,
+    /// Sori-Harengan
     #[doc(hidden)]
     Sbh = 5719,
+    /// Seti
     #[doc(hidden)]
     Sbi = 5720,
+    /// Surbakhal
     #[doc(hidden)]
     Sbj = 5721,
+    /// Safwa
     #[doc(hidden)]
     Sbk = 5722,
+    /// Botolan Sambal
     #[doc(hidden)]
     Sbl = 5723,
+    /// Sagala
     #[doc(hidden)]
     Sbm = 5724,
+    /// Sindhi Bhil
     #[doc(hidden)]
     Sbn = 5725,
+    /// Sabüm
     #[doc(hidden)]
     Sbo = 5726,
+    /// Sangu
     #[doc(hidden)]
     Sbp = 5727,
+    /// Sileibi
     #[doc(hidden)]
     Sbq = 5728,
+    /// Sembakung Murut
     #[doc(hidden)]
     Sbr = 5729,
+    /// Subiya
     #[doc(hidden)]
     Sbs = 5730,
+    /// Kimki
     #[doc(hidden)]
     Sbt = 5731,
+    /// Stod Bhoti
     #[doc(hidden)]
     Sbu = 5732,
+    /// Sabine
     #[doc(hidden)]
     Sbv = 5733,
+    /// Simba
     #[doc(hidden)]
     Sbw = 5734,
+    /// Seberuang
     #[doc(hidden)]
     Sbx = 5735,
+    /// Soli
     #[doc(hidden)]
     Sby = 5736,
+    /// Sara Kaba
     #[doc(hidden)]
     Sbz = 5737,
+    /// Chut
     #[doc(hidden)]
     Scb = 5738,
+    /// Dongxiang
     #[doc(hidden)]
     Sce = 5739,
+    /// San Miguel Creole French
     #[doc(hidden)]
     Scf = 5740,
+    /// Sanggau
     #[doc(hidden)]
     Scg = 5741,
+    /// Sakachep
     #[doc(hidden)]
     Sch = 5742,
+    /// Sri Lankan Creole Malay
     #[doc(hidden)]
     Sci = 5743,
+    /// Sadri
     #[doc(hidden)]
     Sck = 5744,
+    /// Shina
     #[doc(hidden)]
     Scl = 5745,
+    /// Sicilian
     #[doc(hidden)]
     Scn = 5746,
+    /// Scots
     #[doc(hidden)]
     Sco = 5747,
+    /// Hyolmo
     #[doc(hidden)]
     Scp = 5748,
+    /// Sa'och
     #[doc(hidden)]
     Scq = 5749,
+    /// North Slavey
     #[doc(hidden)]
     Scs = 5750,
+    /// Southern Katang
     #[doc(hidden)]
     Sct = 5751,
+    /// Shumcho
     #[doc(hidden)]
     Scu = 5752,
+    /// Sheni
     #[doc(hidden)]
     Scv = 5753,
+    /// Sha
     #[doc(hidden)]
     Scw = 5754,
+    /// Sicel
     #[doc(hidden)]
     Scx = 5755,
+    /// Toraja-Sa'dan
     #[doc(hidden)]
     Sda = 5756,
+    /// Shabak
     #[doc(hidden)]
     Sdb = 5757,
+    /// Sassarese Sardinian
     #[doc(hidden)]
     Sdc = 5758,
+    /// Surubu
     #[doc(hidden)]
     Sde = 5759,
+    /// Sarli
     #[doc(hidden)]
     Sdf = 5760,
+    /// Savi
     #[doc(hidden)]
     Sdg = 5761,
+    /// Southern Kurdish
     #[doc(hidden)]
     Sdh = 5762,
+    /// Suundi
     #[doc(hidden)]
     Sdj = 5763,
+    /// Sos Kundi
     #[doc(hidden)]
     Sdk = 5764,
+    /// Saudi Arabian Sign Language
     #[doc(hidden)]
     Sdl = 5765,
+    /// Gallurese Sardinian
     #[doc(hidden)]
     Sdn = 5766,
+    /// Bukar-Sadung Bidayuh
     #[doc(hidden)]
     Sdo = 5767,
+    /// Sherdukpen
     #[doc(hidden)]
     Sdp = 5768,
+    /// Semandang
     #[doc(hidden)]
     Sdq = 5769,
+    /// Oraon Sadri
     #[doc(hidden)]
     Sdr = 5770,
+    /// Sened
     #[doc(hidden)]
     Sds = 5771,
+    /// Shuadit
     #[doc(hidden)]
     Sdt = 5772,
+    /// Sarudu
     #[doc(hidden)]
     Sdu = 5773,
+    /// Sibu Melanau
     #[doc(hidden)]
     Sdx = 5774,
+    /// Sallands
     #[doc(hidden)]
     Sdz = 5775,
+    /// Semai
     #[doc(hidden)]
     Sea = 5776,
+    /// Shempire Senoufo
     #[doc(hidden)]
     Seb = 5777,
+    /// Sechelt
     #[doc(hidden)]
     Sec = 5778,
+    /// Sedang
     #[doc(hidden)]
     Sed = 5779,
+    /// Seneca
     #[doc(hidden)]
     See = 5780,
+    /// Cebaara Senoufo
     #[doc(hidden)]
     Sef = 5781,
+    /// Segeju
     #[doc(hidden)]
     Seg = 5782,
+    /// Sena
     #[doc(hidden)]
     Seh = 5783,
+    /// Seri
     #[doc(hidden)]
     Sei = 5784,
+    /// Sene
     #[doc(hidden)]
     Sej = 5785,
+    /// Sekani
     #[doc(hidden)]
     Sek = 5786,
+    /// Selkup
     #[doc(hidden)]
     Sel = 5787,
+    /// Nanerigé Sénoufo
     #[doc(hidden)]
     Sen = 5788,
+    /// Suarmin
     #[doc(hidden)]
     Seo = 5789,
+    /// Sìcìté Sénoufo
     #[doc(hidden)]
     Sep = 5790,
+    /// Senara Sénoufo
     #[doc(hidden)]
     Seq = 5791,
+    /// Serrano
     #[doc(hidden)]
     Ser = 5792,
+    /// Koyraboro Senni Songhai
     #[doc(hidden)]
     Ses = 5793,
+    /// Sentani
     #[doc(hidden)]
     Set = 5794,
+    /// Serui-Laut
     #[doc(hidden)]
     Seu = 5795,
+    /// Nyarafolo Senoufo
     #[doc(hidden)]
     Sev = 5796,
+    /// Sewa Bay
     #[doc(hidden)]
     Sew = 5797,
+    /// Secoya
     #[doc(hidden)]
     Sey = 5798,
+    /// Senthang Chin
     #[doc(hidden)]
     Sez = 5799,
+    /// Langue des signes de Belgique Francophone
     #[doc(hidden)]
     Sfb = 5800,
+    /// Eastern Subanen
     #[doc(hidden)]
     Sfe = 5801,
+    /// Small Flowery Miao
     #[doc(hidden)]
     Sfm = 5802,
+    /// South African Sign Language
     #[doc(hidden)]
     Sfs = 5803,
+    /// Sehwi
     #[doc(hidden)]
     Sfw = 5804,
+    /// Old Irish
     #[doc(hidden)]
     Sga = 5805,
+    /// Mag-antsi Ayta
     #[doc(hidden)]
     Sgb = 5806,
+    /// Kipsigis
     #[doc(hidden)]
     Sgc = 5807,
+    /// Surigaonon
     #[doc(hidden)]
     Sgd = 5808,
+    /// Segai
     #[doc(hidden)]
     Sge = 5809,
+    /// Swiss-German Sign Language
     #[doc(hidden)]
     Sgg = 5810,
+    /// Shughni
     #[doc(hidden)]
     Sgh = 5811,
+    /// Suga
     #[doc(hidden)]
     Sgi = 5812,
+    /// Surgujia
     #[doc(hidden)]
     Sgj = 5813,
+    /// Sangkong
     #[doc(hidden)]
     Sgk = 5814,
+    /// Singa
     #[doc(hidden)]
     Sgm = 5815,
+    /// Singpho
     #[doc(hidden)]
     Sgp = 5816,
+    /// Sangisari
     #[doc(hidden)]
     Sgr = 5817,
+    /// Samogitian
     #[doc(hidden)]
     Sgs = 5818,
+    /// Brokpake
     #[doc(hidden)]
     Sgt = 5819,
+    /// Salas
     #[doc(hidden)]
     Sgu = 5820,
+    /// Sebat Bet Gurage
     #[doc(hidden)]
     Sgw = 5821,
+    /// Sierra Leone Sign Language
     #[doc(hidden)]
     Sgx = 5822,
+    /// Sanglechi
     #[doc(hidden)]
     Sgy = 5823,
+    /// Sursurunga
     #[doc(hidden)]
     Sgz = 5824,
+    /// Shall-Zwall
     #[doc(hidden)]
     Sha = 5825,
+    /// Ninam
     #[doc(hidden)]
     Shb = 5826,
+    /// Sonde
     #[doc(hidden)]
     Shc = 5827,
+    /// Kundal Shahi
     #[doc(hidden)]
     Shd = 5828,
+    /// Sheko
     #[doc(hidden)]
     She = 5829,
+    /// Shua
     #[doc(hidden)]
     Shg = 5830,
+    /// Shoshoni
     #[doc(hidden)]
     Shh = 5831,
+    /// Tachelhit
     #[doc(hidden)]
     Shi = 5832,
+    /// Shatt
     #[doc(hidden)]
     Shj = 5833,
+    /// Shilluk
     #[doc(hidden)]
     Shk = 5834,
+    /// Shendu
     #[doc(hidden)]
     Shl = 5835,
+    /// Shahrudi
     #[doc(hidden)]
     Shm = 5836,
+    /// Shan
     #[doc(hidden)]
     Shn = 5837,
+    /// Shanga
     #[doc(hidden)]
     Sho = 5838,
+    /// Shipibo-Conibo
     #[doc(hidden)]
     Shp = 5839,
+    /// Sala
     #[doc(hidden)]
     Shq = 5840,
+    /// Shi
     #[doc(hidden)]
     Shr = 5841,
+    /// Shuswap
     #[doc(hidden)]
     Shs = 5842,
+    /// Shasta
     #[doc(hidden)]
     Sht = 5843,
+    /// Chadian Arabic
     #[doc(hidden)]
     Shu = 5844,
+    /// Shehri
     #[doc(hidden)]
     Shv = 5845,
+    /// Shwai
     #[doc(hidden)]
     Shw = 5846,
+    /// She
     #[doc(hidden)]
     Shx = 5847,
+    /// Tachawit
     #[doc(hidden)]
     Shy = 5848,
+    /// Syenara Senoufo
     #[doc(hidden)]
     Shz = 5849,
+    /// Akkala Sami
     #[doc(hidden)]
     Sia = 5850,
+    /// Sebop
     #[doc(hidden)]
     Sib = 5851,
+    /// Sidamo
     #[doc(hidden)]
     Sid = 5852,
+    /// Simaa
     #[doc(hidden)]
     Sie = 5853,
+    /// Siamou
     #[doc(hidden)]
     Sif = 5854,
+    /// Paasaal
     #[doc(hidden)]
     Sig = 5855,
+    /// Zire
     #[doc(hidden)]
     Sih = 5856,
+    /// Shom Peng
     #[doc(hidden)]
     Sii = 5857,
+    /// Numbami
     #[doc(hidden)]
     Sij = 5858,
+    /// Sikiana
     #[doc(hidden)]
     Sik = 5859,
+    /// Tumulung Sisaala
     #[doc(hidden)]
     Sil = 5860,
+    /// Mende
     #[doc(hidden)]
     Sim = 5861,
+    /// Sinhala
     #[doc(hidden)]
     Sin = 5862,
+    /// Sikkimese
     #[doc(hidden)]
     Sip = 5863,
+    /// Sonia
     #[doc(hidden)]
     Siq = 5864,
+    /// Siri
     #[doc(hidden)]
     Sir = 5865,
+    /// Siuslaw
     #[doc(hidden)]
     Sis = 5866,
+    /// Sinagen
     #[doc(hidden)]
     Siu = 5867,
+    /// Sumariup
     #[doc(hidden)]
     Siv = 5868,
+    /// Siwai
     #[doc(hidden)]
     Siw = 5869,
+    /// Sumau
     #[doc(hidden)]
     Six = 5870,
+    /// Sivandi
     #[doc(hidden)]
     Siy = 5871,
+    /// Siwi
     #[doc(hidden)]
     Siz = 5872,
+    /// Epena
     #[doc(hidden)]
     Sja = 5873,
+    /// Sajau Basap
     #[doc(hidden)]
     Sjb = 5874,
+    /// Kildin Sami
     #[doc(hidden)]
     Sjd = 5875,
+    /// Pite Sami
     #[doc(hidden)]
     Sje = 5876,
+    /// Assangori
     #[doc(hidden)]
     Sjg = 5877,
+    /// Kemi Sami
     #[doc(hidden)]
     Sjk = 5878,
+    /// Sajalong
     #[doc(hidden)]
     Sjl = 5879,
+    /// Mapun
     #[doc(hidden)]
     Sjm = 5880,
+    /// Sindarin
     #[doc(hidden)]
     Sjn = 5881,
+    /// Xibe
     #[doc(hidden)]
     Sjo = 5882,
+    /// Surjapuri
     #[doc(hidden)]
     Sjp = 5883,
+    /// Siar-Lak
     #[doc(hidden)]
     Sjr = 5884,
+    /// Senhaja De Srair
     #[doc(hidden)]
     Sjs = 5885,
+    /// Ter Sami
     #[doc(hidden)]
     Sjt = 5886,
+    /// Ume Sami
     #[doc(hidden)]
     Sju = 5887,
+    /// Shawnee
     #[doc(hidden)]
     Sjw = 5888,
+    /// Skagit
     #[doc(hidden)]
     Ska = 5889,
+    /// Saek
     #[doc(hidden)]
     Skb = 5890,
+    /// Ma Manda
     #[doc(hidden)]
     Skc = 5891,
+    /// Southern Sierra Miwok
     #[doc(hidden)]
     Skd = 5892,
+    /// Seke
     #[doc(hidden)]
     Ske = 5893,
+    /// Sakirabiá
     #[doc(hidden)]
     Skf = 5894,
+    /// Sakalava Malagasy
     #[doc(hidden)]
     Skg = 5895,
+    /// Sikule
     #[doc(hidden)]
     Skh = 5896,
+    /// Sika
     #[doc(hidden)]
     Ski = 5897,
+    /// Seke
     #[doc(hidden)]
     Skj = 5898,
+    /// Kutong
     #[doc(hidden)]
     Skm = 5899,
+    /// Kolibugan Subanon
     #[doc(hidden)]
     Skn = 5900,
+    /// Seko Tengah
     #[doc(hidden)]
     Sko = 5901,
+    /// Sekapan
     #[doc(hidden)]
     Skp = 5902,
+    /// Sininkere
     #[doc(hidden)]
     Skq = 5903,
+    /// Saraiki
     #[doc(hidden)]
     Skr = 5904,
+    /// Maia
     #[doc(hidden)]
     Sks = 5905,
+    /// Sakata
     #[doc(hidden)]
     Skt = 5906,
+    /// Sakao
     #[doc(hidden)]
     Sku = 5907,
+    /// Skou
     #[doc(hidden)]
     Skv = 5908,
+    /// Skepi Creole Dutch
     #[doc(hidden)]
     Skw = 5909,
+    /// Seko Padang
     #[doc(hidden)]
     Skx = 5910,
+    /// Sikaiana
     #[doc(hidden)]
     Sky = 5911,
+    /// Sekar
     #[doc(hidden)]
     Skz = 5912,
+    /// Sáliba
     #[doc(hidden)]
     Slc = 5913,
+    /// Sissala
     #[doc(hidden)]
     Sld = 5914,
+    /// Sholaga
     #[doc(hidden)]
     Sle = 5915,
+    /// Swiss-Italian Sign Language
     #[doc(hidden)]
     Slf = 5916,
+    /// Selungai Murut
     #[doc(hidden)]
     Slg = 5917,
+    /// Southern Puget Sound Salish
     #[doc(hidden)]
     Slh = 5918,
+    /// Lower Silesian
     #[doc(hidden)]
     Sli = 5919,
+    /// Salumá
     #[doc(hidden)]
     Slj = 5920,
+    /// Slovak
     #[doc(hidden)]
     Slk = 5921,
+    /// Salt-Yui
     #[doc(hidden)]
     Sll = 5922,
+    /// Pangutaran Sama
     #[doc(hidden)]
     Slm = 5923,
+    /// Salinan
     #[doc(hidden)]
     Sln = 5924,
+    /// Lamaholot
     #[doc(hidden)]
     Slp = 5925,
+    /// Salar
     #[doc(hidden)]
     Slr = 5926,
+    /// Singapore Sign Language
     #[doc(hidden)]
     Sls = 5927,
+    /// Sila
     #[doc(hidden)]
     Slt = 5928,
+    /// Selaru
     #[doc(hidden)]
     Slu = 5929,
+    /// Slovenian
     #[doc(hidden)]
     Slv = 5930,
+    /// Sialum
     #[doc(hidden)]
     Slw = 5931,
+    /// Salampasu
     #[doc(hidden)]
     Slx = 5932,
+    /// Selayar
     #[doc(hidden)]
     Sly = 5933,
+    /// Ma'ya
     #[doc(hidden)]
     Slz = 5934,
+    /// Southern Sami
     #[doc(hidden)]
     Sma = 5935,
+    /// Simbari
     #[doc(hidden)]
     Smb = 5936,
+    /// Som
     #[doc(hidden)]
     Smc = 5937,
+    /// Northern Sami
     #[doc(hidden)]
     Sme = 5938,
+    /// Auwe
     #[doc(hidden)]
     Smf = 5939,
+    /// Simbali
     #[doc(hidden)]
     Smg = 5940,
+    /// Samei
     #[doc(hidden)]
     Smh = 5941,
+    /// Lule Sami
     #[doc(hidden)]
     Smj = 5942,
+    /// Bolinao
     #[doc(hidden)]
     Smk = 5943,
+    /// Central Sama
     #[doc(hidden)]
     Sml = 5944,
+    /// Musasa
     #[doc(hidden)]
     Smm = 5945,
+    /// Inari Sami
     #[doc(hidden)]
     Smn = 5946,
+    /// Samoan
     #[doc(hidden)]
     Smo = 5947,
+    /// Samaritan
     #[doc(hidden)]
     Smp = 5948,
+    /// Samo
     #[doc(hidden)]
     Smq = 5949,
+    /// Simeulue
     #[doc(hidden)]
     Smr = 5950,
+    /// Skolt Sami
     #[doc(hidden)]
     Sms = 5951,
+    /// Simte
     #[doc(hidden)]
     Smt = 5952,
+    /// Somray
     #[doc(hidden)]
     Smu = 5953,
+    /// Samvedi
     #[doc(hidden)]
     Smv = 5954,
+    /// Sumbawa
     #[doc(hidden)]
     Smw = 5955,
+    /// Samba
     #[doc(hidden)]
     Smx = 5956,
+    /// Semnani
     #[doc(hidden)]
     Smy = 5957,
+    /// Simeku
     #[doc(hidden)]
     Smz = 5958,
+    /// Shona
     #[doc(hidden)]
     Sna = 5959,
+    /// Sinaugoro
     #[doc(hidden)]
     Snc = 5960,
+    /// Sindhi
     #[doc(hidden)]
     Snd = 5961,
+    /// Bau Bidayuh
     #[doc(hidden)]
     Sne = 5962,
+    /// Noon
     #[doc(hidden)]
     Snf = 5963,
+    /// Sanga
     #[doc(hidden)]
     Sng = 5964,
+    /// Sensi
     #[doc(hidden)]
     Sni = 5965,
+    /// Riverain Sango
     #[doc(hidden)]
     Snj = 5966,
+    /// Soninke
     #[doc(hidden)]
     Snk = 5967,
+    /// Sangil
     #[doc(hidden)]
     Snl = 5968,
+    /// Southern Ma'di
     #[doc(hidden)]
     Snm = 5969,
+    /// Siona
     #[doc(hidden)]
     Snn = 5970,
+    /// Snohomish
     #[doc(hidden)]
     Sno = 5971,
+    /// Siane
     #[doc(hidden)]
     Snp = 5972,
+    /// Sangu
     #[doc(hidden)]
     Snq = 5973,
+    /// Sihan
     #[doc(hidden)]
     Snr = 5974,
+    /// South West Bay
     #[doc(hidden)]
     Sns = 5975,
+    /// Senggi
     #[doc(hidden)]
     Snu = 5976,
+    /// Sa'ban
     #[doc(hidden)]
     Snv = 5977,
+    /// Selee
     #[doc(hidden)]
     Snw = 5978,
+    /// Sam
     #[doc(hidden)]
     Snx = 5979,
+    /// Saniyo-Hiyewe
     #[doc(hidden)]
     Sny = 5980,
+    /// Kou
     #[doc(hidden)]
     Snz = 5981,
+    /// Thai Song
     #[doc(hidden)]
     Soa = 5982,
+    /// Sobei
     #[doc(hidden)]
     Sob = 5983,
+    /// So
     #[doc(hidden)]
     Soc = 5984,
+    /// Songoora
     #[doc(hidden)]
     Sod = 5985,
+    /// Songomeno
     #[doc(hidden)]
     Soe = 5986,
+    /// Sogdian
     #[doc(hidden)]
     Sog = 5987,
+    /// Aka
     #[doc(hidden)]
     Soh = 5988,
+    /// Sonha
     #[doc(hidden)]
     Soi = 5989,
+    /// Soi
     #[doc(hidden)]
     Soj = 5990,
+    /// Sokoro
     #[doc(hidden)]
     Sok = 5991,
+    /// Solos
     #[doc(hidden)]
     Sol = 5992,
+    /// Somali
     #[doc(hidden)]
     Som = 5993,
+    /// Songo
     #[doc(hidden)]
     Soo = 5994,
+    /// Songe
     #[doc(hidden)]
     Sop = 5995,
+    /// Kanasi
     #[doc(hidden)]
     Soq = 5996,
+    /// Somrai
     #[doc(hidden)]
     Sor = 5997,
+    /// Seeku
     #[doc(hidden)]
     Sos = 5998,
+    /// Southern Sotho
     #[doc(hidden)]
     Sot = 5999,
+    /// Southern Thai
     #[doc(hidden)]
     Sou = 6000,
+    /// Sonsorol
     #[doc(hidden)]
     Sov = 6001,
+    /// Sowanda
     #[doc(hidden)]
     Sow = 6002,
+    /// Swo
     #[doc(hidden)]
     Sox = 6003,
+    /// Miyobe
     #[doc(hidden)]
     Soy = 6004,
+    /// Temi
     #[doc(hidden)]
     Soz = 6005,
+    /// Spanish
     #[doc(hidden)]
     Spa = 6006,
+    /// Sepa
     #[doc(hidden)]
     Spb = 6007,
+    /// Sapé
     #[doc(hidden)]
     Spc = 6008,
+    /// Saep
     #[doc(hidden)]
     Spd = 6009,
+    /// Sepa
     #[doc(hidden)]
     Spe = 6010,
+    /// Sian
     #[doc(hidden)]
     Spg = 6011,
+    /// Saponi
     #[doc(hidden)]
     Spi = 6012,
+    /// Sengo
     #[doc(hidden)]
     Spk = 6013,
+    /// Selepet
     #[doc(hidden)]
     Spl = 6014,
+    /// Akukem
     #[doc(hidden)]
     Spm = 6015,
+    /// Sanapaná
     #[doc(hidden)]
     Spn = 6016,
+    /// Spokane
     #[doc(hidden)]
     Spo = 6017,
+    /// Supyire Senoufo
     #[doc(hidden)]
     Spp = 6018,
+    /// Loreto-Ucayali Spanish
     #[doc(hidden)]
     Spq = 6019,
+    /// Saparua
     #[doc(hidden)]
     Spr = 6020,
+    /// Saposa
     #[doc(hidden)]
     Sps = 6021,
+    /// Spiti Bhoti
     #[doc(hidden)]
     Spt = 6022,
+    /// Sapuan
     #[doc(hidden)]
     Spu = 6023,
+    /// Sambalpuri
     #[doc(hidden)]
     Spv = 6024,
+    /// South Picene
     #[doc(hidden)]
     Spx = 6025,
+    /// Sabaot
     #[doc(hidden)]
     Spy = 6026,
+    /// Shama-Sambuga
     #[doc(hidden)]
     Sqa = 6027,
+    /// Shau
     #[doc(hidden)]
     Sqh = 6028,
+    /// Albanian
     #[doc(hidden)]
     Sqi = 6029,
+    /// Albanian Sign Language
     #[doc(hidden)]
     Sqk = 6030,
+    /// Suma
     #[doc(hidden)]
     Sqm = 6031,
+    /// Susquehannock
     #[doc(hidden)]
     Sqn = 6032,
+    /// Sorkhei
     #[doc(hidden)]
     Sqo = 6033,
+    /// Sou
     #[doc(hidden)]
     Sqq = 6034,
+    /// Siculo Arabic
     #[doc(hidden)]
     Sqr = 6035,
+    /// Sri Lankan Sign Language
     #[doc(hidden)]
     Sqs = 6036,
+    /// Soqotri
     #[doc(hidden)]
     Sqt = 6037,
+    /// Squamish
     #[doc(hidden)]
     Squ = 6038,
+    /// Kufr Qassem Sign Language
     #[doc(hidden)]
     Sqx = 6039,
+    /// Saruga
     #[doc(hidden)]
     Sra = 6040,
+    /// Sora
     #[doc(hidden)]
     Srb = 6041,
+    /// Logudorese Sardinian
     #[doc(hidden)]
     Src = 6042,
+    /// Sardinian
     #[doc(hidden)]
     Srd = 6043,
+    /// Sara
     #[doc(hidden)]
     Sre = 6044,
+    /// Nafi
     #[doc(hidden)]
     Srf = 6045,
+    /// Sulod
     #[doc(hidden)]
     Srg = 6046,
+    /// Sarikoli
     #[doc(hidden)]
     Srh = 6047,
+    /// Siriano
     #[doc(hidden)]
     Sri = 6048,
+    /// Serudung Murut
     #[doc(hidden)]
     Srk = 6049,
+    /// Isirawa
     #[doc(hidden)]
     Srl = 6050,
+    /// Saramaccan
     #[doc(hidden)]
     Srm = 6051,
+    /// Sranan Tongo
     #[doc(hidden)]
     Srn = 6052,
+    /// Campidanese Sardinian
     #[doc(hidden)]
     Sro = 6053,
+    /// Serbian
     #[doc(hidden)]
     Srp = 6054,
+    /// Sirionó
     #[doc(hidden)]
     Srq = 6055,
+    /// Serer
     #[doc(hidden)]
     Srr = 6056,
+    /// Sarsi
     #[doc(hidden)]
     Srs = 6057,
+    /// Sauri
     #[doc(hidden)]
     Srt = 6058,
+    /// Suruí
     #[doc(hidden)]
     Sru = 6059,
+    /// Southern Sorsoganon
     #[doc(hidden)]
     Srv = 6060,
+    /// Serua
     #[doc(hidden)]
     Srw = 6061,
+    /// Sirmauri
     #[doc(hidden)]
     Srx = 6062,
+    /// Sera
     #[doc(hidden)]
     Sry = 6063,
+    /// Shahmirzadi
     #[doc(hidden)]
     Srz = 6064,
+    /// Southern Sama
     #[doc(hidden)]
     Ssb = 6065,
+    /// Suba-Simbiti
     #[doc(hidden)]
     Ssc = 6066,
+    /// Siroi
     #[doc(hidden)]
     Ssd = 6067,
+    /// Balangingi
     #[doc(hidden)]
     Sse = 6068,
+    /// Thao
     #[doc(hidden)]
     Ssf = 6069,
+    /// Seimat
     #[doc(hidden)]
     Ssg = 6070,
+    /// Shihhi Arabic
     #[doc(hidden)]
     Ssh = 6071,
+    /// Sansi
     #[doc(hidden)]
     Ssi = 6072,
+    /// Sausi
     #[doc(hidden)]
     Ssj = 6073,
+    /// Sunam
     #[doc(hidden)]
     Ssk = 6074,
+    /// Western Sisaala
     #[doc(hidden)]
     Ssl = 6075,
+    /// Semnam
     #[doc(hidden)]
     Ssm = 6076,
+    /// Waata
     #[doc(hidden)]
     Ssn = 6077,
+    /// Sissano
     #[doc(hidden)]
     Sso = 6078,
+    /// Spanish Sign Language
     #[doc(hidden)]
     Ssp = 6079,
+    /// So'a
     #[doc(hidden)]
     Ssq = 6080,
+    /// Swiss-French Sign Language
     #[doc(hidden)]
     Ssr = 6081,
+    /// Sô
     #[doc(hidden)]
     Sss = 6082,
+    /// Sinasina
     #[doc(hidden)]
     Sst = 6083,
+    /// Susuami
     #[doc(hidden)]
     Ssu = 6084,
+    /// Shark Bay
     #[doc(hidden)]
     Ssv = 6085,
+    /// Swati
     #[doc(hidden)]
     Ssw = 6086,
+    /// Samberigi
     #[doc(hidden)]
     Ssx = 6087,
+    /// Saho
     #[doc(hidden)]
     Ssy = 6088,
+    /// Sengseng
     #[doc(hidden)]
     Ssz = 6089,
+    /// Settla
     #[doc(hidden)]
     Sta = 6090,
+    /// Northern Subanen
     #[doc(hidden)]
     Stb = 6091,
+    /// Sentinel
     #[doc(hidden)]
     Std = 6092,
+    /// Liana-Seti
     #[doc(hidden)]
     Ste = 6093,
+    /// Seta
     #[doc(hidden)]
     Stf = 6094,
+    /// Trieng
     #[doc(hidden)]
     Stg = 6095,
+    /// Shelta
     #[doc(hidden)]
     Sth = 6096,
+    /// Bulo Stieng
     #[doc(hidden)]
     Sti = 6097,
+    /// Matya Samo
     #[doc(hidden)]
     Stj = 6098,
+    /// Arammba
     #[doc(hidden)]
     Stk = 6099,
+    /// Stellingwerfs
     #[doc(hidden)]
     Stl = 6100,
+    /// Setaman
     #[doc(hidden)]
     Stm = 6101,
+    /// Owa
     #[doc(hidden)]
     Stn = 6102,
+    /// Stoney
     #[doc(hidden)]
     Sto = 6103,
+    /// Southeastern Tepehuan
     #[doc(hidden)]
     Stp = 6104,
+    /// Saterfriesisch
     #[doc(hidden)]
     Stq = 6105,
+    /// Straits Salish
     #[doc(hidden)]
     Str = 6106,
+    /// Shumashti
     #[doc(hidden)]
     Sts = 6107,
+    /// Budeh Stieng
     #[doc(hidden)]
     Stt = 6108,
+    /// Samtao
     #[doc(hidden)]
     Stu = 6109,
+    /// Silt'e
     #[doc(hidden)]
     Stv = 6110,
+    /// Satawalese
     #[doc(hidden)]
     Stw = 6111,
+    /// Siberian Tatar
     #[doc(hidden)]
     Sty = 6112,
+    /// Sulka
     #[doc(hidden)]
     Sua = 6113,
+    /// Suku
     #[doc(hidden)]
     Sub = 6114,
+    /// Western Subanon
     #[doc(hidden)]
     Suc = 6115,
+    /// Suena
     #[doc(hidden)]
     Sue = 6116,
+    /// Suganga
     #[doc(hidden)]
     Sug = 6117,
+    /// Suki
     #[doc(hidden)]
     Sui = 6118,
+    /// Shubi
     #[doc(hidden)]
     Suj = 6119,
+    /// Sukuma
     #[doc(hidden)]
     Suk = 6120,
+    /// Sundanese
     #[doc(hidden)]
     Sun = 6121,
+    /// Bouni
     #[doc(hidden)]
     Suo = 6122,
+    /// Tirmaga-Chai Suri
     #[doc(hidden)]
     Suq = 6123,
+    /// Mwaghavul
     #[doc(hidden)]
     Sur = 6124,
+    /// Susu
     #[doc(hidden)]
     Sus = 6125,
+    /// Subtiaba
     #[doc(hidden)]
     Sut = 6126,
+    /// Puroik
     #[doc(hidden)]
     Suv = 6127,
+    /// Sumbwa
     #[doc(hidden)]
     Suw = 6128,
+    /// Sumerian
     #[doc(hidden)]
     Sux = 6129,
+    /// Suyá
     #[doc(hidden)]
     Suy = 6130,
+    /// Sunwar
     #[doc(hidden)]
     Suz = 6131,
+    /// Svan
     #[doc(hidden)]
     Sva = 6132,
+    /// Ulau-Suain
     #[doc(hidden)]
     Svb = 6133,
+    /// Vincentian Creole English
     #[doc(hidden)]
     Svc = 6134,
+    /// Serili
     #[doc(hidden)]
     Sve = 6135,
+    /// Slovakian Sign Language
     #[doc(hidden)]
     Svk = 6136,
+    /// Slavomolisano
     #[doc(hidden)]
     Svm = 6137,
+    /// Savosavo
     #[doc(hidden)]
     Svs = 6138,
+    /// Skalvian
     #[doc(hidden)]
     Svx = 6139,
+    /// Swahili
     #[doc(hidden)]
     Swa = 6140,
+    /// Maore Comorian
     #[doc(hidden)]
     Swb = 6141,
+    /// Congo Swahili
     #[doc(hidden)]
     Swc = 6142,
+    /// Swedish
     #[doc(hidden)]
     Swe = 6143,
+    /// Sere
     #[doc(hidden)]
     Swf = 6144,
+    /// Swabian
     #[doc(hidden)]
     Swg = 6145,
+    /// Swahili
     #[doc(hidden)]
     Swh = 6146,
+    /// Sui
     #[doc(hidden)]
     Swi = 6147,
+    /// Sira
     #[doc(hidden)]
     Swj = 6148,
+    /// Malawi Sena
     #[doc(hidden)]
     Swk = 6149,
+    /// Swedish Sign Language
     #[doc(hidden)]
     Swl = 6150,
+    /// Samosa
     #[doc(hidden)]
     Swm = 6151,
+    /// Sawknah
     #[doc(hidden)]
     Swn = 6152,
+    /// Shanenawa
     #[doc(hidden)]
     Swo = 6153,
+    /// Suau
     #[doc(hidden)]
     Swp = 6154,
+    /// Sharwa
     #[doc(hidden)]
     Swq = 6155,
+    /// Saweru
     #[doc(hidden)]
     Swr = 6156,
+    /// Seluwasan
     #[doc(hidden)]
     Sws = 6157,
+    /// Sawila
     #[doc(hidden)]
     Swt = 6158,
+    /// Suwawa
     #[doc(hidden)]
     Swu = 6159,
+    /// Shekhawati
     #[doc(hidden)]
     Swv = 6160,
+    /// Sowa
     #[doc(hidden)]
     Sww = 6161,
+    /// Suruahá
     #[doc(hidden)]
     Swx = 6162,
+    /// Sarua
     #[doc(hidden)]
     Swy = 6163,
+    /// Suba
     #[doc(hidden)]
     Sxb = 6164,
+    /// Sicanian
     #[doc(hidden)]
     Sxc = 6165,
+    /// Sighu
     #[doc(hidden)]
     Sxe = 6166,
+    /// Shuhi
     #[doc(hidden)]
     Sxg = 6167,
+    /// Southern Kalapuya
     #[doc(hidden)]
     Sxk = 6168,
+    /// Selian
     #[doc(hidden)]
     Sxl = 6169,
+    /// Samre
     #[doc(hidden)]
     Sxm = 6170,
+    /// Sangir
     #[doc(hidden)]
     Sxn = 6171,
+    /// Sorothaptic
     #[doc(hidden)]
     Sxo = 6172,
+    /// Saaroa
     #[doc(hidden)]
     Sxr = 6173,
+    /// Sasaru
     #[doc(hidden)]
     Sxs = 6174,
+    /// Upper Saxon
     #[doc(hidden)]
     Sxu = 6175,
+    /// Saxwe Gbe
     #[doc(hidden)]
     Sxw = 6176,
+    /// Siang
     #[doc(hidden)]
     Sya = 6177,
+    /// Central Subanen
     #[doc(hidden)]
     Syb = 6178,
+    /// Classical Syriac
     #[doc(hidden)]
     Syc = 6179,
+    /// Seki
     #[doc(hidden)]
     Syi = 6180,
+    /// Sukur
     #[doc(hidden)]
     Syk = 6181,
+    /// Sylheti
     #[doc(hidden)]
     Syl = 6182,
+    /// Maya Samo
     #[doc(hidden)]
     Sym = 6183,
+    /// Senaya
     #[doc(hidden)]
     Syn = 6184,
+    /// Suoy
     #[doc(hidden)]
     Syo = 6185,
+    /// Syriac
     #[doc(hidden)]
     Syr = 6186,
+    /// Sinyar
     #[doc(hidden)]
     Sys = 6187,
+    /// Kagate
     #[doc(hidden)]
     Syw = 6188,
+    /// Samay
     #[doc(hidden)]
     Syx = 6189,
+    /// Al-Sayyid Bedouin Sign Language
     #[doc(hidden)]
     Syy = 6190,
+    /// Semelai
     #[doc(hidden)]
     Sza = 6191,
+    /// Ngalum
     #[doc(hidden)]
     Szb = 6192,
+    /// Semaq Beri
     #[doc(hidden)]
     Szc = 6193,
+    /// Seze
     #[doc(hidden)]
     Sze = 6194,
+    /// Sengele
     #[doc(hidden)]
     Szg = 6195,
+    /// Silesian
     #[doc(hidden)]
     Szl = 6196,
+    /// Sula
     #[doc(hidden)]
     Szn = 6197,
+    /// Suabo
     #[doc(hidden)]
     Szp = 6198,
+    /// Solomon Islands Sign Language
     #[doc(hidden)]
     Szs = 6199,
+    /// Isu
     #[doc(hidden)]
     Szv = 6200,
+    /// Sawai
     #[doc(hidden)]
     Szw = 6201,
+    /// Sakizaya
     #[doc(hidden)]
     Szy = 6202,
+    /// Lower Tanana
     #[doc(hidden)]
     Taa = 6203,
+    /// Tabassaran
     #[doc(hidden)]
     Tab = 6204,
+    /// Lowland Tarahumara
     #[doc(hidden)]
     Tac = 6205,
+    /// Tause
     #[doc(hidden)]
     Tad = 6206,
+    /// Tariana
     #[doc(hidden)]
     Tae = 6207,
+    /// Tapirapé
     #[doc(hidden)]
     Taf = 6208,
+    /// Tagoi
     #[doc(hidden)]
     Tag = 6209,
+    /// Tahitian
     #[doc(hidden)]
     Tah = 6210,
+    /// Eastern Tamang
     #[doc(hidden)]
     Taj = 6211,
+    /// Tala
     #[doc(hidden)]
     Tak = 6212,
+    /// Tal
     #[doc(hidden)]
     Tal = 6213,
+    /// Tamil
     #[doc(hidden)]
     Tam = 6214,
+    /// Tangale
     #[doc(hidden)]
     Tan = 6215,
+    /// Yami
     #[doc(hidden)]
     Tao = 6216,
+    /// Taabwa
     #[doc(hidden)]
     Tap = 6217,
+    /// Tamasheq
     #[doc(hidden)]
     Taq = 6218,
+    /// Central Tarahumara
     #[doc(hidden)]
     Tar = 6219,
+    /// Tay Boi
     #[doc(hidden)]
     Tas = 6220,
+    /// Tatar
     #[doc(hidden)]
     Tat = 6221,
+    /// Upper Tanana
     #[doc(hidden)]
     Tau = 6222,
+    /// Tatuyo
     #[doc(hidden)]
     Tav = 6223,
+    /// Tai
     #[doc(hidden)]
     Taw = 6224,
+    /// Tamki
     #[doc(hidden)]
     Tax = 6225,
+    /// Atayal
     #[doc(hidden)]
     Tay = 6226,
+    /// Tocho
     #[doc(hidden)]
     Taz = 6227,
+    /// Aikanã
     #[doc(hidden)]
     Tba = 6228,
+    /// Takia
     #[doc(hidden)]
     Tbc = 6229,
+    /// Kaki Ae
     #[doc(hidden)]
     Tbd = 6230,
+    /// Tanimbili
     #[doc(hidden)]
     Tbe = 6231,
+    /// Mandara
     #[doc(hidden)]
     Tbf = 6232,
+    /// North Tairora
     #[doc(hidden)]
     Tbg = 6233,
+    /// Dharawal
     #[doc(hidden)]
     Tbh = 6234,
+    /// Gaam
     #[doc(hidden)]
     Tbi = 6235,
+    /// Tiang
     #[doc(hidden)]
     Tbj = 6236,
+    /// Calamian Tagbanwa
     #[doc(hidden)]
     Tbk = 6237,
+    /// Tboli
     #[doc(hidden)]
     Tbl = 6238,
+    /// Tagbu
     #[doc(hidden)]
     Tbm = 6239,
+    /// Barro Negro Tunebo
     #[doc(hidden)]
     Tbn = 6240,
+    /// Tawala
     #[doc(hidden)]
     Tbo = 6241,
+    /// Taworta
     #[doc(hidden)]
     Tbp = 6242,
+    /// Tumtum
     #[doc(hidden)]
     Tbr = 6243,
+    /// Tanguat
     #[doc(hidden)]
     Tbs = 6244,
+    /// Tembo
     #[doc(hidden)]
     Tbt = 6245,
+    /// Tubar
     #[doc(hidden)]
     Tbu = 6246,
+    /// Tobo
     #[doc(hidden)]
     Tbv = 6247,
+    /// Tagbanwa
     #[doc(hidden)]
     Tbw = 6248,
+    /// Kapin
     #[doc(hidden)]
     Tbx = 6249,
+    /// Tabaru
     #[doc(hidden)]
     Tby = 6250,
+    /// Ditammari
     #[doc(hidden)]
     Tbz = 6251,
+    /// Ticuna
     #[doc(hidden)]
     Tca = 6252,
+    /// Tanacross
     #[doc(hidden)]
     Tcb = 6253,
+    /// Datooga
     #[doc(hidden)]
     Tcc = 6254,
+    /// Tafi
     #[doc(hidden)]
     Tcd = 6255,
+    /// Southern Tutchone
     #[doc(hidden)]
     Tce = 6256,
+    /// Malinaltepec Me'phaa
     #[doc(hidden)]
     Tcf = 6257,
+    /// Tamagario
     #[doc(hidden)]
     Tcg = 6258,
+    /// Turks And Caicos Creole English
     #[doc(hidden)]
     Tch = 6259,
+    /// Wára
     #[doc(hidden)]
     Tci = 6260,
+    /// Tchitchege
     #[doc(hidden)]
     Tck = 6261,
+    /// Taman
     #[doc(hidden)]
     Tcl = 6262,
+    /// Tanahmerah
     #[doc(hidden)]
     Tcm = 6263,
+    /// Tichurong
     #[doc(hidden)]
     Tcn = 6264,
+    /// Taungyo
     #[doc(hidden)]
     Tco = 6265,
+    /// Tawr Chin
     #[doc(hidden)]
     Tcp = 6266,
+    /// Kaiy
     #[doc(hidden)]
     Tcq = 6267,
+    /// Torres Strait Creole
     #[doc(hidden)]
     Tcs = 6268,
+    /// T'en
     #[doc(hidden)]
     Tct = 6269,
+    /// Southeastern Tarahumara
     #[doc(hidden)]
     Tcu = 6270,
+    /// Tecpatlán Totonac
     #[doc(hidden)]
     Tcw = 6271,
+    /// Toda
     #[doc(hidden)]
     Tcx = 6272,
+    /// Tulu
     #[doc(hidden)]
     Tcy = 6273,
+    /// Thado Chin
     #[doc(hidden)]
     Tcz = 6274,
+    /// Tagdal
     #[doc(hidden)]
     Tda = 6275,
+    /// Panchpargania
     #[doc(hidden)]
     Tdb = 6276,
+    /// Emberá-Tadó
     #[doc(hidden)]
     Tdc = 6277,
+    /// Tai Nüa
     #[doc(hidden)]
     Tdd = 6278,
+    /// Tiranige Diga Dogon
     #[doc(hidden)]
     Tde = 6279,
+    /// Talieng
     #[doc(hidden)]
     Tdf = 6280,
+    /// Western Tamang
     #[doc(hidden)]
     Tdg = 6281,
+    /// Thulung
     #[doc(hidden)]
     Tdh = 6282,
+    /// Tomadino
     #[doc(hidden)]
     Tdi = 6283,
+    /// Tajio
     #[doc(hidden)]
     Tdj = 6284,
+    /// Tambas
     #[doc(hidden)]
     Tdk = 6285,
+    /// Sur
     #[doc(hidden)]
     Tdl = 6286,
+    /// Taruma
     #[doc(hidden)]
     Tdm = 6287,
+    /// Tondano
     #[doc(hidden)]
     Tdn = 6288,
+    /// Teme
     #[doc(hidden)]
     Tdo = 6289,
+    /// Tita
     #[doc(hidden)]
     Tdq = 6290,
+    /// Todrah
     #[doc(hidden)]
     Tdr = 6291,
+    /// Doutai
     #[doc(hidden)]
     Tds = 6292,
+    /// Tetun Dili
     #[doc(hidden)]
     Tdt = 6293,
+    /// Toro
     #[doc(hidden)]
     Tdv = 6294,
+    /// Tandroy-Mahafaly Malagasy
     #[doc(hidden)]
     Tdx = 6295,
+    /// Tadyawan
     #[doc(hidden)]
     Tdy = 6296,
+    /// Temiar
     #[doc(hidden)]
     Tea = 6297,
+    /// Tetete
     #[doc(hidden)]
     Teb = 6298,
+    /// Terik
     #[doc(hidden)]
     Tec = 6299,
+    /// Tepo Krumen
     #[doc(hidden)]
     Ted = 6300,
+    /// Huehuetla Tepehua
     #[doc(hidden)]
     Tee = 6301,
+    /// Teressa
     #[doc(hidden)]
     Tef = 6302,
+    /// Teke-Tege
     #[doc(hidden)]
     Teg = 6303,
+    /// Tehuelche
     #[doc(hidden)]
     Teh = 6304,
+    /// Torricelli
     #[doc(hidden)]
     Tei = 6305,
+    /// Ibali Teke
     #[doc(hidden)]
     Tek = 6306,
+    /// Telugu
     #[doc(hidden)]
     Tel = 6307,
+    /// Timne
     #[doc(hidden)]
     Tem = 6308,
+    /// Tama
     #[doc(hidden)]
     Ten = 6309,
+    /// Teso
     #[doc(hidden)]
     Teo = 6310,
+    /// Tepecano
     #[doc(hidden)]
     Tep = 6311,
+    /// Temein
     #[doc(hidden)]
     Teq = 6312,
+    /// Tereno
     #[doc(hidden)]
     Ter = 6313,
+    /// Tengger
     #[doc(hidden)]
     Tes = 6314,
+    /// Tetum
     #[doc(hidden)]
     Tet = 6315,
+    /// Soo
     #[doc(hidden)]
     Teu = 6316,
+    /// Teor
     #[doc(hidden)]
     Tev = 6317,
+    /// Tewa
     #[doc(hidden)]
     Tew = 6318,
+    /// Tennet
     #[doc(hidden)]
     Tex = 6319,
+    /// Tulishi
     #[doc(hidden)]
     Tey = 6320,
+    /// Tetserret
     #[doc(hidden)]
     Tez = 6321,
+    /// Tofin Gbe
     #[doc(hidden)]
     Tfi = 6322,
+    /// Tanaina
     #[doc(hidden)]
     Tfn = 6323,
+    /// Tefaro
     #[doc(hidden)]
     Tfo = 6324,
+    /// Teribe
     #[doc(hidden)]
     Tfr = 6325,
+    /// Ternate
     #[doc(hidden)]
     Tft = 6326,
+    /// Sagalla
     #[doc(hidden)]
     Tga = 6327,
+    /// Tobilung
     #[doc(hidden)]
     Tgb = 6328,
+    /// Tigak
     #[doc(hidden)]
     Tgc = 6329,
+    /// Ciwogai
     #[doc(hidden)]
     Tgd = 6330,
+    /// Eastern Gorkha Tamang
     #[doc(hidden)]
     Tge = 6331,
+    /// Chalikha
     #[doc(hidden)]
     Tgf = 6332,
+    /// Tobagonian Creole English
     #[doc(hidden)]
     Tgh = 6333,
+    /// Lawunuia
     #[doc(hidden)]
     Tgi = 6334,
+    /// Tagin
     #[doc(hidden)]
     Tgj = 6335,
+    /// Tajik
     #[doc(hidden)]
     Tgk = 6336,
+    /// Tagalog
     #[doc(hidden)]
     Tgl = 6337,
+    /// Tandaganon
     #[doc(hidden)]
     Tgn = 6338,
+    /// Sudest
     #[doc(hidden)]
     Tgo = 6339,
+    /// Tangoa
     #[doc(hidden)]
     Tgp = 6340,
+    /// Tring
     #[doc(hidden)]
     Tgq = 6341,
+    /// Tareng
     #[doc(hidden)]
     Tgr = 6342,
+    /// Nume
     #[doc(hidden)]
     Tgs = 6343,
+    /// Central Tagbanwa
     #[doc(hidden)]
     Tgt = 6344,
+    /// Tanggu
     #[doc(hidden)]
     Tgu = 6345,
+    /// Tingui-Boto
     #[doc(hidden)]
     Tgv = 6346,
+    /// Tagwana Senoufo
     #[doc(hidden)]
     Tgw = 6347,
+    /// Tagish
     #[doc(hidden)]
     Tgx = 6348,
+    /// Togoyo
     #[doc(hidden)]
     Tgy = 6349,
+    /// Tagalaka
     #[doc(hidden)]
     Tgz = 6350,
+    /// Thai
     #[doc(hidden)]
     Tha = 6351,
+    /// Kuuk Thaayorre
     #[doc(hidden)]
     Thd = 6352,
+    /// Chitwania Tharu
     #[doc(hidden)]
     The = 6353,
+    /// Thangmi
     #[doc(hidden)]
     Thf = 6354,
+    /// Northern Tarahumara
     #[doc(hidden)]
     Thh = 6355,
+    /// Tai Long
     #[doc(hidden)]
     Thi = 6356,
+    /// Tharaka
     #[doc(hidden)]
     Thk = 6357,
+    /// Dangaura Tharu
     #[doc(hidden)]
     Thl = 6358,
+    /// Aheu
     #[doc(hidden)]
     Thm = 6359,
+    /// Thachanadan
     #[doc(hidden)]
     Thn = 6360,
+    /// Thompson
     #[doc(hidden)]
     Thp = 6361,
+    /// Kochila Tharu
     #[doc(hidden)]
     Thq = 6362,
+    /// Rana Tharu
     #[doc(hidden)]
     Thr = 6363,
+    /// Thakali
     #[doc(hidden)]
     Ths = 6364,
+    /// Tahltan
     #[doc(hidden)]
     Tht = 6365,
+    /// Thuri
     #[doc(hidden)]
     Thu = 6366,
+    /// Tahaggart Tamahaq
     #[doc(hidden)]
     Thv = 6367,
+    /// Tha
     #[doc(hidden)]
     Thy = 6368,
+    /// Tayart Tamajeq
     #[doc(hidden)]
     Thz = 6369,
+    /// Tidikelt Tamazight
     #[doc(hidden)]
     Tia = 6370,
+    /// Tira
     #[doc(hidden)]
     Tic = 6371,
+    /// Tifal
     #[doc(hidden)]
     Tif = 6372,
+    /// Tigre
     #[doc(hidden)]
     Tig = 6373,
+    /// Timugon Murut
     #[doc(hidden)]
     Tih = 6374,
+    /// Tiene
     #[doc(hidden)]
     Tii = 6375,
+    /// Tilung
     #[doc(hidden)]
     Tij = 6376,
+    /// Tikar
     #[doc(hidden)]
     Tik = 6377,
+    /// Tillamook
     #[doc(hidden)]
     Til = 6378,
+    /// Timbe
     #[doc(hidden)]
     Tim = 6379,
+    /// Tindi
     #[doc(hidden)]
     Tin = 6380,
+    /// Teop
     #[doc(hidden)]
     Tio = 6381,
+    /// Trimuris
     #[doc(hidden)]
     Tip = 6382,
+    /// Tiéfo
     #[doc(hidden)]
     Tiq = 6383,
+    /// Tigrinya
     #[doc(hidden)]
     Tir = 6384,
+    /// Masadiit Itneg
     #[doc(hidden)]
     Tis = 6385,
+    /// Tinigua
     #[doc(hidden)]
     Tit = 6386,
+    /// Adasen
     #[doc(hidden)]
     Tiu = 6387,
+    /// Tiv
     #[doc(hidden)]
     Tiv = 6388,
+    /// Tiwi
     #[doc(hidden)]
     Tiw = 6389,
+    /// Southern Tiwa
     #[doc(hidden)]
     Tix = 6390,
+    /// Tiruray
     #[doc(hidden)]
     Tiy = 6391,
+    /// Tai Hongjin
     #[doc(hidden)]
     Tiz = 6392,
+    /// Tajuasohn
     #[doc(hidden)]
     Tja = 6393,
+    /// Tunjung
     #[doc(hidden)]
     Tjg = 6394,
+    /// Northern Tujia
     #[doc(hidden)]
     Tji = 6395,
+    /// Tjungundji
     #[doc(hidden)]
     Tjj = 6396,
+    /// Tai Laing
     #[doc(hidden)]
     Tjl = 6397,
+    /// Timucua
     #[doc(hidden)]
     Tjm = 6398,
+    /// Tonjon
     #[doc(hidden)]
     Tjn = 6399,
+    /// Temacine Tamazight
     #[doc(hidden)]
     Tjo = 6400,
+    /// Tjupany
     #[doc(hidden)]
     Tjp = 6401,
+    /// Southern Tujia
     #[doc(hidden)]
     Tjs = 6402,
+    /// Tjurruru
     #[doc(hidden)]
     Tju = 6403,
+    /// Djabwurrung
     #[doc(hidden)]
     Tjw = 6404,
+    /// Truká
     #[doc(hidden)]
     Tka = 6405,
+    /// Buksa
     #[doc(hidden)]
     Tkb = 6406,
+    /// Tukudede
     #[doc(hidden)]
     Tkd = 6407,
+    /// Takwane
     #[doc(hidden)]
     Tke = 6408,
+    /// Tukumanféd
     #[doc(hidden)]
     Tkf = 6409,
+    /// Tesaka Malagasy
     #[doc(hidden)]
     Tkg = 6410,
+    /// Tokelau
     #[doc(hidden)]
     Tkl = 6411,
+    /// Takelma
     #[doc(hidden)]
     Tkm = 6412,
+    /// Toku-No-Shima
     #[doc(hidden)]
     Tkn = 6413,
+    /// Tikopia
     #[doc(hidden)]
     Tkp = 6414,
+    /// Tee
     #[doc(hidden)]
     Tkq = 6415,
+    /// Tsakhur
     #[doc(hidden)]
     Tkr = 6416,
+    /// Takestani
     #[doc(hidden)]
     Tks = 6417,
+    /// Kathoriya Tharu
     #[doc(hidden)]
     Tkt = 6418,
+    /// Upper Necaxa Totonac
     #[doc(hidden)]
     Tku = 6419,
+    /// Mur Pano
     #[doc(hidden)]
     Tkv = 6420,
+    /// Teanu
     #[doc(hidden)]
     Tkw = 6421,
+    /// Tangko
     #[doc(hidden)]
     Tkx = 6422,
+    /// Takua
     #[doc(hidden)]
     Tkz = 6423,
+    /// Southwestern Tepehuan
     #[doc(hidden)]
     Tla = 6424,
+    /// Tobelo
     #[doc(hidden)]
     Tlb = 6425,
+    /// Yecuatla Totonac
     #[doc(hidden)]
     Tlc = 6426,
+    /// Talaud
     #[doc(hidden)]
     Tld = 6427,
+    /// Telefol
     #[doc(hidden)]
     Tlf = 6428,
+    /// Tofanma
     #[doc(hidden)]
     Tlg = 6429,
+    /// Klingon
     #[doc(hidden)]
     Tlh = 6430,
+    /// Tlingit
     #[doc(hidden)]
     Tli = 6431,
+    /// Talinga-Bwisi
     #[doc(hidden)]
     Tlj = 6432,
+    /// Taloki
     #[doc(hidden)]
     Tlk = 6433,
+    /// Tetela
     #[doc(hidden)]
     Tll = 6434,
+    /// Tolomako
     #[doc(hidden)]
     Tlm = 6435,
+    /// Talondo'
     #[doc(hidden)]
     Tln = 6436,
+    /// Talodi
     #[doc(hidden)]
     Tlo = 6437,
+    /// Filomena Mata-Coahuitlán Totonac
     #[doc(hidden)]
     Tlp = 6438,
+    /// Tai Loi
     #[doc(hidden)]
     Tlq = 6439,
+    /// Talise
     #[doc(hidden)]
     Tlr = 6440,
+    /// Tambotalo
     #[doc(hidden)]
     Tls = 6441,
+    /// Sou Nama
     #[doc(hidden)]
     Tlt = 6442,
+    /// Tulehu
     #[doc(hidden)]
     Tlu = 6443,
+    /// Taliabu
     #[doc(hidden)]
     Tlv = 6444,
+    /// Khehek
     #[doc(hidden)]
     Tlx = 6445,
+    /// Talysh
     #[doc(hidden)]
     Tly = 6446,
+    /// Tama
     #[doc(hidden)]
     Tma = 6447,
+    /// Katbol
     #[doc(hidden)]
     Tmb = 6448,
+    /// Tumak
     #[doc(hidden)]
     Tmc = 6449,
+    /// Haruai
     #[doc(hidden)]
     Tmd = 6450,
+    /// Tremembé
     #[doc(hidden)]
     Tme = 6451,
+    /// Toba-Maskoy
     #[doc(hidden)]
     Tmf = 6452,
+    /// Ternateño
     #[doc(hidden)]
     Tmg = 6453,
+    /// Tamashek
     #[doc(hidden)]
     Tmh = 6454,
+    /// Tutuba
     #[doc(hidden)]
     Tmi = 6455,
+    /// Samarokena
     #[doc(hidden)]
     Tmj = 6456,
+    /// Tamnim Citak
     #[doc(hidden)]
     Tml = 6457,
+    /// Tai Thanh
     #[doc(hidden)]
     Tmm = 6458,
+    /// Taman
     #[doc(hidden)]
     Tmn = 6459,
+    /// Temoq
     #[doc(hidden)]
     Tmo = 6460,
+    /// Tumleo
     #[doc(hidden)]
     Tmq = 6461,
+    /// Jewish Babylonian Aramaic
     #[doc(hidden)]
     Tmr = 6462,
+    /// Tima
     #[doc(hidden)]
     Tms = 6463,
+    /// Tasmate
     #[doc(hidden)]
     Tmt = 6464,
+    /// Iau
     #[doc(hidden)]
     Tmu = 6465,
+    /// Tembo
     #[doc(hidden)]
     Tmv = 6466,
+    /// Temuan
     #[doc(hidden)]
     Tmw = 6467,
+    /// Tami
     #[doc(hidden)]
     Tmy = 6468,
+    /// Tamanaku
     #[doc(hidden)]
     Tmz = 6469,
+    /// Tacana
     #[doc(hidden)]
     Tna = 6470,
+    /// Western Tunebo
     #[doc(hidden)]
     Tnb = 6471,
+    /// Tanimuca-Retuarã
     #[doc(hidden)]
     Tnc = 6472,
+    /// Angosturas Tunebo
     #[doc(hidden)]
     Tnd = 6473,
+    /// Tobanga
     #[doc(hidden)]
     Tng = 6474,
+    /// Maiani
     #[doc(hidden)]
     Tnh = 6475,
+    /// Tandia
     #[doc(hidden)]
     Tni = 6476,
+    /// Kwamera
     #[doc(hidden)]
     Tnk = 6477,
+    /// Lenakel
     #[doc(hidden)]
     Tnl = 6478,
+    /// Tabla
     #[doc(hidden)]
     Tnm = 6479,
+    /// North Tanna
     #[doc(hidden)]
     Tnn = 6480,
+    /// Toromono
     #[doc(hidden)]
     Tno = 6481,
+    /// Whitesands
     #[doc(hidden)]
     Tnp = 6482,
+    /// Taino
     #[doc(hidden)]
     Tnq = 6483,
+    /// Ménik
     #[doc(hidden)]
     Tnr = 6484,
+    /// Tenis
     #[doc(hidden)]
     Tns = 6485,
+    /// Tontemboan
     #[doc(hidden)]
     Tnt = 6486,
+    /// Tay Khang
     #[doc(hidden)]
     Tnu = 6487,
+    /// Tangchangya
     #[doc(hidden)]
     Tnv = 6488,
+    /// Tonsawang
     #[doc(hidden)]
     Tnw = 6489,
+    /// Tanema
     #[doc(hidden)]
     Tnx = 6490,
+    /// Tongwe
     #[doc(hidden)]
     Tny = 6491,
+    /// Ten'edn
     #[doc(hidden)]
     Tnz = 6492,
+    /// Toba
     #[doc(hidden)]
     Tob = 6493,
+    /// Coyutla Totonac
     #[doc(hidden)]
     Toc = 6494,
+    /// Toma
     #[doc(hidden)]
     Tod = 6495,
+    /// Gizrra
     #[doc(hidden)]
     Tof = 6496,
+    /// Tonga
     #[doc(hidden)]
     Tog = 6497,
+    /// Gitonga
     #[doc(hidden)]
     Toh = 6498,
+    /// Tonga
     #[doc(hidden)]
     Toi = 6499,
+    /// Tojolabal
     #[doc(hidden)]
     Toj = 6500,
+    /// Toki Pona
     #[doc(hidden)]
     Tok = 6501,
+    /// Tolowa
     #[doc(hidden)]
     Tol = 6502,
+    /// Tombulu
     #[doc(hidden)]
     Tom = 6503,
+    /// Tonga
     #[doc(hidden)]
     Ton = 6504,
+    /// Xicotepec De Juárez Totonac
     #[doc(hidden)]
     Too = 6505,
+    /// Papantla Totonac
     #[doc(hidden)]
     Top = 6506,
+    /// Toposa
     #[doc(hidden)]
     Toq = 6507,
+    /// Togbo-Vara Banda
     #[doc(hidden)]
     Tor = 6508,
+    /// Highland Totonac
     #[doc(hidden)]
     Tos = 6509,
+    /// Tho
     #[doc(hidden)]
     Tou = 6510,
+    /// Upper Taromi
     #[doc(hidden)]
     Tov = 6511,
+    /// Jemez
     #[doc(hidden)]
     Tow = 6512,
+    /// Tobian
     #[doc(hidden)]
     Tox = 6513,
+    /// Topoiyo
     #[doc(hidden)]
     Toy = 6514,
+    /// To
     #[doc(hidden)]
     Toz = 6515,
+    /// Taupota
     #[doc(hidden)]
     Tpa = 6516,
+    /// Azoyú Me'phaa
     #[doc(hidden)]
     Tpc = 6517,
+    /// Tippera
     #[doc(hidden)]
     Tpe = 6518,
+    /// Tarpia
     #[doc(hidden)]
     Tpf = 6519,
+    /// Kula
     #[doc(hidden)]
     Tpg = 6520,
+    /// Tok Pisin
     #[doc(hidden)]
     Tpi = 6521,
+    /// Tapieté
     #[doc(hidden)]
     Tpj = 6522,
+    /// Tupinikin
     #[doc(hidden)]
     Tpk = 6523,
+    /// Tlacoapa Me'phaa
     #[doc(hidden)]
     Tpl = 6524,
+    /// Tampulma
     #[doc(hidden)]
     Tpm = 6525,
+    /// Tupinambá
     #[doc(hidden)]
     Tpn = 6526,
+    /// Tai Pao
     #[doc(hidden)]
     Tpo = 6527,
+    /// Pisaflores Tepehua
     #[doc(hidden)]
     Tpp = 6528,
+    /// Tukpa
     #[doc(hidden)]
     Tpq = 6529,
+    /// Tuparí
     #[doc(hidden)]
     Tpr = 6530,
+    /// Tlachichilco Tepehua
     #[doc(hidden)]
     Tpt = 6531,
+    /// Tampuan
     #[doc(hidden)]
     Tpu = 6532,
+    /// Tanapag
     #[doc(hidden)]
     Tpv = 6533,
+    /// Acatepec Me'phaa
     #[doc(hidden)]
     Tpx = 6534,
+    /// Trumai
     #[doc(hidden)]
     Tpy = 6535,
+    /// Tinputz
     #[doc(hidden)]
     Tpz = 6536,
+    /// Tembé
     #[doc(hidden)]
     Tqb = 6537,
+    /// Lehali
     #[doc(hidden)]
     Tql = 6538,
+    /// Turumsa
     #[doc(hidden)]
     Tqm = 6539,
+    /// Tenino
     #[doc(hidden)]
     Tqn = 6540,
+    /// Toaripi
     #[doc(hidden)]
     Tqo = 6541,
+    /// Tomoip
     #[doc(hidden)]
     Tqp = 6542,
+    /// Tunni
     #[doc(hidden)]
     Tqq = 6543,
+    /// Torona
     #[doc(hidden)]
     Tqr = 6544,
+    /// Western Totonac
     #[doc(hidden)]
     Tqt = 6545,
+    /// Touo
     #[doc(hidden)]
     Tqu = 6546,
+    /// Tonkawa
     #[doc(hidden)]
     Tqw = 6547,
+    /// Tirahi
     #[doc(hidden)]
     Tra = 6548,
+    /// Terebu
     #[doc(hidden)]
     Trb = 6549,
+    /// Copala Triqui
     #[doc(hidden)]
     Trc = 6550,
+    /// Turi
     #[doc(hidden)]
     Trd = 6551,
+    /// East Tarangan
     #[doc(hidden)]
     Tre = 6552,
+    /// Trinidadian Creole English
     #[doc(hidden)]
     Trf = 6553,
+    /// Lishán Didán
     #[doc(hidden)]
     Trg = 6554,
+    /// Turaka
     #[doc(hidden)]
     Trh = 6555,
+    /// Trió
     #[doc(hidden)]
     Tri = 6556,
+    /// Toram
     #[doc(hidden)]
     Trj = 6557,
+    /// Traveller Scottish
     #[doc(hidden)]
     Trl = 6558,
+    /// Tregami
     #[doc(hidden)]
     Trm = 6559,
+    /// Trinitario
     #[doc(hidden)]
     Trn = 6560,
+    /// Tarao Naga
     #[doc(hidden)]
     Tro = 6561,
+    /// Kok Borok
     #[doc(hidden)]
     Trp = 6562,
+    /// San Martín Itunyoso Triqui
     #[doc(hidden)]
     Trq = 6563,
+    /// Taushiro
     #[doc(hidden)]
     Trr = 6564,
+    /// Chicahuaxtla Triqui
     #[doc(hidden)]
     Trs = 6565,
+    /// Tunggare
     #[doc(hidden)]
     Trt = 6566,
+    /// Turoyo
     #[doc(hidden)]
     Tru = 6567,
+    /// Sediq
     #[doc(hidden)]
     Trv = 6568,
+    /// Torwali
     #[doc(hidden)]
     Trw = 6569,
+    /// Tringgus-Sembaan Bidayuh
     #[doc(hidden)]
     Trx = 6570,
+    /// Turung
     #[doc(hidden)]
     Try = 6571,
+    /// Torá
     #[doc(hidden)]
     Trz = 6572,
+    /// Tsaangi
     #[doc(hidden)]
     Tsa = 6573,
+    /// Tsamai
     #[doc(hidden)]
     Tsb = 6574,
+    /// Tswa
     #[doc(hidden)]
     Tsc = 6575,
+    /// Tsakonian
     #[doc(hidden)]
     Tsd = 6576,
+    /// Tunisian Sign Language
     #[doc(hidden)]
     Tse = 6577,
+    /// Tausug
     #[doc(hidden)]
     Tsg = 6578,
+    /// Tsuvan
     #[doc(hidden)]
     Tsh = 6579,
+    /// Tsimshian
     #[doc(hidden)]
     Tsi = 6580,
+    /// Tshangla
     #[doc(hidden)]
     Tsj = 6581,
+    /// Tseku
     #[doc(hidden)]
     Tsk = 6582,
+    /// Ts'ün-Lao
     #[doc(hidden)]
     Tsl = 6583,
+    /// Turkish Sign Language
     #[doc(hidden)]
     Tsm = 6584,
+    /// Tswana
     #[doc(hidden)]
     Tsn = 6585,
+    /// Tsonga
     #[doc(hidden)]
     Tso = 6586,
+    /// Northern Toussian
     #[doc(hidden)]
     Tsp = 6587,
+    /// Thai Sign Language
     #[doc(hidden)]
     Tsq = 6588,
+    /// Akei
     #[doc(hidden)]
     Tsr = 6589,
+    /// Taiwan Sign Language
     #[doc(hidden)]
     Tss = 6590,
+    /// Tondi Songway Kiini
     #[doc(hidden)]
     Tst = 6591,
+    /// Tsou
     #[doc(hidden)]
     Tsu = 6592,
+    /// Tsogo
     #[doc(hidden)]
     Tsv = 6593,
+    /// Tsishingini
     #[doc(hidden)]
     Tsw = 6594,
+    /// Mubami
     #[doc(hidden)]
     Tsx = 6595,
+    /// Tebul Sign Language
     #[doc(hidden)]
     Tsy = 6596,
+    /// Purepecha
     #[doc(hidden)]
     Tsz = 6597,
+    /// Tutelo
     #[doc(hidden)]
     Tta = 6598,
+    /// Gaa
     #[doc(hidden)]
     Ttb = 6599,
+    /// Tektiteko
     #[doc(hidden)]
     Ttc = 6600,
+    /// Tauade
     #[doc(hidden)]
     Ttd = 6601,
+    /// Bwanabwana
     #[doc(hidden)]
     Tte = 6602,
+    /// Tuotomb
     #[doc(hidden)]
     Ttf = 6603,
+    /// Tutong
     #[doc(hidden)]
     Ttg = 6604,
+    /// Upper Ta'oih
     #[doc(hidden)]
     Tth = 6605,
+    /// Tobati
     #[doc(hidden)]
     Tti = 6606,
+    /// Tooro
     #[doc(hidden)]
     Ttj = 6607,
+    /// Totoro
     #[doc(hidden)]
     Ttk = 6608,
+    /// Totela
     #[doc(hidden)]
     Ttl = 6609,
+    /// Northern Tutchone
     #[doc(hidden)]
     Ttm = 6610,
+    /// Towei
     #[doc(hidden)]
     Ttn = 6611,
+    /// Lower Ta'oih
     #[doc(hidden)]
     Tto = 6612,
+    /// Tombelala
     #[doc(hidden)]
     Ttp = 6613,
+    /// Tawallammat Tamajaq
     #[doc(hidden)]
     Ttq = 6614,
+    /// Tera
     #[doc(hidden)]
     Ttr = 6615,
+    /// Northeastern Thai
     #[doc(hidden)]
     Tts = 6616,
+    /// Muslim Tat
     #[doc(hidden)]
     Ttt = 6617,
+    /// Torau
     #[doc(hidden)]
     Ttu = 6618,
+    /// Titan
     #[doc(hidden)]
     Ttv = 6619,
+    /// Long Wat
     #[doc(hidden)]
     Ttw = 6620,
+    /// Sikaritai
     #[doc(hidden)]
     Tty = 6621,
+    /// Tsum
     #[doc(hidden)]
     Ttz = 6622,
+    /// Wiarumus
     #[doc(hidden)]
     Tua = 6623,
+    /// Tübatulabal
     #[doc(hidden)]
     Tub = 6624,
+    /// Mutu
     #[doc(hidden)]
     Tuc = 6625,
+    /// Tuxá
     #[doc(hidden)]
     Tud = 6626,
+    /// Tuyuca
     #[doc(hidden)]
     Tue = 6627,
+    /// Central Tunebo
     #[doc(hidden)]
     Tuf = 6628,
+    /// Tunia
     #[doc(hidden)]
     Tug = 6629,
+    /// Taulil
     #[doc(hidden)]
     Tuh = 6630,
+    /// Tupuri
     #[doc(hidden)]
     Tui = 6631,
+    /// Tugutil
     #[doc(hidden)]
     Tuj = 6632,
+    /// Turkmen
     #[doc(hidden)]
     Tuk = 6633,
+    /// Tula
     #[doc(hidden)]
     Tul = 6634,
+    /// Tumbuka
     #[doc(hidden)]
     Tum = 6635,
+    /// Tunica
     #[doc(hidden)]
     Tun = 6636,
+    /// Tucano
     #[doc(hidden)]
     Tuo = 6637,
+    /// Tedaga
     #[doc(hidden)]
     Tuq = 6638,
+    /// Turkish
     #[doc(hidden)]
     Tur = 6639,
+    /// Tuscarora
     #[doc(hidden)]
     Tus = 6640,
+    /// Tututni
     #[doc(hidden)]
     Tuu = 6641,
+    /// Turkana
     #[doc(hidden)]
     Tuv = 6642,
+    /// Tuxináwa
     #[doc(hidden)]
     Tux = 6643,
+    /// Tugen
     #[doc(hidden)]
     Tuy = 6644,
+    /// Turka
     #[doc(hidden)]
     Tuz = 6645,
+    /// Vaghua
     #[doc(hidden)]
     Tva = 6646,
+    /// Tsuvadi
     #[doc(hidden)]
     Tvd = 6647,
+    /// Te'un
     #[doc(hidden)]
     Tve = 6648,
+    /// Tulai
     #[doc(hidden)]
     Tvi = 6649,
+    /// Southeast Ambrym
     #[doc(hidden)]
     Tvk = 6650,
+    /// Tuvalu
     #[doc(hidden)]
     Tvl = 6651,
+    /// Tela-Masbuar
     #[doc(hidden)]
     Tvm = 6652,
+    /// Tavoyan
     #[doc(hidden)]
     Tvn = 6653,
+    /// Tidore
     #[doc(hidden)]
     Tvo = 6654,
+    /// Taveta
     #[doc(hidden)]
     Tvs = 6655,
+    /// Tutsa Naga
     #[doc(hidden)]
     Tvt = 6656,
+    /// Tunen
     #[doc(hidden)]
     Tvu = 6657,
+    /// Sedoa
     #[doc(hidden)]
     Tvw = 6658,
+    /// Taivoan
     #[doc(hidden)]
     Tvx = 6659,
+    /// Timor Pidgin
     #[doc(hidden)]
     Tvy = 6660,
+    /// Twana
     #[doc(hidden)]
     Twa = 6661,
+    /// Western Tawbuid
     #[doc(hidden)]
     Twb = 6662,
+    /// Teshenawa
     #[doc(hidden)]
     Twc = 6663,
+    /// Twents
     #[doc(hidden)]
     Twd = 6664,
+    /// Tewa
     #[doc(hidden)]
     Twe = 6665,
+    /// Northern Tiwa
     #[doc(hidden)]
     Twf = 6666,
+    /// Tereweng
     #[doc(hidden)]
     Twg = 6667,
+    /// Tai Dón
     #[doc(hidden)]
     Twh = 6668,
+    /// Twi
     #[doc(hidden)]
     Twi = 6669,
+    /// Tawara
     #[doc(hidden)]
     Twl = 6670,
+    /// Tawang Monpa
     #[doc(hidden)]
     Twm = 6671,
+    /// Twendi
     #[doc(hidden)]
     Twn = 6672,
+    /// Tswapong
     #[doc(hidden)]
     Two = 6673,
+    /// Ere
     #[doc(hidden)]
     Twp = 6674,
+    /// Tasawaq
     #[doc(hidden)]
     Twq = 6675,
+    /// Southwestern Tarahumara
     #[doc(hidden)]
     Twr = 6676,
+    /// Turiwára
     #[doc(hidden)]
     Twt = 6677,
+    /// Termanu
     #[doc(hidden)]
     Twu = 6678,
+    /// Tuwari
     #[doc(hidden)]
     Tww = 6679,
+    /// Tewe
     #[doc(hidden)]
     Twx = 6680,
+    /// Tawoyan
     #[doc(hidden)]
     Twy = 6681,
+    /// Tombonuo
     #[doc(hidden)]
     Txa = 6682,
+    /// Tokharian B
     #[doc(hidden)]
     Txb = 6683,
+    /// Tsetsaut
     #[doc(hidden)]
     Txc = 6684,
+    /// Totoli
     #[doc(hidden)]
     Txe = 6685,
+    /// Tangut
     #[doc(hidden)]
     Txg = 6686,
+    /// Thracian
     #[doc(hidden)]
     Txh = 6687,
+    /// Ikpeng
     #[doc(hidden)]
     Txi = 6688,
+    /// Tarjumo
     #[doc(hidden)]
     Txj = 6689,
+    /// Tomini
     #[doc(hidden)]
     Txm = 6690,
+    /// West Tarangan
     #[doc(hidden)]
     Txn = 6691,
+    /// Toto
     #[doc(hidden)]
     Txo = 6692,
+    /// Tii
     #[doc(hidden)]
     Txq = 6693,
+    /// Tartessian
     #[doc(hidden)]
     Txr = 6694,
+    /// Tonsea
     #[doc(hidden)]
     Txs = 6695,
+    /// Citak
     #[doc(hidden)]
     Txt = 6696,
+    /// Kayapó
     #[doc(hidden)]
     Txu = 6697,
+    /// Tatana
     #[doc(hidden)]
     Txx = 6698,
+    /// Tanosy Malagasy
     #[doc(hidden)]
     Txy = 6699,
+    /// Tauya
     #[doc(hidden)]
     Tya = 6700,
+    /// Kyanga
     #[doc(hidden)]
     Tye = 6701,
+    /// O'du
     #[doc(hidden)]
     Tyh = 6702,
+    /// Teke-Tsaayi
     #[doc(hidden)]
     Tyi = 6703,
+    /// Tai Do
     #[doc(hidden)]
     Tyj = 6704,
+    /// Thu Lao
     #[doc(hidden)]
     Tyl = 6705,
+    /// Kombai
     #[doc(hidden)]
     Tyn = 6706,
+    /// Thaypan
     #[doc(hidden)]
     Typ = 6707,
+    /// Tai Daeng
     #[doc(hidden)]
     Tyr = 6708,
+    /// Tày Sa Pa
     #[doc(hidden)]
     Tys = 6709,
+    /// Tày Tac
     #[doc(hidden)]
     Tyt = 6710,
+    /// Kua
     #[doc(hidden)]
     Tyu = 6711,
+    /// Tuvinian
     #[doc(hidden)]
     Tyv = 6712,
+    /// Teke-Tyee
     #[doc(hidden)]
     Tyx = 6713,
+    /// Tiyaa
     #[doc(hidden)]
     Tyy = 6714,
+    /// Tày
     #[doc(hidden)]
     Tyz = 6715,
+    /// Tanzanian Sign Language
     #[doc(hidden)]
     Tza = 6716,
+    /// Tzeltal
     #[doc(hidden)]
     Tzh = 6717,
+    /// Tz'utujil
     #[doc(hidden)]
     Tzj = 6718,
+    /// Talossan
     #[doc(hidden)]
     Tzl = 6719,
+    /// Central Atlas Tamazight
     #[doc(hidden)]
     Tzm = 6720,
+    /// Tugun
     #[doc(hidden)]
     Tzn = 6721,
+    /// Tzotzil
     #[doc(hidden)]
     Tzo = 6722,
+    /// Tabriak
     #[doc(hidden)]
     Tzx = 6723,
+    /// Uamué
     #[doc(hidden)]
     Uam = 6724,
+    /// Kuan
     #[doc(hidden)]
     Uan = 6725,
+    /// Tairuma
     #[doc(hidden)]
     Uar = 6726,
+    /// Ubang
     #[doc(hidden)]
     Uba = 6727,
+    /// Ubi
     #[doc(hidden)]
     Ubi = 6728,
+    /// Buhi'non Bikol
     #[doc(hidden)]
     Ubl = 6729,
+    /// Ubir
     #[doc(hidden)]
     Ubr = 6730,
+    /// Umbu-Ungu
     #[doc(hidden)]
     Ubu = 6731,
+    /// Ubykh
     #[doc(hidden)]
     Uby = 6732,
+    /// Uda
     #[doc(hidden)]
     Uda = 6733,
+    /// Udihe
     #[doc(hidden)]
     Ude = 6734,
+    /// Muduga
     #[doc(hidden)]
     Udg = 6735,
+    /// Udi
     #[doc(hidden)]
     Udi = 6736,
+    /// Ujir
     #[doc(hidden)]
     Udj = 6737,
+    /// Wuzlam
     #[doc(hidden)]
     Udl = 6738,
+    /// Udmurt
     #[doc(hidden)]
     Udm = 6739,
+    /// Uduk
     #[doc(hidden)]
     Udu = 6740,
+    /// Kioko
     #[doc(hidden)]
     Ues = 6741,
+    /// Ufim
     #[doc(hidden)]
     Ufi = 6742,
+    /// Ugaritic
     #[doc(hidden)]
     Uga = 6743,
+    /// Kuku-Ugbanh
     #[doc(hidden)]
     Ugb = 6744,
+    /// Ughele
     #[doc(hidden)]
     Uge = 6745,
+    /// Kubachi
     #[doc(hidden)]
     Ugh = 6746,
+    /// Ugandan Sign Language
     #[doc(hidden)]
     Ugn = 6747,
+    /// Ugong
     #[doc(hidden)]
     Ugo = 6748,
+    /// Uruguayan Sign Language
     #[doc(hidden)]
     Ugy = 6749,
+    /// Uhami
     #[doc(hidden)]
     Uha = 6750,
+    /// Damal
     #[doc(hidden)]
     Uhn = 6751,
+    /// Uighur
     #[doc(hidden)]
     Uig = 6752,
+    /// Uisai
     #[doc(hidden)]
     Uis = 6753,
+    /// Iyive
     #[doc(hidden)]
     Uiv = 6754,
+    /// Tanjijili
     #[doc(hidden)]
     Uji = 6755,
+    /// Kaburi
     #[doc(hidden)]
     Uka = 6756,
+    /// Ukuriguma
     #[doc(hidden)]
     Ukg = 6757,
+    /// Ukhwejo
     #[doc(hidden)]
     Ukh = 6758,
+    /// Kui
     #[doc(hidden)]
     Uki = 6759,
+    /// Muak Sa-aak
     #[doc(hidden)]
     Ukk = 6760,
+    /// Ukrainian Sign Language
     #[doc(hidden)]
     Ukl = 6761,
+    /// Ukpe-Bayobiri
     #[doc(hidden)]
     Ukp = 6762,
+    /// Ukwa
     #[doc(hidden)]
     Ukq = 6763,
+    /// Ukrainian
     #[doc(hidden)]
     Ukr = 6764,
+    /// Urubú-Kaapor Sign Language
     #[doc(hidden)]
     Uks = 6765,
+    /// Ukue
     #[doc(hidden)]
     Uku = 6766,
+    /// Kuku
     #[doc(hidden)]
     Ukv = 6767,
+    /// Ukwuani-Aboh-Ndoni
     #[doc(hidden)]
     Ukw = 6768,
+    /// Kuuk-Yak
     #[doc(hidden)]
     Uky = 6769,
+    /// Fungwa
     #[doc(hidden)]
     Ula = 6770,
+    /// Ulukwumi
     #[doc(hidden)]
     Ulb = 6771,
+    /// Ulch
     #[doc(hidden)]
     Ulc = 6772,
+    /// Lule
     #[doc(hidden)]
     Ule = 6773,
+    /// Usku
     #[doc(hidden)]
     Ulf = 6774,
+    /// Ulithian
     #[doc(hidden)]
     Uli = 6775,
+    /// Meriam Mir
     #[doc(hidden)]
     Ulk = 6776,
+    /// Ullatan
     #[doc(hidden)]
     Ull = 6777,
+    /// Ulumanda'
     #[doc(hidden)]
     Ulm = 6778,
+    /// Unserdeutsch
     #[doc(hidden)]
     Uln = 6779,
+    /// Uma' Lung
     #[doc(hidden)]
     Ulu = 6780,
+    /// Ulwa
     #[doc(hidden)]
     Ulw = 6781,
+    /// Buli
     #[doc(hidden)]
     Uly = 6782,
+    /// Umatilla
     #[doc(hidden)]
     Uma = 6783,
+    /// Umbundu
     #[doc(hidden)]
     Umb = 6784,
+    /// Marrucinian
     #[doc(hidden)]
     Umc = 6785,
+    /// Umbindhamu
     #[doc(hidden)]
     Umd = 6786,
+    /// Morrobalama
     #[doc(hidden)]
     Umg = 6787,
+    /// Ukit
     #[doc(hidden)]
     Umi = 6788,
+    /// Umon
     #[doc(hidden)]
     Umm = 6789,
+    /// Makyan Naga
     #[doc(hidden)]
     Umn = 6790,
+    /// Umotína
     #[doc(hidden)]
     Umo = 6791,
+    /// Umpila
     #[doc(hidden)]
     Ump = 6792,
+    /// Umbugarla
     #[doc(hidden)]
     Umr = 6793,
+    /// Pendau
     #[doc(hidden)]
     Ums = 6794,
+    /// Munsee
     #[doc(hidden)]
     Umu = 6795,
+    /// North Watut
     #[doc(hidden)]
     Una = 6796,
+    /// Undetermined
     #[doc(hidden)]
     Und = 6797,
+    /// Uneme
     #[doc(hidden)]
     Une = 6798,
+    /// Ngarinyin
     #[doc(hidden)]
     Ung = 6799,
+    /// Uni
     #[doc(hidden)]
     Uni = 6800,
+    /// Enawené-Nawé
     #[doc(hidden)]
     Unk = 6801,
+    /// Unami
     #[doc(hidden)]
     Unm = 6802,
+    /// Kurnai
     #[doc(hidden)]
     Unn = 6803,
+    /// Mundari
     #[doc(hidden)]
     Unr = 6804,
+    /// Unubahe
     #[doc(hidden)]
     Unu = 6805,
+    /// Munda
     #[doc(hidden)]
     Unx = 6806,
+    /// Unde Kaili
     #[doc(hidden)]
     Unz = 6807,
+    /// Kulon
     #[doc(hidden)]
     Uon = 6808,
+    /// Umeda
     #[doc(hidden)]
     Upi = 6809,
+    /// Uripiv-Wala-Rano-Atchin
     #[doc(hidden)]
     Upv = 6810,
+    /// Urarina
     #[doc(hidden)]
     Ura = 6811,
+    /// Urubú-Kaapor
     #[doc(hidden)]
     Urb = 6812,
+    /// Urningangg
     #[doc(hidden)]
     Urc = 6813,
+    /// Urdu
     #[doc(hidden)]
     Urd = 6814,
+    /// Uru
     #[doc(hidden)]
     Ure = 6815,
+    /// Uradhi
     #[doc(hidden)]
     Urf = 6816,
+    /// Urigina
     #[doc(hidden)]
     Urg = 6817,
+    /// Urhobo
     #[doc(hidden)]
     Urh = 6818,
+    /// Urim
     #[doc(hidden)]
     Uri = 6819,
+    /// Urak Lawoi'
     #[doc(hidden)]
     Urk = 6820,
+    /// Urali
     #[doc(hidden)]
     Url = 6821,
+    /// Urapmin
     #[doc(hidden)]
     Urm = 6822,
+    /// Uruangnirin
     #[doc(hidden)]
     Urn = 6823,
+    /// Ura
     #[doc(hidden)]
     Uro = 6824,
+    /// Uru-Pa-In
     #[doc(hidden)]
     Urp = 6825,
+    /// Lehalurup
     #[doc(hidden)]
     Urr = 6826,
+    /// Urat
     #[doc(hidden)]
     Urt = 6827,
+    /// Urumi
     #[doc(hidden)]
     Uru = 6828,
+    /// Uruava
     #[doc(hidden)]
     Urv = 6829,
+    /// Sop
     #[doc(hidden)]
     Urw = 6830,
+    /// Urimo
     #[doc(hidden)]
     Urx = 6831,
+    /// Orya
     #[doc(hidden)]
     Ury = 6832,
+    /// Uru-Eu-Wau-Wau
     #[doc(hidden)]
     Urz = 6833,
+    /// Usarufa
     #[doc(hidden)]
     Usa = 6834,
+    /// Ushojo
     #[doc(hidden)]
     Ush = 6835,
+    /// Usui
     #[doc(hidden)]
     Usi = 6836,
+    /// Usaghade
     #[doc(hidden)]
     Usk = 6837,
+    /// Uspanteco
     #[doc(hidden)]
     Usp = 6838,
+    /// us-Saare
     #[doc(hidden)]
     Uss = 6839,
+    /// Uya
     #[doc(hidden)]
     Usu = 6840,
+    /// Otank
     #[doc(hidden)]
     Uta = 6841,
+    /// Ute-Southern Paiute
     #[doc(hidden)]
     Ute = 6842,
+    /// ut-Hun
     #[doc(hidden)]
     Uth = 6843,
+    /// Amba
     #[doc(hidden)]
     Utp = 6844,
+    /// Etulo
     #[doc(hidden)]
     Utr = 6845,
+    /// Utu
     #[doc(hidden)]
     Utu = 6846,
+    /// Urum
     #[doc(hidden)]
     Uum = 6847,
+    /// Ura
     #[doc(hidden)]
     Uur = 6848,
+    /// U
     #[doc(hidden)]
     Uuu = 6849,
+    /// West Uvean
     #[doc(hidden)]
     Uve = 6850,
+    /// Uri
     #[doc(hidden)]
     Uvh = 6851,
+    /// Lote
     #[doc(hidden)]
     Uvl = 6852,
+    /// Kuku-Uwanh
     #[doc(hidden)]
     Uwa = 6853,
+    /// Doko-Uyanga
     #[doc(hidden)]
     Uya = 6854,
+    /// Uzbek
     #[doc(hidden)]
     Uzb = 6855,
+    /// Northern Uzbek
     #[doc(hidden)]
     Uzn = 6856,
+    /// Southern Uzbek
     #[doc(hidden)]
     Uzs = 6857,
+    /// Vaagri Booli
     #[doc(hidden)]
     Vaa = 6858,
+    /// Vale
     #[doc(hidden)]
     Vae = 6859,
+    /// Vafsi
     #[doc(hidden)]
     Vaf = 6860,
+    /// Vagla
     #[doc(hidden)]
     Vag = 6861,
+    /// Varhadi-Nagpuri
     #[doc(hidden)]
     Vah = 6862,
+    /// Vai
     #[doc(hidden)]
     Vai = 6863,
+    /// Sekele
     #[doc(hidden)]
     Vaj = 6864,
+    /// Vehes
     #[doc(hidden)]
     Val = 6865,
+    /// Vanimo
     #[doc(hidden)]
     Vam = 6866,
+    /// Valman
     #[doc(hidden)]
     Van = 6867,
+    /// Vao
     #[doc(hidden)]
     Vao = 6868,
+    /// Vaiphei
     #[doc(hidden)]
     Vap = 6869,
+    /// Huarijio
     #[doc(hidden)]
     Var = 6870,
+    /// Vasavi
     #[doc(hidden)]
     Vas = 6871,
+    /// Vanuma
     #[doc(hidden)]
     Vau = 6872,
+    /// Varli
     #[doc(hidden)]
     Vav = 6873,
+    /// Wayu
     #[doc(hidden)]
     Vay = 6874,
+    /// Southeast Babar
     #[doc(hidden)]
     Vbb = 6875,
+    /// Southwestern Bontok
     #[doc(hidden)]
     Vbk = 6876,
+    /// Venetian
     #[doc(hidden)]
     Vec = 6877,
+    /// Veddah
     #[doc(hidden)]
     Ved = 6878,
+    /// Veluws
     #[doc(hidden)]
     Vel = 6879,
+    /// Vemgo-Mabas
     #[doc(hidden)]
     Vem = 6880,
+    /// Venda
     #[doc(hidden)]
     Ven = 6881,
+    /// Ventureño
     #[doc(hidden)]
     Veo = 6882,
+    /// Veps
     #[doc(hidden)]
     Vep = 6883,
+    /// Mom Jango
     #[doc(hidden)]
     Ver = 6884,
+    /// Vaghri
     #[doc(hidden)]
     Vgr = 6885,
+    /// Vlaamse Gebarentaal
     #[doc(hidden)]
     Vgt = 6886,
+    /// Virgin Islands Creole English
     #[doc(hidden)]
     Vic = 6887,
+    /// Vidunda
     #[doc(hidden)]
     Vid = 6888,
+    /// Vietnamese
     #[doc(hidden)]
     Vie = 6889,
+    /// Vili
     #[doc(hidden)]
     Vif = 6890,
+    /// Viemo
     #[doc(hidden)]
     Vig = 6891,
+    /// Vilela
     #[doc(hidden)]
     Vil = 6892,
+    /// Vinza
     #[doc(hidden)]
     Vin = 6893,
+    /// Vishavan
     #[doc(hidden)]
     Vis = 6894,
+    /// Viti
     #[doc(hidden)]
     Vit = 6895,
+    /// Iduna
     #[doc(hidden)]
     Viv = 6896,
+    /// Bajjika
     #[doc(hidden)]
     Vjk = 6897,
+    /// Kariyarra
     #[doc(hidden)]
     Vka = 6898,
+    /// Kujarge
     #[doc(hidden)]
     Vkj = 6899,
+    /// Kaur
     #[doc(hidden)]
     Vkk = 6900,
+    /// Kulisusu
     #[doc(hidden)]
     Vkl = 6901,
+    /// Kamakan
     #[doc(hidden)]
     Vkm = 6902,
+    /// Koro Nulu
     #[doc(hidden)]
     Vkn = 6903,
+    /// Kodeoha
     #[doc(hidden)]
     Vko = 6904,
+    /// Korlai Creole Portuguese
     #[doc(hidden)]
     Vkp = 6905,
+    /// Tenggarong Kutai Malay
     #[doc(hidden)]
     Vkt = 6906,
+    /// Kurrama
     #[doc(hidden)]
     Vku = 6907,
+    /// Koro Zuba
     #[doc(hidden)]
     Vkz = 6908,
+    /// Valpei
     #[doc(hidden)]
     Vlp = 6909,
+    /// Vlaams
     #[doc(hidden)]
     Vls = 6910,
+    /// Martuyhunira
     #[doc(hidden)]
     Vma = 6911,
+    /// Barbaram
     #[doc(hidden)]
     Vmb = 6912,
+    /// Juxtlahuaca Mixtec
     #[doc(hidden)]
     Vmc = 6913,
+    /// Mudu Koraga
     #[doc(hidden)]
     Vmd = 6914,
+    /// East Masela
     #[doc(hidden)]
     Vme = 6915,
+    /// Mainfränkisch
     #[doc(hidden)]
     Vmf = 6916,
+    /// Lungalunga
     #[doc(hidden)]
     Vmg = 6917,
+    /// Maraghei
     #[doc(hidden)]
     Vmh = 6918,
+    /// Miwa
     #[doc(hidden)]
     Vmi = 6919,
+    /// Ixtayutla Mixtec
     #[doc(hidden)]
     Vmj = 6920,
+    /// Makhuwa-Shirima
     #[doc(hidden)]
     Vmk = 6921,
+    /// Malgana
     #[doc(hidden)]
     Vml = 6922,
+    /// Mitlatongo Mixtec
     #[doc(hidden)]
     Vmm = 6923,
+    /// Soyaltepec Mazatec
     #[doc(hidden)]
     Vmp = 6924,
+    /// Soyaltepec Mixtec
     #[doc(hidden)]
     Vmq = 6925,
+    /// Marenje
     #[doc(hidden)]
     Vmr = 6926,
+    /// Moksela
     #[doc(hidden)]
     Vms = 6927,
+    /// Muluridyi
     #[doc(hidden)]
     Vmu = 6928,
+    /// Valley Maidu
     #[doc(hidden)]
     Vmv = 6929,
+    /// Makhuwa
     #[doc(hidden)]
     Vmw = 6930,
+    /// Tamazola Mixtec
     #[doc(hidden)]
     Vmx = 6931,
+    /// Ayautla Mazatec
     #[doc(hidden)]
     Vmy = 6932,
+    /// Mazatlán Mazatec
     #[doc(hidden)]
     Vmz = 6933,
+    /// Vano
     #[doc(hidden)]
     Vnk = 6934,
+    /// Vinmavis
     #[doc(hidden)]
     Vnm = 6935,
+    /// Vunapu
     #[doc(hidden)]
     Vnp = 6936,
+    /// Volapük
     #[doc(hidden)]
     Vol = 6937,
+    /// Voro
     #[doc(hidden)]
     Vor = 6938,
+    /// Votic
     #[doc(hidden)]
     Vot = 6939,
+    /// Vera'a
     #[doc(hidden)]
     Vra = 6940,
+    /// Võro
     #[doc(hidden)]
     Vro = 6941,
+    /// Varisi
     #[doc(hidden)]
     Vrs = 6942,
+    /// Burmbar
     #[doc(hidden)]
     Vrt = 6943,
+    /// Moldova Sign Language
     #[doc(hidden)]
     Vsi = 6944,
+    /// Venezuelan Sign Language
     #[doc(hidden)]
     Vsl = 6945,
+    /// Valencian Sign Language
     #[doc(hidden)]
     Vsv = 6946,
+    /// Vitou
     #[doc(hidden)]
     Vto = 6947,
+    /// Vumbu
     #[doc(hidden)]
     Vum = 6948,
+    /// Vunjo
     #[doc(hidden)]
     Vun = 6949,
+    /// Vute
     #[doc(hidden)]
     Vut = 6950,
+    /// Awa
     #[doc(hidden)]
     Vwa = 6951,
+    /// Walla Walla
     #[doc(hidden)]
     Waa = 6952,
+    /// Wab
     #[doc(hidden)]
     Wab = 6953,
+    /// Wasco-Wishram
     #[doc(hidden)]
     Wac = 6954,
+    /// Wamesa
     #[doc(hidden)]
     Wad = 6955,
+    /// Walser
     #[doc(hidden)]
     Wae = 6956,
+    /// Wakoná
     #[doc(hidden)]
     Waf = 6957,
+    /// Wa'ema
     #[doc(hidden)]
     Wag = 6958,
+    /// Watubela
     #[doc(hidden)]
     Wah = 6959,
+    /// Wares
     #[doc(hidden)]
     Wai = 6960,
+    /// Waffa
     #[doc(hidden)]
     Waj = 6961,
+    /// Wolaytta
     #[doc(hidden)]
     Wal = 6962,
+    /// Wampanoag
     #[doc(hidden)]
     Wam = 6963,
+    /// Wan
     #[doc(hidden)]
     Wan = 6964,
+    /// Wappo
     #[doc(hidden)]
     Wao = 6965,
+    /// Wapishana
     #[doc(hidden)]
     Wap = 6966,
+    /// Wagiman
     #[doc(hidden)]
     Waq = 6967,
+    /// Waray
     #[doc(hidden)]
     War = 6968,
+    /// Washo
     #[doc(hidden)]
     Was = 6969,
+    /// Kaninuwa
     #[doc(hidden)]
     Wat = 6970,
+    /// Waurá
     #[doc(hidden)]
     Wau = 6971,
+    /// Waka
     #[doc(hidden)]
     Wav = 6972,
+    /// Waiwai
     #[doc(hidden)]
     Waw = 6973,
+    /// Watam
     #[doc(hidden)]
     Wax = 6974,
+    /// Wayana
     #[doc(hidden)]
     Way = 6975,
+    /// Wampur
     #[doc(hidden)]
     Waz = 6976,
+    /// Warao
     #[doc(hidden)]
     Wba = 6977,
+    /// Wabo
     #[doc(hidden)]
     Wbb = 6978,
+    /// Waritai
     #[doc(hidden)]
     Wbe = 6979,
+    /// Wara
     #[doc(hidden)]
     Wbf = 6980,
+    /// Wanda
     #[doc(hidden)]
     Wbh = 6981,
+    /// Vwanji
     #[doc(hidden)]
     Wbi = 6982,
+    /// Alagwa
     #[doc(hidden)]
     Wbj = 6983,
+    /// Waigali
     #[doc(hidden)]
     Wbk = 6984,
+    /// Wakhi
     #[doc(hidden)]
     Wbl = 6985,
+    /// Wa
     #[doc(hidden)]
     Wbm = 6986,
+    /// Warlpiri
     #[doc(hidden)]
     Wbp = 6987,
+    /// Waddar
     #[doc(hidden)]
     Wbq = 6988,
+    /// Wagdi
     #[doc(hidden)]
     Wbr = 6989,
+    /// West Bengal Sign Language
     #[doc(hidden)]
     Wbs = 6990,
+    /// Warnman
     #[doc(hidden)]
     Wbt = 6991,
+    /// Wajarri
     #[doc(hidden)]
     Wbv = 6992,
+    /// Woi
     #[doc(hidden)]
     Wbw = 6993,
+    /// Yanomámi
     #[doc(hidden)]
     Wca = 6994,
+    /// Waci Gbe
     #[doc(hidden)]
     Wci = 6995,
+    /// Wandji
     #[doc(hidden)]
     Wdd = 6996,
+    /// Wadaginam
     #[doc(hidden)]
     Wdg = 6997,
+    /// Wadjiginy
     #[doc(hidden)]
     Wdj = 6998,
+    /// Wadikali
     #[doc(hidden)]
     Wdk = 6999,
+    /// Wendat
     #[doc(hidden)]
     Wdt = 7000,
+    /// Wadjigu
     #[doc(hidden)]
     Wdu = 7001,
+    /// Wadjabangayi
     #[doc(hidden)]
     Wdy = 7002,
+    /// Wewaw
     #[doc(hidden)]
     Wea = 7003,
+    /// Wè Western
     #[doc(hidden)]
     Wec = 7004,
+    /// Wedau
     #[doc(hidden)]
     Wed = 7005,
+    /// Wergaia
     #[doc(hidden)]
     Weg = 7006,
+    /// Weh
     #[doc(hidden)]
     Weh = 7007,
+    /// Kiunum
     #[doc(hidden)]
     Wei = 7008,
+    /// Weme Gbe
     #[doc(hidden)]
     Wem = 7009,
+    /// Wemale
     #[doc(hidden)]
     Weo = 7010,
+    /// Westphalien
     #[doc(hidden)]
     Wep = 7011,
+    /// Weri
     #[doc(hidden)]
     Wer = 7012,
+    /// Cameroon Pidgin
     #[doc(hidden)]
     Wes = 7013,
+    /// Perai
     #[doc(hidden)]
     Wet = 7014,
+    /// Rawngtu Chin
     #[doc(hidden)]
     Weu = 7015,
+    /// Wejewa
     #[doc(hidden)]
     Wew = 7016,
+    /// Yafi
     #[doc(hidden)]
     Wfg = 7017,
+    /// Wagaya
     #[doc(hidden)]
     Wga = 7018,
+    /// Wagawaga
     #[doc(hidden)]
     Wgb = 7019,
+    /// Wangkangurru
     #[doc(hidden)]
     Wgg = 7020,
+    /// Wahgi
     #[doc(hidden)]
     Wgi = 7021,
+    /// Waigeo
     #[doc(hidden)]
     Wgo = 7022,
+    /// Wirangu
     #[doc(hidden)]
     Wgu = 7023,
+    /// Warrgamay
     #[doc(hidden)]
     Wgy = 7024,
+    /// Sou Upaa
     #[doc(hidden)]
     Wha = 7025,
+    /// North Wahgi
     #[doc(hidden)]
     Whg = 7026,
+    /// Wahau Kenyah
     #[doc(hidden)]
     Whk = 7027,
+    /// Wahau Kayan
     #[doc(hidden)]
     Whu = 7028,
+    /// Southern Toussian
     #[doc(hidden)]
     Wib = 7029,
+    /// Wichita
     #[doc(hidden)]
     Wic = 7030,
+    /// Wik-Epa
     #[doc(hidden)]
     Wie = 7031,
+    /// Wik-Keyangan
     #[doc(hidden)]
     Wif = 7032,
+    /// Wik Ngathan
     #[doc(hidden)]
     Wig = 7033,
+    /// Wik-Me'anha
     #[doc(hidden)]
     Wih = 7034,
+    /// Minidien
     #[doc(hidden)]
     Wii = 7035,
+    /// Wik-Iiyanh
     #[doc(hidden)]
     Wij = 7036,
+    /// Wikalkan
     #[doc(hidden)]
     Wik = 7037,
+    /// Wilawila
     #[doc(hidden)]
     Wil = 7038,
+    /// Wik-Mungkan
     #[doc(hidden)]
     Wim = 7039,
+    /// Ho-Chunk
     #[doc(hidden)]
     Win = 7040,
+    /// Wiraféd
     #[doc(hidden)]
     Wir = 7041,
+    /// Wiru
     #[doc(hidden)]
     Wiu = 7042,
+    /// Vitu
     #[doc(hidden)]
     Wiv = 7043,
+    /// Wiyot
     #[doc(hidden)]
     Wiy = 7044,
+    /// Waja
     #[doc(hidden)]
     Wja = 7045,
+    /// Warji
     #[doc(hidden)]
     Wji = 7046,
+    /// Kw'adza
     #[doc(hidden)]
     Wka = 7047,
+    /// Kumbaran
     #[doc(hidden)]
     Wkb = 7048,
+    /// Wakde
     #[doc(hidden)]
     Wkd = 7049,
+    /// Kalanadi
     #[doc(hidden)]
     Wkl = 7050,
+    /// Keerray-Woorroong
     #[doc(hidden)]
     Wkr = 7051,
+    /// Kunduvadi
     #[doc(hidden)]
     Wku = 7052,
+    /// Wakawaka
     #[doc(hidden)]
     Wkw = 7053,
+    /// Wangkayutyuru
     #[doc(hidden)]
     Wky = 7054,
+    /// Walio
     #[doc(hidden)]
     Wla = 7055,
+    /// Mwali Comorian
     #[doc(hidden)]
     Wlc = 7056,
+    /// Wolane
     #[doc(hidden)]
     Wle = 7057,
+    /// Kunbarlang
     #[doc(hidden)]
     Wlg = 7058,
+    /// Welaun
     #[doc(hidden)]
     Wlh = 7059,
+    /// Waioli
     #[doc(hidden)]
     Wli = 7060,
+    /// Wailaki
     #[doc(hidden)]
     Wlk = 7061,
+    /// Wali
     #[doc(hidden)]
     Wll = 7062,
+    /// Middle Welsh
     #[doc(hidden)]
     Wlm = 7063,
+    /// Walloon
     #[doc(hidden)]
     Wln = 7064,
+    /// Wolio
     #[doc(hidden)]
     Wlo = 7065,
+    /// Wailapa
     #[doc(hidden)]
     Wlr = 7066,
+    /// Wallisian
     #[doc(hidden)]
     Wls = 7067,
+    /// Wuliwuli
     #[doc(hidden)]
     Wlu = 7068,
+    /// Wichí Lhamtés Vejoz
     #[doc(hidden)]
     Wlv = 7069,
+    /// Walak
     #[doc(hidden)]
     Wlw = 7070,
+    /// Wali
     #[doc(hidden)]
     Wlx = 7071,
+    /// Waling
     #[doc(hidden)]
     Wly = 7072,
+    /// Mawa
     #[doc(hidden)]
     Wma = 7073,
+    /// Wambaya
     #[doc(hidden)]
     Wmb = 7074,
+    /// Wamas
     #[doc(hidden)]
     Wmc = 7075,
+    /// Mamaindé
     #[doc(hidden)]
     Wmd = 7076,
+    /// Wambule
     #[doc(hidden)]
     Wme = 7077,
+    /// Western Minyag
     #[doc(hidden)]
     Wmg = 7078,
+    /// Waima'a
     #[doc(hidden)]
     Wmh = 7079,
+    /// Wamin
     #[doc(hidden)]
     Wmi = 7080,
+    /// Maiwa
     #[doc(hidden)]
     Wmm = 7081,
+    /// Waamwang
     #[doc(hidden)]
     Wmn = 7082,
+    /// Wom
     #[doc(hidden)]
     Wmo = 7083,
+    /// Wambon
     #[doc(hidden)]
     Wms = 7084,
+    /// Walmajarri
     #[doc(hidden)]
     Wmt = 7085,
+    /// Mwani
     #[doc(hidden)]
     Wmw = 7086,
+    /// Womo
     #[doc(hidden)]
     Wmx = 7087,
+    /// Mokati
     #[doc(hidden)]
     Wnb = 7088,
+    /// Wantoat
     #[doc(hidden)]
     Wnc = 7089,
+    /// Wandarang
     #[doc(hidden)]
     Wnd = 7090,
+    /// Waneci
     #[doc(hidden)]
     Wne = 7091,
+    /// Wanggom
     #[doc(hidden)]
     Wng = 7092,
+    /// Ndzwani Comorian
     #[doc(hidden)]
     Wni = 7093,
+    /// Wanukaka
     #[doc(hidden)]
     Wnk = 7094,
+    /// Wanggamala
     #[doc(hidden)]
     Wnm = 7095,
+    /// Wunumara
     #[doc(hidden)]
     Wnn = 7096,
+    /// Wano
     #[doc(hidden)]
     Wno = 7097,
+    /// Wanap
     #[doc(hidden)]
     Wnp = 7098,
+    /// Usan
     #[doc(hidden)]
     Wnu = 7099,
+    /// Wintu
     #[doc(hidden)]
     Wnw = 7100,
+    /// Wanyi
     #[doc(hidden)]
     Wny = 7101,
+    /// Kuwema
     #[doc(hidden)]
     Woa = 7102,
+    /// Wè Northern
     #[doc(hidden)]
     Wob = 7103,
+    /// Wogeo
     #[doc(hidden)]
     Woc = 7104,
+    /// Wolani
     #[doc(hidden)]
     Wod = 7105,
+    /// Woleaian
     #[doc(hidden)]
     Woe = 7106,
+    /// Gambian Wolof
     #[doc(hidden)]
     Wof = 7107,
+    /// Wogamusin
     #[doc(hidden)]
     Wog = 7108,
+    /// Kamang
     #[doc(hidden)]
     Woi = 7109,
+    /// Longto
     #[doc(hidden)]
     Wok = 7110,
+    /// Wolof
     #[doc(hidden)]
     Wol = 7111,
+    /// Wom
     #[doc(hidden)]
     Wom = 7112,
+    /// Wongo
     #[doc(hidden)]
     Won = 7113,
+    /// Manombai
     #[doc(hidden)]
     Woo = 7114,
+    /// Woria
     #[doc(hidden)]
     Wor = 7115,
+    /// Hanga Hundi
     #[doc(hidden)]
     Wos = 7116,
+    /// Wawonii
     #[doc(hidden)]
     Wow = 7117,
+    /// Weyto
     #[doc(hidden)]
     Woy = 7118,
+    /// Maco
     #[doc(hidden)]
     Wpc = 7119,
+    /// Waluwarra
     #[doc(hidden)]
     Wrb = 7120,
+    /// Warungu
     #[doc(hidden)]
     Wrg = 7121,
+    /// Wiradjuri
     #[doc(hidden)]
     Wrh = 7122,
+    /// Wariyangga
     #[doc(hidden)]
     Wri = 7123,
+    /// Garrwa
     #[doc(hidden)]
     Wrk = 7124,
+    /// Warlmanpa
     #[doc(hidden)]
     Wrl = 7125,
+    /// Warumungu
     #[doc(hidden)]
     Wrm = 7126,
+    /// Warnang
     #[doc(hidden)]
     Wrn = 7127,
+    /// Worrorra
     #[doc(hidden)]
     Wro = 7128,
+    /// Waropen
     #[doc(hidden)]
     Wrp = 7129,
+    /// Wardaman
     #[doc(hidden)]
     Wrr = 7130,
+    /// Waris
     #[doc(hidden)]
     Wrs = 7131,
+    /// Waru
     #[doc(hidden)]
     Wru = 7132,
+    /// Waruna
     #[doc(hidden)]
     Wrv = 7133,
+    /// Gugu Warra
     #[doc(hidden)]
     Wrw = 7134,
+    /// Wae Rana
     #[doc(hidden)]
     Wrx = 7135,
+    /// Merwari
     #[doc(hidden)]
     Wry = 7136,
+    /// Waray
     #[doc(hidden)]
     Wrz = 7137,
+    /// Warembori
     #[doc(hidden)]
     Wsa = 7138,
+    /// Adilabad Gondi
     #[doc(hidden)]
     Wsg = 7139,
+    /// Wusi
     #[doc(hidden)]
     Wsi = 7140,
+    /// Waskia
     #[doc(hidden)]
     Wsk = 7141,
+    /// Owenia
     #[doc(hidden)]
     Wsr = 7142,
+    /// Wasa
     #[doc(hidden)]
     Wss = 7143,
+    /// Wasu
     #[doc(hidden)]
     Wsu = 7144,
+    /// Wotapuri-Katarqalai
     #[doc(hidden)]
     Wsv = 7145,
+    /// Matambwe
     #[doc(hidden)]
     Wtb = 7146,
+    /// Watiwa
     #[doc(hidden)]
     Wtf = 7147,
+    /// Wathawurrung
     #[doc(hidden)]
     Wth = 7148,
+    /// Berta
     #[doc(hidden)]
     Wti = 7149,
+    /// Watakataui
     #[doc(hidden)]
     Wtk = 7150,
+    /// Mewati
     #[doc(hidden)]
     Wtm = 7151,
+    /// Wotu
     #[doc(hidden)]
     Wtw = 7152,
+    /// Wikngenchera
     #[doc(hidden)]
     Wua = 7153,
+    /// Wunambal
     #[doc(hidden)]
     Wub = 7154,
+    /// Wudu
     #[doc(hidden)]
     Wud = 7155,
+    /// Wutunhua
     #[doc(hidden)]
     Wuh = 7156,
+    /// Silimo
     #[doc(hidden)]
     Wul = 7157,
+    /// Wumbvu
     #[doc(hidden)]
     Wum = 7158,
+    /// Bungu
     #[doc(hidden)]
     Wun = 7159,
+    /// Wurrugu
     #[doc(hidden)]
     Wur = 7160,
+    /// Wutung
     #[doc(hidden)]
     Wut = 7161,
+    /// Wu Chinese
     #[doc(hidden)]
     Wuu = 7162,
+    /// Wuvulu-Aua
     #[doc(hidden)]
     Wuv = 7163,
+    /// Wulna
     #[doc(hidden)]
     Wux = 7164,
+    /// Wauyai
     #[doc(hidden)]
     Wuy = 7165,
+    /// Waama
     #[doc(hidden)]
     Wwa = 7166,
+    /// Wakabunga
     #[doc(hidden)]
     Wwb = 7167,
+    /// Wetamut
     #[doc(hidden)]
     Wwo = 7168,
+    /// Warrwa
     #[doc(hidden)]
     Wwr = 7169,
+    /// Wawa
     #[doc(hidden)]
     Www = 7170,
+    /// Waxianghua
     #[doc(hidden)]
     Wxa = 7171,
+    /// Wardandi
     #[doc(hidden)]
     Wxw = 7172,
+    /// Wangaaybuwan-Ngiyambaa
     #[doc(hidden)]
     Wyb = 7173,
+    /// Woiwurrung
     #[doc(hidden)]
     Wyi = 7174,
+    /// Wymysorys
     #[doc(hidden)]
     Wym = 7175,
+    /// Wyandot
     #[doc(hidden)]
     Wyn = 7176,
+    /// Wayoró
     #[doc(hidden)]
     Wyr = 7177,
+    /// Western Fijian
     #[doc(hidden)]
     Wyy = 7178,
+    /// Andalusian Arabic
     #[doc(hidden)]
     Xaa = 7179,
+    /// Sambe
     #[doc(hidden)]
     Xab = 7180,
+    /// Kachari
     #[doc(hidden)]
     Xac = 7181,
+    /// Adai
     #[doc(hidden)]
     Xad = 7182,
+    /// Aequian
     #[doc(hidden)]
     Xae = 7183,
+    /// Aghwan
     #[doc(hidden)]
     Xag = 7184,
+    /// Kaimbé
     #[doc(hidden)]
     Xai = 7185,
+    /// Ararandewára
     #[doc(hidden)]
     Xaj = 7186,
+    /// Máku
     #[doc(hidden)]
     Xak = 7187,
+    /// Kalmyk
     #[doc(hidden)]
     Xal = 7188,
+    /// ǀXam
     #[doc(hidden)]
     Xam = 7189,
+    /// Xamtanga
     #[doc(hidden)]
     Xan = 7190,
+    /// Khao
     #[doc(hidden)]
     Xao = 7191,
+    /// Apalachee
     #[doc(hidden)]
     Xap = 7192,
+    /// Aquitanian
     #[doc(hidden)]
     Xaq = 7193,
+    /// Karami
     #[doc(hidden)]
     Xar = 7194,
+    /// Kamas
     #[doc(hidden)]
     Xas = 7195,
+    /// Katawixi
     #[doc(hidden)]
     Xat = 7196,
+    /// Kauwera
     #[doc(hidden)]
     Xau = 7197,
+    /// Xavánte
     #[doc(hidden)]
     Xav = 7198,
+    /// Kawaiisu
     #[doc(hidden)]
     Xaw = 7199,
+    /// Kayan Mahakam
     #[doc(hidden)]
     Xay = 7200,
+    /// Lower Burdekin
     #[doc(hidden)]
     Xbb = 7201,
+    /// Bactrian
     #[doc(hidden)]
     Xbc = 7202,
+    /// Bindal
     #[doc(hidden)]
     Xbd = 7203,
+    /// Bigambal
     #[doc(hidden)]
     Xbe = 7204,
+    /// Bunganditj
     #[doc(hidden)]
     Xbg = 7205,
+    /// Kombio
     #[doc(hidden)]
     Xbi = 7206,
+    /// Birrpayi
     #[doc(hidden)]
     Xbj = 7207,
+    /// Middle Breton
     #[doc(hidden)]
     Xbm = 7208,
+    /// Kenaboi
     #[doc(hidden)]
     Xbn = 7209,
+    /// Bolgarian
     #[doc(hidden)]
     Xbo = 7210,
+    /// Bibbulman
     #[doc(hidden)]
     Xbp = 7211,
+    /// Kambera
     #[doc(hidden)]
     Xbr = 7212,
+    /// Kambiwá
     #[doc(hidden)]
     Xbw = 7213,
+    /// Batjala
     #[doc(hidden)]
     Xby = 7214,
+    /// Cumbric
     #[doc(hidden)]
     Xcb = 7215,
+    /// Camunic
     #[doc(hidden)]
     Xcc = 7216,
+    /// Celtiberian
     #[doc(hidden)]
     Xce = 7217,
+    /// Cisalpine Gaulish
     #[doc(hidden)]
     Xcg = 7218,
+    /// Chemakum
     #[doc(hidden)]
     Xch = 7219,
+    /// Classical Armenian
     #[doc(hidden)]
     Xcl = 7220,
+    /// Comecrudo
     #[doc(hidden)]
     Xcm = 7221,
+    /// Cotoname
     #[doc(hidden)]
     Xcn = 7222,
+    /// Chorasmian
     #[doc(hidden)]
     Xco = 7223,
+    /// Carian
     #[doc(hidden)]
     Xcr = 7224,
+    /// Classical Tibetan
     #[doc(hidden)]
     Xct = 7225,
+    /// Curonian
     #[doc(hidden)]
     Xcu = 7226,
+    /// Chuvantsy
     #[doc(hidden)]
     Xcv = 7227,
+    /// Coahuilteco
     #[doc(hidden)]
     Xcw = 7228,
+    /// Cayuse
     #[doc(hidden)]
     Xcy = 7229,
+    /// Darkinyung
     #[doc(hidden)]
     Xda = 7230,
+    /// Dacian
     #[doc(hidden)]
     Xdc = 7231,
+    /// Dharuk
     #[doc(hidden)]
     Xdk = 7232,
+    /// Edomite
     #[doc(hidden)]
     Xdm = 7233,
+    /// Kwandu
     #[doc(hidden)]
     Xdo = 7234,
+    /// Kaitag
     #[doc(hidden)]
     Xdq = 7235,
+    /// Malayic Dayak
     #[doc(hidden)]
     Xdy = 7236,
+    /// Eblan
     #[doc(hidden)]
     Xeb = 7237,
+    /// Hdi
     #[doc(hidden)]
     Xed = 7238,
+    /// ǁXegwi
     #[doc(hidden)]
     Xeg = 7239,
+    /// Kelo
     #[doc(hidden)]
     Xel = 7240,
+    /// Kembayan
     #[doc(hidden)]
     Xem = 7241,
+    /// Epi-Olmec
     #[doc(hidden)]
     Xep = 7242,
+    /// Xerénte
     #[doc(hidden)]
     Xer = 7243,
+    /// Kesawai
     #[doc(hidden)]
     Xes = 7244,
+    /// Xetá
     #[doc(hidden)]
     Xet = 7245,
+    /// Keoru-Ahia
     #[doc(hidden)]
     Xeu = 7246,
+    /// Faliscan
     #[doc(hidden)]
     Xfa = 7247,
+    /// Galatian
     #[doc(hidden)]
     Xga = 7248,
+    /// Gbin
     #[doc(hidden)]
     Xgb = 7249,
+    /// Gudang
     #[doc(hidden)]
     Xgd = 7250,
+    /// Gabrielino-Fernandeño
     #[doc(hidden)]
     Xgf = 7251,
+    /// Goreng
     #[doc(hidden)]
     Xgg = 7252,
+    /// Garingbal
     #[doc(hidden)]
     Xgi = 7253,
+    /// Galindan
     #[doc(hidden)]
     Xgl = 7254,
+    /// Dharumbal
     #[doc(hidden)]
     Xgm = 7255,
+    /// Garza
     #[doc(hidden)]
     Xgr = 7256,
+    /// Unggumi
     #[doc(hidden)]
     Xgu = 7257,
+    /// Guwa
     #[doc(hidden)]
     Xgw = 7258,
+    /// Harami
     #[doc(hidden)]
     Xha = 7259,
+    /// Hunnic
     #[doc(hidden)]
     Xhc = 7260,
+    /// Hadrami
     #[doc(hidden)]
     Xhd = 7261,
+    /// Khetrani
     #[doc(hidden)]
     Xhe = 7262,
+    /// Middle Khmer
     #[doc(hidden)]
     Xhm = 7263,
+    /// Xhosa
     #[doc(hidden)]
     Xho = 7264,
+    /// Hernican
     #[doc(hidden)]
     Xhr = 7265,
+    /// Hattic
     #[doc(hidden)]
     Xht = 7266,
+    /// Hurrian
     #[doc(hidden)]
     Xhu = 7267,
+    /// Khua
     #[doc(hidden)]
     Xhv = 7268,
+    /// Iberian
     #[doc(hidden)]
     Xib = 7269,
+    /// Xiri
     #[doc(hidden)]
     Xii = 7270,
+    /// Illyrian
     #[doc(hidden)]
     Xil = 7271,
+    /// Xinca
     #[doc(hidden)]
     Xin = 7272,
+    /// Xiriâna
     #[doc(hidden)]
     Xir = 7273,
+    /// Kisan
     #[doc(hidden)]
     Xis = 7274,
+    /// Indus Valley Language
     #[doc(hidden)]
     Xiv = 7275,
+    /// Xipaya
     #[doc(hidden)]
     Xiy = 7276,
+    /// Minjungbal
     #[doc(hidden)]
     Xjb = 7277,
+    /// Jaitmatang
     #[doc(hidden)]
     Xjt = 7278,
+    /// Kalkoti
     #[doc(hidden)]
     Xka = 7279,
+    /// Northern Nago
     #[doc(hidden)]
     Xkb = 7280,
+    /// Kho'ini
     #[doc(hidden)]
     Xkc = 7281,
+    /// Mendalam Kayan
     #[doc(hidden)]
     Xkd = 7282,
+    /// Kereho
     #[doc(hidden)]
     Xke = 7283,
+    /// Khengkha
     #[doc(hidden)]
     Xkf = 7284,
+    /// Kagoro
     #[doc(hidden)]
     Xkg = 7285,
+    /// Kenyan Sign Language
     #[doc(hidden)]
     Xki = 7286,
+    /// Kajali
     #[doc(hidden)]
     Xkj = 7287,
+    /// Kachok
     #[doc(hidden)]
     Xkk = 7288,
+    /// Mainstream Kenyah
     #[doc(hidden)]
     Xkl = 7289,
+    /// Kayan River Kayan
     #[doc(hidden)]
     Xkn = 7290,
+    /// Kiorr
     #[doc(hidden)]
     Xko = 7291,
+    /// Kabatei
     #[doc(hidden)]
     Xkp = 7292,
+    /// Koroni
     #[doc(hidden)]
     Xkq = 7293,
+    /// Xakriabá
     #[doc(hidden)]
     Xkr = 7294,
+    /// Kumbewaha
     #[doc(hidden)]
     Xks = 7295,
+    /// Kantosi
     #[doc(hidden)]
     Xkt = 7296,
+    /// Kaamba
     #[doc(hidden)]
     Xku = 7297,
+    /// Kgalagadi
     #[doc(hidden)]
     Xkv = 7298,
+    /// Kembra
     #[doc(hidden)]
     Xkw = 7299,
+    /// Karore
     #[doc(hidden)]
     Xkx = 7300,
+    /// Uma' Lasan
     #[doc(hidden)]
     Xky = 7301,
+    /// Kurtokha
     #[doc(hidden)]
     Xkz = 7302,
+    /// Kamula
     #[doc(hidden)]
     Xla = 7303,
+    /// Loup B
     #[doc(hidden)]
     Xlb = 7304,
+    /// Lycian
     #[doc(hidden)]
     Xlc = 7305,
+    /// Lydian
     #[doc(hidden)]
     Xld = 7306,
+    /// Lemnian
     #[doc(hidden)]
     Xle = 7307,
+    /// Ligurian
     #[doc(hidden)]
     Xlg = 7308,
+    /// Liburnian
     #[doc(hidden)]
     Xli = 7309,
+    /// Alanic
     #[doc(hidden)]
     Xln = 7310,
+    /// Loup A
     #[doc(hidden)]
     Xlo = 7311,
+    /// Lepontic
     #[doc(hidden)]
     Xlp = 7312,
+    /// Lusitanian
     #[doc(hidden)]
     Xls = 7313,
+    /// Cuneiform Luwian
     #[doc(hidden)]
     Xlu = 7314,
+    /// Elymian
     #[doc(hidden)]
     Xly = 7315,
+    /// Mushungulu
     #[doc(hidden)]
     Xma = 7316,
+    /// Mbonga
     #[doc(hidden)]
     Xmb = 7317,
+    /// Makhuwa-Marrevone
     #[doc(hidden)]
     Xmc = 7318,
+    /// Mbudum
     #[doc(hidden)]
     Xmd = 7319,
+    /// Median
     #[doc(hidden)]
     Xme = 7320,
+    /// Mingrelian
     #[doc(hidden)]
     Xmf = 7321,
+    /// Mengaka
     #[doc(hidden)]
     Xmg = 7322,
+    /// Kugu-Muminh
     #[doc(hidden)]
     Xmh = 7323,
+    /// Majera
     #[doc(hidden)]
     Xmj = 7324,
+    /// Ancient Macedonian
     #[doc(hidden)]
     Xmk = 7325,
+    /// Malaysian Sign Language
     #[doc(hidden)]
     Xml = 7326,
+    /// Manado Malay
     #[doc(hidden)]
     Xmm = 7327,
+    /// Manichaean Middle Persian
     #[doc(hidden)]
     Xmn = 7328,
+    /// Morerebi
     #[doc(hidden)]
     Xmo = 7329,
+    /// Kuku-Mu'inh
     #[doc(hidden)]
     Xmp = 7330,
+    /// Kuku-Mangk
     #[doc(hidden)]
     Xmq = 7331,
+    /// Meroitic
     #[doc(hidden)]
     Xmr = 7332,
+    /// Moroccan Sign Language
     #[doc(hidden)]
     Xms = 7333,
+    /// Matbat
     #[doc(hidden)]
     Xmt = 7334,
+    /// Kamu
     #[doc(hidden)]
     Xmu = 7335,
+    /// Antankarana Malagasy
     #[doc(hidden)]
     Xmv = 7336,
+    /// Tsimihety Malagasy
     #[doc(hidden)]
     Xmw = 7337,
+    /// Salawati
     #[doc(hidden)]
     Xmx = 7338,
+    /// Mayaguduna
     #[doc(hidden)]
     Xmy = 7339,
+    /// Mori Bawah
     #[doc(hidden)]
     Xmz = 7340,
+    /// Ancient North Arabian
     #[doc(hidden)]
     Xna = 7341,
+    /// Kanakanabu
     #[doc(hidden)]
     Xnb = 7342,
+    /// Middle Mongolian
     #[doc(hidden)]
     Xng = 7343,
+    /// Kuanhua
     #[doc(hidden)]
     Xnh = 7344,
+    /// Ngarigu
     #[doc(hidden)]
     Xni = 7345,
+    /// Ngoni
     #[doc(hidden)]
     Xnj = 7346,
+    /// Nganakarti
     #[doc(hidden)]
     Xnk = 7347,
+    /// Ngumbarl
     #[doc(hidden)]
     Xnm = 7348,
+    /// Northern Kankanay
     #[doc(hidden)]
     Xnn = 7349,
+    /// Anglo-Norman
     #[doc(hidden)]
     Xno = 7350,
+    /// Ngoni
     #[doc(hidden)]
     Xnq = 7351,
+    /// Kangri
     #[doc(hidden)]
     Xnr = 7352,
+    /// Kanashi
     #[doc(hidden)]
     Xns = 7353,
+    /// Narragansett
     #[doc(hidden)]
     Xnt = 7354,
+    /// Nukunul
     #[doc(hidden)]
     Xnu = 7355,
+    /// Nyiyaparli
     #[doc(hidden)]
     Xny = 7356,
+    /// Kenzi
     #[doc(hidden)]
     Xnz = 7357,
+    /// O'chi'chi'
     #[doc(hidden)]
     Xoc = 7358,
+    /// Kokoda
     #[doc(hidden)]
     Xod = 7359,
+    /// Soga
     #[doc(hidden)]
     Xog = 7360,
+    /// Kominimung
     #[doc(hidden)]
     Xoi = 7361,
+    /// Xokleng
     #[doc(hidden)]
     Xok = 7362,
+    /// Komo
     #[doc(hidden)]
     Xom = 7363,
+    /// Konkomba
     #[doc(hidden)]
     Xon = 7364,
+    /// Xukurú
     #[doc(hidden)]
     Xoo = 7365,
+    /// Kopar
     #[doc(hidden)]
     Xop = 7366,
+    /// Korubo
     #[doc(hidden)]
     Xor = 7367,
+    /// Kowaki
     #[doc(hidden)]
     Xow = 7368,
+    /// Pirriya
     #[doc(hidden)]
     Xpa = 7369,
+    /// Northeastern Tasmanian
     #[doc(hidden)]
     Xpb = 7370,
+    /// Pecheneg
     #[doc(hidden)]
     Xpc = 7371,
+    /// Oyster Bay Tasmanian
     #[doc(hidden)]
     Xpd = 7372,
+    /// Liberia Kpelle
     #[doc(hidden)]
     Xpe = 7373,
+    /// Southeast Tasmanian
     #[doc(hidden)]
     Xpf = 7374,
+    /// Phrygian
     #[doc(hidden)]
     Xpg = 7375,
+    /// North Midlands Tasmanian
     #[doc(hidden)]
     Xph = 7376,
+    /// Pictish
     #[doc(hidden)]
     Xpi = 7377,
+    /// Mpalitjanh
     #[doc(hidden)]
     Xpj = 7378,
+    /// Kulina Pano
     #[doc(hidden)]
     Xpk = 7379,
+    /// Port Sorell Tasmanian
     #[doc(hidden)]
     Xpl = 7380,
+    /// Pumpokol
     #[doc(hidden)]
     Xpm = 7381,
+    /// Kapinawá
     #[doc(hidden)]
     Xpn = 7382,
+    /// Pochutec
     #[doc(hidden)]
     Xpo = 7383,
+    /// Puyo-Paekche
     #[doc(hidden)]
     Xpp = 7384,
+    /// Mohegan-Pequot
     #[doc(hidden)]
     Xpq = 7385,
+    /// Parthian
     #[doc(hidden)]
     Xpr = 7386,
+    /// Pisidian
     #[doc(hidden)]
     Xps = 7387,
+    /// Punthamara
     #[doc(hidden)]
     Xpt = 7388,
+    /// Punic
     #[doc(hidden)]
     Xpu = 7389,
+    /// Northern Tasmanian
     #[doc(hidden)]
     Xpv = 7390,
+    /// Northwestern Tasmanian
     #[doc(hidden)]
     Xpw = 7391,
+    /// Southwestern Tasmanian
     #[doc(hidden)]
     Xpx = 7392,
+    /// Puyo
     #[doc(hidden)]
     Xpy = 7393,
+    /// Bruny Island Tasmanian
     #[doc(hidden)]
     Xpz = 7394,
+    /// Karakhanid
     #[doc(hidden)]
     Xqa = 7395,
+    /// Qatabanian
     #[doc(hidden)]
     Xqt = 7396,
+    /// Krahô
     #[doc(hidden)]
     Xra = 7397,
+    /// Eastern Karaboro
     #[doc(hidden)]
     Xrb = 7398,
+    /// Gundungurra
     #[doc(hidden)]
     Xrd = 7399,
+    /// Kreye
     #[doc(hidden)]
     Xre = 7400,
+    /// Minang
     #[doc(hidden)]
     Xrg = 7401,
+    /// Krikati-Timbira
     #[doc(hidden)]
     Xri = 7402,
+    /// Armazic
     #[doc(hidden)]
     Xrm = 7403,
+    /// Arin
     #[doc(hidden)]
     Xrn = 7404,
+    /// Raetic
     #[doc(hidden)]
     Xrr = 7405,
+    /// Aranama-Tamique
     #[doc(hidden)]
     Xrt = 7406,
+    /// Marriammu
     #[doc(hidden)]
     Xru = 7407,
+    /// Karawa
     #[doc(hidden)]
     Xrw = 7408,
+    /// Sabaean
     #[doc(hidden)]
     Xsa = 7409,
+    /// Sambal
     #[doc(hidden)]
     Xsb = 7410,
+    /// Scythian
     #[doc(hidden)]
     Xsc = 7411,
+    /// Sidetic
     #[doc(hidden)]
     Xsd = 7412,
+    /// Sempan
     #[doc(hidden)]
     Xse = 7413,
+    /// Shamang
     #[doc(hidden)]
     Xsh = 7414,
+    /// Sio
     #[doc(hidden)]
     Xsi = 7415,
+    /// Subi
     #[doc(hidden)]
     Xsj = 7416,
+    /// South Slavey
     #[doc(hidden)]
     Xsl = 7417,
+    /// Kasem
     #[doc(hidden)]
     Xsm = 7418,
+    /// Sanga
     #[doc(hidden)]
     Xsn = 7419,
+    /// Solano
     #[doc(hidden)]
     Xso = 7420,
+    /// Silopi
     #[doc(hidden)]
     Xsp = 7421,
+    /// Makhuwa-Saka
     #[doc(hidden)]
     Xsq = 7422,
+    /// Sherpa
     #[doc(hidden)]
     Xsr = 7423,
+    /// Sanumá
     #[doc(hidden)]
     Xsu = 7424,
+    /// Sudovian
     #[doc(hidden)]
     Xsv = 7425,
+    /// Saisiyat
     #[doc(hidden)]
     Xsy = 7426,
+    /// Alcozauca Mixtec
     #[doc(hidden)]
     Xta = 7427,
+    /// Chazumba Mixtec
     #[doc(hidden)]
     Xtb = 7428,
+    /// Katcha-Kadugli-Miri
     #[doc(hidden)]
     Xtc = 7429,
+    /// Diuxi-Tilantongo Mixtec
     #[doc(hidden)]
     Xtd = 7430,
+    /// Ketengban
     #[doc(hidden)]
     Xte = 7431,
+    /// Transalpine Gaulish
     #[doc(hidden)]
     Xtg = 7432,
+    /// Yitha Yitha
     #[doc(hidden)]
     Xth = 7433,
+    /// Sinicahua Mixtec
     #[doc(hidden)]
     Xti = 7434,
+    /// San Juan Teita Mixtec
     #[doc(hidden)]
     Xtj = 7435,
+    /// Tijaltepec Mixtec
     #[doc(hidden)]
     Xtl = 7436,
+    /// Magdalena Peñasco Mixtec
     #[doc(hidden)]
     Xtm = 7437,
+    /// Northern Tlaxiaco Mixtec
     #[doc(hidden)]
     Xtn = 7438,
+    /// Tokharian A
     #[doc(hidden)]
     Xto = 7439,
+    /// San Miguel Piedras Mixtec
     #[doc(hidden)]
     Xtp = 7440,
+    /// Tumshuqese
     #[doc(hidden)]
     Xtq = 7441,
+    /// Early Tripuri
     #[doc(hidden)]
     Xtr = 7442,
+    /// Sindihui Mixtec
     #[doc(hidden)]
     Xts = 7443,
+    /// Tacahua Mixtec
     #[doc(hidden)]
     Xtt = 7444,
+    /// Cuyamecalco Mixtec
     #[doc(hidden)]
     Xtu = 7445,
+    /// Thawa
     #[doc(hidden)]
     Xtv = 7446,
+    /// Tawandê
     #[doc(hidden)]
     Xtw = 7447,
+    /// Yoloxochitl Mixtec
     #[doc(hidden)]
     Xty = 7448,
+    /// Alu Kurumba
     #[doc(hidden)]
     Xua = 7449,
+    /// Betta Kurumba
     #[doc(hidden)]
     Xub = 7450,
+    /// Umiida
     #[doc(hidden)]
     Xud = 7451,
+    /// Kunigami
     #[doc(hidden)]
     Xug = 7452,
+    /// Jennu Kurumba
     #[doc(hidden)]
     Xuj = 7453,
+    /// Ngunawal
     #[doc(hidden)]
     Xul = 7454,
+    /// Umbrian
     #[doc(hidden)]
     Xum = 7455,
+    /// Unggaranggu
     #[doc(hidden)]
     Xun = 7456,
+    /// Kuo
     #[doc(hidden)]
     Xuo = 7457,
+    /// Upper Umpqua
     #[doc(hidden)]
     Xup = 7458,
+    /// Urartian
     #[doc(hidden)]
     Xur = 7459,
+    /// Kuthant
     #[doc(hidden)]
     Xut = 7460,
+    /// Kxoe
     #[doc(hidden)]
     Xuu = 7461,
+    /// Venetic
     #[doc(hidden)]
     Xve = 7462,
+    /// Kamviri
     #[doc(hidden)]
     Xvi = 7463,
+    /// Vandalic
     #[doc(hidden)]
     Xvn = 7464,
+    /// Volscian
     #[doc(hidden)]
     Xvo = 7465,
+    /// Vestinian
     #[doc(hidden)]
     Xvs = 7466,
+    /// Kwaza
     #[doc(hidden)]
     Xwa = 7467,
+    /// Woccon
     #[doc(hidden)]
     Xwc = 7468,
+    /// Wadi Wadi
     #[doc(hidden)]
     Xwd = 7469,
+    /// Xwela Gbe
     #[doc(hidden)]
     Xwe = 7470,
+    /// Kwegu
     #[doc(hidden)]
     Xwg = 7471,
+    /// Wajuk
     #[doc(hidden)]
     Xwj = 7472,
+    /// Wangkumara
     #[doc(hidden)]
     Xwk = 7473,
+    /// Western Xwla Gbe
     #[doc(hidden)]
     Xwl = 7474,
+    /// Written Oirat
     #[doc(hidden)]
     Xwo = 7475,
+    /// Kwerba Mamberamo
     #[doc(hidden)]
     Xwr = 7476,
+    /// Wotjobaluk
     #[doc(hidden)]
     Xwt = 7477,
+    /// Wemba Wemba
     #[doc(hidden)]
     Xww = 7478,
+    /// Boro
     #[doc(hidden)]
     Xxb = 7479,
+    /// Ke'o
     #[doc(hidden)]
     Xxk = 7480,
+    /// Minkin
     #[doc(hidden)]
     Xxm = 7481,
+    /// Koropó
     #[doc(hidden)]
     Xxr = 7482,
+    /// Tambora
     #[doc(hidden)]
     Xxt = 7483,
+    /// Yaygir
     #[doc(hidden)]
     Xya = 7484,
+    /// Yandjibara
     #[doc(hidden)]
     Xyb = 7485,
+    /// Mayi-Yapi
     #[doc(hidden)]
     Xyj = 7486,
+    /// Mayi-Kulan
     #[doc(hidden)]
     Xyk = 7487,
+    /// Yalakalore
     #[doc(hidden)]
     Xyl = 7488,
+    /// Mayi-Thakurti
     #[doc(hidden)]
     Xyt = 7489,
+    /// Yorta Yorta
     #[doc(hidden)]
     Xyy = 7490,
+    /// Zhang-Zhung
     #[doc(hidden)]
     Xzh = 7491,
+    /// Zemgalian
     #[doc(hidden)]
     Xzm = 7492,
+    /// Ancient Zapotec
     #[doc(hidden)]
     Xzp = 7493,
+    /// Yaminahua
     #[doc(hidden)]
     Yaa = 7494,
+    /// Yuhup
     #[doc(hidden)]
     Yab = 7495,
+    /// Pass Valley Yali
     #[doc(hidden)]
     Yac = 7496,
+    /// Yagua
     #[doc(hidden)]
     Yad = 7497,
+    /// Pumé
     #[doc(hidden)]
     Yae = 7498,
+    /// Yaka
     #[doc(hidden)]
     Yaf = 7499,
+    /// Yámana
     #[doc(hidden)]
     Yag = 7500,
+    /// Yazgulyam
     #[doc(hidden)]
     Yah = 7501,
+    /// Yagnobi
     #[doc(hidden)]
     Yai = 7502,
+    /// Banda-Yangere
     #[doc(hidden)]
     Yaj = 7503,
+    /// Yakama
     #[doc(hidden)]
     Yak = 7504,
+    /// Yalunka
     #[doc(hidden)]
     Yal = 7505,
+    /// Yamba
     #[doc(hidden)]
     Yam = 7506,
+    /// Mayangna
     #[doc(hidden)]
     Yan = 7507,
+    /// Yao
     #[doc(hidden)]
     Yao = 7508,
+    /// Yapese
     #[doc(hidden)]
     Yap = 7509,
+    /// Yaqui
     #[doc(hidden)]
     Yaq = 7510,
+    /// Yabarana
     #[doc(hidden)]
     Yar = 7511,
+    /// Nugunu
     #[doc(hidden)]
     Yas = 7512,
+    /// Yambeta
     #[doc(hidden)]
     Yat = 7513,
+    /// Yuwana
     #[doc(hidden)]
     Yau = 7514,
+    /// Yangben
     #[doc(hidden)]
     Yav = 7515,
+    /// Yawalapití
     #[doc(hidden)]
     Yaw = 7516,
+    /// Yauma
     #[doc(hidden)]
     Yax = 7517,
+    /// Agwagwune
     #[doc(hidden)]
     Yay = 7518,
+    /// Lokaa
     #[doc(hidden)]
     Yaz = 7519,
+    /// Yala
     #[doc(hidden)]
     Yba = 7520,
+    /// Yemba
     #[doc(hidden)]
     Ybb = 7521,
+    /// West Yugur
     #[doc(hidden)]
     Ybe = 7522,
+    /// Yakha
     #[doc(hidden)]
     Ybh = 7523,
+    /// Yamphu
     #[doc(hidden)]
     Ybi = 7524,
+    /// Hasha
     #[doc(hidden)]
     Ybj = 7525,
+    /// Bokha
     #[doc(hidden)]
     Ybk = 7526,
+    /// Yukuben
     #[doc(hidden)]
     Ybl = 7527,
+    /// Yaben
     #[doc(hidden)]
     Ybm = 7528,
+    /// Yabaâna
     #[doc(hidden)]
     Ybn = 7529,
+    /// Yabong
     #[doc(hidden)]
     Ybo = 7530,
+    /// Yawiyo
     #[doc(hidden)]
     Ybx = 7531,
+    /// Yaweyuha
     #[doc(hidden)]
     Yby = 7532,
+    /// Chesu
     #[doc(hidden)]
     Ych = 7533,
+    /// Lolopo
     #[doc(hidden)]
     Ycl = 7534,
+    /// Yucuna
     #[doc(hidden)]
     Ycn = 7535,
+    /// Chepya
     #[doc(hidden)]
     Ycp = 7536,
+    /// Yilan Creole
     #[doc(hidden)]
     Ycr = 7537,
+    /// Yanda
     #[doc(hidden)]
     Yda = 7538,
+    /// Eastern Yiddish
     #[doc(hidden)]
     Ydd = 7539,
+    /// Yangum Dey
     #[doc(hidden)]
     Yde = 7540,
+    /// Yidgha
     #[doc(hidden)]
     Ydg = 7541,
+    /// Yoidik
     #[doc(hidden)]
     Ydk = 7542,
+    /// Ravula
     #[doc(hidden)]
     Yea = 7543,
+    /// Yeniche
     #[doc(hidden)]
     Yec = 7544,
+    /// Yimas
     #[doc(hidden)]
     Yee = 7545,
+    /// Yeni
     #[doc(hidden)]
     Yei = 7546,
+    /// Yevanic
     #[doc(hidden)]
     Yej = 7547,
+    /// Yela
     #[doc(hidden)]
     Yel = 7548,
+    /// Tarok
     #[doc(hidden)]
     Yer = 7549,
+    /// Nyankpa
     #[doc(hidden)]
     Yes = 7550,
+    /// Yetfa
     #[doc(hidden)]
     Yet = 7551,
+    /// Yerukula
     #[doc(hidden)]
     Yeu = 7552,
+    /// Yapunda
     #[doc(hidden)]
     Yev = 7553,
+    /// Yeyi
     #[doc(hidden)]
     Yey = 7554,
+    /// Malyangapa
     #[doc(hidden)]
     Yga = 7555,
+    /// Yiningayi
     #[doc(hidden)]
     Ygi = 7556,
+    /// Yangum Gel
     #[doc(hidden)]
     Ygl = 7557,
+    /// Yagomi
     #[doc(hidden)]
     Ygm = 7558,
+    /// Gepo
     #[doc(hidden)]
     Ygp = 7559,
+    /// Yagaria
     #[doc(hidden)]
     Ygr = 7560,
+    /// Yolŋu Sign Language
     #[doc(hidden)]
     Ygs = 7561,
+    /// Yugul
     #[doc(hidden)]
     Ygu = 7562,
+    /// Yagwoia
     #[doc(hidden)]
     Ygw = 7563,
+    /// Baha Buyang
     #[doc(hidden)]
     Yha = 7564,
+    /// Judeo-Iraqi Arabic
     #[doc(hidden)]
     Yhd = 7565,
+    /// Hlepho Phowa
     #[doc(hidden)]
     Yhl = 7566,
+    /// Yan-nhaŋu Sign Language
     #[doc(hidden)]
     Yhs = 7567,
+    /// Yinggarda
     #[doc(hidden)]
     Yia = 7568,
+    /// Yiddish
     #[doc(hidden)]
     Yid = 7569,
+    /// Ache
     #[doc(hidden)]
     Yif = 7570,
+    /// Wusa Nasu
     #[doc(hidden)]
     Yig = 7571,
+    /// Western Yiddish
     #[doc(hidden)]
     Yih = 7572,
+    /// Yidiny
     #[doc(hidden)]
     Yii = 7573,
+    /// Yindjibarndi
     #[doc(hidden)]
     Yij = 7574,
+    /// Dongshanba Lalo
     #[doc(hidden)]
     Yik = 7575,
+    /// Yindjilandji
     #[doc(hidden)]
     Yil = 7576,
+    /// Yimchungru Naga
     #[doc(hidden)]
     Yim = 7577,
+    /// Riang Lai
     #[doc(hidden)]
     Yin = 7578,
+    /// Pholo
     #[doc(hidden)]
     Yip = 7579,
+    /// Miqie
     #[doc(hidden)]
     Yiq = 7580,
+    /// North Awyu
     #[doc(hidden)]
     Yir = 7581,
+    /// Yis
     #[doc(hidden)]
     Yis = 7582,
+    /// Eastern Lalu
     #[doc(hidden)]
     Yit = 7583,
+    /// Awu
     #[doc(hidden)]
     Yiu = 7584,
+    /// Northern Nisu
     #[doc(hidden)]
     Yiv = 7585,
+    /// Axi Yi
     #[doc(hidden)]
     Yix = 7586,
+    /// Azhe
     #[doc(hidden)]
     Yiz = 7587,
+    /// Yakan
     #[doc(hidden)]
     Yka = 7588,
+    /// Northern Yukaghir
     #[doc(hidden)]
     Ykg = 7589,
+    /// Khamnigan Mongol
     #[doc(hidden)]
     Ykh = 7590,
+    /// Yoke
     #[doc(hidden)]
     Yki = 7591,
+    /// Yakaikeke
     #[doc(hidden)]
     Ykk = 7592,
+    /// Khlula
     #[doc(hidden)]
     Ykl = 7593,
+    /// Kap
     #[doc(hidden)]
     Ykm = 7594,
+    /// Kua-nsi
     #[doc(hidden)]
     Ykn = 7595,
+    /// Yasa
     #[doc(hidden)]
     Yko = 7596,
+    /// Yekora
     #[doc(hidden)]
     Ykr = 7597,
+    /// Kathu
     #[doc(hidden)]
     Ykt = 7598,
+    /// Kuamasi
     #[doc(hidden)]
     Yku = 7599,
+    /// Yakoma
     #[doc(hidden)]
     Yky = 7600,
+    /// Yaul
     #[doc(hidden)]
     Yla = 7601,
+    /// Yaleba
     #[doc(hidden)]
     Ylb = 7602,
+    /// Yele
     #[doc(hidden)]
     Yle = 7603,
+    /// Yelogu
     #[doc(hidden)]
     Ylg = 7604,
+    /// Angguruk Yali
     #[doc(hidden)]
     Yli = 7605,
+    /// Yil
     #[doc(hidden)]
     Yll = 7606,
+    /// Limi
     #[doc(hidden)]
     Ylm = 7607,
+    /// Langnian Buyang
     #[doc(hidden)]
     Yln = 7608,
+    /// Naluo Yi
     #[doc(hidden)]
     Ylo = 7609,
+    /// Yalarnnga
     #[doc(hidden)]
     Ylr = 7610,
+    /// Aribwaung
     #[doc(hidden)]
     Ylu = 7611,
+    /// Nyâlayu
     #[doc(hidden)]
     Yly = 7612,
+    /// Yambes
     #[doc(hidden)]
     Ymb = 7613,
+    /// Southern Muji
     #[doc(hidden)]
     Ymc = 7614,
+    /// Muda
     #[doc(hidden)]
     Ymd = 7615,
+    /// Yameo
     #[doc(hidden)]
     Yme = 7616,
+    /// Yamongeri
     #[doc(hidden)]
     Ymg = 7617,
+    /// Mili
     #[doc(hidden)]
     Ymh = 7618,
+    /// Moji
     #[doc(hidden)]
     Ymi = 7619,
+    /// Makwe
     #[doc(hidden)]
     Ymk = 7620,
+    /// Iamalele
     #[doc(hidden)]
     Yml = 7621,
+    /// Maay
     #[doc(hidden)]
     Ymm = 7622,
+    /// Yamna
     #[doc(hidden)]
     Ymn = 7623,
+    /// Yangum Mon
     #[doc(hidden)]
     Ymo = 7624,
+    /// Yamap
     #[doc(hidden)]
     Ymp = 7625,
+    /// Qila Muji
     #[doc(hidden)]
     Ymq = 7626,
+    /// Malasar
     #[doc(hidden)]
     Ymr = 7627,
+    /// Mysian
     #[doc(hidden)]
     Yms = 7628,
+    /// Northern Muji
     #[doc(hidden)]
     Ymx = 7629,
+    /// Muzi
     #[doc(hidden)]
     Ymz = 7630,
+    /// Aluo
     #[doc(hidden)]
     Yna = 7631,
+    /// Yandruwandha
     #[doc(hidden)]
     Ynd = 7632,
+    /// Lang'e
     #[doc(hidden)]
     Yne = 7633,
+    /// Yango
     #[doc(hidden)]
     Yng = 7634,
+    /// Naukan Yupik
     #[doc(hidden)]
     Ynk = 7635,
+    /// Yangulam
     #[doc(hidden)]
     Ynl = 7636,
+    /// Yana
     #[doc(hidden)]
     Ynn = 7637,
+    /// Yong
     #[doc(hidden)]
     Yno = 7638,
+    /// Yendang
     #[doc(hidden)]
     Ynq = 7639,
+    /// Yansi
     #[doc(hidden)]
     Yns = 7640,
+    /// Yahuna
     #[doc(hidden)]
     Ynu = 7641,
+    /// Yoba
     #[doc(hidden)]
     Yob = 7642,
+    /// Yogad
     #[doc(hidden)]
     Yog = 7643,
+    /// Yonaguni
     #[doc(hidden)]
     Yoi = 7644,
+    /// Yokuts
     #[doc(hidden)]
     Yok = 7645,
+    /// Yola
     #[doc(hidden)]
     Yol = 7646,
+    /// Yombe
     #[doc(hidden)]
     Yom = 7647,
+    /// Yongkom
     #[doc(hidden)]
     Yon = 7648,
+    /// Yoruba
     #[doc(hidden)]
     Yor = 7649,
+    /// Yotti
     #[doc(hidden)]
     Yot = 7650,
+    /// Yoron
     #[doc(hidden)]
     Yox = 7651,
+    /// Yoy
     #[doc(hidden)]
     Yoy = 7652,
+    /// Phala
     #[doc(hidden)]
     Ypa = 7653,
+    /// Labo Phowa
     #[doc(hidden)]
     Ypb = 7654,
+    /// Phola
     #[doc(hidden)]
     Ypg = 7655,
+    /// Phupha
     #[doc(hidden)]
     Yph = 7656,
+    /// Phuma
     #[doc(hidden)]
     Ypm = 7657,
+    /// Ani Phowa
     #[doc(hidden)]
     Ypn = 7658,
+    /// Alo Phola
     #[doc(hidden)]
     Ypo = 7659,
+    /// Phupa
     #[doc(hidden)]
     Ypp = 7660,
+    /// Phuza
     #[doc(hidden)]
     Ypz = 7661,
+    /// Yerakai
     #[doc(hidden)]
     Yra = 7662,
+    /// Yareba
     #[doc(hidden)]
     Yrb = 7663,
+    /// Yaouré
     #[doc(hidden)]
     Yre = 7664,
+    /// Nenets
     #[doc(hidden)]
     Yrk = 7665,
+    /// Nhengatu
     #[doc(hidden)]
     Yrl = 7666,
+    /// Yirrk-Mel
     #[doc(hidden)]
     Yrm = 7667,
+    /// Yerong
     #[doc(hidden)]
     Yrn = 7668,
+    /// Yaroamë
     #[doc(hidden)]
     Yro = 7669,
+    /// Yarsun
     #[doc(hidden)]
     Yrs = 7670,
+    /// Yarawata
     #[doc(hidden)]
     Yrw = 7671,
+    /// Yarluyandi
     #[doc(hidden)]
     Yry = 7672,
+    /// Yassic
     #[doc(hidden)]
     Ysc = 7673,
+    /// Samatao
     #[doc(hidden)]
     Ysd = 7674,
+    /// Sonaga
     #[doc(hidden)]
     Ysg = 7675,
+    /// Yugoslavian Sign Language
     #[doc(hidden)]
     Ysl = 7676,
+    /// Myanmar Sign Language
     #[doc(hidden)]
     Ysm = 7677,
+    /// Sani
     #[doc(hidden)]
     Ysn = 7678,
+    /// Nisi
     #[doc(hidden)]
     Yso = 7679,
+    /// Southern Lolopo
     #[doc(hidden)]
     Ysp = 7680,
+    /// Sirenik Yupik
     #[doc(hidden)]
     Ysr = 7681,
+    /// Yessan-Mayo
     #[doc(hidden)]
     Yss = 7682,
+    /// Sanie
     #[doc(hidden)]
     Ysy = 7683,
+    /// Talu
     #[doc(hidden)]
     Yta = 7684,
+    /// Tanglang
     #[doc(hidden)]
     Ytl = 7685,
+    /// Thopho
     #[doc(hidden)]
     Ytp = 7686,
+    /// Yout Wam
     #[doc(hidden)]
     Ytw = 7687,
+    /// Yatay
     #[doc(hidden)]
     Yty = 7688,
+    /// Yucateco
     #[doc(hidden)]
     Yua = 7689,
+    /// Yugambal
     #[doc(hidden)]
     Yub = 7690,
+    /// Yuchi
     #[doc(hidden)]
     Yuc = 7691,
+    /// Judeo-Tripolitanian Arabic
     #[doc(hidden)]
     Yud = 7692,
+    /// Yue Chinese
     #[doc(hidden)]
     Yue = 7693,
+    /// Havasupai-Walapai-Yavapai
     #[doc(hidden)]
     Yuf = 7694,
+    /// Yug
     #[doc(hidden)]
     Yug = 7695,
+    /// Yurutí
     #[doc(hidden)]
     Yui = 7696,
+    /// Karkar-Yuri
     #[doc(hidden)]
     Yuj = 7697,
+    /// Yuki
     #[doc(hidden)]
     Yuk = 7698,
+    /// Yulu
     #[doc(hidden)]
     Yul = 7699,
+    /// Quechan
     #[doc(hidden)]
     Yum = 7700,
+    /// Bena
     #[doc(hidden)]
     Yun = 7701,
+    /// Yukpa
     #[doc(hidden)]
     Yup = 7702,
+    /// Yuqui
     #[doc(hidden)]
     Yuq = 7703,
+    /// Yurok
     #[doc(hidden)]
     Yur = 7704,
+    /// Yopno
     #[doc(hidden)]
     Yut = 7705,
+    /// Yau
     #[doc(hidden)]
     Yuw = 7706,
+    /// Southern Yukaghir
     #[doc(hidden)]
     Yux = 7707,
+    /// East Yugur
     #[doc(hidden)]
     Yuy = 7708,
+    /// Yuracare
     #[doc(hidden)]
     Yuz = 7709,
+    /// Yawa
     #[doc(hidden)]
     Yva = 7710,
+    /// Yavitero
     #[doc(hidden)]
     Yvt = 7711,
+    /// Kalou
     #[doc(hidden)]
     Ywa = 7712,
+    /// Yinhawangka
     #[doc(hidden)]
     Ywg = 7713,
+    /// Western Lalu
     #[doc(hidden)]
     Ywl = 7714,
+    /// Yawanawa
     #[doc(hidden)]
     Ywn = 7715,
+    /// Wuding-Luquan Yi
     #[doc(hidden)]
     Ywq = 7716,
+    /// Yawuru
     #[doc(hidden)]
     Ywr = 7717,
+    /// Xishanba Lalo
     #[doc(hidden)]
     Ywt = 7718,
+    /// Wumeng Nasu
     #[doc(hidden)]
     Ywu = 7719,
+    /// Yawarawarga
     #[doc(hidden)]
     Yww = 7720,
+    /// Mayawali
     #[doc(hidden)]
     Yxa = 7721,
+    /// Yagara
     #[doc(hidden)]
     Yxg = 7722,
+    /// Yardliyawarra
     #[doc(hidden)]
     Yxl = 7723,
+    /// Yinwum
     #[doc(hidden)]
     Yxm = 7724,
+    /// Yuyu
     #[doc(hidden)]
     Yxu = 7725,
+    /// Yabula Yabula
     #[doc(hidden)]
     Yxy = 7726,
+    /// Yir Yoront
     #[doc(hidden)]
     Yyr = 7727,
+    /// Yau
     #[doc(hidden)]
     Yyu = 7728,
+    /// Ayizi
     #[doc(hidden)]
     Yyz = 7729,
+    /// E'ma Buyang
     #[doc(hidden)]
     Yzg = 7730,
+    /// Zokhuo
     #[doc(hidden)]
     Yzk = 7731,
+    /// Sierra de Juárez Zapotec
     #[doc(hidden)]
     Zaa = 7732,
+    /// Western Tlacolula Valley Zapotec
     #[doc(hidden)]
     Zab = 7733,
+    /// Ocotlán Zapotec
     #[doc(hidden)]
     Zac = 7734,
+    /// Cajonos Zapotec
     #[doc(hidden)]
     Zad = 7735,
+    /// Yareni Zapotec
     #[doc(hidden)]
     Zae = 7736,
+    /// Ayoquesco Zapotec
     #[doc(hidden)]
     Zaf = 7737,
+    /// Zaghawa
     #[doc(hidden)]
     Zag = 7738,
+    /// Zangwal
     #[doc(hidden)]
     Zah = 7739,
+    /// Isthmus Zapotec
     #[doc(hidden)]
     Zai = 7740,
+    /// Zaramo
     #[doc(hidden)]
     Zaj = 7741,
+    /// Zanaki
     #[doc(hidden)]
     Zak = 7742,
+    /// Zauzou
     #[doc(hidden)]
     Zal = 7743,
+    /// Miahuatlán Zapotec
     #[doc(hidden)]
     Zam = 7744,
+    /// Ozolotepec Zapotec
     #[doc(hidden)]
     Zao = 7745,
+    /// Zapotec
     #[doc(hidden)]
     Zap = 7746,
+    /// Aloápam Zapotec
     #[doc(hidden)]
     Zaq = 7747,
+    /// Rincón Zapotec
     #[doc(hidden)]
     Zar = 7748,
+    /// Santo Domingo Albarradas Zapotec
     #[doc(hidden)]
     Zas = 7749,
+    /// Tabaa Zapotec
     #[doc(hidden)]
     Zat = 7750,
+    /// Zangskari
     #[doc(hidden)]
     Zau = 7751,
+    /// Yatzachi Zapotec
     #[doc(hidden)]
     Zav = 7752,
+    /// Mitla Zapotec
     #[doc(hidden)]
     Zaw = 7753,
+    /// Xadani Zapotec
     #[doc(hidden)]
     Zax = 7754,
+    /// Zayse-Zergulla
     #[doc(hidden)]
     Zay = 7755,
+    /// Zari
     #[doc(hidden)]
     Zaz = 7756,
+    /// Balaibalan
     #[doc(hidden)]
     Zba = 7757,
+    /// Central Berawan
     #[doc(hidden)]
     Zbc = 7758,
+    /// East Berawan
     #[doc(hidden)]
     Zbe = 7759,
+    /// Blissymbols
     #[doc(hidden)]
     Zbl = 7760,
+    /// Batui
     #[doc(hidden)]
     Zbt = 7761,
+    /// Bu
     #[doc(hidden)]
     Zbu = 7762,
+    /// West Berawan
     #[doc(hidden)]
     Zbw = 7763,
+    /// Coatecas Altas Zapotec
     #[doc(hidden)]
     Zca = 7764,
+    /// Las Delicias Zapotec
     #[doc(hidden)]
     Zcd = 7765,
+    /// Central Hongshuihe Zhuang
     #[doc(hidden)]
     Zch = 7766,
+    /// Ngazidja Comorian
     #[doc(hidden)]
     Zdj = 7767,
+    /// Zeeuws
     #[doc(hidden)]
     Zea = 7768,
+    /// Zenag
     #[doc(hidden)]
     Zeg = 7769,
+    /// Eastern Hongshuihe Zhuang
     #[doc(hidden)]
     Zeh = 7770,
+    /// Zeem
     #[doc(hidden)]
     Zem = 7771,
+    /// Zenaga
     #[doc(hidden)]
     Zen = 7772,
+    /// Kinga
     #[doc(hidden)]
     Zga = 7773,
+    /// Guibei Zhuang
     #[doc(hidden)]
     Zgb = 7774,
+    /// Standard Moroccan Tamazight
     #[doc(hidden)]
     Zgh = 7775,
+    /// Minz Zhuang
     #[doc(hidden)]
     Zgm = 7776,
+    /// Guibian Zhuang
     #[doc(hidden)]
     Zgn = 7777,
+    /// Magori
     #[doc(hidden)]
     Zgr = 7778,
+    /// Zhuang
     #[doc(hidden)]
     Zha = 7779,
+    /// Zhaba
     #[doc(hidden)]
     Zhb = 7780,
+    /// Dai Zhuang
     #[doc(hidden)]
     Zhd = 7781,
+    /// Zhire
     #[doc(hidden)]
     Zhi = 7782,
+    /// Nong Zhuang
     #[doc(hidden)]
     Zhn = 7783,
+    /// Chinese
     #[doc(hidden)]
     Zho = 7784,
+    /// Zhoa
     #[doc(hidden)]
     Zhw = 7785,
+    /// Zia
     #[doc(hidden)]
     Zia = 7786,
+    /// Zimbabwe Sign Language
     #[doc(hidden)]
     Zib = 7787,
+    /// Zimakani
     #[doc(hidden)]
     Zik = 7788,
+    /// Zialo
     #[doc(hidden)]
     Zil = 7789,
+    /// Mesme
     #[doc(hidden)]
     Zim = 7790,
+    /// Zinza
     #[doc(hidden)]
     Zin = 7791,
+    /// Zigula
     #[doc(hidden)]
     Ziw = 7792,
+    /// Zizilivakan
     #[doc(hidden)]
     Ziz = 7793,
+    /// Kaimbulawa
     #[doc(hidden)]
     Zka = 7794,
+    /// Kadu
     #[doc(hidden)]
     Zkd = 7795,
+    /// Koguryo
     #[doc(hidden)]
     Zkg = 7796,
+    /// Khorezmian
     #[doc(hidden)]
     Zkh = 7797,
+    /// Karankawa
     #[doc(hidden)]
     Zkk = 7798,
+    /// Kanan
     #[doc(hidden)]
     Zkn = 7799,
+    /// Kott
     #[doc(hidden)]
     Zko = 7800,
+    /// São Paulo Kaingáng
     #[doc(hidden)]
     Zkp = 7801,
+    /// Zakhring
     #[doc(hidden)]
     Zkr = 7802,
+    /// Kitan
     #[doc(hidden)]
     Zkt = 7803,
+    /// Kaurna
     #[doc(hidden)]
     Zku = 7804,
+    /// Krevinian
     #[doc(hidden)]
     Zkv = 7805,
+    /// Khazar
     #[doc(hidden)]
     Zkz = 7806,
+    /// Zula
     #[doc(hidden)]
     Zla = 7807,
+    /// Liujiang Zhuang
     #[doc(hidden)]
     Zlj = 7808,
+    /// Malay
     #[doc(hidden)]
     Zlm = 7809,
+    /// Lianshan Zhuang
     #[doc(hidden)]
     Zln = 7810,
+    /// Liuqian Zhuang
     #[doc(hidden)]
     Zlq = 7811,
+    /// Zul
     #[doc(hidden)]
     Zlu = 7812,
+    /// Manda
     #[doc(hidden)]
     Zma = 7813,
+    /// Zimba
     #[doc(hidden)]
     Zmb = 7814,
+    /// Margany
     #[doc(hidden)]
     Zmc = 7815,
+    /// Maridan
     #[doc(hidden)]
     Zmd = 7816,
+    /// Mangerr
     #[doc(hidden)]
     Zme = 7817,
+    /// Mfinu
     #[doc(hidden)]
     Zmf = 7818,
+    /// Marti Ke
     #[doc(hidden)]
     Zmg = 7819,
+    /// Makolkol
     #[doc(hidden)]
     Zmh = 7820,
+    /// Negeri Sembilan Malay
     #[doc(hidden)]
     Zmi = 7821,
+    /// Maridjabin
     #[doc(hidden)]
     Zmj = 7822,
+    /// Mandandanyi
     #[doc(hidden)]
     Zmk = 7823,
+    /// Matngala
     #[doc(hidden)]
     Zml = 7824,
+    /// Marimanindji
     #[doc(hidden)]
     Zmm = 7825,
+    /// Mbangwe
     #[doc(hidden)]
     Zmn = 7826,
+    /// Molo
     #[doc(hidden)]
     Zmo = 7827,
+    /// Mpuono
     #[doc(hidden)]
     Zmp = 7828,
+    /// Mituku
     #[doc(hidden)]
     Zmq = 7829,
+    /// Maranunggu
     #[doc(hidden)]
     Zmr = 7830,
+    /// Mbesa
     #[doc(hidden)]
     Zms = 7831,
+    /// Maringarr
     #[doc(hidden)]
     Zmt = 7832,
+    /// Muruwari
     #[doc(hidden)]
     Zmu = 7833,
+    /// Mbariman-Gudhinma
     #[doc(hidden)]
     Zmv = 7834,
+    /// Mbo
     #[doc(hidden)]
     Zmw = 7835,
+    /// Bomitaba
     #[doc(hidden)]
     Zmx = 7836,
+    /// Mariyedi
     #[doc(hidden)]
     Zmy = 7837,
+    /// Mbandja
     #[doc(hidden)]
     Zmz = 7838,
+    /// Zan Gula
     #[doc(hidden)]
     Zna = 7839,
+    /// Zande
     #[doc(hidden)]
     Zne = 7840,
+    /// Mang
     #[doc(hidden)]
     Zng = 7841,
+    /// Manangkari
     #[doc(hidden)]
     Znk = 7842,
+    /// Mangas
     #[doc(hidden)]
     Zns = 7843,
+    /// Copainalá Zoque
     #[doc(hidden)]
     Zoc = 7844,
+    /// Chimalapa Zoque
     #[doc(hidden)]
     Zoh = 7845,
+    /// Zou
     #[doc(hidden)]
     Zom = 7846,
+    /// Asunción Mixtepec Zapotec
     #[doc(hidden)]
     Zoo = 7847,
+    /// Tabasco Zoque
     #[doc(hidden)]
     Zoq = 7848,
+    /// Rayón Zoque
     #[doc(hidden)]
     Zor = 7849,
+    /// Francisco León Zoque
     #[doc(hidden)]
     Zos = 7850,
+    /// Lachiguiri Zapotec
     #[doc(hidden)]
     Zpa = 7851,
+    /// Yautepec Zapotec
     #[doc(hidden)]
     Zpb = 7852,
+    /// Choapan Zapotec
     #[doc(hidden)]
     Zpc = 7853,
+    /// Southeastern Ixtlán Zapotec
     #[doc(hidden)]
     Zpd = 7854,
+    /// Petapa Zapotec
     #[doc(hidden)]
     Zpe = 7855,
+    /// San Pedro Quiatoni Zapotec
     #[doc(hidden)]
     Zpf = 7856,
+    /// Guevea De Humboldt Zapotec
     #[doc(hidden)]
     Zpg = 7857,
+    /// Totomachapan Zapotec
     #[doc(hidden)]
     Zph = 7858,
+    /// Santa María Quiegolani Zapotec
     #[doc(hidden)]
     Zpi = 7859,
+    /// Quiavicuzas Zapotec
     #[doc(hidden)]
     Zpj = 7860,
+    /// Tlacolulita Zapotec
     #[doc(hidden)]
     Zpk = 7861,
+    /// Lachixío Zapotec
     #[doc(hidden)]
     Zpl = 7862,
+    /// Mixtepec Zapotec
     #[doc(hidden)]
     Zpm = 7863,
+    /// Santa Inés Yatzechi Zapotec
     #[doc(hidden)]
     Zpn = 7864,
+    /// Amatlán Zapotec
     #[doc(hidden)]
     Zpo = 7865,
+    /// El Alto Zapotec
     #[doc(hidden)]
     Zpp = 7866,
+    /// Zoogocho Zapotec
     #[doc(hidden)]
     Zpq = 7867,
+    /// Santiago Xanica Zapotec
     #[doc(hidden)]
     Zpr = 7868,
+    /// Coatlán Zapotec
     #[doc(hidden)]
     Zps = 7869,
+    /// San Vicente Coatlán Zapotec
     #[doc(hidden)]
     Zpt = 7870,
+    /// Yalálag Zapotec
     #[doc(hidden)]
     Zpu = 7871,
+    /// Chichicapan Zapotec
     #[doc(hidden)]
     Zpv = 7872,
+    /// Zaniza Zapotec
     #[doc(hidden)]
     Zpw = 7873,
+    /// San Baltazar Loxicha Zapotec
     #[doc(hidden)]
     Zpx = 7874,
+    /// Mazaltepec Zapotec
     #[doc(hidden)]
     Zpy = 7875,
+    /// Texmelucan Zapotec
     #[doc(hidden)]
     Zpz = 7876,
+    /// Qiubei Zhuang
     #[doc(hidden)]
     Zqe = 7877,
+    /// Kara
     #[doc(hidden)]
     Zra = 7878,
+    /// Mirgan
     #[doc(hidden)]
     Zrg = 7879,
+    /// Zerenkel
     #[doc(hidden)]
     Zrn = 7880,
+    /// Záparo
     #[doc(hidden)]
     Zro = 7881,
+    /// Zarphatic
     #[doc(hidden)]
     Zrp = 7882,
+    /// Mairasi
     #[doc(hidden)]
     Zrs = 7883,
+    /// Sarasira
     #[doc(hidden)]
     Zsa = 7884,
+    /// Kaskean
     #[doc(hidden)]
     Zsk = 7885,
+    /// Zambian Sign Language
     #[doc(hidden)]
     Zsl = 7886,
+    /// Standard Malay
     #[doc(hidden)]
     Zsm = 7887,
+    /// Southern Rincon Zapotec
     #[doc(hidden)]
     Zsr = 7888,
+    /// Sukurum
     #[doc(hidden)]
     Zsu = 7889,
+    /// Elotepec Zapotec
     #[doc(hidden)]
     Zte = 7890,
+    /// Xanaguía Zapotec
     #[doc(hidden)]
     Ztg = 7891,
+    /// Lapaguía-Guivini Zapotec
     #[doc(hidden)]
     Ztl = 7892,
+    /// San Agustín Mixtepec Zapotec
     #[doc(hidden)]
     Ztm = 7893,
+    /// Santa Catarina Albarradas Zapotec
     #[doc(hidden)]
     Ztn = 7894,
+    /// Loxicha Zapotec
     #[doc(hidden)]
     Ztp = 7895,
+    /// Quioquitani-Quierí Zapotec
     #[doc(hidden)]
     Ztq = 7896,
+    /// Tilquiapan Zapotec
     #[doc(hidden)]
     Zts = 7897,
+    /// Tejalapan Zapotec
     #[doc(hidden)]
     Ztt = 7898,
+    /// Güilá Zapotec
     #[doc(hidden)]
     Ztu = 7899,
+    /// Zaachila Zapotec
     #[doc(hidden)]
     Ztx = 7900,
+    /// Yatee Zapotec
     #[doc(hidden)]
     Zty = 7901,
+    /// Tokano
     #[doc(hidden)]
     Zuh = 7902,
+    /// Zulu
     #[doc(hidden)]
     Zul = 7903,
+    /// Kumzari
     #[doc(hidden)]
     Zum = 7904,
+    /// Zuni
     #[doc(hidden)]
     Zun = 7905,
+    /// Zumaya
     #[doc(hidden)]
     Zuy = 7906,
+    /// Zay
     #[doc(hidden)]
     Zwa = 7907,
+    /// No linguistic content
     #[doc(hidden)]
     Zxx = 7908,
+    /// Yongbei Zhuang
     #[doc(hidden)]
     Zyb = 7909,
+    /// Yang Zhuang
     #[doc(hidden)]
     Zyg = 7910,
+    /// Youjiang Zhuang
     #[doc(hidden)]
     Zyj = 7911,
+    /// Yongnan Zhuang
     #[doc(hidden)]
     Zyn = 7912,
+    /// Zyphe Chin
     #[doc(hidden)]
     Zyp = 7913,
+    /// Zaza
     #[doc(hidden)]
     Zza = 7914,
+    /// Zuojiang Zhuang
     #[doc(hidden)]
     Zzj = 7915,
 }
