@@ -96861,3 +96861,35 @@ pub(crate) fn iso_639_3_to_2b(code: &str) -> &str {
         _ => code,
     }
 }
+pub(crate) fn iso_639_2t_to_3(code: &str) -> &str {
+    #[allow(clippy::match_single_binding)]
+    match code {
+        _ => code,
+    }
+}
+pub(crate) fn iso_639_2b_to_3(code: &str) -> &str {
+    #[allow(clippy::match_single_binding)]
+    match code {
+        "tib" => "bod",
+        "cze" => "ces",
+        "wel" => "cym",
+        "ger" => "deu",
+        "gre" => "ell",
+        "baq" => "eus",
+        "per" => "fas",
+        "fre" => "fra",
+        "arm" => "hye",
+        "ice" => "isl",
+        "geo" => "kat",
+        "mac" => "mkd",
+        "mao" => "mri",
+        "may" => "msa",
+        "bur" => "mya",
+        "dut" => "nld",
+        "rum" => "ron",
+        "slo" => "slk",
+        "alb" => "sqi",
+        "chi" => "zho",
+        _ => code,
+    }
+}

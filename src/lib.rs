@@ -70,7 +70,8 @@ struct LanguageData {
 mod isotable;
 pub use isotable::Language;
 use isotable::{
-    iso_639_3_to_2b, iso_639_3_to_2t, OVERVIEW, THREE_TO_THREE, TWO_TO_THREE,
+    iso_639_2b_to_3, iso_639_2t_to_3, iso_639_3_to_2b, iso_639_3_to_2t,
+    OVERVIEW, THREE_TO_THREE, TWO_TO_THREE,
 };
 
 /// Get an iterator of all languages.
@@ -141,7 +142,7 @@ impl Language {
     /// ```
     /// use isolang::Language;
     ///
-    /// assert_eq!(Language::Deu.to_639_2t(), "ger");
+    /// assert_eq!(Language::Deu.to_639_2t(), "deu");
     /// ```
     pub fn to_639_2t(&self) -> &'static str {
         iso_639_3_to_2t(self.to_639_3())
@@ -352,6 +353,40 @@ impl Language {
             .and_then(|raw_lang| Language::from_usize(raw_lang as usize))
     }
 
+    /// Create a Language instance rom a ISO 639-2t code.
+    ///
+    /// This will return a Language instance if the given string is a valid three-letter language
+    /// code. For invalid inputs, None is returned.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use isolang::Language;
+    ///
+    /// assert!(Language::from_639_3("ger").is_some());
+    /// assert!(Language::from_639_1("…").is_none());
+    /// ```
+    pub fn from_639_2t(code: &str) -> Option<Language> {
+        Self::from_639_3(iso_639_2t_to_3(code))
+    }
+
+    /// Create a Language instance rom a ISO 639-2b code.
+    ///
+    /// This will return a Language instance if the given string is a valid three-letter language
+    /// code. For invalid inputs, None is returned.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use isolang::Language;
+    ///
+    /// assert!(Language::from_639_3("dan").is_some());
+    /// assert!(Language::from_639_1("…").is_none());
+    /// ```
+    pub fn from_639_2b(code: &str) -> Option<Language> {
+        Self::from_639_3(iso_639_2b_to_3(code))
+    }
+
     /// Create a Language instance rom a ISO 639-3 code.
     ///
     /// This will return a Language instance if the given string is a valid three-letter language
@@ -455,7 +490,11 @@ impl FromStr for Language {
         not(feature = "lowercase_names")
     ))]
     fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
-        match Language::from_639_3(s).or_else(|| Language::from_639_1(s)) {
+        match Language::from_639_3(s)
+            .or_else(|| Language::from_639_1(s))
+            .or_else(|| Language::from_639_2t(s))
+            .or_else(|| Language::from_639_2b(s))
+        {
             Some(l) => Ok(l),
             None => Err(ParseLanguageError(s.to_owned())),
         }
