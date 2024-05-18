@@ -362,9 +362,7 @@ impl Language {
     ///
     /// ```
     /// use isolang::Language;
-    ///
-    /// assert!(Language::from_639_3("ger").is_some());
-    /// assert!(Language::from_639_1("…").is_none());
+    /// assert!(Language::from_639_2t("deu").is_some());
     /// ```
     pub fn from_639_2t(code: &str) -> Option<Language> {
         Self::from_639_3(iso_639_2t_to_3(code))
@@ -379,9 +377,7 @@ impl Language {
     ///
     /// ```
     /// use isolang::Language;
-    ///
-    /// assert!(Language::from_639_3("dan").is_some());
-    /// assert!(Language::from_639_1("…").is_none());
+    /// assert!(Language::from_639_2b("ger").is_some());
     /// ```
     pub fn from_639_2b(code: &str) -> Option<Language> {
         Self::from_639_3(iso_639_2b_to_3(code))
