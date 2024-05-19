@@ -11,8 +11,8 @@ Introduction
 
 When dealing with different language inputs and APIs, different standards are used to identify
 a language. Converting between these in an automated way can be tedious. This crate provides an
-enum which supports conversion from 639-1 and 639-3 and also into these formats, as well as
-into English names or autonyms (local names).
+enum which enables conversion between the standards 639-1, 639-2t, 639-2b and 639-3, as well as conversion
+into English and local names (autonyms).
 
 This crate contains the ISO 639 table in statically embedded tables. This
 increases binary size, but allows for very efficient look-up if performance
@@ -39,6 +39,8 @@ Example
 use isolang::Language;
 
 assert_eq!(Language::from_639_1("de").unwrap().to_name(), "German");
+assert_eq!(Language::from_639_2b("fre").unwrap().to_name(), "French");
+assert_eq!(Language::from_639_2t("fra").unwrap().to_name(), "French");
 assert_eq!(Language::from_639_3("spa").unwrap().to_639_1(), Some("es"));
 // undefined language (ISO code und)
 assert_eq!(Language::default(), Language::Und);
@@ -58,8 +60,7 @@ assert_eq!(Language::from_str("español").unwrap().to_name(), "Spanish");
 Supported Cargo Features
 -------------------------
 
-
-Please take a look at the commented [Cargo.toml)(Cargo.toml) file for a
+Please take a look at the commented [Cargo.toml](Cargo.toml) file for a
 up-to-date list of supported features.
 
 Serde support
