@@ -70,8 +70,7 @@ struct LanguageData {
 mod isotable;
 pub use isotable::Language;
 use isotable::{
-    iso_639_2b_to_3, iso_639_2t_to_3, iso_639_3_to_2b, iso_639_3_to_2t,
-    OVERVIEW, THREE_TO_THREE, TWO_TO_THREE,
+    iso_639_2b_to_3, iso_639_3_to_2b, OVERVIEW, THREE_TO_THREE, TWO_TO_THREE,
 };
 
 /// Get an iterator of all languages.
@@ -145,7 +144,7 @@ impl Language {
     /// assert_eq!(Language::Deu.to_639_2t(), "deu");
     /// ```
     pub fn to_639_2t(&self) -> &'static str {
-        iso_639_3_to_2t(self.to_639_3())
+        self.to_639_3()
     }
 
     /// Create two-letter ISO 639-1 representation of the language.
@@ -365,7 +364,8 @@ impl Language {
     /// assert!(Language::from_639_2t("deu").is_some());
     /// ```
     pub fn from_639_2t(code: &str) -> Option<Language> {
-        Self::from_639_3(iso_639_2t_to_3(code))
+        // ISO 639-3 codes are backwards compatible with ISO 639-2t codes
+        Self::from_639_3(code)
     }
 
     /// Create a Language instance rom a ISO 639-2b code.
@@ -488,7 +488,7 @@ impl FromStr for Language {
     fn from_str(s: &str) -> Result<Self, ParseLanguageError> {
         match Language::from_639_3(s)
             .or_else(|| Language::from_639_1(s))
-            .or_else(|| Language::from_639_2t(s))
+            // .or_else(|| Language::from_639_2t(s)) // ISO 639-3 codes are backwards compatible with ISO 639-2t codes, so this is unnecessary
             .or_else(|| Language::from_639_2b(s))
         {
             Some(l) => Ok(l),

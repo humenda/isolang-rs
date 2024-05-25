@@ -37,7 +37,7 @@ fn format_code(code: &str) -> String {
 struct LangCode<'a> {
     code_3: &'a str,
     code_2b: Option<&'a str>,
-    code_2t: Option<&'a str>,
+    _code_2t: Option<&'a str>,
     code_1: Option<&'a str>,
     name_en: &'a str,
     autonym: Option<&'a str>,
@@ -84,7 +84,7 @@ fn read_iso_table<'a>(
                 "" => None,
                 s => Some(s),
             };
-            let code_2t = match cols.next().unwrap() {
+            let _code_2t = match cols.next().unwrap() {
                 "" => None,
                 s => Some(s),
             };
@@ -97,7 +97,14 @@ fn read_iso_table<'a>(
             // split language string into name and comment, if required
             let mut parts = cols.nth(2).unwrap().split('(');
             let name_en = parts.next().unwrap().trim_end();
-            LangCode { code_3, code_2b, code_2t, code_1, name_en, autonym }
+            LangCode {
+                code_3,
+                code_2b,
+                _code_2t,
+                code_1,
+                name_en,
+                autonym,
+            }
         })
         .collect()
 }
@@ -163,32 +170,10 @@ fn write_three_letter_to_enum(out: &mut String, codes: &[LangCode]) {
     writeln!(out, "{};", map.build()).unwrap();
 }
 
-fn write_iso_639_3_to_2_conversions(out: &mut String, codes: &[LangCode]) {
-    // 3 -> 2t
-    writeln!(out, "pub(crate) fn iso_639_3_to_2t(code: &str) -> &str {{")
-        .unwrap();
-    writeln!(out, "    #[allow(clippy::match_single_binding)]").unwrap();
-    writeln!(out, "    match code {{").unwrap();
-    for lang in codes.iter() {
-        if let Some(code_2t) = lang.code_2t {
-            if code_2t != lang.code_3 {
-                writeln!(
-                    out,
-                    "        \"{}\" => \"{}\",",
-                    lang.code_3, code_2t
-                )
-                .unwrap();
-            }
-        }
-    }
-    writeln!(out, "        _ => code,").unwrap();
-    writeln!(out, "    }}").unwrap();
-    writeln!(out, "}}").unwrap();
-
+fn write_iso_639_3_to_2b_conversions(out: &mut String, codes: &[LangCode]) {
     // 3 -> 2b
     writeln!(out, "pub(crate) fn iso_639_3_to_2b(code: &str) -> &str {{")
         .unwrap();
-    writeln!(out, "    #[allow(clippy::match_single_binding)]").unwrap();
     writeln!(out, "    match code {{").unwrap();
     for lang in codes.iter() {
         if let Some(code_2b) = lang.code_2b {
@@ -197,27 +182,6 @@ fn write_iso_639_3_to_2_conversions(out: &mut String, codes: &[LangCode]) {
                     out,
                     "        \"{}\" => \"{}\",",
                     lang.code_3, code_2b
-                )
-                .unwrap();
-            }
-        }
-    }
-    writeln!(out, "        _ => code,").unwrap();
-    writeln!(out, "    }}").unwrap();
-    writeln!(out, "}}").unwrap();
-
-    // 2t -> 3
-    writeln!(out, "pub(crate) fn iso_639_2t_to_3(code: &str) -> &str {{")
-        .unwrap();
-    writeln!(out, "    #[allow(clippy::match_single_binding)]").unwrap();
-    writeln!(out, "    match code {{").unwrap();
-    for lang in codes.iter() {
-        if let Some(code_2t) = lang.code_2t {
-            if code_2t != lang.code_3 {
-                writeln!(
-                    out,
-                    "        \"{}\" => \"{}\",",
-                    code_2t, lang.code_3
                 )
                 .unwrap();
             }
@@ -317,7 +281,7 @@ r###"#[cfg_attr(feature = "async-graphql", derive(async_graphql::Enum))]"###).un
     write_three_letter_to_enum(&mut new_code, &codes);
 
     // write conversion function from 639-3 to 639-2t/b
-    write_iso_639_3_to_2_conversions(&mut new_code, &codes);
+    write_iso_639_3_to_2b_conversions(&mut new_code, &codes);
 
     // compare old to new -- format new code first
     let new_code = format_code(&new_code);
