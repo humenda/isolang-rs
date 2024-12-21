@@ -25,7 +25,7 @@ version = "1.0"
 
 [dependencies.async-graphql]
 optional = true
-version = "6.0"
+version = "7"
 
 [features]
 default = ["english_names"]
