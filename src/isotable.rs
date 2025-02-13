@@ -52039,7 +52039,7 @@ pub(crate) const OVERVIEW: [LanguageData; 7916] = [
         code_3: [116, 111, 110],
         code_1: Some([116, 111]),
         #[cfg(feature = "english_names")]
-        name_en: "Tonga",
+        name_en: "Tongan",
         #[cfg(feature = "local_names")]
         autonym: Some("lea fakatonga"),
     },
