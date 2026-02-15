@@ -2,7 +2,7 @@
 use super::LanguageData;
 
 #[allow(clippy::type_complexity)]
-pub(crate) const OVERVIEW: [LanguageData; 7927] = [
+pub(crate) static OVERVIEW: [LanguageData; 7927] = [
     LanguageData {
         code_3: [97, 97, 97],
         code_1: None,

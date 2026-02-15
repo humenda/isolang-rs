@@ -113,7 +113,7 @@ fn read_iso_table<'a>(
 fn write_overview_table(out: &mut String, codes: &[LangCode]) {
     writeln!(
         out,
-        "#[allow(clippy::type_complexity)]\npub(crate) const OVERVIEW: [LanguageData; {}] = [",
+        "#[allow(clippy::type_complexity)]\npub(crate) static OVERVIEW: [LanguageData; {}] = [",
         codes.len()
     )
     .unwrap();
