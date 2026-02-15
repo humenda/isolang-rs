@@ -29,7 +29,7 @@ version = "7"
 
 [features]
 default = ["english_names"]
-# all English names of langauges for lookup (increases binary size considerably)
+# all English names of languages for lookup (increases binary size considerably)
 english_names = []
 # ignore casing of English language names
 lowercase_names = []
