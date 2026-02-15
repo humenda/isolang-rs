@@ -147,11 +147,9 @@ fn write_two_letter_to_enum(out: &mut String, codes: &[LangCode]) {
     let mut map = phf_codegen::Map::new();
     for lang in codes.iter() {
         if let Some(ref two_letter) = lang.code_1 {
-            let formatted_lang = format!("Language::{} as u16", Title(lang.code_3));
-            map.entry(
-                two_letter,
-                formatted_lang,
-            );
+            let formatted_lang =
+                format!("Language::{} as u16", Title(lang.code_3));
+            map.entry(two_letter, formatted_lang);
         }
     }
     writeln!(out, "{};\n", map.build()).unwrap();
